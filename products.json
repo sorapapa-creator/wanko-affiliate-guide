@@ -1,0 +1,2905 @@
+{
+  "schema_version": 1,
+  "status": "local_review_not_published",
+  "fetched_at": "2026-09-21T18:38:49+09:00",
+  "source": "Rakuten Ichiba Item Search API 2026-07-01 + approved A8.net program links",
+  "products": [
+    {
+      "id": "odor-bag",
+      "category": "散歩・排泄",
+      "label": "車内や宿での臭い対策",
+      "query": "BOS うんちが臭わない袋 犬 SS 200枚",
+      "terms": [
+        "BOS",
+        "臭わない"
+      ],
+      "strength": "袋に入れて結ぶだけ。散歩、車移動、宿泊時の排泄物処理に使いやすい。",
+      "check": "犬の大きさと処理物に合う袋サイズを確認。防臭は完全保証ではありません。",
+      "problems": [
+        "臭い・排泄",
+        "旅行準備"
+      ],
+      "name": "【2個セット】 うんちが臭わない袋 BOS (ボス) ペット | 水色 SSサイズ 200枚×2個 | 日本製",
+      "price_yen": 3339,
+      "shop": "BOS-SHOP",
+      "review_average": 4.92,
+      "review_count": 380,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/bos-shop/cabinet/07611451/dog_ss200_2set.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00sok0n.u92kl3b4.g00sok0n.u92kmf89/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbos-shop%2Fbos-0981%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbos-shop%2Fi%2F10000099%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "bos-shop:10000099"
+    },
+    {
+      "id": "handy-shower",
+      "category": "散歩・排泄",
+      "label": "給水とマナー洗浄を1つに",
+      "query": "犬 散歩 シャワー ウォーターボトル",
+      "terms": [
+        "シャワー"
+      ],
+      "strength": "ペットボトルに装着し、給水皿とおしっこ跡の洗浄を切り替えやすい2WAY。",
+      "check": "対応するペットボトル、犬の大きさ、容量を確認。",
+      "problems": [
+        "散歩後ケア",
+        "水分補給"
+      ],
+      "name": "犬 水飲み シャワー 給水器 ペットボトル装着するだけ 散歩 水入れ おしっこ ペット 送料無料 犬用 ハンディ シャワー M リッチェル お出かけ 水飲み 水 給水ボトル 水トイレエチケット ウォーターボトル お出掛け 携帯水筒 散歩こぼれない ユウランプ ギフト 敬老の日",
+      "price_yen": 1280,
+      "shop": "犬 服 ユウランプ",
+      "review_average": 4.56,
+      "review_count": 274,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/youlamp/cabinet/12737277/2026-08-20t121839.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00qxf1n.u92kl8ef.g00qxf1n.u92kmc29/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyoulamp%2Flovelypet-handyshower%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fyoulamp%2Fi%2F10002838%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "youlamp:10002838"
+    },
+    {
+      "id": "paw-wipe",
+      "category": "散歩・排泄",
+      "label": "帰宅後の足・体拭き",
+      "query": "犬 足拭き ウェットティッシュ ノンアルコール 無香料",
+      "terms": [
+        "ウェット",
+        "犬"
+      ],
+      "strength": "散歩や旅行後の足・体をその場で拭きやすい。厚さ、枚数、香料の有無で比較。",
+      "check": "用途、成分、対象部位を確認。目や口の周りは商品表示に従ってください。",
+      "problems": [
+        "散歩後ケア",
+        "雨・泥汚れ"
+      ],
+      "name": "【お得なクーポン配布中】ペット用ウェットティッシュ 犬 猫 大判 厚手 ノンアルコール 無香料 詰替用150枚 万能ウェットタオル 足拭き 体拭き 消臭 除菌 国産 日本製 ウェットシート クリンポイ PEPPY",
+      "price_yen": 2024,
+      "shop": "PEPPY(ペピイ) 楽天市場店",
+      "review_average": 4.92,
+      "review_count": 25,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/peppyshop/cabinet/thum/300_off/0345746290.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00rxfqn.u92kl93d.g00rxfqn.u92kmf60/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fpeppyshop%2F10000817%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fpeppyshop%2Fi%2F10000817%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "peppyshop:10000817"
+    },
+    {
+      "id": "pet-sheet",
+      "category": "宿泊・旅行",
+      "label": "宿泊先のトイレ失敗対策",
+      "query": "犬 ペットシーツ 厚型 ワイド 消臭",
+      "terms": [
+        "ペットシーツ"
+      ],
+      "strength": "吸収量、サイズ、枚数を選べる宿泊時の基本用品。普段使う銘柄を持参しやすい。",
+      "check": "犬の排尿量、トレー寸法、宿のルールに合うサイズを確認。",
+      "problems": [
+        "臭い・排泄",
+        "旅行準備"
+      ],
+      "name": "【4,480円→SALE 3,980円｜19日10:00～24日9:59】Famy ペットシーツ JPPMA認証 うす型 薄型 1回使い切り レギュラー 800枚/ ワイド 400枚/ スーパーワイド 204枚 厚型 3回吸収 レギュラー 400枚/ ワイド 200枚/ スーパーワイド 104枚 ペットシート トイレシート 犬 猫 W消臭",
+      "price_yen": 3980,
+      "shop": "Famy 公式ストア",
+      "review_average": 4.55,
+      "review_count": 14812,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/ryouhin-monogatari/cabinet/sale/salethumb/petsheets-s_sale.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00s5lzn.u92kl13a.g00s5lzn.u92km060/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fryouhin-monogatari%2F10000024%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fryouhin-monogatari%2Fi%2F10000024%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "ryouhin-monogatari:10000024"
+    },
+    {
+      "id": "portable-toilet",
+      "category": "宿泊・旅行",
+      "label": "持ち運べるトイレスペース",
+      "query": "犬 折りたたみ トイレトレー 旅行",
+      "terms": [
+        "トイレ",
+        "犬"
+      ],
+      "strength": "車内、宿、キャンプでトイレ位置を決めやすい。折りたたみ寸法と防水性が比較軸。",
+      "check": "シーツ固定方法、使用時寸法、収納時寸法を確認。",
+      "problems": [
+        "臭い・排泄",
+        "旅行準備"
+      ],
+      "name": "シリコントイレマット 犬 トイレトレー 60×40cm 洗える 防水 滑り止め フチあり はみ出し防止 丸洗い可能 柔らか素材 食事 ランチョンマット 折りたたみ 旅行 帰省 小型犬 中型犬 肉球 おしゃれ エサ台",
+      "price_yen": 2580,
+      "shop": "Kurashi Picks",
+      "review_average": 4.45,
+      "review_count": 11,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/kurashi-picks/cabinet/11440183/k0021.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00upe8n.u92kl746.g00upe8n.u92km329/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkurashi-picks%2Fb0021%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkurashi-picks%2Fi%2F10000022%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "kurashi-picks:10000022"
+    },
+    {
+      "id": "car-cover",
+      "category": "宿泊・旅行",
+      "label": "抜け毛・泥汚れから座席を守る",
+      "query": "犬 車 シートカバー 防水 ドライブ 後部座席",
+      "terms": [
+        "シート",
+        "犬"
+      ],
+      "strength": "後部座席の泥、毛、よだれ対策。防水、滑り止め、開口部、洗いやすさで比較。",
+      "check": "車種、座席寸法、シートベルト穴、飛び出し防止器具との併用を確認。",
+      "problems": [
+        "車移動",
+        "雨・泥汚れ"
+      ],
+      "name": "【楽天1位】大型犬もOk！PETTENA ペット用 ドライブシート 犬 車 シート マット ペット ボード入り ドライブベッド 全車種対応 防水 滑止め 傷つきにくい 取り付け簡単 掃除しやすい 後部座席 車保護 カーシートカバー GW 母の日",
+      "price_yen": 7900,
+      "shop": "PETTENA",
+      "review_average": 4.4,
+      "review_count": 306,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/pettena/cabinet/11940668/12911992/imgrc0106893539.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00ugw7n.u92kl5b7.g00ugw7n.u92kma8b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fpettena%2Fyy%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fpettena%2Fi%2F10000186%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "pettena:10000186"
+    },
+    {
+      "id": "water-bottle",
+      "category": "暑さ・水分",
+      "label": "外出中の水分補給",
+      "query": "犬 散歩 給水ボトル 漏れない",
+      "terms": [
+        "給水",
+        "犬"
+      ],
+      "strength": "片手で給水しやすく、残水を戻せる商品もある。容量、漏れにくさ、洗いやすさが比較軸。",
+      "check": "飲み口の大きさ、容量、ロック方法を確認。",
+      "problems": [
+        "水分補給",
+        "旅行準備"
+      ],
+      "name": "【2個以上で5%OFF】【INULABO(イヌラボ)】 ペット ウォーターボトル 犬 水筒 給水ボトル 給水器 ウォーターボトル 犬 散歩 お散歩グッズ 漏れ防止 ワンタッチ 日用品 熱中症対策 550ml - 300ml",
+      "price_yen": 2680,
+      "shop": "INULABO公式楽天市場店",
+      "review_average": 4.35,
+      "review_count": 260,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/k-digital/cabinet/shohin01/pet/inb-wbt/inb-wbt-550.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00tnten.u92kl383.g00tnten.u92kmce9/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fk-digital%2Finb-wbt-550%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fk-digital%2Fi%2F10000228%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "k-digital:10000228"
+    },
+    {
+      "id": "cooling-mat",
+      "category": "暑さ・水分",
+      "label": "休憩場所の暑さ対策補助",
+      "query": "犬 冷感マット 洗える ひんやり",
+      "terms": [
+        "冷",
+        "犬"
+      ],
+      "strength": "宿や車内の休憩場所に敷きやすい。素材、洗濯方法、滑り止め、サイズで比較。",
+      "check": "熱中症を防ぐ保証はありません。気温管理、給水、休憩を優先してください。",
+      "problems": [
+        "暑さ対策",
+        "旅行準備"
+      ],
+      "name": "＼ シーズン終盤★お得な2枚セット登場！／ 瞬間冷却 ひんやりマット 冷感敷きパッド シングル 30×40cm 90×90cm 4.2kg 90×140cm 6.6kg クールマット 体圧分散 接触冷感 冷感寝具 ジェルマット夏用快 猫犬 抗菌防ダニ 涼感マット 涼感寝具",
+      "price_yen": 980,
+      "shop": "Aooka",
+      "review_average": 4.2,
+      "review_count": 829,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/aooka/cabinet/12995328/13028605/imgrc0102365728.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00trm8n.u92klb97.g00trm8n.u92km4d3/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Faooka%2Fspeedcool-01%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Faooka%2Fi%2F10000305%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "aooka:10000305"
+    },
+    {
+      "id": "k9-lamb",
+      "category": "フード・おやつ",
+      "label": "素材表示を見て選ぶフリーズドライ",
+      "query": "K9ナチュラル ラム 犬",
+      "terms": [
+        "K9",
+        "ラム"
+      ],
+      "strength": "フリーズドライタイプ。主食かトリーツか、原材料、戻し方、給与量を商品単位で確認しやすい。",
+      "check": "お腹の不調を治す商品ではありません。切替は少量から行い、体調不良時は獣医師へ。",
+      "problems": [
+        "食べムラ・お腹",
+        "原材料で選ぶ"
+      ],
+      "name": "★エントリーでP9倍以上★【ケーナインナチュラル】K9ナチュラル　フリーズドライ　ラム・グリーントライプ　200g【15時までの注文で当日発送 正規品 フリーズドライフード 犬用】",
+      "price_yen": 5401,
+      "shop": "グリーンドッグ&キャット",
+      "review_average": 4.8,
+      "review_count": 430,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/greendog/cabinet/k9nr/9ft2-00-1.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00po5zn.u92kla85.g00po5zn.u92km681/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fgreendog%2Fk9nr9ft2-00%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fgreendog%2Fi%2F10011485%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "greendog:10011485"
+    },
+    {
+      "id": "single-ingredient-treat",
+      "category": "フード・おやつ",
+      "label": "原材料が分かりやすいおやつ",
+      "query": "犬 おやつ 無添加 国産 鮭 ひとくち",
+      "terms": [
+        "犬",
+        "鮭"
+      ],
+      "strength": "原材料数が少ない商品は比較しやすい。携帯性、割りやすさ、カロリーも確認。",
+      "check": "無添加の範囲を表示で確認。間食は主食量と総カロリーを調整してください。",
+      "problems": [
+        "原材料で選ぶ",
+        "体重管理"
+      ],
+      "name": "ひとくちサーモン 30g◆北海道産 犬 おやつ 無添加 国産 犬猫のおやつシズカ sizuka エゾマルシェ ドッグフード ペット 好き 手作り 鮭 ジャーキー 鮭 ノーズワーク 知育玩具",
+      "price_yen": 990,
+      "shop": "エゾマルシェ - 犬も猫も人も -",
+      "review_average": 4.89,
+      "review_count": 27,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/sizuka/cabinet/11/1713_1.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00sotfn.u92kl0db.g00sotfn.u92kmd36/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsizuka%2F1713%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsizuka%2Fi%2F10000006%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "sizuka:10000006"
+    },
+    {
+      "id": "paw-washer",
+      "category": "散歩・排泄",
+      "label": "泥足を玄関前で洗いやすく",
+      "query": "犬 足洗い カップ 散歩",
+      "terms": [
+        "足",
+        "犬"
+      ],
+      "strength": "ブラシ付きカップで足先を包んで洗うタイプ。雨上がりや土のドッグラン後に使いやすい。",
+      "check": "足の大きさ、ブラシの硬さ、分解して洗えるかを確認。嫌がる犬には無理に使わないでください。",
+      "problems": [
+        "散歩後ケア",
+        "雨・泥汚れ"
+      ],
+      "name": "犬 足洗い カップ&ブラシ JABLLA ジャブラ 【新色登場】 特許取得 高級シリコン ブラシ 柔らかい 簡単 足洗い お散歩 ペット グッズ 散歩 携帯 泥汚れ 清潔 肉球ケア シャワーブラシ 小型犬 中型犬 対応 犬用 猫 シリコンブラシ メディア紹介 NHK テレ東",
+      "price_yen": 2380,
+      "shop": "オリジナルペットグッズ HOOPOES",
+      "review_average": 4.25,
+      "review_count": 148,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/hoopoes/cabinet/jablla2025/imgrc0107667507.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00tgnwn.u92kl9ea.g00tgnwn.u92km472/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhoopoes%2F001%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhoopoes%2Fi%2F10000000%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "hoopoes:10000000"
+    },
+    {
+      "id": "poop-carrier",
+      "category": "散歩・排泄",
+      "label": "排泄物を車外・バッグ外で持ち運ぶ",
+      "query": "犬 うんち 持ち運び ケース 散歩",
+      "terms": [
+        "うんち",
+        "犬"
+      ],
+      "strength": "処理袋を収納するケースやポーチ。密閉方法、取り付け方、洗いやすさで比較。",
+      "check": "防臭性能と完全密閉は同じではありません。袋との併用方法を確認。",
+      "problems": [
+        "臭い・排泄",
+        "車移動"
+      ],
+      "name": "BITE ME バイトミー ビション プーバッグマナーポーチ(犬 散歩 お出かけ マナーポーチ マナー袋ポーチ マナー袋ケース お散歩 散歩グッズ おしゃれ かわいい 携帯 持ち運び コンパクト プーバッグ うんち袋 うんちバッグ ゴミ袋 ストラップ付き POOP BAG トリーツポーチ)",
+      "price_yen": 1522,
+      "shop": "KIMITO/キミト 小型犬グッズ",
+      "review_average": 4.9,
+      "review_count": 10,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/kimito-dog/cabinet/dn03/dn00120_pc.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00ua6kn.u92kla3f.g00ua6kn.u92kmb4f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkimito-dog%2Fdn00120%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkimito-dog%2Fi%2F10000147%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "kimito-dog:10000147"
+    },
+    {
+      "id": "travel-crate",
+      "category": "車移動・安全",
+      "label": "車と宿で落ち着ける居場所",
+      "query": "リッチェル キャンピングキャリー 犬",
+      "terms": [
+        "キャリー",
+        "犬"
+      ],
+      "strength": "移動時の囲われた居場所として使えるハードタイプ。扉、持ち手、車載固定、犬の姿勢で比較。",
+      "check": "犬が立つ・向きを変える・伏せるための内寸、耐荷重、車での固定方法を確認。",
+      "problems": [
+        "車移動",
+        "旅行準備"
+      ],
+      "name": "リッチェル キャンピングキャリー ダブルドア ファイン ファインR S 犬 猫 キャリーケース ペットキャリー ハードキャリー クレート 小型犬 超小型犬 お出かけ 通院 車 ドライブ シートベルト固定 ハウス 防災 避難 レビュープレゼント",
+      "price_yen": 5280,
+      "shop": "ペッツビレッジクロス",
+      "review_average": 4.71,
+      "review_count": 498,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/kurosu/cabinet/rakulogo/rakulogo13/r1301_00441.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00pq2rn.u92kle36.g00pq2rn.u92km648/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkurosu%2F10025022%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkurosu%2Fi%2F10025022%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "kurosu:10025022"
+    },
+    {
+      "id": "seat-belt",
+      "category": "車移動・安全",
+      "label": "車内の飛び出し対策補助",
+      "query": "犬 車 シートベルト ハーネス",
+      "terms": [
+        "シートベルト",
+        "犬"
+      ],
+      "strength": "ハーネスと車体側をつなぐ補助用品。長さ調整、金具、車側の適合を比較。",
+      "check": "首輪だけには接続せず、商品表示と車両適合を確認。衝突安全性能は個別商品の試験情報を確認。",
+      "problems": [
+        "車移動",
+        "安全・迷子"
+      ],
+      "name": "＼全商品ポイント5倍／ ペット用シートベルト ペット用 シートベルト 犬 猫 車 ドライブ お出かけ 飛び出し防止 落下防止 簡単取付 散歩 リード 後部座席 車内 家 外出 安全 安心 4色 飛び出し防止 いぬ ねこ おすすめ 人気 小型犬 大型犬 中型犬",
+      "price_yen": 1270,
+      "shop": "エクスプレスジャパン",
+      "review_average": 4.85,
+      "review_count": 13,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/expsjapan/cabinet/img1/5/9/59--petbelt-001-.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00t1qtn.u92kl81c.g00t1qtn.u92km141/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fexpsjapan%2Fcim-petbelt-001-%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fexpsjapan%2Fi%2F10034425%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "expsjapan:10034425"
+    },
+    {
+      "id": "portable-bowl",
+      "category": "宿泊・旅行",
+      "label": "軽く持てる食器・水皿",
+      "query": "犬 折りたたみ ボウル 旅行",
+      "terms": [
+        "ボウル",
+        "犬"
+      ],
+      "strength": "散歩、ドライブ、宿泊で水や食事を与えやすい折りたたみ式。容量、深さ、洗いやすさで比較。",
+      "check": "素材、耐熱温度、食品接触用途、犬の口の大きさを確認。",
+      "problems": [
+        "水分補給",
+        "旅行準備"
+      ],
+      "name": "＼最大500円OFFクーポン配布中／【BITE ME バイトミー ポータブル折りたたみボウル】犬 折りたたみ ボウル 犬 水飲み ボウル 携帯用 シリコン フードボウル コンパクト カラビナ付き 散歩用 旅行用 軽量 小型犬 中型犬 韓国ブランド 全8色",
+      "price_yen": 726,
+      "shop": "Best Friends/ベストフレンズ",
+      "review_average": 4.73,
+      "review_count": 55,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/welrys/cabinet/biteme/bm2/bm-030-topnn1.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00s9b7n.u92kl392.g00s9b7n.u92km998/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fwelrys%2Fbm-030%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fwelrys%2Fi%2F10001230%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "welrys:10001230"
+    },
+    {
+      "id": "raincoat",
+      "category": "雨・汚れ",
+      "label": "雨の日の濡れ・泥はねを減らす",
+      "query": "犬 レインコート 防水 散歩",
+      "terms": [
+        "レイン",
+        "犬"
+      ],
+      "strength": "被毛や腹側の泥はねを減らし、帰宅後の手入れ時間を抑えやすい。",
+      "check": "首回り、胸回り、着丈、排泄部分、反射材、蒸れやすさを確認。完全防水は商品表示を優先。",
+      "problems": [
+        "雨・泥汚れ",
+        "散歩後ケア"
+      ],
+      "name": "犬用レインコート 可愛いチェック柄 犬 レインコート ドッグウェア 雨具 犬服 小型犬 中型犬 いぬ フード付き防水 着せやすい カッパ ポンチョ 合羽 防水 梅雨 着脱簡単 マジックテープ ポリエステル素材 可愛い ペット 軽量 サイズ豊富 リード穴 送料無料 yp rm",
+      "price_yen": 1580,
+      "shop": "マックス・アイ",
+      "review_average": 4.57,
+      "review_count": 505,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/macks-i/cabinet/raincoat/dog-raincoat-1-3.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00s3yon.u92kl2e0.g00s3yon.u92km43c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmacks-i%2Fdog-raincoat%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmacks-i%2Fi%2F10000399%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "macks-i:10000399"
+    },
+    {
+      "id": "lick-mat",
+      "category": "宿泊・旅行",
+      "label": "慣れない宿で落ち着く時間を作りたい",
+      "query": "犬 リックマット 吸盤 シリコン",
+      "terms": [
+        "リック",
+        "犬"
+      ],
+      "strength": "舐める行動に使うマット。吸盤、溝の深さ、洗いやすさ、食品接触用途を比べやすい。",
+      "check": "誤飲を防ぐため見守って使用し、噛み癖のある犬には破損がないか確認。",
+      "problems": [
+        "宿で落ち着く",
+        "食べムラ・お腹"
+      ],
+      "name": "ペット 早食い防止皿 リックマット【メール便 送料無料】 舐める なめる リックパッド 犬 早食い防止 シリコン 食器 早食い 吸盤 お風呂 シャワー 入浴サポート 小型犬 猫 クリスマス 思い出 おうち時間 sat",
+      "price_yen": 1000,
+      "shop": "Pet Select by Nihonikuji",
+      "review_average": 4.46,
+      "review_count": 13,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/petselect/cabinet/dog/other/rickmat/7020010400_sp.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00t1jtn.u92klbba.g00t1jtn.u92km417/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fpetselect%2F7020010400%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fpetselect%2Fi%2F10000751%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "petselect:10000751"
+    },
+    {
+      "id": "portable-bed",
+      "category": "宿泊・旅行",
+      "label": "宿でもいつもの寝場所を作りたい",
+      "query": "犬 ベッド 持ち運び 洗える 旅行",
+      "terms": [
+        "ベッド",
+        "犬"
+      ],
+      "strength": "持ち運べる休憩場所。収納寸法、洗濯方法、底面の滑り止め、犬の体格で比較。",
+      "check": "宿の持込ルールと設置場所を確認。慣れた匂いのタオルも役立ちます。",
+      "problems": [
+        "宿で落ち着く",
+        "旅行準備"
+      ],
+      "name": "＼レビュー1600件超／ ドライブベッド ドライブボックス 犬 車 シート ペット 洗える 獣医師推奨 耐荷重15kg 多頭飼い 2匹 伸縮リード2本付 滑り止め付 厚手ふかふか クッション 肩掛け 2way 助手席 後部座席 軽自動車対応 小型犬 中型犬 旅行 お出かけ",
+      "price_yen": 5980,
+      "shop": "Nextオンライン",
+      "review_average": 4.61,
+      "review_count": 1651,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/next-online/cabinet/drivebox/db_samune_20270711.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00tfbhn.u92klb45.g00tfbhn.u92kmeb3/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnext-online%2F10000268%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnext-online%2Fi%2F10000248%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "next-online:10000248"
+    },
+    {
+      "id": "pet-towel",
+      "category": "雨・汚れ",
+      "label": "雨や水遊びのあとを早く乾かしたい",
+      "query": "犬 吸水 タオル 速乾 ペット",
+      "terms": [
+        "吸水",
+        "犬"
+      ],
+      "strength": "足先や被毛の水分を拭き取りやすい用品。吸水性、乾きやすさ、サイズ、洗濯方法で比較。",
+      "check": "強くこすらず、皮膚や耳の状態を確認しながら使ってください。",
+      "problems": [
+        "雨・泥汚れ",
+        "散歩後ケア"
+      ],
+      "name": "マラソン期間限定ポイント3倍【圧倒的高評価4.75!】ペット タオル 吸水 吸水タオル 超吸水 速乾 ペット用 犬 猫 バスタオル シャワー シャンプー マイクロファイバー 体拭き ドライヤー 時間短縮 5カラー 60cmx115cm クリスマス プレゼント",
+      "price_yen": 1290,
+      "shop": "アウトドア Kom&Kom楽天市場店",
+      "review_average": 4.73,
+      "review_count": 499,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/kom-kom/cabinet/07465170/imgrc0103285304.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00thk8n.u92kl82e.g00thk8n.u92kme08/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkom-kom%2Fr04102500-gbcp%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkom-kom%2Fi%2F10000020%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "kom-kom:10000020"
+    },
+    {
+      "id": "car-step",
+      "category": "車移動・安全",
+      "label": "車への乗り降りの負担を減らしたい",
+      "query": "犬 車 ステップ 折りたたみ 滑り止め",
+      "terms": [
+        "ステップ",
+        "犬"
+      ],
+      "strength": "段差を小さくする補助用品。耐荷重、踏面、滑り止め、車高、収納寸法が比較軸。",
+      "check": "飛び降りを完全に防ぐものではありません。設置中は犬を支え、商品耐荷重を確認。",
+      "problems": [
+        "車移動",
+        "シニア・負担"
+      ],
+      "name": "【楽天1位】スロープ 犬 ペットスロープ ペットステップ 2つ折り ペット用スロープ 階段 ペット用 踏み台 ドッグスロープ ドッグステップ 犬用 ゆるやか 折りたたみ 屋外 車用 ステップ ペット用階段 クッション 段差 犬用階段 小型犬 老犬 1年保証 ■[送料無料]",
+      "price_yen": 7040,
+      "shop": "タープ&テントのスマイルプライス",
+      "review_average": 4.12,
+      "review_count": 274,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/smile88/cabinet/master/1st/a13417.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00q6pen.u92klcf7.g00q6pen.u92kmf24/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsmile88%2Fa13417%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsmile88%2Fi%2F10064993%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "smile88:10064993"
+    },
+    {
+      "id": "drive-bed",
+      "category": "車移動・安全",
+      "label": "車内で姿勢が安定しにくい",
+      "query": "犬 ドライブベッド 飛び出し防止 洗える",
+      "terms": [
+        "ドライブ",
+        "犬"
+      ],
+      "strength": "座面のずれや姿勢の不安定さを抑える補助用品。固定方法、側面、洗濯、車両寸法で比較。",
+      "check": "衝突安全を保証する用品ではありません。車載固定とハーネスの説明を確認。",
+      "problems": [
+        "車移動",
+        "宿で落ち着く"
+      ],
+      "name": "【予約9月25日順次発送】【新色追加/まとめ買い対象】【ご愛顧SALE】小型犬 犬用 ベッド 車 お出かけ アウトドア 撥水 防災 手洗いOK 洗える ペットドライブ用品 コーデュラ交換OK/返品不可コーデュラドライブベッド M 〜7Kg (飛び出し防止フック1本付)",
+      "price_yen": 5790,
+      "shop": "犬の服 RADICA(ラディカ)",
+      "review_average": 4.77,
+      "review_count": 543,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/radica/cabinet/2026aw/c8004-91_stamp_mx.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00qwnmn.u92klf4c.g00qwnmn.u92km3b7/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fradica%2Fc8004-0202%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fradica%2Fi%2F10021711%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "radica:10021711"
+    },
+    {
+      "id": "slow-feeder",
+      "category": "フード・おやつ",
+      "label": "早食いをゆっくりにしたい",
+      "query": "犬 早食い防止 食器 滑り止め",
+      "terms": [
+        "早食い",
+        "犬"
+      ],
+      "strength": "凹凸で食べる速度を調整する食器。溝の形、洗いやすさ、素材、鼻の長さで比較。",
+      "check": "むせや嘔吐が続く場合は用品だけで判断せず獣医師へ相談してください。",
+      "problems": [
+        "早食い",
+        "体重管理"
+      ],
+      "name": "【食事時間が3倍に】ペット 早食い防止食器 フードボウル 早食い防止 食器 衛生的 滑り止め ダイエット こぼれにくい 省スペース 丸飲み防止 犬 早食い 小型犬 中型犬 大型犬 餌入れ エサ入れ 丸洗い 熱湯消毒可能 胃捻転 消化不良 ダイエット 肥満防止 嘔吐防止 迷路",
+      "price_yen": 800,
+      "shop": "Gutto楽天市場店",
+      "review_average": 4.34,
+      "review_count": 394,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/forthon/cabinet/product/sku7/r703/r703_1z.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00siqmn.u92kle9f.g00siqmn.u92kmebf/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fforthon%2Fr703%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fforthon%2Fi%2F10001034%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "forthon:10001034"
+    },
+    {
+      "id": "treat-pouch",
+      "category": "散歩・排泄",
+      "label": "散歩中のごほうびをすぐ出したい",
+      "query": "犬 トリーツポーチ 散歩 マナーポーチ",
+      "terms": [
+        "トリーツ",
+        "犬"
+      ],
+      "strength": "ごほうび、袋、小物を分けて携帯。片手での開閉、洗いやすさ、装着方法で比較。",
+      "check": "食品を直接入れられるか、排泄物用品と分離できるかを確認。",
+      "problems": [
+        "散歩後ケア",
+        "しつけ・ごほうび"
+      ],
+      "name": "【まとめ買い対象】犬 小型犬 犬用 マナーポーチ 消臭機能付き うんち袋 お散歩用品 ウンチ処理袋 トリーツポーチ PVC 交換OK/返品不可 メール便可マナーポーチ",
+      "price_yen": 1690,
+      "shop": "犬の服 RADICA(ラディカ)",
+      "review_average": 4.42,
+      "review_count": 185,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/radica/cabinet/2026ss/m4001-rstamp.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00qwnmn.u92klf4c.g00qwnmn.u92km3b7/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fradica%2Fm4001-0002%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fradica%2Fi%2F10020802%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "radica:10020802"
+    },
+    {
+      "id": "dog-tag",
+      "category": "車移動・安全",
+      "label": "旅先で迷子対策を見直したい",
+      "query": "犬 迷子札 軽量 防水",
+      "terms": [
+        "迷子札",
+        "犬"
+      ],
+      "strength": "首輪やハーネスに連絡先を付ける補助用品。文字の読みやすさ、耐水性、重さで比較。",
+      "check": "個人情報の表示範囲を決め、鑑札・マイクロチップ登録情報も最新にしてください。",
+      "problems": [
+        "安全・迷子",
+        "旅行準備"
+      ],
+      "name": "迷子札 犬 タグ ネコ お名前シール ペット 名入れ ドッグタグ 災害グッズ おなまえシール 災害対策 犬用 猫用 ペットタグ 防災 迷子防止 名札 首輪 イヌ ペット用品 日本製 ノンアイロン 迷子札 猫 迷子札 軽量 迷子 ペット ネームタグ プレゼント ギフト グッズ 贈り物",
+      "price_yen": 700,
+      "shop": "スマホ ケース 専門店のedge tribe",
+      "review_average": 4.82,
+      "review_count": 33,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/edgetribe/cabinet/seal/onamae03/onamae-pet_1.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00st3fn.u92klfe7.g00st3fn.u92km2b2/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fedgetribe%2Fps-onamae504%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fedgetribe%2Fi%2F10395468%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "edgetribe:10395468"
+    },
+    {
+      "id": "k9-beef-tripe",
+      "category": "フード・おやつ",
+      "label": "食べムラ時のトッピング候補",
+      "query": "K9ナチュラル ビーフ グリーントライプ 犬",
+      "terms": [
+        "K9",
+        "ビーフ",
+        "トライプ"
+      ],
+      "strength": "牛の胃袋100％の栄養補助食。主食ではなく、いつもの食事へのトッピングや間食として量を調整。",
+      "check": "ラム版より脂質・カロリーが高い商品表示です。体重管理や脂質制限中は成分値を確認し、必要なら獣医師へ。",
+      "problems": [
+        "食べムラ・お腹",
+        "原材料で選ぶ"
+      ],
+      "name": "★エントリーでP9倍以上★【ケーナインナチュラル】K9ナチュラル　フリーズドライ　ビーフ・グリーントライプ　250g【15時までの注文で当日発送 正規品 フリーズドライフード 犬用】",
+      "price_yen": 5401,
+      "shop": "グリーンドッグ&キャット",
+      "review_average": 4.72,
+      "review_count": 82,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/greendog/cabinet/k9nr/9bt2-00-1.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00po5zn.u92kla85.g00po5zn.u92km681/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fgreendog%2Fk9nr9bt2-00%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fgreendog%2Fi%2F10017694%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "greendog:10017694"
+    },
+    {
+      "id": "k9-lamb-feast",
+      "category": "フード・おやつ",
+      "label": "K9を主食候補として試したい",
+      "query": "K9ナチュラル ラム フィースト 500g 犬",
+      "terms": [
+        "K9",
+        "ラム",
+        "フィースト"
+      ],
+      "exclude_terms": [
+        "サーモン"
+      ],
+      "strength": "ラムを使った総合栄養食。まず少量サイズで食いつき、便、体重、切替時の変化を記録しやすい。",
+      "check": "グリーントライプやトリーツとは用途が異なります。給与量と戻し方は商品表示を優先。",
+      "problems": [
+        "食べムラ・お腹",
+        "原材料で選ぶ"
+      ],
+      "name": "★エントリーでP9倍以上★【ケーナインナチュラル】K9ナチュラル　フリーズドライ　ラム・フィースト　500g【15時までの注文で当日発送 正規品 フリーズドライフード 犬用 成犬 老犬 子犬】",
+      "price_yen": 7557,
+      "shop": "グリーンドッグ&キャット",
+      "review_average": 4.78,
+      "review_count": 226,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/greendog/cabinet/k9nr/9fl1-00-1.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00po5zn.u92kla85.g00po5zn.u92km681/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fgreendog%2Fk9nr9fl1-00%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fgreendog%2Fi%2F10011481%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "greendog:10011481"
+    },
+    {
+      "id": "k9-beef-feast",
+      "category": "フード・おやつ",
+      "label": "ビーフ主原料の主食候補を比べたい",
+      "query": "K9ナチュラル ビーフ フィースト 500g 犬",
+      "terms": [
+        "K9",
+        "ビーフ",
+        "フィースト"
+      ],
+      "strength": "ビーフを使った総合栄養食。ラムとの違いは体質への適合を断定せず、原材料と成分値で比較。",
+      "check": "特定たんぱく質を避けている場合は全原材料を確認。療法食の代用にはしないでください。",
+      "problems": [
+        "食べムラ・お腹",
+        "原材料で選ぶ"
+      ],
+      "name": "★エントリーでP9倍以上★【ケーナインナチュラル】K9ナチュラル　フリーズドライ　ビーフ・フィースト　500g【15時までの注文で当日発送 正規品 フリーズドライフード 犬用 成犬 老犬 子犬】",
+      "price_yen": 7557,
+      "shop": "グリーンドッグ&キャット",
+      "review_average": 4.67,
+      "review_count": 171,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/greendog/cabinet/k9nr/9fb1-00-1.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00po5zn.u92kla85.g00po5zn.u92km681/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fgreendog%2Fk9nr9fb1-00%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fgreendog%2Fi%2F10011484%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "greendog:10011484"
+    },
+    {
+      "id": "k9-salmon-feast",
+      "category": "フード・おやつ",
+      "label": "魚を含む主食候補を比べたい",
+      "query": "K9ナチュラル ラム キングサーモン フィースト 500g 犬",
+      "terms": [
+        "K9",
+        "サーモン",
+        "フィースト"
+      ],
+      "strength": "ラムとキングサーモンを主原料にした総合栄養食。魚由来原料を含む候補として比較できる。",
+      "check": "魚だけの単一たんぱく商品ではありません。アレルギーが疑われる場合は自己判断で試し続けないでください。",
+      "problems": [
+        "食べムラ・お腹",
+        "原材料で選ぶ"
+      ],
+      "name": "★エントリーでP9倍以上★【ケーナインナチュラル】K9ナチュラル　フリーズドライ　ラム＆キングサーモン・フィースト　500g【15時までの注文で当日発送 正規品 フリーズドライフード 犬用 成犬 老犬 子犬】",
+      "price_yen": 7557,
+      "shop": "グリーンドッグ&キャット",
+      "review_average": 4.86,
+      "review_count": 265,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/greendog/cabinet/k9nr/9fs2-00-1.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00po5zn.u92kla85.g00po5zn.u92km681/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fgreendog%2Fk9nr9fs2-00%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fgreendog%2Fi%2F10019850%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "greendog:10019850"
+    },
+    {
+      "id": "star-cheese",
+      "category": "無添加フード・おやつ",
+      "label": "小粒のチーズをごほうびに使いたい",
+      "query": "BON rupa 星のちーずさま 犬 おやつ",
+      "terms": [
+        "星",
+        "ちーず"
+      ],
+      "strength": "原材料はチーズ。星型の小粒で、トレーニング時の少量ごほうびに分けやすい。",
+      "check": "間食用です。脂質42.7％以上・537kcal/100gの商品表示のため、乳製品を避ける犬や体重管理中は量に注意。喉詰まり防止のため見守って与えてください。",
+      "problems": [
+        "しつけ・ごほうび",
+        "原材料で選ぶ"
+      ],
+      "name": "犬 おやつ 無添加 国産 Bon rupa ( ボンルパ )「京」 星のちーずさま 30g 犬用 猫用 トリーツ おやつ チーズ 猫 犬 犬おやつ かわいい",
+      "price_yen": 770,
+      "shop": "わたしいぬ わたしねこライフ",
+      "review_average": 4.86,
+      "review_count": 28,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/dogcat-shop/cabinet/11651514/hoshinocheese.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00t0p4n.u92kl29a.g00t0p4n.u92kmc25/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdogcat-shop%2Fbonrupa016%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdogcat-shop%2Fi%2F10000368%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "dogcat-shop:10000368"
+    },
+    {
+      "id": "dt-salmon-cube",
+      "category": "無添加フード・おやつ",
+      "label": "小さな魚おやつを選びたい",
+      "query": "ドッグツリー 角切りミニ 鮭 犬",
+      "terms": [
+        "角切り",
+        "鮭"
+      ],
+      "strength": "約1.5cmの角切り鮭。魚素材の小粒おやつとして、サイズと与える個数を管理しやすい。",
+      "check": "間食用です。魚を避ける犬には与えず、骨や硬さ、原材料、給与量を商品表示で確認。",
+      "problems": [
+        "しつけ・ごほうび",
+        "原材料で選ぶ"
+      ],
+      "name": "【公式】ドッグツリー 角切りミニ 鮭(さけ) S 15g | 無添加 国産 サケ 犬 おやつ 犬のおやつ 犬おやつ 犬用おやつ ドッグフード DOGTREE",
+      "price_yen": 495,
+      "shop": "【公式】ドッグツリー楽天市場店",
+      "review_average": 5.0,
+      "review_count": 4,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/shop-dogtree/cabinet/09050297/s-fish/imgrc0088361565.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00u8mwn.u92kl0a1.g00u8mwn.u92km7d9/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fshop-dogtree%2F4580657822577%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fshop-dogtree%2Fi%2F10000165%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "shop-dogtree:10000165"
+    },
+    {
+      "id": "dt-food-chicken",
+      "category": "無添加フード・おやつ",
+      "label": "ささみ主原料の毎日の主食候補",
+      "query": "ドッグツリー ささみ 25種類 こだわり具材 ドッグフード",
+      "terms": [
+        "ささみ",
+        "25"
+      ],
+      "strength": "生のささみを主原料に、天然食材から栄養を摂る設計の国産・無添加ドッグフード。",
+      "check": "主食として使う場合は総合栄養食表示、給与量、全原材料、鶏への適合を現品で確認。",
+      "problems": [
+        "毎日の主食",
+        "原材料で選ぶ"
+      ],
+      "name": "【お試しサイズ】ドッグツリー ささみと25種類のこだわり具材 50g / 馬肉と25種類のこだわり具材 / かつおと26種類のこだわり具材 50g | 無添加 国産 ドッグツリー ドッグフード ささみ 馬肉 かつお 生肉 グルテンフリー 緑イ貝 DOGTREE",
+      "price_yen": 363,
+      "shop": "【公式】ドッグツリー楽天市場店",
+      "review_average": 5.0,
+      "review_count": 6,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/shop-dogtree/cabinet/product02/dogfood/imgrc0102657432.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00u8mwn.u92kl0a1.g00u8mwn.u92km7d9/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fshop-dogtree%2Fdogfood_trial%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fshop-dogtree%2Fi%2F10000454%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "shop-dogtree:10000454"
+    },
+    {
+      "id": "dt-food-horse",
+      "category": "無添加フード・おやつ",
+      "label": "馬肉主原料の毎日の主食候補",
+      "query": "ドッグツリー 馬肉 25種類 こだわり具材 ドッグフード",
+      "terms": [
+        "馬肉",
+        "25"
+      ],
+      "strength": "生の馬肉を主原料にした国産・無添加ドッグフード。動物性原料を変えて比較したい時の候補。",
+      "check": "馬肉以外の原材料も含みます。避けたい原料、保証成分、給与量を確認。",
+      "problems": [
+        "毎日の主食",
+        "原材料で選ぶ"
+      ],
+      "name": "＼ マラソン期間ポイント10倍！ ／【 50g ／ 600g ／ 1.8kg(600g×3袋) 】馬肉と25種類のこだわり具材【 犬 おやつ 国産 無添加 ドッグツリー DOGTREE 高品質 健康サポート 厳選具材 バランス 】食材本来の旨みと栄養素が摂れるドッグフードです。",
+      "price_yen": 363,
+      "shop": "ひなたぼっこ楽天市場店",
+      "review_average": 5.0,
+      "review_count": 9,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_gold/hinatabocco-shop/dog/dtreats/dogtree/gogtrre_food_baniku1.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00sxbtn.u92kl34e.g00sxbtn.u92kma29/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhinatabocco-shop%2F4580657823819%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhinatabocco-shop%2Fi%2F10006764%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "hinatabocco-shop:10006764"
+    },
+    {
+      "id": "dt-food-bonito",
+      "category": "無添加フード・おやつ",
+      "label": "魚主体の毎日の主食候補",
+      "query": "ドッグツリー かつお 26種類 600g ドッグフード",
+      "terms": [
+        "かつお",
+        "600g"
+      ],
+      "strength": "かつおを主原料とする肉不使用の国産・無添加ドッグフード。魚主体の候補を比べたい時に。",
+      "check": "魚以外の全原材料、総合栄養食表示、保証成分を確認。療法食の代用にはしないでください。",
+      "problems": [
+        "毎日の主食",
+        "原材料で選ぶ"
+      ],
+      "name": "＼ マラソン期間ポイント10倍！ ／【 50g / 600g / 1.8kg(600g×3袋) 】カツオと26種類のこだわり具材 犬 ドッグフード 無添加 国産 ドッグツリー おやつ 犬エサ 犬のごはん 無添加ドッグフード カツオ 国産ドックフード 無添加犬ごはん DOGTREE 高品質",
+      "price_yen": 363,
+      "shop": "ひなたぼっこ楽天市場店",
+      "review_average": 5.0,
+      "review_count": 4,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_gold/hinatabocco-shop/dog/dtreats/dogtree/gogtrre_food_katsuo1.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00sxbtn.u92kl34e.g00sxbtn.u92kma29/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhinatabocco-shop%2F4580657824212%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhinatabocco-shop%2Fi%2F10006765%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "hinatabocco-shop:10006765"
+    },
+    {
+      "id": "dt-salmon-flake",
+      "category": "無添加フード・おやつ",
+      "label": "鮭のふりかけを少量使いたい",
+      "query": "ドッグツリー ふりふり 鮭 そぼろ 犬",
+      "terms": [
+        "鮭",
+        "そぼろ"
+      ],
+      "strength": "国産・無添加表示の鮭そぼろ。いつもの食事への少量トッピングとして量を調整しやすい。",
+      "check": "主食ではありません。魚を避ける犬には与えず、間食量を総カロリーへ含めてください。",
+      "problems": [
+        "しつけ・ごほうび",
+        "食べムラ・お腹"
+      ],
+      "name": "◇ドッグツリー ふりふり鮭(さけ)そぼろ M 35g | ドッグツリー ふりふり鮭 ドッグフード おやつ トッピング 鮭 さけそぼろ ペットフード 栄養豊富 DHA EPA アスタキサンチン 国産 惣菜 ふりかけ 健康 食事 手作り栄養 愛犬 新鮮 食べやすい タンパク質 調理済み",
+      "price_yen": 691,
+      "shop": "ペットフォレスト 楽天市場店",
+      "review_average": 5.0,
+      "review_count": 2,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/petforest/cabinet/japell/japell-16/pf-4580657822348.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00uirhn.u92kl73d.g00uirhn.u92kme44/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fpetforest%2Fpf-4580657822348%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fpetforest%2Fi%2F10011852%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "petforest:10011852"
+    },
+    {
+      "id": "dt-chicken-cube",
+      "category": "無添加フード・おやつ",
+      "label": "鶏ささみの角切りをごほうびに使いたい",
+      "query": "ドッグツリー 一口角切り 鶏ささみ 犬",
+      "terms": [
+        "角切り",
+        "鶏ささみ"
+      ],
+      "strength": "国産・無添加表示の鶏ささみ角切り。小さく分けるごほうびやトッピング候補。",
+      "check": "鶏を避ける犬には不適合。主食と区別し、給与量を確認。",
+      "problems": [
+        "しつけ・ごほうび",
+        "食べムラ・お腹"
+      ],
+      "name": "【公式】ドッグツリー 一口角切り 鶏ささみチーズ M 45g | 国産 ささみ チーズ 小型犬 犬 おやつ 犬のおやつ 犬おやつ 犬用おやつ ドッグフード DOGTREE",
+      "price_yen": 990,
+      "shop": "【公式】ドッグツリー楽天市場店",
+      "review_average": 4.5,
+      "review_count": 2,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/shop-dogtree/cabinet/09050297/chicken/m-hi-torisasamitizu/imgrc0092037654.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00u8mwn.u92kl0a1.g00u8mwn.u92km7d9/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fshop-dogtree%2F4580657821334%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fshop-dogtree%2Fi%2F10000047%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "shop-dogtree:10000047"
+    },
+    {
+      "id": "dt-beef-liver",
+      "category": "無添加フード・おやつ",
+      "label": "牛レバーの小粒おやつを試したい",
+      "query": "ドッグツリー 角切りミニ 牛レバー 犬",
+      "terms": [
+        "角切り",
+        "牛レバー"
+      ],
+      "strength": "国産・無添加表示の角切りミニ。小さく分けたごほうび候補。",
+      "check": "牛を避ける犬には不適合。レバーは間食として少量にし、給与量を守ってください。",
+      "problems": [
+        "しつけ・ごほうび",
+        "原材料で選ぶ"
+      ],
+      "name": "【公式】ドッグツリー 角切りミニ 牛レバー S 15g / M 35g | 無添加 国産 レバー ヒューマングレード 小型犬 犬 おやつ 犬のおやつ 犬おやつ 犬用おやつ トッピング ドッグフード DOGTREE",
+      "price_yen": 495,
+      "shop": "【公式】ドッグツリー楽天市場店",
+      "review_average": 5.0,
+      "review_count": 2,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/shop-dogtree/cabinet/09050297/s-beef/s-beef-livers/imgrc0112078147.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00u8mwn.u92kl0a1.g00u8mwn.u92km7d9/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fshop-dogtree%2F4580657822539%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fshop-dogtree%2Fi%2F10000062%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "shop-dogtree:10000062"
+    },
+    {
+      "id": "dt-sweet-potato",
+      "category": "無添加フード・おやつ",
+      "label": "肉を使わないお芋おやつを選びたい",
+      "query": "ドッグツリー 焼き芋 スティック 犬",
+      "terms": [
+        "焼き芋",
+        "スティック"
+      ],
+      "strength": "国産・無添加表示の焼き芋スティック。肉以外の素材を使った間食候補。",
+      "check": "糖質とカロリーを含みます。体重管理中は小さく分け、主食量と調整。",
+      "problems": [
+        "原材料で選ぶ",
+        "体重管理"
+      ],
+      "name": "★楽天1位【公式】ドッグツリー 焼き芋スティック S 20g / M 60g | 無添加 国産 焼芋 さつまいも さつま芋 サツマイモ 犬 おやつ 犬のおやつ 犬おやつ 犬用おやつ ドッグフード DOGTREE",
+      "price_yen": 495,
+      "shop": "【公式】ドッグツリー楽天市場店",
+      "review_average": 4.85,
+      "review_count": 13,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/shop-dogtree/cabinet/product02/ranking/13689502/imgrc0118295593.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00u8mwn.u92kl0a1.g00u8mwn.u92km7d9/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fshop-dogtree%2F4580657824717%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fshop-dogtree%2Fi%2F10000505%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "shop-dogtree:10000505"
+    },
+    {
+      "id": "dt-apple",
+      "category": "無添加フード・おやつ",
+      "label": "果物の小粒おやつを選びたい",
+      "query": "ドッグツリー 一口角切り りんご 犬",
+      "terms": [
+        "角切り",
+        "りんご"
+      ],
+      "strength": "国産・無添加表示のりんごおやつ。小粒で与える個数を決めやすい。",
+      "check": "果糖を含む間食です。体重管理や持病がある場合は給与量を確認。",
+      "problems": [
+        "原材料で選ぶ",
+        "体重管理"
+      ],
+      "name": "【公式】ドッグツリー 一口角切り りんご S 7g / M 25g | 無添加 国産 りんご 林檎 リンゴ 犬 おやつ 犬のおやつ 犬おやつ 犬用おやつ ドッグフード DOGTREE",
+      "price_yen": 495,
+      "shop": "【公式】ドッグツリー楽天市場店",
+      "review_average": 5.0,
+      "review_count": 1,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/shop-dogtree/cabinet/product02/fruit_potato/imgrc0099911011.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00u8mwn.u92kl0a1.g00u8mwn.u92km7d9/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fshop-dogtree%2F4580657824632%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fshop-dogtree%2Fi%2F10000506%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "shop-dogtree:10000506"
+    },
+    {
+      "id": "dt-cheese-cube",
+      "category": "無添加フード・おやつ",
+      "label": "柔らかいチーズキューブを選びたい",
+      "query": "ドッグツリー チーズ キューブ 犬",
+      "terms": [
+        "チーズ",
+        "キューブ"
+      ],
+      "strength": "小さなキューブ状のチーズ系おやつ。トレーニング時に個数を決めやすい。",
+      "check": "乳製品を避ける犬には不適合。脂質・塩分・給与量を確認。",
+      "problems": [
+        "原材料で選ぶ",
+        "しつけ・ごほうび"
+      ],
+      "name": "【最大10％OFFクーポン配布中】 ドッグツリー チーズキューブ S10g（犬用おやつ）",
+      "price_yen": 445,
+      "shop": "Relish",
+      "review_average": 4.5,
+      "review_count": 2,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/auc-relish/cabinet/teats-4/4580657822638.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00qh6hn.u92kl959.g00qh6hn.u92kmf4d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-relish%2F4560281608860%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-relish%2Fi%2F10012147%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "auc-relish:10012147"
+    },
+    {
+      "id": "dt-pork-ear",
+      "category": "無添加フード・おやつ",
+      "label": "豚耳の細切りを噛むおやつにしたい",
+      "query": "ドッグツリー 豚耳 細切 犬",
+      "terms": [
+        "豚耳",
+        "細切"
+      ],
+      "strength": "豚耳を細切りにした噛みごたえのある間食候補。",
+      "check": "豚を避ける犬には不適合。丸飲み、歯の損傷、喉詰まりを防ぐため見守り、サイズを確認。",
+      "problems": [
+        "原材料で選ぶ",
+        "噛むおやつ"
+      ],
+      "name": "【2,228円お得！たっぷり大容量】【公式】ドッグツリー 豚耳の細切 500g | お徳用 大容量 まとめ買い 大袋 無添加 国産 豚耳 長持ち 硬め ストレス解消 犬 おやつ 犬のおやつ 犬おやつ 犬用おやつ ドッグフード DOGTREE",
+      "price_yen": 5198,
+      "shop": "【公式】ドッグツリー楽天市場店",
+      "review_average": 5.0,
+      "review_count": 2,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/shop-dogtree/cabinet/product02/pork/imgrc0116759212.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00u8mwn.u92kl0a1.g00u8mwn.u92km7d9/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fshop-dogtree%2Fpig-ear-strips_500%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fshop-dogtree%2Fi%2F10000443%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "shop-dogtree:10000443"
+    },
+    {
+      "id": "dt-turkey-achilles",
+      "category": "無添加フード・おやつ",
+      "label": "噛む時間のあるおやつを選びたい",
+      "query": "ドッグツリー ターキーアキレス 犬",
+      "terms": [
+        "ターキーアキレス"
+      ],
+      "strength": "国産・無添加表示の七面鳥アキレス。噛みごたえを比較したい犬向けの間食候補。",
+      "check": "丸飲み、歯の損傷、喉詰まりを防ぐため必ず見守り、犬の口と噛む力に合うサイズを選択。",
+      "problems": [
+        "噛むおやつ",
+        "原材料で選ぶ"
+      ],
+      "name": "★楽天4冠【公式】ドッグツリー ターキーアキレス M 30g | 無添加 ターキー アキレス デンタルケア 歯磨きおやつ 犬 おやつ 犬のおやつ 犬おやつ 犬用おやつ ドッグフード DOGTREE",
+      "price_yen": 1485,
+      "shop": "【公式】ドッグツリー楽天市場店",
+      "review_average": 4.86,
+      "review_count": 29,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/shop-dogtree/cabinet/product02/achilles/turkey-rakuten.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00u8mwn.u92kl0a1.g00u8mwn.u92km7d9/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fshop-dogtree%2F171369959%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fshop-dogtree%2Fi%2F10000201%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "shop-dogtree:10000201"
+    },
+    {
+      "id": "dt-chirimen",
+      "category": "無添加フード・おやつ",
+      "label": "小魚おやつを少量使いたい",
+      "query": "ドッグツリー かえりちりめん 犬",
+      "terms": [
+        "かえりちりめん"
+      ],
+      "strength": "国産・無添加表示の小魚おやつ。トッピングや少量のごほうび候補。",
+      "check": "塩分、魚の硬さ、与える量を商品表示で確認。魚を避ける犬には不適合。",
+      "problems": [
+        "しつけ・ごほうび",
+        "原材料で選ぶ"
+      ],
+      "name": "【公式】ドッグツリー かえりちりめん S 12g / M 35g | 無添加 国産 ちりめん 煮干し にぼし ニボシ 減塩 魚 犬 おやつ 犬のおやつ 犬おやつ 犬用おやつ ドッグフード DOGTREE",
+      "price_yen": 495,
+      "shop": "【公式】ドッグツリー楽天市場店",
+      "review_average": 5.0,
+      "review_count": 4,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/shop-dogtree/cabinet/09050297/s-fish/imgrc0088382923.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00u8mwn.u92kl0a1.g00u8mwn.u92km7d9/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fshop-dogtree%2F4580657821631%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fshop-dogtree%2Fi%2F10000053%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "shop-dogtree:10000053"
+    },
+    {
+      "id": "dt-cheese-stick",
+      "category": "無添加フード・おやつ",
+      "label": "チーズを小さく分けて使いたい",
+      "query": "ドッグツリー チーズ スティック 犬",
+      "terms": [
+        "チーズ",
+        "スティック"
+      ],
+      "strength": "トレーニングや外出時に分けて使いやすいチーズ系おやつ。サイズを選べる。",
+      "check": "乳製品を避ける犬には不適合。脂質・塩分・総カロリーを確認して少量に。",
+      "problems": [
+        "しつけ・ごほうび",
+        "原材料で選ぶ"
+      ],
+      "name": "★楽天1位【公式】ドッグツリー 鶏ささみチーズスティック M 35g | 国産 ささみ チーズ 犬 おやつ 犬のおやつ 犬おやつ 犬用おやつ ドッグフード DOGTREE",
+      "price_yen": 935,
+      "shop": "【公式】ドッグツリー楽天市場店",
+      "review_average": 5.0,
+      "review_count": 2,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/shop-dogtree/cabinet/09050297/chicken/m-torisasamitizu/imgrc0088366052.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00u8mwn.u92kl0a1.g00u8mwn.u92km7d9/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fshop-dogtree%2F4580657821280%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fshop-dogtree%2Fi%2F10000035%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "shop-dogtree:10000035"
+    },
+    {
+      "id": "mannerwear-girl",
+      "category": "排泄・宿泊マナー",
+      "label": "宿や店内で女の子のそそう対策",
+      "query": "ユニチャーム マナーウェア 女の子用 犬",
+      "terms": [
+        "マナーウェア",
+        "女の子"
+      ],
+      "strength": "外出先でのそそう対策に使う吸収ウェア。胴回りと製品サイズで選ぶ。",
+      "check": "長時間つけっぱなしにせず、汚れや皮膚の状態を確認して交換。治療用品ではありません。",
+      "official_source": "https://pet.unicharm.co.jp/ja/manner-wear/",
+      "problems": [
+        "臭い・排泄",
+        "旅行準備"
+      ],
+      "name": "マナーウェア女の子用Sトラッドテイスト 犬用 おむつ ユニチャーム(36枚入)【マナーウエア】",
+      "price_yen": 2249,
+      "shop": "楽天24",
+      "review_average": 4.66,
+      "review_count": 125,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/rakuten24/cabinet/003/4520699686003.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00r136n.u92kl82f.g00r136n.u92kmc69/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Frakuten24%2Fe401324h%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Frakuten24%2Fi%2F10434068%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "rakuten24:10434068"
+    },
+    {
+      "id": "mannerwear-boy",
+      "category": "排泄・宿泊マナー",
+      "label": "宿や店内で男の子のマーキング対策",
+      "query": "ユニチャーム マナーウェア 男の子用 犬",
+      "terms": [
+        "マナーウェア",
+        "男の子"
+      ],
+      "strength": "男の子の体型に合わせた巻くタイプ。旅行先でのマーキング対策を準備しやすい。",
+      "check": "胴回りを測り、ずれ・締め付け・蒸れを確認。排尿障害の治療には使えません。",
+      "official_source": "https://pet.unicharm.co.jp/ja/manner-wear/",
+      "problems": [
+        "臭い・排泄",
+        "旅行準備"
+      ],
+      "name": "マナーウェア 男の子用 S トラッドテイスト 犬用 おむつ ユニチャーム(46枚入)【マナーウエア】",
+      "price_yen": 2249,
+      "shop": "楽天24",
+      "review_average": 4.74,
+      "review_count": 201,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/rakuten24/cabinet/713/4520699631713.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00r136n.u92kl82f.g00r136n.u92kmc69/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Frakuten24%2Fe394682h%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Frakuten24%2Fi%2F10420426%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "rakuten24:10420426"
+    },
+    {
+      "id": "deosheet-premium",
+      "category": "排泄・宿泊マナー",
+      "label": "宿泊中のトイレ臭と交換回数を抑えたい",
+      "query": "ユニチャーム デオシート プレミアム 犬 ワイド",
+      "terms": [
+        "デオシート",
+        "プレミアム"
+      ],
+      "strength": "高吸収タイプのペットシート候補。宿のトレー寸法と排尿量に合わせて選ぶ。",
+      "check": "消臭効果は環境や使用状況で変わります。完全防臭とは表示しません。",
+      "official_source": "https://pet.unicharm.co.jp/",
+      "problems": [
+        "臭い・排泄",
+        "旅行準備"
+      ],
+      "name": "【ふるさと納税】デオシート PREMIUM 12時間 超消臭＆超吸収 ワイド 選べる枚数・回数 42枚 84枚 168枚 1回 2回 3回定期便 当日配送 通常配送ペットシーツ ペットシート トイレ 犬 犬用トイレ ペット 清潔 ユニ・チャーム 愛犬用 ペット用品 防災",
+      "price_yen": 9500,
+      "shop": "三重県名張市",
+      "review_average": 4.67,
+      "review_count": 3,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/f242080-nabari/cabinet/d_202602/n039_01_web_s.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00t9mxn.u92kl642.g00t9mxn.u92kmb48/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ff242080-nabari%2Fn039%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ff242080-nabari%2Fi%2F10000470%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "f242080-nabari:10000470"
+    },
+    {
+      "id": "ruffwear-front-range",
+      "category": "散歩・安全",
+      "label": "首への集中負担を避けて歩きたい",
+      "query": "ラフウェア フロントレンジ ハーネス 犬",
+      "terms": [
+        "フロントレンジ",
+        "ハーネス"
+      ],
+      "strength": "胸部を覆う日常用ハーネス。複数の調整点とリード接続部を体型に合わせる。",
+      "check": "抜け防止を保証しません。胸囲を測り、緩み・擦れ・後ずさり時の抜けを確認。",
+      "official_source": "https://ruffwear.jp/products/front-range-dog-harness",
+      "problems": [
+        "安全・迷子",
+        "旅行準備"
+      ],
+      "name": "【お得なクーポン配布中9/24 01:59まで】ラフウェア フロントレンジハーネス 小型犬用 中型犬用 大型犬用 XXS-LXLサイズ ナイロン 全7色",
+      "price_yen": 9500,
+      "shop": "トオルズドッグマート楽天市場店",
+      "review_average": 4.69,
+      "review_count": 183,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/torusdogmart/cabinet/05157333/13813261/imgrc0128980054.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00r58nn.u92kl8a3.g00r58nn.u92kmfb8/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftorusdogmart%2Fruffwear_frontrangeharness_2020%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftorusdogmart%2Fi%2F10000952%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "torusdogmart:10000952"
+    },
+    {
+      "id": "ruffwear-float-coat",
+      "category": "水辺・安全",
+      "label": "湖・川・海で浮力と引き上げを補助",
+      "query": "ラフウェア フロートコート ライフジャケット 犬",
+      "terms": [
+        "フロートコート",
+        "ライフジャケット"
+      ],
+      "strength": "水辺用の犬用浮力補助具。背面ハンドル、浮力、視認性、胸囲で比較。",
+      "check": "溺水を完全に防ぎません。常に見守り、流れ・水温・犬の泳力を優先。",
+      "official_source": "https://ruffwear.jp/products/float-coat-dog-life-jacket",
+      "problems": [
+        "安全・迷子",
+        "旅行準備"
+      ],
+      "name": "【お得なクーポン配布中9/24 01:59まで】ラフウェア フロートコートライフジャケット 小型犬用 中型犬用 大型犬用 XS-Lサイズ ナイロン 全3色",
+      "price_yen": 16000,
+      "shop": "トオルズドッグマート楽天市場店",
+      "review_average": 4.7,
+      "review_count": 10,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/torusdogmart/cabinet/05157333/12018669/imgrc0125709691.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00r58nn.u92kl8a3.g00r58nn.u92kmfb8/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftorusdogmart%2Fruffwear_floatcoat_lifejacket%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftorusdogmart%2Fi%2F10001017%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "torusdogmart:10001017"
+    },
+    {
+      "id": "ruffwear-grip-trex",
+      "category": "足・路面対策",
+      "label": "熱い路面や荒れた道から肉球を守りたい",
+      "query": "ラフウェア グリップトレックス ブーツ 犬",
+      "terms": [
+        "グリップ",
+        "ブーツ"
+      ],
+      "strength": "犬用ブーツ。路面、前後足の幅、ソール、固定方法を確認して使う。",
+      "check": "擦れ・蒸れ・脱げを確認。熱い路面を歩かせる判断の代わりにはなりません。",
+      "official_source": "https://ruffwear.jp/",
+      "problems": [
+        "散歩後ケア",
+        "雨・泥汚れ"
+      ],
+      "name": "ラフウェア グリップトレックスブーツ 犬 靴 シューズ 大型犬 中型犬 小型犬 (ruffwear)",
+      "price_yen": 7900,
+      "shop": "ペット用品ラフラフ 楽天市場店",
+      "review_average": 5.0,
+      "review_count": 1,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/ruffruff/cabinet/10742942/10742980/imgrc0116465893.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00uc5nn.u92kl113.g00uc5nn.u92kmf4e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fruffruff%2F15202%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fruffruff%2Fi%2F10000944%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "ruffruff:10000944"
+    },
+    {
+      "id": "hurtta-raincoat",
+      "category": "雨・汚れ",
+      "label": "雨と泥はねを広い範囲で減らしたい",
+      "query": "Hurtta モンスーンコート 犬",
+      "terms": [
+        "モンスーン",
+        "コート"
+      ],
+      "strength": "首・背中・腹側を覆う犬用レインコート候補。背丈・首・胸囲を測って選ぶ。",
+      "check": "完全防水や蒸れゼロとは限りません。動き、排泄部、洗濯方法を確認。",
+      "official_source": "https://hurtta.com/",
+      "problems": [
+        "雨・泥汚れ",
+        "散歩後ケア"
+      ],
+      "name": "【Hurtta】【フルッタ】・レインコート「モンスーンコート2」",
+      "price_yen": 12650,
+      "shop": "1stDogCafe",
+      "review_average": 5.0,
+      "review_count": 12,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/1stdogcafe/cabinet/item/desc_sp/imgrc0106301011.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00pzdjn.u92kl4ed.g00pzdjn.u92kmb99/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2F1stdogcafe%2F10000965%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2F1stdogcafe%2Fi%2F10000965%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "1stdogcafe:10000965"
+    },
+    {
+      "id": "porta-training-lead",
+      "category": "散歩・安全",
+      "label": "旅行先で距離を調整して散歩したい",
+      "query": "ペティオ Porta トレーニング ロングリード 犬",
+      "terms": [
+        "Porta",
+        "リード"
+      ],
+      "strength": "広い場所で距離を取るロングリード候補。長さ、持ち手、金具、絡まりにくさで比較。",
+      "check": "公道や混雑場所では短く管理。ドッグランの規則を守り、係留したまま放置しません。",
+      "official_source": "https://www.petio.com/",
+      "problems": [
+        "安全・迷子",
+        "旅行準備"
+      ],
+      "name": "【最大2000円OFFクーポン！＆店内ポイント最大51倍！本日限定！】ペティオ Porta トレーニングロングリード 15m ロングリード しつけ",
+      "price_yen": 3294,
+      "shop": "コジコジ",
+      "review_average": 5.0,
+      "review_count": 1,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/koji/cabinet/0921/folder5/peto501098.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00pyyln.u92kl04a.g00pyyln.u92km620/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkoji%2Fpeto501098%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkoji%2Fi%2F10040506%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "koji:10040506"
+    },
+    {
+      "id": "ezydog-drive-harness",
+      "category": "車移動・安全",
+      "label": "車載用ハーネスで姿勢と飛び出しを管理する",
+      "query": "EZYDOG ドライブハーネス 犬",
+      "terms": [
+        "EZYDOG",
+        "ドライブ"
+      ],
+      "strength": "車移動向けハーネス候補。胸部パッド、車側への接続方法、胴回りサイズで比較。",
+      "check": "事故時の安全を完全保証しません。説明書どおり接続し、首輪だけで固定しないでください。",
+      "official_source": "https://ezydog.jp/",
+      "problems": [
+        "車移動",
+        "安全・迷子"
+      ],
+      "name": "【抽選で最大100%ポイントバック！】EZYDOG ドライブハーネス S 【イージードッグ】",
+      "price_yen": 9900,
+      "shop": "豊富な品揃えペット用品店ぺネット",
+      "review_average": 5.0,
+      "review_count": 2,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/dog-penet/cabinet/shintouakoueki/imgrc0067633147.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00qkphn.u92kld11.g00qkphn.u92km07d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdog-penet%2Feu11064%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdog-penet%2Fi%2F10021660%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "dog-penet:10021660"
+    },
+    {
+      "id": "richell-shoulder-carry",
+      "category": "旅行・移動",
+      "label": "公共交通や館内移動で肩掛けしたい",
+      "query": "リッチェル ショルダーペットキャリー 犬",
+      "terms": [
+        "ショルダー",
+        "キャリー"
+      ],
+      "strength": "小型犬の移動用候補。耐荷重、通気、飛び出し防止、底面の安定性で比較。",
+      "check": "交通機関ごとの持込寸法・完全収納ルールを確認。長時間入れっぱなしにしない。",
+      "official_source": "https://www.richell.co.jp/shop/pet/",
+      "problems": [
+        "車移動",
+        "旅行準備"
+      ],
+      "name": "【3点セット】ペットキャリー 取り外せる扉で使いやすさUP！ 給水器・ショルダーベルト付き キャンピングキャリーファイン 選べる2サイズ×2タイプ| リッチェル シングルドア ダブルドア キャリーケース 超小型犬 小型犬 プラスチック製 猫 持ち運び バスケット うさぎ用",
+      "price_yen": 7480,
+      "shop": "丸福商店",
+      "review_average": 4.61,
+      "review_count": 18,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/store-marufuku/cabinet/shohin/hayase6/awac-a87147_1.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00tgo8n.u92kl53f.g00tgo8n.u92km4ba/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fstore-marufuku%2Fawac-a87046%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fstore-marufuku%2Fi%2F10021008%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "store-marufuku:10021008"
+    },
+    {
+      "id": "richell-water-dish",
+      "category": "散歩・排泄",
+      "label": "散歩の給水とマナー洗浄を切り替える",
+      "query": "お散歩ハンディシャワー 犬",
+      "terms": [
+        "ハンディ",
+        "シャワー"
+      ],
+      "strength": "ペットボトル装着型で、受け皿給水とマナー洗浄を切り替える用品。",
+      "check": "対応ボトル口径、容量、飲み口サイズを確認。",
+      "official_source": "https://www.richell.co.jp/shop/pet/",
+      "problems": [
+        "水分補給",
+        "散歩後ケア"
+      ],
+      "name": "【配送区分R3】【名入れ】お散歩ハンディシャワー S アイボリー｜シャワー おしっこ 超小型犬 小型犬用 カラビナ付き フック付き 防災 名前入り 散歩 マナー エチケット 給水 水飲み 犬 ペットボトル用 プレゼント オリジナルギフト リッチェル",
+      "price_yen": 1435,
+      "shop": "カモシカnet SHOP 楽天市場店",
+      "review_average": 4.65,
+      "review_count": 84,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/comellbaby/cabinet/kamoshika5/s1000000069_k.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00s3cbn.u92klc13.g00s3cbn.u92km42f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcomellbaby%2Fs1000000069%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fcomellbaby%2Fi%2F10011845%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "comellbaby:10011845"
+    },
+    {
+      "id": "petio-porta-harness",
+      "category": "散歩・安全",
+      "label": "旅行先の散歩用ハーネスを体型で選ぶ",
+      "query": "ペティオ Porta ハーネス 犬",
+      "terms": [
+        "Porta",
+        "ハーネス"
+      ],
+      "strength": "日常散歩用ハーネス候補。首・胴回り、テープ幅、反射仕様を比較。",
+      "check": "抜けないことを保証しません。指が入る余裕と後ずさり時の抜けを確認。",
+      "official_source": "https://www.petio.com/",
+      "problems": [
+        "安全・迷子",
+        "旅行準備"
+      ],
+      "name": "ペティオ Portaハーネス S シルバーグレー(1個)【Porta】",
+      "price_yen": 972,
+      "shop": "楽天24 ペット館",
+      "review_average": 5.0,
+      "review_count": 1,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/nyanzaq/cabinet/287/4903588576287.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00q36gn.u92klc02.g00q36gn.u92kmde6/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnyanzaq%2F4903588576287%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnyanzaq%2Fi%2F10145725%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "nyanzaq:10145725"
+    },
+    {
+      "id": "ezydog-dfd",
+      "category": "水辺・安全",
+      "label": "水遊びの浮力と視認性を補助する",
+      "query": "EZYDOG DFD ライフジャケット 犬",
+      "terms": [
+        "EZYDOG",
+        "ライフ"
+      ],
+      "strength": "水辺用浮力補助具。胴回り、浮力体、引き上げハンドル、視認性で比較。",
+      "check": "必ず飼い主が付き添い、流れ・波・水温を確認。泳げる犬でも単独にしない。",
+      "official_source": "https://ezydog.jp/",
+      "problems": [
+        "安全・迷子",
+        "旅行準備"
+      ],
+      "name": "EZYDOG DFDブースト 4XS［フローティングジャケット／ライフジャケット／海／川／おしゃれ／オシャレ／水遊び／ペット／犬／オーストラリア／小型犬／送料無料／キャンプ／アウトドア］",
+      "price_yen": 6950,
+      "shop": "interzoo clinicclub",
+      "review_average": 5.0,
+      "review_count": 1,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/interzoo-pet/cabinet/dogetc/ezydog/imgrc0106329033.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00rww7n.u92kl729.g00rww7n.u92km157/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Finterzoo-pet%2F034-0090-00%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Finterzoo-pet%2Fi%2F10007330%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "interzoo-pet:10007330"
+    },
+    {
+      "id": "petio-led-light",
+      "category": "夜間・迷子",
+      "label": "夜の散歩で犬の位置を見えやすくする",
+      "query": "ペティオ LED 犬 散歩 ライト",
+      "terms": [
+        "LED",
+        "犬"
+      ],
+      "strength": "首輪やリード周辺に付ける補助灯。発光、電池、防滴、重さを比較。",
+      "check": "迷子を防ぐ保証はありません。リード、迷子札、登録情報と併用。",
+      "official_source": "https://www.petio.com/",
+      "problems": [
+        "安全・迷子",
+        "旅行準備"
+      ],
+      "name": "ペティオ 犬用伸縮引ひも リールリード ナイトウォーカーEX ML グレー | Petio 中型犬 大型犬 夜散歩 LEDライト搭載 伸縮式リード 充電式",
+      "price_yen": 3160,
+      "shop": "Petio Online Shop 楽天市場店",
+      "review_average": 3.5,
+      "review_count": 2,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/petio-online-shop/cabinet/item21/4903588276675_m.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00rk79n.u92kl1ce.g00rk79n.u92kmdcf/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fpetio-online-shop%2F4903588276675%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fpetio-online-shop%2Fi%2F10013328%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "petio-online-shop:10013328"
+    },
+    {
+      "id": "airbuggy-backpack",
+      "category": "旅行・移動",
+      "label": "電車・館内・避難時に背負って移動したい",
+      "query": "AIRBUGGY 3WAY バックパックキャリー 犬",
+      "terms": [
+        "AIRBUGGY",
+        "バックパック"
+      ],
+      "strength": "背負い・肩掛け等で使うキャリー候補。耐荷重、内寸、通気、底板で比較。",
+      "check": "犬の姿勢と総重量を確認。交通機関・施設の収納ルールは別途確認。",
+      "official_source": "https://www.airbuggy.pet/",
+      "problems": [
+        "車移動",
+        "旅行準備"
+      ],
+      "name": "【公式】エアバギー 3ウェイバックパックキャリー [レギュラー] AIRBUGGY 3WAY BACKPACK CARRIE 犬 リュック 耐荷重10kg 避難 防災 通院 新幹線 電車 肩掛け カバン ペット 旅行 横揺れしない 小型犬",
+      "price_yen": 24200,
+      "shop": "エアバギーペット公式 楽天市場店",
+      "review_average": 4.75,
+      "review_count": 105,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/dogcart/cabinet/product/ad711/pi01_2312.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00s6rjn.u92kl7f7.g00s6rjn.u92km0fb/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdogcart%2Fad711%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdogcart%2Fi%2F10000168%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "dogcart:10000168"
+    },
+    {
+      "id": "furbo-camera",
+      "category": "宿・見守り",
+      "label": "犬を置ける規約の宿で短時間見守る",
+      "query": "Furbo ドッグカメラ 犬 見守り",
+      "terms": [
+        "Furbo",
+        "ドッグカメラ"
+      ],
+      "strength": "スマートフォンで犬の様子を見る機器。通知、画角、通信、月額機能を比較。",
+      "check": "宿が犬だけの留守番を認める場合に限ります。Wi-Fi、録画、電源、追加料金を確認。",
+      "official_source": "https://furbo.com/jp",
+      "problems": [
+        "宿で落ち着く",
+        "旅行準備"
+      ],
+      "name": "Furboドッグカメラ 360°ビュー [ファーボ] AI搭載 wifi ペットカメラ ペット 見守りカメラ カメラ 犬 留守番 飛び出すおやつ 自動追尾機能 カラー暗視モード 双方向会話 スマホ iPhone Android 対応 アカウント共有 写真 動画",
+      "price_yen": 29980,
+      "shop": "Furbo公式ストア",
+      "review_average": 4.11,
+      "review_count": 160,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/furbo/cabinet/item/20220516_new/s1.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00txohn.u92klb44.g00txohn.u92km1f9/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ffurbo%2Fdogcamera_02%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ffurbo%2Fi%2F10000001%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "furbo:10000001"
+    },
+    {
+      "id": "iris-soft-cage",
+      "category": "宿泊・旅行",
+      "label": "宿で折りたためる囲われた寝場所を作る",
+      "query": "アイリスオーヤマ 折りたたみ ソフトケージ 犬",
+      "terms": [
+        "ソフト",
+        "ケージ"
+      ],
+      "strength": "収納できるソフトケージ候補。展開寸法、耐荷重、通気、底面、防水性を比較。",
+      "check": "噛み破りや脱走を防ぐ保証はありません。宿の持込可否と犬の体格を確認。",
+      "official_source": "https://www.irisohyama.co.jp/pet/",
+      "problems": [
+        "宿で落ち着く",
+        "旅行準備"
+      ],
+      "name": "＜楽天1位＞ 犬 ケージ 折りたたみ ゲージ アイリスオーヤマ Sサイズ 超小型犬 猫 Mサイズ 小型犬 Lサイズ 中型犬 メッシュ窓 通気性 ソフトケージ コンパクト 組立簡単 車 ペットケージ 折りたたみソフトケージ POSC *【秋CP】",
+      "price_yen": 3480,
+      "shop": "Pet館〜ペット館〜",
+      "review_average": 4.53,
+      "review_count": 394,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/dog-kan/cabinet/07991229/08167859/113786rank.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00pr3zn.u92kl730.g00pr3zn.u92km8f9/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdog-kan%2F533120%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdog-kan%2Fi%2F10011375%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "dog-kan:10011375"
+    },
+    {
+      "id": "idog-cooling-vest",
+      "category": "暑さ・水分",
+      "label": "濡らして着る暑さ対策ウェアを比較",
+      "query": "iDog 犬 クール ベスト 保冷剤",
+      "terms": [
+        "iDog",
+        "クール"
+      ],
+      "strength": "濡らす・保冷材を使う犬用ウェア候補。サイズ、重量、乾きやすさを比較。",
+      "check": "気化熱は湿度で変わります。着せっぱなしにせず、呼吸・皮膚を確認。",
+      "official_source": "https://www.idog.jp/",
+      "problems": [
+        "暑さ対策",
+        "旅行準備"
+      ],
+      "name": "犬 保冷剤 iDog ICE HOLD用保冷剤 単品 2個セット アイドッグ クール ネック クーラー ひんやり ペット 散歩 保冷 夏用 冷感 冷却 首 犬用品 小型犬 中型犬 大型犬 熱中症 暑さ 対策 冷たい 冷房 ジェル",
+      "price_yen": 198,
+      "shop": "ペット用品専門店 メリリー",
+      "review_average": 4.0,
+      "review_count": 2,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/merrily-shop/cabinet/11386440/idhrz35.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00uokon.u92klb26.g00uokon.u92kme9b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmerrily-shop%2F100125%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmerrily-shop%2Fi%2F10000656%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "merrily-shop:10000656"
+    },
+    {
+      "id": "apdc-outdoor-spray",
+      "category": "虫・屋外対策",
+      "label": "屋外前に使う犬用ボディスプレーを選ぶ",
+      "query": "A.P.D.C. ニーム シトロネラ スプレー 犬",
+      "terms": [
+        "A.P.D.C",
+        "スプレー"
+      ],
+      "strength": "犬用屋外ボディスプレー候補。成分、香り、使用部位、頻度で比較。",
+      "check": "医薬品の予防薬の代わりではありません。顔・傷・舐め取りは表示に従う。",
+      "official_source": "https://www.apdc.jp/",
+      "problems": [
+        "旅行準備",
+        "散歩後ケア"
+      ],
+      "name": "【ポイント最大10倍！9/19 20:00〜9/24 01:59まで】 APDC ニーム＆シトロネラスプレー 125ml たかくら新産業【A.P.D.C.】[犬用ケア用品] 正規取扱店",
+      "price_yen": 1650,
+      "shop": "ペッツビレッジクロス",
+      "review_average": 4.19,
+      "review_count": 113,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/kurosu/cabinet/rakulogo/rakulogo13/r1301_00252.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00pq2rn.u92kle36.g00pq2rn.u92km648/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkurosu%2F10016229%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkurosu%2Fi%2F10016229%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "kurosu:10016229"
+    },
+    {
+      "id": "richell-pet-cart",
+      "category": "旅行・移動",
+      "label": "シニア犬や小型犬の長距離移動を補助する",
+      "query": "リッチェル ペットカート 犬",
+      "terms": [
+        "リッチェル",
+        "ペットカート"
+      ],
+      "strength": "歩行距離を調整するペットカート候補。耐荷重、内部寸法、折りたたみ、飛び出し防止で比較。",
+      "check": "施設・交通機関の利用可否を確認。係留金具だけに頼らず、乗降時は必ず支える。",
+      "official_source": "https://www.richell.co.jp/shop/pet/",
+      "problems": [
+        "車移動",
+        "旅行準備"
+      ],
+      "name": "犬 カート ペットカート エルフィ ピンク 多頭 超小型犬 小型犬 猫用 折りたたみ 体重目安 12kg以下 リッチェル Richell ペットバギー シニア 猫 散歩 通院 ドライブ",
+      "price_yen": 9900,
+      "shop": "XPRICE楽天市場店",
+      "review_average": 4.75,
+      "review_count": 16,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/a-price/cabinet/pics/993/4973655586921.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00qn68n.u92klefa.g00qn68n.u92kmd20/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fa-price%2F4973655586921%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fa-price%2Fi%2F10912094%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "a-price:10912094"
+    },
+    {
+      "id": "kurgo-trufit",
+      "category": "車移動・安全",
+      "label": "車移動用ハーネスを比較したい",
+      "query": "Kurgo ハーネス 犬",
+      "terms": [
+        "Kurgo"
+      ],
+      "strength": "胸部を覆う車・散歩兼用候補。胴回り、接続方法、パッドで比較。",
+      "check": "衝突安全を完全保証しません。説明書どおり車体へ固定。",
+      "problems": [
+        "車移動",
+        "安全・迷子"
+      ],
+      "official_source": "https://www.kurgo.com/",
+      "name": "【クリアランス 定価より最大39％OFF】ドッグハーネス スマート カー ハーネス XS/S/M/L Kurgo 犬用 シートベルト ペット用 安全ベルト ドライブハーネス ハーネス 犬用 小型犬 犬 犬用品 ドライブ 車 車用品 カー用品 リード 散歩",
+      "price_yen": 3980,
+      "shop": "Pet Select by Nihonikuji",
+      "review_average": 4.67,
+      "review_count": 3,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/petselect/cabinet/dog/outdoor/harness/5850010400_multi.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00t1jtn.u92klbba.g00t1jtn.u92km417/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fpetselect%2F5850010400%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fpetselect%2Fi%2F10000650%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "petselect:10000650"
+    },
+    {
+      "id": "ezydog-chestplate",
+      "category": "散歩・安全",
+      "label": "胸部パッド付きハーネスを選びたい",
+      "query": "EZYDOG ハーネス 犬",
+      "terms": [
+        "EZYDOG"
+      ],
+      "strength": "胸部パッドで力を分散する日常用候補。",
+      "check": "胸囲を測り、擦れと抜けを確認。",
+      "problems": [
+        "安全・迷子",
+        "旅行準備"
+      ],
+      "official_source": "https://ezydog.jp/",
+      "name": "【抽選で最大100%ポイントバック！】[ 正規品 送料無料 ] EZYDOG クイックハーネス M ( ブラック レッド グリーンカモ ピンク ) [ 新東亜交易 イージードッグ 犬 胴輪 簡単装着 中型犬 反射素材 サイズ調整 ]",
+      "price_yen": 4250,
+      "shop": "豊富な品揃えペット用品店ぺネット",
+      "review_average": 5.0,
+      "review_count": 7,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/dog-penet/cabinet/shintouakoueki/eu11039.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00qkphn.u92kld11.g00qkphn.u92km07d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdog-penet%2Feu11037%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdog-penet%2Fi%2F10021633%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "dog-penet:10021633"
+    },
+    {
+      "id": "juliusk9-idc",
+      "category": "散歩・安全",
+      "label": "持ち手付きハーネスを体格で選ぶ",
+      "query": "JULIUS-K9 IDC パワーハーネス 犬",
+      "terms": [
+        "JULIUS",
+        "ハーネス"
+      ],
+      "strength": "背面持ち手付きハーネス候補。胸囲とテープ位置で比較。",
+      "check": "持ち上げ用途は商品表示を確認。抜けを保証しません。",
+      "problems": [
+        "安全・迷子",
+        "旅行準備"
+      ],
+      "official_source": "https://julius-k9.com/",
+      "name": "IDCパワーハーネス Mini Mini/Mini 胸囲40〜67cm ユリウスk9 全21色 Julius-K9 ユリウスケーナイン ユリウスK9 犬用ハーネス ハーネス 中型犬 犬 小型犬 犬用 胴輪 [ネコポスまたはゆうパケット送料無料]【カラー：シリーズ1】",
+      "price_yen": 5500,
+      "shop": "ワンダースタジオ",
+      "review_average": 4.76,
+      "review_count": 414,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/wanderstudio/cabinet/julius-idc/001-mm-m_s1.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00pwobn.u92kl44f.g00pwobn.u92km642/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fwanderstudio%2Fjulius-mini%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fwanderstudio%2Fi%2F10000922%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "wanderstudio:10000922"
+    },
+    {
+      "id": "petsafe-easywalk",
+      "category": "散歩・安全",
+      "label": "引っ張り時の向きを補助したい",
+      "query": "PetSafe イージーウォーク ハーネス 犬",
+      "terms": [
+        "イージーウォーク",
+        "ハーネス"
+      ],
+      "strength": "胸前接続型ハーネス候補。装着位置とサイズを比較。",
+      "check": "トレーニングの代わりではありません。脇擦れを確認。",
+      "problems": [
+        "安全・迷子",
+        "しつけ・ごほうび"
+      ],
+      "official_source": "https://www.petsafe.com/",
+      "name": "メール便対応！正規品　イージーウォークハーネス　S〜XL Easy Walk Harness PREMIER社　（PETSAFE）「箱なし」　イージーハーネス【RCP】超小型犬　小型犬　中型犬　大型犬　超大型犬　引っ張り防止ハーネス",
+      "price_yen": 4378,
+      "shop": "GOLPARA 〜ゴルパラ〜",
+      "review_average": 4.22,
+      "review_count": 378,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/auc-golpara/cabinet/03016334/imgrc0080625300.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00rgffn.u92kl9c3.g00rgffn.u92km02b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-golpara%2F10000030%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-golpara%2Fi%2F10000030%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "auc-golpara:10000030"
+    },
+    {
+      "id": "flexi-newcomfort",
+      "category": "散歩・安全",
+      "label": "伸縮リードの長さを管理したい",
+      "query": "flexi ニューコンフォート 犬 リード",
+      "terms": [
+        "flexi",
+        "リード"
+      ],
+      "strength": "ロック付き伸縮リード候補。犬の体重とテープ長で比較。",
+      "check": "道路・混雑場所では短く固定。手や足への巻き付きに注意。",
+      "problems": [
+        "散歩後ケア",
+        "安全・迷子"
+      ],
+      "official_source": "https://flexi.de/",
+      "name": "【フレキシ公式・2年保証】 コンフォート 快適グリップ 伸縮リード フレキシリード 小型犬 中型犬 大型犬 5m 8m テープ 犬 リード 伸縮 フレキシ 犬用品 Flexi 伸びるリード ロングリード フレキシブルリード 犬用リード 巻き取り式 ドッグリード 旧ニューコンフォート",
+      "price_yen": 2780,
+      "shop": "シュトルヒ 海外ペット用品 専門店",
+      "review_average": 4.66,
+      "review_count": 528,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/storch/cabinet/flexi/comfort/imgrc0125547995.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00svi8n.u92kl793.g00svi8n.u92km080/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fstorch%2Fflexi-newcomfort-2020-s5%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fstorch%2Fi%2F10000100%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "storch:10000100"
+    },
+    {
+      "id": "ruffwear-roamer",
+      "category": "散歩・安全",
+      "label": "腰にも装着できるリードを比較",
+      "query": "ラフウェア ローマーリーシュ 犬",
+      "terms": [
+        "ローマー",
+        "リーシュ"
+      ],
+      "strength": "伸縮部を持つリード候補。長さ、腰装着、金具で比較。",
+      "check": "強い引きや公道では手持ちを併用し安全を優先。",
+      "problems": [
+        "散歩後ケア",
+        "旅行準備"
+      ],
+      "official_source": "https://ruffwear.jp/",
+      "name": "ラフウェア ショルダーリード ローマーリーシュ リード 犬 大型犬 中型犬 小型犬 (ruffwear)",
+      "price_yen": 7900,
+      "shop": "ペット用品ラフラフ 楽天市場店",
+      "review_average": 4.9,
+      "review_count": 10,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/ruffruff/cabinet/10742942/10742980/ro4.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00uc5nn.u92kl113.g00uc5nn.u92kmf4e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fruffruff%2F40356%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fruffruff%2Fi%2F10000836%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "ruffruff:10000836"
+    },
+    {
+      "id": "ruffwear-swampcooler",
+      "category": "暑さ・水分",
+      "label": "気化熱式の冷却ベストを比較",
+      "query": "ラフウェア スワンプクーラー 犬",
+      "terms": [
+        "スワンプクーラー"
+      ],
+      "strength": "水を含ませて使う冷却ウェア候補。胸囲と被覆範囲で比較。",
+      "check": "湿度で効果が変わります。熱中症予防を保証しません。",
+      "problems": [
+        "暑さ対策",
+        "旅行準備"
+      ],
+      "official_source": "https://ruffwear.jp/",
+      "name": "ラフウェア スワンプクーラーハーネス 犬 小型犬 中型犬 大型犬 (ruffwear)",
+      "price_yen": 13500,
+      "shop": "ペット用品ラフラフ 楽天市場店",
+      "review_average": 4.73,
+      "review_count": 22,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/ruffruff/cabinet/10742942/10742980/12034121/1.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00uc5nn.u92kl113.g00uc5nn.u92kmf4e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fruffruff%2F30781%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fruffruff%2Fi%2F10000786%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "ruffruff:10000786"
+    },
+    {
+      "id": "idog-rainwear",
+      "category": "雨・汚れ",
+      "label": "軽量レインジャケットを選びたい",
+      "query": "iDog レインコート 犬",
+      "terms": [
+        "iDog",
+        "レイン"
+      ],
+      "strength": "軽量レインウェア候補。着丈、胸囲、腹側カバーで比較。",
+      "check": "防水性能と洗濯方法は商品表示を確認。",
+      "problems": [
+        "雨・泥汚れ",
+        "散歩後ケア"
+      ],
+      "official_source": "https://www.idog.jp/",
+      "name": "犬 レインコート 犬服 カッパ 犬 春 防風 防水 着せやすい ドッグウェア アウトドアアウター 反射テープ フード付 ペット服 小型犬 中型犬 大型犬 レインコート ウインドブレーカー 犬服 カッパ adidog pupreme 愛玩動物飼養管理士店長推薦",
+      "price_yen": 2998,
+      "shop": "北海道ラブなイチカワクリーニング",
+      "review_average": 4.47,
+      "review_count": 336,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/ichikawa929/cabinet/dogcollars/adidog/rainmain.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00qnb0n.u92kle6a.g00qnb0n.u92kmc02/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fichikawa929%2Fadidog-pupreme%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fichikawa929%2Fi%2F10000692%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "ichikawa929:10000692"
+    },
+    {
+      "id": "radica-cordura-bed",
+      "category": "宿泊・旅行",
+      "label": "折りたためる犬用ベッドを携帯したい",
+      "query": "RADICA コーデュラ ベッド 犬",
+      "terms": [
+        "RADICA",
+        "ベッド"
+      ],
+      "strength": "携帯用ベッド候補。収納寸法、断熱、洗濯方法で比較。",
+      "check": "犬の伏せた体長と宿の持込ルールを確認。",
+      "problems": [
+        "宿で落ち着く",
+        "旅行準備"
+      ],
+      "official_source": "https://www.radica.co.jp/",
+      "name": "【まとめ買い対象】【メーカー希望小売価格より50％OFF】犬 小型犬 中型 犬用 ベッド ラディカ ウォーム ベッド 交換/返品不可 コーデュラプリントシェルベッド　S M L",
+      "price_yen": 2745,
+      "shop": "犬の服 RADICA(ラディカ)",
+      "review_average": 4.54,
+      "review_count": 35,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/radica/cabinet/2025aw/c8010-25-stamp.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00qwnmn.u92klf4c.g00qwnmn.u92km3b7/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fradica%2Fc8010-0102%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fradica%2Fi%2F10022773%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "radica:10022773"
+    },
+    {
+      "id": "richell-water-dish-stand",
+      "category": "宿泊・旅行",
+      "label": "丈夫な携帯ボウルを選びたい",
+      "query": "リッチェル ウォーターディッシュ 犬",
+      "terms": [
+        "リッチェル",
+        "ウォーター"
+      ],
+      "strength": "折りたたみ食器候補。容量、安定性、乾燥しやすさで比較。",
+      "check": "食品接触用途と洗浄方法を確認。",
+      "problems": [
+        "水分補給",
+        "旅行準備"
+      ],
+      "official_source": "https://www.richell.co.jp/shop/pet/",
+      "name": "犬 猫 給水 水飲み 給水器 リッチェル ペットボトル ウォーター ディッシュ S 水 犬水 犬 水入れ 水飲み器 水分補給 ペットボトル 小型犬 給水器 水飲み リッチェル お皿 犬 ケージ サークル キャリー 皿 ドッグ 500ml 受け皿 こぼれない ギフト 敬老の日",
+      "price_yen": 1980,
+      "shop": "犬 服 ユウランプ",
+      "review_average": 4.46,
+      "review_count": 215,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/youlamp/cabinet/12737277/2026-08-27t125031.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00qxf1n.u92kl8ef.g00qxf1n.u92kmc29/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fyoulamp%2F059111a675%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fyoulamp%2Fi%2F10003405%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "youlamp:10003405"
+    },
+    {
+      "id": "hurtta-weekend-warrior",
+      "category": "散歩・安全",
+      "label": "調整幅のあるハーネスを選びたい",
+      "query": "フルッタ ハーネス 犬",
+      "terms": [
+        "フルッタ"
+      ],
+      "strength": "調整式ハーネス候補。胸囲、首回り、持ち手で比較。",
+      "check": "装着後の擦れ・緩み・後ずさりを確認。",
+      "problems": [
+        "安全・迷子",
+        "旅行準備"
+      ],
+      "official_source": "https://hurtta.com/",
+      "name": "【カジュアルシリーズ】フィンランドのドッグブランド【Hurtta】【フルッタ】・Y型クッションハーネス",
+      "price_yen": 2035,
+      "shop": "1stDogCafe",
+      "review_average": 4.78,
+      "review_count": 64,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/1stdogcafe/cabinet/07571989/08045547/09963805/imgrc0099165239.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00pzdjn.u92kl4ed.g00pzdjn.u92kmb99/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2F1stdogcafe%2F10000569%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2F1stdogcafe%2Fi%2F10000569%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "1stdogcafe:10000569"
+    },
+    {
+      "id": "hurtta-life-saviour",
+      "category": "水辺・安全",
+      "label": "水辺用ライフジャケットを比較",
+      "query": "Hurtta ライフジャケット 犬",
+      "terms": [
+        "Hurtta",
+        "ライフジャケット"
+      ],
+      "strength": "犬用浮力補助具。浮力、ハンドル、胸囲で比較。",
+      "check": "常時見守り、流れ・水温・泳力を優先。",
+      "problems": [
+        "安全・迷子",
+        "旅行準備"
+      ],
+      "official_source": "https://hurtta.com/",
+      "name": "＜ニューモデル＞ライフジャケット 犬用 フルッタ Hurtta 中型犬・大型犬用 【送料無料】愛犬の泳ぎをサポート！ドッグウェア Life Jacket 犬用ライフジャケット 犬 ドッグ アウトドア フィンランドのドッグブランド",
+      "price_yen": 11000,
+      "shop": "ワンダースタジオ",
+      "review_average": 5.0,
+      "review_count": 4,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_gold/wanderstudio/dogwear/images/lifesavior5.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00pwobn.u92kl44f.g00pwobn.u92km642/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fwanderstudio%2Fhurtta-lifesavior1%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fwanderstudio%2Fi%2F10001317%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "wanderstudio:10001317"
+    },
+    {
+      "id": "citydog-neoprene-carry",
+      "category": "旅行・移動",
+      "label": "小型犬用キャリーバッグを街歩きで使う",
+      "query": "CITYDOG ネオプレーン バッグ 犬 キャリー",
+      "terms": [
+        "CITYDOG",
+        "キャリー"
+      ],
+      "strength": "小型犬向けキャリー候補。耐荷重、底板、通気で比較。",
+      "check": "公共交通の収納規則と犬の姿勢を確認。",
+      "problems": [
+        "車移動",
+        "旅行準備"
+      ],
+      "official_source": "https://citydog.jp/",
+      "name": "★消臭剤ノベルティ★ 犬 リュック ｜ キャリー 犬リュック ペット キャリーバッグ キャリーバック キャリーケース 犬用リュック 犬用バッグ 保冷剤 クール 散歩 電車 新幹線 旅行 おしゃれ 洗える ｜【 citydog / シティドッグ 】ネオプレーン バックパック キャリー",
+      "price_yen": 18000,
+      "shop": "CITYDOG",
+      "review_average": 4.63,
+      "review_count": 1414,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/4-l-f/cabinet/ne/09561607/neo-th2607.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00tnbln.u92kla36.g00tnbln.u92kmacc/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2F4-l-f%2Flf-c-nebackpack%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2F4-l-f%2Fi%2F10000074%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "4-l-f:10000074"
+    },
+    {
+      "id": "ibiyaya-stroller",
+      "category": "旅行・移動",
+      "label": "多機能ペットカートを比較したい",
+      "query": "ibiyaya ペットカート 犬",
+      "terms": [
+        "ibiyaya",
+        "カート"
+      ],
+      "strength": "折りたたみカート候補。耐荷重、タイヤ、収納寸法で比較。",
+      "check": "飛び出し防止具と施設の利用可否を確認。",
+      "problems": [
+        "車移動",
+        "旅行準備"
+      ],
+      "official_source": "https://ibiyaya.com/",
+      "name": "【楽天1位】 【正規品】イビヤヤ トラボイ トライフォールド ペット トラベルシステム ペットカート 3WAY 分離型 取り外し可能 中型犬 小型犬 軽量 ペット バギー キャリー ドライブボックス 犬 猫 折りたたみ お散歩 コンパクト ibiyaya Travois Tri-fold Pet Travel System",
+      "price_yen": 19500,
+      "shop": "BBR-baby 1号店",
+      "review_average": 4.43,
+      "review_count": 14,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/auc-roadster/cabinet/06125275/imgrc0095996024.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00r13kn.u92kl24e.g00r13kn.u92km484/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-roadster%2F10006285%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-roadster%2Fi%2F10006285%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "auc-roadster:10006285"
+    },
+    {
+      "id": "compet-milimili",
+      "category": "旅行・移動",
+      "label": "小型犬の長距離移動を補助する",
+      "query": "コムペット ミリミリ ペットカート 犬",
+      "terms": [
+        "ミリミリ",
+        "ペットカート"
+      ],
+      "strength": "小型犬向けカート候補。耐荷重、折りたたみ、キャリー分離で比較。",
+      "check": "乗降時は支え、係留具だけに頼らないでください。",
+      "problems": [
+        "車移動",
+        "旅行準備"
+      ],
+      "official_source": "https://compet.jp/",
+      "name": "【ポイント最大10倍！9/19 20:00〜9/24 01:59まで】 コンビ コムペット ミリミリキャリー ペットカート バギー 【combi】 [おでかけ用品] compet milimili",
+      "price_yen": 35406,
+      "shop": "ペッツビレッジクロス",
+      "review_average": 4.62,
+      "review_count": 53,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/kurosu/cabinet/rakulogo/rakulogo15/r1301_02706.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00pq2rn.u92kle36.g00pq2rn.u92km648/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkurosu%2Fmilimili0001%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkurosu%2Fi%2F10044169%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "kurosu:10044169"
+    },
+    {
+      "id": "mandarine-backpack",
+      "category": "旅行・移動",
+      "label": "背負える犬用キャリーを選びたい",
+      "query": "MANDARINE BROTHERS バックパック 犬",
+      "terms": [
+        "MANDARINE",
+        "バックパック"
+      ],
+      "strength": "背負い型キャリー候補。適応体重、内寸、通気で比較。",
+      "check": "長時間使用を避け、犬の呼吸と姿勢を確認。",
+      "problems": [
+        "車移動",
+        "旅行準備"
+      ],
+      "official_source": "https://www.mandarinebrothers.com/",
+      "name": "MANDARINE BROTHERS マンダリンブラザーズ ブリクストンキャリーバックパック ワイド L 【メッセージカード対応】 犬用 猫用 ペット用 リュック型 背負う ペットキャリー",
+      "price_yen": 19800,
+      "shop": "uminecco(ウミネッコ)",
+      "review_average": 4.6,
+      "review_count": 20,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/girlyapartment/cabinet/item/item0071/mga-5798.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00r9cpn.u92kl54a.g00r9cpn.u92km614/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fgirlyapartment%2Fmga-4487%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fgirlyapartment%2Fi%2F10056235%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "girlyapartment:10056235"
+    },
+    {
+      "id": "snowpeak-dog-cot",
+      "category": "宿泊・旅行",
+      "label": "キャンプで地面から離れた寝床を作る",
+      "query": "スノーピーク ドッグコット 犬",
+      "terms": [
+        "ドッグ",
+        "コット"
+      ],
+      "strength": "犬用コット候補。耐荷重、設置寸法、布地の洗浄で比較。",
+      "check": "飛び降りや転倒に注意し、犬の体格に合わせる。",
+      "problems": [
+        "宿で落ち着く",
+        "旅行準備"
+      ],
+      "official_source": "https://www.snowpeak.co.jp/",
+      "name": "【スノーピーク 公式】【永久保証付】snowpeak ドッグコット PT-042 犬用 コット ベッド 屋外 無地 丈夫 頑丈 強い 犬 愛犬 ドッグ ペット おしゃれ テント バーベキュー キャンプ アウトドア キャンプ用品",
+      "price_yen": 17160,
+      "shop": "Snow Peak 公式",
+      "review_average": 4.75,
+      "review_count": 8,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/snowpeak-official/cabinet/newthumb202403/pt-042_2403.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00ugmon.u92klc82.g00ugmon.u92kmab3/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsnowpeak-official%2Fpt-042%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsnowpeak-official%2Fi%2F10000586%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "snowpeak-official:10000586"
+    },
+    {
+      "id": "dod-pet-bed",
+      "category": "宿泊・旅行",
+      "label": "キャンプ用犬ベッドを持ち運びたい",
+      "query": "DOD ペット ベッド 犬",
+      "terms": [
+        "DOD",
+        "ペット"
+      ],
+      "strength": "アウトドア用休憩用品候補。収納、洗浄、底面で比較。",
+      "check": "商品が犬用であることと耐荷重を確認。",
+      "problems": [
+        "宿で落ち着く",
+        "旅行準備"
+      ],
+      "official_source": "https://www.dod.camp/",
+      "name": "ペットベッド ドーム型 猫用 小型犬用 洗える ふかふか もこもこ クッション付き 滑り止め 寒さ対策 冬用 室内用 北欧風 ハウス ぐっすり眠れる 40cm 50cm",
+      "price_yen": 2880,
+      "shop": "おとショップ",
+      "review_average": 5.0,
+      "review_count": 1,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/connectru/cabinet/dg20251106153409856/qlfzf1s43uexg0re.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00uszon.u92kl311.g00uszon.u92kmd46/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fconnectru%2Fdodogo2025110615564372185828%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fconnectru%2Fi%2F10001078%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "connectru:10001078"
+    },
+    {
+      "id": "kong-classic",
+      "category": "知育・留守番",
+      "label": "フードを詰める知育玩具を試したい",
+      "query": "KONG コング クラシック 犬",
+      "terms": [
+        "コング",
+        "クラシック"
+      ],
+      "strength": "中にフードを詰めるゴム玩具。サイズと硬さで比較。",
+      "check": "破損・誤飲を見守り、主食量と総カロリーを調整。",
+      "problems": [
+        "宿で落ち着く",
+        "食べムラ・お腹"
+      ],
+      "official_source": "https://www.kongcompany.com/",
+      "name": "＼ マラソン期間全品5倍！ ／【 S ／ M 】 コング クラシック【 デンタル コング KONG 犬 おもちゃ スペクトラムブランズジャパン 】遊ばせながらしつけができる天然ゴム100％【 弾力と耐久性 】",
+      "price_yen": 990,
+      "shop": "ひなたぼっこ楽天市場店",
+      "review_average": 2.0,
+      "review_count": 1,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/hinatabocco-shop/cabinet/06008463/06008473/boll/5170313-5170314-0.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00sxbtn.u92kl34e.g00sxbtn.u92kma29/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhinatabocco-shop%2F035585746012%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhinatabocco-shop%2Fi%2F10006645%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "hinatabocco-shop:10006645"
+    },
+    {
+      "id": "kong-wobbler",
+      "category": "知育・留守番",
+      "label": "転がして食べる知育玩具を選ぶ",
+      "query": "KONG ワブラー 犬",
+      "terms": [
+        "KONG",
+        "ワブラー"
+      ],
+      "strength": "転がすとフードが出る知育玩具候補。犬の体格と粒径で比較。",
+      "check": "硬い床の騒音、破損、食べ過ぎに注意。",
+      "problems": [
+        "早食い",
+        "宿で落ち着く"
+      ],
+      "official_source": "https://www.kongcompany.com/",
+      "name": "コングジャパン｜KONG Japan コングワブラー",
+      "price_yen": 3180,
+      "shop": "楽天ビック(ビックカメラ×楽天)",
+      "review_average": 4.0,
+      "review_count": 6,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/biccamera/cabinet/product/4732/00000007184454_a01.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00r7ldn.u92kla4d.g00r7ldn.u92km718/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbiccamera%2F0035585740430%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbiccamera%2Fi%2F12717068%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "biccamera:12717068"
+    },
+    {
+      "id": "nina-brick",
+      "category": "知育・留守番",
+      "label": "段階式の知育トイを選びたい",
+      "query": "Nina Ottosson Dog Brick 犬",
+      "terms": [
+        "Nina",
+        "Brick"
+      ],
+      "strength": "ふたやスライドを使う知育玩具候補。難易度と洗浄性で比較。",
+      "check": "見守り下で使い、部品の誤飲に注意。",
+      "problems": [
+        "宿で落ち着く",
+        "しつけ・ごほうび"
+      ],
+      "official_source": "https://www.nina-ottosson.com/",
+      "name": "難易度2 トリーツゲーム ブリック 犬用 おもちゃ NINA OTTOSSON ニーナ・オットソン",
+      "price_yen": 4620,
+      "shop": "ANZUDOG/あんずドッグ",
+      "review_average": 5.0,
+      "review_count": 2,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/auc-youmore/cabinet/pet09/ptoy510_m01.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00qgqwn.u92kld96.g00qgqwn.u92kmd0a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fauc-youmore%2Fptoy510%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fauc-youmore%2Fi%2F10009242%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "auc-youmore:10009242"
+    },
+    {
+      "id": "lickimat-classic",
+      "category": "知育・留守番",
+      "label": "舐める時間を作るマットを比較",
+      "query": "リッキーマット 犬",
+      "terms": [
+        "リッキー"
+      ],
+      "strength": "食材を薄く塗るリックマット候補。溝、素材、洗浄で比較。",
+      "check": "噛ませず見守り、食材分のカロリーを調整。",
+      "problems": [
+        "宿で落ち着く",
+        "食べムラ・お腹"
+      ],
+      "official_source": "https://lickimat.com/",
+      "name": "【送料無料】スローフィーダー 早食い防止 食器 餌皿 犬 猫 ワンちゃん早食い防止 小型犬 中型犬 大型犬 シリコン 吸盤付き サイズ調節 リッキーマット ペット マット 知育玩具 ノーズワーク ダイエット 健康管理 ゆっくり食べる 健康習慣 知育玩具 ファンフィーダー",
+      "price_yen": 1580,
+      "shop": "TraEn230",
+      "review_average": 4.0,
+      "review_count": 2,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/traen230/cabinet/compass1726284077.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00uftan.u92kl7c1.g00uftan.u92kmeba/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftraen230%2Fcompass1726284206%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftraen230%2Fi%2F10000107%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "traen230:10000107"
+    },
+    {
+      "id": "petlibro-feeder",
+      "category": "給餌・水分",
+      "label": "自動給餌器で食事時間を管理したい",
+      "query": "PETLIBRO 自動給餌器 犬",
+      "terms": [
+        "PETLIBRO",
+        "給餌"
+      ],
+      "strength": "時間・量を設定する自動給餌器候補。容量、停電対策、洗浄で比較。",
+      "check": "動作確認を行い、長期留守番の代わりにしません。",
+      "problems": [
+        "体重管理",
+        "旅行準備"
+      ],
+      "official_source": "https://petlibro.com/",
+      "name": "MyfatBOSS ペットフード用乾燥剤 猫 [犬自動給餌器用] PETLIBRO自動給餌器用 AF001 AF005 AF006 AF103 AF203対応 8枚",
+      "price_yen": 1971,
+      "shop": "フリーマーケット",
+      "review_average": 5.0,
+      "review_count": 1,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/freema-ket01/cabinet/r_2024092617/20240926230410_102_1.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00uluin.u92kldc2.g00uluin.u92kmaa4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ffreema-ket01%2F20240926230410_102%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ffreema-ket01%2Fi%2F10003719%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "freema-ket01:10003719"
+    },
+    {
+      "id": "petlibro-fountain",
+      "category": "給餌・水分",
+      "label": "循環式給水器を衛生面で比較",
+      "query": "PETLIBRO 給水器 犬",
+      "terms": [
+        "PETLIBRO",
+        "給水"
+      ],
+      "strength": "循環式給水器候補。容量、フィルター、洗浄、停電時で比較。",
+      "check": "毎日水を交換し、部品とフィルターを定期洗浄。",
+      "problems": [
+        "水分補給",
+        "旅行準備"
+      ],
+      "official_source": "https://petlibro.com/",
+      "name": "【安心保証あり】9個入 PETLIBRO対応 ブルーバージョン版 交換用フィルター スポンジ付 自動給水器用フィルター PLFF002 WF002 互換品 互換フィルター 非純正 軟水化フィルター",
+      "price_yen": 2400,
+      "shop": "ドーナム",
+      "review_average": 4.25,
+      "review_count": 4,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/donumshop/cabinet/imgrc0098327121.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00uhbwn.u92klfe3.g00uhbwn.u92km896/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdonumshop%2Fpurecryf7-9%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdonumshop%2Fi%2F10000720%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "donumshop:10000720"
+    },
+    {
+      "id": "marukan-stable-bowl",
+      "category": "車移動・給水",
+      "label": "車内で水がこぼれにくい器を選ぶ",
+      "query": "マルカン こぼれにくい 陶製食器 犬",
+      "terms": [
+        "マルカン",
+        "食器"
+      ],
+      "strength": "内部構造で飛び散りを抑える給水器候補。容量と洗浄で比較。",
+      "check": "完全に漏れない保証ではありません。車内で固定。",
+      "problems": [
+        "水分補給",
+        "車移動"
+      ],
+      "official_source": "https://www.mkgr.jp/",
+      "name": "【月間優良ショップ8回受賞】【クーポン有】 マルカン こぼれにくい陶製食器にゃんこ用 猫用 犬用 ペット用 動物用 CT-603 他お試しフードサンプル有 4906456576372 ALE",
+      "price_yen": 1079,
+      "shop": "わんぱく 猫犬用品専門店",
+      "review_average": 4.25,
+      "review_count": 4,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/wanpaku-izukougen/cabinet/brnd/mg/m-toki/imgrc0090657191.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00qvxan.u92klc04.g00qvxan.u92kmcc7/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fwanpaku-izukougen%2Fct-274%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fwanpaku-izukougen%2Fi%2F10002363%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "wanpaku-izukougen:10002363"
+    },
+    {
+      "id": "thermos-dog-bottle",
+      "category": "散歩・給水",
+      "label": "保冷できる散歩用ボトルを選ぶ",
+      "query": "サーモス 犬 散歩 ボトル",
+      "terms": [
+        "サーモス",
+        "犬"
+      ],
+      "strength": "保冷ボトル候補。容量、飲み口、持ち運びで比較。",
+      "check": "犬用飲水に適する部品と洗浄方法を確認。",
+      "problems": [
+        "水分補給",
+        "暑さ対策"
+      ],
+      "official_source": "https://www.thermos.jp/",
+      "name": "名入れ サーモス・THERMOS 真空断熱構造ステンレスボトル 水筒 500ml JNR-503【トイプードル 犬 猫 ペット グッズ 雑貨 愛犬 愛猫 名入り 母の日 誕生日プレゼント 女性 男性 女友達 20代 30代 40代 父 母 子供 記念品 結婚祝い 還暦祝い 保冷保温 魔法瓶 名入れ おしゃれ】",
+      "price_yen": 6780,
+      "shop": "名入れ&ジュエリーの ArtBlast 煌",
+      "review_average": 4.81,
+      "review_count": 57,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/art-kirameki/cabinet/01407595/05580769/08024321/imgrc0121049771.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00qx70n.u92kla4f.g00qx70n.u92km05f/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fart-kirameki%2F10000275%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fart-kirameki%2Fi%2F10000275%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "art-kirameki:10000275"
+    },
+    {
+      "id": "virbac-toothpaste",
+      "category": "口腔ケア",
+      "label": "犬用歯みがきペーストを選びたい",
+      "query": "ビルバック CET 歯みがきペースト 犬",
+      "terms": [
+        "ビルバック",
+        "歯みがき"
+      ],
+      "strength": "犬用歯みがきペースト候補。香味、内容量、使い方で比較。",
+      "check": "人用歯磨き粉は使わず、出血・痛みは獣医師へ。",
+      "problems": [
+        "毎日のケア",
+        "旅行準備"
+      ],
+      "official_source": "https://jp.virbac.com/",
+      "name": "【あす楽】『C.E.T. 歯みがきペースト チキンフレーバー 70g×1個』犬猫用【ビルバック】【CET歯磨きペースト】 (C9)",
+      "price_yen": 1590,
+      "shop": "ペット犬猫療法食動物病院",
+      "review_average": 4.74,
+      "review_count": 217,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/doubutsunotame/cabinet/06769755/08379427/imgrc0091881067.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00qxshn.u92kl6f6.g00qxshn.u92kmd52/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdoubutsunotame%2F303266-v003661-01%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdoubutsunotame%2Fi%2F10008768%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "doubutsunotame:10008768"
+    },
+    {
+      "id": "petkiss-toothsheet",
+      "category": "口腔ケア",
+      "label": "歯ブラシが苦手な犬の拭き取りケア",
+      "query": "PETKISS 歯みがきシート 犬",
+      "terms": [
+        "PETKISS",
+        "歯みがき"
+      ],
+      "strength": "指に巻く歯みがきシート候補。枚数、素材、成分で比較。",
+      "check": "噛まれないよう無理をせず、歯周病治療の代わりにしません。",
+      "problems": [
+        "毎日のケア",
+        "旅行準備"
+      ],
+      "official_source": "https://www.lion-pet.jp/",
+      "name": "ライオン　PETKISS　歯みがきシート　犬・猫用　30枚　歯磨き",
+      "price_yen": 246,
+      "shop": "charm 楽天市場店",
+      "review_average": 4.64,
+      "review_count": 78,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/chanet/cabinet/1773/177329-1.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00pyjhn.u92kld64.g00pyjhn.u92km026/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fchanet%2F177329%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fchanet%2Fi%2F10261772%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "chanet:10261772"
+    },
+    {
+      "id": "mindup-toothbrush",
+      "category": "口腔ケア",
+      "label": "小さなヘッドの犬用歯ブラシを選ぶ",
+      "query": "マインドアップ 犬口ケア 歯ブラシ",
+      "terms": [
+        "犬口ケア",
+        "歯ブラシ"
+      ],
+      "strength": "犬用小型ヘッド歯ブラシ候補。口の大きさ、毛の硬さで比較。",
+      "check": "強くこすらず、嫌がる時は段階的に慣らす。",
+      "problems": [
+        "毎日のケア",
+        "旅行準備"
+      ],
+      "official_source": "https://mindup.co.jp/",
+      "name": "マインドアップ 犬口ケア 犬 歯ブラシ 3本セット シリンダーヘッド 小型犬 デンタルケア 歯磨き 筒型ブラシ 日本製",
+      "price_yen": 1350,
+      "shop": "ダイヤストア",
+      "review_average": 4.51,
+      "review_count": 83,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/daiya-store/cabinet/07876177/imgrc0081711272.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00ts7fn.u92kl954.g00ts7fn.u92kmf01/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdaiya-store%2Fzai-mup-20270600mup%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdaiya-store%2Fi%2F10000040%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "daiya-store:10000040"
+    },
+    {
+      "id": "virbac-epiotic",
+      "category": "耳・皮膚ケア",
+      "label": "犬用イヤークリーナーを選びたい",
+      "query": "ビルバック エピオティック 犬",
+      "terms": [
+        "エピオティック"
+      ],
+      "strength": "犬用耳洗浄液候補。使用方法、容量、成分で比較。",
+      "check": "痛み・悪臭・分泌物がある場合は自己処置せず獣医師へ。",
+      "problems": [
+        "毎日のケア",
+        "旅行準備"
+      ],
+      "official_source": "https://jp.virbac.com/",
+      "name": "【あす楽】『エピオティック ペプチド 125mL ×1本』犬猫用【イヤークリーナー】【ビルバックジャパン】 (C6)",
+      "price_yen": 2930,
+      "shop": "ペット犬猫療法食動物病院",
+      "review_average": 4.77,
+      "review_count": 56,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/doubutsunotame/cabinet/06769755/08379427/epiotic12501.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00qxshn.u92kl6f6.g00qxshn.u92kmd52/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdoubutsunotame%2Fepiotic-peptide-125ml-01%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdoubutsunotame%2Fi%2F10009070%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "doubutsunotame:10009070"
+    },
+    {
+      "id": "apdc-shampoo",
+      "category": "被毛・皮膚ケア",
+      "label": "犬用シャンプーを香りと成分で比較",
+      "query": "A.P.D.C. ティーツリーシャンプー 犬",
+      "terms": [
+        "A.P.D.C",
+        "シャンプー"
+      ],
+      "strength": "犬用シャンプー候補。希釈、香り、洗浄方法で比較。",
+      "check": "目や傷を避け、皮膚トラブル時は獣医師へ。",
+      "problems": [
+        "散歩後ケア",
+        "雨・泥汚れ"
+      ],
+      "official_source": "https://www.apdc.jp/",
+      "name": "A.P.D.C. ティーツリーシャンプー250ml＆apdcコンディショナー250mlセット 組合せは自由 apdc 送料無料 ペットシャンプー ペット用シャンプー APDC シャンプー apdcシャンプーセット apdc ティーツリーシャンプー 犬 シャンプー APDCティートリーシャンプー",
+      "price_yen": 3980,
+      "shop": "いいもの特撰館",
+      "review_average": 4.66,
+      "review_count": 714,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/iimonotokusen/cabinet/06423142/06423157/11198102/imgrc0110463595.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00rl91n.u92klec8.g00rl91n.u92kmc2d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fiimonotokusen%2Fap21%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fiimonotokusen%2Fi%2F10000006%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "iimonotokusen:10000006"
+    },
+    {
+      "id": "lion-quickrich",
+      "category": "被毛・皮膚ケア",
+      "label": "水を使わないブラッシングケア",
+      "query": "クイックリッチ ブラッシング 犬",
+      "terms": [
+        "クイック"
+      ],
+      "strength": "ブラッシング用スプレー候補。香り、使用部位、被毛タイプで比較。",
+      "check": "顔・傷・舐めやすい部位は表示に従う。",
+      "problems": [
+        "散歩後ケア",
+        "旅行準備"
+      ],
+      "official_source": "https://www.lion-pet.jp/",
+      "name": "クイック＆リッチ ブラッシングトリートメント 犬用 フォレストグリーン(200ml)【クイック＆リッチ】",
+      "price_yen": 974,
+      "shop": "楽天24",
+      "review_average": 4.08,
+      "review_count": 12,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/rakuten24/cabinet/070/4903351000070.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00r136n.u92kl82f.g00r136n.u92kmc69/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Frakuten24%2Fe120689h%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Frakuten24%2Fi%2F10336911%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "rakuten24:10336911"
+    },
+    {
+      "id": "furminator-small",
+      "category": "被毛ケア",
+      "label": "抜け毛用ブラシを毛質で選ぶ",
+      "query": "ファーミネーター 犬 小型犬",
+      "terms": [
+        "ファーミネーター",
+        "犬"
+      ],
+      "strength": "アンダーコート除去ブラシ候補。犬の大きさと毛の長さで選ぶ。",
+      "check": "やり過ぎや皮膚への強い圧を避ける。",
+      "problems": [
+        "毎日のケア",
+        "旅行準備"
+      ],
+      "official_source": "https://www.furminator.com/",
+      "name": "【ポイント最大10倍！9/19 20:00〜9/24 01:59まで】 正規品 FURminator ファーミネーター S 小型犬 短毛種用 送料無料",
+      "price_yen": 3980,
+      "shop": "ペッツビレッジクロス",
+      "review_average": 4.6,
+      "review_count": 681,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/kurosu/cabinet/rakulogo/rakulogo13/r1301_00010.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00pq2rn.u92kle36.g00pq2rn.u92km648/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkurosu%2F10003238%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkurosu%2Fi%2F10003238%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "kurosu:10003238"
+    },
+    {
+      "id": "tangleteezer-pet",
+      "category": "被毛ケア",
+      "label": "もつれをほぐす犬用ブラシを選ぶ",
+      "query": "タングルティーザー ペットティーザー 犬",
+      "terms": [
+        "ペットティーザー"
+      ],
+      "strength": "犬用ブラシ候補。毛質、サイズ、握りやすさで比較。",
+      "check": "毛玉を無理に引かず皮膚を確認。",
+      "problems": [
+        "毎日のケア",
+        "旅行準備"
+      ],
+      "official_source": "https://tangleteezer.jp/",
+      "name": "【公式】タングルティーザー ペットティーザー ペット用ブラシ 犬 猫　スモール-ラージ 硬め-柔らかめ",
+      "price_yen": 2640,
+      "shop": "TANGLE TEEZER JAPAN 公式ストア",
+      "review_average": 4.54,
+      "review_count": 385,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/tangleteezer/cabinet/shohin1/10050754/imgrc0114390346.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00s3eln.u92kl707.g00s3eln.u92km435/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftangleteezer%2Fpt-small%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftangleteezer%2Fi%2F10000187%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "tangleteezer:10000187"
+    },
+    {
+      "id": "electric-nail-grinder",
+      "category": "爪・足ケア",
+      "label": "電動爪やすりを速度と音で比較",
+      "query": "犬 電動 爪やすり LED",
+      "terms": [
+        "犬",
+        "電動",
+        "爪"
+      ],
+      "strength": "回転式爪やすり候補。速度、音、充電方式で比較。",
+      "check": "血管を避け短時間ずつ使用。怖がる犬には無理をしない。",
+      "problems": [
+        "毎日のケア",
+        "旅行準備"
+      ],
+      "official_source": "https://www.petio.com/",
+      "name": "【楽天1位】Pateker 犬 爪やすり 電動 ペット 爪切り 猫 強化版 3.6Vモーター パワフル 超高輝度LEDライト付 深爪防止 静音 2速 爪研ぎ 小型犬 中型犬 大型犬 爪ケア 充電式 コードレス ニッパー ギロチン 初心者 安全 低振動 プロ仕様 人気 ギフト プレゼント お手入れ用品",
+      "price_yen": 3299,
+      "shop": "select shop crea",
+      "review_average": 4.47,
+      "review_count": 365,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/selectshopcrea/cabinet/11115181/13899564/10.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00rzshn.u92kle77.g00rzshn.u92km579/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fselectshopcrea%2Fpateker-gl%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fselectshopcrea%2Fi%2F10000101%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "selectshopcrea:10000101"
+    },
+    {
+      "id": "zan-nail-clipper",
+      "category": "爪・足ケア",
+      "label": "犬用爪切りを体格で選ぶ",
+      "query": "ZAN ギロチン 爪切り 犬",
+      "terms": [
+        "ZAN",
+        "爪"
+      ],
+      "strength": "犬用爪切り候補。刃、握り、ストッパーで比較。",
+      "check": "血管位置が不明なら専門家へ。切り過ぎに備える。",
+      "problems": [
+        "毎日のケア",
+        "旅行準備"
+      ],
+      "official_source": "https://www.hirota-toolbox.com/",
+      "name": "すこやかネイルトリマー 斬 zan 小型犬・中型犬用 ギロチン式爪切り ペット用つめきり　【メール便対応】★",
+      "price_yen": 1551,
+      "shop": "PETECH楽天市場店",
+      "review_average": 4.71,
+      "review_count": 288,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/petech/cabinet/001150.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00q2ean.u92kl56d.g00q2ean.u92km0c0/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fpetech%2F001150%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fpetech%2Fi%2F10004917%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "petech:10004917"
+    },
+    {
+      "id": "pawbalm-organic",
+      "category": "爪・足ケア",
+      "label": "乾燥した肉球の保湿用品を選ぶ",
+      "query": "犬 肉球 クリーム オーガニック",
+      "terms": [
+        "犬",
+        "肉球",
+        "クリーム"
+      ],
+      "strength": "犬用肉球保湿剤候補。全成分、香り、舐めた場合の表示で比較。",
+      "check": "傷・腫れ・痛みには使い続けず獣医師へ。",
+      "problems": [
+        "散歩後ケア",
+        "旅行準備"
+      ],
+      "official_source": "https://www.petio.com/",
+      "name": "【本日P5倍】犬用肉球クリーム おー太のにくきゅうクリーム 犬用 ミツロウクリーム 1000円ポッキリ 送料無料 肉球 無添加 舐めてしまう可能性にも配慮した にくきゅうクリーム 小型犬",
+      "price_yen": 1000,
+      "shop": "蜂蜜と石鹸 ささやまビーファーム",
+      "review_average": 4.62,
+      "review_count": 229,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/sasayama-bee/cabinet/rakulogo/rakulogo1/r1365_00032.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00t5fsn.u92kl0b6.g00t5fsn.u92km008/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsasayama-bee%2F10000224%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsasayama-bee%2Fi%2F10000224%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "sasayama-bee:10000224"
+    },
+    {
+      "id": "orange-x-cleaner",
+      "category": "散歩・衛生",
+      "label": "足・体用の拭き取りシートを携帯",
+      "query": "オレンジX ペット 掃除 犬",
+      "terms": [
+        "オレンジX",
+        "犬"
+      ],
+      "strength": "犬用拭き取り用品候補。使用部位、香料、容量で比較。",
+      "check": "目・口・傷への使用は表示に従う。",
+      "problems": [
+        "散歩後ケア",
+        "雨・泥汚れ"
+      ],
+      "official_source": "https://www.orange-quality.co.jp/",
+      "name": "【抽選で最大100%ポイントバック！】[ 正規品 送料無料 ] オレンジエックス つめかえ用750ml [ オレンジクオリティ オレンジX 天然洗剤 抗菌 除菌 掃除 ペット ブラッシングスプレー 犬 猫 小動物 油汚れ 介護 ケージ ]",
+      "price_yen": 4980,
+      "shop": "豊富な品揃えペット用品店ぺネット",
+      "review_average": 5.0,
+      "review_count": 3,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/dog-penet/cabinet/orange/by11004.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00qkphn.u92kld11.g00qkphn.u92km07d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdog-penet%2Fby11004%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdog-penet%2Fi%2F10056195%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "dog-penet:10056195"
+    },
+    {
+      "id": "earth-clean-care",
+      "category": "散歩・衛生",
+      "label": "犬用ウェットシートを成分で比較",
+      "query": "アース ペットウェットティッシュ 犬",
+      "terms": [
+        "アース",
+        "ウェット"
+      ],
+      "strength": "足・体拭きシート候補。成分、厚さ、枚数で比較。",
+      "check": "使用可能部位と舐め取りの注意を確認。",
+      "problems": [
+        "散歩後ケア",
+        "雨・泥汚れ"
+      ],
+      "official_source": "https://www.earth-pet.co.jp/",
+      "name": "◇アース・ペットEBC JOYPET ウェットティッシュα 手足・お尻用 3個パック | ジョイペット ウェットティッシュ 犬 ウェットティッシュ 猫 ペット用品 ウェットティッシュ 手足用 ウェットティッシュ お尻用 ペット用 ケアグッズ 肉球ケア 消臭 除菌 ふき取り",
+      "price_yen": 526,
+      "shop": "ペットフォレスト 楽天市場店",
+      "review_average": 4.0,
+      "review_count": 1,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/petforest/cabinet/japell/japell-4/pf-4973293001954.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00uirhn.u92kl73d.g00uirhn.u92kme44/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fpetforest%2Fpf-4973293001954%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fpetforest%2Fi%2F10004868%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "petforest:10004868"
+    },
+    {
+      "id": "boss-odor-box",
+      "category": "排泄・臭い",
+      "label": "使用済み袋をまとめる防臭容器を選ぶ",
+      "query": "BOS ペット うんち 防臭 ゴミ箱",
+      "terms": [
+        "BOS",
+        "ペット"
+      ],
+      "strength": "排泄物保管用品候補。密閉、容量、袋交換で比較。",
+      "check": "完全防臭ではありません。高温車内に長時間置かない。",
+      "problems": [
+        "臭い・排泄",
+        "旅行準備"
+      ],
+      "official_source": "https://bos-bos.com/",
+      "name": "【マラソン限定クーポン配布中】《送料無料》うんちが臭わない袋BOS 箱型 SSサイズ 200枚入り × 3個 ［クリロン化成］ 【 ペット用品 ペットグッズ 防臭 衛生 防臭袋 うんち袋 マナー袋 匂わない 臭わない 臭くない 当店人気 まとめ買い】",
+      "price_yen": 4970,
+      "shop": "にっぽん津々浦々",
+      "review_average": 4.89,
+      "review_count": 95,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/tsutsu-uraura/cabinet/marason-ss2/badge2/imgrc0070367202_m.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00r7kkn.u92kld0f.g00r7kkn.u92km70b/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftsutsu-uraura%2Fkurilon-bos-ss-200-3s%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftsutsu-uraura%2Fi%2F10005366%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "tsutsu-uraura:10005366"
+    },
+    {
+      "id": "unicharm-longwear-boy",
+      "category": "排泄・宿泊マナー",
+      "label": "長時間用の男の子向け吸収ウェア",
+      "query": "マナーウェア 長時間 男の子 犬",
+      "terms": [
+        "マナーウェア",
+        "長時間",
+        "男の子"
+      ],
+      "strength": "長時間用吸収ウェア候補。胴回りと吸収量で比較。",
+      "check": "定期交換し、蒸れ・汚れ・締め付けを確認。",
+      "problems": [
+        "臭い・排泄",
+        "旅行準備"
+      ],
+      "official_source": "https://pet.unicharm.co.jp/",
+      "name": "マナーウェア 長時間オムツ 男の子用 お試し SSS SS S M L 中型犬 3枚セット4枚セット ユニチャーム サイズ確認 高齢犬 おもらしケア 紙オムツ モレ安心 男の子専用 pet",
+      "price_yen": 451,
+      "shop": "DINOM",
+      "review_average": 4.57,
+      "review_count": 21,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/dinom-upsw/cabinet/pet/other/1001125_1j.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00trc8n.u92kl985.g00trc8n.u92km68d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdinom-upsw%2F1001126%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdinom-upsw%2Fi%2F10000721%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "dinom-upsw:10000721"
+    },
+    {
+      "id": "unicharm-longwear-girl",
+      "category": "排泄・宿泊マナー",
+      "label": "長時間用の女の子向け吸収ウェア",
+      "query": "マナーウェア 長時間 女の子 犬",
+      "terms": [
+        "マナーウェア",
+        "長時間",
+        "女の子"
+      ],
+      "strength": "長時間用吸収ウェア候補。腰回りと吸収量で比較。",
+      "check": "定期交換し、皮膚状態とずれを確認。",
+      "problems": [
+        "臭い・排泄",
+        "旅行準備"
+      ],
+      "official_source": "https://pet.unicharm.co.jp/",
+      "name": "マナーウェア 長時間快適オムツ 女の子用SSS 犬用(38枚入)【マナーウエア】",
+      "price_yen": 2046,
+      "shop": "楽天24 ペット館",
+      "review_average": 4.74,
+      "review_count": 35,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/nyanzaq/cabinet/782/4520699699782.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00q36gn.u92klc02.g00q36gn.u92kmde6/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fnyanzaq%2F4520699699782%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fnyanzaq%2Fi%2F10174215%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "nyanzaq:10174215"
+    },
+    {
+      "id": "deoclean-floor",
+      "category": "排泄・衛生",
+      "label": "宿で使える犬用床掃除用品を選ぶ",
+      "query": "デオクリーン 犬 床 掃除 シート",
+      "terms": [
+        "デオクリーン",
+        "床"
+      ],
+      "strength": "ペット周辺用掃除用品候補。使用可能な床、成分、枚数で比較。",
+      "check": "宿の備品・床材への使用許可を確認。",
+      "problems": [
+        "臭い・排泄",
+        "旅行準備"
+      ],
+      "official_source": "https://pet.unicharm.co.jp/",
+      "name": "■最大ポイント10倍【9/19〜要エントリー】【メール便】ユニ・チャーム デオクリーン 床を汚さない 防水シート 5枚 (犬猫兼用)[M便 1/1]",
+      "price_yen": 960,
+      "shop": "ペモス",
+      "review_average": 5.0,
+      "review_count": 1,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/pemos/cabinet/unicharm/uni0437de.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00swaqn.u92kld85.g00swaqn.u92km59c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fpemos%2Funi0437de%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fpemos%2Fi%2F10010196%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "pemos:10010196"
+    },
+    {
+      "id": "petkit-bottle",
+      "category": "散歩・給水",
+      "label": "片手操作の給水ボトルを比較",
+      "query": "PETKIT 犬 ウォーターボトル",
+      "terms": [
+        "PETKIT",
+        "ボトル"
+      ],
+      "strength": "携帯給水ボトル候補。ロック、容量、飲み口で比較。",
+      "check": "漏れを毎回確認し、飲み残しを衛生的に扱う。",
+      "problems": [
+        "水分補給",
+        "旅行準備"
+      ],
+      "official_source": "https://petkit.com/",
+      "name": "PETKIT ペットキット ワンタッチ ウォーターボトル 300ホワイト・ピンク・ブルー 犬 DOG お散歩 給水",
+      "price_yen": 2970,
+      "shop": "Baby ALICE(ベビーアリス)",
+      "review_average": 4.71,
+      "review_count": 7,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/baby-alice/cabinet/dadway/ptpe00111_02dog.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00qoaxn.u92kl7a0.g00qoaxn.u92km5b6/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbaby-alice%2Fptpe00111%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbaby-alice%2Fi%2F10004732%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "baby-alice:10004732"
+    },
+    {
+      "id": "petkit-feeder",
+      "category": "給餌・水分",
+      "label": "カメラ付き自動給餌器を比較",
+      "query": "PETKIT 自動給餌器 カメラ 犬",
+      "terms": [
+        "PETKIT",
+        "給餌"
+      ],
+      "strength": "遠隔確認対応の給餌器候補。通信、容量、停電時で比較。",
+      "check": "人による確認の代わりにせず、通信障害時の手順を用意。",
+      "problems": [
+        "体重管理",
+        "旅行準備"
+      ],
+      "official_source": "https://petkit.com/",
+      "name": "AI カメラ付き petkit 自動 給餌器 えさやり 【2年保証】 ペット用 フードサーバー ペットキット【当日出荷OK】 自動給餌器 犬 猫 ねこ ご飯 餌 餌やり機 えさやり機 スマホ ペット カメラ タイマー 多頭飼い カメラ 音声 大容量 3L 給餌機 WiFi 対応 早食い防止 YAMUSHARE",
+      "price_yen": 19800,
+      "shop": "PETKIT(ペットキット)公式ストア",
+      "review_average": 4.55,
+      "review_count": 113,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/neikonu/cabinet/item/pkt/p571_top2.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00uroun.u92klc5a.g00uroun.u92km3cd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fneikonu%2Fpkt-p571-wh%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fneikonu%2Fi%2F10000012%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "neikonu:10000012"
+    },
+    {
+      "id": "furbo-mini",
+      "category": "宿・見守り",
+      "label": "小型の見守りカメラを比較",
+      "query": "Furbo ミニ ペットカメラ 犬",
+      "terms": [
+        "Furbo",
+        "ミニ"
+      ],
+      "strength": "小型見守りカメラ候補。画角、通知、月額機能で比較。",
+      "check": "宿の留守番・Wi-Fi・録画規則を確認。",
+      "problems": [
+        "宿で落ち着く",
+        "旅行準備"
+      ],
+      "official_source": "https://furbo.com/jp",
+      "name": "Furboミニ プレミア定額パッケージ [ファーボ] AI搭載 110万人愛用のペットカメラブランドからペット専用小型カメラ 犬 猫 見守り スマホ対応 留守番 壁設置 双方向会話 wifi サブスク必須",
+      "price_yen": 4980,
+      "shop": "Furbo公式ストア",
+      "review_average": 3.89,
+      "review_count": 9,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/furbo/cabinet/item/minicamera_maas_01/thumb.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00txohn.u92klb44.g00txohn.u92km1f9/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ffurbo%2Fminicamera_maas_01%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ffurbo%2Fi%2F10000007%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "furbo:10000007"
+    },
+    {
+      "id": "tapo-petcamera",
+      "category": "宿・見守り",
+      "label": "追尾機能付きペットカメラを比較",
+      "query": "TP-Link Tapo ペットカメラ",
+      "terms": [
+        "Tapo",
+        "カメラ"
+      ],
+      "strength": "ペット見守りカメラ候補。追尾、画角、保存方式で比較。",
+      "check": "プライバシーと宿のWi-Fi・録画規則を確認。",
+      "problems": [
+        "宿で落ち着く",
+        "旅行準備"
+      ],
+      "official_source": "https://www.tp-link.com/jp/home-networking/cloud-camera/",
+      "name": "【年間販売台数No.1★】防犯カメラ 室内 ペットカメラ ベビーモニター 見守り ワイヤレス 200万画素 高画質 360°首振り 自動追跡追尾 ベビーカメラ ナイトビジョン 双方向音声 留守 動作検知 スマホ通知 3年保証 TP-Link Tapo C200【Amazon Alexa 認定取得】",
+      "price_yen": 4180,
+      "shop": "TP-Linkダイレクト 楽天市場店",
+      "review_average": 4.6,
+      "review_count": 4216,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/tplinkdirect/cabinet/06321509/tapo-c200.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00sbb0n.u92klb33.g00sbb0n.u92kma19/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ftplinkdirect%2F6935364053239-new%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ftplinkdirect%2Fi%2F10001097%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "tplinkdirect:10001097"
+    },
+    {
+      "id": "airtag-dogholder",
+      "category": "安全・迷子",
+      "label": "紛失防止タグ用ホルダーを補助的に使う",
+      "query": "AirTag 犬 首輪 ホルダー 防水",
+      "terms": [
+        "AirTag",
+        "犬",
+        "ホルダー"
+      ],
+      "strength": "市販タグを首輪へ固定するホルダー候補。重さ、固定、防水で比較。",
+      "check": "GPS迷子追跡専用品ではありません。マイクロチップ・迷子札と併用。",
+      "problems": [
+        "安全・迷子",
+        "旅行準備"
+      ],
+      "official_source": "https://www.apple.com/jp/airtag/",
+      "name": "＼全商品ポイント5倍／ Airtag保護ケース クリアカラー2個セット エアタグ ケース ホルダー 子供 犬 猫 かわいい シンプル 自転車 キーホルダー カラビナ キッズ おしゃれ 透明 防水 坊塵 クリアカラー おしゃれ 傷つき防止 保護カバー 収納カバー",
+      "price_yen": 1310,
+      "shop": "エクスプレスジャパン",
+      "review_average": 4.52,
+      "review_count": 50,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/expsjapan/cabinet/img1/6/8/68-cim-z0532e-.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00t1qtn.u92kl81c.g00t1qtn.u92km141/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fexpsjapan%2Fcim-z0532e-%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fexpsjapan%2Fi%2F10050312%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "expsjapan:10050312"
+    },
+    {
+      "id": "dog-firstaid-kit",
+      "category": "防災・救急",
+      "label": "旅行用の犬向け応急用品をまとめる",
+      "query": "ペット 救急セット 犬",
+      "terms": [
+        "救急",
+        "犬"
+      ],
+      "strength": "応急用品セット候補。内容、使用期限、説明書で比較。",
+      "check": "診断・治療の代わりではありません。動物病院連絡先を別途準備。",
+      "problems": [
+        "旅行準備",
+        "安全・迷子"
+      ],
+      "official_source": "https://www.env.go.jp/nature/dobutsu/aigo/",
+      "name": "ダニ取り 2本入り 【グリーン】パッケージ有り ダニ リムーバー tick remove twister【定形外郵便のみ送料無料】並行輸入品2サイズ大小各1本入り 何回でも使用可能犬猫等ペットのお散歩、山菜採り、キャンプ、アウトドア、登山の際の救急セットに。",
+      "price_yen": 1179,
+      "shop": "くまたんの店 楽天市場店",
+      "review_average": 4.44,
+      "review_count": 18,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/kumatan/cabinet/08991307/green.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00r6zyn.u92kl07c.g00r6zyn.u92km614/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkumatan%2Fzakka-00198%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkumatan%2Fi%2F10001786%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "kumatan:10001786"
+    },
+    {
+      "id": "dog-emergency-bag",
+      "category": "防災・救急",
+      "label": "犬用防災セットを持ち出し用に準備",
+      "query": "犬 防災セット 避難 ペット",
+      "terms": [
+        "犬",
+        "防災",
+        "セット"
+      ],
+      "strength": "避難用品セット候補。水、食器、袋、リード等の不足を確認。",
+      "check": "犬ごとの薬・フード・証明書は別途追加し定期更新。",
+      "problems": [
+        "旅行準備",
+        "安全・迷子"
+      ],
+      "official_source": "https://www.env.go.jp/nature/dobutsu/aigo/",
+      "name": "【100円OFFクーポン】犬 防災セット ペット 防災グッズ 犬用 避難セット 災害対策 避難グッズ リュック 大容量 ケージ 大きい トイレ セット ボトル ボウル 防臭袋 地震 震災 台風 対策 同行避難 避難用品 持ち運び ドッグフード 水 トイレ シーツ 家族",
+      "price_yen": 7980,
+      "shop": "防災グッズ専門店 SAFETY PLUS",
+      "review_average": 4.44,
+      "review_count": 18,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/safety-plus/cabinet/12423758/imgrc0195498971.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00tez4n.u92kl973.g00tez4n.u92kmeae/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fsafety-plus%2F40001%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fsafety-plus%2Fi%2F10000089%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "safety-plus:10000089"
+    },
+    {
+      "id": "a8-nelsons",
+      "network": "A8.net",
+      "program_id": "s00000000458006",
+      "status": "partnered",
+      "category": "フード・おやつ",
+      "label": "中・大型犬向けの粒と容量で選びたい",
+      "name": "ネルソンズドッグフード",
+      "strength": "中・大型犬を主な対象として、粒の大きさと大容量を比較しやすい主食候補です。犬種名だけで決めず、原材料、成分、給与量、1日当たりの費用を確認できます。",
+      "check": "病気や下痢の改善を保証する商品ではありません。急な切替を避け、原材料、給与量、体調変化を確認してください。価格・キャンペーン・在庫は公式ページを優先します。",
+      "problems": [
+        "毎日の主食",
+        "食べムラ・お腹",
+        "原材料で選ぶ"
+      ],
+      "price_yen": 0,
+      "shop": "公式販売ページ",
+      "review_average": 0,
+      "review_count": 0,
+      "image_url": "assets/main-dog.jpg",
+      "affiliate_url": "https://px.a8.net/svt/ejp?a8mat=4BCGFN+ENI2R6+3J8+15NP77&a8ejpredirect=http%3A%2F%2Fwww.nelsonsdogfood.jp%2F7500%2F",
+      "item_code": "a8:s00000000458006",
+      "button_label": "ネルソンズ公式ページで確認",
+      "review_summary": "食いつきと中・大型犬向けの容量を評価する使用例がある一方、香りの強さ、粒の硬さ・大きさ、犬との相性には差があります。",
+      "review_positive": [
+        "食いつきが良かったという使用例",
+        "中・大型犬では大容量を評価する声",
+        "粒を噛んで食べたという使用例"
+      ],
+      "review_caution": [
+        "香りが強いと感じる例",
+        "小型犬には粒や袋容量が合わない場合",
+        "軟便など体調に合わなかった個別例"
+      ],
+      "review_source_label": "公式利用者の声・第三者実食確認",
+      "review_source_url": "https://news.mynavi.jp/dogfood/nelsons/",
+      "review_checked_at": "2026-09-21"
+    },
+    {
+      "id": "a8-onekosama",
+      "network": "A8.net",
+      "program_id": "s00000015995003",
+      "status": "partnered",
+      "category": "宿泊・旅行",
+      "label": "旅行場面に合う犬用品をまとめて選びたい",
+      "name": "ONEKOSAMA OINUSAMA",
+      "strength": "お出かけや自宅で使うペット用品を、用途、サイズ、素材、手入れ方法で比較できる候補です。旅行では持ち運び寸法と宿の持込条件を先に確認できます。",
+      "check": "商品ごとに対象、耐荷重、寸法、素材が異なります。犬の体格と利用場面に合わせ、公式の商品表示を確認してください。",
+      "problems": [
+        "旅行準備",
+        "車移動",
+        "雨・泥汚れ",
+        "暑さ対策"
+      ],
+      "price_yen": 0,
+      "shop": "公式販売ページ",
+      "review_average": 0,
+      "review_count": 0,
+      "image_url": "assets/main-dog.jpg",
+      "affiliate_url": "https://px.a8.net/svt/ejp?a8mat=4BCGFN+F2ZCHE+3FF2+NSP1V&a8ejpredirect=https%3A%2F%2Foneko-sama.com%2F",
+      "item_code": "a8:s00000015995003",
+      "button_label": "公式ショップで商品を確認",
+      "review_summary": "マルチ抱っこ紐では、安定感、両肩への荷重分散、作りの良さが評価されています。体格によって窮屈さやファスナーの閉めにくさが出るため、犬種名だけでなく実寸確認が必要です。",
+      "review_positive": [
+        "楽天購入者評価4.54／5（87件、確認時）",
+        "安定感と肩への負担軽減を評価",
+        "旅行や通院での使いやすさを評価"
+      ],
+      "review_caution": [
+        "胴長・大きめの犬では上部が閉まらない例",
+        "ファスナーの硬さや新品時のにおい",
+        "商品ごとにレビューが異なるため個別確認が必要"
+      ],
+      "review_source_label": "楽天市場・マルチ抱っこ紐購入者レビュー",
+      "review_source_url": "https://review.rakuten.co.jp/review/item/1/402624_10000398/1.1/",
+      "review_checked_at": "2026-09-21"
+    },
+    {
+      "id": "a8-wolf-insight",
+      "network": "A8.net",
+      "program_id": "s00000019490003",
+      "status": "partnered",
+      "category": "フード・おやつ",
+      "label": "中・大型犬の味・粒・容量を比較したい",
+      "name": "WOLF INSIGHT ドッグフード",
+      "strength": "中・大型犬の主食候補として、味、粒、容量、原材料と継続費用を比較できます。食いつきは個体差があるため、公式仕様を見ながら少量から判断します。",
+      "check": "体調改善や特定症状への効果を保証する商品ではありません。避けたい原材料、保証成分、給与量、切替方法を公式表示で確認してください。",
+      "problems": [
+        "毎日の主食",
+        "食べムラ・お腹",
+        "原材料で選ぶ"
+      ],
+      "price_yen": 0,
+      "shop": "公式販売ページ",
+      "review_average": 0,
+      "review_count": 0,
+      "image_url": "assets/main-dog.jpg",
+      "affiliate_url": "https://px.a8.net/svt/ejp?a8mat=4BCGFN+F467OY+46DW+NSP1V&a8ejpredirect=https%3A%2F%2Ffood.pontely.com%2Flp%3Fu%3DWI00001",
+      "item_code": "a8:s00000019490003",
+      "button_label": "WOLF INSIGHT公式ページで確認",
+      "review_summary": "公開されているレビューはまだ少なく、食いつきと価格の評価は賛否があります。十分な母数がないため、評価点ではなく粒の大きさ、容量、原材料と少量での適合確認を優先します。",
+      "review_positive": [
+        "食いつきが良かったという個別例",
+        "中・大型犬向けの容量を評価する声"
+      ],
+      "review_caution": [
+        "食いつかなかった・合わなかった個別例",
+        "価格を高いと感じる声",
+        "独立した購入者レビューの母数が少ない"
+      ],
+      "review_source_label": "公開レビューの傾向（母数限定）",
+      "review_source_url": "https://otonagirl30.xsrv.jp/%E3%82%A6%E3%83%AB%E3%83%95%E3%82%A4%E3%83%B3%E3%82%B5%E3%82%A4%E3%83%88-%E3%83%89%E3%83%83%E3%82%B0%E3%83%95%E3%83%BC%E3%83%89%E3%81%AE%E5%8F%A3%E3%82%B3%E3%83%9F%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/",
+      "review_checked_at": "2026-09-21"
+    }
+  ]
+}

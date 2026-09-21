@@ -1,0 +1,248 @@
+{
+  "checked_at": "2026-09-21T16:51:50+09:00",
+  "source_fetched_at": "2026-09-21T16:37:54+09:00",
+  "criteria": [
+    "required_fields",
+    "approved_network_host",
+    "approved_image_source",
+    "partnered_status_for_a8",
+    "positive_price_for_rakuten",
+    "unique_id_url_item"
+  ],
+  "accepted_count": 46,
+  "rejected_count": 0,
+  "accepted": [
+    {
+      "id": "odor-bag",
+      "item_code": "bos-shop:10000099",
+      "reasons": []
+    },
+    {
+      "id": "handy-shower",
+      "item_code": "youlamp:10002838",
+      "reasons": []
+    },
+    {
+      "id": "paw-wipe",
+      "item_code": "peppyshop:10000817",
+      "reasons": []
+    },
+    {
+      "id": "pet-sheet",
+      "item_code": "ryouhin-monogatari:10000024",
+      "reasons": []
+    },
+    {
+      "id": "portable-toilet",
+      "item_code": "kurashi-picks:10000022",
+      "reasons": []
+    },
+    {
+      "id": "car-cover",
+      "item_code": "pettena:10000186",
+      "reasons": []
+    },
+    {
+      "id": "water-bottle",
+      "item_code": "k-digital:10000228",
+      "reasons": []
+    },
+    {
+      "id": "cooling-mat",
+      "item_code": "aooka:10000305",
+      "reasons": []
+    },
+    {
+      "id": "k9-lamb",
+      "item_code": "greendog:10011485",
+      "reasons": []
+    },
+    {
+      "id": "single-ingredient-treat",
+      "item_code": "sizuka:10000006",
+      "reasons": []
+    },
+    {
+      "id": "paw-washer",
+      "item_code": "hoopoes:10000000",
+      "reasons": []
+    },
+    {
+      "id": "poop-carrier",
+      "item_code": "kimito-dog:10000147",
+      "reasons": []
+    },
+    {
+      "id": "travel-crate",
+      "item_code": "kurosu:10025022",
+      "reasons": []
+    },
+    {
+      "id": "seat-belt",
+      "item_code": "expsjapan:10034425",
+      "reasons": []
+    },
+    {
+      "id": "portable-bowl",
+      "item_code": "welrys:10001230",
+      "reasons": []
+    },
+    {
+      "id": "raincoat",
+      "item_code": "macks-i:10000399",
+      "reasons": []
+    },
+    {
+      "id": "lick-mat",
+      "item_code": "petselect:10000751",
+      "reasons": []
+    },
+    {
+      "id": "portable-bed",
+      "item_code": "next-online:10000248",
+      "reasons": []
+    },
+    {
+      "id": "pet-towel",
+      "item_code": "kom-kom:10000020",
+      "reasons": []
+    },
+    {
+      "id": "car-step",
+      "item_code": "smile88:10064993",
+      "reasons": []
+    },
+    {
+      "id": "drive-bed",
+      "item_code": "radica:10021711",
+      "reasons": []
+    },
+    {
+      "id": "slow-feeder",
+      "item_code": "forthon:10001034",
+      "reasons": []
+    },
+    {
+      "id": "treat-pouch",
+      "item_code": "radica:10020802",
+      "reasons": []
+    },
+    {
+      "id": "dog-tag",
+      "item_code": "edgetribe:10395468",
+      "reasons": []
+    },
+    {
+      "id": "k9-beef-tripe",
+      "item_code": "greendog:10017694",
+      "reasons": []
+    },
+    {
+      "id": "k9-lamb-feast",
+      "item_code": "greendog:10011481",
+      "reasons": []
+    },
+    {
+      "id": "k9-beef-feast",
+      "item_code": "greendog:10011484",
+      "reasons": []
+    },
+    {
+      "id": "k9-salmon-feast",
+      "item_code": "greendog:10019850",
+      "reasons": []
+    },
+    {
+      "id": "star-cheese",
+      "item_code": "dogcat-shop:10000368",
+      "reasons": []
+    },
+    {
+      "id": "dt-salmon-cube",
+      "item_code": "shop-dogtree:10000165",
+      "reasons": []
+    },
+    {
+      "id": "dt-food-chicken",
+      "item_code": "shop-dogtree:10000454",
+      "reasons": []
+    },
+    {
+      "id": "dt-food-horse",
+      "item_code": "hinatabocco-shop:10006764",
+      "reasons": []
+    },
+    {
+      "id": "dt-food-bonito",
+      "item_code": "hinatabocco-shop:10006765",
+      "reasons": []
+    },
+    {
+      "id": "dt-salmon-flake",
+      "item_code": "petforest:10011852",
+      "reasons": []
+    },
+    {
+      "id": "dt-chicken-cube",
+      "item_code": "shop-dogtree:10000047",
+      "reasons": []
+    },
+    {
+      "id": "dt-beef-liver",
+      "item_code": "shop-dogtree:10000062",
+      "reasons": []
+    },
+    {
+      "id": "dt-sweet-potato",
+      "item_code": "shop-dogtree:10000505",
+      "reasons": []
+    },
+    {
+      "id": "dt-apple",
+      "item_code": "shop-dogtree:10000506",
+      "reasons": []
+    },
+    {
+      "id": "dt-cheese-cube",
+      "item_code": "auc-relish:10012147",
+      "reasons": []
+    },
+    {
+      "id": "dt-pork-ear",
+      "item_code": "shop-dogtree:10000443",
+      "reasons": []
+    },
+    {
+      "id": "dt-turkey-achilles",
+      "item_code": "shop-dogtree:10000201",
+      "reasons": []
+    },
+    {
+      "id": "dt-chirimen",
+      "item_code": "shop-dogtree:10000053",
+      "reasons": []
+    },
+    {
+      "id": "dt-cheese-stick",
+      "item_code": "shop-dogtree:10000035",
+      "reasons": []
+    },
+    {
+      "id": "a8-nelsons",
+      "item_code": "a8:s00000000458006",
+      "reasons": []
+    },
+    {
+      "id": "a8-onekosama",
+      "item_code": "a8:s00000015995003",
+      "reasons": []
+    },
+    {
+      "id": "a8-wolf-insight",
+      "item_code": "a8:s00000019490003",
+      "reasons": []
+    }
+  ],
+  "rejected": [],
+  "status": "passed"
+}
