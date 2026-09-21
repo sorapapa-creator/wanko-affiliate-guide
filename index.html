@@ -9,7 +9,7 @@
   <div class="advisor-head"><div><p class="eyebrow" style="color:var(--green)">わんことのじかん 相談AI</p><h2 id="advisor-title">悩みから、次に確認する候補を整理</h2><p>犬の状態や旅行条件を選ぶと、掲載中の商品・フード・宿・旅行案から候補と選定理由を表示します。</p></div><span class="advisor-badge">無料・入力内容は送信しません</span></div>
   <form id="advisor-form" class="advisor-grid">
     <label class="advisor-field">相談したいこと<select id="advisor-type"><option value="goods">犬用品</option><option value="food">フード・おやつ</option><option value="lodging">犬と泊まる宿</option><option value="trip">東日本の旅行案</option></select></label>
-    <label class="advisor-field">いちばんの悩み<select id="advisor-concern"><option value="旅行準備">旅行準備</option><option value="車移動">車移動</option><option value="宿で落ち着く">宿で落ち着く</option><option value="臭い・排泄">臭い・排泄</option><option value="雨・泥汚れ">雨・泥汚れ</option><option value="暑さ対策">暑さ対策</option><option value="水分補給">水分補給</option><option value="安全・迷子">安全・迷子</option><option value="食べムラ・お腹">食べムラ・お腹</option><option value="毎日の主食">毎日の主食</option><option value="体重管理">体重管理</option><option value="原材料で選ぶ">原材料で選ぶ</option></select></label>
+    <label class="advisor-field">いちばんの悩み<select id="advisor-concern"><option value="旅行準備">旅行準備</option><option value="車移動">車移動</option><option value="宿で落ち着く">宿で落ち着く</option><option value="臭い・排泄">臭い・排泄</option><option value="雨・泥汚れ">雨・泥汚れ</option><option value="暑さ対策">暑さ対策</option><option value="水分補給">水分補給</option><option value="安全・迷子">安全・迷子</option><option value="食べムラ・お腹">食べムラ・お腹</option><option value="早食い">早食い</option><option value="毎日の主食">毎日の主食</option><option value="体重管理">体重管理</option><option value="原材料で選ぶ">原材料で選ぶ</option></select></label>
     <label class="advisor-field">犬の大きさ<select id="advisor-size"><option value="未指定">未指定</option><option value="小型犬">小型犬</option><option value="中型犬">中型犬</option><option value="大型犬">大型犬</option></select></label>
     <label class="advisor-field">年齢<select id="advisor-age"><option value="成犬">成犬</option><option value="子犬">子犬</option><option value="シニア犬">シニア犬</option></select></label>
     <label class="advisor-field">移動方法<select id="advisor-transport"><option value="車">車</option><option value="電車">電車</option><option value="徒歩中心">徒歩中心</option><option value="未定">未定</option></select></label>
@@ -1082,6 +1082,7 @@
     '水分補給':['水分補給','暑さ対策'],
     '安全・迷子':['安全・迷子','車移動','旅行準備'],
     '食べムラ・お腹':['食べムラ・お腹','原材料で選ぶ','毎日の主食'],
+    '早食い':['早食い','体重管理','食べムラ・お腹'],
     '毎日の主食':['毎日の主食','原材料で選ぶ','食べムラ・お腹'],
     '体重管理':['体重管理','早食い'],
     '原材料で選ぶ':['原材料で選ぶ','毎日の主食','食べムラ・お腹']
