@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "status": "local_review_not_published",
-  "fetched_at": "2026-09-21T18:38:49+09:00",
+  "fetched_at": "2026-09-21T19:45:27+09:00",
   "source": "Rakuten Ichiba Item Search API 2026-07-01 + approved A8.net program links",
   "products": [
     {
@@ -529,6 +529,30 @@
       "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/forthon/cabinet/product/sku7/r703/r703_1z.jpg?_ex=128x128",
       "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00siqmn.u92kle9f.g00siqmn.u92kmebf/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fforthon%2Fr703%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fforthon%2Fi%2F10001034%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
       "item_code": "forthon:10001034"
+    },
+    {
+      "id": "doggyman-deruderu",
+      "category": "フード・おやつ",
+      "label": "遊びながら少量ずつ｜でるでる自飯器",
+      "query": "ドギーマン わんこのでるでる自飯器 4974926012200",
+      "terms": [
+        "でるでる自飯器"
+      ],
+      "strength": "犬が透明ドラムを回すとフードが少量ずつ出る知育型の食事用品。出口を約11〜16mmの6段階で調整でき、部品を外して洗える。",
+      "check": "公式対象は超小型・小型犬です。粒の大きさを確認し、最初は必ず見守って使用してください。噛み壊す犬、回転に強く反応してフードを飛散させる犬、ウェットフードには向きません。",
+      "problems": [
+        "早食い",
+        "食べムラ・お腹",
+        "しつけ・ごほうび"
+      ],
+      "name": "ドギーマン わんこのでるでる自飯器 犬 犬用品食器 給水器 給餌器 自動給餌器 送料無料 【SK01465】",
+      "price_yen": 1786,
+      "shop": "THINK RICH STORE",
+      "review_average": 4.44,
+      "review_count": 62,
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/thinkrich/cabinet/sale2_muryou_01/s01465.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00slbfn.u92kl151.g00slbfn.u92km87e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fthinkrich%2Fsk01465%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fthinkrich%2Fi%2F10208245%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "thinkrich:10208245"
     },
     {
       "id": "treat-pouch",
@@ -1230,14 +1254,14 @@
         "安全・迷子",
         "旅行準備"
       ],
-      "name": "【最大2000円OFFクーポン！＆店内ポイント最大51倍！本日限定！】ペティオ Porta トレーニングロングリード 15m ロングリード しつけ",
-      "price_yen": 3294,
-      "shop": "コジコジ",
-      "review_average": 5.0,
+      "name": "ペティオ(Petio) 犬用引き紐 Porta トレーニングロングリード 15m ペティオ",
+      "price_yen": 3036,
+      "shop": "ホームセンターバロー 楽天市場店",
+      "review_average": 4.0,
       "review_count": 1,
-      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/koji/cabinet/0921/folder5/peto501098.jpg?_ex=128x128",
-      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00pyyln.u92kl04a.g00pyyln.u92km620/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkoji%2Fpeto501098%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkoji%2Fi%2F10040506%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
-      "item_code": "koji:10040506"
+      "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/hcvalor-eshop/cabinet/49035/885/01/vh-4903588501098.jpg?_ex=128x128",
+      "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00t6oan.u92kl526.g00t6oan.u92km7bd/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhcvalor-eshop%2Fvh-4903588501098%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhcvalor-eshop%2Fi%2F16758141%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
+      "item_code": "hcvalor-eshop:16758141"
     },
     {
       "id": "ezydog-drive-harness",

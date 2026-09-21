@@ -1,6 +1,6 @@
 {
-  "checked_at": "2026-09-21T16:51:50+09:00",
-  "source_fetched_at": "2026-09-21T16:37:54+09:00",
+  "checked_at": "2026-09-21T19:45:48+09:00",
+  "source_fetched_at": "2026-09-21T19:45:27+09:00",
   "criteria": [
     "required_fields",
     "approved_network_host",
@@ -9,7 +9,7 @@
     "positive_price_for_rakuten",
     "unique_id_url_item"
   ],
-  "accepted_count": 46,
+  "accepted_count": 117,
   "rejected_count": 0,
   "accepted": [
     {
@@ -123,6 +123,11 @@
       "reasons": []
     },
     {
+      "id": "doggyman-deruderu",
+      "item_code": "thinkrich:10208245",
+      "reasons": []
+    },
+    {
       "id": "treat-pouch",
       "item_code": "radica:10020802",
       "reasons": []
@@ -225,6 +230,356 @@
     {
       "id": "dt-cheese-stick",
       "item_code": "shop-dogtree:10000035",
+      "reasons": []
+    },
+    {
+      "id": "mannerwear-girl",
+      "item_code": "rakuten24:10434068",
+      "reasons": []
+    },
+    {
+      "id": "mannerwear-boy",
+      "item_code": "rakuten24:10420426",
+      "reasons": []
+    },
+    {
+      "id": "deosheet-premium",
+      "item_code": "f242080-nabari:10000470",
+      "reasons": []
+    },
+    {
+      "id": "ruffwear-front-range",
+      "item_code": "torusdogmart:10000952",
+      "reasons": []
+    },
+    {
+      "id": "ruffwear-float-coat",
+      "item_code": "torusdogmart:10001017",
+      "reasons": []
+    },
+    {
+      "id": "ruffwear-grip-trex",
+      "item_code": "ruffruff:10000944",
+      "reasons": []
+    },
+    {
+      "id": "hurtta-raincoat",
+      "item_code": "1stdogcafe:10000965",
+      "reasons": []
+    },
+    {
+      "id": "porta-training-lead",
+      "item_code": "hcvalor-eshop:16758141",
+      "reasons": []
+    },
+    {
+      "id": "ezydog-drive-harness",
+      "item_code": "dog-penet:10021660",
+      "reasons": []
+    },
+    {
+      "id": "richell-shoulder-carry",
+      "item_code": "store-marufuku:10021008",
+      "reasons": []
+    },
+    {
+      "id": "richell-water-dish",
+      "item_code": "comellbaby:10011845",
+      "reasons": []
+    },
+    {
+      "id": "petio-porta-harness",
+      "item_code": "nyanzaq:10145725",
+      "reasons": []
+    },
+    {
+      "id": "ezydog-dfd",
+      "item_code": "interzoo-pet:10007330",
+      "reasons": []
+    },
+    {
+      "id": "petio-led-light",
+      "item_code": "petio-online-shop:10013328",
+      "reasons": []
+    },
+    {
+      "id": "airbuggy-backpack",
+      "item_code": "dogcart:10000168",
+      "reasons": []
+    },
+    {
+      "id": "furbo-camera",
+      "item_code": "furbo:10000001",
+      "reasons": []
+    },
+    {
+      "id": "iris-soft-cage",
+      "item_code": "dog-kan:10011375",
+      "reasons": []
+    },
+    {
+      "id": "idog-cooling-vest",
+      "item_code": "merrily-shop:10000656",
+      "reasons": []
+    },
+    {
+      "id": "apdc-outdoor-spray",
+      "item_code": "kurosu:10016229",
+      "reasons": []
+    },
+    {
+      "id": "richell-pet-cart",
+      "item_code": "a-price:10912094",
+      "reasons": []
+    },
+    {
+      "id": "kurgo-trufit",
+      "item_code": "petselect:10000650",
+      "reasons": []
+    },
+    {
+      "id": "ezydog-chestplate",
+      "item_code": "dog-penet:10021633",
+      "reasons": []
+    },
+    {
+      "id": "juliusk9-idc",
+      "item_code": "wanderstudio:10000922",
+      "reasons": []
+    },
+    {
+      "id": "petsafe-easywalk",
+      "item_code": "auc-golpara:10000030",
+      "reasons": []
+    },
+    {
+      "id": "flexi-newcomfort",
+      "item_code": "storch:10000100",
+      "reasons": []
+    },
+    {
+      "id": "ruffwear-roamer",
+      "item_code": "ruffruff:10000836",
+      "reasons": []
+    },
+    {
+      "id": "ruffwear-swampcooler",
+      "item_code": "ruffruff:10000786",
+      "reasons": []
+    },
+    {
+      "id": "idog-rainwear",
+      "item_code": "ichikawa929:10000692",
+      "reasons": []
+    },
+    {
+      "id": "radica-cordura-bed",
+      "item_code": "radica:10022773",
+      "reasons": []
+    },
+    {
+      "id": "richell-water-dish-stand",
+      "item_code": "youlamp:10003405",
+      "reasons": []
+    },
+    {
+      "id": "hurtta-weekend-warrior",
+      "item_code": "1stdogcafe:10000569",
+      "reasons": []
+    },
+    {
+      "id": "hurtta-life-saviour",
+      "item_code": "wanderstudio:10001317",
+      "reasons": []
+    },
+    {
+      "id": "citydog-neoprene-carry",
+      "item_code": "4-l-f:10000074",
+      "reasons": []
+    },
+    {
+      "id": "ibiyaya-stroller",
+      "item_code": "auc-roadster:10006285",
+      "reasons": []
+    },
+    {
+      "id": "compet-milimili",
+      "item_code": "kurosu:10044169",
+      "reasons": []
+    },
+    {
+      "id": "mandarine-backpack",
+      "item_code": "girlyapartment:10056235",
+      "reasons": []
+    },
+    {
+      "id": "snowpeak-dog-cot",
+      "item_code": "snowpeak-official:10000586",
+      "reasons": []
+    },
+    {
+      "id": "dod-pet-bed",
+      "item_code": "connectru:10001078",
+      "reasons": []
+    },
+    {
+      "id": "kong-classic",
+      "item_code": "hinatabocco-shop:10006645",
+      "reasons": []
+    },
+    {
+      "id": "kong-wobbler",
+      "item_code": "biccamera:12717068",
+      "reasons": []
+    },
+    {
+      "id": "nina-brick",
+      "item_code": "auc-youmore:10009242",
+      "reasons": []
+    },
+    {
+      "id": "lickimat-classic",
+      "item_code": "traen230:10000107",
+      "reasons": []
+    },
+    {
+      "id": "petlibro-feeder",
+      "item_code": "freema-ket01:10003719",
+      "reasons": []
+    },
+    {
+      "id": "petlibro-fountain",
+      "item_code": "donumshop:10000720",
+      "reasons": []
+    },
+    {
+      "id": "marukan-stable-bowl",
+      "item_code": "wanpaku-izukougen:10002363",
+      "reasons": []
+    },
+    {
+      "id": "thermos-dog-bottle",
+      "item_code": "art-kirameki:10000275",
+      "reasons": []
+    },
+    {
+      "id": "virbac-toothpaste",
+      "item_code": "doubutsunotame:10008768",
+      "reasons": []
+    },
+    {
+      "id": "petkiss-toothsheet",
+      "item_code": "chanet:10261772",
+      "reasons": []
+    },
+    {
+      "id": "mindup-toothbrush",
+      "item_code": "daiya-store:10000040",
+      "reasons": []
+    },
+    {
+      "id": "virbac-epiotic",
+      "item_code": "doubutsunotame:10009070",
+      "reasons": []
+    },
+    {
+      "id": "apdc-shampoo",
+      "item_code": "iimonotokusen:10000006",
+      "reasons": []
+    },
+    {
+      "id": "lion-quickrich",
+      "item_code": "rakuten24:10336911",
+      "reasons": []
+    },
+    {
+      "id": "furminator-small",
+      "item_code": "kurosu:10003238",
+      "reasons": []
+    },
+    {
+      "id": "tangleteezer-pet",
+      "item_code": "tangleteezer:10000187",
+      "reasons": []
+    },
+    {
+      "id": "electric-nail-grinder",
+      "item_code": "selectshopcrea:10000101",
+      "reasons": []
+    },
+    {
+      "id": "zan-nail-clipper",
+      "item_code": "petech:10004917",
+      "reasons": []
+    },
+    {
+      "id": "pawbalm-organic",
+      "item_code": "sasayama-bee:10000224",
+      "reasons": []
+    },
+    {
+      "id": "orange-x-cleaner",
+      "item_code": "dog-penet:10056195",
+      "reasons": []
+    },
+    {
+      "id": "earth-clean-care",
+      "item_code": "petforest:10004868",
+      "reasons": []
+    },
+    {
+      "id": "boss-odor-box",
+      "item_code": "tsutsu-uraura:10005366",
+      "reasons": []
+    },
+    {
+      "id": "unicharm-longwear-boy",
+      "item_code": "dinom-upsw:10000721",
+      "reasons": []
+    },
+    {
+      "id": "unicharm-longwear-girl",
+      "item_code": "nyanzaq:10174215",
+      "reasons": []
+    },
+    {
+      "id": "deoclean-floor",
+      "item_code": "pemos:10010196",
+      "reasons": []
+    },
+    {
+      "id": "petkit-bottle",
+      "item_code": "baby-alice:10004732",
+      "reasons": []
+    },
+    {
+      "id": "petkit-feeder",
+      "item_code": "neikonu:10000012",
+      "reasons": []
+    },
+    {
+      "id": "furbo-mini",
+      "item_code": "furbo:10000007",
+      "reasons": []
+    },
+    {
+      "id": "tapo-petcamera",
+      "item_code": "tplinkdirect:10001097",
+      "reasons": []
+    },
+    {
+      "id": "airtag-dogholder",
+      "item_code": "expsjapan:10050312",
+      "reasons": []
+    },
+    {
+      "id": "dog-firstaid-kit",
+      "item_code": "kumatan:10001786",
+      "reasons": []
+    },
+    {
+      "id": "dog-emergency-bag",
+      "item_code": "safety-plus:10000089",
       "reasons": []
     },
     {
