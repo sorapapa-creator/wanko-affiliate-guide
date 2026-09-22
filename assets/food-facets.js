@@ -73,7 +73,7 @@ window.WANKO_FOOD_FACTS = {
   },
   "a8-nelsons": {
     "id": "a8-nelsons",
-    "label": "中・大型犬向けの粒と容量で選びたい",
+    "label": "ネルソンズ｜5kgと大型犬用10kgの違いで選ぶ",
     "ingredients": [],
     "ingredient_text": "",
     "target": "",
@@ -88,8 +88,8 @@ window.WANKO_FOOD_FACTS = {
     "concern": [],
     "price": 0,
     "price_date": "",
-    "source": "",
-    "checked": "",
+    "source": "https://www.nelsonsdogfood.jp/cart",
+    "checked": "2026-09-22",
     "limited_puppy": false,
     "caution": "病気や下痢の改善を保証する商品ではありません。急な切替を避け、原材料、給与量、体調変化を確認してください。価格・キャンペーン・在庫は公式ページを優先します。",
     "additives": [],
@@ -97,7 +97,7 @@ window.WANKO_FOOD_FACTS = {
   },
   "a8-wolf-insight": {
     "id": "a8-wolf-insight",
-    "label": "中・大型犬の味・粒・容量を比較したい",
+    "label": "WOLF INSIGHT｜シリーズとたんぱく源を比較",
     "ingredients": [],
     "ingredient_text": "",
     "target": "",
@@ -112,8 +112,8 @@ window.WANKO_FOOD_FACTS = {
     "concern": [],
     "price": 0,
     "price_date": "",
-    "source": "",
-    "checked": "",
+    "source": "https://food.pontely.com/shop/pages/about_wolfinsight",
+    "checked": "2026-09-22",
     "limited_puppy": false,
     "caution": "体調改善や特定症状への効果を保証する商品ではありません。避けたい原材料、保証成分、給与量、切替方法を公式表示で確認してください。",
     "additives": [],
@@ -6227,6 +6227,188 @@ window.WANKO_FOOD_FACTS = {
     "checked": "2026-09-21",
     "limited_puppy": false,
     "caution": "病気の治療・改善を目的とする療法食ではありません。診断を受けている犬や症状がある犬は、切替前に獣医師へ相談。 原材料の抜粋だけで判断せず、現品の全表示を確認してください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "rankfood-medi-manpuku-adult": {
+    "id": "rankfood-medi-manpuku-adult",
+    "label": "メディコート 満腹感ダイエット 1歳から",
+    "ingredients": [
+      "鶏",
+      "小麦",
+      "とうもろこし",
+      "大豆"
+    ],
+    "ingredient_text": "小麦粉、コーングルテンフィード、小麦ふすま、脱脂大豆、おから、セルロース、動物性油脂、チキンレバーパウダーなど",
+    "target": "1歳からの成犬／体重管理",
+    "age": [
+      "成犬"
+    ],
+    "age_range": [
+      12.0,
+      null
+    ],
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [
+      "体重管理"
+    ],
+    "price": 0,
+    "price_date": "価格・在庫は購入前に確認",
+    "source": "https://www.petline.co.jp/toiletry/U0500/",
+    "checked": "2026-09-22",
+    "limited_puppy": false,
+    "caution": "子犬用ではありません。無着色ですが、酸化防止剤や栄養添加物を含みます。 原材料は抜粋です。アレルギーがある場合は全表示を確認してください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "rankfood-pochi-basic-salmon": {
+    "id": "rankfood-pochi-basic-salmon",
+    "label": "POCHI ザ・ドッグフード ベーシック ワイルドサーモン",
+    "ingredients": [
+      "鶏",
+      "魚"
+    ],
+    "ingredient_text": "サーモン生肉、フィッシュペプチド、ソラ豆、スイートポテト、リンゴ、エンドウ豆プロテイン、チキンレバー（加水分解）など",
+    "target": "全年齢（オールライフステージ）",
+    "age": [
+      "子犬",
+      "成犬",
+      "シニア",
+      "全年齢"
+    ],
+    "age_range": [
+      0,
+      null
+    ],
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 2390,
+    "price_date": "2026-09-22（公式価格。注文時の在庫・送料を確認）",
+    "source": "https://www.pochi.co.jp/item/POD0100740.html",
+    "checked": "2026-09-22",
+    "limited_puppy": false,
+    "caution": "サーモンの名称でも鶏由来原料を含みます。魚だけの単一たんぱく源ではありません。 原材料は抜粋です。アレルギーがある場合は全表示を確認してください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "rankfood-acana-light-fit": {
+    "id": "rankfood-acana-light-fit",
+    "label": "アカナ ライト＆フィットレシピ",
+    "ingredients": [
+      "鶏",
+      "七面鳥"
+    ],
+    "ingredient_text": "新鮮鶏肉、鶏ミール、赤レンズ豆、グリーンピース、ヒヨコ豆繊維、鶏内臓、七面鳥ミール、卵、ヘイク、ニシンミールなど",
+    "target": "全犬種・成犬／体重管理",
+    "age": [
+      "成犬"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": true,
+    "weight": [
+      [
+        0,
+        null
+      ]
+    ],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [
+      "体重管理"
+    ],
+    "price": 6358,
+    "price_date": "2026-09-22（公式価格。注文時の在庫・送料を確認）",
+    "source": "https://acana.net/products/light-fit-recipe",
+    "checked": "2026-09-22",
+    "limited_puppy": false,
+    "caution": "体重維持と減量では公式給与量が異なります。自己判断で極端に減らさず体型を見て調整。酸化防止剤・添加栄養素を含みます。 原材料は抜粋です。アレルギーがある場合は全表示を確認してください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "rankfood-bestbalance-shiba": {
+    "id": "rankfood-bestbalance-shiba",
+    "label": "ベストバランス カリカリ仕立て 柴犬用",
+    "ingredients": [
+      "鶏",
+      "牛",
+      "豚",
+      "魚",
+      "米",
+      "小麦",
+      "とうもろこし",
+      "大豆"
+    ],
+    "ingredient_text": "トウモロコシ、小麦粉、コーングルテンミール、パン粉、玄米、チキンミール、ビーフミール、ポークミール、大豆、魚介類など",
+    "target": "柴犬・成犬",
+    "age": [
+      "成犬"
+    ],
+    "age_range": null,
+    "breed": [
+      "柴犬"
+    ],
+    "all_breeds": false,
+    "weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 0,
+    "price_date": "価格・在庫は購入前に確認",
+    "source": "https://jp.unicharmpet.com/ja/products/dog/food-bestbalance-4520699693292.html",
+    "checked": "2026-09-22",
+    "limited_puppy": false,
+    "caution": "小麦・大豆や複数の肉原料を含みます。犬種だけで適合を決めず、全原材料と給与表を確認。 原材料は抜粋です。アレルギーがある場合は全表示を確認してください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "rankfood-bestbalance-poodle10": {
+    "id": "rankfood-bestbalance-poodle10",
+    "label": "ベストバランス カリカリ仕立て トイ・プードル用 10歳以上用",
+    "ingredients": [
+      "鶏",
+      "牛",
+      "豚",
+      "魚",
+      "米",
+      "小麦",
+      "とうもろこし",
+      "大豆"
+    ],
+    "ingredient_text": "トウモロコシ、小麦粉、パン粉、コーングルテンミール、玄米、チキンミール、チキン、ビーフミール、ポークミール、大豆、魚介類など",
+    "target": "10歳以上のトイ・プードル（公式ではマルチーズにも案内）",
+    "age": [],
+    "age_range": [
+      120.0,
+      null
+    ],
+    "breed": [
+      "プードル"
+    ],
+    "all_breeds": false,
+    "weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 0,
+    "price_date": "価格・在庫は購入前に確認",
+    "source": "https://jp.unicharmpet.com/ja/products/dog/food-bestbalance-4520699676486.html",
+    "checked": "2026-09-22",
+    "limited_puppy": false,
+    "caution": "ドライタイプです。噛みにくい犬への柔らかさを保証するものではありません。保存料（ソルビン酸K）などを含みます。 原材料は抜粋です。アレルギーがある場合は全表示を確認してください。",
     "additives": [],
     "additive_evidence": {}
   }
