@@ -9,25 +9,52 @@
       "program_id": "s00000000458006",
       "status": "partnered",
       "category": "フード・おやつ",
-      "label": "中・大型犬向けの粒と容量で選びたい",
+      "label": "ネルソンズ｜5kgと大型犬用10kgの違いで選ぶ",
       "name": "ネルソンズドッグフード",
-      "strength": "中・大型犬を主な対象として、粒の大きさと大容量を比較しやすい主食候補です。犬種名だけで決めず、原材料、成分、給与量、1日当たりの費用を確認できます。",
+      "strength": "中・大型犬を中心に、粒の大きさと袋容量を選べる英国産フード。5kgと10kgは容量だけでなく対象犬・粒・成分も異なるため、体格と年齢から比較できます。",
       "check": "病気や下痢の改善を保証する商品ではありません。急な切替を避け、原材料、給与量、体調変化を確認してください。価格・キャンペーン・在庫は公式ページを優先します。",
-      "problems": ["毎日の主食", "食べムラ・お腹", "原材料で選ぶ"],
+      "problems": [
+        "毎日の主食",
+        "食べムラ・お腹",
+        "原材料で選ぶ"
+      ],
       "price_yen": 0,
       "shop": "公式販売ページ",
       "review_average": 0,
       "review_count": 0,
-      "image_url": "assets/main-dog.jpg",
+      "image_url": "https://www29.a8.net/svt/bgt?aid=260921651886&wid=001&eno=01&mid=s00000000458006007000&mc=1",
       "affiliate_url": "https://px.a8.net/svt/ejp?a8mat=4BCGFN+ENI2R6+3J8+15NP77&a8ejpredirect=http%3A%2F%2Fwww.nelsonsdogfood.jp%2F7500%2F",
       "item_code": "a8:s00000000458006",
       "button_label": "ネルソンズ公式ページで確認",
       "review_summary": "食いつきと中・大型犬向けの容量を評価する使用例がある一方、香りの強さ、粒の硬さ・大きさ、犬との相性には差があります。",
-      "review_positive": ["食いつきが良かったという使用例", "中・大型犬では大容量を評価する声", "粒を噛んで食べたという使用例"],
-      "review_caution": ["香りが強いと感じる例", "小型犬には粒や袋容量が合わない場合", "軟便など体調に合わなかった個別例"],
+      "review_positive": [
+        "食いつきが良かったという使用例",
+        "中・大型犬では大容量を評価する声",
+        "粒を噛んで食べたという使用例"
+      ],
+      "review_caution": [
+        "香りが強いと感じる例",
+        "小型犬には粒や袋容量が合わない場合",
+        "軟便など体調に合わなかった個別例"
+      ],
       "review_source_label": "公式利用者の声・第三者実食確認",
       "review_source_url": "https://news.mynavi.jp/dogfood/nelsons/",
-      "review_checked_at": "2026-09-21"
+      "review_checked_at": "2026-09-21",
+      "official_source": "https://www.nelsonsdogfood.jp/cart",
+      "product_details": {
+        "5kgの対象": "全犬種・全年齢。公式では中型犬・大型犬の子犬におすすめと案内。",
+        "大型犬用10kgの対象": "30kg以上の大型犬・1歳以上。5kgと同じレシピとは扱わずに比較。",
+        "粒の違い": "5kg：1辺約1cmの三角形／10kg：1辺約1.5cmの三角形。",
+        "成分とカロリー": "5kg：たんぱく質28%以上、脂質12%以上、365.7kcal/100g。10kg：29%以上、9%以上、341.7kcal/100g。",
+        "原材料の見方": "チキンを使用し、穀物不使用を表示。人工香料・着色料は不使用。全原材料は種類ごとに確認。",
+        "こだわりを確認": "ヒューマングレードの説明は指定食材に限る表示です。全原材料を人用と同一とは判断しません。",
+        "購入前の比較": "通常購入・定期購入の総額、送料、配送間隔、変更・休止条件を購入画面で確認。1食・月額は選んだ種類の給与量で計算。"
+      },
+      "official_checked_at": "2026-09-22",
+      "image_permission_status": "A8_registered_site_banner_verified",
+      "ad_html": "<a href=\"https://px.a8.net/svt/ejp?a8mat=4BCGFN+ENI2R6+3J8+ZRIB5\" rel=\"nofollow\">\n<img border=\"0\" width=\"300\" height=\"250\" alt=\"\" src=\"https://www29.a8.net/svt/bgt?aid=260921651886&wid=001&eno=01&mid=s00000000458006007000&mc=1\"></a>\n<img border=\"0\" width=\"1\" height=\"1\" src=\"https://www13.a8.net/0.gif?a8mat=4BCGFN+ENI2R6+3J8+ZRIB5\" alt=\"\">",
+      "image_checked_at": "2026-09-22",
+      "a8_creative_id": "007"
     },
     {
       "id": "a8-onekosama",
@@ -35,25 +62,54 @@
       "program_id": "s00000015995003",
       "status": "partnered",
       "category": "宿泊・旅行",
-      "label": "旅行場面に合う犬用品をまとめて選びたい",
+      "label": "ONEKOSAMA OINUSAMA｜抱っこ紐のサイズで選ぶ",
       "name": "ONEKOSAMA OINUSAMA",
-      "strength": "お出かけや自宅で使うペット用品を、用途、サイズ、素材、手入れ方法で比較できる候補です。旅行では持ち運び寸法と宿の持込条件を先に確認できます。",
+      "strength": "旅行や通院の移動用品を探せる公式ショップ。比較例として、強撥水ナイロンのマルチ抱っこ紐（ons0111）のM・Lサイズと重量を確認できます。",
       "check": "商品ごとに対象、耐荷重、寸法、素材が異なります。犬の体格と利用場面に合わせ、公式の商品表示を確認してください。",
-      "problems": ["旅行準備", "車移動", "雨・泥汚れ", "暑さ対策"],
+      "problems": [
+        "旅行準備",
+        "車移動",
+        "雨・泥汚れ",
+        "暑さ対策"
+      ],
       "price_yen": 0,
       "shop": "公式販売ページ",
       "review_average": 0,
       "review_count": 0,
-      "image_url": "assets/main-dog.jpg",
+      "image_url": "https://www29.a8.net/svt/bgt?aid=260921651912&wid=001&eno=01&mid=s00000015995003012000&mc=1",
       "affiliate_url": "https://px.a8.net/svt/ejp?a8mat=4BCGFN+F2ZCHE+3FF2+NSP1V&a8ejpredirect=https%3A%2F%2Foneko-sama.com%2F",
       "item_code": "a8:s00000015995003",
       "button_label": "公式ショップで商品を確認",
       "review_summary": "マルチ抱っこ紐では、安定感、両肩への荷重分散、作りの良さが評価されています。体格によって窮屈さやファスナーの閉めにくさが出るため、犬種名だけでなく実寸確認が必要です。",
-      "review_positive": ["楽天購入者評価4.54／5（87件、確認時）", "安定感と肩への負担軽減を評価", "旅行や通院での使いやすさを評価"],
-      "review_caution": ["胴長・大きめの犬では上部が閉まらない例", "ファスナーの硬さや新品時のにおい", "商品ごとにレビューが異なるため個別確認が必要"],
+      "review_positive": [
+        "楽天購入者評価4.54／5（87件、確認時）",
+        "安定感と肩への負担軽減を評価",
+        "旅行や通院での使いやすさを評価"
+      ],
+      "review_caution": [
+        "胴長・大きめの犬では上部が閉まらない例",
+        "ファスナーの硬さや新品時のにおい",
+        "商品ごとにレビューが異なるため個別確認が必要"
+      ],
       "review_source_label": "楽天市場・マルチ抱っこ紐購入者レビュー",
       "review_source_url": "https://review.rakuten.co.jp/review/item/1/402624_10000398/1.1/",
-      "review_checked_at": "2026-09-21"
+      "review_checked_at": "2026-09-21",
+      "official_source": "https://oneko-sama.com/shop/products/ons0111",
+      "product_details": {
+        "比較している商品": "強撥水ナイロン ペットマルチ抱っこ紐（ons0111）。ショップ全商品の共通仕様ではありません。",
+        "Mサイズ": "幅37×高さ28×奥行19cm、約600g。",
+        "Lサイズ": "幅43×高さ32×奥行23cm、約730g。",
+        "耐荷重と体格": "耐荷重15kg。犬の体重だけでなく胴の長さ、姿勢、開口部も確認。小型犬2頭の利用案内がありますが合計重量と収まりを確認。",
+        "素材": "本体ナイロン100%、メッシュ部分ポリエステル100%。撥水は完全防水と同義ではありません。",
+        "犬種の目安": "公式ではMにチワワなど、Lにダックスフンドなど胴長犬種やフレンチブルドッグを例示。犬種だけで適合を決めず実寸で確認。",
+        "価格・在庫の確認": "公式表示は税込14,300円（確認時）。在庫切れ表示もあるため、色・サイズ別の在庫と発送時期は購入前に確認。",
+        "旅行前に確認": "飛び出し防止リードの使い方、施設や交通機関の持込条件を確認。摩擦による色落ち・色移りに注意。"
+      },
+      "official_checked_at": "2026-09-22",
+      "image_permission_status": "A8_registered_site_banner_verified",
+      "ad_html": "<a href=\"https://px.a8.net/svt/ejp?a8mat=4BCGFN+F2ZCHE+3FF2+HXKQP\" rel=\"nofollow\">\n<img border=\"0\" width=\"300\" height=\"250\" alt=\"\" src=\"https://www29.a8.net/svt/bgt?aid=260921651912&wid=001&eno=01&mid=s00000015995003012000&mc=1\"></a>\n<img border=\"0\" width=\"1\" height=\"1\" src=\"https://www14.a8.net/0.gif?a8mat=4BCGFN+F2ZCHE+3FF2+HXKQP\" alt=\"\">",
+      "image_checked_at": "2026-09-22",
+      "a8_creative_id": "012"
     },
     {
       "id": "a8-wolf-insight",
@@ -61,25 +117,51 @@
       "program_id": "s00000019490003",
       "status": "partnered",
       "category": "フード・おやつ",
-      "label": "中・大型犬の味・粒・容量を比較したい",
+      "label": "WOLF INSIGHT｜シリーズとたんぱく源を比較",
       "name": "WOLF INSIGHT ドッグフード",
-      "strength": "中・大型犬の主食候補として、味、粒、容量、原材料と継続費用を比較できます。食いつきは個体差があるため、公式仕様を見ながら少量から判断します。",
+      "strength": "ベーシック・エンハンスト・プライマルから、原材料の組み合わせで選ぶ英国産フード。中・大型犬向けに限定せず、商品ごとの対象・粒・容量を確認して比較します。",
       "check": "体調改善や特定症状への効果を保証する商品ではありません。避けたい原材料、保証成分、給与量、切替方法を公式表示で確認してください。",
-      "problems": ["毎日の主食", "食べムラ・お腹", "原材料で選ぶ"],
+      "problems": [
+        "毎日の主食",
+        "食べムラ・お腹",
+        "原材料で選ぶ"
+      ],
       "price_yen": 0,
       "shop": "公式販売ページ",
       "review_average": 0,
       "review_count": 0,
-      "image_url": "assets/main-dog.jpg",
+      "image_url": "https://www20.a8.net/svt/bgt?aid=260921651914&wid=001&eno=01&mid=s00000019490003035000&mc=1",
       "affiliate_url": "https://px.a8.net/svt/ejp?a8mat=4BCGFN+F467OY+46DW+NSP1V&a8ejpredirect=https%3A%2F%2Ffood.pontely.com%2Flp%3Fu%3DWI00001",
       "item_code": "a8:s00000019490003",
       "button_label": "WOLF INSIGHT公式ページで確認",
       "review_summary": "公開されているレビューはまだ少なく、食いつきと価格の評価は賛否があります。十分な母数がないため、評価点ではなく粒の大きさ、容量、原材料と少量での適合確認を優先します。",
-      "review_positive": ["食いつきが良かったという個別例", "中・大型犬向けの容量を評価する声"],
-      "review_caution": ["食いつかなかった・合わなかった個別例", "価格を高いと感じる声", "独立した購入者レビューの母数が少ない"],
+      "review_positive": [
+        "食いつきが良かったという個別例",
+        "中・大型犬向けの容量を評価する声"
+      ],
+      "review_caution": [
+        "食いつかなかった・合わなかった個別例",
+        "価格を高いと感じる声",
+        "独立した購入者レビューの母数が少ない"
+      ],
       "review_source_label": "公開レビューの傾向（母数限定）",
       "review_source_url": "https://otonagirl30.xsrv.jp/%E3%82%A6%E3%83%AB%E3%83%95%E3%82%A4%E3%83%B3%E3%82%B5%E3%82%A4%E3%83%88-%E3%83%89%E3%83%83%E3%82%B0%E3%83%95%E3%83%BC%E3%83%89%E3%81%AE%E5%8F%A3%E3%82%B3%E3%83%9F%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/",
-      "review_checked_at": "2026-09-21"
+      "review_checked_at": "2026-09-21",
+      "official_source": "https://food.pontely.com/shop/pages/about_wolfinsight",
+      "product_details": {
+        "シリーズの選び方": "ベーシック・エンハンスト・プライマルは別の配合。シリーズと味を決めてから粒・容量を確認。",
+        "エンハンストの特徴": "動物性原材料65%。単一の動物性たんぱく源を使用するシリーズとして案内。",
+        "原材料の違い": "ベーシックのチキンにはターキー・サーモンも使用。商品名の肉や魚だけが入っているとは限りません。",
+        "不使用表示": "穀物、合成酸化防止剤、着色料を不使用と表示。栄養強化のビタミン・ミネラルは配合。",
+        "製造へのこだわり": "公式は英国製造、約90度の低温低圧加工を説明。加工方法だけで愛犬への適合は決まりません。",
+        "成分比較の例": "ベーシック・チキン：たんぱく質26%以上、脂質13%以上、約384kcal/100g。エンハンスト・チキン：29%以上、12%以上、約372kcal/100g。",
+        "選ぶ際の注意": "味・シリーズを横断して同じ成分や対象年齢を当てはめません。避けたい食材は全原材料で確認。"
+      },
+      "official_checked_at": "2026-09-22",
+      "image_permission_status": "A8_registered_site_banner_verified",
+      "ad_html": "<a href=\"https://px.a8.net/svt/ejp?a8mat=4BCGFN+F467OY+46DW+I2I7L\" rel=\"nofollow\">\n<img border=\"0\" width=\"300\" height=\"250\" alt=\"\" src=\"https://www20.a8.net/svt/bgt?aid=260921651914&wid=001&eno=01&mid=s00000019490003035000&mc=1\"></a>\n<img border=\"0\" width=\"1\" height=\"1\" src=\"https://www19.a8.net/0.gif?a8mat=4BCGFN+F467OY+46DW+I2I7L\" alt=\"\">",
+      "image_checked_at": "2026-09-22",
+      "a8_creative_id": "035"
     }
   ]
 }

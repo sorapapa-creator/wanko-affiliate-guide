@@ -47,3 +47,11 @@ header.guide-hero{max-width:1320px;margin:auto;background:transparent;color:var(
 
 /* Food brand selection */
 .food-brand-picker{display:grid;gap:8px;grid-template-columns:minmax(160px,1fr) minmax(220px,2fr);align-items:center;padding:18px 0 4px}.food-brand-picker label{font-weight:700}.food-brand-picker select{width:100%;min-height:48px;padding:12px 38px 12px 16px;border:1px solid #cdd8d1;border-radius:12px;background:#fff;color:#244d43;font:inherit}.food-brand-picker small{grid-column:1/-1;color:#66766c}.food-brand-picker select:focus-visible{outline:3px solid #e2ad57;outline-offset:2px}@media(max-width:600px){.food-brand-picker{grid-template-columns:1fr}}
+
+/* A8 creative: keep supplied HTML and full banner artwork intact. */
+.a8-creative{position:relative;display:flex;align-items:center;justify-content:center;min-height:282px;background:#f5f4ee;padding:24px 8px 8px;flex-wrap:wrap}
+.a8-creative>a{display:block;max-width:100%;line-height:0}
+.a8-creative>a>img{max-width:100%;height:auto;object-fit:contain;border-radius:0}
+.a8-creative>img[width="1"]{width:1px;height:1px;position:absolute;bottom:0;right:0}
+.a8-ad-label{position:absolute;top:6px;left:12px;font-size:10px;color:#687260}
+@media(max-width:640px){.card:has(>.a8-creative){display:flex;flex-direction:column}.a8-creative{width:100%}}
