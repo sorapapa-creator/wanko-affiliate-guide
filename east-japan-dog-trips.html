@@ -13,7 +13,7 @@
     .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:18px}.trip{background:#fff;border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:0 10px 26px rgba(20,66,54,.07)}.trip[hidden]{display:none}.region{display:inline-flex;background:var(--mint);color:var(--green);font-weight:900;border-radius:999px;padding:5px 10px;font-size:.82rem}.trip h2{font-size:1.28rem;line-height:1.4;margin:12px 0 8px}.theme{font-weight:800;color:#5a6f68;margin:0 0 14px}.facts{display:grid;gap:9px;margin:0}.facts div{padding:10px 12px;border-radius:12px;background:#f7faf8}.facts dt{font-size:.78rem;font-weight:900;color:var(--green)}.facts dd{margin:2px 0 0}.check{border-left:4px solid var(--orange);padding-left:12px;margin:14px 0}.trip a{display:inline-block;background:var(--green);color:#fff;text-decoration:none;font-weight:900;border-radius:12px;padding:10px 14px}.source{font-size:.78rem;color:#687a74;margin-top:12px}
     footer{background:#173d34;color:#eef8f4;padding:28px 20px}footer p{margin:4px 0} @media(max-width:600px){header{padding-top:38px}.grid{grid-template-columns:1fr}.trip{padding:18px}}
   </style>
-<link rel="stylesheet" href="assets/editorial.css"><script src="assets/editorial.js" defer></script></head>
+<link rel="stylesheet" href="assets/editorial.css"><script src="assets/editorial.js" defer></script><link rel="stylesheet" href="assets/contact.css"></head>
 <body class="wanko-editorial-v1 guide-page"><a class="skip" href="#content">本文へ</a><nav class="site-nav" aria-label="メインナビゲーション"><a class="brand" href="index.html"><img class="ui-icon" src="assets/icons/paw-print.svg" alt="" width="22" height="22"><span>わんことのじかん<small>LIFE WITH OUR DOGS</small></span></a><div class="nav-links"><a href="index.html">犬用品</a><a href="dog-lodging-guide.html">泊まる</a><a href="east-japan-dog-trips.html" aria-current="page">お出かけ</a></div></nav>
 <header class="guide-hero"><div><p class="eyebrow">わんことのじかん</p><h1>東日本の犬旅行<br>15の行き先アイデア</h1><p>観光名所だけで選ばず、犬の大きさ、暑さ、移動、証明書、雨天時の逃げ道まで確認できる旅行案です。</p></div><div class="guide-photo"><div class="travel-photo-frame"><img src="assets/travel-dog.webp" alt="青空の下、黄色いおもちゃで遊ぶダックスフンド" width="1200" height="1600" style="object-position:center 58%"></div><span>次の休日も、きみといっしょに。</span></div></header>
 <main id="content">
@@ -38,6 +38,11 @@
     <article class="trip" data-region="tohoku"><span class="region">宮城・川崎町</span><h2>15. みちのく公園の大型ドッグラン</h2><p class="theme">東北の広い公園で運動／日帰り</p><dl class="facts"><div><dt>公式確認</dt><dd>利用登録制のドッグラン。大型・中型犬と小型犬エリア、足洗い場、犬の水飲み場あり。</dd></div><div><dt>向く犬</dt><dd>広い場所で走りたい犬、サイズ別エリアを使いたい犬。</dd></div><div><dt>持ち物</dt><dd>1年以内の狂犬病予防注射済票・5種以上の混合ワクチン証明書、登録料310円（1年間有効）、飲み水、マナー袋。</dd></div></dl><p class="check"><b>季節別の受付：</b>3～10月は10:00～16:00、11～2月は10:00～15:00。利用終了は各受付終了の30分後です。生後4か月以上・飼い主16歳以上が登録条件。ノーリードは飼い主1人につき1頭まで。<br><b>臨時休止：</b>2026年9月25・26日はドッグランと駐車場が利用中止。別日を選び、出発前に公式のお知らせを確認してください。<small>公式再確認：2026-09-22</small></p><a href="https://michinoku-park.info/" target="_blank" rel="noopener">公式サイト</a></article>
   </section>
 </main>
-<footer><div><strong>わんことのじかん</strong><p>施設条件は変更されることがあります。出発前に公式情報を確認し、犬の体調・年齢・性格を優先してください。</p></div></footer>
+<section class="contact-panel" id="contact" aria-labelledby="contact-heading">
+<div><p class="contact-kicker">FOR OUR PARTNERS</p><h2 id="contact-heading">施設・メーカーの皆さまへ</h2>
+<p>犬と楽しめる宿・お出かけ先・カフェ、犬用品の掲載相談について。施設や商品のこだわり、おすすめポイント、写真提供、掲載情報の訂正などをお寄せいただく窓口です。</p>
+<p class="contact-note">内容を確認のうえ、掲載を検討いたします。広告・商品提供を伴う場合は、その旨を明記します。</p></div>
+<div class="contact-actions"><a class="contact-button" href="contact.html">掲載・取材のご相談 <span aria-hidden="true">↗</span></a><p>お問い合わせ窓口のご案内</p></div>
+</section><footer><div><strong>わんことのじかん</strong><p>施設条件は変更されることがあります。出発前に公式情報を確認し、犬の体調・年齢・性格を優先してください。</p></div></footer>
 <script>document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('[data-filter]').forEach(x=>x.classList.remove('active'));b.classList.add('active');document.querySelectorAll('.trip').forEach(c=>c.hidden=b.dataset.filter!=='all'&&c.dataset.region!==b.dataset.filter)}));</script>
 </body></html>
