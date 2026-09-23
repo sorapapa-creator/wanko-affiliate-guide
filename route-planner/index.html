@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>わんこ旅の出発時刻と休憩プラン</title>
+<meta name="description" content="犬連れ旅行の出発時刻ごとの所要時間と、ドッグランのあるSA・PAでの休憩プランを作ります">
+<style>
+  :root {
+    --bg: #faf7f2; --panel: #ffffff; --text: #2b2622; --muted: #6f665d; --line: #e7dfd3;
+    --accent: #c0612b; --accent-soft: #fbeee4; --good: #2e7d4f; --warn: #b26b00; --bad: #b3261e;
+    --chip: #f1ebe2;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #171412; --panel: #211d1a; --text: #efe8e0; --muted: #a99f94; --line: #3a332d;
+      --accent: #e58a55; --accent-soft: #3a2a20; --good: #6cc38f; --warn: #f0b04a; --bad: #f2837a; --chip: #2c2622;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #171412; --panel: #211d1a; --text: #efe8e0; --muted: #a99f94; --line: #3a332d;
+    --accent: #e58a55; --accent-soft: #3a2a20; --good: #6cc38f; --warn: #f0b04a; --bad: #f2837a; --chip: #2c2622;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); line-height: 1.6;
+    font-family: system-ui, -apple-system, "Hiragino Sans", "Noto Sans JP", "Yu Gothic UI", sans-serif; }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 16px; }
+  h1 { font-size: 1.35rem; margin: 8px 0 4px; }
+  .lead { color: var(--muted); margin: 0 0 14px; font-size: .95rem; }
+  .mock { display: none; background: var(--accent-soft); border: 1px dashed var(--accent); padding: 8px 12px;
+    border-radius: 8px; margin-bottom: 12px; font-size: .9rem; }
+  form, .card { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; margin-bottom: 14px; }
+  fieldset { border: 0; margin: 0 0 10px; padding: 0; }
+  legend, label.t { font-weight: 700; font-size: .92rem; margin-bottom: 4px; display: block; }
+  .row { display: grid; grid-template-columns: 1fr; gap: 10px; }
+  @media (min-width: 640px) { .row.two { grid-template-columns: 1fr 1fr; } .row.four { grid-template-columns: repeat(4, 1fr); } }
+  input, select { width: 100%; font: inherit; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px;
+    background: var(--bg); color: var(--text); }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chips label { background: var(--chip); border-radius: 999px; padding: 4px 12px; font-size: .9rem; cursor: pointer; }
+  .chips input { width: auto; margin-right: 4px; }
+  button.primary { background: var(--accent); color: #fff; border: 0; border-radius: 10px; padding: 11px 18px;
+    font: inherit; font-weight: 700; cursor: pointer; width: 100%; }
+  button.primary:disabled { opacity: .6; cursor: wait; }
+  .hint { color: var(--muted); font-size: .84rem; margin-top: 4px; }
+  h2 { font-size: 1.05rem; margin: 0 0 10px; }
+  table { width: 100%; border-collapse: collapse; font-size: .92rem; }
+  th, td { text-align: left; padding: 7px 6px; border-top: 1px solid var(--line); }
+  th { color: var(--muted); font-weight: 600; font-size: .82rem; border-top: 0; }
+  tr.best td { background: var(--accent-soft); font-weight: 700; }
+  .num { font-variant-numeric: tabular-nums; }
+  .timeline { list-style: none; margin: 0; padding: 0; }
+  .timeline li { display: grid; grid-template-columns: 64px 1fr; gap: 10px; padding: 8px 0; border-top: 1px solid var(--line); }
+  .timeline li:first-child { border-top: 0; }
+  .time { font-weight: 700; font-variant-numeric: tabular-nums; }
+  .badge { display: inline-block; font-size: .76rem; font-weight: 700; padding: 1px 8px; border-radius: 999px; margin: 0 4px 2px 0;
+    background: var(--chip); }
+  .b-run { background: #2e7d4f; color: #fff; } .b-pet { background: #3a6ea5; color: #fff; }
+  .b-warn { background: var(--warn); color: #fff; } .b-closed { background: var(--bad); color: #fff; }
+  .note { color: var(--muted); font-size: .85rem; }
+  .warnbox { border-left: 4px solid var(--warn); padding: 6px 10px; background: var(--accent-soft); border-radius: 6px; margin: 8px 0; font-size: .9rem; }
+  a { color: var(--accent); }
+  .actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+  .actions a { display: inline-block; border: 1px solid var(--accent); border-radius: 8px; padding: 7px 12px; text-decoration: none; font-weight: 600; font-size: .92rem; }
+  .ad { font-size: .74rem; color: var(--muted); border: 1px solid var(--line); border-radius: 4px; padding: 0 4px; margin-left: 4px; }
+  .nearby { display: grid; grid-template-columns: 1fr; gap: 8px; }
+  @media (min-width: 640px) { .nearby { grid-template-columns: 1fr 1fr; } }
+  .nearby a { display: block; border: 1px solid var(--line); border-radius: 10px; padding: 8px 10px; text-decoration: none; color: inherit; }
+  .nearby small { color: var(--muted); display: block; }
+  footer { color: var(--muted); font-size: .8rem; padding: 8px 0 30px; }
+  footer p { margin: 3px 0; }
+  .hidden { display: none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>わんこ旅の出発時刻と休憩プラン</h1>
+  <p class="lead">行き先と出発の時間帯を選ぶと、出発時刻ごとの所要時間の目安と、うちの子に合わせた休憩プラン(ドッグランのあるSA・PA優先)を作ります。</p>
+  <div class="mock" id="mock">テスト用の仮データで表示しています(渋滞は実データではありません)。</div>
+
+  <form id="form" autocomplete="off">
+    <div class="row two">
+      <fieldset>
+        <label class="t" for="origin">出発地</label>
+        <select id="origin">
+          <option value="35.6812,139.7671">東京駅</option>
+          <option value="35.9063,139.6240">大宮駅</option>
+          <option value="35.4658,139.6223">横浜駅</option>
+          <option value="35.6130,140.1136">千葉駅</option>
+          <option value="here">現在地を使う</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <label class="t" for="dest-q">行き先(わんことのじかん掲載先)</label>
+        <input id="dest-q" list="dest-list" placeholder="例: 那須、河口湖、CARO FORESTA">
+        <datalist id="dest-list"></datalist>
+        <div class="hint" id="dest-hint"></div>
+      </fieldset>
+    </div>
+    <div class="row four">
+      <fieldset><label class="t" for="date">出発日</label><input type="date" id="date" required></fieldset>
+      <fieldset><label class="t" for="start">いちばん早い出発</label><input type="time" id="start" value="05:00" step="1800"></fieldset>
+      <fieldset><label class="t" for="step">比べる間隔</label>
+        <select id="step"><option value="60">1時間ごと</option><option value="30">30分ごと</option></select></fieldset>
+      <fieldset><label class="t" for="count">比べる数</label>
+        <select id="count"><option>4</option><option selected>6</option><option>8</option></select></fieldset>
+    </div>
+    <fieldset>
+      <legend>うちの子について</legend>
+      <div class="row two">
+        <div><label class="t" for="size">体格</label>
+          <select id="size"><option value="small">小型犬</option><option value="medium">中型犬</option><option value="large">大型犬</option></select></div>
+        <div><label class="t" for="age">年齢</label>
+          <select id="age"><option value="adult">成犬</option><option value="puppy">子犬(1歳未満)</option><option value="senior">シニア(7歳以上)</option></select></div>
+      </div>
+      <div class="chips" style="margin-top:8px">
+        <label><input type="checkbox" id="carsick">車酔いしやすい</label>
+        <label><input type="checkbox" id="heat">暑さに弱い(短頭種など)</label>
+      </div>
+      <div class="hint">休憩の間隔は、成犬は2時間、子犬・シニア・車酔いする子は1時間、暑さに弱い子は夏季1.5時間を目安にします。持病がある子は獣医さんの指示を優先してください。</div>
+    </fieldset>
+    <button class="primary" id="go" type="submit">出発時刻を比べる</button>
+  </form>
+
+  <div id="error" class="card hidden" role="alert"></div>
+
+  <section id="results" class="hidden">
+    <div class="card">
+      <h2 id="compare-title">出発時刻ごとの所要時間(目安)</h2>
+      <table><thead><tr><th>出発</th><th>運転時間</th><th>休憩込みの到着</th><th>渋滞の影響</th></tr></thead><tbody id="compare"></tbody></table>
+      <p class="note" id="compare-note"></p>
+    </div>
+
+    <div class="card">
+      <h2 id="plan-title">休憩プラン</h2>
+      <div id="plan-warn"></div>
+      <ol class="timeline" id="plan"></ol>
+      <div class="actions" id="plan-actions"></div>
+    </div>
+
+    <div class="card" id="dest-card"></div>
+
+    <div class="card hidden" id="nearby-card">
+      <h2>行き先の近くで犬と行ける場所</h2>
+      <div class="nearby" id="nearby"></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>所要時間・休憩時刻はあくまで目安です。出発前に道路交通情報と施設の公式情報(営業日・犬の同伴条件・閉鎖期間)を必ず確認してください。行き先の位置は市区町村の中心を使っているため、実際の施設までは前後します。</p>
+    <p>ルート: Google / SA・PAの位置: © OpenStreetMap contributors / ドッグラン・ペット施設: NEXCO東日本(ドラぷら)・NEXCO中日本 / 行き先: わんことのじかん / 位置検索: 国土地理院</p>
+    <p>位置情報の扱い: 所要時間の計算のため、出発地と行き先の位置、出発時刻をGoogleのルート計算サービスへ送ります。「現在地を使う」を選んだ場合は、約100m単位に丸めた位置だけを送ります。このサイトでは位置情報を保存しません。お名前やメールアドレスなどの入力は求めません。</p>
+    <p>宿の予約リンクには広告(アフィリエイトリンク)が含まれます。リンク経由で予約が成立すると運営者が報酬を受け取る場合があります。</p>
+  </footer>
+</div>
+<!-- 更新したら ?v= の値を変える(ブラウザに古いファイルが残って新しい動作にならないのを防ぐ) -->
+<script src="config.js?v=2026092306"></script>
+<script src="planner.js?v=2026092306"></script>
+</body>
+</html>
