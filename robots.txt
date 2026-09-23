@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://sorapapa-creator.github.io/wanko-affiliate-guide/sitemap.xml
