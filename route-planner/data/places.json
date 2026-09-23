@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "source": "https://sorapapa-creator.github.io/wanko-affiliate-guide/",
- "generated_at": "2026-09-23T20:56:23+09:00",
+ "generated_at": "2026-09-24T00:06:03+09:00",
  "places": [
   {
    "id": "p-6db4c7e0a1",
@@ -4135,6 +4135,52 @@
     "lat": 35.693333,
     "lon": 138.687225,
     "matched": "山梨県山梨市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "fujimi-panorama-dog-trekking",
+   "type": "spot",
+   "name": "富士見パノラマリゾート 愛犬ゴンドラ・トレッキング",
+   "area": "長野県諏訪郡富士見町",
+   "region_group": "koshin",
+   "kinds": [
+    "travel"
+   ],
+   "theme": "愛犬とゴンドラで入笠山の高原へ。湿原や展望スポットを散策",
+   "facts": {
+    "犬の条件・同伴範囲": "リード着用でゴンドラに同乗できます。リードを着けていればケージ・クレートは不要です。周囲に人がいる時はリードを短く持ち、犬から離れないでください。犬の預かりはありません。",
+    "犬料金": "1頭800円（片道・往復同額）。",
+    "散策目安": "施設公式案内では、山頂駅から入笠湿原まで徒歩約10分、入笠山頂まで約60分。山頂方面の登山道もリード着用が必要です。",
+    "持ち物": "リード、エチケット袋、マーキングを洗い流す水、犬の飲み水。標高と当日の気温に合わせて防寒・足元の準備も。",
+    "2026年営業": "4月25日〜11月15日。4〜10月は8:30〜16:00（下り最終16:30）、11月は8:30〜15:30（下り最終16:00）。",
+    "天候": "気象状況により時間変更や運休があります。出発前に当日の運行状況を確認してください。",
+    "犬連れの注意": "ゴンドラを降りた後の各ルートの通行可否や路面状況は当日の公式案内で確認。犬を預けることはできません。"
+   },
+   "links": [
+    {
+     "label": "施設公式・愛犬案内",
+     "url": "https://www.fujimipanorama.com/summer/withdog/",
+     "affiliate": false
+    },
+    {
+     "label": "トレッキングコース",
+     "url": "https://www.fujimipanorama.com/summer/trekking/",
+     "affiliate": false
+    },
+    {
+     "label": "営業・料金",
+     "url": "https://www.fujimipanorama.com/summer/ticket/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": null,
+   "dog_hints": {},
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#fujimi-panorama-dog-trekking",
+   "geocode": {
+    "lat": 35.914722,
+    "lon": 138.240829,
+    "matched": "長野県諏訪郡富士見町",
     "precision": "municipality"
    }
   }
