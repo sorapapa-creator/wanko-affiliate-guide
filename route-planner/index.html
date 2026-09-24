@@ -88,12 +88,27 @@
   .destination-choice-guide span { color: #766b5e; font-size: .69rem; line-height: 1.35; }
   .destination-instruction { margin: 0 0 8px; color: #74695d; font-size: .76rem; }
   @media (max-width: 540px) { .destination-choice-guide { grid-template-columns: repeat(2, minmax(0, 1fr)); } .destination-choice-guide > div:last-child { grid-column: 1 / -1; } }
+  /* 立ち寄り先 */
+  .wp { display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: 6px 8px; align-items: center; padding: 8px 0; border-top: 1px dashed var(--line); }
+  .wp > input, .wp-ctrl { min-width: 0; }
+  .wp:first-child { border-top: 0; }
+  .wp-no { width: 24px; height: 24px; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 700;
+    font-size: .85rem; display: grid; place-items: center; }
+  .wp-ctrl { grid-column: 2; display: flex; gap: 6px; }
+  .wp-ctrl select { width: auto; min-width: 0; flex: 1 1 0; }
+  .wp-ctrl button, button.sub { font: inherit; font-size: .88rem; border: 1px solid var(--line); background: var(--chip);
+    color: var(--text); border-radius: 10px; padding: 6px 10px; cursor: pointer; flex: none; white-space: nowrap; }
+  .wp-ctrl button:disabled, button.sub:disabled { opacity: .5; cursor: default; }
+  button.sub { border-color: var(--accent); color: var(--accent); background: transparent; font-weight: 700; min-height: 44px; }
+  .b-go { background: var(--text); color: var(--bg); } .b-via { background: var(--accent); color: #fff; }
+  .timeline li.stop { background: var(--accent-soft); border-radius: 8px; padding-left: 6px; padding-right: 6px; }
+  .timeline li.leg { padding: 2px 0; border-top: 0; }
 </style>
 </head>
 <body>
 <div class="wrap">
   <h1>わんこ旅の出発時刻と休憩プラン</h1>
-  <p class="lead">行き先と出発の時間帯を選ぶと、出発時刻ごとの所要時間の目安と、うちの子に合わせた休憩プラン(ドッグランのあるSA・PA優先)を作ります。</p>
+  <p class="lead">行き先と出発の時間帯を選ぶと、出発時刻ごとの所要時間の目安と、うちの子に合わせた休憩プラン(ドッグランのあるSA・PA優先)を作ります。途中の立ち寄り先と滞在時間も組み込めます。</p>
   <div class="mock" id="mock">テスト用の仮データで表示しています(渋滞は実データではありません)。</div>
 
   <form id="form" autocomplete="off">
@@ -188,6 +203,13 @@
         <div class="actions"><a id="dest-details-link" class="hidden" href="#">選択した行き先の紹介を開く ↗</a></div>
       </fieldset>
     </div>
+    <fieldset>
+      <label class="t planner-field-label" for="add-wp"><span>立ち寄り先(任意・3か所まで)</span><small>STOPS</small></label>
+      <div id="wps"></div>
+      <datalist id="wp-list"></datalist>
+      <button type="button" class="sub" id="add-wp">＋ 立ち寄り先を追加</button>
+      <div class="hint">出発地 → 立ち寄り先(上から順)→ 行き先 の順に回ります。立ち寄り先を出る時刻の混み具合で次の区間を計算するので、滞在時間を変えると到着時刻も変わります。15分以上の滞在は犬の休憩としても数えます。施設名の一部を入力して、表示される候補から選んでください。位置が未確認の施設は立ち寄り候補に含みません。</div>
+    </fieldset>
     <div class="row four">
       <fieldset><label class="t planner-field-label" for="date"><span>出発日</span><small>DATE</small></label><input type="date" id="date" required></fieldset>
       <fieldset><label class="t planner-field-label" for="start"><span>出発時刻</span><small>START TIME</small></label><input type="time" id="start" value="05:00" step="1800"></fieldset>
@@ -218,7 +240,7 @@
   <section id="results" class="hidden">
     <div class="card">
       <h2 id="compare-title">出発時刻ごとの所要時間(目安)</h2>
-      <table><thead><tr><th>出発</th><th>運転時間</th><th>休憩込みの到着</th><th>渋滞の影響</th></tr></thead><tbody id="compare"></tbody></table>
+      <table><thead><tr id="compare-head"><th>出発</th><th>運転時間</th><th>休憩込みの到着</th><th>渋滞の影響</th></tr></thead><tbody id="compare"></tbody></table>
       <p class="note" id="compare-note"></p>
     </div>
 
@@ -241,14 +263,14 @@
   </section>
 
   <footer>
-    <p>所要時間・休憩時刻はあくまで目安です。出発前に道路交通情報と施設の公式情報(営業日・犬の同伴条件・閉鎖期間)を必ず確認してください。行き先の位置は市区町村の中心を使っているため、実際の施設までは前後します。</p>
+    <p>所要時間・休憩時刻はあくまで目安です。出発前に道路交通情報と施設の公式情報(営業日・犬の同伴条件・閉鎖期間)を必ず確認してください。行き先や立ち寄り先には、地区や市区町村の代表点を使う場所が含まれます。実際の施設への移動時間とは異なるため、詳しい位置は施設の公式情報や地図で確認してください。</p>
     <p>ルート: Google / SA・PAの位置: © OpenStreetMap contributors / ドッグラン・ペット施設: NEXCO東日本(ドラぷら)・NEXCO中日本 / 行き先: わんことのじかん / 位置検索: 国土地理院</p>
-    <p>位置情報の扱い: 所要時間の計算のため、出発地と行き先の位置、出発時刻をGoogleのルート計算サービスへ送ります。「現在地を使う」を選んだ場合は、約100m単位に丸めた位置だけを送ります。このサイトでは位置情報を保存しません。お名前やメールアドレスなどの入力は求めません。</p>
+    <p>位置情報の扱い: 所要時間の計算のため、出発地・行き先・選んだ立ち寄り先の位置と、各区間の出発時刻をGoogleのルート計算サービスへ送ります。「現在地を使う」を選んだ場合は、約100m単位に丸めた位置だけを送ります。立ち寄り先は掲載済みの候補から選びます。候補にない入力は外部の住所検索へ送信しません。このサイトでは位置情報を保存しません。お名前やメールアドレスなどの入力は求めません。</p>
     <p>宿の予約リンクには広告(アフィリエイトリンク)が含まれます。リンク経由で予約が成立すると運営者が報酬を受け取る場合があります。</p>
   </footer>
 </div>
 <!-- 更新したら ?v= の値を変える(ブラウザに古いファイルが残って新しい動作にならないのを防ぐ) -->
-<script src="config.js?v=2026092405"></script>
-<script src="planner.js?v=2026092406"></script>
+<script src="config.js?v=2026092501"></script>
+<script src="planner.js?v=2026092502"></script>
 </body>
 </html>
