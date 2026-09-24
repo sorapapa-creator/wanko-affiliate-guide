@@ -100,5 +100,5 @@
   const foodPanel=document.querySelector('#food-finder');
   if(foodPanel&&results){const next=button('選んだ条件の商品候補を見る',()=>{scrollTo(results);results.tabIndex=-1;results.focus({preventScroll:true});});next.className='cg-food-next';foodPanel.append(next);}
   if(results){const links=document.createElement('div');links.className='cg-result-actions';const refine=button('主食の詳細条件を見直す',()=>scrollTo(document.querySelector('#food-finder')));const back=button('困りごとから選び直す',()=>{start(true);scrollTo(root);});links.append(refine,back);results.after(links);const refresh=()=>{refine.hidden=!document.querySelector('button[data-problem="毎日の主食"].active');};new MutationObserver(refresh).observe(results,{childList:true});refresh();}
-  start();
+  const directTopic = new URLSearchParams(location.search).get("topic"); const dogwearGroup = groups.find(group => group.clothing); if (directTopic === "dogwear" && dogwearGroup?.items?.length) { guide(dogwearGroup, dogwearGroup.items[0]); requestAnimationFrame(() => scrollTo(root)); } else start();
 })();

@@ -55,3 +55,7 @@ header.guide-hero{max-width:1320px;margin:auto;background:transparent;color:var(
 .a8-creative>img[width="1"]{width:1px;height:1px;position:absolute;bottom:0;right:0}
 .a8-ad-label{position:absolute;top:6px;left:12px;font-size:10px;color:#687260}
 @media(max-width:640px){.card:has(>.a8-creative){display:flex;flex-direction:column}.a8-creative{width:100%}}
+
+/* A compact, scrollable navigation row keeps the new clothing route visible on phones. */
+.nav-links{gap:clamp(14px,2.1vw,28px)}
+@media(max-width:640px){.site-nav{flex-wrap:wrap}.nav-links{order:3;width:100%;justify-content:flex-start;gap:clamp(14px,4vw,22px);overflow-x:auto;white-space:nowrap;scrollbar-width:none;padding:4px 0 2px}.nav-links::-webkit-scrollbar{display:none}}

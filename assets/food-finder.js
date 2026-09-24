@@ -1,6 +1,7 @@
 /* Offline, evidence-based AND filtering. No account or network access. */
 let wankoFoodState = {};
 let wankoFoodControls = [];
+let wankoFoodGroups = [];
 let wankoFoodSort = 'default';
 let wankoFoodReady = false;
 const wankoFoodFacts = typeof window === 'undefined' ? {} : (window.WANKO_FOOD_FACTS || {});
@@ -8,14 +9,31 @@ function wankoFoodRecord(card) {
   const link=card.querySelector('a[data-product]');
   return link ? wankoFoodFacts[link.dataset.product] : undefined;
 }
+function wankoFoodValues(value) { return Array.isArray(value) ? value.filter(Boolean) : (value ? [value] : []); }
+function wankoFoodHasFilters(state) {
+  return Object.values(state).some(value => Array.isArray(value) ? value.length > 0 : value !== '' && value != null);
+}
 function wankoFoodMatches(p,s) {
-  if(!Object.values(s).some(v=>v!=='' && v!=null))return true;
+  if(!wankoFoodHasFilters(s))return true;
   if(!p)return false;
-  if(s.additives && !(s.additives==='いずれかの不使用表示あり' ? (p.additives||[]).length>0 : (p.additives||[]).includes(s.additives)))return false;
-  for(const key of ['age','ingredients','texture','concern']) {
-    if(s[key] && !(p[key]||[]).includes(s[key]))return false;
+  const additives=wankoFoodValues(s.additives);
+  if(additives.length && !(s.additives==='いずれかの不使用表示あり' ? (p.additives||[]).length>0 : additives.every(value=>(p.additives||[]).includes(value))))return false;
+  const ingredients=wankoFoodValues(s.ingredients);
+  if(ingredients.length && !ingredients.some(value=>(p.ingredients||[]).includes(value)))return false;
+  const avoided=wankoFoodValues(s.avoidIngredients);
+  // Absence needs explicit evidence; a missing tag in an ingredient excerpt is not proof.
+  const completeIngredients=p.ingredient_tags_complete===true && p.source && p.ingredient_text && Array.isArray(p.ingredients);
+  const verifiedAbsent=p.ingredient_absence_source ? wankoFoodValues(p.verified_absent_ingredients) : [];
+  if(avoided.length && !avoided.every(value=>!(p.ingredients||[]).includes(value) && (verifiedAbsent.includes(value) || completeIngredients)))return false;
+  for(const key of ['age','texture']) {
+    const values=wankoFoodValues(s[key]);
+    if(values.length && !values.some(value=>(p[key]||[]).includes(value)))return false;
   }
-  for(const key of ['form','grain'])if(s[key] && p[key]!==s[key])return false;
+  const concerns=wankoFoodValues(s.concern);
+  if(concerns.length && !concerns.every(value=>(p.concern||[]).includes(value)))return false;
+  const forms=wankoFoodValues(s.form);
+  if(forms.length && !forms.includes(p.form))return false;
+  if(s.grain && p.grain!==s.grain)return false;
   if(s.years!==undefined && s.years!==''){
     const months=Number(s.years)*12;
     if(!Number.isFinite(months)||months<0||months>360||!p.age_range)return false;
@@ -51,7 +69,7 @@ function wankoFoodAfterRender(cards,shown,active){
   const panel=document.querySelector('#food-finder');
   panel.classList.toggle('ff-engaged',active==='毎日の主食');
   const status=document.querySelector('#ff-status');
-  const has=Object.values(wankoFoodState).some(Boolean);
+  const has=wankoFoodHasFilters(wankoFoodState);
   status.textContent=active==='毎日の主食'||has
     ? (shown?`${shown}件が見つかりました。対象年齢・容量・原材料も商品欄で比べてください。`:'一致する商品がありません。条件を1つずつ外すか、リセットして探し直せます。')
     : '条件を選ぶと、毎日の主食に切り替わります。';
@@ -63,6 +81,15 @@ function wankoFoodAfterRender(cards,shown,active){
     b.textContent=`${title}：${el.value} ×`;
     b.setAttribute('aria-label',`${title}の条件を外す`);
     b.addEventListener('click',()=>{el.value='';el.dispatchEvent(new Event('input',{bubbles:true}));});chips.append(b);
+  });
+  wankoFoodGroups.forEach(group=>{
+    const title=group.querySelector('legend').textContent;
+    group.querySelectorAll('input[type="checkbox"]:checked').forEach(option=>{
+      const label=option.closest('label').querySelector('span').textContent;
+      const b=document.createElement('button');b.type='button';b.textContent=`${title}：${label} ×`;
+      b.setAttribute('aria-label',`${title}の「${label}」を外す`);
+      b.addEventListener('click',()=>{option.checked=false;option.dispatchEvent(new Event('change',{bubbles:true}));});chips.append(b);
+    });
   });
   const sorted=[...cards];
   if(active==='毎日の主食' && wankoFoodSort!=='default')sorted.sort((a,b)=>wankoFoodPriceCompare(wankoFoodRecord(a),wankoFoodRecord(b),wankoFoodSort==='price'?1:-1));
@@ -92,6 +119,7 @@ function wankoFoodInit(onChange,onReset){
   if(!document.querySelector('#food-finder'))return;
   wankoFoodReady=true;
   wankoFoodControls=[...document.querySelectorAll('[data-food-filter]')];
+  wankoFoodGroups=[...document.querySelectorAll('[data-food-group]')];
   // Catalogue-wide counts make sparse/unknown traits visible before choosing them.
   wankoFoodControls.filter(el=>el.tagName==='SELECT').forEach(el=>{
     [...el.options].filter(o=>o.value).forEach(o=>{
@@ -99,16 +127,21 @@ function wankoFoodInit(onChange,onReset){
       o.textContent+=`（${total}件）`;o.disabled=total===0;
     });
   });
-  const update=()=>{wankoFoodState=Object.fromEntries(wankoFoodControls.map(el=>[el.dataset.foodFilter,el.value]));onChange();};
+  const update=()=>{
+    wankoFoodState=Object.fromEntries(wankoFoodControls.map(el=>[el.dataset.foodFilter,el.value]));
+    for(const group of wankoFoodGroups)wankoFoodState[group.dataset.foodGroup]=Array.from(group.querySelectorAll('input[type="checkbox"]:checked'),option=>option.value);
+    onChange();
+  };
   wankoFoodControls.forEach(el=>el.addEventListener('input',update));
+  wankoFoodGroups.forEach(group=>group.querySelectorAll('input[type="checkbox"]').forEach(option=>option.addEventListener('change',update)));
   document.querySelector('#ff-sort').addEventListener('change',e=>{wankoFoodSort=e.target.value;onChange();});
   document.querySelector('#ff-reset').addEventListener('click',()=>{
-    wankoFoodControls.forEach(el=>el.value='');wankoFoodState={};wankoFoodSort='default';document.querySelector('#ff-sort').value='default';onReset();
+    wankoFoodControls.forEach(el=>el.value='');wankoFoodGroups.forEach(group=>group.querySelectorAll('input[type="checkbox"]').forEach(option=>option.checked=false));wankoFoodState={};wankoFoodSort='default';document.querySelector('#ff-sort').value='default';onReset();
   });
   // Choosing another product problem must not leave invisible food-only constraints.
   document.querySelectorAll('button[data-problem]').forEach(b=>b.addEventListener('click',()=>{
     if(b.dataset.problem!=='毎日の主食'){
-      wankoFoodControls.forEach(el=>el.value='');wankoFoodState={};wankoFoodSort='default';document.querySelector('#ff-sort').value='default';render();
+      wankoFoodControls.forEach(el=>el.value='');wankoFoodGroups.forEach(group=>group.querySelectorAll('input[type="checkbox"]').forEach(option=>option.checked=false));wankoFoodState={};wankoFoodSort='default';document.querySelector('#ff-sort').value='default';render();
     }
   }));
   ['price','grams','daily','meals'].forEach(key=>document.querySelector('#ff-calc-'+key).addEventListener('input',()=>{
