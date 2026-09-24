@@ -12,36 +12,135 @@
   const EDGE_START_MIN = 15, EDGE_END_MIN = 10; // 出発直後・到着直前の休憩は提案しない
 
   let PLACES = [];
+  let DESTINATIONS = [];
   let STOPS = [];
-  const byLabel = new Map();
+  const byId = new Map();
+  let destinationSummary = "";
   let lastState = null;
 
   // ---------------------------------------------------------------- データ
+
+  function textBeforeElement(root, endElement) {
+    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+    const parts = [];
+    while (walker.nextNode()) {
+      if (endElement.contains(walker.currentNode)) break;
+      parts.push(walker.currentNode.nodeValue);
+    }
+    return parts.join(" ").replace(/\s+/g, " ").trim();
+  }
 
   async function loadData() {
     const [p, s] = await Promise.all([
       fetch(`${CFG.dataBase}places.json`).then((r) => r.json()),
       fetch(`${CFG.dataBase}rest_stops.json`).then((r) => r.json()),
     ]);
-    // 県全体の周遊プランなどは行き先の位置が決まらないので対象外
-    PLACES = p.places.filter((x) => x.geocode && x.geocode.precision !== "prefecture");
     STOPS = s.stops;
-    const list = $("dest-list");
-    for (const pl of PLACES) {
-      const label = `${pl.name}(${TYPE_LABEL[pl.type]}・${pl.area})`;
-      byLabel.set(label, pl);
-      const opt = document.createElement("option");
-      opt.value = label;
-      list.appendChild(opt);
+
+    // 掲載ページのarticle[id]を読み取り、施設カードの増減を選択肢へ自動反映する。
+    // 既存の場所データに位置がない掲載先も情報ページへのリンク付きで表示する。
+    const pageSpecs = [
+      { file: "dog-lodging-guide.html", type: "lodging", selector: "article[data-lodging-id]" },
+      { file: "east-japan-dog-trips.html", type: "spot", selector: "article[id]" },
+    ];
+    const byPlaceId = new Map(p.places.map((place) => [place.id, place]));
+    const published = [];
+    const pageErrors = [];
+    for (const spec of pageSpecs) {
+      try {
+        const pageUrl = new URL(`../${spec.file}`, location.href);
+        const response = await fetch(pageUrl);
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const html = await response.text();
+        const doc = new DOMParser().parseFromString(html, "text/html");
+        for (const article of doc.querySelectorAll(spec.selector)) {
+          const id = article.id.trim() || article.dataset.lodgingId?.trim();
+          const heading = article.querySelector("h1, h2, h3, h4");
+          if (!id || !heading) continue;
+          const existing = byPlaceId.get(id) || {};
+          const beforeHeading = textBeforeElement(article, heading);
+          const address = article.querySelector(".stay-head p")?.textContent.trim()
+            || beforeHeading.match(/(?:北海道|東京都|(?:京都|大阪)府|[\p{Script=Han}]{2,3}県)[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}0-9・ー\-]{0,18}/u)?.[0]
+            || "掲載ページで確認";
+          const detailUrl = new URL(`../${spec.file}`, location.href);
+          detailUrl.hash = id;
+          published.push({
+            ...existing,
+            id,
+            name: heading.textContent.replace(/\s+/g, " ").trim(),
+            area: existing.area || address,
+            type: spec.type,
+            page_url: detailUrl.href,
+          });
+        }
+      } catch (error) {
+        pageErrors.push(spec.file);
+      }
     }
-    $("dest-hint").textContent = `宿・おでかけ先 ${PLACES.length}件から選べます`;
+
+    const articleIds = new Set(published.map((place) => place.id));
+    // 既存の市町村単位の旅行プランも残す。県単位の代表点はルートが不正確なため含めない。
+    for (const place of p.places) {
+      if (place.type !== "trip_plan" || articleIds.has(place.id)) continue;
+      if (!place.page_url) continue;
+      published.push(place);
+    }
+    DESTINATIONS = published;
+    byId.clear();
+    for (const place of DESTINATIONS) byId.set(place.id, place);
+    PLACES = DESTINATIONS.filter((place) =>
+      place.type !== "trip_plan" && hasRouteCoordinates(place));
+
+    const select = $("dest-q");
+    const groups = [
+      ["lodging", "宿"],
+      ["spot", "おでかけ先"],
+      ["trip_plan", "旅行プラン"],
+    ];
+    for (const [type, label] of groups) {
+      const options = DESTINATIONS.filter((place) => place.type === type);
+      if (!options.length) continue;
+      const group = document.createElement("optgroup");
+      group.label = `${label}（${options.length}件）`;
+      for (const place of options) {
+        const option = document.createElement("option");
+        option.value = place.id;
+        option.textContent = `${place.name}（${place.area || "地域未登録"}）`;
+        group.appendChild(option);
+      }
+      select.appendChild(group);
+    }
+    const withRoute = DESTINATIONS.filter(hasRouteCoordinates).length;
+    const withoutRoute = DESTINATIONS.length - withRoute;
+    destinationSummary = pageErrors.length
+      ? `掲載ページの一部を読み込めませんでした。位置データあり ${withRoute}件／位置データ未登録 ${withoutRoute}件。`
+      : `掲載先 ${DESTINATIONS.length}件を表示中（ルート計算可能 ${withRoute}件・位置データ未登録 ${withoutRoute}件）。`;
+    $("dest-hint").textContent = destinationSummary;
 
     // サイトの各カードから「?dest=<id>」付きで開かれたら、行き先を選んだ状態にする
     const destId = new URLSearchParams(location.search).get("dest");
-    const pre = destId && PLACES.find((x) => x.id === destId);
-    if (pre) {
-      for (const [label, pl] of byLabel) if (pl === pre) $("dest-q").value = label;
+    if (destId && byId.has(destId)) select.value = destId;
+    updateDestinationLink();
+  }
+
+  function hasRouteCoordinates(place) {
+    return Boolean(place?.geocode && place.geocode.precision !== "prefecture"
+      && Number.isFinite(Number(place.geocode.lat)) && Number.isFinite(Number(place.geocode.lon)));
+  }
+
+  function updateDestinationLink() {
+    const place = byId.get($("dest-q").value);
+    const link = $("dest-details-link");
+    if (!place?.page_url) {
+      link.classList.add("hidden");
+      link.removeAttribute("href");
+      return;
     }
+    link.href = place.page_url;
+    link.classList.remove("hidden");
+    $("dest-hint").textContent = hasRouteCoordinates(place)
+      ? destinationSummary
+      : "掲載先です。ルート計算用の位置データは未登録ですが、施設情報を開けます。";
   }
 
   // ---------------------------------------------------------------- 地理計算
@@ -301,16 +400,31 @@
 
   function renderNearby(place) {
     const here = [place.geocode.lat, place.geocode.lon];
-    const list = PLACES.filter((p) => p.id !== place.id)
+    const list = PLACES.filter((p) => p.id !== place.id && p.page_url)
       .map((p) => ({ p, d: km(here, [p.geocode.lat, p.geocode.lon]) }))
       .filter((x) => x.d <= CFG.nearbyKm)
       .sort((a, b) => (a.p.type === place.type) - (b.p.type === place.type) || a.d - b.d)
-      .slice(0, 6);
+      .slice(0, 6)
+      .map(({ p, d }) => {
+        try {
+          const url = new URL(p.page_url, location.href);
+          return ["http:", "https:"].includes(url.protocol) ? { p, d, href: url.href } : null;
+        } catch { return null; }
+      })
+      .filter(Boolean);
+    const select = $("nearby-select");
+    select.replaceChildren(new Option("掲載先を選ぶと施設情報へ移動します", ""));
+    for (const { p, d, href } of list) {
+      select.add(new Option(`${p.name}（${p.area}・約${Math.round(d)}km）`, href));
+    }
+    select.onchange = () => {
+      if (select.value) window.location.assign(select.value);
+    };
     $("nearby-card").classList.toggle("hidden", !list.length);
-    $("nearby").innerHTML = list.map(({ p, d }) => `
-      <a href="${esc(p.page_url)}" target="_blank" rel="noopener">
+    $("nearby").innerHTML = list.map(({ p, d, href }) => `
+      <a href="${esc(href)}">
         <span class="badge">${esc(TYPE_LABEL[p.type])}</span> <b>${esc(p.name)}</b>
-        <small>${esc(p.area)} ・ 約${Math.round(d)}km${p.theme ? " ・ " + esc(p.theme) : ""}</small></a>`).join("");
+        <small>${esc(p.area)} ・ 約${Math.round(d)}km${p.theme ? " ・ " + esc(p.theme) : ""} ・ 施設情報を開く</small></a>`).join("");
   }
 
   // ---------------------------------------------------------------- 実行
@@ -349,8 +463,18 @@
   async function onSubmit(ev) {
     ev.preventDefault();
     $("error").classList.add("hidden");
-    const place = byLabel.get($("dest-q").value);
-    if (!place) return showError("行き先を候補の中から選んでください。");
+    const place = byId.get($("dest-q").value);
+    if (!place) return showError("掲載先をプルダウンから選んでください。");
+    if (!hasRouteCoordinates(place)) {
+      showError("この掲載先はルート計算用の位置データが未登録です。掲載情報を確認してください。");
+      if (place.page_url) {
+        const link = document.createElement("a");
+        link.href = place.page_url;
+        link.textContent = "施設情報を開く";
+        $("error").append(" ", link);
+      }
+      return;
+    }
     const departures = buildDepartures();
     if (!departures.length) return showError("出発時刻がすべて過去になっています。日付か時刻を変えてください。");
     const profile = { size: $("size").value, age: $("age").value, carsick: $("carsick").checked, heat: $("heat").checked };
@@ -408,6 +532,7 @@
   const ymd = (d) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
   $("date").min = ymd(today);
   $("date").value = ymd(tomorrow);
+  $("dest-q").addEventListener("change", updateDestinationLink);
   $("form").addEventListener("submit", onSubmit);
   loadData().catch(() => showError("行き先データを読み込めませんでした。"));
 })();

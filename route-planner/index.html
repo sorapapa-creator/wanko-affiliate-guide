@@ -67,6 +67,7 @@
   @media (min-width: 640px) { .nearby { grid-template-columns: 1fr 1fr; } }
   .nearby a { display: block; border: 1px solid var(--line); border-radius: 10px; padding: 8px 10px; text-decoration: none; color: inherit; }
   .nearby small { color: var(--muted); display: block; }
+  .actions a.hidden { display: none; }
   footer { color: var(--muted); font-size: .8rem; padding: 8px 0 30px; }
   footer p { margin: 3px 0; }
   .hidden { display: none; }
@@ -83,18 +84,85 @@
       <fieldset>
         <label class="t" for="origin">出発地</label>
         <select id="origin">
-          <option value="35.6812,139.7671">東京駅</option>
-          <option value="35.9063,139.6240">大宮駅</option>
-          <option value="35.4658,139.6223">横浜駅</option>
-          <option value="35.6130,140.1136">千葉駅</option>
+          <optgroup label="東京・神奈川">
+            <option value="35.6812,139.7671">東京駅</option>
+            <option value="35.6896,139.7006">新宿駅</option>
+            <option value="35.7138,139.7773">上野駅</option>
+            <option value="35.6982,139.4137">立川駅</option>
+            <option value="35.4658,139.6223">横浜駅</option>
+            <option value="35.5313,139.6969">川崎駅</option>
+            <option value="35.2564,139.1550">小田原駅</option>
+            <option value="35.5442,139.4463">町田駅</option>
+            <option value="35.6553,139.3389">八王子駅</option>
+            <option value="35.3386,139.4875">藤沢駅</option>
+            <option value="35.3192,139.5503">鎌倉駅</option>
+            <option value="35.4390,139.3640">本厚木駅</option>
+            <option value="35.5940,139.3420">橋本駅</option>
+          </optgroup>
+          <optgroup label="埼玉・千葉">
+            <option value="35.9063,139.6240">大宮駅</option>
+            <option value="35.9067,139.4827">川越駅</option>
+            <option value="35.6130,140.1136">千葉駅</option>
+            <option value="35.7013,139.9856">船橋駅</option>
+            <option value="35.3812,139.9249">木更津駅</option>
+          </optgroup>
+          <optgroup label="千葉・房総・東葛">
+            <option value="35.6500,139.9130">新浦安駅</option>
+            <option value="35.8617,139.9706">柏駅</option>
+            <option value="35.7777,140.3140">成田駅</option>
+            <option value="34.9962,139.8616">館山駅</option>
+            <option value="35.1076,140.1037">安房鴨川駅</option>
+            <option value="35.1527,140.3197">勝浦駅</option>
+            <option value="35.4260,140.3030">茂原駅</option>
+            <option value="35.7350,140.8270">銚子駅</option>
+            <option value="35.5167,140.3100">大網駅</option>
+            <option value="35.8976,140.4950">佐原駅</option>
+          </optgroup>
+          <optgroup label="北関東">
+            <option value="36.0823,140.1113">つくば駅</option>
+            <option value="36.3709,140.4768">水戸駅</option>
+            <option value="36.5593,139.8984">宇都宮駅</option>
+            <option value="36.3220,139.0123">高崎駅</option>
+            <option value="36.3833,139.0735">前橋駅</option>
+          </optgroup>
+          <optgroup label="北関東・秩父">
+            <option value="36.0782,140.2033">土浦駅</option>
+            <option value="36.3967,140.5240">勝田駅</option>
+            <option value="36.9310,140.0200">那須塩原駅</option>
+            <option value="36.7470,139.6200">日光駅</option>
+            <option value="36.1390,139.3890">熊谷駅</option>
+            <option value="35.9900,139.0850">秩父駅</option>
+          </optgroup>
+          <optgroup label="甲信越・東北・静岡">
+            <option value="35.6664,138.5684">甲府駅</option>
+            <option value="36.6438,138.1884">長野駅</option>
+            <option value="37.9120,139.0617">新潟駅</option>
+            <option value="38.2600,140.8824">仙台駅</option>
+            <option value="37.3980,140.3886">郡山駅</option>
+            <option value="37.7540,140.4594">福島駅</option>
+            <option value="35.1264,138.9111">三島駅</option>
+            <option value="35.1020,138.8590">沼津駅</option>
+            <option value="34.9717,138.3889">静岡駅</option>
+            <option value="36.2380,137.9690">松本駅</option>
+            <option value="36.3420,138.6350">軽井沢駅</option>
+            <option value="36.0440,138.1140">上諏訪駅</option>
+            <option value="38.2490,140.3270">山形駅</option>
+            <option value="37.5080,139.9300">会津若松駅</option>
+            <option value="35.1030,139.0770">熱海駅</option>
+            <option value="34.9750,139.0930">伊東駅</option>
+            <option value="34.8790,139.1080">伊豆高原駅</option>
+            <option value="34.6790,138.9450">伊豆急下田駅</option>
+            <option value="35.3000,138.9350">御殿場駅</option>
+          </optgroup>
           <option value="here">現在地を使う</option>
         </select>
+        <div class="hint">各駅の周辺を出発地点の目安として計算します。細かな住所ではないため、到着先も含めルートを確認してください。</div>
       </fieldset>
       <fieldset>
         <label class="t" for="dest-q">行き先(わんことのじかん掲載先)</label>
-        <input id="dest-q" list="dest-list" placeholder="例: 那須、河口湖、CARO FORESTA">
-        <datalist id="dest-list"></datalist>
+        <select id="dest-q"><option value="">掲載先を選択してください</option></select>
         <div class="hint" id="dest-hint"></div>
+        <div class="actions"><a id="dest-details-link" class="hidden" href="#">選んだ掲載先の情報を見る</a></div>
       </fieldset>
     </div>
     <div class="row four">
@@ -142,6 +210,9 @@
 
     <div class="card hidden" id="nearby-card">
       <h2>行き先の近くで犬と行ける場所</h2>
+      <label class="t" for="nearby-select">近くの掲載先を選択</label>
+      <select id="nearby-select"><option value="">掲載先を選ぶと施設情報へ移動します</option></select>
+      <p class="hint" id="nearby-select-hint">候補の選択後、施設情報の該当位置を開きます。</p>
       <div class="nearby" id="nearby"></div>
     </div>
   </section>
@@ -154,7 +225,7 @@
   </footer>
 </div>
 <!-- 更新したら ?v= の値を変える(ブラウザに古いファイルが残って新しい動作にならないのを防ぐ) -->
-<script src="config.js?v=2026092401"></script>
-<script src="planner.js?v=2026092401"></script>
+<script src="config.js?v=2026092405"></script>
+<script src="planner.js?v=2026092405"></script>
 </body>
 </html>
