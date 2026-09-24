@@ -3,6 +3,35 @@
   const $ = (id) => document.getElementById(id);
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const TYPE_LABEL = { lodging: "宿", spot: "おでかけ", trip_plan: "旅行プラン" };
+  const DESTINATION_COLLATOR = new Intl.Collator("ja", { numeric: true, sensitivity: "base" });
+  // Kanji names need explicit readings for true gojuon order; add readings when new kanji names are listed.
+  const DESTINATION_READINGS = [
+    ["愛犬お宿", "あいけんおやど"], ["伊香保温泉", "いかほおんせん"], ["伊豆", "いず"], ["下田", "しもだ"],
+    ["亀の井", "かめのい"], ["玉響", "たまゆら"], ["軽井沢", "かるいざわ"], ["小谷流", "こやる"],
+    ["浄土ヶ浜", "じょうどがはま"], ["青森屋", "あおもりや"], ["草津", "くさつ"], ["蔵王", "ざおう"],
+    ["大洗", "おおあらい"], ["鶴雅", "つるが"], ["定山渓", "じょうざんけい"], ["天然温泉", "てんねんおんせん"],
+    ["洞爺湖", "とうやこ"], ["熱川", "あたがわ"], ["白馬", "はくば"], ["八ヶ岳", "やつがたけ"],
+    ["別邸", "べってい"], ["北天", "ほくてん"], ["蓼科", "たてしな"], ["鋸山", "のこぎりやま"],
+    ["駒沢", "こまざわ"], ["原村", "はらむら"], ["五色沼", "ごしきぬま"], ["高尾山", "たかおさん"],
+    ["国営", "こくえい"], ["佐野", "さの"], ["犀川", "さいかわ"], ["三井", "みつい"], ["三石", "みついし"],
+    ["市原", "いちはら"], ["紫雲寺", "しうんじ"], ["鹿野山", "かのうざん"], ["篠崎", "しのざき"],
+    ["舎人", "とねり"], ["車山", "くるまやま"], ["修善寺", "しゅぜんじ"], ["小岩井", "こいわい"],
+    ["小金井", "こがねい"], ["神代", "じんだい"], ["水元", "みずもと"], ["清水", "しみず"],
+    ["青葉", "あおば"], ["千葉", "ちば"], ["泉", "いずみ"], ["代々木", "よよぎ"],
+    ["笛吹川", "ふえふきがわ"], ["島見", "しまみ"], ["東京", "とうきょう"], ["那須", "なす"],
+    ["苗場", "なえば"], ["富士見", "ふじみ"], ["富士", "ふじ"], ["宝登山", "ほどさん"],
+    ["霧降", "きりふり"], ["木場", "きば"], ["蘆花", "ろか"], ["箱根", "はこね"],
+    ["海辺", "うみべ"], ["山梨", "やまなし"], ["成田", "なりた"]
+  ].sort((a, b) => b[0].length - a[0].length);
+  const destinationSortName = (name) => {
+    const reading = DESTINATION_READINGS.find(([prefix]) => name.startsWith(prefix));
+    const source = reading ? `${reading[1]}${name.slice(reading[0].length)}` : name;
+    return Array.from(source, (char) => {
+      const code = char.charCodeAt(0);
+      return code >= 0x30a1 && code <= 0x30f6 ? String.fromCharCode(code - 0x60) : char;
+    }).join("");
+  };
+  const compareDestinations = (a, b) => DESTINATION_COLLATOR.compare(destinationSortName(a.name), destinationSortName(b.name)) || DESTINATION_COLLATOR.compare(a.area || "", b.area || "") || a.id.localeCompare(b.id);
   const STOP_NEAR_KM = 0.35;      // ルートからこの距離以内のSA/PAを候補にする(OSMの位置は施設の中心なので少し広め)
   const SIDE_AMBIGUOUS_KM = 0.04; // これより近い施設は上下線どちら側か判定しない(上下一体の施設など)
   // 休憩の目標時刻より何分前までを候補にするか。広めにとって、少し早くてもドッグランのあるSAを優先できるようにする
@@ -93,12 +122,12 @@
 
     const select = $("dest-q");
     const groups = [
-      ["lodging", "宿"],
-      ["spot", "おでかけ先"],
-      ["trip_plan", "旅行プラン"],
+      ["lodging", "宿泊先｜犬と泊まる場所"],
+      ["spot", "おでかけ先｜日帰り・立ち寄り"],
+      ["trip_plan", "旅のプラン｜モデルコース"],
     ];
     for (const [type, label] of groups) {
-      const options = DESTINATIONS.filter((place) => place.type === type);
+      const options = DESTINATIONS.filter((place) => place.type === type).sort(compareDestinations);
       if (!options.length) continue;
       const group = document.createElement("optgroup");
       group.label = `${label}（${options.length}件）`;
@@ -113,8 +142,8 @@
     const withRoute = DESTINATIONS.filter(hasRouteCoordinates).length;
     const withoutRoute = DESTINATIONS.length - withRoute;
     destinationSummary = pageErrors.length
-      ? `掲載ページの一部を読み込めませんでした。位置データあり ${withRoute}件／位置データ未登録 ${withoutRoute}件。`
-      : `掲載先 ${DESTINATIONS.length}件を表示中（ルート計算可能 ${withRoute}件・位置データ未登録 ${withoutRoute}件）。`;
+      ? `掲載ページの一部が読み込めませんでした。移動時間を計算できる場所 ${withRoute}件／施設紹介のみ確認できる場所 ${withoutRoute}件。`
+      : `行き先一覧 ${DESTINATIONS.length}件を表示中（移動時間を計算できる場所 ${withRoute}件・施設紹介のみ確認できる場所 ${withoutRoute}件）。`;
     $("dest-hint").textContent = destinationSummary;
 
     // サイトの各カードから「?dest=<id>」付きで開かれたら、行き先を選んだ状態にする
@@ -140,7 +169,7 @@
     link.classList.remove("hidden");
     $("dest-hint").textContent = hasRouteCoordinates(place)
       ? destinationSummary
-      : "掲載先です。ルート計算用の位置データは未登録ですが、施設情報を開けます。";
+      : "この行き先は施設紹介のみ確認できます（移動時間の計算用位置情報は未登録です）。";
   }
 
   // ---------------------------------------------------------------- 地理計算

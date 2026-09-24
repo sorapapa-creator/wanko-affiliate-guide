@@ -71,6 +71,23 @@
   footer { color: var(--muted); font-size: .8rem; padding: 8px 0 30px; }
   footer p { margin: 3px 0; }
   .hidden { display: none; }
+  /* Editorial labels and warm, high-contrast selection surfaces. */
+  #form { border-radius: 24px; border-color: #e8e0d4; padding: 20px; box-shadow: 0 18px 42px #49382412; }
+  #form fieldset { padding: 12px 14px 14px; background: linear-gradient(150deg, #fff, #fcfaf6); border: 1px solid #eee7dc; border-radius: 16px; }
+  #form .planner-field-label { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; color: #6f5a45; font-size: .78rem; letter-spacing: .08em; margin-bottom: 9px; }
+  .planner-field-label small { color: #9a846e; font-size: .58rem; font-weight: 800; letter-spacing: .17em; }
+  #form input:not([type="checkbox"]):not([type="radio"]), #form select { min-height: 48px; border: 1px solid #d8cdbd; border-radius: 12px; padding: 10px 13px; background: #fff; color: #29251f; transition: border-color .16s, box-shadow .16s; }
+  #form select:focus-visible, #form input:focus-visible, #nearby-select:focus-visible { outline: 3px solid #d9a26f; outline-offset: 2px; border-color: #a86c42; }
+  #dest-q { background: #fffdf7; border-color: #c7b696; font-weight: 650; }
+  #dest-q option { background: #fff; color: #29251f; }
+  #dest-q optgroup { color: #6e5843; font-style: normal; font-weight: 700; }
+  #nearby-select { min-height: 46px; border-radius: 12px; background: #fffdf7; color: #29251f; border-color: #d8cdbd; }
+  .destination-choice-guide { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 7px; margin: 0 0 8px; }
+  .destination-choice-guide > div { display: flex; flex-direction: column; gap: 2px; min-width: 0; padding: 8px 10px; border: 1px solid #eee6da; border-radius: 11px; background: #f8f4ed; }
+  .destination-choice-guide strong { color: #75563d; font-size: .76rem; }
+  .destination-choice-guide span { color: #766b5e; font-size: .69rem; line-height: 1.35; }
+  .destination-instruction { margin: 0 0 8px; color: #74695d; font-size: .76rem; }
+  @media (max-width: 540px) { .destination-choice-guide { grid-template-columns: repeat(2, minmax(0, 1fr)); } .destination-choice-guide > div:last-child { grid-column: 1 / -1; } }
 </style>
 </head>
 <body>
@@ -82,7 +99,7 @@
   <form id="form" autocomplete="off">
     <div class="row two">
       <fieldset>
-        <label class="t" for="origin">出発地</label>
+        <label class="t planner-field-label" for="origin"><span>出発地</span><small>FROM</small></label>
         <select id="origin">
           <optgroup label="東京・神奈川">
             <option value="35.6812,139.7671">東京駅</option>
@@ -159,26 +176,32 @@
         <div class="hint">各駅の周辺を出発地点の目安として計算します。細かな住所ではないため、到着先も含めルートを確認してください。</div>
       </fieldset>
       <fieldset>
-        <label class="t" for="dest-q">行き先(わんことのじかん掲載先)</label>
-        <select id="dest-q"><option value="">掲載先を選択してください</option></select>
+        <label class="t planner-field-label" for="dest-q"><span>行き先の種類を選ぶ</span><small>DESTINATION</small></label>
+        <div class="destination-choice-guide" aria-label="行き先の区分">
+          <div><strong>宿泊先</strong><span>犬と泊まる場所</span></div>
+          <div><strong>おでかけ先</strong><span>カフェ・ラン・観光</span></div>
+          <div><strong>旅のプラン</strong><span>市区町村ごとのモデルコース</span></div>
+        </div>
+        <p class="destination-instruction">一覧は区分ごとにまとまり、各区分の中は50音順です。</p>
+        <select id="dest-q"><option value="">宿泊先・おでかけ先から選択</option></select>
         <div class="hint" id="dest-hint"></div>
-        <div class="actions"><a id="dest-details-link" class="hidden" href="#">選んだ掲載先の情報を見る</a></div>
+        <div class="actions"><a id="dest-details-link" class="hidden" href="#">選択した行き先の紹介を開く ↗</a></div>
       </fieldset>
     </div>
     <div class="row four">
-      <fieldset><label class="t" for="date">出発日</label><input type="date" id="date" required></fieldset>
-      <fieldset><label class="t" for="start">いちばん早い出発</label><input type="time" id="start" value="05:00" step="1800"></fieldset>
-      <fieldset><label class="t" for="step">比べる間隔</label>
+      <fieldset><label class="t planner-field-label" for="date"><span>出発日</span><small>DATE</small></label><input type="date" id="date" required></fieldset>
+      <fieldset><label class="t planner-field-label" for="start"><span>出発時刻</span><small>START TIME</small></label><input type="time" id="start" value="05:00" step="1800"></fieldset>
+      <fieldset><label class="t planner-field-label" for="step"><span>比較間隔</span><small>INTERVAL</small></label>
         <select id="step"><option value="60">1時間ごと</option><option value="30">30分ごと</option></select></fieldset>
-      <fieldset><label class="t" for="count">比べる数</label>
+      <fieldset><label class="t planner-field-label" for="count"><span>比較数</span><small>OPTIONS</small></label>
         <select id="count"><option>4</option><option selected>6</option><option>8</option></select></fieldset>
     </div>
     <fieldset>
       <legend>うちの子について</legend>
       <div class="row two">
-        <div><label class="t" for="size">体格</label>
+        <div><label class="t planner-field-label" for="size"><span>体格</span><small>DOG SIZE</small></label>
           <select id="size"><option value="small">小型犬</option><option value="medium">中型犬</option><option value="large">大型犬</option></select></div>
-        <div><label class="t" for="age">年齢</label>
+        <div><label class="t planner-field-label" for="age"><span>年齢</span><small>AGE</small></label>
           <select id="age"><option value="adult">成犬</option><option value="puppy">子犬(1歳未満)</option><option value="senior">シニア(7歳以上)</option></select></div>
       </div>
       <div class="chips" style="margin-top:8px">
@@ -210,7 +233,7 @@
 
     <div class="card hidden" id="nearby-card">
       <h2>行き先の近くで犬と行ける場所</h2>
-      <label class="t" for="nearby-select">近くの掲載先を選択</label>
+      <label class="t planner-field-label" for="nearby-select"><span>近くの掲載先</span><small>NEARBY</small></label>
       <select id="nearby-select"><option value="">掲載先を選ぶと施設情報へ移動します</option></select>
       <p class="hint" id="nearby-select-hint">候補の選択後、施設情報の該当位置を開きます。</p>
       <div class="nearby" id="nearby"></div>
@@ -226,6 +249,6 @@
 </div>
 <!-- 更新したら ?v= の値を変える(ブラウザに古いファイルが残って新しい動作にならないのを防ぐ) -->
 <script src="config.js?v=2026092405"></script>
-<script src="planner.js?v=2026092405"></script>
+<script src="planner.js?v=2026092406"></script>
 </body>
 </html>
