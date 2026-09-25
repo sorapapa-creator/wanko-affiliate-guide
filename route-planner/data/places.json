@@ -3339,50 +3339,6 @@
    }
   },
   {
-   "id": "add60-ishinoie",
-   "type": "lodging",
-   "name": "別邸 石の家",
-   "area": "静岡県伊東市",
-   "co_sleep": "添い寝 予約前確認",
-   "facts": {
-    "対象犬・頭数": "頭数は犬種・大きさを伝えて相談。大型・活発な犬は客室との相性を確認。",
-    "犬の宿泊料金": "予約前確認（犬の大きさ・頭数・泊数を伝えて確認）",
-    "ケージ・持参判断": "設置有無・寸法を予約前確認 ケージの有無と寸法を確認し、必要なら普段のクレートを持参。",
-    "夜はどこで寝る？": "犬の就寝場所・備え付け寝具は予約前確認。 人用のベッド・布団を犬が使えるか、予約前に確認してください。",
-    "食事同伴": "食事場所への犬同伴は予約前確認。",
-    "ドッグラン": "ドッグランの有無・利用条件は予約前確認。",
-    "予約前の重要確認": "客室・頭数・犬料金・寝具利用・備品・食事場所を予約前確認。館内販売や近隣購入に頼らず必要品を持参。"
-   },
-   "links": [
-    {
-     "label": "公式アクセス",
-     "url": "https://www.izu-ishinoie.com/access/",
-     "affiliate": false
-    },
-    {
-     "label": "公式の条件を確認",
-     "url": "https://www.izu-ishinoie.com/faq/",
-     "affiliate": false
-    }
-   ],
-   "checked_at": "2026-09-23",
-   "dog_hints": {},
-   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
-   "geocode": {
-    "lat": 34.89418,
-    "lon": 139.10289,
-    "precision": "facility",
-    "source": "manual",
-    "matched": "静岡県伊東市八幡野1265-9 → 住所検索: 静岡県伊東市八幡野１２６５番地"
-   },
-   "area_geocode": {
-    "lat": 34.965832,
-    "lon": 139.101944,
-    "matched": "静岡県伊東市",
-    "precision": "municipality"
-   }
-  },
-  {
    "id": "add60-shikinokura",
    "type": "lodging",
    "name": "ホテル四季の蔵",
