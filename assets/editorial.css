@@ -59,3 +59,5 @@ header.guide-hero{max-width:1320px;margin:auto;background:transparent;color:var(
 /* A compact, scrollable navigation row keeps the new clothing route visible on phones. */
 .nav-links{gap:clamp(14px,2.1vw,28px)}
 @media(max-width:640px){.site-nav{flex-wrap:wrap}.nav-links{order:3;width:100%;justify-content:flex-start;gap:clamp(14px,4vw,22px);overflow-x:auto;white-space:nowrap;scrollbar-width:none;padding:4px 0 2px}.nav-links::-webkit-scrollbar{display:none}}
+/* スマホ幅ではナビの文字を読みやすく、押せる幅を広げる(rv-20260925-mobile-nav-tap) */
+@media(max-width:640px){.nav-links{font-size:12.5px;gap:clamp(6px,2vw,14px)}.nav-links a{padding:10px 4px}}
