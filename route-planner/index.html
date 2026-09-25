@@ -90,7 +90,15 @@
   @media (max-width: 540px) { .destination-choice-guide { grid-template-columns: repeat(2, minmax(0, 1fr)); } .destination-choice-guide > div:last-child { grid-column: 1 / -1; } }
   /* 立ち寄り先 */
   .wp { display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: 6px 8px; align-items: center; padding: 8px 0; border-top: 1px dashed var(--line); }
-  .wp > input, .wp-ctrl { min-width: 0; }
+  .wp > select, .wp-ctrl { min-width: 0; }
+  .wp-details { grid-column: 2; font-size: .82rem; color: var(--accent); }
+  .wp-summary { grid-column: 2; margin: 0; color: var(--muted); font-size: .83rem; overflow-wrap: anywhere; }
+  .wp-filters { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-bottom: 10px; }
+  .wp-filters label { min-width: 0; }
+  .wp-filters span { display: block; font-size: .85rem; font-weight: 650; margin-bottom: 4px; }
+  .wp-q { background: #fffdf7; color: #29251f; }
+  .wp-q option { background: #fff; color: #29251f; }
+  #wp-route-status { margin: 10px 0; }
   .wp:first-child { border-top: 0; }
   .wp-no { width: 24px; height: 24px; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 700;
     font-size: .85rem; display: grid; place-items: center; }
@@ -197,7 +205,7 @@
           <div><strong>おでかけ先</strong><span>カフェ・ラン・観光</span></div>
           <div><strong>旅のプラン</strong><span>市区町村ごとのモデルコース</span></div>
         </div>
-        <p class="destination-instruction">一覧は区分ごとにまとまり、各区分の中は50音順です。</p>
+        <p class="destination-instruction">各区分の中は50音順です。読み未登録の英字名は末尾に表記順で表示します。</p>
         <select id="dest-q"><option value="">宿泊先・おでかけ先から選択</option></select>
         <div class="hint" id="dest-hint"></div>
         <div class="actions"><a id="dest-details-link" class="hidden" href="#">選択した行き先の紹介を開く ↗</a></div>
@@ -205,10 +213,15 @@
     </div>
     <fieldset>
       <label class="t planner-field-label" for="add-wp"><span>立ち寄り先(任意・3か所まで)</span><small>STOPS</small></label>
+      <div class="wp-filters">
+        <label for="wp-scope"><span>候補を探す範囲</span><select id="wp-scope"><option value="route">ルート沿いの掲載先</option><option value="destination">行き先の近く</option><option value="all">掲載先すべて（位置登録あり）</option><option value="rest">SA・PA・道の駅</option></select></label>
+        <label for="wp-radius"><span>近さの目安（直線距離）</span><select id="wp-radius"><option value="5">5km以内</option><option value="10" selected>10km以内</option><option value="20">20km以内</option><option value="30">30km以内</option></select></label>
+      </div>
+      <button type="button" class="sub" id="find-wp-route">ルート沿いの候補を探す</button>
+      <p class="hint" id="wp-route-status" role="status" aria-live="polite">出発地・行き先・出発日時を選び、ルート沿いの候補を探してください。</p>
       <div id="wps"></div>
-      <datalist id="wp-list"></datalist>
       <button type="button" class="sub" id="add-wp">＋ 立ち寄り先を追加</button>
-      <div class="hint">出発地 → 立ち寄り先(上から順)→ 行き先 の順に回ります。立ち寄り先を出る時刻の混み具合で次の区間を計算するので、滞在時間を変えると到着時刻も変わります。15分以上の滞在は犬の休憩としても数えます。施設名の一部を入力して、表示される候補から選んでください。位置が未確認の施設は立ち寄り候補に含みません。</div>
+      <div class="hint">宿・おでかけの区分ごとに50音順で選べます（読み未登録の英字名は末尾に表記順）。出発地 → 立ち寄り先（上から順）→ 行き先の順に回ります。候補の距離は、立ち寄り前のルートまたは行き先からの直線距離です。実際の走行距離・迂回距離とは異なります。「地域の目安」は市町村などの代表点による概算です。位置未登録の施設は距離で絞れないため含みません。15分以上の滞在は犬の休憩としても数えます。</div>
     </fieldset>
     <div class="row four">
       <fieldset><label class="t planner-field-label" for="date"><span>出発日</span><small>DATE</small></label><input type="date" id="date" required></fieldset>
@@ -271,6 +284,6 @@
 </div>
 <!-- 更新したら ?v= の値を変える(ブラウザに古いファイルが残って新しい動作にならないのを防ぐ) -->
 <script src="config.js?v=2026092501"></script>
-<script src="planner.js?v=2026092502"></script>
+<script src="planner.js?v=2026092503"></script>
 </body>
 </html>

@@ -4,7 +4,7 @@
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const TYPE_LABEL = { lodging: "宿", spot: "おでかけ", trip_plan: "旅行プラン" };
   const DESTINATION_COLLATOR = new Intl.Collator("ja", { numeric: true, sensitivity: "base" });
-  // Kanji names need explicit readings for true gojuon order; add readings when new kanji names are listed.
+  // 確認済みの読みを名前全体に適用。未知の英字表記には推測の読みを付けない。
   const DESTINATION_READINGS = [
     ["愛犬お宿", "あいけんおやど"], ["伊香保温泉", "いかほおんせん"], ["伊豆", "いず"], ["下田", "しもだ"],
     ["亀の井", "かめのい"], ["玉響", "たまゆら"], ["軽井沢", "かるいざわ"], ["小谷流", "こやる"],
@@ -21,17 +21,31 @@
     ["笛吹川", "ふえふきがわ"], ["島見", "しまみ"], ["東京", "とうきょう"], ["那須", "なす"],
     ["苗場", "なえば"], ["富士見", "ふじみ"], ["富士", "ふじ"], ["宝登山", "ほどさん"],
     ["霧降", "きりふり"], ["木場", "きば"], ["蘆花", "ろか"], ["箱根", "はこね"],
-    ["海辺", "うみべ"], ["山梨", "やまなし"], ["成田", "なりた"]
+    ["海辺", "うみべ"], ["山梨", "やまなし"], ["成田", "なりた"], ["柏の葉", "かしわのは"],
+    ["&WAN", "あんどわん"], ["Bowmu", "ばうむ"], ["Dear Wan Spa Garden", "でぃあわんすぱがーでん"],
+    ["CARO FORESTA", "かーろふぉれすた"], ["Cuore", "くおーれ"],
+    ["Rakuten STAY VILLA", "らくてんすていゔぃら"], ["Rakuten STAY", "らくてんすてい"],
+    ["VIALA", "ゔぃあら"], ["1HOTEL", "わんほてる"], ["withDOG", "うぃずどっぐ"], ["with DOG", "うぃずどっぐ"],
+    ["旧軽井沢", "きゅうかるいざわ"], ["北軽井沢", "きたかるいざわ"], ["元箱根", "もとはこね"],
+    ["鴨川", "かもがわ"], ["九十九里", "くじゅうくり"], ["喜連川", "きつれがわ"], ["筑波山", "つくばさん"],
+    ["山中湖", "やまなかこ"], ["館山", "たてやま"], ["城ヶ島", "じょうがしま"], ["城ヶ崎", "じょうがさき"],
+    ["鬼怒川", "きぬがわ"], ["日光", "にっこう"]
   ].sort((a, b) => b[0].length - a[0].length);
+  const READING_PARTS = new Map(DESTINATION_READINGS);
+  const READING_PATTERN = new RegExp(DESTINATION_READINGS.map(([part]) => part.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|"), "g");
   const destinationSortName = (name) => {
-    const reading = DESTINATION_READINGS.find(([prefix]) => name.startsWith(prefix));
-    const source = reading ? `${reading[1]}${name.slice(reading[0].length)}` : name;
+    const source = name.normalize("NFKC").replace(READING_PATTERN, (part) => READING_PARTS.get(part)).replace(/\s+/g, "");
     return Array.from(source, (char) => {
       const code = char.charCodeAt(0);
       return code >= 0x30a1 && code <= 0x30f6 ? String.fromCharCode(code - 0x60) : char;
     }).join("");
   };
-  const compareDestinations = (a, b) => DESTINATION_COLLATOR.compare(destinationSortName(a.name), destinationSortName(b.name)) || DESTINATION_COLLATOR.compare(a.area || "", b.area || "") || a.id.localeCompare(b.id);
+  const compareDestinations = (a, b) => {
+    const left = destinationSortName(a.reading || a.name), right = destinationSortName(b.reading || b.name);
+    // 読み未登録の英字名は末尾の表記順。ブランド名の読みを推測しない。
+    return Number(!/^[ぁ-ゖ]/.test(left)) - Number(!/^[ぁ-ゖ]/.test(right))
+      || DESTINATION_COLLATOR.compare(left, right) || DESTINATION_COLLATOR.compare(a.area || "", b.area || "") || a.id.localeCompare(b.id);
+  };
   const STOP_NEAR_KM = 0.35;      // ルートからこの距離以内のSA/PAを候補にする(OSMの位置は施設の中心なので少し広め)
   const SIDE_AMBIGUOUS_KM = 0.04; // これより近い施設は上下線どちら側か判定しない(上下一体の施設など)
   // 休憩の目標時刻より何分前までを候補にするか。広めにとって、少し早くてもドッグランのあるSAを優先できるようにする
@@ -52,6 +66,9 @@
   const wpByLabel = new Map(); // 立ち寄り先の候補(位置のある掲載先 + SA・PA・道の駅)
   let destinationSummary = "";
   let lastState = null;
+  let waypointRoute = null; // 立ち寄り前の出発地→行き先。距離フィルター専用。
+  let waypointRequest = 0;
+  let waypointMessage = "";
 
   // ---------------------------------------------------------------- データ
 
@@ -153,15 +170,10 @@
     $("dest-hint").textContent = destinationSummary;
 
     // 立ち寄り先の候補: 位置のある掲載先(宿・おでかけ)と、SA・PA・道の駅
-    const wl = $("wp-list");
-    wl.replaceChildren();
     wpByLabel.clear();
     const addWp = (label, v) => {
       if (wpByLabel.has(label)) return;
       wpByLabel.set(label, v);
-      const opt = document.createElement("option");
-      opt.value = label;
-      wl.appendChild(opt);
     };
     for (const pl of PLACES.slice().sort(compareDestinations)) {
       addWp(`${pl.name}（${TYPE_LABEL[pl.type]}・${pl.area || "地域未登録"}）`, {
@@ -178,13 +190,16 @@
     const destId = new URLSearchParams(location.search).get("dest");
     if (destId && byId.has(destId)) select.value = destId;
     updateDestinationLink();
+    refreshWaypointChoices();
   }
 
   function hasRouteCoordinates(place) {
     // 公式所在地は都留市。旧データの大月市代表点は移動時間に使わない。
     if (place?.id === "santo" && place.geocode?.matched === "山梨県大月市") return false;
     return Boolean(place?.geocode && place.geocode.precision !== "prefecture"
-      && Number.isFinite(Number(place.geocode.lat)) && Number.isFinite(Number(place.geocode.lon)));
+      && place.geocode.lat != null && place.geocode.lon != null && place.geocode.lat !== "" && place.geocode.lon !== ""
+      && Number.isFinite(Number(place.geocode.lat)) && Math.abs(Number(place.geocode.lat)) <= 90
+      && Number.isFinite(Number(place.geocode.lon)) && Math.abs(Number(place.geocode.lon)) <= 180);
   }
 
   function updateDestinationLink() {
@@ -230,6 +245,21 @@
     const cum = [0];
     for (let i = 1; i < points.length; i++) cum.push(cum[i - 1] + km(points[i - 1], points[i]));
     return cum;
+  }
+
+  // 各頂点だけでなく線分への最短距離を測る。距離は道路上の走行距離ではない。
+  function distanceToRoute(point, points) {
+    let best = Infinity;
+    const scale = Math.cos(point[0] * Math.PI / 180);
+    for (let i = 1; i < points.length; i++) {
+      const a = points[i - 1], b = points[i];
+      const ax = (a[1] - point[1]) * scale, ay = a[0] - point[0];
+      const dx = (b[1] - a[1]) * scale, dy = b[0] - a[0];
+      const length = dx * dx + dy * dy;
+      const t = length ? Math.max(0, Math.min(1, -(ax * dx + ay * dy) / length)) : 0;
+      best = Math.min(best, km(point, [a[0] + t * (b[0] - a[0]), a[1] + t * (b[1] - a[1])]));
+    }
+    return best;
   }
 
   const baseName = (name) => name.replace(/\s*[（(]\s*[上下]り?\s*[)）]\s*/g, "").trim();
@@ -521,8 +551,7 @@
     const list = PLACES.filter((p) => p.id !== place.id && p.page_url)
       .map((p) => ({ p, d: km(here, [p.geocode.lat, p.geocode.lon]) }))
       .filter((x) => x.d <= CFG.nearbyKm)
-      .sort((a, b) => (a.p.type === place.type) - (b.p.type === place.type) || a.d - b.d)
-      .slice(0, 6)
+      .sort((a, b) => compareDestinations(a.p, b.p))
       .map(({ p, d }) => {
         try {
           const url = new URL(p.page_url, location.href);
@@ -532,17 +561,23 @@
       .filter(Boolean);
     const select = $("nearby-select");
     select.replaceChildren(new Option("掲載先を選ぶと施設情報へ移動します", ""));
-    for (const { p, d, href } of list) {
-      select.add(new Option(`${p.name}（${p.area}・約${Math.round(d)}km）`, href));
+    for (const type of ["lodging", "spot"]) {
+      const group = document.createElement("optgroup");
+      group.label = `${TYPE_LABEL[type]}（50音順）`;
+      for (const { p, d, href } of list.filter((x) => x.p.type === type)) {
+        group.appendChild(new Option(`${p.name}（直線 約${Math.round(d)}km・地域の目安）`, href));
+      }
+      if (group.children.length) select.appendChild(group);
     }
+    $("nearby-select-hint").textContent = `行き先から直線${CFG.nearbyKm}km以内を区分ごとの50音順で表示（読み未登録の英字名は末尾）。地域の代表点を含む目安です。選ぶと施設情報を開きます。`;
     select.onchange = () => {
       if (select.value) window.location.assign(select.value);
     };
     $("nearby-card").classList.toggle("hidden", !list.length);
-    $("nearby").innerHTML = list.map(({ p, d, href }) => `
+    $("nearby").innerHTML = list.slice().sort((a, b) => a.d - b.d).slice(0, 6).map(({ p, d, href }) => `
       <a href="${esc(href)}">
         <span class="badge">${esc(TYPE_LABEL[p.type])}</span> <b>${esc(p.name)}</b>
-        <small>${esc(p.area)} ・ 約${Math.round(d)}km${p.theme ? " ・ " + esc(p.theme) : ""} ・ 施設情報を開く</small></a>`).join("");
+        <small>${esc(p.area)} ・ 直線 約${Math.round(d)}km（地域の目安）${p.theme ? " ・ " + esc(p.theme) : ""} ・ 施設情報を開く</small></a>`).join("");
   }
 
   // ---------------------------------------------------------------- 実行
@@ -567,6 +602,117 @@
 
   // ---------------------------------------------------------------- 立ち寄り先
 
+  const waypointRouteKey = () => ["origin", "dest-q", "date", "start"].map((id) => $(id).value).join("|");
+  const waypointDistance = (d) => d < 1 ? "1km未満" : `約${Math.round(d)}km`;
+
+  function waypointCandidates() {
+    const scope = $("wp-scope").value, radius = Number($("wp-radius").value);
+    const dest = byId.get($("dest-q").value);
+    return [...wpByLabel].flatMap(([label, value]) => {
+      if (value.place && value.place.id === dest?.id) return [];
+      if (scope === "rest" ? !value.stop : !value.place) return [];
+      let distance = null;
+      if (scope === "route") {
+        if (!waypointRoute || waypointRoute.key !== waypointRouteKey()) return [];
+        distance = distanceToRoute([value.lat, value.lon], waypointRoute.points);
+      } else if (scope === "destination") {
+        if (!hasRouteCoordinates(dest)) return [];
+        distance = km([value.lat, value.lon], [Number(dest.geocode.lat), Number(dest.geocode.lon)]);
+      }
+      if (distance !== null && (!Number.isFinite(distance) || distance > radius)) return [];
+      return [{ label, value, distance }];
+    }).sort((a, b) => compareDestinations(a.value.place || { name: a.value.name, id: a.label }, b.value.place || { name: b.value.name, id: b.label }));
+  }
+
+  function refreshWaypointChoices() {
+    const candidates = waypointCandidates();
+    const scope = $("wp-scope").value;
+    const routeReady = waypointRoute?.key === waypointRouteKey();
+    $("wp-radius").disabled = scope === "all" || scope === "rest";
+    $("find-wp-route").classList.toggle("hidden", scope !== "route");
+    const destReady = hasRouteCoordinates(byId.get($("dest-q").value));
+    $("wp-route-status").textContent = scope === "route" && !routeReady
+      ? waypointMessage || "出発地・行き先・出発日時を選び、ルート沿いの候補を探してください。"
+      : scope === "destination" && !destReady ? "位置情報のある行き先を選んでください。"
+      : `${candidates.length}件の候補。${scope === "route" ? "立ち寄り前のルートから" : scope === "destination" ? "行き先から" : ""}${["route", "destination"].includes(scope) ? `直線${$("wp-radius").value}km以内。` : ""}区分ごとに50音順です。${scope === "route" ? "出発地・行き先・日時を変えたら再検索してください。" : ""}`;
+    const rows = [...$("wps").children];
+    for (const row of rows) {
+      const select = row.querySelector(".wp-q"), selected = select.value;
+      const elsewhere = new Set(rows.filter((r) => r !== row).map((r) => r.querySelector(".wp-q").value).filter(Boolean));
+      select.replaceChildren(new Option(candidates.length ? "立ち寄り先を選択（50音順）" : "条件に合う候補がありません", ""));
+      for (const type of ["lodging", "spot", "rest"]) {
+        const group = document.createElement("optgroup");
+        group.label = type === "rest" ? "SA・PA・道の駅" : TYPE_LABEL[type];
+        for (const candidate of candidates.filter((c) => (c.value.place?.type || "rest") === type && !elsewhere.has(c.label))) {
+          const { label, value, distance } = candidate;
+          const info = distance === null ? value.place?.area || value.kind : `${scope === "route" ? "ルートから" : "行き先から"} ${waypointDistance(distance)}${value.approx ? "・地域の目安" : ""}`;
+          group.appendChild(new Option(`${value.name}（${info}）`, label));
+        }
+        if (group.children.length) select.appendChild(group);
+      }
+      if (selected && ![...select.options].some((option) => option.value === selected)) {
+        const retained = document.createElement("optgroup");
+        retained.label = "選択中（現在の絞り込み対象外）";
+        retained.appendChild(new Option(wpByLabel.get(selected)?.name || selected, selected));
+        select.appendChild(retained);
+      }
+      select.value = selected;
+      const summary = row.querySelector(".wp-summary");
+      const selectedOption = [...select.options].find((option) => option.value === selected);
+      summary.textContent = selected ? `${selectedOption?.textContent || selected}${selectedOption?.parentElement?.label === "選択中（現在の絞り込み対象外）" ? "（現在の絞り込み対象外・選択を保持しています）" : ""}` : "";
+      summary.classList.toggle("hidden", !selected);
+      const link = row.querySelector(".wp-details");
+      const href = wpByLabel.get(selected)?.place?.page_url;
+      link.classList.toggle("hidden", !href);
+      if (href) link.href = href; else link.removeAttribute("href");
+    }
+  }
+
+  function invalidateWaypointRoute() {
+    waypointRequest++;
+    waypointRoute = null;
+    waypointMessage = "条件を変更しました。ルート沿いの候補をもう一度探してください。";
+    $("find-wp-route").disabled = false;
+    $("find-wp-route").textContent = "ルート沿いの候補を探す";
+    refreshWaypointChoices();
+  }
+
+  async function findWaypointRoute() {
+    const request = ++waypointRequest, key = waypointRouteKey();
+    waypointRoute = null;
+    waypointMessage = "ルートを確認しています…";
+    $("find-wp-route").disabled = true;
+    refreshWaypointChoices();
+    try {
+      const dest = byId.get($("dest-q").value);
+      if (!hasRouteCoordinates(dest)) throw new Error("位置情報のある行き先を選んでください。");
+      const departure = `${$("date").value}T${$("start").value}:00+09:00`;
+      if (!(Date.parse(departure) > Date.now() + 120000)) throw new Error("これから出発する日付・時刻を選んでください。");
+      const origin = await getOrigin();
+      if (request !== waypointRequest || key !== waypointRouteKey()) return;
+      const end = { lat: Number(dest.geocode.lat), lon: Number(dest.geocode.lon), approx: dest.geocode.precision !== "facility" };
+      if (isApproxLeg({ from: origin, to: end })) throw new Error("出発地と行き先の位置が大まかで近いため、ルートを確認できません。「行き先の近く」から探してください。");
+      const data = await routeLeg(origin, end, [departure]);
+      if (request !== waypointRequest || key !== waypointRouteKey()) return;
+      const result = data.results?.[0];
+      if (data.mock || result?.error || !result?.polyline) throw new Error("ルートを取得できませんでした。「行き先の近く」か「掲載先すべて」から選べます。");
+      const points = decodePolyline(result.polyline);
+      if (points.length < 2 || points.some(([lat, lon]) => !Number.isFinite(lat) || !Number.isFinite(lon) || Math.abs(lat) > 90 || Math.abs(lon) > 180)) throw new Error("ルートの位置情報を確認できませんでした。");
+      waypointRoute = { key, points };
+      waypointMessage = "";
+    } catch (error) {
+      if (request === waypointRequest) waypointMessage = error instanceof TypeError
+        ? "ルートを取得できませんでした。通信環境を確認するか、「行き先の近く」「掲載先すべて」から選んでください。"
+        : error.message || "ルートを取得できませんでした。";
+    } finally {
+      if (request === waypointRequest) {
+        $("find-wp-route").disabled = false;
+        refreshWaypointChoices();
+        if (waypointRoute && !$("wps").children.length) addWaypointRow();
+      }
+    }
+  }
+
   function renumberWaypoints() {
     const rows = [...$("wps").children];
     rows.forEach((row, k) => {
@@ -583,21 +729,25 @@
     row.className = "wp";
     row.innerHTML = `
       <span class="wp-no"></span>
-      <input class="wp-q" list="wp-list" placeholder="例: 佐野SA、道の駅、掲載の宿・おでかけ先" aria-label="立ち寄り先">
+      <select class="wp-q" aria-label="立ち寄り先"><option value="">立ち寄り先を選択</option></select>
+      <p class="wp-summary hidden"></p>
       <div class="wp-ctrl">
         <select class="wp-stay" aria-label="滞在時間">${STAY_CHOICES.map((m) =>
           `<option value="${m}"${m === stay ? " selected" : ""}>滞在 ${fmtStay(m)}</option>`).join("")}</select>
         <button type="button" class="wp-up" aria-label="順番を1つ前へ">↑ 前へ</button>
         <button type="button" class="wp-del" aria-label="この立ち寄り先を削除">削除</button>
-      </div>`;
-    row.querySelector(".wp-q").value = value;
-    row.querySelector(".wp-del").addEventListener("click", () => { row.remove(); renumberWaypoints(); });
+      </div>
+      <a class="wp-details hidden" target="_blank" rel="noopener">選んだ施設の条件・詳細を見る ↗</a>`;
+    if (value) row.querySelector(".wp-q").appendChild(new Option(value, value, true, true));
+    row.querySelector(".wp-q").addEventListener("change", refreshWaypointChoices);
+    row.querySelector(".wp-del").addEventListener("click", () => { row.remove(); renumberWaypoints(); refreshWaypointChoices(); });
     row.querySelector(".wp-up").addEventListener("click", () => {
       if (row.previousElementSibling) row.parentNode.insertBefore(row, row.previousElementSibling);
       renumberWaypoints();
     });
     $("wps").appendChild(row);
     renumberWaypoints();
+    refreshWaypointChoices();
     row.querySelector(".wp-q").focus();
   }
 
@@ -608,8 +758,9 @@
       const stayMin = Number(row.querySelector(".wp-stay").value);
       if (!input) continue; // 空の行は無視
       const known = wpByLabel.get(input);
+      if (known?.place?.id === $("dest-q").value || out.some((w) => w.input === input)) throw new Error(`立ち寄り先${k + 1}は行き先や他の立ち寄り先と重複しています。別の施設を選んでください。`);
       if (known) { out.push({ ...known, input, stayMin }); continue; }
-      throw new Error(`立ち寄り先${k + 1}「${input}」は候補から選んでください。施設名の一部を入力すると候補を絞れます。`);
+      throw new Error(`立ち寄り先${k + 1}はプルダウンの候補から選んでください。`);
     }
     return out;
   }
@@ -752,6 +903,10 @@
   $("dest-q").addEventListener("change", updateDestinationLink);
   $("form").addEventListener("submit", onSubmit);
   $("add-wp").addEventListener("click", () => addWaypointRow());
+  $("wp-scope").addEventListener("change", refreshWaypointChoices);
+  $("wp-radius").addEventListener("change", refreshWaypointChoices);
+  $("find-wp-route").addEventListener("click", findWaypointRoute);
+  for (const id of ["origin", "dest-q", "date", "start"]) $(id).addEventListener("change", invalidateWaypointRoute);
   renumberWaypoints();
   loadData().catch(() => showError("行き先データを読み込めませんでした。"));
 })();
