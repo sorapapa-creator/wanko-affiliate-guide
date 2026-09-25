@@ -95,6 +95,7 @@
   .wp-summary { grid-column: 2; margin: 0; color: var(--muted); font-size: .83rem; overflow-wrap: anywhere; }
   .wp-filters { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-bottom: 10px; }
   .wp-filters label { min-width: 0; }
+  @media (max-width: 540px) { .wp-filters { grid-template-columns: minmax(0, 1fr); } }
   .wp-filters span { display: block; font-size: .85rem; font-weight: 650; margin-bottom: 4px; }
   .wp-q { background: #fffdf7; color: #29251f; }
   .wp-q option { background: #fff; color: #29251f; }
