@@ -1,0 +1,279 @@
+{
+ "about": "宿の犬の条件のうち、公式で一律に書かれている上限(1室の頭数・1頭ごとの体重・大きさ)だけ。大きさで頭数が変わるなど一律でない条件は載せない(判定は「要確認」)。soft=原則・目安の書き方(上限を超えても「条件外」にせず「要確認」)。text はカードの「対象犬・頭数」、source_url はカードの公式リンク(広告リンクは除く)、checked_at はカードの確認日。",
+ "generated_at": "2026-09-26",
+ "rules": {
+  "risonare-nasu": {
+   "text": "小型・中型犬のみ、愛犬ルーム1室2頭まで。",
+   "source_url": "https://hoshinoresorts.com/ja/hotels/risonarenasu/sp/nasu-petroom/",
+   "checked_at": "2026-09-22",
+   "max_dogs": 2,
+   "sizes": [
+    "small",
+    "medium"
+   ]
+  },
+  "tazawako": {
+   "text": "15kgまでの小型犬、1室1頭。",
+   "source_url": "https://withdog.iconia.co.jp/hotels/tazawako-lakeresort",
+   "checked_at": null,
+   "max_dogs": 1,
+   "max_kg": 15,
+   "kg_inclusive": true
+  },
+  "karuizawa-prince": {
+   "text": "大型犬可、1棟3頭まで（公式ペット特集表示）。",
+   "source_url": "https://www.princehotels.co.jp/pet/",
+   "checked_at": null,
+   "max_dogs": 3
+  },
+  "cerulean-dogfriendly": {
+   "text": "公式同意書では7kg未満・1室1頭。登録、狂犬病・混合ワクチン証明などの条件あり。",
+   "source_url": "https://www.tokyuhotels.co.jp/cerulean-h/room/pdf/ceruleantowertokyuhotel_stayplan_dog.pdf",
+   "checked_at": "2026-09-21",
+   "max_dogs": 1,
+   "max_kg": 7,
+   "kg_inclusive": false
+  },
+  "lechien-kyukaruizawa": {
+   "text": "原則1室2頭まで。3頭以上は事前にホテルへ連絡。",
+   "source_url": "https://dormy-hotels.com/resort/hotels/karuizawa/",
+   "checked_at": "2026-09-21",
+   "max_dogs": 2,
+   "soft": true
+  },
+  "karuizawa-house-villa": {
+   "text": "公式ペットプランに1棟3頭までと記載。3頭以上は事前問い合わせともあるため、3頭同伴時から確認。犬サイズは予約前確認。",
+   "source_url": "https://karuizawa-house-villa.com/",
+   "checked_at": "2026-09-22",
+   "max_dogs": 3,
+   "soft": true
+  },
+  "add60-hikarino-uta": {
+   "text": "10kgまでの小・中型犬2頭まで",
+   "source_url": "https://www.hikarino-uta.com/rooms/dog/",
+   "checked_at": "2026-09-23",
+   "max_dogs": 2,
+   "max_kg": 10,
+   "kg_inclusive": true
+  },
+  "add60-morinouta": {
+   "text": "10kgまでのケージに入る犬2頭まで",
+   "source_url": "https://www.morino-uta.com/plans/dog/",
+   "checked_at": "2026-09-23",
+   "max_dogs": 2,
+   "max_kg": 10,
+   "kg_inclusive": true
+  },
+  "add60-saroma": {
+   "text": "5kgまでのケージに入る小型犬1頭",
+   "source_url": "https://www.s-tsuruga.com/rooms/dog/",
+   "checked_at": "2026-09-23",
+   "max_dogs": 1,
+   "max_kg": 5,
+   "kg_inclusive": true
+  },
+  "add60-hokuten": {
+   "text": "10kgまでのケージに入る犬2頭まで",
+   "source_url": "https://www.hokutennooka.com/room/annextower/",
+   "checked_at": "2026-09-23",
+   "max_dogs": 2,
+   "max_kg": 10,
+   "kg_inclusive": true
+  },
+  "add60-aikenoyado": {
+   "text": "体重20kg未満の室内犬。発情期など利用制限は公式規約確認。",
+   "source_url": "https://www.welovedogs.jp/hotel/facilities/",
+   "checked_at": "2026-09-23",
+   "max_kg": 20,
+   "kg_inclusive": false
+  },
+  "n0924-shikinoyakata-nasu": {
+   "text": "6kg以下の小型犬のみ。1室2頭まで。犬と泊まれるのは一部の客室だけ。",
+   "source_url": "https://www.shikinoyakata-nasu.com/rooms/index.html#pet_room",
+   "checked_at": "2026-09-24",
+   "max_dogs": 2,
+   "max_kg": 6,
+   "kg_inclusive": true,
+   "sizes": [
+    "small"
+   ]
+  },
+  "n0924-yururi-hakone": {
+   "text": "小型犬限定(対象犬種の一覧あり)。1室3頭まで。",
+   "source_url": "https://yururi-hakone.com/dogs",
+   "checked_at": "2026-09-24",
+   "max_dogs": 3,
+   "sizes": [
+    "small"
+   ]
+  },
+  "n0924-ana-hi-karuizawa": {
+   "text": "1室3頭まで(犬種により要相談)。",
+   "source_url": "https://karuizawa.holidayinnresorts.com/dogfriendly/",
+   "checked_at": "2026-09-24",
+   "max_dogs": 3,
+   "soft": true
+  },
+  "n0924-jodo-parkhotel": {
+   "text": "11kg以下の小型・中型犬、最大2頭。",
+   "source_url": "https://www.jodo-ph.jp/staypet/",
+   "checked_at": "2026-09-24",
+   "max_dogs": 2,
+   "max_kg": 11,
+   "kg_inclusive": true
+  },
+  "n0924-belnatio-carneria": {
+   "text": "1室3頭まで。犬のみ。",
+   "source_url": "https://www.belnatio.com/stay/carneria.html",
+   "checked_at": "2026-09-24",
+   "max_dogs": 3
+  },
+  "n0924-granforesta-nikko": {
+   "text": "全犬種、最大3頭。",
+   "source_url": "https://www.tochigi-nikko-dogresort.com/",
+   "checked_at": "2026-09-24",
+   "max_dogs": 3
+  },
+  "n0924-mercure-zao": {
+   "text": "生後6か月以上・20kg以下の小型・中型の室内犬。1室2頭まで。",
+   "source_url": "https://mercure-miyagizao-resortandspa.jp/plan/dogfriendlytwin/",
+   "checked_at": "2026-09-24",
+   "max_dogs": 2,
+   "max_kg": 20,
+   "kg_inclusive": true
+  },
+  "n0924-oarai-parkhotel-villa": {
+   "text": "1室3頭まで。大きさは予約前確認。",
+   "source_url": "https://www.ooarai.co.jp/villa",
+   "checked_at": "2026-09-24",
+   "max_dogs": 3
+  },
+  "n0924-naspa-newotani": {
+   "text": "15kg以下の小型・中型犬。スーペリアツインは1頭、ジュニアスイートは2頭まで。",
+   "source_url": "https://www.naspa.co.jp/guest-room/conceptroom/",
+   "checked_at": "2026-09-24",
+   "max_dogs": 2,
+   "max_kg": 15,
+   "kg_inclusive": true
+  },
+  "n0924-perro-ikaho": {
+   "text": "体重15kg未満かつ体高20〜60cm未満の小〜中型犬。頭数は予約前確認。",
+   "source_url": "https://www.hotel-perro.com/",
+   "checked_at": "2026-09-24",
+   "max_kg": 15,
+   "kg_inclusive": false
+  },
+  "c-ikaho-ginsui": {
+   "text": "小型犬のみ(10kg未満で、キャリーバスケットに入っても吠えないこと)。トイレのしつけ・予防接種済み・無駄吠えしないこと。発情中・夜鳴き癖は不可。",
+   "source_url": "http://ikaho.co.jp/pet.html",
+   "checked_at": "2026-09-26",
+   "max_kg": 10,
+   "kg_inclusive": false,
+   "sizes": [
+    "small"
+   ]
+  },
+  "c-courtyard-hakuba": {
+   "text": "小型犬(一般的に10kg以下)2頭まで。1室 大人3名+小型犬2頭まで。宿泊できない犬種の指定あり(公式の一覧を確認)。犬を連れていない場合はこの客室に泊まれない。",
+   "source_url": "https://www.laforet.co.jp/lf-cyh/room/dogroom.html",
+   "checked_at": "2026-09-26",
+   "max_dogs": 2,
+   "max_kg": 10,
+   "kg_inclusive": true,
+   "soft": true,
+   "sizes": [
+    "small"
+   ]
+  },
+  "rakuten-villa-nikko": {
+   "text": "ペット対応棟で小・中・大型犬を合計2頭まで。",
+   "source_url": "https://stay.rakuten.co.jp/villa/nikko/",
+   "checked_at": "2026-09-21",
+   "max_dogs": 2
+  },
+  "rakuten-nikko-hoden": {
+   "text": "ペット対応客室で小・中・大型犬を合計2頭まで。",
+   "source_url": "https://stay.rakuten.co.jp/nikko-hoden/",
+   "checked_at": "2026-09-21",
+   "max_dogs": 2
+  },
+  "rakuten-motel-nikko-kinugawa": {
+   "text": "ペット対応客室で小・中・大型犬を合計2頭まで。",
+   "source_url": "https://stay.rakuten.co.jp/motel/nikko-kinugawa/",
+   "checked_at": "2026-09-21",
+   "max_dogs": 2
+  },
+  "rakuten-villa-kinugawa": {
+   "text": "ペット対応棟で小・中・大型犬を合計2頭まで。",
+   "source_url": "https://stay.rakuten.co.jp/villa/kinugawa/",
+   "checked_at": "2026-09-21",
+   "max_dogs": 2
+  },
+  "rakuten-villa-nasu": {
+   "text": "ペット対応棟で小・中・大型犬を合計2頭まで。",
+   "source_url": "https://stay.rakuten.co.jp/villa/nasu/",
+   "checked_at": "2026-09-21",
+   "max_dogs": 2
+  },
+  "rakuten-villa-kusatsu": {
+   "text": "ペット対応客室で小・中・大型犬を合計2頭まで。",
+   "source_url": "https://stay.rakuten.co.jp/villa/kusatsu-onsen/",
+   "checked_at": "2026-09-21",
+   "max_dogs": 2
+  },
+  "rakuten-villa-hakone-gora": {
+   "text": "ペット対応客室で小・中・大型犬を合計2頭まで。",
+   "source_url": "https://stay.rakuten.co.jp/villa/hakone-gora/",
+   "checked_at": "2026-09-21",
+   "max_dogs": 2
+  },
+  "rakuten-hakone-susuki": {
+   "text": "ペット対応客室で小・中・大型犬を合計2頭まで。",
+   "source_url": "https://stay.rakuten.co.jp/hakone-susuki-grass-fields/",
+   "checked_at": "2026-09-21",
+   "max_dogs": 2
+  },
+  "rakuten-hakone-togendai": {
+   "text": "ペット対応客室で小・中・大型犬を合計2頭まで。",
+   "source_url": "https://stay.rakuten.co.jp/villa/hakone-togendai/",
+   "checked_at": "2026-09-21",
+   "max_dogs": 2
+  },
+  "rakuten-terrace-hakone-kowakudani": {
+   "text": "ペット対応客室で小・中・大型犬を合計2頭まで。",
+   "source_url": "https://stay.rakuten.co.jp/terrace/hakone-kowakudani/",
+   "checked_at": "2026-09-21",
+   "max_dogs": 2
+  },
+  "rakuten-fujimi-hakone": {
+   "text": "ペット対応客室で小・中・大型犬を合計2頭まで。",
+   "source_url": "https://stay.rakuten.co.jp/hakone-ashinoko/",
+   "checked_at": "2026-09-21",
+   "max_dogs": 2
+  },
+  "rakuten-villa-yatsugatake": {
+   "text": "ペット対応棟で小・中・大型犬を合計2頭まで。",
+   "source_url": "https://stay.rakuten.co.jp/villa/yatsugatake/",
+   "checked_at": "2026-09-21",
+   "max_dogs": 2
+  },
+  "rakuten-villa-kamogawa": {
+   "text": "ペット対応棟で小・中・大型犬を合計2頭まで。",
+   "source_url": "https://stay.rakuten.co.jp/villa/kamogawa/",
+   "checked_at": "2026-09-21",
+   "max_dogs": 2
+  },
+  "rakuten-villa-fujikawaguchiko": {
+   "text": "ペット対応棟で小・中・大型犬を合計2頭まで。",
+   "source_url": "https://stay.rakuten.co.jp/villa/fuji-kawaguchiko-forest/",
+   "checked_at": "2026-09-21",
+   "max_dogs": 2
+  },
+  "rakuten-villa-fujiyamanakako": {
+   "text": "ペット対応棟で小・中・大型犬を合計2頭まで。",
+   "source_url": "https://stay.rakuten.co.jp/villa/fuji-yamanakako/",
+   "checked_at": "2026-09-21",
+   "max_dogs": 2
+  }
+ }
+}

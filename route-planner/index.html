@@ -59,6 +59,14 @@
   .b-warn { background: var(--warn); color: #fff; } .b-closed { background: var(--bad); color: #fff; }
   .note { color: var(--muted); font-size: .85rem; }
   .warnbox { border-left: 4px solid var(--warn); padding: 6px 10px; background: var(--accent-soft); border-radius: 6px; margin: 8px 0; font-size: .9rem; }
+  /* 段階0(trip-check.js) */
+  details.trip-extra { border: 1px dashed var(--line); border-radius: 10px; padding: 8px 12px; margin: 0 0 12px; }
+  details.trip-extra summary { cursor: pointer; font-weight: 700; font-size: .92rem; }
+  #trip-check h3 { font-size: .95rem; margin: 14px 0 6px; }
+  #trip-check h3:first-of-type { margin-top: 4px; }
+  #trip-check ul { margin: 4px 0; padding-left: 1.2em; }
+  #trip-check li { margin: 6px 0; overflow-wrap: anywhere; }
+  .dog-ok { background: var(--good); color: #fff; } .dog-no { background: var(--bad); color: #fff; } .dog-check { background: var(--warn); color: #fff; }
   a { color: var(--accent); }
   .actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
   .actions a { display: inline-block; border: 1px solid var(--accent); border-radius: 8px; padding: 7px 12px; text-decoration: none; font-weight: 600; font-size: .92rem; }
@@ -256,6 +264,19 @@
       </div>
       <div class="hint">休憩の間隔は、成犬は2時間、子犬・シニア・車酔いする子は1時間、暑さに弱い子は夏季1.5時間を目安にします。持病がある子は獣医さんの指示を優先してください。</div>
     </fieldset>
+    <details class="trip-extra" id="trip-extra">
+      <summary>日付・人数・犬の条件でも確認する(任意)</summary>
+      <p class="hint">入れた場合だけ、結果の下に「宿の空室の確かめ方・犬の条件・天気・この日程の犬イベント」を出します。空欄のままなら、これまでと同じ結果です。ここで入れた内容は外部に送りません(このページの中だけで使います)。</p>
+      <div class="row four">
+        <fieldset><label class="t planner-field-label" for="checkout"><span>チェックアウト日</span><small>泊まる場合</small></label><input type="date" id="checkout"></fieldset>
+        <fieldset><label class="t planner-field-label" for="adults"><span>大人の人数</span><small>ADULTS</small></label>
+          <select id="adults"><option value="">未選択</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></fieldset>
+        <fieldset><label class="t planner-field-label" for="dogs"><span>犬の頭数</span><small>DOGS</small></label>
+          <select id="dogs"><option value="">未選択</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></fieldset>
+        <fieldset><label class="t planner-field-label" for="dog-kg"><span>いちばん重い子の体重</span><small>KG</small></label><input type="number" id="dog-kg" min="0.5" max="90" step="0.1" inputmode="decimal" placeholder="例 6.5"></fieldset>
+      </div>
+      <p class="hint">チェックイン日は上の「出発日」です。犬の条件は、宿が公式に一律の上限(頭数・体重・大きさ)を書いている場合だけ照らし合わせ、それ以外は「要確認」と表示します。</p>
+    </details>
     <button class="primary" id="go" type="submit">出発時刻を比べる</button>
   </form>
 
@@ -277,6 +298,8 @@
 
     <div class="card" id="dest-card"></div>
 
+    <div class="card hidden" id="trip-check" aria-live="polite"></div>
+
     <div class="card hidden" id="nearby-card">
       <h2>行き先の近くで犬と行ける場所</h2>
       <label class="t planner-field-label" for="nearby-select"><span>近くの掲載先</span><small>NEARBY</small></label>
@@ -296,7 +319,8 @@
 </div>
 <!-- 更新したら ?v= の値を変える(ブラウザに古いファイルが残って新しい動作にならないのを防ぐ) -->
 <script src="config.js?v=2026092501"></script>
-<script src="planner.js?v=2026092504"></script>
+<script src="planner.js?v=2026092601"></script>
+<script src="trip-check.js?v=2026092601"></script>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "2847001768a143df87fa4e78edba9c7e"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>

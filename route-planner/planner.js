@@ -888,6 +888,8 @@
       renderPlan(lastState, bestIndex);
       renderDestination(place, profile);
       renderNearby(place);
+      // 段階0(日付・人数・犬の条件の確認。trip-check.js)へ結果を渡す。任意の欄が空なら何も表示しない
+      document.dispatchEvent(new CustomEvent("planner:rendered", { detail: { place, origin, date: $("date").value, places: PLACES } }));
       $("results").classList.remove("hidden");
       $("results").scrollIntoView({ behavior: "smooth", block: "start" });
     } catch (e) {
