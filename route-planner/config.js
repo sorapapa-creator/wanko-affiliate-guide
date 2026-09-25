@@ -5,4 +5,6 @@ window.PLANNER_CONFIG = {
   dataBase: "./data/",
   nearbyKm: 30,
   restMinutes: 20,
+  // 天気の表示(段階1)。オーナーの承認と Worker の WEATHER_ENABLED 設定の後に true にする
+  weatherEnabled: false,
 };

@@ -21,9 +21,55 @@
   const jmaUrl = (area) => {
     const pref = Object.keys(JMA_OFFICE).find((p) => (area || "").startsWith(p) || (area || "").startsWith(p.replace(/[都県]$/, "")));
     return pref
-      ? { url: `https://www.jma.go.jp/bosai/forecast/#area_type=offices&area_code=${JMA_OFFICE[pref]}`, label: `気象庁 ${pref}の天気予報` }
-      : { url: "https://www.jma.go.jp/bosai/forecast/", label: "気象庁の天気予報(地図から地域を選ぶ)" };
+      ? { office: JMA_OFFICE[pref], url: `https://www.jma.go.jp/bosai/forecast/#area_type=offices&area_code=${JMA_OFFICE[pref]}`, label: `気象庁 ${pref}の天気予報` }
+      : { office: null, url: "https://www.jma.go.jp/bosai/forecast/", label: "気象庁の天気予報(地図から地域を選ぶ)" };
   };
+
+  // 段階1の天気(オーナー承認前は無効)。config.js の weatherEnabled が true のときだけ、
+  // Worker の /jma-forecast から気象庁の府県予報を読み、その日の予報を表示する。送るのは府県の予報区コードだけ
+  const CFG = window.PLANNER_CONFIG || {};
+  const WEATHER_ON = CFG.weatherEnabled === true;
+  const CODE_GROUP = { 1: "晴れ", 2: "くもり", 3: "雨", 4: "雪" };
+  function forecastFor(data, date) {
+    // data = 気象庁 bosai の予報 JSON([短期予報, 週間予報])。代表の地域(先頭)の予報を返す
+    const day = (t) => String(t).slice(0, 10);
+    const [short, week] = data;
+    const out = { office: short.publishingOffice, reported: short.reportDatetime, area: short.timeSeries[0].areas[0].area.name };
+    const i0 = short.timeSeries[0].timeDefines.findIndex((t) => day(t) === date);
+    if (i0 >= 0) out.text = short.timeSeries[0].areas[0].weathers[i0].replace(/　|　/g, " ");
+    if (week) {
+      const iw = week.timeSeries[0].timeDefines.findIndex((t) => day(t) === date);
+      if (iw >= 0) {
+        const a = week.timeSeries[0].areas[0];
+        if (a.pops && a.pops[iw]) out.pop = a.pops[iw];
+        if (!out.text && a.weatherCodes && a.weatherCodes[iw]) out.text = `${CODE_GROUP[a.weatherCodes[iw][0]] || "不明"}系(週間予報)`;
+        const tt = week.timeSeries[1] && week.timeSeries[1].areas[0];
+        if (tt) { out.tmax = tt.tempsMax && tt.tempsMax[iw]; out.tmin = tt.tempsMin && tt.tempsMin[iw]; out.tarea = tt.area.name; }
+      }
+    }
+    if (!out.pop) {
+      // 今日・明日は6時間ごとの降水確率のうち、その日の最大
+      const ts = short.timeSeries[1];
+      const pops = ts ? ts.timeDefines.map((t, k) => (day(t) === date ? Number(ts.areas[0].pops[k]) : NaN)).filter(Number.isFinite) : [];
+      if (pops.length) out.pop = String(Math.max(...pops));
+    }
+    return out.text || out.pop ? out : null;
+  }
+  async function fillWeather(el, office, date) {
+    if (!el || !office) return;
+    try {
+      // apiBase が空なら同じサーバー(手元の開発サーバー)
+      const res = await fetch(`${CFG.apiBase || ""}/jma-forecast?office=${encodeURIComponent(office)}`);
+      if (!res.ok) throw new Error(String(res.status));
+      const f = forecastFor(await res.json(), date);
+      el.innerHTML = f
+        ? `<p><span class="badge">予報</span> ${esc(date)}(${esc(f.area)}): ${esc(f.text || "")}${f.pop ? ` / 降水確率 ${esc(f.pop)}%` : ""}${f.tmax ? ` / 最高 ${esc(f.tmax)}℃` : ""}${f.tmin ? ` 最低 ${esc(f.tmin)}℃` : ""}${f.tarea ? `(気温は${esc(f.tarea)})` : ""}</p>
+           <p class="note">出典: 気象庁の天気予報を加工して作成(${esc(f.office)} ${esc(String(f.reported).slice(0, 16).replace("T", " "))} 発表)。府県の代表地域の予報で、行き先そのものの予報ではありません。</p>`
+        : `<p><span class="badge">予報の範囲外</span> ${esc(date)} は気象庁の週間予報(7日先まで)の範囲外です。近くなったら予報を確認してください。</p>`;
+    } catch {
+      el.innerHTML = `<p class="note">予報を読み込めませんでした。気象庁のページで確認してください。</p>`;
+    }
+  }
   const RAIN_OK = /(室内|屋内)(ドッグ)?ラン(あり|を)|屋内同伴案内あり|室内カフェ|店内で休める/;
   const RAIN_NG = /向かない|代替先にはせず|代替施設としては利用しない|未確認/;
   const km = (a, b) => {
@@ -96,7 +142,7 @@
       .sort((a, b) => a.d - b.d).slice(0, 4) : [];
     return `
       <h3>天気</h3>
-      <p><span class="badge">未取得</span> 天気予報はこのページでは取得していません。出発前に予報を確認してください。</p>
+      ${WEATHER_ON && j.office ? `<div id="tc-weather"><p class="note">予報を読み込んでいます…</p></div>` : `<p><span class="badge">未取得</span> 天気予報はこのページでは取得していません。出発前に予報を確認してください。</p>`}
       <div class="actions"><a href="${esc(j.url)}" target="_blank" rel="noopener">${esc(j.label)} ↗</a></div>
       ${alt.length ? `<p class="note">雨のときの候補(カードの「雨の日」に屋内の記載がある、行き先から直線40km以内の掲載先。条件を必ず確認):</p>
         <ul>${alt.map(({ p, text, d }) => `<li><a href="${esc(p.page_url)}">${esc(p.name)}</a>(直線 約${Math.round(d)}km)— ${esc(text)}</li>`).join("")}</ul>`
@@ -138,6 +184,7 @@
       ${weatherBlock(place, detail.places)}
       ${eventsBlock(events && events.events, x, place, detail.origin)}`;
     card.classList.remove("hidden");
+    if (WEATHER_ON) fillWeather($("tc-weather"), jmaUrl(place.area).office, x.checkin);
   }
 
   function clear() {
