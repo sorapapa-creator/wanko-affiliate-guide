@@ -274,6 +274,107 @@
    "source_url": "https://stay.rakuten.co.jp/villa/fuji-yamanakako/",
    "checked_at": "2026-09-21",
    "max_dogs": 2
+  },
+  "c2-mountview-hakone": {
+   "text": "1室あたり小型犬2頭まで(合計体重10kg以内で、ペットキャリーに全身が隠れるサイズ)。狂犬病と5種以上の混合ワクチンの接種後2週間以上1年未満。サークル内で寝られること。",
+   "source_url": "https://www.mvhakone.jp/dog/",
+   "checked_at": "2026-09-26",
+   "max_dogs": 2,
+   "sizes": [
+    "small"
+   ]
+  },
+  "c2-fuji-marriott-yamanakako": {
+   "text": "室内で飼っている小型犬(一般的に10kg以下)1頭まで。狂犬病と5種以上の混合ワクチンの接種後2週間以上1年未満で、証明書のコピーを予約時に提出。犬を連れていない場合はこの客室に泊まれない。",
+   "source_url": "https://www.laforet.co.jp/lf-ymh/room/dog_notes.html",
+   "checked_at": "2026-09-26",
+   "max_dogs": 1,
+   "max_kg": 10,
+   "kg_inclusive": true,
+   "soft": true,
+   "sizes": [
+    "small"
+   ]
+  },
+  "c2-nijinouta-urabandai": {
+   "text": "小型犬のみ、2頭まで(1人で2頭以上連れる場合は事前に電話)。狂犬病予防接種と5種以上のワクチン接種が必要。",
+   "source_url": "https://nijinouta.com/dogs.html",
+   "checked_at": "2026-09-26",
+   "max_dogs": 2,
+   "sizes": [
+    "small"
+   ]
+  },
+  "c2-corredor-yugawara": {
+   "text": "体高40cmまでの小型犬・中型犬(大型犬は不可)。1室2頭まで。接種日から1年以内の狂犬病と予防接種の証明書を当日持参。",
+   "source_url": "https://corredor-y.jp/faq/",
+   "checked_at": "2026-09-26",
+   "max_dogs": 2,
+   "sizes": [
+    "small",
+    "medium"
+   ]
+  },
+  "c2-hotel-new-akao": {
+   "text": "小型犬のみ、2頭まで(合計15kg以内)。毎年1回の狂犬病予防接種と有効期限内の混合ワクチンなど。わんちゃん同伴宿泊滞在同意書の提出が必要。",
+   "source_url": "https://withdog.iconia.co.jp/hotels/hotel-new-akao",
+   "checked_at": "2026-09-26",
+   "max_dogs": 2,
+   "sizes": [
+    "small"
+   ]
+  },
+  "c2-east-winds-village": {
+   "text": "1室2頭まで。1年以内に狂犬病と伝染病の予防接種を受け、ノミ・ダニ・寄生虫が駆除されている室内犬。「愛犬同伴OK」と書かれた部屋を選ぶ。",
+   "source_url": "https://east-winds-village.com/pages/with-dogs",
+   "checked_at": "2026-09-26",
+   "max_dogs": 2
+  },
+  "c2-kieto-chichibu": {
+   "text": "室内で飼われている犬のみ、最大3頭まで。狂犬病と5種以上の混合ワクチンの接種後2週間以上1年未満。",
+   "source_url": "https://ki-e-to.jp/dog-term.html",
+   "checked_at": "2026-09-26",
+   "max_dogs": 3
+  },
+  "c2-komura-chichibu": {
+   "text": "犬種を問わず最大3頭まで(犬と泊まれるのはドッグスイートの客室)。チェックイン時に狂犬病予防と混合ワクチンの接種証明書を提示。",
+   "source_url": "https://www.chichibu-privatevilla-komura.com/dogrun",
+   "checked_at": "2026-09-26",
+   "max_dogs": 3
+  },
+  "c2-pica-chichibu-doggy": {
+   "text": "1棟あたり最大3頭まで。大きさの条件は予約前確認。",
+   "source_url": "https://www.pica-resort.jp/chichibu/stay/site/doggy.html",
+   "checked_at": "2026-09-26",
+   "max_dogs": 3
+  },
+  "c2-amamu-takahagi": {
+   "text": "犬種・サイズの制限なし、1棟最大5頭まで。ペット同伴宿泊規約同意書への同意が必要。",
+   "source_url": "https://www.ibaraki-resort-glamping.com/pet/",
+   "checked_at": "2026-09-26",
+   "max_dogs": 5
+  },
+  "c2-angelforest-atami": {
+   "text": "最大10頭まで(一部の貸別荘は犬不可、小型犬のみの棟もある)。証明書の持参は不要だが、ペット同伴宿泊規約同意書への署名が必要。共用ドッグランの利用は狂犬病予防接種証明書と8種以上の混合ワクチンの確認あり。",
+   "source_url": "https://www.angel-hotels.com/angelforest-rental-villa/qa/",
+   "checked_at": "2026-09-26",
+   "max_dogs": 10
+  },
+  "c2-gassan-polepole": {
+   "text": "小型犬から超大型犬まで、どんな犬種でも可。コテージ1部屋につき原則2頭まで(3頭以上は予約時に犬種などを相談)。",
+   "source_url": "https://polepole.co.jp/pet-stay/",
+   "checked_at": "2026-09-26",
+   "max_dogs": 2,
+   "soft": true
+  },
+  "c2-yururi-atami": {
+   "text": "小型・中型犬同伴専用の温泉旅館。1部屋3頭まで(洋室ツインは2頭まで)。接種後2週間以上1年以内の狂犬病ワクチンと5種以上の混合ワクチン(1年以内の抗体検査証明も可)の証明が必要。",
+   "source_url": "https://yururi-atami.com/",
+   "checked_at": "2026-09-26",
+   "sizes": [
+    "small",
+    "medium"
+   ]
   }
  }
 }

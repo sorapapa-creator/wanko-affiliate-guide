@@ -265,6 +265,18 @@
     return best;
   }
 
+  // ルートの何番目の点に一番近いか(SA・PA・道の駅をルートの順=出発地に近い順に並べるため)
+  function routeOrder(point, points) {
+    let best = Infinity, index = 0;
+    for (let i = 0; i < points.length; i++) {
+      const d = (points[i][0] - point[0]) ** 2 + (points[i][1] - point[1]) ** 2;
+      if (d < best) { best = d; index = i; }
+    }
+    return index;
+  }
+  // 休憩に使えない地点(チェーン着脱場など)は立ち寄り候補に出さない
+  const NOT_REST = /チェーン着脱|着脱場/;
+
   const baseName = (name) => name.replace(/\s*[（(]\s*[上下]り?\s*[)）]\s*/g, "").trim();
 
   // 東京から放射状に延びる高速道路(東北道・関越道・常磐道・東名・中央道など)は、東京から離れる向きが「下り」。
@@ -611,11 +623,18 @@
   function waypointCandidates() {
     const scope = $("wp-scope").value, radius = Number($("wp-radius").value);
     const dest = byId.get($("dest-q").value);
+    const routeReady = waypointRoute?.key === waypointRouteKey();
+    const byRouteOrder = scope === "rest" && routeReady;
     return [...wpByLabel].flatMap(([label, value]) => {
       if (value.place && value.place.id === dest?.id) return [];
       if (scope === "rest" ? !value.stop : !value.place) return [];
-      let distance = null;
-      if (scope === "route") {
+      if (scope === "rest" && NOT_REST.test(value.name)) return [];
+      let distance = null, order = null;
+      if (byRouteOrder) {
+        // SA・PA・道の駅も、ルートを取得済みならルートから選んだ距離以内に絞り、ルートの順に並べる
+        distance = distanceToRoute([value.lat, value.lon], waypointRoute.points);
+        order = routeOrder([value.lat, value.lon], waypointRoute.points);
+      } else if (scope === "route") {
         if (!waypointRoute || waypointRoute.key !== waypointRouteKey()) return [];
         distance = distanceToRoute([value.lat, value.lon], waypointRoute.points);
       } else if (scope === "destination") {
@@ -623,19 +642,24 @@
         distance = km([value.lat, value.lon], [Number(dest.geocode.lat), Number(dest.geocode.lon)]);
       }
       if (distance !== null && (!Number.isFinite(distance) || distance > radius)) return [];
-      return [{ label, value, distance }];
-    }).sort((a, b) => compareDestinations(a.value.place || { name: a.value.name, id: a.label }, b.value.place || { name: b.value.name, id: b.label }));
+      return [{ label, value, distance, order }];
+    }).sort((a, b) => byRouteOrder ? a.order - b.order
+      : compareDestinations(a.value.place || { name: a.value.name, id: a.label }, b.value.place || { name: b.value.name, id: b.label }));
   }
 
   function refreshWaypointChoices() {
     const candidates = waypointCandidates();
     const scope = $("wp-scope").value;
     const routeReady = waypointRoute?.key === waypointRouteKey();
-    $("wp-radius").disabled = scope === "all" || scope === "rest";
-    $("find-wp-route").classList.toggle("hidden", scope !== "route");
+    $("wp-radius").disabled = scope === "all" || (scope === "rest" && !routeReady);
+    $("find-wp-route").classList.toggle("hidden", scope !== "route" && scope !== "rest");
     const destReady = hasRouteCoordinates(byId.get($("dest-q").value));
     $("wp-route-status").textContent = scope === "route" && !routeReady
       ? waypointMessage || "出発地・行き先・出発日時を選び、ルート沿いの候補を探してください。"
+      : scope === "rest" && routeReady
+        ? `${candidates.length}件の候補。立ち寄り前のルートから直線${$("wp-radius").value}km以内のSA・PA・道の駅を、出発地に近い順に並べています。出発地・行き先・日時を変えたら再検索してください。`
+      : scope === "rest"
+        ? `${waypointMessage ? waypointMessage + " " : ""}全国のSA・PA・道の駅 ${candidates.length}件(50音順)。「ルート沿いの候補を探す」を押すと、ルート沿いに絞って出発地に近い順に並べます。`
       : scope === "destination" && !destReady ? "位置情報のある行き先を選んでください。"
       : `${candidates.length}件の候補。${scope === "route" ? "立ち寄り前のルートから" : scope === "destination" ? "行き先から" : ""}${["route", "destination"].includes(scope) ? `直線${$("wp-radius").value}km以内。` : ""}区分ごとに50音順です。${scope === "route" ? "出発地・行き先・日時を変えたら再検索してください。" : ""}`;
     const rows = [...$("wps").children];
@@ -648,7 +672,7 @@
         group.label = type === "rest" ? "SA・PA・道の駅" : TYPE_LABEL[type];
         for (const candidate of candidates.filter((c) => (c.value.place?.type || "rest") === type && !elsewhere.has(c.label))) {
           const { label, value, distance } = candidate;
-          const info = distance === null ? value.place?.area || value.kind : `${scope === "route" ? "ルートから" : "行き先から"} ${waypointDistance(distance)}${value.approx ? "・地域の目安" : ""}`;
+          const info = distance === null ? value.place?.area || value.kind : `${scope === "destination" ? "行き先から" : "ルートから"} ${waypointDistance(distance)}${value.approx ? "・地域の目安" : ""}`;
           group.appendChild(new Option(`${value.name}（${info}）`, label));
         }
         if (group.children.length) select.appendChild(group);
@@ -698,7 +722,8 @@
       const data = await routeLeg(origin, end, [departure]);
       if (request !== waypointRequest || key !== waypointRouteKey()) return;
       const result = data.results?.[0];
-      if (data.mock || result?.error || !result?.polyline) throw new Error("ルートを取得できませんでした。「行き先の近く」か「掲載先すべて」から選べます。");
+      const devHost = ["localhost", "127.0.0.1"].includes(location.hostname);  // 手元の開発サーバーでは仮データのルートでも絞り込みを試せる
+      if ((data.mock && !devHost) || result?.error || !result?.polyline) throw new Error("ルートを取得できませんでした。「行き先の近く」か「掲載先すべて」から選べます。");
       const points = decodePolyline(result.polyline);
       if (points.length < 2 || points.some(([lat, lon]) => !Number.isFinite(lat) || !Number.isFinite(lon) || Math.abs(lat) > 90 || Math.abs(lon) > 180)) throw new Error("ルートの位置情報を確認できませんでした。");
       waypointRoute = { key, points };
