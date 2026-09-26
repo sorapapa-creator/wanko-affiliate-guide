@@ -10,7 +10,7 @@
       {name:'原材料・無添加にこだわりたい',problem:'毎日の主食',text:'「何が不使用か」を確認して選びましょう。原材料欄は含まれる食材の検索で、アレルゲン除外の判定ではありません。',food:true,focus:'ff-additives'},
       {name:'粒・硬さ・ペーストで選びたい',problem:'毎日の主食',text:'粒の大きさと食感は別々に確認。ドライ、ウェット、ペースト・ムースなど、公式表示がある条件で絞り込めます。',food:true,focus:'ff-texture'},
       {name:'毎日の費用から考えたい',problem:'毎日の主食',text:'購入価格の上限と、1食・30日分の費用は別の指標です。容量と公式給与表の1日量をそろえて比較しましょう。',food:true,focus:'ff-cost'},
-      {name:'早食いが気になる',problem:'早食い',text:'食器・給餌用品のサイズ、使えるフード、洗いやすさを比べましょう。商品ごとの注意事項も確認できます。'},
+      {name:'早食い防止',problem:'早食い',text:'凹凸のある食器、なめて食べるマット、転がす・においで探す給餌用品などを比べましょう。犬の大きさ、使うフード（ドライ・ウェット・液体）、洗いやすさ、噛み癖の有無で選びます。',evidence:{title:'早食いを防ぐメリットと注意点',good:['一度に口に入る量と一緒に飲み込む空気を減らし、早食いのあとの吐き戻し・むせ・お腹の不快感を減らす助けになります。','早食いは胃拡張・胃捻転（お腹にガスがたまり胃がねじれる、命に関わる病気）の危険因子の一つとされています。特に大型で胸の深い犬では、食べる速さを落とすことと、1日の量を2回以上に分けることが対策として挙げられています。','食事に時間がかかるので満足感につながりやすく、なめる・においで探すなど、食べることそのものを楽しむ時間にもなります。'],care:['用品で胃拡張・胃捻転を確実に防げるわけではありません。落ち着かない、よだれが多い、吐こうとしても何も出ない、お腹がふくらむ、息が苦しそうなどの様子があれば、すぐに動物病院へ。','溝や凹凸が多い食器は洗いにくいので毎回しっかり洗って清潔に。食器が滑るときは滑り止めマットを敷きます。最初は簡単な形から始め、食べられているか見守りましょう。','マットや知育給餌器は噛むためのものではありません。噛み壊すと誤飲の危険があるので、目の届く所で使い、食べ終わったら片づけます。'],sources:[['AKC（早食いのリスクと対策）','https://www.akc.org/expert-advice/nutrition/slow-your-dogs-eating/'],['VCA（胃拡張・胃捻転の危険因子と症状）','https://vcahospitals.com/know-your-pet/bloat-gastric-dilatation-and-volvulus-in-dogs'],['いぬのきもち（獣医師監修・早食い防止食器の注意点）','https://dog.benesse.ne.jp/withdog/content/?id=166052']],checked:'獣医療情報を確認：2026年9月26日。むせや嘔吐が続く、体重が減るなど気になる症状があるときは獣医師に相談してください。'}},
       {name:'おやつ・ごほうびを選びたい',problem:'しつけ・ごほうび',text:'主食とは分けて、原材料、サイズ、与え方と量を確認。持ち歩きやすさなど使う場面も比べましょう。'}]},
     {name:'散歩・おうちの困りごと',hint:'排泄、汚れ、暑さ、安全',items:[
       {name:'臭い・排泄',problem:'臭い・排泄',text:'袋、シート、トイレ用品など、必要な用途から比較。容量、サイズ、交換や処理のしやすさを確認しましょう。'},
@@ -82,8 +82,9 @@
     const actions=document.createElement('div');actions.className='cg-actions';
     if(item.food)actions.append(button('こだわり・詳細条件を選ぶ',()=>apply(true)));
     actions.append(button(item.food?'この条件の商品候補を見る':'困りごとに合う商品候補を見る',()=>apply(false)));
-    stage.append(actions,button('← 困りごとを選び直す',()=>topics(g)));h.focus({preventScroll:true});
+    stage.append(actions,button('← 困りごとを選び直す',()=>topics(g)));if(item.evidence)stage.append(evidenceSection(item.evidence));h.focus({preventScroll:true});
   }
+  function evidenceSection(ev){const section=document.createElement('section');section.className='cg-dogwear-evidence';const title=document.createElement('h4');title.textContent=ev.title;section.append(title);const columns=document.createElement('div');columns.className='cg-dogwear-columns';[['役立つこと',ev.good],['気をつけること',ev.care]].forEach(([label,items])=>{const article=document.createElement('article');const h5=document.createElement('h5');h5.textContent=label;const ul=document.createElement('ul');items.forEach(text=>{const li=document.createElement('li');li.textContent=text;ul.append(li);});article.append(h5,ul);columns.append(article);});section.append(columns);const sources=document.createElement('p');sources.className='cg-dogwear-sources';sources.append(document.createTextNode('参考：'));ev.sources.forEach(([label,url],index)=>{if(index)sources.append(document.createTextNode(' ・ '));const a=document.createElement('a');a.href=url;a.target='_blank';a.rel='noopener noreferrer';a.textContent=label;sources.append(a);});const checked=document.createElement('small');checked.textContent=ev.checked;section.append(sources,checked);return section;}
   function apply(details){
     const item=chosen;if(!item)return;
     const target=[...document.querySelectorAll('button[data-problem]')].find(b=>b.dataset.problem===item.problem);if(!target)return;
