@@ -677,12 +677,13 @@
   const waypointRouteKey = () => ["origin", "dest-q", "date", "start"].map((id) => $(id).value).join("|");
   const waypointDistance = (d) => d < 1 ? "1km未満" : `約${Math.round(d)}km`;
 
-  // 立ち寄り先の候補: 立ち寄り前のルート(出発地→行き先)から直線30km以内の、掲載先(宿・おでかけ)とSA・PA・道の駅。区分ごとに50音順
+  // 立ち寄り先の候補: 立ち寄り前のルート(出発地→行き先)から直線30km以内の、おでかけ先とSA・PA・道の駅(宿は入れない)。区分ごとに50音順
   function waypointCandidates() {
     const dest = byId.get($("dest-q").value);
     if (waypointRoute?.key !== waypointRouteKey()) return [];
     return [...wpByLabel].flatMap(([label, value]) => {
       if (value.place && value.place.id === dest?.id) return [];
+      if (value.place?.type === "lodging") return [];
       if (value.stop && NOT_REST.test(value.name)) return [];
       const distance = distanceToRoute([value.lat, value.lon], waypointRoute.points);
       if (!Number.isFinite(distance) || distance > WP_RADIUS_KM) return [];
@@ -696,13 +697,13 @@
     const count = (type) => candidates.filter((c) => (c.value.place?.type || "rest") === type).length;
     $("wp-route-status").textContent = !routeReady
       ? waypointMessage || "出発地・行き先・出発日時を選んでから「ルート沿いの候補を探す」を押してください（「＋ 立ち寄り先を追加」でも探します）。"
-      : `ルートから直線${WP_RADIUS_KM}km以内の候補: 宿 ${count("lodging")}件・おでかけ ${count("spot")}件・SA・PA・道の駅 ${count("rest")}件（区分ごとに50音順）。出発地・行き先・日時を変えたら探し直してください。`;
+      : `ルートから直線${WP_RADIUS_KM}km以内の候補: おでかけ ${count("spot")}件・SA・PA・道の駅 ${count("rest")}件（区分ごとに50音順）。出発地・行き先・日時を変えたら探し直してください。`;
     const rows = [...$("wps").children];
     for (const row of rows) {
       const select = row.querySelector(".wp-q"), selected = select.value;
       const elsewhere = new Set(rows.filter((r) => r !== row).map((r) => r.querySelector(".wp-q").value).filter(Boolean));
       select.replaceChildren(new Option(!routeReady ? "先にルート沿いの候補を探してください" : candidates.length ? "立ち寄り先を選択（50音順）" : "ルートから30km以内に候補がありません", ""));
-      for (const type of ["lodging", "spot", "rest"]) {
+      for (const type of ["spot", "rest"]) {
         const group = document.createElement("optgroup");
         group.label = type === "rest" ? "SA・PA・道の駅" : TYPE_LABEL[type];
         for (const candidate of candidates.filter((c) => (c.value.place?.type || "rest") === type && !elsewhere.has(c.label))) {

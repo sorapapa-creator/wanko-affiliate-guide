@@ -239,7 +239,7 @@
       <p class="hint" id="wp-route-status" role="status" aria-live="polite">出発地・行き先・出発日時を選んでから「ルート沿いの候補を探す」を押してください（「＋ 立ち寄り先を追加」でも探します）。</p>
       <div id="wps"></div>
       <button type="button" class="sub" id="add-wp">＋ 立ち寄り先を追加</button>
-      <div class="hint">候補は、立ち寄り前のルート(出発地→行き先)から直線30km以内の掲載先(宿・おでかけ)とSA・PA・道の駅です。区分ごとに50音順で選べます（読み未登録の英字名は末尾に表記順）。出発地 → 立ち寄り先（上から順）→ 行き先の順に回ります。距離は直線距離で、実際の走行距離・迂回距離とは異なります。「地域の目安」は市町村などの代表点による概算です。位置未登録の施設は含みません。15分以上の滞在は犬の休憩としても数えます。</div>
+      <div class="hint">候補は、立ち寄り前のルート(出発地→行き先)から直線30km以内のおでかけ先とSA・PA・道の駅です(宿は入れません)。区分ごとに50音順で選べます（読み未登録の英字名は末尾に表記順）。出発地 → 立ち寄り先（上から順）→ 行き先の順に回ります。距離は直線距離で、実際の走行距離・迂回距離とは異なります。「地域の目安」は市町村などの代表点による概算です。位置未登録の施設は含みません。15分以上の滞在は犬の休憩としても数えます。</div>
     </fieldset>
     <div class="row four">
       <fieldset><label class="t planner-field-label" for="date"><span>出発日</span><small>DATE</small></label><input type="date" id="date" required></fieldset>
@@ -325,7 +325,7 @@
 </div>
 <!-- 更新したら ?v= の値を変える(ブラウザに古いファイルが残って新しい動作にならないのを防ぐ) -->
 <script src="config.js?v=2026092601"></script>
-<script src="planner.js?v=2026092701"></script>
+<script src="planner.js?v=2026092702"></script>
 <script src="trip-check.js?v=2026092602"></script>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "2847001768a143df87fa4e78edba9c7e"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
