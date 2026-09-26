@@ -347,13 +347,13 @@
    "max_dogs": 2,
    "max_kg": 10,
    "kg_inclusive": true,
-   "checked_at": "2026-09-27"
+   "checked_at": "2026-09-26"
   },
   "c3-ozejujo": {
    "text": "1年以内に狂犬病・伝染病の予防接種を受けた室内犬2頭まで。",
    "source_url": "https://ozejujo.com/journal/hotels/1209/",
    "max_dogs": 2,
-   "checked_at": "2026-09-27"
+   "checked_at": "2026-09-26"
   },
   "c3-okina-ryokan": {
    "text": "小型犬2匹まで(中型犬以上は電話で問い合わせ)。",
@@ -363,7 +363,7 @@
     "small"
    ],
    "soft": true,
-   "checked_at": "2026-09-27"
+   "checked_at": "2026-09-26"
   },
   "c3-tsumagoi-prince": {
    "text": "小型犬(おおむね10kg未満)、最大2頭。狂犬病と5種以上の混合ワクチンの証明書。",
@@ -373,7 +373,7 @@
     "small"
    ],
    "soft": true,
-   "checked_at": "2026-09-27"
+   "checked_at": "2026-09-26"
   },
   "c3-matsushima-century": {
    "text": "生後1年以上・体重10kg以下の室内飼育の小型犬のみ、1部屋2頭まで(合計10kgまで)。",
@@ -384,7 +384,7 @@
    "sizes": [
     "small"
    ],
-   "checked_at": "2026-09-27"
+   "checked_at": "2026-09-26"
   },
   "c3-tansen-hotel": {
    "text": "超小型・小型犬から、抱っこできる中型犬(柴犬サイズ)まで。",
@@ -394,13 +394,13 @@
     "medium"
    ],
    "soft": true,
-   "checked_at": "2026-09-27"
+   "checked_at": "2026-09-26"
   },
   "c3-okunikko-kougen": {
    "text": "小型犬から大型犬まで、1部屋2匹まで。満1歳以上の完全室内飼い。",
    "source_url": "https://www.okunikko-kougenhotel.com/rooms_pet.html",
    "max_dogs": 2,
-   "checked_at": "2026-09-27"
+   "checked_at": "2026-09-26"
   },
   "c3-inumo-shibakoen": {
    "text": "40kg以上の犬と闘犬目的の犬種は不可。1室3頭まで(3頭目は別料金)。",
@@ -408,7 +408,7 @@
    "max_dogs": 3,
    "max_kg": 40,
    "kg_inclusive": false,
-   "checked_at": "2026-09-27"
+   "checked_at": "2026-09-26"
   },
   "c3-peninsula-tokyo": {
    "text": "1部屋1匹・15kg以下(スイートルーム限定)。",
@@ -416,7 +416,7 @@
    "max_dogs": 1,
    "max_kg": 15,
    "kg_inclusive": true,
-   "checked_at": "2026-09-27"
+   "checked_at": "2026-09-26"
   },
   "c3-risonare-atami": {
    "text": "小型犬・中型犬のみ、1室2頭まで。",
@@ -426,7 +426,7 @@
     "small",
     "medium"
    ],
-   "checked_at": "2026-09-27"
+   "checked_at": "2026-09-26"
   },
   "c3-kai-kinugawa": {
    "text": "1室限定、中型犬(20kg以下)まで1室2頭まで。",
@@ -434,7 +434,7 @@
    "max_dogs": 2,
    "max_kg": 20,
    "kg_inclusive": true,
-   "checked_at": "2026-09-27"
+   "checked_at": "2026-09-26"
   },
   "c3-umito-kamakura": {
    "text": "体重20kg未満の室内飼育犬、1組2頭まで。",
@@ -442,13 +442,13 @@
    "max_dogs": 2,
    "max_kg": 20,
    "kg_inclusive": false,
-   "checked_at": "2026-09-27"
+   "checked_at": "2026-09-26"
   },
   "c3-nipponia-sawara": {
    "text": "生後4か月以上、1部屋3匹まで(合計体重25kg未満)。一部の犬種は不可。",
    "source_url": "https://www.nipponia-sawara.jp/withdog/",
    "max_dogs": 3,
-   "checked_at": "2026-09-27"
+   "checked_at": "2026-09-26"
   },
   "c3-joshuen": {
    "text": "小型犬・中型犬の専門宿。1人につき2匹まで。",
@@ -457,7 +457,7 @@
     "small",
     "medium"
    ],
-   "checked_at": "2026-09-27"
+   "checked_at": "2026-09-26"
   },
   "c3-shima-izumiya": {
    "text": "小型犬と、中型犬(15kg程度)2頭まで。",
@@ -467,7 +467,7 @@
     "medium"
    ],
    "soft": true,
-   "checked_at": "2026-09-27"
+   "checked_at": "2026-09-26"
   }
  }
 }
