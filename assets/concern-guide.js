@@ -92,7 +92,10 @@
     document.querySelector('#ff-reset')?.click();
     const brand=document.querySelector('#food-brand');if(brand)brand.value='';
     target.click();
-    if(item.filter){const field=document.querySelector(`[data-food-filter="${item.filter[0]}"]`);if(field&&[...field.options].some(o=>o.value===item.filter[1]&&!o.disabled)){field.value=item.filter[1];field.dispatchEvent(new Event('input',{bubbles:true}));}}
+    if(item.filter){const field=document.querySelector(`[data-food-filter="${item.filter[0]}"]`);if(field&&field.options&&[...field.options].some(o=>o.value===item.filter[1]&&!o.disabled)){field.value=item.filter[1];field.dispatchEvent(new Event('input',{bubbles:true}));}
+      // 現行の「気になる設計表示」などはチェックボックス群([data-food-group])なので、該当の値にチェックを入れて連動させる
+      const box=[...document.querySelectorAll(`[data-food-group="${item.filter[0]}"] input[type="checkbox"]`)].find(i=>i.value===item.filter[1]&&!i.disabled);
+      if(box&&!box.checked){box.checked=true;box.dispatchEvent(new Event('input',{bubbles:true}));box.dispatchEvent(new Event('change',{bubbles:true}));}}
     root.querySelector('.cg-selection').textContent=`選択中：${item.name}。条件は下の絞り込みで変更できます。`;
     if(details){const panel=document.querySelector('#food-finder');panel.querySelector('details').open=true;const dest=document.getElementById(item.focus)||panel;if(dest.tagName==='DETAILS')dest.open=true;scrollTo(dest);if(dest.matches('select,input'))dest.focus({preventScroll:true});}
     else {const result=document.querySelector('.result-count');scrollTo(result);result.tabIndex=-1;result.focus({preventScroll:true});}

@@ -30,7 +30,7 @@ function wankoFoodMatches(p,s) {
     if(values.length && !values.some(value=>(p[key]||[]).includes(value)))return false;
   }
   const concerns=wankoFoodValues(s.concern);
-  if(concerns.length && !concerns.every(value=>(p.concern||[]).includes(value)))return false;
+  if(concerns.length && !concerns.some(value=>(p.concern||[]).includes(value)))return false; // 選んだうち1つ以上(OR)
   const forms=wankoFoodValues(s.form);
   if(forms.length && !forms.includes(p.form))return false;
   if(s.grain && p.grain!==s.grain)return false;

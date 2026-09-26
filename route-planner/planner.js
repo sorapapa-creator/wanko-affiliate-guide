@@ -190,7 +190,7 @@
 
     // サイトの各カードから「?dest=<id>」付きで開かれたら、行き先を選んだ状態にする
     // 統合して外したカードの古いIDは、残したカードのIDに読み替える(外部から古いリンクで来た人のため)
-    const DEST_ALIASES = { "add60-ishinoie": "izu-ishinoie" };
+    const DEST_ALIASES = { "add60-ishinoie": "izu-ishinoie", "c2-haiji-no-mura": "c-heidi-village" };
     const rawDest = new URLSearchParams(location.search).get("dest");
     const destId = DEST_ALIASES[rawDest] || rawDest;
     if (destId && byId.has(destId)) select.value = destId;

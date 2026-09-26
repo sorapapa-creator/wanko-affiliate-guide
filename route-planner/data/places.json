@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "source": "https://sorapapa-creator.github.io/wanko-affiliate-guide/",
- "generated_at": "2026-09-27T07:14:20+09:00",
+ "generated_at": "2026-09-27T07:17:40+09:00",
  "places": [
   {
    "id": "la-dog-resort",
@@ -17583,56 +17583,6 @@
    }
   },
   {
-   "id": "c-moeginomura",
-   "type": "spot",
-   "name": "萌木の村",
-   "area": "山梨県北杜市・清里",
-   "region_group": "koshinetsu",
-   "kinds": [
-    "travel",
-    "cafe"
-   ],
-   "theme": "清里高原のナチュラルガーデンを歩き、犬と一緒に入れるカフェやテラス席で休む",
-   "facts": {
-    "犬の条件・同伴範囲": "店ごとに扱いが違う(公式の各店ページに記載)。ガーデンカフェ by ROCKは犬同伴OK、キャロルはテラス席、レストランROCKはテラス席のみ(店内不可)。抱っこかキャリーバッグなら入れる店、犬不可の店もある。メリーゴーラウンドは抱っこできる小動物なら一緒に乗れる(無料)。",
-    "料金の目安/犬料金": "犬の入場料の案内なし。メリーゴーラウンドは1人1回500円。",
-    "持ち物": "リード、キャリーバッグ(抱っこ・キャリーが条件の店用)、排泄袋。",
-    "雨の日": "屋外の庭が中心。店内に犬が入れる店は限られる。",
-    "出発前に確認": "各店の営業日・犬の扱い(公式の施設一覧で店ごとに確認)。小型犬から大型犬まで乗れるカヤックなど犬と参加できるツアーもある。",
-    "公式で確認したこと": "萌木の村公式の施設ページで、店ごとのペットの可否・条件を確認。"
-   },
-   "links": [
-    {
-     "label": "公式情報",
-     "url": "https://www.moeginomura.co.jp/",
-     "affiliate": false
-    },
-    {
-     "label": "施設公式案内",
-     "url": "https://www.moeginomura.co.jp/establishment/",
-     "affiliate": false
-    }
-   ],
-   "checked_at": "2026-09-26",
-   "dog_hints": {
-    "has_rain_note": true
-   },
-   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c-moeginomura",
-   "geocode": {
-    "lat": 35.923233,
-    "lon": 138.435074,
-    "precision": "district",
-    "source": "manual",
-    "matched": "山梨県北杜市高根町清里3545 → 住所検索: 山梨県北杜市高根町清里"
-   },
-   "area_geocode": {
-    "lat": 35.776493,
-    "lon": 138.42363,
-    "matched": "山梨県北杜市",
-    "precision": "approximate"
-   }
-  },
-  {
    "id": "c-mitakido-dogrun",
    "type": "spot",
    "name": "道の駅三滝堂 ドッグラン",
@@ -18427,50 +18377,6 @@
     "lon": 138.217499,
     "matched": "長野県原村",
     "precision": "municipality"
-   }
-  },
-  {
-   "id": "c2-haiji-no-mura",
-   "type": "spot",
-   "name": "山梨県立フラワーセンター ハイジの村",
-   "area": "山梨県北杜市・明野",
-   "region_group": "koshinetsu",
-   "kinds": [
-    "park",
-    "run"
-   ],
-   "theme": "花のテーマパークを犬と歩き、ドッグランとアジリティで遊ぶ",
-   "facts": {
-    "犬の条件・同伴範囲": "入園できるのは公式が決めた犬種(小型・中型の指定犬種)とその雑種。「愛犬同伴入園利用規程」に従い同意書に署名。",
-    "料金の目安/犬料金": "犬1頭につきエチケットセット(300円)を購入。",
-    "持ち物": "リード、同意書(事前に書いておくと早い)。",
-    "雨の日": "屋外が中心。",
-    "出発前に確認": "入園できる犬種の一覧(公式の愛犬同伴入園ページ)。",
-    "公式で確認したこと": "公式の愛犬同伴入園ページで、犬種・同意書・エチケットセット・ドッグランを確認。"
-   },
-   "links": [
-    {
-     "label": "施設公式案内",
-     "url": "https://www.haiji-no-mura.com/pet.html",
-     "affiliate": false
-    }
-   ],
-   "checked_at": "2026-09-26",
-   "dog_hints": {
-    "has_rain_note": true
-   },
-   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c2-haiji-no-mura",
-   "geocode": {
-    "lat": 35.776493,
-    "lon": 138.42363,
-    "matched": "山梨県北杜市",
-    "precision": "approximate"
-   },
-   "area_geocode": {
-    "lat": 35.776493,
-    "lon": 138.42363,
-    "matched": "山梨県北杜市",
-    "precision": "approximate"
    }
   },
   {
