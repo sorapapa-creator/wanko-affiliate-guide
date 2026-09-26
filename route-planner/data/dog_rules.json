@@ -12,14 +12,6 @@
     "medium"
    ]
   },
-  "tazawako": {
-   "text": "15kgまでの小型犬、1室1頭。",
-   "source_url": "https://withdog.iconia.co.jp/hotels/tazawako-lakeresort",
-   "checked_at": null,
-   "max_dogs": 1,
-   "max_kg": 15,
-   "kg_inclusive": true
-  },
   "karuizawa-prince": {
    "text": "大型犬可、1棟3頭まで（公式ペット特集表示）。",
    "source_url": "https://www.princehotels.co.jp/pet/",
@@ -47,38 +39,6 @@
    "checked_at": "2026-09-22",
    "max_dogs": 3,
    "soft": true
-  },
-  "add60-hikarino-uta": {
-   "text": "10kgまでの小・中型犬2頭まで",
-   "source_url": "https://www.hikarino-uta.com/rooms/dog/",
-   "checked_at": "2026-09-23",
-   "max_dogs": 2,
-   "max_kg": 10,
-   "kg_inclusive": true
-  },
-  "add60-morinouta": {
-   "text": "10kgまでのケージに入る犬2頭まで",
-   "source_url": "https://www.morino-uta.com/plans/dog/",
-   "checked_at": "2026-09-23",
-   "max_dogs": 2,
-   "max_kg": 10,
-   "kg_inclusive": true
-  },
-  "add60-saroma": {
-   "text": "5kgまでのケージに入る小型犬1頭",
-   "source_url": "https://www.s-tsuruga.com/rooms/dog/",
-   "checked_at": "2026-09-23",
-   "max_dogs": 1,
-   "max_kg": 5,
-   "kg_inclusive": true
-  },
-  "add60-hokuten": {
-   "text": "10kgまでのケージに入る犬2頭まで",
-   "source_url": "https://www.hokutennooka.com/room/annextower/",
-   "checked_at": "2026-09-23",
-   "max_dogs": 2,
-   "max_kg": 10,
-   "kg_inclusive": true
   },
   "add60-aikenoyado": {
    "text": "体重20kg未満の室内犬。発情期など利用制限は公式規約確認。",
@@ -113,14 +73,6 @@
    "checked_at": "2026-09-24",
    "max_dogs": 3,
    "soft": true
-  },
-  "n0924-jodo-parkhotel": {
-   "text": "11kg以下の小型・中型犬、最大2頭。",
-   "source_url": "https://www.jodo-ph.jp/staypet/",
-   "checked_at": "2026-09-24",
-   "max_dogs": 2,
-   "max_kg": 11,
-   "kg_inclusive": true
   },
   "n0924-belnatio-carneria": {
    "text": "1室3頭まで。犬のみ。",

@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "source": "https://sorapapa-creator.github.io/wanko-affiliate-guide/",
- "generated_at": "2026-09-26T16:00:13+09:00",
+ "generated_at": "2026-09-26T16:11:12+09:00",
  "places": [
   {
    "id": "la-dog-resort",
@@ -855,44 +855,6 @@
     "lat": 35.716034,
     "lon": 140.648178,
     "matched": "千葉県旭市",
-    "precision": "municipality"
-   }
-  },
-  {
-   "id": "tazawako",
-   "type": "lodging",
-   "name": "天然温泉 田沢湖レイクリゾート",
-   "area": "秋田県仙北市",
-   "co_sleep": "添い寝 不可",
-   "facts": {
-    "対象犬・頭数": "15kgまでの小型犬、1室1頭。",
-    "ケージはある？": "ケージ、食器、トイレシート、タオル、消臭剤あり。",
-    "夜はどこで寝る？": "洋室のペットルームで滞在。温泉利用中は客室で留守番。",
-    "持ち込み判断": "館内移動用ケージが必要。冬季は防寒用品も検討。",
-    "添い寝の条件": "公式案内でベッド・布団に犬を乗せないよう明記。",
-    "予約前の確認": "1室1頭・15kgまで。客室外では抱っこまたはケージ移動。"
-   },
-   "links": [
-    {
-     "label": "公式情報を確認",
-     "url": "https://withdog.iconia.co.jp/hotels/tazawako-lakeresort",
-     "affiliate": false
-    }
-   ],
-   "checked_at": null,
-   "dog_hints": {},
-   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
-   "geocode": {
-    "lat": 39.741616,
-    "lon": 140.727207,
-    "precision": "facility",
-    "source": "official-map",
-    "matched": "公式ページの地図"
-   },
-   "area_geocode": {
-    "lat": 39.699993,
-    "lon": 140.730576,
-    "matched": "秋田県仙北市",
     "precision": "municipality"
    }
   },
@@ -3070,265 +3032,6 @@
    }
   },
   {
-   "id": "add60-hikarino-uta",
-   "type": "lodging",
-   "name": "洞爺湖 鶴雅リゾート 洸の謌",
-   "area": "北海道・洞爺湖／壮瞥町",
-   "co_sleep": "添い寝 不可",
-   "facts": {
-    "対象犬・頭数": "10kgまでの小・中型犬2頭まで",
-    "犬の宿泊料金": "1頭5,500円。連泊時の課金単位は予約時確認。",
-    "ケージ・持参判断": "ケージあり。4名＋2頭の利用では1台のみになる場合があるため配置・寸法を確認。 ケージの有無と寸法を確認し、必要なら普段のクレートを持参。",
-    "夜はどこで寝る？": "夜間はケージ内。 ベッド・布団での添い寝は不可。夜間・留守番時はケージを使用。",
-    "食事同伴": "レストランなど指定客室外の共用部は犬同伴不可。",
-    "ドッグラン": "ドッグラン・足洗い場の案内あり。利用時間と閉鎖状況を確認。",
-    "予約前の重要確認": "犬料金の課金単位、最新規約、予防接種証明、頭数・体格条件を予約前に再確認。"
-   },
-   "links": [
-    {
-     "label": "公式アクセス",
-     "url": "https://www.hikarino-uta.com/access/",
-     "affiliate": false
-    },
-    {
-     "label": "公式の条件を確認",
-     "url": "https://www.hikarino-uta.com/rooms/dog/",
-     "affiliate": false
-    }
-   ],
-   "checked_at": "2026-09-23",
-   "dog_hints": {},
-   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
-   "geocode": {
-    "lat": 42.553436,
-    "lon": 140.858673,
-    "precision": "facility",
-    "source": "manual",
-    "matched": "北海道有珠郡壮瞥町壮瞥温泉88-26 → 住所検索: 北海道壮瞥町壮瞥温泉８８番地"
-   },
-   "area_geocode": {
-    "lat": 43.064323,
-    "lon": 141.346878,
-    "matched": "北海道",
-    "precision": "prefecture"
-   }
-  },
-  {
-   "id": "add60-mizunouta",
-   "type": "lodging",
-   "name": "しこつ湖 鶴雅リゾートスパ 水の謌",
-   "area": "北海道千歳市・支笏湖",
-   "co_sleep": "添い寝 不可",
-   "facts": {
-    "対象犬・頭数": "小・中型犬は10kgまで2頭。露天風呂付き和洋室のみ大型犬1頭も可。",
-    "犬の宿泊料金": "1頭5,500円（税込）。連泊時の課金単位は予約前確認。",
-    "ケージ・持参判断": "ケージと犬用ベッドの案内あり。 ケージの有無と寸法を確認し、必要なら普段のクレートを持参。",
-    "夜はどこで寝る？": "夜間・留守番はケージ。 ベッド・布団での添い寝は不可。夜間・留守番時はケージを使用。",
-    "食事同伴": "指定客室以外のレストラン・売店・大浴場などは犬同伴不可。",
-    "ドッグラン": "ドッグランの有無・利用条件は予約前確認。",
-    "予約前の重要確認": "犬料金の課金単位、最新規約、予防接種証明、頭数・体格条件を予約前に再確認。"
-   },
-   "links": [
-    {
-     "label": "公式の条件を確認",
-     "url": "https://www.mizunouta.com/rooms/dog/",
-     "affiliate": false
-    }
-   ],
-   "checked_at": "2026-09-23",
-   "dog_hints": {},
-   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
-   "geocode": {
-    "lat": 42.77429,
-    "lon": 141.403487,
-    "precision": "facility",
-    "source": "osm",
-    "matched": "しこつ湖鶴雅リゾートスパ 水の謌, 国道453号, 支笏湖温泉, 千歳市, 石狩振興局, 北海道, 北海道地方, 066-0281, 日本"
-   },
-   "area_geocode": {
-    "lat": 42.821011,
-    "lon": 141.651001,
-    "matched": "北海道千歳市",
-    "precision": "approximate"
-   }
-  },
-  {
-   "id": "add60-morinouta",
-   "type": "lodging",
-   "name": "定山渓 鶴雅リゾートスパ 森の謌",
-   "area": "北海道札幌市・定山渓",
-   "co_sleep": "添い寝 不可",
-   "facts": {
-    "対象犬・頭数": "10kgまでのケージに入る犬2頭まで",
-    "犬の宿泊料金": "1頭5,500円。泊数による扱いは予約前確認。",
-    "ケージ・持参判断": "設置有無・寸法を予約前確認 ケージの有無と寸法を確認し、必要なら普段のクレートを持参。",
-    "夜はどこで寝る？": "夜間・留守番はケージ。備え付け寸法を確認。 ベッド・布団での添い寝は不可。夜間・留守番時はケージを使用。",
-    "食事同伴": "レストラン・大浴場など共用部への同伴不可。",
-    "ドッグラン": "犬対応客室に専用ガーデン。一般ドッグランとの区別・利用範囲を確認。",
-    "予約前の重要確認": "犬料金の課金単位、最新規約、予防接種証明、頭数・体格条件を予約前に再確認。"
-   },
-   "links": [
-    {
-     "label": "公式情報",
-     "url": "https://www.morino-uta.com/letters/",
-     "affiliate": false
-    },
-    {
-     "label": "公式の条件を確認",
-     "url": "https://www.morino-uta.com/plans/dog/",
-     "affiliate": false
-    }
-   ],
-   "checked_at": "2026-09-23",
-   "dog_hints": {},
-   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
-   "geocode": {
-    "lat": 42.966019,
-    "lon": 141.168228,
-    "precision": "facility",
-    "source": "official-address",
-    "matched": "北海道札幌市南区定山渓温泉東三丁目１９２番地"
-   },
-   "area_geocode": {
-    "lat": 43.062077,
-    "lon": 141.354401,
-    "matched": "北海道札幌市",
-    "precision": "approximate"
-   }
-  },
-  {
-   "id": "add60-turano",
-   "type": "lodging",
-   "name": "鶴雅レイク阿寒ロッジ トゥラノ",
-   "area": "北海道釧路市・阿寒湖",
-   "co_sleep": "添い寝 不可",
-   "facts": {
-    "対象犬・頭数": "小・中型犬2頭または大型犬1頭。宿泊不可犬種の指定があるため犬種一覧を確認。",
-    "犬の宿泊料金": "小・中型1頭3,300円／大型1頭4,400円。課金単位は予約時確認。",
-    "ケージ・持参判断": "犬対応洋室にケージあり。 ケージの有無と寸法を確認し、必要なら普段のクレートを持参。",
-    "夜はどこで寝る？": "夜間および犬だけの留守番はケージ内。 公式規約で就寝時はケージ内と指定。",
-    "食事同伴": "ドッグラウンジあり。食事会場への同伴可否は別途確認。",
-    "ドッグラン": "ドッグランの有無・利用条件は予約前確認。",
-    "予約前の重要確認": "犬料金の課金単位、最新規約、予防接種証明、頭数・体格条件を予約前に再確認。"
-   },
-   "links": [
-    {
-     "label": "公式アクセス",
-     "url": "https://www.akan-turano.com/access/",
-     "affiliate": false
-    },
-    {
-     "label": "公式の条件を確認",
-     "url": "https://www.akan-turano.com/rooms/",
-     "affiliate": false
-    }
-   ],
-   "checked_at": "2026-09-23",
-   "dog_hints": {},
-   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
-   "geocode": {
-    "lat": 43.433346,
-    "lon": 144.098419,
-    "precision": "facility",
-    "source": "manual",
-    "matched": "北海道釧路市阿寒町阿寒湖温泉1丁目6番11号 → 住所検索: 北海道釧路市阿寒町阿寒湖温泉一丁目６番１１号"
-   },
-   "area_geocode": {
-    "lat": 42.984932,
-    "lon": 144.381775,
-    "matched": "北海道釧路市",
-    "precision": "approximate"
-   }
-  },
-  {
-   "id": "add60-saroma",
-   "type": "lodging",
-   "name": "サロマ湖 鶴雅リゾート",
-   "area": "北海道北見市・サロマ湖",
-   "co_sleep": "添い寝 不可",
-   "facts": {
-    "対象犬・頭数": "5kgまでのケージに入る小型犬1頭",
-    "犬の宿泊料金": "1頭3,300円。連泊時の課金単位は予約前確認。",
-    "ケージ・持参判断": "ケージあり。寸法は確認。 食器・フード・トイレシート・タオルを持参。移動用キャリーも準備。",
-    "夜はどこで寝る？": "夜間・留守番はケージ。 ベッド・布団での添い寝は不可。夜間・留守番時はケージを使用。",
-    "食事同伴": "レストラン・売店・大浴場など指定客室以外は同伴不可。",
-    "ドッグラン": "ドッグランの有無・利用条件は予約前確認。",
-    "予約前の重要確認": "犬料金の課金単位、最新規約、予防接種証明、頭数・体格条件を予約前に再確認。"
-   },
-   "links": [
-    {
-     "label": "公式情報",
-     "url": "https://www.s-tsuruga.com/",
-     "affiliate": false
-    },
-    {
-     "label": "公式の条件を確認",
-     "url": "https://www.s-tsuruga.com/rooms/dog/",
-     "affiliate": false
-    }
-   ],
-   "checked_at": "2026-09-23",
-   "dog_hints": {},
-   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
-   "geocode": {
-    "lat": 44.130535,
-    "lon": 143.981598,
-    "precision": "district",
-    "source": "manual",
-    "matched": "北海道北見市常呂町栄浦306 → 住所検索: 北海道北見市常呂町栄浦"
-   },
-   "area_geocode": {
-    "lat": 43.802906,
-    "lon": 143.894684,
-    "matched": "北海道北見市",
-    "precision": "approximate"
-   }
-  },
-  {
-   "id": "add60-hokuten",
-   "type": "lodging",
-   "name": "北天の丘 あばしり湖 鶴雅リゾート",
-   "area": "北海道網走市",
-   "co_sleep": "添い寝 不可",
-   "facts": {
-    "対象犬・頭数": "10kgまでのケージに入る犬2頭まで",
-    "犬の宿泊料金": "1頭3,300円。泊数による扱いは予約前確認。",
-    "ケージ・持参判断": "犬用ケージあり。 食器・フード・トイレシート・タオルを持参。ケージ寸法も確認。",
-    "夜はどこで寝る？": "夜間・留守番はケージ。 ベッド・布団での添い寝は不可。夜間・留守番時はケージを使用。",
-    "食事同伴": "指定客室以外のレストラン・売店・大浴場などは犬同伴不可。",
-    "ドッグラン": "ドッグランの有無・利用条件は予約前確認。",
-    "予約前の重要確認": "犬料金の課金単位、最新規約、予防接種証明、頭数・体格条件を予約前に再確認。"
-   },
-   "links": [
-    {
-     "label": "公式アクセス",
-     "url": "https://www.hokutennooka.com/access/",
-     "affiliate": false
-    },
-    {
-     "label": "公式の条件を確認",
-     "url": "https://www.hokutennooka.com/room/annextower/",
-     "affiliate": false
-    }
-   ],
-   "checked_at": "2026-09-23",
-   "dog_hints": {},
-   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
-   "geocode": {
-    "lat": 43.967899,
-    "lon": 144.211487,
-    "precision": "facility",
-    "source": "official-address",
-    "matched": "北海道網走市呼人１５９番地"
-   },
-   "area_geocode": {
-    "lat": 44.020134,
-    "lon": 144.268402,
-    "matched": "北海道網走市",
-    "precision": "municipality"
-   }
-  },
-  {
    "id": "add60-ubud",
    "type": "lodging",
    "name": "ウブドの森 伊豆高原",
@@ -4074,54 +3777,6 @@
    }
   },
   {
-   "id": "n0924-jodo-parkhotel",
-   "type": "lodging",
-   "name": "浄土ヶ浜パークホテル 愛犬ステイルーム",
-   "area": "岩手県宮古市",
-   "co_sleep": "添い寝 予約前確認",
-   "facts": {
-    "対象犬・頭数": "11kg以下の小型・中型犬、最大2頭。",
-    "犬の宿泊料金": "2頭の場合1泊1,650円(現地払い)。1頭の場合は予約前確認。",
-    "ケージ・持参判断": "客室にペット用サークルあり。 館内の移動にはキャリーバッグが必要。",
-    "夜はどこで寝る？": "客室のサークル。寝具の扱いは予約前確認。 人用ベッドを犬が使えるかは予約前に確認してください。",
-    "食事同伴": "部屋食プランあり(ビュッフェプランも選べる)。犬の食事は持参。",
-    "ドッグラン": "客室に専用ドッグランと洗い場。",
-    "予約前の重要確認": "混合ワクチンと狂犬病注射の証明コピー(1年以内)と利用規約・同意書が必要。共有スペースは犬同伴不可。"
-   },
-   "links": [
-    {
-     "label": "公式の条件を確認",
-     "url": "https://www.jodo-ph.jp/staypet/",
-     "affiliate": false
-    },
-    {
-     "label": "楽天トラベルで宿泊条件を見る",
-     "url": "https://hb.afl.rakuten.co.jp/hgc/57bffab7.56d12ab1.57bffabb.89ef6693/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F64789%2F64789.html%3Fcid%3Dtr_af_1632&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MSwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9",
-     "affiliate": true
-    }
-   ],
-   "checked_at": "2026-09-24",
-   "dog_hints": {
-    "weight_limit_kg_mentions": [
-     11
-    ]
-   },
-   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
-   "geocode": {
-    "lat": 39.64977,
-    "lon": 141.97881,
-    "precision": "facility",
-    "source": "official-map",
-    "matched": "公式ページの地図"
-   },
-   "area_geocode": {
-    "lat": 39.639553,
-    "lon": 141.946121,
-    "matched": "岩手県宮古市",
-    "precision": "municipality"
-   }
-  },
-  {
    "id": "n0924-r-with-dog",
    "type": "lodging",
    "name": "R with dog",
@@ -4392,55 +4047,6 @@
     "lon": 139.937637,
     "matched": "福島県北塩原村",
     "precision": "approximate"
-   }
-  },
-  {
-   "id": "n0924-aomoriya",
-   "type": "lodging",
-   "name": "青森屋 愛犬ルーム",
-   "area": "青森県三沢市",
-   "co_sleep": "添い寝 予約前確認",
-   "facts": {
-    "対象犬・頭数": "予約前確認",
-    "犬の宿泊料金": "予約前確認",
-    "ケージ・持参判断": "ケージの代わりに室内に縦格子の仕切りがある。 移動用のクレートの要否は予約前に確認。",
-    "夜はどこで寝る？": "犬専用ベッドあり。 人用ベッドを犬が使えるかは予約前に確認してください。",
-    "食事同伴": "館内の酒場で犬と一緒に過ごせる案内。食事会場の扱いは予約前確認。",
-    "ドッグラン": "客室にプライベートドッグラン。",
-    "予約前の重要確認": "犬の体格・頭数・料金・ワクチン条件を予約前に確認。"
-   },
-   "links": [
-    {
-     "label": "公式情報",
-     "url": "https://hoshinoresorts.com/jp/cards/yf4w0gfiy/",
-     "affiliate": false
-    },
-    {
-     "label": "公式の条件を確認",
-     "url": "https://hoshinoresorts.com/jp/cards/yf4w0gfiy/",
-     "affiliate": false
-    },
-    {
-     "label": "楽天トラベルで宿泊条件を見る",
-     "url": "https://hb.afl.rakuten.co.jp/hgc/57bffab7.56d12ab1.57bffabb.89ef6693/?pc=https%3A%2F%2Ftravel.rakuten.co.jp%2FHOTEL%2F40425%2F40425.html%3Fcid%3Dtr_af_1632&link_type=hybrid_url&ut=eyJwYWdlIjoiaXRlbSIsInR5cGUiOiJoeWJyaWRfdXJsIiwic2l6ZSI6IjEwMHgxMDAiLCJuYW0iOjEsIm5hbXAiOiJyaWdodCIsImNvbSI6MSwiY29tcCI6ImRvd24iLCJwcmljZSI6MSwiYm9yIjoxLCJjb2wiOjEsImJidG4iOjEsInByb2QiOjAsImFtcCI6ZmFsc2V9",
-     "affiliate": true
-    }
-   ],
-   "checked_at": "2026-09-24",
-   "dog_hints": {},
-   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
-   "geocode": {
-    "lat": 40.665737,
-    "lon": 141.354599,
-    "precision": "facility",
-    "source": "official-address",
-    "matched": "青森県三沢市古間木山５６番地"
-   },
-   "area_geocode": {
-    "lat": 40.683071,
-    "lon": 141.36908,
-    "matched": "青森県三沢市",
-    "precision": "municipality"
    }
   },
   {
@@ -5353,52 +4959,6 @@
     "lon": 140.658783,
     "matched": "宮城県蔵王町",
     "precision": "approximate"
-   }
-  },
-  {
-   "id": "c-kizukino-hotel",
-   "type": "lodging",
-   "name": "KIZUKINO HOTEL",
-   "area": "岩手県盛岡市",
-   "co_sleep": "添い寝 可",
-   "facts": {
-    "対象犬・頭数": "大型犬も可の案内(「大型犬不可」などの制限は無いとする案内)。頭数・ワクチン条件は予約前確認。",
-    "犬の宿泊料金": "予約前確認",
-    "ケージ・持参判断": "部屋でケージに入れる決まりは無い案内。",
-    "夜はどこで寝る？": "一棟貸しの室内(延べ床約37㎡)。 「ふとんにペットを入れてはいけない」などの制限は無い案内。",
-    "食事同伴": "予約前確認",
-    "ドッグラン": "専用ドッグラン(約680×680)。",
-    "予約前の重要確認": "犬の料金・頭数・証明書の条件は公式ページで確認できず予約前確認。"
-   },
-   "links": [
-    {
-     "label": "公式情報",
-     "url": "https://twowaygr.com/kizukino-hotel/",
-     "affiliate": false
-    },
-    {
-     "label": "公式の条件を確認",
-     "url": "https://twowaygr.com/kizukino-hotel/",
-     "affiliate": false
-    }
-   ],
-   "checked_at": "2026-09-26",
-   "dog_hints": {
-    "large_dog_ok_mention": true
-   },
-   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
-   "geocode": {
-    "lat": 39.672482,
-    "lon": 141.150604,
-    "precision": "facility",
-    "source": "manual",
-    "matched": "岩手県盛岡市南仙北二丁目6番18号 → 住所検索: 岩手県盛岡市南仙北二丁目６番１８号"
-   },
-   "area_geocode": {
-    "lat": 39.702068,
-    "lon": 141.154465,
-    "matched": "岩手県盛岡市",
-    "precision": "municipality"
    }
   },
   {
@@ -6589,46 +6149,6 @@
     "matched": "静岡県伊豆市",
     "precision": "municipality",
     "note": "住所検索の停止中のため、同じ市区町村の以前の位置"
-   }
-  },
-  {
-   "id": "c2-hachimantai-wan",
-   "type": "lodging",
-   "name": "ドッグリゾート 八幡平秘密基地「WAN」",
-   "area": "岩手県八幡平市",
-   "co_sleep": "添い寝 不可",
-   "facts": {
-    "対象犬・頭数": "犬連れのための宿泊・キャンプ施設。大きさ・頭数・証明書の条件は予約前確認。",
-    "犬の宿泊料金": "予約前確認",
-    "ケージ・持参判断": "予約前確認",
-    "夜はどこで寝る？": "宿泊棟(シングルベッド2つ・ソファ。窓からドッグランが見える)。 犬も寝室に入れるが、ベッドには乗せないよう案内。",
-    "食事同伴": "予約前確認(調理器具あり)。",
-    "ドッグラン": "宿泊棟に隣接したドッグラン(部屋から直接出られる)。",
-    "予約前の重要確認": "犬の料金・頭数の条件は公式の料金ページで確認。"
-   },
-   "links": [
-    {
-     "label": "公式の条件を確認",
-     "url": "https://dogresort-wan.com/facility/lodge/",
-     "affiliate": false
-    }
-   ],
-   "checked_at": "2026-09-26",
-   "dog_hints": {},
-   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
-   "geocode": {
-    "lat": 39.89776,
-    "lon": 140.966147,
-    "precision": "facility",
-    "source": "official-map",
-    "matched": "公式ページの地図"
-   },
-   "area_geocode": {
-    "lat": 39.956471,
-    "lon": 141.070945,
-    "matched": "岩手県八幡平市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
    }
   },
   {
@@ -7955,106 +7475,6 @@
     "lat": 38.255459,
     "lon": 140.339767,
     "matched": "山形県山形市",
-    "precision": "municipality"
-   }
-  },
-  {
-   "id": "rikuzentakata-daiwa-fruits-dogrun",
-   "type": "spot",
-   "name": "だいわフルーツパーク ドッグラン",
-   "area": "岩手県陸前高田市",
-   "region_group": "tohoku",
-   "kinds": [
-    "run",
-    "travel"
-   ],
-   "theme": "天然芝で遊び、カフェの味を屋外で",
-   "facts": {
-    "犬の条件・同伴範囲": "小型犬専用・大型犬優先区画。店内同伴は確認",
-    "料金の目安": "犬1頭500円。貸切は別料金",
-    "過ごし方": "営業と規約確認→カフェ窓口で受付→サイズ別ラン→許可メニューで屋外休憩。カフェ店内同伴を前提にしない。",
-    "持ち物": "リード・飲水・排泄用品・施設が指定する接種証明",
-    "公式で確認したこと": "天然芝・小型犬専用と大型犬優先フリーエリア／犬1頭500円、時間制限なしの案内／初回と年1回の同意書・犬情報登録／一部カフェメニューをランへ持込可",
-    "雨の日": "屋外ラン。暖房休憩所があっても屋内犬同伴は未確認",
-    "季節・移動": "暑さ・積雪・強風時の営業を事前確認。車で来園を想定。駐車場・経路は要確認",
-    "出発前に確認": "カフェ店内の犬同伴可否・暖房休憩所の犬入室は未確認／接種証明・現営業日・頭数条件は要確認"
-   },
-   "links": [
-    {
-     "label": "公式の利用案内を見る",
-     "url": "https://daiwafp.com/dog-run/",
-     "affiliate": false
-    }
-   ],
-   "checked_at": "2026-09-22",
-   "dog_hints": {
-    "small_dog_only_mention": true,
-    "has_rain_note": true
-   },
-   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#rikuzentakata-daiwa-fruits-dogrun",
-   "geocode": {
-    "lat": 39.012144,
-    "lon": 141.637954,
-    "precision": "facility",
-    "source": "official-map",
-    "matched": "公式ページの地図"
-   },
-   "area_geocode": {
-    "lat": 39.020378,
-    "lon": 141.633194,
-    "matched": "岩手県陸前高田市",
-    "precision": "municipality"
-   }
-  },
-  {
-   "id": "miyako-greenpia-dogrun",
-   "type": "spot",
-   "name": "グリーンピア三陸みやこ ドッグラン",
-   "area": "岩手県宮古市",
-   "region_group": "tohoku",
-   "kinds": [
-    "run",
-    "travel"
-   ],
-   "theme": "三陸ドライブに、サイズ別ランの休憩",
-   "facts": {
-    "犬の条件・同伴範囲": "犬1頭につき飼い主1人。預かりは同室泊と別",
-    "料金の目安": "小型300円・中型400円・大型500円の表示",
-    "過ごし方": "受付時間と証明書・付き添い人数を確認→登録→サイズ別ラン→退出。人の客室への犬同伴を案内しない。",
-    "持ち物": "リード・飲水・排泄用品・施設が指定する接種証明",
-    "公式で確認したこと": "年間登録に鑑札・1年以内の狂犬病と5種以上混合ワクチン証明が必要／犬の体格別3区画、飼い主1人につき1頭／犬預かりホテルは宿泊者専用で人の客室同伴とは異なる／ランは300〜500円の表示。受付10〜15時、水曜休みの案内",
-    "雨の日": "屋外利用。荒天時の営業は要確認",
-    "季節・移動": "寒暖・積雪時の営業時間を確認。車を想定。道中の休憩と道路状況を確認",
-    "出発前に確認": "現営業と料金、日帰り利用条件を再確認／犬預かり施設を犬同室宿として数えない"
-   },
-   "links": [
-    {
-     "label": "公式アクセス",
-     "url": "https://www.greenpia-sanrikumiyako.com/access/index.html",
-     "affiliate": false
-    },
-    {
-     "label": "公式の利用案内を見る",
-     "url": "https://www.greenpia-sanrikumiyako.com/dog/",
-     "affiliate": false
-    }
-   ],
-   "checked_at": "2026-09-22",
-   "dog_hints": {
-    "has_rain_note": true
-   },
-   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#miyako-greenpia-dogrun",
-   "geocode": {
-    "lat": 39.730663,
-    "lon": 141.964798,
-    "precision": "district",
-    "source": "manual",
-    "matched": "岩手県宮古市田老向新田148 → 住所検索: 岩手県宮古市田老向山"
-   },
-   "area_geocode": {
-    "lat": 39.639553,
-    "lon": 141.946121,
-    "matched": "岩手県宮古市",
     "precision": "municipality"
    }
   },
@@ -9990,51 +9410,6 @@
    }
   },
   {
-   "id": "n0924-koiwai-makibaen",
-   "type": "spot",
-   "name": "小岩井農場 まきば園 ドッグラン",
-   "area": "岩手県雫石町",
-   "region_group": "tohoku",
-   "kinds": [
-    "run",
-    "travel"
-   ],
-   "theme": "岩手山を背景に、犬と牧場を散歩してドッグランで遊ぶ",
-   "facts": {
-    "犬の条件・同伴範囲": "まきば園に犬と入場でき、入場後にドッグランを利用できる。体格別のエリアあり。",
-    "料金の目安/犬料金": "犬1頭500円(人の入園料は別)。",
-    "季節・移動/営業": "9:00〜17:00の表示。ドッグランは春〜秋の期間営業の案内。",
-    "持ち物": "ワクチン証明(狂犬病・混合、1年以内とする案内)、同意書(事前ダウンロード可)。",
-    "雨の日": "出発前に確認",
-    "出発前に確認": "ドッグランの営業期間、ワクチン条件。"
-   },
-   "links": [
-    {
-     "label": "施設公式案内",
-     "url": "https://www.koiwaifarm.com/dogrun/",
-     "affiliate": false
-    }
-   ],
-   "checked_at": "2026-09-24",
-   "dog_hints": {
-    "has_rain_note": true
-   },
-   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#n0924-koiwai-makibaen",
-   "geocode": {
-    "lat": 39.73444,
-    "lon": 141.007233,
-    "precision": "facility",
-    "source": "manual",
-    "matched": "岩手県岩手郡雫石町丸谷地36-1 → 住所検索: 岩手県雫石町丸谷地３６番地"
-   },
-   "area_geocode": {
-    "lat": 39.696255,
-    "lon": 140.975739,
-    "matched": "岩手県雫石町",
-    "precision": "municipality"
-   }
-  },
-  {
    "id": "n0924-echigo-kyuryo",
    "type": "spot",
    "name": "国営越後丘陵公園",
@@ -11084,51 +10459,6 @@
     "lat": 35.776493,
     "lon": 138.42363,
     "matched": "山梨県北杜市",
-    "precision": "approximate"
-   }
-  },
-  {
-   "id": "c-wantaro-miyako",
-   "type": "spot",
-   "name": "道の駅たろう ドッグラン「ワン・たろう」",
-   "area": "岩手県宮古市・田老",
-   "region_group": "tohoku",
-   "kinds": [
-    "run",
-    "rest-stop"
-   ],
-   "theme": "三陸沿岸のドライブ中に、道の駅のドッグランで犬を休ませる",
-   "facts": {
-    "犬の条件・同伴範囲": "ドッグランは小型犬用1区画(10m×10m)と大中型犬用1区画(18m×15m)。",
-    "料金の目安/犬料金": "料金の記載なし(出発前に確認)。",
-    "持ち物": "リード、排泄袋、飲み水、ワクチン接種の証明(利用条件は現地で確認)。",
-    "雨の日": "屋外のみ。",
-    "出発前に確認": "利用時間 4〜9月は9時〜18時、10〜3月は9時〜17時(年中無休の案内)。道の駅の店舗は火曜定休。",
-    "公式で確認したこと": "宮古市公式の道の駅たろうのページで、ドッグランの区画と利用時間を確認。"
-   },
-   "links": [
-    {
-     "label": "施設公式案内",
-     "url": "https://www.city.miyako.iwate.jp/gyosei/soshiki/tarosogojimusho/3/2/2081.html",
-     "affiliate": false
-    }
-   ],
-   "checked_at": "2026-09-26",
-   "dog_hints": {
-    "has_rain_note": true
-   },
-   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c-wantaro-miyako",
-   "geocode": {
-    "lat": 39.737669,
-    "lon": 141.971753,
-    "precision": "facility",
-    "source": "rest-stop",
-    "matched": "道の駅たろう"
-   },
-   "area_geocode": {
-    "lat": 39.639553,
-    "lon": 141.946121,
-    "matched": "岩手県宮古市",
     "precision": "approximate"
    }
   },
@@ -13300,6 +12630,11 @@
     "公式で確認したこと": "ペット同伴時の禁止エリアとリードの決まり(公式「ペットとお越しの方へ」)。"
    },
    "links": [
+    {
+     "label": "公式情報",
+     "url": "https://michinoku-park.info/users-guide/pets/",
+     "affiliate": false
+    },
     {
      "label": "施設公式案内",
      "url": "https://michinoku-park.info/users-guide/pets/",
