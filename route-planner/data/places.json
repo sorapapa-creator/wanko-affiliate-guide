@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "source": "https://sorapapa-creator.github.io/wanko-affiliate-guide/",
- "generated_at": "2026-09-26T09:36:52+09:00",
+ "generated_at": "2026-09-26T16:00:13+09:00",
  "places": [
   {
    "id": "la-dog-resort",
@@ -6982,6 +6982,99 @@
    }
   },
   {
+   "id": "c-apa-joetsu-myoko",
+   "type": "lodging",
+   "name": "アパホテル&リゾート〈上越妙高〉",
+   "area": "新潟県妙高市",
+   "co_sleep": "添い寝 予約前確認",
+   "facts": {
+    "対象犬・頭数": "生後4か月以上・体重23kg以下。小型犬は1室2頭まで、中型犬は1頭まで。2頭または中型犬のときは事前に連絡。",
+    "犬の宿泊料金": "小型犬1頭は宿泊料金に含まれる案内。小型犬2頭目・中型犬は追加2,000円の案内。最新額は予約前確認。",
+    "ケージ・持参判断": "客室にドッグサークルあり。",
+    "夜はどこで寝る？": "犬同伴専用の客室(本館1階)。寝具の扱いは予約前確認。 人用ベッドを犬が使えるかはペット同伴の利用規約で予約前に確認してください。",
+    "食事同伴": "館内で犬が入れるのは犬同伴の専用客室だけの案内(レストランは同伴不可)。食事中の犬の扱いは予約前確認。",
+    "ドッグラン": "屋内ドッグラン(約200㎡、宿泊者は無料)と宿泊者専用の屋外ドッグラン(約160㎡、季節で利用時間が変わる)。",
+    "予約前の重要確認": "宿泊時にペット同伴の利用規約への同意・署名が必要。ワクチン証明の要否と冬季のドッグラン営業は予約前に確認。"
+   },
+   "links": [
+    {
+     "label": "公式情報",
+     "url": "https://www.apahotel.com/resort/myoko/pet/",
+     "affiliate": false
+    },
+    {
+     "label": "公式の条件を確認",
+     "url": "https://www.apahotel.com/resort/myoko/pet/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-26",
+   "dog_hints": {
+    "weight_limit_kg_mentions": [
+     23
+    ]
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
+   "geocode": {
+    "lat": 36.8888,
+    "lon": 138.249498,
+    "precision": "district",
+    "source": "manual",
+    "matched": "新潟県妙高市桶海1090"
+   },
+   "area_geocode": {
+    "lat": 37.025269,
+    "lon": 138.253342,
+    "matched": "新潟県妙高市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c-angel-forest-shirakawa",
+   "type": "lodging",
+   "name": "エンゼルフォレスト白河高原",
+   "area": "福島県天栄村",
+   "co_sleep": "添い寝 予約前確認",
+   "facts": {
+    "対象犬・頭数": "全客室で犬と泊まれる案内。室内犬であればサイズ・犬種の制限なし(体高50cm以上を大型犬として案内)。頭数の上限は予約前確認。",
+    "犬の宿泊料金": "予約前確認",
+    "ケージ・持参判断": "サークル・飛び出し防止ゲートの用意あり(棟による)。",
+    "夜はどこで寝る？": "予約前確認 人用ベッドを犬が使えるかは予約前に確認してください。",
+    "食事同伴": "予約前確認",
+    "ドッグラン": "あり(宿泊者は無料。日帰りは有料)",
+    "予約前の重要確認": "犬の宿泊料金・頭数上限・必要書類(ワクチン証明)と犬用温泉の料金は公式本文で確認できず、予約前に確認。"
+   },
+   "links": [
+    {
+     "label": "公式情報",
+     "url": "https://www.ang-sk.com/dog/",
+     "affiliate": false
+    },
+    {
+     "label": "公式の条件を確認",
+     "url": "https://www.ang-sk.com/dog/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-26",
+   "dog_hints": {},
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
+   "geocode": {
+    "lat": 37.230891,
+    "lon": 140.056713,
+    "precision": "facility",
+    "source": "official-map",
+    "matched": "公式ページの地図"
+   },
+   "area_geocode": {
+    "lat": 37.255421,
+    "lon": 140.247071,
+    "matched": "福島県天栄村(OpenStreetMap)",
+    "precision": "municipality",
+    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+   }
+  },
+  {
    "id": "p-636a59b749",
    "type": "trip_plan",
    "name": "マザー牧場で高原散歩",
@@ -12986,6 +13079,338 @@
     "lat": 35.706738,
     "lon": 139.868057,
     "matched": "東京都江戸川区",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c-akebonoyama",
+   "type": "spot",
+   "name": "あけぼの山農業公園",
+   "area": "千葉県柏市",
+   "region_group": "kanto",
+   "kinds": [
+    "park"
+   ],
+   "theme": "風車と季節の花畑で知られる柏市の入園無料の公園。正門から裏門にかけての園内を犬と散策できる",
+   "facts": {
+    "犬の条件・同伴範囲": "2022年10月から園内の一部で犬連れ入園可。風車前花畑・風車周辺・果樹園はキャリーやカートでも不可。季節の花畑(例: ヒマワリ畑)は外側から見る案内の時期がある。伸びるリードは制御できる長さで使い、犬から手を離さない。",
+    "料金の目安/犬料金": "入園無料。",
+    "持ち物": "リード、フン処理用品。",
+    "雨の日": "出発前に確認",
+    "出発前に確認": "開園 9:00〜17:00、月曜休(祝日なら翌平日)・年末年始休。時期ごとのペット入園不可エリアのお知らせ。",
+    "公式で確認したこと": "ご利用案内とお知らせ(2026年7月17日付)で、ペット不可エリアと入園無料・開園時間を確認。"
+   },
+   "links": [
+    {
+     "label": "公式情報",
+     "url": "https://akebonoyama-nougyoukouen.jp/userguide/",
+     "affiliate": false
+    },
+    {
+     "label": "施設公式案内",
+     "url": "https://akebonoyama-nougyoukouen.jp/userguide/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-26",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c-akebonoyama",
+   "geocode": {
+    "lat": 35.89599,
+    "lon": 140.002954,
+    "precision": "facility",
+    "source": "official-map",
+    "matched": "公式ページの地図"
+   },
+   "area_geocode": {
+    "lat": 35.867508,
+    "lon": 139.975937,
+    "matched": "千葉県柏市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c-grandberry-park",
+   "type": "spot",
+   "name": "南町田グランベリーパーク",
+   "area": "東京都町田市",
+   "region_group": "kanto",
+   "kinds": [
+    "shopping"
+   ],
+   "theme": "公園と一体になった大型ショッピングエリア。店舗ごとの表示に従って犬と買い物ができる",
+   "facts": {
+    "犬の条件・同伴範囲": "店舗ごとに「リードで入店可」「顔が出ないバッグ・カートなら入店可」「入店不可」の3区分。館内では必ずリードにつなぐか顔が出ないバッグ・カートに入れ、リードは短く持つ。",
+    "料金の目安/犬料金": "犬の入場料金なし(買い物・飲食代のみ)。",
+    "持ち物": "短く持てるリード、顔まで隠れるバッグかカート。",
+    "雨の日": "出発前に確認",
+    "出発前に確認": "ペット同伴で停められるのは駐車場B・Cのみ(A・Dは不可)。各店舗の同伴区分。犬の一時預かり店あり(料金は店舗に確認)。",
+    "公式で確認したこと": "公式のペット同伴ページで、店舗別の3区分・駐車場B/Cのみ・一時預かり店を確認。"
+   },
+   "links": [
+    {
+     "label": "公式情報",
+     "url": "https://gbp.minamimachida-grandberrypark.com/pet/",
+     "affiliate": false
+    },
+    {
+     "label": "施設公式案内",
+     "url": "https://gbp.minamimachida-grandberrypark.com/pet/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-26",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c-grandberry-park",
+   "geocode": {
+    "lat": 35.511934,
+    "lon": 139.469199,
+    "precision": "facility",
+    "source": "official-map",
+    "matched": "公式ページの地図"
+   },
+   "area_geocode": {
+    "lat": 35.54668,
+    "lon": 139.4387,
+    "matched": "東京都町田市(OpenStreetMap)",
+    "precision": "municipality",
+    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+   }
+  },
+  {
+   "id": "c-kiyosato-terrace",
+   "type": "spot",
+   "name": "サンメドウズ清里 清里テラス",
+   "area": "山梨県北杜市",
+   "region_group": "koshinetsu",
+   "kinds": [
+    "park"
+   ],
+   "theme": "スキー場のリフトで標高約1,900mのテラスへ。犬もリフトに乗って八ヶ岳の眺めを楽しめる",
+   "facts": {
+    "犬の条件・同伴範囲": "屋外はリード着用(ドッグランを除く)。建物内は頭まで入るケージ・バッグで。ケージなしでも建物沿いの専用通路で移動可。清里テラスはリード着用で入れ、ソファ席は足元のデッキまで。レストランは屋外テラス席のみ(悪天候時は不可)。",
+    "料金の目安/犬料金": "リフトは頭まで入るケージ・バッグに入れて小型犬500円。大型犬は車いす用リフトで1,500円(スタッフ判断)。ケージの無料貸出あり(台数限定)。人のリフト料金は別。",
+    "持ち物": "リード、頭まで入るケージまたはバッグ、フン処理用品。",
+    "雨の日": "出発前に確認",
+    "出発前に確認": "グリーンシーズンの営業期間・時間、リフト運行状況、繁忙期のリフト乗車条件(2026年8月1〜16日はケージ利用の犬のみ乗車可だった)。",
+    "公式で確認したこと": "公式のお知らせ「ペット連れの方へご案内」(2026年8月5日付)で、同伴範囲・リフト料金・ケージ貸出を確認。所在地 北杜市大泉町西井出8240-1。"
+   },
+   "links": [
+    {
+     "label": "公式情報",
+     "url": "https://www.sunmeadows.co.jp/news/15538/",
+     "affiliate": false
+    },
+    {
+     "label": "施設公式案内",
+     "url": "https://www.sunmeadows.co.jp/news/15538/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-26",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c-kiyosato-terrace",
+   "geocode": {
+    "lat": 35.944168,
+    "lon": 138.403452,
+    "precision": "facility",
+    "source": "official-map",
+    "matched": "公式ページの地図"
+   },
+   "area_geocode": {
+    "lat": 35.776493,
+    "lon": 138.42363,
+    "matched": "山梨県北杜市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c-chichibu-muse-park",
+   "type": "spot",
+   "name": "秩父ミューズパーク",
+   "area": "埼玉県秩父市・小鹿野町",
+   "region_group": "kanto",
+   "kinds": [
+    "park"
+   ],
+   "theme": "秩父の丘陵に広がる大きな県営公園。展望と並木道の散歩を犬と楽しめる",
+   "facts": {
+    "犬の条件・同伴範囲": "公園内はリード着用で犬連れ可。フンは持ち帰る。屋内施設・店舗の同伴可否は出発前に確認。",
+    "料金の目安/犬料金": "出発前に確認",
+    "持ち物": "リード、フン処理用品。",
+    "雨の日": "出発前に確認",
+    "出発前に確認": "駐車場の場所、スカイトレイン・レンタサイクル・直売所の休業日(公式の施設カレンダー)、施設ごとの犬の可否。",
+    "公式で確認したこと": "公式サイトで、リード着用とフンの持ち帰りの案内を確認。管理事務所の所在地 小鹿野町長留2518。"
+   },
+   "links": [
+    {
+     "label": "公式情報",
+     "url": "https://www.muse-park.com/",
+     "affiliate": false
+    },
+    {
+     "label": "施設公式案内",
+     "url": "https://www.muse-park.com/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-26",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c-chichibu-muse-park",
+   "geocode": {
+    "lat": 35.992984,
+    "lon": 139.051788,
+    "precision": "facility",
+    "source": "osm",
+    "matched": "秩父ミューズパーク, 秩父市, 秩父郡, 埼玉県, 日本"
+   },
+   "area_geocode": {
+    "lat": 35.991596,
+    "lon": 139.085251,
+    "matched": "埼玉県秩父市",
+    "precision": "municipality",
+    "note": "住所検索の停止中のため、同じ市区町村の以前の位置"
+   }
+  },
+  {
+   "id": "c-michinoku-park",
+   "type": "spot",
+   "name": "国営みちのく杜の湖畔公園",
+   "area": "宮城県柴田郡川崎町",
+   "region_group": "tohoku",
+   "kinds": [
+    "park",
+    "run"
+   ],
+   "theme": "釜房湖畔の広い国営公園。屋外の園路を犬と散歩でき、北地区に登録制のドッグランがある",
+   "facts": {
+    "犬の条件・同伴範囲": "屋外の園路は犬連れで散歩可(リード2m以内で常時保持)。建物内・飲食店・売店・トイレ、水遊び場、遊具、自然保護区域などは不可。北地区「森のドッグラン」は事前登録制。",
+    "料金の目安/犬料金": "人の入園料が必要。犬の料金・ドッグラン登録料は出発前に確認",
+    "持ち物": "リード、フン処理用品。ドッグラン利用時はワクチン接種の証明など(出発前に確認)。",
+    "雨の日": "出発前に確認",
+    "出発前に確認": "開園時間・休園日・入園料、ドッグランの登録条件。",
+    "公式で確認したこと": "ペット同伴時の禁止エリアとリードの決まり(公式「ペットとお越しの方へ」)。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://michinoku-park.info/users-guide/pets/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-26",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c-michinoku-park",
+   "geocode": {
+    "lat": 38.1814275,
+    "lon": 140.6669364,
+    "precision": "district",
+    "source": "manual",
+    "matched": "宮城県柴田郡川崎町大字小野字二本松53-9"
+   }
+  },
+  {
+   "id": "c-heidi-village",
+   "type": "spot",
+   "name": "山梨県立フラワーセンター ハイジの村",
+   "area": "山梨県北杜市",
+   "region_group": "koshinetsu",
+   "kinds": [
+    "park",
+    "run"
+   ],
+   "theme": "花畑の中を犬と歩けるテーマパーク。有料のドッグラン・一時預かりもある",
+   "facts": {
+    "犬の条件・同伴範囲": "公式に挙げられた小型犬・中型犬の犬種とその雑種が同伴入園可(大型犬は対象外)。入園時に「愛犬同伴入園利用規程」への同意と署名が必要。",
+    "料金の目安/犬料金": "犬1頭ごとにエチケットセット300円。ドッグラン「ヨーゼフの庭」は別料金(小・中型1,000円)。人の入園料は別。",
+    "持ち物": "リード、同意書(入口にもある)。",
+    "雨の日": "出発前に確認",
+    "出発前に確認": "開園時間・休園日・入園料、建物内への同伴可否、対象犬種の一覧(公式)。",
+    "公式で確認したこと": "犬同伴の対象犬種・同意書・エチケットセット料金・ドッグラン料金(公式「愛犬同伴入園」)。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://www.haiji-no-mura.com/pet.html",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-26",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c-heidi-village",
+   "geocode": {
+    "lat": 35.7794015,
+    "lon": 138.4641474,
+    "precision": "district",
+    "source": "manual",
+    "matched": "山梨県北杜市"
+   },
+   "area_geocode": {
+    "lat": 35.776493,
+    "lon": 138.42363,
+    "matched": "山梨県北杜市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c-yatsugatake-shizen",
+   "type": "spot",
+   "name": "八ヶ岳自然文化園",
+   "area": "長野県諏訪郡原村",
+   "region_group": "koshinetsu",
+   "kinds": [
+    "run",
+    "park"
+   ],
+   "theme": "白樺とカラマツの園内を散歩でき、広いドッグランもある高原の公園",
+   "facts": {
+    "犬の条件・同伴範囲": "園内はリードをつけて散歩可。芝生内は立入禁止(ドッグランと日時計のある芝生広場を除く)。ドッグラン「わんこのお庭」あり。屋内施設の同伴は出発前に確認。",
+    "料金の目安/犬料金": "予約前確認",
+    "持ち物": "伸びないリード(伸縮リードの伸縮・ロングリードは不可)、排せつ物の処理用品。",
+    "雨の日": "出発前に確認",
+    "出発前に確認": "営業時間(9:00〜17:00、7月下旬〜8月末は18:00まで)、休園日(火曜・祝日の翌平日・年末年始など。夏季は無休)、ドッグランの料金とワクチン証明の要否。",
+    "公式で確認したこと": "公式の施設案内に犬の散歩ルールとドッグランの記載あり。所在地は原村17217-1613。"
+   },
+   "links": [
+    {
+     "label": "公式情報",
+     "url": "https://www.yatsugatake-ncp.com/facility/",
+     "affiliate": false
+    },
+    {
+     "label": "施設公式案内",
+     "url": "https://www.yatsugatake-ncp.com/facility/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-26",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c-yatsugatake-shizen",
+   "geocode": {
+    "lat": 35.972757,
+    "lon": 138.266031,
+    "precision": "facility",
+    "source": "osm",
+    "matched": "八ヶ岳自然文化園, 原村, 諏訪郡, 長野県, 日本"
+   },
+   "area_geocode": {
+    "lat": 35.964363,
+    "lon": 138.217499,
+    "matched": "長野県諏訪郡原村",
     "precision": "municipality"
    }
   }

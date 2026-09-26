@@ -375,6 +375,19 @@
     "small",
     "medium"
    ]
+  },
+  "c-apa-joetsu-myoko": {
+   "text": "生後4か月以上・体重23kg以下。小型犬は1室2頭まで、中型犬は1頭まで(小型犬2頭・中型犬は事前に連絡、追加2,000円)。宿泊時にペット同伴の利用規約への同意・署名が必要。",
+   "source_url": "https://www.apahotel.com/resort/myoko/pet/",
+   "checked_at": "2026-09-26",
+   "max_dogs": 2,
+   "max_kg": 23,
+   "kg_inclusive": true
+  },
+  "c-angel-forest-shirakawa": {
+   "text": "全てのサイズの室内犬が宿泊可(体高50cm以上を大型犬として案内)。犬種の制限はないが、噛み癖など攻撃的な犬は不可。頭数の上限は予約前確認。",
+   "source_url": "https://www.ang-sk.com/dog/",
+   "checked_at": "2026-09-26"
   }
  }
 }
