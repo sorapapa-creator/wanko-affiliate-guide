@@ -620,7 +620,8 @@
 
   function renderNearby(place) {
     const here = [place.geocode.lat, place.geocode.lon];
-    const list = PLACES.filter((p) => p.id !== place.id && p.page_url)
+    // 宿は出さない(行き先の近くで犬と行けるおでかけ先だけ)
+    const list = PLACES.filter((p) => p.id !== place.id && p.page_url && p.type === "spot")
       .map((p) => ({ p, d: km(here, [p.geocode.lat, p.geocode.lon]) }))
       .filter((x) => x.d <= CFG.nearbyKm)
       .sort((a, b) => compareDestinations(a.p, b.p))
@@ -633,7 +634,7 @@
       .filter(Boolean);
     const select = $("nearby-select");
     select.replaceChildren(new Option("掲載先を選ぶと施設情報へ移動します", ""));
-    for (const type of ["lodging", "spot"]) {
+    for (const type of ["spot"]) {
       const group = document.createElement("optgroup");
       group.label = `${TYPE_LABEL[type]}（50音順）`;
       for (const { p, d, href } of list.filter((x) => x.p.type === type)) {
@@ -641,7 +642,7 @@
       }
       if (group.children.length) select.appendChild(group);
     }
-    $("nearby-select-hint").textContent = `行き先から直線${CFG.nearbyKm}km以内を区分ごとの50音順で表示（読み未登録の英字名は末尾）。地域の代表点を含む目安です。選ぶと施設情報を開きます。`;
+    $("nearby-select-hint").textContent = `行き先から直線${CFG.nearbyKm}km以内のおでかけ先を50音順で表示（宿は除く。読み未登録の英字名は末尾）。地域の代表点を含む目安です。選ぶと施設情報を開きます。`;
     select.onchange = () => {
       if (select.value) window.location.assign(select.value);
     };
