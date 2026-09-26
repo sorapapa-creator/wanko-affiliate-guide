@@ -2,7 +2,7 @@
   const CFG = window.PLANNER_CONFIG;
   const $ = (id) => document.getElementById(id);
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
-  const TYPE_LABEL = { lodging: "宿", spot: "おでかけ", trip_plan: "旅行プラン" };
+  const TYPE_LABEL = { lodging: "宿", spot: "おでかけ", trip_plan: "モデルコース" };
   const DESTINATION_COLLATOR = new Intl.Collator("ja", { numeric: true, sensitivity: "base" });
   // 確認済みの読みを名前全体に適用。未知の英字表記には推測の読みを付けない。
   const DESTINATION_READINGS = [
@@ -54,10 +54,12 @@
   const MIN_GAP_MIN = 20;         // 前の休憩から最低これだけは空ける
   const EDGE_START_MIN = 15, EDGE_END_MIN = 10; // 出発直後・到着直前の休憩は提案しない
   const MAX_WAYPOINTS = 3;
+  const WP_RADIUS_KM = 30;        // 立ち寄り先の候補は、立ち寄り前のルートから直線でこの距離以内に固定
   // 1回の計算でGoogleに問い合わせる上限(出発時刻の数 × 区間の数)。立ち寄り先が多いときは比べる出発時刻を減らす
   const MAX_ROUTE_CALLS = 16;
   const STAY_CHOICES = [15, 30, 45, 60, 90, 120, 180, 240];
   const REST_RESET_MIN = 15; // 立ち寄り先でこれ以上過ごせば、犬の休憩をとったことにする
+  const REST_SLACK_MIN = 10; // 目安の間隔をこれ以下しか超えない区間は「長い区間」にしない(休憩候補を出さない)
 
   let PLACES = [];
   let DESTINATIONS = [];
@@ -131,7 +133,7 @@
     }
 
     const articleIds = new Set(published.map((place) => place.id));
-    // 既存の市町村単位の旅行プランも残す。県単位の代表点はルートが不正確なため含めない。
+    // 既存の市町村単位のモデルコースも残す。県単位の代表点はルートが不正確なため含めない。
     for (const place of p.places) {
       if (place.type !== "trip_plan" || articleIds.has(place.id)) continue;
       if (!place.page_url) continue;
@@ -147,7 +149,7 @@
     const groups = [
       ["lodging", "宿泊先｜犬と泊まる場所"],
       ["spot", "おでかけ先｜日帰り・立ち寄り"],
-      ["trip_plan", "旅のプラン｜モデルコース"],
+      ["trip_plan", "モデルコース｜市区町村ごとの回り方"],
     ];
     for (const [type, label] of groups) {
       const options = DESTINATIONS.filter((place) => place.type === type).sort(compareDestinations);
@@ -265,15 +267,6 @@
     return best;
   }
 
-  // ルートの何番目の点に一番近いか(SA・PA・道の駅をルートの順=出発地に近い順に並べるため)
-  function routeOrder(point, points) {
-    let best = Infinity, index = 0;
-    for (let i = 0; i < points.length; i++) {
-      const d = (points[i][0] - point[0]) ** 2 + (points[i][1] - point[1]) ** 2;
-      if (d < best) { best = d; index = i; }
-    }
-    return index;
-  }
   // 休憩に使えない地点(チェーン着脱場など)は立ち寄り候補に出さない
   const NOT_REST = /チェーン着脱|着脱場/;
 
@@ -334,7 +327,8 @@
         const tSec = (cum[idx] / total) * driveSec;
         const closure = dogRunClosure(stop, date);
         const dogRun = stop.dog_run && !closure;
-        const score = dogRun ? 3 : stop.pet_facility ? 2 : stop.kind === "SA" ? 1 : stop.kind === "道の駅" ? 0.8 : 0.5;
+        // 休憩はSA・PAを優先(道の駅は高速を降りることが多いので最後)
+        const score = dogRun ? 3 : stop.pet_facility ? 2 : stop.kind === "SA" ? 1 : stop.kind === "道の駅" ? 0.3 : 0.5;
         return { stop, tSec, d, closure, dogRun, score };
       })
       .filter((c) => c.tSec > EDGE_START_MIN * 60 && c.tSec < driveSec - EDGE_END_MIN * 60)
@@ -424,11 +418,9 @@
   function renderCompare(state) {
     const multi = state.waypoints.length > 0;
     $("compare-title").textContent = multi
-      ? `出発時刻ごとの最終到着(立ち寄り${state.waypoints.length}か所・滞在込み)`
-      : "出発時刻ごとの所要時間(目安)";
-    $("compare-head").innerHTML = multi
-      ? "<th>出発</th><th>運転時間(合計)</th><th>最終到着</th><th>渋滞の影響</th>"
-      : "<th>出発</th><th>運転時間</th><th>休憩込みの到着</th><th>渋滞の影響</th>";
+      ? `出発時刻ごとの予想時間(立ち寄り${state.waypoints.length}か所・滞在込み)`
+      : "出発時刻ごとの予想時間";
+    $("compare-head").innerHTML = `<th>出発</th><th>運転時間${multi ? "(合計)" : ""}</th><th>到着${multi ? "(滞在込み)" : ""}</th><th>渋滞の影響</th>`;
     const rows = state.options.map((o, i) => {
       if (o.error) {
         return `<tr><td class="num">${fmtClock(o.dep)}</td><td colspan="3" class="note">計算できませんでした</td></tr>`;
@@ -437,73 +429,97 @@
       return `<tr data-i="${i}" class="${i === state.bestIndex ? "best" : ""}" style="cursor:pointer">
         <td class="num">${fmtClock(o.dep)}${i === state.bestIndex ? " おすすめ" : ""}</td>
         <td class="num">${fmtDur(t.driveSec)}</td>
-        <td class="num">${fmtClock(o.finalArrive)}(休憩${t.restCount}回)</td>
+        <td class="num">${fmtClock(o.finalArrive)}</td>
         <td class="num">${delayText(t.driveSec - t.staticSec)}</td></tr>`;
     }).join("");
     $("compare").innerHTML = rows;
     $("compare").querySelectorAll("tr[data-i]").forEach((tr) =>
-      tr.addEventListener("click", () => renderPlan(state, Number(tr.dataset.i))));
+      tr.addEventListener("click", () => showOption(state, Number(tr.dataset.i))));
     const notes = [
       "渋滞の影響 = 過去の傾向を含む予測時間と、渋滞がない場合との差。",
-      `休憩は1回${CFG.restMinutes}分で計算。`,
+      "この表の到着は休憩なしの時刻です。下の「休憩場所を選ぶ」で選んだ休憩(1回" + CFG.restMinutes + "分)は、下のプランの時刻に足します。",
       multi ? "立ち寄り先を出る時刻の混み具合で、次の区間を計算し直しています。" : "",
       state.reduced ? `立ち寄り先が多いため、比べる出発時刻を${state.options.length}つに減らしました。` : "",
-      `行をタップするとその出発時刻の${multi ? "移動" : "休憩"}プランを表示します。`,
+      "行をタップするとその出発時刻のプランを表示します。",
     ];
     $("compare-note").textContent = notes.filter(Boolean).join("");
   }
 
-  function restItem(r, at, multi) {
-    const badges = [
-      r.stop.kind === "道の駅" ? '<span class="badge">道の駅</span>' : "",
+  const restKey = (c) => baseName(c.stop.name);
+
+  function restBadges(r) {
+    return [
+      r.stop.kind === "道の駅" ? '<span class="badge">道の駅</span>' : `<span class="badge">${esc(r.stop.kind)}</span>`,
       r.dogRun ? '<span class="badge b-run">ドッグラン</span>' : "",
       r.stop.pet_facility ? '<span class="badge b-pet">ペット施設</span>' : "",
       r.closure ? `<span class="badge b-closed">${esc(r.closure)}</span>` : "",
-      r.late ? '<span class="badge b-warn">目安より遅め</span>' : "",
     ].join("");
+  }
+
+  function restItem(r, at) {
     const fac = (r.stop.facilities || [])[0];
     const notes = (r.stop.facilities || []).map((f) => f.note).filter(Boolean).join(" / ");
     return `<li><span class="time">${fmtClock(at)}</span><span>
-      ${multi ? `<span class="badge">休憩${CFG.restMinutes}分</span> ` : ""}<b>${esc(r.stop.name)}</b> ${badges}<br>
-      <span class="note">${multi ? "この区間の" : "出発から"}運転${fmtDur(r.tSec)}${multi ? "の地点" : ""}${fac ? ` / ${esc(fac.road)}` : ""}${notes ? ` / ${esc(notes)}` : ""}</span>
+      <span class="badge">休憩${CFG.restMinutes}分</span> <b>${esc(r.stop.name)}</b> ${restBadges(r)}<br>
+      <span class="note">この区間の運転${fmtDur(r.tSec)}の地点${fac ? ` / ${esc(fac.road)}` : ""}${notes ? ` / ${esc(notes)}` : ""}</span>
       ${fac ? `<br><a href="${esc(fac.url)}" target="_blank" rel="noopener">${esc(fac.operator)}の施設情報</a>` : ""}
     </span></li>`;
   }
+
+  // 選んだ休憩を入れて時刻を組み直す(休憩の分だけ後ろにずらす。ずらした後の混み具合は計算し直さない)
+  function withChosenRests(state, o) {
+    let cursor = o.dep;
+    const legs = o.legs.map((l, k) => {
+      const rests = l.cands.filter((c) => state.selected[k]?.has(restKey(c))).sort((a, b) => a.tSec - b.tSec);
+      const dep = cursor;
+      const arrive = addSec(dep, l.durationSec + rests.length * CFG.restMinutes * 60);
+      cursor = k < state.waypoints.length ? addSec(arrive, state.waypoints[k].stayMin * 60) : arrive;
+      return { ...l, dep, arrive, rests };
+    });
+    return legs;
+  }
+
+  function showOption(state, i) {
+    state.current = i;
+    renderPlan(state, i);
+    renderRestPicker(state, i);
+  }
+
+  const intervalText = (m) => (m >= 60 ? `${m / 60}時間`.replace(".5時間", "時間30分") : `${m}分`);
 
   function renderPlan(state, i) {
     const o = state.options[i];
     if (!o || o.error) return;
     const { interval } = state;
     const multi = state.waypoints.length > 0;
-    $("plan-title").textContent =
-      `${multi ? "移動プラン" : "休憩プラン"}(${fmtClock(o.dep)}出発・${multi ? "休憩は" : ""}${interval.minutes >= 60 ? interval.minutes / 60 + "時間" : interval.minutes + "分"}ごとが目安${interval.reasons.length ? ":" + interval.reasons.join("・") : ""})`;
+    const legs = withChosenRests(state, o);
+    const restCount = legs.reduce((s, l) => s + l.rests.length, 0);
+    $("plan-title").textContent = `わんこ旅行プラン(${fmtClock(o.dep)}出発${restCount ? `・休憩${restCount}回込み` : ""})`;
 
     const warns = [];
-    if (o.legs.some((l) => l.rests.some((r) => r.late))) warns.push("ルート上に適当な休憩場所が少なく、目安の間隔を超える区間があります。一般道の道の駅なども検討してください。");
-    for (const l of o.legs) {
-      if (!l.rests.length && l.sinceRestAtEnd > interval.minutes * 60 + 10 * 60) {
-        warns.push(multi
-          ? `${l.from.name} → ${l.to.name} の区間で、休憩できるSA・PAが見つからず目安の間隔を超えます。途中の道の駅などでの休憩を計画してください。`
-          : "ルート上に休憩できるSA・PAが見つかりませんでした(一般道中心のルートの可能性)。途中の道の駅やコンビニ駐車場での休憩を計画してください。");
-      }
-    }
-    for (const l of o.legs.filter(isApproxLeg)) {
+    legs.forEach((l) => {
+      if (!l.needsRest || l.rests.length) return;
+      warns.push(l.cands.length
+        ? `${l.from.name} → ${l.to.name} は、休憩なしだと前の休憩から約${fmtDur(l.sinceRestAtEnd)}運転します(目安は${intervalText(interval.minutes)}ごと)。下の「休憩場所を選ぶ」から選べます。`
+        : `${l.from.name} → ${l.to.name} は運転が長めですが、ルート沿いに休憩できるSA・PA・道の駅が見つかりませんでした(一般道中心のルートの可能性)。途中の道の駅やコンビニ駐車場での休憩を計画してください。`);
+    });
+    for (const l of legs.filter(isApproxLeg)) {
       warns.push(`${l.from.name} → ${l.to.name} は、位置が地区や市区町村の中心までしか分からないため、この区間の移動時間は正しく計算できていません。実際の位置と移動時間を地図で確認してください。`);
     }
-    const h = o.finalArrive.getHours();
-    if (state.place.type === "lodging" && (h >= 20 || h < 5)) warns.push(`宿への到着が${fmtClock(o.finalArrive)}になります。チェックインの受付時間を宿に確認してください。`);
+    const last = legs[legs.length - 1];
+    const h = last.arrive.getHours();
+    if (state.place.type === "lodging" && (h >= 20 || h < 5)) warns.push(`宿への到着が${fmtClock(last.arrive)}になります。チェックインの受付時間を宿に確認してください。`);
+    if (restCount) warns.push("休憩を入れた分だけ後ろの時刻をずらしています。ずれた後の渋滞の変化は計算し直していません。");
     $("plan-warn").innerHTML = warns.map((w) => `<div class="warnbox">${esc(w)}</div>`).join("");
 
-    const items = [`<li class="${multi ? "stop" : ""}"><span class="time">${fmtClock(o.dep)}</span><span>${multi ? `<span class="badge b-go">出発</span> <b>${esc(state.origin.name)}</b>` : "出発"}</span></li>`];
-    o.legs.forEach((l, k) => {
-      if (multi) {
-        items.push(`<li class="leg"><span class="time"></span><span class="note">区間${k + 1}: ${isApproxLeg(l)
-          ? "近くへの移動(位置が大まかなため時間は計算できていません)"
-          : `運転${fmtDur(l.durationSec)}(渋滞の影響 ${delayText(l.durationSec - l.staticDurationSec)})`}</span></li>`);
-      }
+    const items = [`<li class="stop"><span class="time">${fmtClock(o.dep)}</span><span><span class="badge b-go">出発</span> <b>${esc(state.origin.name)}</b></span></li>`];
+    legs.forEach((l, k) => {
+      items.push(`<li class="leg"><span class="time"></span><span class="note">${multi ? `区間${k + 1}: ` : ""}${isApproxLeg(l)
+        ? "近くへの移動(位置が大まかなため時間は計算できていません)"
+        : `運転${fmtDur(l.durationSec)}(渋滞の影響 ${delayText(l.durationSec - l.staticDurationSec)})`}</span></li>`);
       let restAcc = 0;
       for (const r of l.rests) {
-        items.push(restItem(r, addSec(l.dep, r.tSec + restAcc), multi));
+        items.push(restItem(r, addSec(l.dep, r.tSec + restAcc)));
         restAcc += CFG.restMinutes * 60;
       }
       if (k < state.waypoints.length) {
@@ -516,15 +532,14 @@
         </span></li>`);
       }
     });
-    const last = o.legs[o.legs.length - 1];
-    items.push(`<li class="${multi ? "stop" : ""}"><span class="time">${fmtClock(last.arrive)}</span><span>${multi ? '<span class="badge b-go">到着</span>' : "到着"} <b>${esc(state.place.name)}</b></span></li>`);
+    items.push(`<li class="stop"><span class="time">${fmtClock(last.arrive)}</span><span><span class="badge b-go">到着</span> <b>${esc(state.place.name)}</b></span></li>`);
     $("plan").innerHTML = items.join("");
 
-    // Googleマップ: 立ち寄り先は必ず入れ、休憩地点は入りきる分だけ(経由地は9か所まで)
+    // Googleマップ: 立ち寄り先は必ず入れ、選んだ休憩地点は入りきる分だけ(経由地は9か所まで)
     const via = [];
     const restSlots = 9 - state.waypoints.length;
     let restUsed = 0;
-    o.legs.forEach((l, k) => {
+    legs.forEach((l, k) => {
       for (const r of l.rests) if (restUsed < restSlots) { via.push(`${r.stop.lat},${r.stop.lon}`); restUsed++; }
       if (k < state.waypoints.length) via.push(`${state.waypoints[k].lat},${state.waypoints[k].lon}`);
     });
@@ -535,7 +550,49 @@
     nav.searchParams.set("destination", `${state.place.name} ${state.place.area}`);
     nav.searchParams.set("travelmode", "driving");
     if (via.length) nav.searchParams.set("waypoints", via.join("|"));
-    $("plan-actions").innerHTML = `<a href="${esc(nav.toString())}" target="_blank" rel="noopener">${multi ? "立ち寄り先・休憩地点つき" : "休憩地点つき"}でGoogleマップを開く</a>`;
+    const label = [multi ? "立ち寄り先" : "", restCount ? "休憩地点" : ""].filter(Boolean).join("・");
+    $("plan-actions").innerHTML = `<a href="${esc(nav.toString())}" target="_blank" rel="noopener">${label ? label + "つきで" : ""}Googleマップを開く</a>`;
+  }
+
+  // 二本目: 運転が長い区間(前の休憩から目安の間隔を超える区間)だけ、ルート沿いのSA・PA・道の駅から休憩場所を選ぶ
+  function renderRestPicker(state, i) {
+    const o = state.options[i];
+    const box = $("rest-pick");
+    if (!o || o.error) { box.innerHTML = ""; return; }
+    const { interval } = state;
+    $("rest-intro").textContent = `前の休憩から${intervalText(interval.minutes)}を超えて運転する区間だけ、ルート沿いのSA・PA・道の駅を候補に出します${interval.reasons.length ? `(${interval.reasons.join("・")}のため${intervalText(interval.minutes)}ごと)` : "(成犬は2時間ごとが目安)"}。選ぶと上のプランの時刻に休憩${CFG.restMinutes}分ずつを足します。「おすすめ」は目安の時間に近い場所から、ドッグラン・ペット施設・SA・PAを優先して選んだものです。`;
+    const long = o.legs.map((l, k) => [l, k]).filter(([l]) => l.needsRest);
+    if (!long.length) {
+      box.innerHTML = `<p class="note">目安の間隔を超えて運転する区間はありません。途中で休みたいときは、上の立ち寄り先にSA・PA・道の駅を入れてください。</p>`;
+      return;
+    }
+    box.innerHTML = long.map(([l, k]) => {
+      const rec = new Set(l.recommended.map(restKey));
+      const rows = l.cands.map((c) => {
+        const key = restKey(c), fac = (c.stop.facilities || [])[0];
+        return `<label class="rest-opt"><input type="checkbox" data-leg="${k}" value="${esc(key)}"${state.selected[k]?.has(key) ? " checked" : ""}>
+          <span><b>${esc(c.stop.name)}</b> ${restBadges(c)}${rec.has(key) ? '<span class="badge b-rec">おすすめ</span>' : ""}<br>
+          <span class="note">この区間の運転${fmtDur(c.tSec)}の地点${fac?.road ? ` / ${esc(fac.road)}` : ""}</span></span></label>`;
+      }).join("");
+      return `<div class="rest-leg"><h3>${esc(l.from.name)} → ${esc(l.to.name)}</h3>
+        <p class="note">運転${fmtDur(l.durationSec)}${l.sinceRestAtStart > 0 ? `(前の休憩から通算 約${fmtDur(l.sinceRestAtEnd)})` : ""}</p>
+        ${rows ? `${rec.size ? `<button type="button" class="sub rest-rec" data-leg="${k}">おすすめを選ぶ</button>` : ""}<div class="rest-list">${rows}</div>`
+          : '<p class="note">ルート沿いに休憩できるSA・PA・道の駅が見つかりませんでした。途中の道の駅やコンビニ駐車場での休憩を計画してください。</p>'}</div>`;
+    }).join("");
+    const update = () => renderPlan(state, state.current);
+    box.querySelectorAll('input[type="checkbox"]').forEach((cb) => cb.addEventListener("change", () => {
+      const k = Number(cb.dataset.leg);
+      const set = state.selected[k] || (state.selected[k] = new Set());
+      if (cb.checked) set.add(cb.value); else set.delete(cb.value);
+      update();
+    }));
+    box.querySelectorAll(".rest-rec").forEach((btn) => btn.addEventListener("click", () => {
+      const k = Number(btn.dataset.leg);
+      const l = o.legs[k];
+      state.selected[k] = new Set(l.recommended.map(restKey));
+      box.querySelectorAll(`input[data-leg="${k}"]`).forEach((cb) => { cb.checked = state.selected[k].has(cb.value); });
+      update();
+    }));
   }
 
   function renderDestination(place, profile) {
@@ -620,59 +677,37 @@
   const waypointRouteKey = () => ["origin", "dest-q", "date", "start"].map((id) => $(id).value).join("|");
   const waypointDistance = (d) => d < 1 ? "1km未満" : `約${Math.round(d)}km`;
 
+  // 立ち寄り先の候補: 立ち寄り前のルート(出発地→行き先)から直線30km以内の、掲載先(宿・おでかけ)とSA・PA・道の駅。区分ごとに50音順
   function waypointCandidates() {
-    const scope = $("wp-scope").value, radius = Number($("wp-radius").value);
     const dest = byId.get($("dest-q").value);
-    const routeReady = waypointRoute?.key === waypointRouteKey();
-    const byRouteOrder = scope === "rest" && routeReady;
+    if (waypointRoute?.key !== waypointRouteKey()) return [];
     return [...wpByLabel].flatMap(([label, value]) => {
       if (value.place && value.place.id === dest?.id) return [];
-      if (scope === "rest" ? !value.stop : !value.place) return [];
-      if (scope === "rest" && NOT_REST.test(value.name)) return [];
-      let distance = null, order = null;
-      if (byRouteOrder) {
-        // SA・PA・道の駅も、ルートを取得済みならルートから選んだ距離以内に絞り、ルートの順に並べる
-        distance = distanceToRoute([value.lat, value.lon], waypointRoute.points);
-        order = routeOrder([value.lat, value.lon], waypointRoute.points);
-      } else if (scope === "route") {
-        if (!waypointRoute || waypointRoute.key !== waypointRouteKey()) return [];
-        distance = distanceToRoute([value.lat, value.lon], waypointRoute.points);
-      } else if (scope === "destination") {
-        if (!hasRouteCoordinates(dest)) return [];
-        distance = km([value.lat, value.lon], [Number(dest.geocode.lat), Number(dest.geocode.lon)]);
-      }
-      if (distance !== null && (!Number.isFinite(distance) || distance > radius)) return [];
-      return [{ label, value, distance, order }];
-    }).sort((a, b) => byRouteOrder ? a.order - b.order
-      : compareDestinations(a.value.place || { name: a.value.name, id: a.label }, b.value.place || { name: b.value.name, id: b.label }));
+      if (value.stop && NOT_REST.test(value.name)) return [];
+      const distance = distanceToRoute([value.lat, value.lon], waypointRoute.points);
+      if (!Number.isFinite(distance) || distance > WP_RADIUS_KM) return [];
+      return [{ label, value, distance }];
+    }).sort((a, b) => compareDestinations(a.value.place || { name: a.value.name, id: a.label }, b.value.place || { name: b.value.name, id: b.label }));
   }
 
   function refreshWaypointChoices() {
     const candidates = waypointCandidates();
-    const scope = $("wp-scope").value;
     const routeReady = waypointRoute?.key === waypointRouteKey();
-    $("wp-radius").disabled = scope === "all" || (scope === "rest" && !routeReady);
-    $("find-wp-route").classList.toggle("hidden", scope !== "route" && scope !== "rest");
-    const destReady = hasRouteCoordinates(byId.get($("dest-q").value));
-    $("wp-route-status").textContent = scope === "route" && !routeReady
-      ? waypointMessage || "出発地・行き先・出発日時を選び、ルート沿いの候補を探してください。"
-      : scope === "rest" && routeReady
-        ? `${candidates.length}件の候補。立ち寄り前のルートから直線${$("wp-radius").value}km以内のSA・PA・道の駅を、出発地に近い順に並べています。出発地・行き先・日時を変えたら再検索してください。`
-      : scope === "rest"
-        ? `${waypointMessage ? waypointMessage + " " : ""}全国のSA・PA・道の駅 ${candidates.length}件(50音順)。「ルート沿いの候補を探す」を押すと、ルート沿いに絞って出発地に近い順に並べます。`
-      : scope === "destination" && !destReady ? "位置情報のある行き先を選んでください。"
-      : `${candidates.length}件の候補。${scope === "route" ? "立ち寄り前のルートから" : scope === "destination" ? "行き先から" : ""}${["route", "destination"].includes(scope) ? `直線${$("wp-radius").value}km以内。` : ""}区分ごとに50音順です。${scope === "route" ? "出発地・行き先・日時を変えたら再検索してください。" : ""}`;
+    const count = (type) => candidates.filter((c) => (c.value.place?.type || "rest") === type).length;
+    $("wp-route-status").textContent = !routeReady
+      ? waypointMessage || "出発地・行き先・出発日時を選んでから「ルート沿いの候補を探す」を押してください（「＋ 立ち寄り先を追加」でも探します）。"
+      : `ルートから直線${WP_RADIUS_KM}km以内の候補: 宿 ${count("lodging")}件・おでかけ ${count("spot")}件・SA・PA・道の駅 ${count("rest")}件（区分ごとに50音順）。出発地・行き先・日時を変えたら探し直してください。`;
     const rows = [...$("wps").children];
     for (const row of rows) {
       const select = row.querySelector(".wp-q"), selected = select.value;
       const elsewhere = new Set(rows.filter((r) => r !== row).map((r) => r.querySelector(".wp-q").value).filter(Boolean));
-      select.replaceChildren(new Option(candidates.length ? "立ち寄り先を選択（50音順）" : "条件に合う候補がありません", ""));
+      select.replaceChildren(new Option(!routeReady ? "先にルート沿いの候補を探してください" : candidates.length ? "立ち寄り先を選択（50音順）" : "ルートから30km以内に候補がありません", ""));
       for (const type of ["lodging", "spot", "rest"]) {
         const group = document.createElement("optgroup");
         group.label = type === "rest" ? "SA・PA・道の駅" : TYPE_LABEL[type];
         for (const candidate of candidates.filter((c) => (c.value.place?.type || "rest") === type && !elsewhere.has(c.label))) {
           const { label, value, distance } = candidate;
-          const info = distance === null ? value.place?.area || value.kind : `${scope === "destination" ? "行き先から" : "ルートから"} ${waypointDistance(distance)}${value.approx ? "・地域の目安" : ""}`;
+          const info = `${value.place ? value.place.area || "地域未登録" : value.kind}・ルートから${waypointDistance(distance)}${value.approx ? "・地域の目安" : ""}`;
           group.appendChild(new Option(`${value.name}（${info}）`, label));
         }
         if (group.children.length) select.appendChild(group);
@@ -718,19 +753,19 @@
       const origin = await getOrigin();
       if (request !== waypointRequest || key !== waypointRouteKey()) return;
       const end = { lat: Number(dest.geocode.lat), lon: Number(dest.geocode.lon), approx: dest.geocode.precision !== "facility" };
-      if (isApproxLeg({ from: origin, to: end })) throw new Error("出発地と行き先の位置が大まかで近いため、ルートを確認できません。「行き先の近く」から探してください。");
+      if (isApproxLeg({ from: origin, to: end })) throw new Error("出発地と行き先の位置が大まかで近いため、ルートを確認できません。出発地か行き先を変えてください。");
       const data = await routeLeg(origin, end, [departure]);
       if (request !== waypointRequest || key !== waypointRouteKey()) return;
       const result = data.results?.[0];
       const devHost = ["localhost", "127.0.0.1"].includes(location.hostname);  // 手元の開発サーバーでは仮データのルートでも絞り込みを試せる
-      if ((data.mock && !devHost) || result?.error || !result?.polyline) throw new Error("ルートを取得できませんでした。「行き先の近く」か「掲載先すべて」から選べます。");
+      if ((data.mock && !devHost) || result?.error || !result?.polyline) throw new Error("ルートを取得できませんでした。時間をおいてもう一度お試しください。");
       const points = decodePolyline(result.polyline);
       if (points.length < 2 || points.some(([lat, lon]) => !Number.isFinite(lat) || !Number.isFinite(lon) || Math.abs(lat) > 90 || Math.abs(lon) > 180)) throw new Error("ルートの位置情報を確認できませんでした。");
       waypointRoute = { key, points };
       waypointMessage = "";
     } catch (error) {
       if (request === waypointRequest) waypointMessage = error instanceof TypeError
-        ? "ルートを取得できませんでした。通信環境を確認するか、「行き先の近く」「掲載先すべて」から選んでください。"
+        ? "ルートを取得できませんでした。通信環境を確認して、もう一度お試しください。"
         : error.message || "ルートを取得できませんでした。";
     } finally {
       if (request === waypointRequest) {
@@ -876,14 +911,17 @@
           const o = active[j];
           if (r.error || !r.polyline) { o.error = r.error || "no_route"; return; }
           const pts = decodePolyline(r.polyline);
-          const cands = stopsAlongRoute(pts, cumulative(pts), r.durationSec, o.cursor);
-          const rests = planRests(cands, r.durationSec, interval.minutes, o.sinceRest);
-          const arrive = addSec(o.cursor, r.durationSec + rests.length * CFG.restMinutes * 60);
-          const sinceRestAtEnd = rests.length ? r.durationSec - rests[rests.length - 1].tSec : o.sinceRest + r.durationSec;
+          // 休憩は自動では入れない。運転が長い区間だけ、あとから選べるようにルート沿いのSA・PA・道の駅を候補として持っておく
+          const cands = stopsAlongRoute(pts, cumulative(pts), r.durationSec, o.cursor).filter((c) => !NOT_REST.test(c.stop.name));
+          const sinceRestAtStart = o.sinceRest;
+          const sinceRestAtEnd = sinceRestAtStart + r.durationSec;
           o.legs.push({
-            from: points[k], to: points[k + 1], dep: o.cursor, arrive, rests, sinceRestAtEnd,
+            from: points[k], to: points[k + 1], dep: o.cursor, arrive: addSec(o.cursor, r.durationSec),
+            cands, recommended: planRests(cands, r.durationSec, interval.minutes, sinceRestAtStart),
+            sinceRestAtStart, sinceRestAtEnd, needsRest: sinceRestAtEnd > (interval.minutes + REST_SLACK_MIN) * 60,
             durationSec: r.durationSec, staticDurationSec: r.staticDurationSec,
           });
+          const arrive = o.legs[o.legs.length - 1].arrive;
           o.sinceRest = sinceRestAtEnd;
           if (k < waypoints.length) {
             const stay = waypoints[k].stayMin;
@@ -899,18 +937,17 @@
         o.totals = {
           driveSec: o.legs.reduce((s, l) => s + l.durationSec, 0),
           staticSec: o.legs.reduce((s, l) => s + l.staticDurationSec, 0),
-          restCount: o.legs.reduce((s, l) => s + l.rests.length, 0),
         };
-        o.totals.onRoadSec = o.totals.driveSec + o.totals.restCount * CFG.restMinutes * 60;
       }
       const valid = options.map((o, i) => [o, i]).filter(([o]) => !o.error);
       if (!valid.length) throw new Error("ルートが見つかりませんでした。");
-      // おすすめ = 車に乗っている時間(運転+休憩)が一番短い出発時刻。立ち寄り先の滞在時間は同じなので比べない
-      const bestIndex = valid.reduce((b, cur) => (cur[0].totals.onRoadSec < b[0].totals.onRoadSec ? cur : b))[1];
+      // おすすめ = 運転時間(合計)が一番短い出発時刻。立ち寄り先の滞在時間は同じなので比べない
+      const bestIndex = valid.reduce((b, cur) => (cur[0].totals.driveSec < b[0].totals.driveSec ? cur : b))[1];
 
-      lastState = { options, bestIndex, interval, place, origin, waypoints, reduced };
+      // selected[区間番号] = 選んだ休憩場所(施設名の上下線を除いた名前)。出発時刻を切り替えても引き継ぐ
+      lastState = { options, bestIndex, interval, place, origin, waypoints, reduced, selected: [], current: bestIndex };
       renderCompare(lastState);
-      renderPlan(lastState, bestIndex);
+      showOption(lastState, bestIndex);
       renderDestination(place, profile);
       renderNearby(place);
       // 段階0(日付・人数・犬の条件の確認。trip-check.js)へ結果を渡す。任意の欄が空なら何も表示しない
@@ -921,7 +958,7 @@
       showError(e.message || "エラーが発生しました。");
     } finally {
       $("go").disabled = false;
-      $("go").textContent = "出発時刻を比べる";
+      $("go").textContent = "予想時間を出す";
     }
   }
 
@@ -932,9 +969,11 @@
   $("date").value = ymd(tomorrow);
   $("dest-q").addEventListener("change", updateDestinationLink);
   $("form").addEventListener("submit", onSubmit);
-  $("add-wp").addEventListener("click", () => addWaypointRow());
-  $("wp-scope").addEventListener("change", refreshWaypointChoices);
-  $("wp-radius").addEventListener("change", refreshWaypointChoices);
+  // ルート沿いの候補がまだなら、行を足すときに探す(候補はルートから30km以内に固定)
+  $("add-wp").addEventListener("click", () => {
+    addWaypointRow();
+    if (waypointRoute?.key !== waypointRouteKey() && !$("find-wp-route").disabled) findWaypointRoute();
+  });
   $("find-wp-route").addEventListener("click", findWaypointRoute);
   for (const id of ["origin", "dest-q", "date", "start"]) $(id).addEventListener("change", invalidateWaypointRoute);
   renumberWaypoints();

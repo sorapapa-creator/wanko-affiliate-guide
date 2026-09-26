@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>わんこ旅の出発時刻と休憩プラン</title>
-<meta name="description" content="犬連れ旅行の出発時刻ごとの所要時間と、ドッグランのあるSA・PAでの休憩プランを作ります">
+<title>わんこ旅行プラン｜わんことのじかん</title>
+<meta name="description" content="出発地・立ち寄り先(滞在時間つき)・行き先から、犬連れ旅行の出発時刻ごとの予想時間を出し、運転が長い区間だけSA・PA・道の駅の休憩場所を選べます">
 <style>
   :root {
     --bg: #faf7f2; --panel: #ffffff; --text: #2b2622; --muted: #6f665d; --line: #e7dfd3;
@@ -101,10 +101,13 @@
   .wp > select, .wp-ctrl { min-width: 0; }
   .wp-details { grid-column: 2; font-size: .82rem; color: var(--accent); }
   .wp-summary { grid-column: 2; margin: 0; color: var(--muted); font-size: .83rem; overflow-wrap: anywhere; }
-  .wp-filters { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-bottom: 10px; }
-  .wp-filters label { min-width: 0; }
-  @media (max-width: 540px) { .wp-filters { grid-template-columns: minmax(0, 1fr); } }
-  .wp-filters span { display: block; font-size: .85rem; font-weight: 650; margin-bottom: 4px; }
+  .rest-leg { border-top: 1px solid #e6e1d6; padding-top: 10px; margin-top: 12px; }
+  .rest-leg h3 { font-size: 1rem; margin: 0 0 4px; }
+  .rest-list { display: grid; gap: 6px; margin-top: 8px; }
+  .rest-opt { display: flex; gap: 8px; align-items: flex-start; padding: 8px 10px; border: 1px solid #e6e1d6; border-radius: 10px; cursor: pointer; }
+  .rest-opt input { width: auto; margin-top: 4px; flex: none; }
+  .rest-opt > span { min-width: 0; overflow-wrap: anywhere; }
+  .b-rec { background: #b5651d; color: #fff; }
   .wp-q { background: #fffdf7; color: #29251f; }
   .wp-q option { background: #fff; color: #29251f; }
   #wp-route-status { margin: 10px 0; }
@@ -122,8 +125,8 @@
   .timeline li.leg { padding: 2px 0; border-top: 0; }
 </style>
 <meta property="og:site_name" content="わんことのじかん">
-<meta property="og:title" content="わんこ旅の出発時刻と休憩プラン">
-<meta property="og:description" content="出発時刻ごとの所要時間と、ドッグランのあるSA・PAでの休憩プラン。途中の立ち寄り先も組み込めます。">
+<meta property="og:title" content="わんこ旅行プラン｜わんことのじかん">
+<meta property="og:description" content="出発地・立ち寄り先・行き先から出発時刻ごとの予想時間を出し、運転が長い区間だけ休憩場所(SA・PA・道の駅)を選べます。">
 <meta property="og:url" content="https://sorapapa-creator.github.io/wanko-affiliate-guide/route-planner/">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://sorapapa-creator.github.io/wanko-affiliate-guide/assets/og/og-trips.jpg">
@@ -134,8 +137,8 @@
 </head>
 <body>
 <div class="wrap">
-  <h1>わんこ旅の出発時刻と休憩プラン</h1>
-  <p class="lead">行き先と出発の時間帯を選ぶと、出発時刻ごとの所要時間の目安と、うちの子に合わせた休憩プラン(ドッグランのあるSA・PA優先)を作ります。途中の立ち寄り先と滞在時間も組み込めます。</p>
+  <h1>わんこ旅行プラン</h1>
+  <p class="lead">① 出発地・立ち寄り先(滞在時間つき)・行き先を選んで、出発時刻ごとの予想時間を出します。② そのあと、運転が長い区間だけ休憩場所(SA・PA・道の駅)を選ぶと、プランの時刻に休憩を足します。</p>
   <div class="mock" id="mock">テスト用の仮データで表示しています(渋滞は実データではありません)。</div>
 
   <form id="form" autocomplete="off">
@@ -222,7 +225,7 @@
         <div class="destination-choice-guide" aria-label="行き先の区分">
           <div><strong>宿泊先</strong><span>犬と泊まる場所</span></div>
           <div><strong>おでかけ先</strong><span>カフェ・ラン・観光</span></div>
-          <div><strong>旅のプラン</strong><span>市区町村ごとのモデルコース</span></div>
+          <div><strong>モデルコース</strong><span>市区町村ごとの回り方</span></div>
         </div>
         <p class="destination-instruction">各区分の中は50音順です。読み未登録の英字名は末尾に表記順で表示します。</p>
         <select id="dest-q"><option value="">宿泊先・おでかけ先から選択</option></select>
@@ -232,15 +235,11 @@
     </div>
     <fieldset>
       <label class="t planner-field-label" for="add-wp"><span>立ち寄り先(任意・3か所まで)</span><small>STOPS</small></label>
-      <div class="wp-filters">
-        <label for="wp-scope"><span>候補を探す範囲</span><select id="wp-scope"><option value="route">ルート沿いの掲載先</option><option value="destination">行き先の近く</option><option value="all">掲載先すべて（位置登録あり）</option><option value="rest">SA・PA・道の駅</option></select></label>
-        <label for="wp-radius"><span>近さの目安（直線距離）</span><select id="wp-radius"><option value="5">5km以内</option><option value="10" selected>10km以内</option><option value="20">20km以内</option><option value="30">30km以内</option></select></label>
-      </div>
       <button type="button" class="sub" id="find-wp-route">ルート沿いの候補を探す</button>
-      <p class="hint" id="wp-route-status" role="status" aria-live="polite">出発地・行き先・出発日時を選び、ルート沿いの候補を探してください。</p>
+      <p class="hint" id="wp-route-status" role="status" aria-live="polite">出発地・行き先・出発日時を選んでから「ルート沿いの候補を探す」を押してください（「＋ 立ち寄り先を追加」でも探します）。</p>
       <div id="wps"></div>
       <button type="button" class="sub" id="add-wp">＋ 立ち寄り先を追加</button>
-      <div class="hint">宿・おでかけの区分ごとに50音順で選べます（読み未登録の英字名は末尾に表記順）。出発地 → 立ち寄り先（上から順）→ 行き先の順に回ります。候補の距離は、立ち寄り前のルートまたは行き先からの直線距離です。実際の走行距離・迂回距離とは異なります。「地域の目安」は市町村などの代表点による概算です。位置未登録の施設は距離で絞れないため含みません。15分以上の滞在は犬の休憩としても数えます。</div>
+      <div class="hint">候補は、立ち寄り前のルート(出発地→行き先)から直線30km以内の掲載先(宿・おでかけ)とSA・PA・道の駅です。区分ごとに50音順で選べます（読み未登録の英字名は末尾に表記順）。出発地 → 立ち寄り先（上から順）→ 行き先の順に回ります。距離は直線距離で、実際の走行距離・迂回距離とは異なります。「地域の目安」は市町村などの代表点による概算です。位置未登録の施設は含みません。15分以上の滞在は犬の休憩としても数えます。</div>
     </fieldset>
     <div class="row four">
       <fieldset><label class="t planner-field-label" for="date"><span>出発日</span><small>DATE</small></label><input type="date" id="date" required></fieldset>
@@ -277,23 +276,29 @@
       </div>
       <p class="hint">チェックイン日は上の「出発日」です。犬の条件は、宿が公式に一律の上限(頭数・体重・大きさ)を書いている場合だけ照らし合わせ、それ以外は「要確認」と表示します。</p>
     </details>
-    <button class="primary" id="go" type="submit">出発時刻を比べる</button>
+    <button class="primary" id="go" type="submit">予想時間を出す</button>
   </form>
 
   <div id="error" class="card hidden" role="alert"></div>
 
   <section id="results" class="hidden">
     <div class="card">
-      <h2 id="compare-title">出発時刻ごとの所要時間(目安)</h2>
-      <table><thead><tr id="compare-head"><th>出発</th><th>運転時間</th><th>休憩込みの到着</th><th>渋滞の影響</th></tr></thead><tbody id="compare"></tbody></table>
+      <h2 id="compare-title">出発時刻ごとの予想時間</h2>
+      <table><thead><tr id="compare-head"><th>出発</th><th>運転時間</th><th>到着</th><th>渋滞の影響</th></tr></thead><tbody id="compare"></tbody></table>
       <p class="note" id="compare-note"></p>
     </div>
 
     <div class="card">
-      <h2 id="plan-title">休憩プラン</h2>
+      <h2 id="plan-title">わんこ旅行プラン</h2>
       <div id="plan-warn"></div>
       <ol class="timeline" id="plan"></ol>
       <div class="actions" id="plan-actions"></div>
+    </div>
+
+    <div class="card" id="rest-card">
+      <h2>休憩場所を選ぶ(運転が長い区間だけ)</h2>
+      <p class="note" id="rest-intro"></p>
+      <div id="rest-pick"></div>
     </div>
 
     <div class="card" id="dest-card"></div>
@@ -320,7 +325,7 @@
 </div>
 <!-- 更新したら ?v= の値を変える(ブラウザに古いファイルが残って新しい動作にならないのを防ぐ) -->
 <script src="config.js?v=2026092601"></script>
-<script src="planner.js?v=2026092602"></script>
+<script src="planner.js?v=2026092701"></script>
 <script src="trip-check.js?v=2026092602"></script>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "2847001768a143df87fa4e78edba9c7e"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
