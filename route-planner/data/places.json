@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "source": "https://sorapapa-creator.github.io/wanko-affiliate-guide/",
- "generated_at": "2026-09-26T17:45:57+09:00",
+ "generated_at": "2026-09-26T18:35:32+09:00",
  "places": [
   {
    "id": "la-dog-resort",
@@ -5331,10 +5331,11 @@
    "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
-    "lat": 36.516666,
-    "lon": 138.530289,
-    "matched": "群馬県嬬恋村",
-    "precision": "approximate"
+    "lat": 36.467445,
+    "lon": 138.558395,
+    "precision": "district",
+    "source": "manual",
+    "matched": "群馬県吾妻郡嬬恋村鎌原1453-2 → 住所検索: 群馬県嬬恋村鎌原"
    },
    "area_geocode": {
     "lat": 36.516666,
@@ -5413,18 +5414,17 @@
    "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
-    "lat": 35.240595,
-    "lon": 139.04218,
+    "lat": 35.240471,
+    "lon": 139.0392,
     "precision": "facility",
-    "source": "official-map",
-    "matched": "公式ページの地図"
+    "source": "manual",
+    "matched": "神奈川県足柄下郡箱根町二ノ平1297-269 → 住所検索: 神奈川県箱根町二ノ平１２９７番地"
    },
    "area_geocode": {
     "lat": 35.232388,
     "lon": 139.106949,
     "matched": "神奈川県箱根町",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、同じ市区町村の以前の位置"
+    "precision": "approximate"
    }
   },
   {
@@ -5458,18 +5458,17 @@
    "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
-    "lat": 36.720013,
-    "lon": 139.697617,
-    "matched": "栃木県日光市",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、同じ市区町村の以前の位置"
+    "lat": 36.82272,
+    "lon": 139.71199,
+    "precision": "facility",
+    "source": "manual",
+    "matched": "栃木県日光市鬼怒川温泉大原1422-4 → 住所検索: 栃木県日光市鬼怒川温泉大原１４２２番地"
    },
    "area_geocode": {
     "lat": 36.720013,
     "lon": 139.697617,
     "matched": "栃木県日光市",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、同じ市区町村の以前の位置"
+    "precision": "approximate"
    }
   },
   {
@@ -5505,10 +5504,11 @@
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
-    "lat": 37.655678,
-    "lon": 139.937637,
-    "matched": "福島県北塩原村",
-    "precision": "approximate"
+    "lat": 37.691696,
+    "lon": 140.084763,
+    "precision": "district",
+    "source": "manual",
+    "matched": "福島県耶麻郡北塩原村桧原字蛇平原山1074-186 → 住所検索: 福島県北塩原村桧原"
    },
    "area_geocode": {
     "lat": 37.655678,
@@ -5543,11 +5543,11 @@
    "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
-    "lat": 37.086952,
-    "lon": 140.003043,
+    "lat": 37.083221,
+    "lon": 140.004181,
     "precision": "facility",
-    "source": "official-map",
-    "matched": "公式ページの地図"
+    "source": "official-address",
+    "matched": "栃木県那須町湯本２０３番地"
    },
    "area_geocode": {
     "lat": 37.01976,
@@ -5587,18 +5587,17 @@
    "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
-    "lat": 35.269917,
-    "lon": 139.011475,
+    "lat": 35.267868,
+    "lon": 139.013794,
     "precision": "facility",
-    "source": "official-map",
-    "matched": "公式ページの地図"
+    "source": "manual",
+    "matched": "神奈川県足柄下郡箱根町仙石原885 → 住所検索: 神奈川県箱根町仙石原８８５番地"
    },
    "area_geocode": {
     "lat": 35.232388,
     "lon": 139.106949,
     "matched": "神奈川県箱根町",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、同じ市区町村の以前の位置"
+    "precision": "approximate"
    }
   },
   {
@@ -5676,11 +5675,11 @@
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
-    "lat": 35.524132,
-    "lon": 138.72399,
-    "precision": "facility",
-    "source": "official-map",
-    "matched": "公式ページの地図"
+    "lat": 35.532024,
+    "lon": 138.722153,
+    "precision": "district",
+    "source": "manual",
+    "matched": "山梨県南都留郡富士河口湖町大石2784 → 住所検索: 山梨県富士河口湖町大石"
    },
    "area_geocode": {
     "lat": 35.497223,
@@ -5720,11 +5719,11 @@
    "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
-    "lat": 36.290475,
-    "lon": 140.556318,
+    "lat": 36.297482,
+    "lon": 140.560394,
     "precision": "facility",
-    "source": "official-map",
-    "matched": "公式ページの地図"
+    "source": "manual",
+    "matched": "茨城県東茨城郡大洗町大貫町256-164 → 住所検索: 茨城県大洗町大貫町２５６番地"
    },
    "area_geocode": {
     "lat": 36.313343,
@@ -5771,11 +5770,10 @@
     "matched": "宮城県黒川郡大和町吉田台ヶ森13"
    },
    "area_geocode": {
-    "lat": 38.437384,
-    "lon": 140.88613,
-    "matched": "宮城県大和町(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 38.437382,
+    "lon": 140.886383,
+    "matched": "宮城県大和町",
+    "precision": "municipality"
    }
   },
   {
@@ -5804,18 +5802,17 @@
    "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
-    "lat": 36.070805,
-    "lon": 139.098816,
-    "matched": "埼玉県皆野町",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、同じ市区町村の以前の位置"
+    "lat": 36.086819,
+    "lon": 139.086136,
+    "precision": "district",
+    "source": "official-address",
+    "matched": "埼玉県皆野町国神"
    },
    "area_geocode": {
     "lat": 36.070805,
     "lon": 139.098816,
     "matched": "埼玉県皆野町",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、同じ市区町村の以前の位置"
+    "precision": "approximate"
    }
   },
   {
@@ -5922,18 +5919,17 @@
    "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
-    "lat": 38.426408,
-    "lon": 140.147431,
-    "matched": "山形県西川町(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 38.470078,
+    "lon": 140.001343,
+    "precision": "facility",
+    "source": "official-address",
+    "matched": "山形県西川町月山沢３４７番地"
    },
    "area_geocode": {
-    "lat": 38.426408,
-    "lon": 140.147431,
-    "matched": "山形県西川町(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 38.426502,
+    "lon": 140.147385,
+    "matched": "山形県西川町",
+    "precision": "municipality"
    }
   },
   {
@@ -5971,11 +5967,11 @@
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
-    "lat": 35.530103,
-    "lon": 138.766169,
+    "lat": 35.536369,
+    "lon": 138.765411,
     "precision": "facility",
-    "source": "official-map",
-    "matched": "公式ページの地図"
+    "source": "manual",
+    "matched": "山梨県南都留郡富士河口湖町河口2092 → 住所検索: 山梨県富士河口湖町河口２０９２番地"
    },
    "area_geocode": {
     "lat": 35.497223,
@@ -6010,18 +6006,17 @@
    "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
-    "lat": 35.14179,
-    "lon": 139.088561,
+    "lat": 35.141956,
+    "lon": 139.090027,
     "precision": "facility",
-    "source": "official-map",
-    "matched": "公式ページの地図"
+    "source": "official-address",
+    "matched": "神奈川県湯河原町宮上３２番地"
    },
    "area_geocode": {
-    "lat": 35.147918,
-    "lon": 139.108153,
-    "matched": "神奈川県湯河原町(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 35.147778,
+    "lon": 139.108337,
+    "matched": "神奈川県湯河原町",
+    "precision": "municipality"
    }
   },
   {
@@ -6050,18 +6045,17 @@
    "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
-    "lat": 35.128841,
-    "lon": 139.086661,
+    "lat": 35.126644,
+    "lon": 139.089279,
     "precision": "facility",
-    "source": "official-map",
-    "matched": "公式ページの地図"
+    "source": "official-address",
+    "matched": "静岡県熱海市泉４１１番地"
    },
    "area_geocode": {
-    "lat": 35.096471,
-    "lon": 139.071787,
-    "matched": "静岡県熱海市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 35.096352,
+    "lon": 139.071747,
+    "matched": "静岡県熱海市",
+    "precision": "municipality"
    }
   },
   {
@@ -6092,18 +6086,17 @@
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
-    "lat": 35.076067,
-    "lon": 139.050646,
+    "lat": 35.079288,
+    "lon": 139.051147,
     "precision": "facility",
-    "source": "official-map",
-    "matched": "公式ページの地図"
+    "source": "official-address",
+    "matched": "静岡県熱海市上多賀１０６６番地"
    },
    "area_geocode": {
-    "lat": 35.096471,
-    "lon": 139.071787,
-    "matched": "静岡県熱海市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 35.096352,
+    "lon": 139.071747,
+    "matched": "静岡県熱海市",
+    "precision": "municipality"
    }
   },
   {
@@ -6137,18 +6130,17 @@
    "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
-    "lat": 34.982934,
-    "lon": 138.995222,
-    "precision": "facility",
-    "source": "official-map",
-    "matched": "公式ページの地図"
+    "lat": 34.990841,
+    "lon": 139.004517,
+    "precision": "district",
+    "source": "manual",
+    "matched": "静岡県伊豆市下白岩1431-21 → 住所検索: 静岡県伊豆市下白岩"
    },
    "area_geocode": {
     "lat": 34.97657,
     "lon": 138.946732,
     "matched": "静岡県伊豆市",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、同じ市区町村の以前の位置"
+    "precision": "approximate"
    }
   },
   {
@@ -6191,11 +6183,10 @@
     "matched": "公式ページの地図"
    },
    "area_geocode": {
-    "lat": 35.096471,
-    "lon": 139.071787,
-    "matched": "静岡県熱海市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 35.096352,
+    "lon": 139.071747,
+    "matched": "静岡県熱海市",
+    "precision": "municipality"
    }
   },
   {
@@ -6229,18 +6220,17 @@
    "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
-    "lat": 35.388623,
-    "lon": 140.382849,
+    "lat": 35.387909,
+    "lon": 140.382751,
     "precision": "facility",
-    "source": "official-map",
-    "matched": "公式ページの地図"
+    "source": "manual",
+    "matched": "千葉県長生郡一宮町新地821番地の20 → 住所検索: 千葉県一宮町新地８２１番地"
    },
    "area_geocode": {
-    "lat": 35.372802,
-    "lon": 140.368662,
-    "matched": "千葉県一宮町(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 35.37262,
+    "lon": 140.368652,
+    "matched": "千葉県一宮町",
+    "precision": "municipality"
    }
   },
   {
@@ -6276,11 +6266,11 @@
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
-    "lat": 35.425611,
-    "lon": 138.908111,
+    "lat": 35.436256,
+    "lon": 138.875046,
     "precision": "facility",
-    "source": "official-map",
-    "matched": "公式ページの地図"
+    "source": "manual",
+    "matched": "山梨県南都留郡山中湖村平野295 → 住所検索: 山梨県山中湖村平野２９５番地"
    },
    "area_geocode": {
     "lat": 35.410591,
@@ -6358,11 +6348,11 @@
    "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
-    "lat": 36.475387,
-    "lon": 138.521972,
-    "precision": "facility",
-    "source": "official-map",
-    "matched": "公式ページの地図"
+    "lat": 36.495186,
+    "lon": 138.530502,
+    "precision": "district",
+    "source": "manual",
+    "matched": "群馬県吾妻郡嬬恋村大前細原2277 → 住所検索: 群馬県嬬恋村大前"
    },
    "area_geocode": {
     "lat": 36.516666,
@@ -6404,11 +6394,10 @@
     "matched": "公式ページの地図"
    },
    "area_geocode": {
-    "lat": 36.238976,
-    "lon": 140.352368,
-    "matched": "茨城県小美玉市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 36.239315,
+    "lon": 140.352585,
+    "matched": "茨城県小美玉市",
+    "precision": "municipality"
    }
   },
   {
@@ -6442,18 +6431,17 @@
    "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
-    "lat": 36.757016,
-    "lon": 140.593059,
-    "precision": "facility",
-    "source": "official-map",
-    "matched": "公式ページの地図"
+    "lat": 36.74662,
+    "lon": 140.589966,
+    "precision": "district",
+    "source": "manual",
+    "matched": "茨城県高萩市大能733-2 → 住所検索: 茨城県高萩市大能"
    },
    "area_geocode": {
-    "lat": 36.719977,
-    "lon": 140.715841,
-    "matched": "茨城県高萩市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 36.713673,
+    "lon": 140.709503,
+    "matched": "茨城県高萩市",
+    "precision": "municipality"
    }
   },
   {
@@ -6487,18 +6475,17 @@
    "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
-    "lat": 34.98173,
-    "lon": 139.023231,
+    "lat": 34.982613,
+    "lon": 139.03183,
     "precision": "facility",
-    "source": "official-map",
-    "matched": "公式ページの地図"
+    "source": "manual",
+    "matched": "静岡県伊豆市上白岩2071-307 → 住所検索: 静岡県伊豆市上白岩２０７１番地"
    },
    "area_geocode": {
     "lat": 34.97657,
     "lon": 138.946732,
     "matched": "静岡県伊豆市",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、同じ市区町村の以前の位置"
+    "precision": "approximate"
    }
   },
   {
@@ -6587,11 +6574,10 @@
     "matched": "公式ページの地図"
    },
    "area_geocode": {
-    "lat": 37.255421,
-    "lon": 140.247071,
-    "matched": "福島県天栄村(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 37.255424,
+    "lon": 140.247192,
+    "matched": "福島県天栄村",
+    "precision": "municipality"
    }
   },
   {
@@ -6616,22 +6602,21 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
-    "lat": 36.984564,
-    "lon": 138.801804,
+    "lat": 36.984348,
+    "lon": 138.801529,
     "precision": "facility",
-    "source": "osm",
-    "matched": "丸山温泉　古城館, 石打, 南魚沼市, 新潟県, 949-6372, 日本"
+    "source": "official-address",
+    "matched": "新潟県南魚沼市石打１８７３番地"
    },
    "area_geocode": {
-    "lat": 37.065572,
-    "lon": 138.876099,
-    "matched": "新潟県南魚沼市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 37.065556,
+    "lon": 138.876114,
+    "matched": "新潟県南魚沼市",
+    "precision": "approximate"
    }
   },
   {
@@ -6656,22 +6641,21 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
-    "lat": 37.692846,
-    "lon": 138.820032,
+    "lat": 37.693153,
+    "lon": 138.819229,
     "precision": "facility",
-    "source": "official-map",
-    "matched": "公式ページの地図"
+    "source": "official-address",
+    "matched": "新潟県弥彦村観音寺４９４番地"
    },
    "area_geocode": {
-    "lat": 37.691194,
-    "lon": 138.854969,
-    "matched": "新潟県弥彦村(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 37.691059,
+    "lon": 138.855164,
+    "matched": "新潟県弥彦村",
+    "precision": "municipality"
    }
   },
   {
@@ -6701,22 +6685,20 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 37.025269,
     "lon": 138.253342,
     "matched": "新潟県妙高市",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、同じ市区町村の以前の位置"
+    "precision": "approximate"
    },
    "area_geocode": {
     "lat": 37.025269,
     "lon": 138.253342,
     "matched": "新潟県妙高市",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、同じ市区町村の以前の位置"
+    "precision": "approximate"
    }
   },
   {
@@ -6741,22 +6723,20 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
-    "lat": 37.230327,
-    "lon": 138.961153,
-    "matched": "新潟県魚沼市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 37.236431,
+    "lon": 138.963776,
+    "matched": "新潟県魚沼市",
+    "precision": "approximate"
    },
    "area_geocode": {
-    "lat": 37.230327,
-    "lon": 138.961153,
-    "matched": "新潟県魚沼市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 37.236431,
+    "lon": 138.963776,
+    "matched": "新潟県魚沼市",
+    "precision": "approximate"
    }
   },
   {
@@ -6781,7 +6761,7 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -6795,8 +6775,7 @@
     "lat": 37.76083,
     "lon": 140.474747,
     "matched": "福島県福島市",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、同じ市区町村の以前の位置"
+    "precision": "approximate"
    }
   },
   {
@@ -6826,22 +6805,21 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
-    "lat": 37.841768,
-    "lon": 140.438803,
+    "lat": 37.84177,
+    "lon": 140.438797,
     "precision": "facility",
-    "source": "official-map",
-    "matched": "公式ページの地図"
+    "source": "official-address",
+    "matched": "福島県福島市飯坂町北原２６番地"
    },
    "area_geocode": {
     "lat": 37.76083,
     "lon": 140.474747,
     "matched": "福島県福島市",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、同じ市区町村の以前の位置"
+    "precision": "approximate"
    }
   },
   {
@@ -6871,16 +6849,17 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "large_dog_ok_mention": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
-    "lat": 37.655678,
-    "lon": 139.937637,
-    "matched": "福島県北塩原村",
-    "precision": "approximate"
+    "lat": 37.691696,
+    "lon": 140.084763,
+    "precision": "district",
+    "source": "official-address",
+    "matched": "福島県北塩原村桧原"
    },
    "area_geocode": {
     "lat": 37.655678,
@@ -6916,7 +6895,7 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -6927,11 +6906,10 @@
     "matched": "山形県米沢市小野川町2471"
    },
    "area_geocode": {
-    "lat": 37.921834,
-    "lon": 140.116193,
-    "matched": "山形県米沢市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 37.921867,
+    "lon": 140.116135,
+    "matched": "山形県米沢市",
+    "precision": "approximate"
    }
   },
   {
@@ -6956,7 +6934,7 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -7000,7 +6978,7 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -7011,11 +6989,10 @@
     "matched": "公式ページの地図"
    },
    "area_geocode": {
-    "lat": 38.883589,
-    "lon": 140.339243,
-    "matched": "山形県金山町(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 38.883446,
+    "lon": 140.339417,
+    "matched": "山形県金山町",
+    "precision": "municipality"
    }
   },
   {
@@ -7045,7 +7022,7 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -7056,11 +7033,10 @@
     "matched": "山形県南陽市赤湯温泉988"
    },
    "area_geocode": {
-    "lat": 38.055081,
-    "lon": 140.148113,
-    "matched": "山形県南陽市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 38.055111,
+    "lon": 140.148392,
+    "matched": "山形県南陽市",
+    "precision": "approximate"
    }
   },
   {
@@ -7090,7 +7066,7 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "weight_limit_kg_mentions": [
      10
@@ -7106,11 +7082,10 @@
     "matched": "公式ページの地図"
    },
    "area_geocode": {
-    "lat": 38.380161,
-    "lon": 141.067129,
-    "matched": "宮城県松島町(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 38.380192,
+    "lon": 141.067368,
+    "matched": "宮城県松島町",
+    "precision": "municipality"
    }
   },
   {
@@ -7140,7 +7115,7 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -7151,11 +7126,10 @@
     "matched": "公式ページの地図"
    },
    "area_geocode": {
-    "lat": 36.589891,
-    "lon": 138.840905,
-    "matched": "群馬県中之条町(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 36.589886,
+    "lon": 138.841019,
+    "matched": "群馬県中之条町",
+    "precision": "approximate"
    }
   },
   {
@@ -7185,15 +7159,15 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
-    "lat": 36.449173,
-    "lon": 138.625988,
+    "lat": 36.457584,
+    "lon": 138.569366,
     "precision": "facility",
-    "source": "official-map",
-    "matched": "公式ページの地図"
+    "source": "official-address",
+    "matched": "群馬県長野原町北軽井沢２０３２番地"
    },
    "area_geocode": {
     "lat": 36.544319,
@@ -7229,15 +7203,15 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
-    "lat": 36.627234,
-    "lon": 138.60245,
+    "lat": 36.62767,
+    "lon": 138.604202,
     "precision": "facility",
-    "source": "official-map",
-    "matched": "公式ページの地図"
+    "source": "official-address",
+    "matched": "群馬県草津町草津６１８番地"
    },
    "area_geocode": {
     "lat": 36.620556,
@@ -7273,7 +7247,7 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "weight_limit_kg_mentions": [
      10
@@ -7316,7 +7290,7 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "small_dog_only_mention": true
    },
@@ -7329,11 +7303,10 @@
     "matched": "公式ページの地図"
    },
    "area_geocode": {
-    "lat": 35.450338,
-    "lon": 139.63438,
-    "matched": "神奈川県横浜市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 35.444721,
+    "lon": 139.642227,
+    "matched": "神奈川県横浜市中区",
+    "precision": "approximate"
    }
   },
   {
@@ -7363,24 +7336,23 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "large_dog_ok_mention": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
-    "lat": 35.249098,
-    "lon": 139.027577,
+    "lat": 35.25153,
+    "lon": 139.029388,
     "precision": "facility",
-    "source": "official-map",
-    "matched": "公式ページの地図"
+    "source": "official-address",
+    "matched": "神奈川県箱根町強羅１３２２番地"
    },
    "area_geocode": {
     "lat": 35.232388,
     "lon": 139.106949,
     "matched": "神奈川県箱根町",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、同じ市区町村の以前の位置"
+    "precision": "approximate"
    }
   },
   {
@@ -7410,7 +7382,7 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "weight_limit_kg_mentions": [
      40
@@ -7418,18 +7390,17 @@
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
-    "lat": 35.658712,
-    "lon": 139.750083,
+    "lat": 35.658623,
+    "lon": 139.752335,
     "precision": "facility",
-    "source": "official-map",
-    "matched": "公式ページの地図"
+    "source": "official-address",
+    "matched": "東京都港区芝公園一丁目６番"
    },
    "area_geocode": {
-    "lat": 35.658009,
-    "lon": 139.751514,
-    "matched": "東京都港区(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 35.658054,
+    "lon": 139.751663,
+    "matched": "東京都港区",
+    "precision": "approximate"
    }
   },
   {
@@ -7454,22 +7425,21 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
-    "lat": 35.78394,
-    "lon": 139.255593,
+    "lat": 35.784046,
+    "lon": 139.251373,
     "precision": "facility",
-    "source": "official-map",
-    "matched": "公式ページの地図"
+    "source": "official-address",
+    "matched": "東京都青梅市駒木町三丁目６６８番地"
    },
    "area_geocode": {
-    "lat": 35.788053,
-    "lon": 139.275355,
-    "matched": "東京都青梅市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 35.787956,
+    "lon": 139.275848,
+    "matched": "東京都青梅市",
+    "precision": "municipality"
    }
   },
   {
@@ -7499,7 +7469,7 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -7513,8 +7483,7 @@
     "lat": 36.720013,
     "lon": 139.697617,
     "matched": "栃木県日光市",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、同じ市区町村の以前の位置"
+    "precision": "approximate"
    }
   },
   {
@@ -7539,7 +7508,7 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -7550,11 +7519,10 @@
     "matched": "公式ページの地図"
    },
    "area_geocode": {
-    "lat": 35.608464,
-    "lon": 138.465092,
-    "matched": "山梨県南アルプス市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 35.608334,
+    "lon": 138.464996,
+    "matched": "山梨県南アルプス市",
+    "precision": "municipality"
    }
   },
   {
@@ -7579,7 +7547,7 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -7590,11 +7558,10 @@
     "matched": "キンプトン新宿東京, 7, 西新宿三丁目, 西新宿, 新宿区, 東京都, 160-0023, 日本"
    },
    "area_geocode": {
-    "lat": 35.693763,
-    "lon": 139.703632,
-    "matched": "東京都新宿区(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 35.69389,
+    "lon": 139.703613,
+    "matched": "東京都新宿区",
+    "precision": "approximate"
    }
   },
   {
@@ -7624,22 +7591,21 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
-    "lat": 34.770859,
-    "lon": 137.598793,
+    "lat": 34.771263,
+    "lon": 137.620682,
     "precision": "facility",
-    "source": "official-map",
-    "matched": "公式ページの地図"
+    "source": "official-address",
+    "matched": "静岡県浜松市中央区呉松町１７６８番地"
    },
    "area_geocode": {
-    "lat": 34.710979,
-    "lon": 137.725943,
-    "matched": "静岡県浜松市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 34.710808,
+    "lon": 137.726303,
+    "matched": "静岡県浜松市中央区",
+    "precision": "approximate"
    }
   },
   {
@@ -7669,22 +7635,21 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
-    "lat": 35.552061,
-    "lon": 139.739455,
+    "lat": 35.551849,
+    "lon": 139.739716,
     "precision": "facility",
-    "source": "official-map",
-    "matched": "公式ページの地図"
+    "source": "official-address",
+    "matched": "東京都大田区萩中三丁目６番９号"
    },
    "area_geocode": {
-    "lat": 35.561206,
-    "lon": 139.715843,
-    "matched": "東京都大田区(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 35.561211,
+    "lon": 139.716019,
+    "matched": "東京都大田区",
+    "precision": "approximate"
    }
   },
   {
@@ -7709,7 +7674,7 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "weight_limit_kg_mentions": [
      15
@@ -7721,14 +7686,13 @@
     "lon": 139.760717,
     "precision": "district",
     "source": "manual",
-    "matched": "位置は OpenStreetMap「ザ・ペニンシュラ東京」(2026-09-27)。国土地理院の住所検索が障害中のため"
+    "matched": "位置は OpenStreetMap「ザ・ペニンシュラ東京」(2026-09-26)。国土地理院の住所検索が障害中のため"
    },
    "area_geocode": {
-    "lat": 35.694054,
-    "lon": 139.753501,
-    "matched": "東京都千代田区(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 35.69389,
+    "lon": 139.753616,
+    "matched": "東京都千代田区",
+    "precision": "approximate"
    }
   },
   {
@@ -7753,7 +7717,7 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -7764,11 +7728,10 @@
     "matched": "公式ページの地図"
    },
    "area_geocode": {
-    "lat": 35.096471,
-    "lon": 139.071787,
-    "matched": "静岡県熱海市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 35.096352,
+    "lon": 139.071747,
+    "matched": "静岡県熱海市",
+    "precision": "municipality"
    }
   },
   {
@@ -7793,7 +7756,7 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "weight_limit_kg_mentions": [
      20
@@ -7811,8 +7774,7 @@
     "lat": 36.720013,
     "lon": 139.697617,
     "matched": "栃木県日光市",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、同じ市区町村の以前の位置"
+    "precision": "approximate"
    }
   },
   {
@@ -7837,7 +7799,7 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "weight_limit_kg_mentions": [
      20
@@ -7845,18 +7807,17 @@
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
-    "lat": 35.308417,
-    "lon": 139.488721,
+    "lat": 35.30748,
+    "lon": 139.548645,
     "precision": "facility",
-    "source": "official-map",
-    "matched": "公式ページの地図"
+    "source": "official-address",
+    "matched": "神奈川県鎌倉市材木座五丁目１０番４４号"
    },
    "area_geocode": {
-    "lat": 35.319281,
-    "lon": 139.546963,
-    "matched": "神奈川県鎌倉市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 35.319225,
+    "lon": 139.546936,
+    "matched": "神奈川県鎌倉市",
+    "precision": "approximate"
    }
   },
   {
@@ -7886,7 +7847,7 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "weight_limit_kg_mentions": [
      25
@@ -7894,18 +7855,17 @@
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
-    "lat": 35.888506,
-    "lon": 140.495247,
+    "lat": 35.888279,
+    "lon": 140.495453,
     "precision": "facility",
-    "source": "official-map",
-    "matched": "公式ページの地図"
+    "source": "official-address",
+    "matched": "千葉県香取市佐原イ１７０８番地"
    },
    "area_geocode": {
-    "lat": 35.897827,
-    "lon": 140.499279,
-    "matched": "千葉県香取市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 35.897739,
+    "lon": 140.499298,
+    "matched": "千葉県香取市",
+    "precision": "approximate"
    }
   },
   {
@@ -12331,11 +12291,10 @@
     "matched": "国営昭和記念公園, 立川市, 東京都, 日本"
    },
    "area_geocode": {
-    "lat": 35.713906,
-    "lon": 139.40777,
-    "matched": "東京都立川市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 35.71389,
+    "lon": 139.407776,
+    "matched": "東京都立川市",
+    "precision": "approximate"
    }
   },
   {
@@ -12369,18 +12328,17 @@
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c2-tobu-world-square",
    "geocode": {
-    "lat": 36.807501,
-    "lon": 139.711938,
+    "lat": 36.808903,
+    "lon": 139.710449,
     "precision": "facility",
-    "source": "osm",
-    "matched": "東武ワールドスクウェア, 209-1, 会津西街道, 小佐越, 日光市, 栃木県, 321-2522, 日本"
+    "source": "official-address",
+    "matched": "栃木県日光市鬼怒川温泉大原２０９番地"
    },
    "area_geocode": {
     "lat": 36.720013,
     "lon": 139.697617,
     "matched": "栃木県日光市",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、同じ市区町村の以前の位置"
+    "precision": "approximate"
    }
   },
   {
@@ -12418,11 +12376,11 @@
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c2-ikaho-green-bokujo",
    "geocode": {
-    "lat": 36.488764,
-    "lon": 138.961975,
+    "lat": 36.49947,
+    "lon": 138.944336,
     "precision": "facility",
-    "source": "official-map",
-    "matched": "公式ページの地図"
+    "source": "official-address",
+    "matched": "群馬県渋川市金井２８４４番地"
    },
    "area_geocode": {
     "lat": 36.489445,
@@ -12468,18 +12426,17 @@
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c2-mishima-skywalk",
    "geocode": {
-    "lat": 35.152451,
-    "lon": 138.980559,
-    "precision": "facility",
-    "source": "osm",
-    "matched": "三島スカイウォーク, 三島市, 静岡県, 411-0012, 日本"
+    "lat": 35.145847,
+    "lon": 138.979233,
+    "precision": "district",
+    "source": "manual",
+    "matched": "静岡県三島市笹原新田313 → 住所検索: 静岡県三島市笹原新田"
    },
    "area_geocode": {
-    "lat": 35.118538,
-    "lon": 138.918444,
-    "matched": "静岡県三島市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 35.118507,
+    "lon": 138.918564,
+    "matched": "静岡県三島市",
+    "precision": "municipality"
    }
   },
   {
@@ -12519,18 +12476,17 @@
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c2-gunma-flowerpark",
    "geocode": {
-    "lat": 36.456107,
-    "lon": 139.16838,
+    "lat": 36.456093,
+    "lon": 139.175903,
     "precision": "facility",
-    "source": "official-map",
-    "matched": "公式ページの地図"
+    "source": "manual",
+    "matched": "群馬県前橋市柏倉町2471-7 → 住所検索: 群馬県前橋市柏倉町２４７１番地"
    },
    "area_geocode": {
     "lat": 36.389462,
     "lon": 139.063461,
     "matched": "群馬県前橋市",
-    "precision": "approximate",
-    "note": "住所検索の停止中のため、同じ市区町村の以前の位置"
+    "precision": "municipality"
    }
   },
   {
@@ -12565,18 +12521,16 @@
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c2-yatsugatake-wanko-niwa",
    "geocode": {
-    "lat": 35.970023,
-    "lon": 138.243864,
-    "matched": "長野県原村(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 35.964363,
+    "lon": 138.217499,
+    "matched": "長野県原村",
+    "precision": "municipality"
    },
    "area_geocode": {
-    "lat": 35.970023,
-    "lon": 138.243864,
-    "matched": "長野県原村(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 35.964363,
+    "lon": 138.217499,
+    "matched": "長野県原村",
+    "precision": "municipality"
    }
   },
   {
@@ -12614,15 +12568,13 @@
     "lat": 35.776493,
     "lon": 138.42363,
     "matched": "山梨県北杜市",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、同じ市区町村の以前の位置"
+    "precision": "approximate"
    },
    "area_geocode": {
     "lat": 35.776493,
     "lon": 138.42363,
     "matched": "山梨県北杜市",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、同じ市区町村の以前の位置"
+    "precision": "approximate"
    }
   },
   {
@@ -12661,18 +12613,17 @@
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c2-komagatake-ropeway",
    "geocode": {
-    "lat": 35.212989,
-    "lon": 139.009486,
+    "lat": 35.211807,
+    "lon": 139.009964,
     "precision": "facility",
-    "source": "official-map",
-    "matched": "公式ページの地図"
+    "source": "manual",
+    "matched": "神奈川県足柄下郡箱根町元箱根139 → 住所検索: 神奈川県箱根町元箱根１３９番地"
    },
    "area_geocode": {
     "lat": 35.232388,
     "lon": 139.106949,
     "matched": "神奈川県箱根町",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、同じ市区町村の以前の位置"
+    "precision": "approximate"
    }
   },
   {
@@ -12762,8 +12713,7 @@
     "lat": 35.497223,
     "lon": 138.755005,
     "matched": "山梨県富士河口湖町",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、同じ市区町村の以前の位置"
+    "precision": "approximate"
    }
   },
   {
@@ -12803,18 +12753,17 @@
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c2-makiba-park",
    "geocode": {
-    "lat": 35.776493,
-    "lon": 138.42363,
-    "matched": "山梨県北杜市",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、同じ市区町村の以前の位置"
+    "lat": 35.906494,
+    "lon": 138.402512,
+    "precision": "district",
+    "source": "manual",
+    "matched": "山梨県北杜市大泉町西井出8240-1 → 住所検索: 山梨県北杜市大泉町西井出"
    },
    "area_geocode": {
     "lat": 35.776493,
     "lon": 138.42363,
     "matched": "山梨県北杜市",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、同じ市区町村の以前の位置"
+    "precision": "approximate"
    }
   },
   {
@@ -12901,10 +12850,11 @@
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c2-onioshidashi",
    "geocode": {
-    "lat": 36.516666,
-    "lon": 138.530289,
-    "matched": "群馬県嬬恋村",
-    "precision": "approximate"
+    "lat": 36.467445,
+    "lon": 138.558395,
+    "precision": "district",
+    "source": "manual",
+    "matched": "群馬県吾妻郡嬬恋村鎌原1053 → 住所検索: 群馬県嬬恋村鎌原"
    },
    "area_geocode": {
     "lat": 36.516666,
@@ -12945,18 +12895,17 @@
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c2-mobility-resort-motegi",
    "geocode": {
-    "lat": 36.531362,
-    "lon": 140.229449,
+    "lat": 36.533199,
+    "lon": 140.227432,
     "precision": "facility",
-    "source": "osm",
-    "matched": "モビリティリゾートもてぎ, 水戸茂木線, 大字青梅, 茂木町, 芳賀郡, 栃木県, 日本"
+    "source": "official-address",
+    "matched": "栃木県茂木町桧山１２０番地"
    },
    "area_geocode": {
-    "lat": 36.532164,
-    "lon": 140.187406,
-    "matched": "栃木県茂木町(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 36.532135,
+    "lon": 140.187576,
+    "matched": "栃木県茂木町",
+    "precision": "municipality"
    }
   },
   {
@@ -12995,10 +12944,11 @@
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c2-mtfuji-panorama-ropeway",
    "geocode": {
-    "lat": 35.497223,
-    "lon": 138.755005,
-    "matched": "山梨県富士河口湖町",
-    "precision": "municipality"
+    "lat": 35.504707,
+    "lon": 138.7724,
+    "precision": "facility",
+    "source": "manual",
+    "matched": "山梨県南都留郡富士河口湖町浅川1163-1 → 住所検索: 山梨県富士河口湖町浅川１１６３番地"
    },
    "area_geocode": {
     "lat": 35.497223,
@@ -13038,11 +12988,11 @@
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c2-nasu-garden-outlet",
    "geocode": {
-    "lat": 36.966676,
-    "lon": 139.960536,
+    "lat": 36.965893,
+    "lon": 139.991364,
     "precision": "facility",
-    "source": "official-map",
-    "matched": "公式ページの地図"
+    "source": "official-address",
+    "matched": "栃木県那須塩原市塩野崎１８４番地"
    },
    "area_geocode": {
     "lat": 36.961666,
@@ -13087,18 +13037,17 @@
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c2-gotemba-po",
    "geocode": {
-    "lat": 35.307792,
-    "lon": 138.965083,
+    "lat": 35.307503,
+    "lon": 138.963104,
     "precision": "facility",
-    "source": "osm",
-    "matched": "御殿場プレミアム・アウトレット, 深沢, 御殿場市, 静岡県, 412-0023, 日本"
+    "source": "manual",
+    "matched": "静岡県御殿場市深沢1312 → 住所検索: 静岡県御殿場市深沢１３１２番地"
    },
    "area_geocode": {
     "lat": 35.308693,
     "lon": 138.934601,
     "matched": "静岡県御殿場市",
-    "precision": "approximate",
-    "note": "住所検索の停止中のため、同じ市区町村の以前の位置"
+    "precision": "municipality"
    }
   },
   {
@@ -13138,18 +13087,17 @@
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c2-sano-po",
    "geocode": {
-    "lat": 36.293223,
-    "lon": 139.604924,
+    "lat": 36.292492,
+    "lon": 139.604828,
     "precision": "facility",
-    "source": "osm",
-    "matched": "佐野プレミアム・アウトレット, 佐野バイパス, 越名町, 佐野市, 栃木県, 327-0826, 日本"
+    "source": "manual",
+    "matched": "栃木県佐野市越名町2058 → 住所検索: 栃木県佐野市越名町２０５８番"
    },
    "area_geocode": {
     "lat": 36.314484,
     "lon": 139.578415,
     "matched": "栃木県佐野市",
-    "precision": "approximate",
-    "note": "住所検索の停止中のため、同じ市区町村の以前の位置"
+    "precision": "municipality"
    }
   },
   {
@@ -13188,18 +13136,17 @@
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c2-shisui-po",
    "geocode": {
-    "lat": 35.713694,
-    "lon": 140.29307,
+    "lat": 35.714443,
+    "lon": 140.290268,
     "precision": "facility",
-    "source": "osm",
-    "matched": "酒々井プレミアム・アウトレット, 1, 飯積二丁目, 飯積, 酒々井町, 印旛郡, 千葉県, 285-0912, 日本"
+    "source": "manual",
+    "matched": "千葉県印旛郡酒々井町飯積2-4-1 → 住所検索: 千葉県酒々井町飯積２番地"
    },
    "area_geocode": {
-    "lat": 35.723712,
-    "lon": 140.269955,
-    "matched": "千葉県酒々井町(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 35.724865,
+    "lon": 140.269562,
+    "matched": "千葉県酒々井町",
+    "precision": "municipality"
    }
   },
   {
@@ -13238,18 +13185,17 @@
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c2-ami-po",
    "geocode": {
-    "lat": 35.984158,
-    "lon": 140.237683,
+    "lat": 35.98362,
+    "lon": 140.237854,
     "precision": "facility",
-    "source": "osm",
-    "matched": "あみプレミアム・アウトレット, 竜ヶ崎阿見線, よしわら一丁目, 吉原, 阿見町, 稲敷郡, 茨城県, 300-1288, 日本"
+    "source": "manual",
+    "matched": "茨城県稲敷郡阿見町よしわら4-1-1 → 住所検索: 茨城県阿見町よしわら四丁目１番地"
    },
    "area_geocode": {
-    "lat": 36.030794,
-    "lon": 140.213603,
-    "matched": "茨城県阿見町(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 36.03083,
+    "lon": 140.215012,
+    "matched": "茨城県阿見町",
+    "precision": "municipality"
    }
   },
   {
@@ -13283,11 +13229,11 @@
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c2-zao-chuo-ropeway",
    "geocode": {
-    "lat": 38.164772,
-    "lon": 140.395976,
+    "lat": 38.164078,
+    "lon": 140.393845,
     "precision": "facility",
-    "source": "official-map",
-    "matched": "公式ページの地図"
+    "source": "official-address",
+    "matched": "山形県山形市蔵王温泉９４０番地"
    },
    "area_geocode": {
     "lat": 38.255459,
@@ -13332,18 +13278,17 @@
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c2-yahiko-ropeway",
    "geocode": {
-    "lat": 37.691194,
-    "lon": 138.854969,
-    "matched": "新潟県弥彦村(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 37.711849,
+    "lon": 138.819626,
+    "precision": "facility",
+    "source": "manual",
+    "matched": "新潟県西蒲原郡弥彦村弥彦2898 → 住所検索: 新潟県弥彦村弥彦２８９８番地"
    },
    "area_geocode": {
-    "lat": 37.691194,
-    "lon": 138.854969,
-    "matched": "新潟県弥彦村(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 37.691059,
+    "lon": 138.855164,
+    "matched": "新潟県弥彦村",
+    "precision": "municipality"
    }
   },
   {
@@ -13430,11 +13375,10 @@
     "matched": "公式ページの地図"
    },
    "area_geocode": {
-    "lat": 35.284792,
-    "lon": 140.24526,
-    "matched": "千葉県大多喜町(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 35.285179,
+    "lon": 140.245407,
+    "matched": "千葉県大多喜町",
+    "precision": "municipality"
    }
   },
   {
@@ -13474,11 +13418,11 @@
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c2-tsukuba-wanwanland",
    "geocode": {
-    "lat": 36.203413,
-    "lon": 140.075123,
-    "precision": "facility",
-    "source": "osm",
-    "matched": "つくばわんわんランド, 筑西つくば線, 沼田, つくば市, 茨城県, 300-4212, 日本"
+    "lat": 36.206661,
+    "lon": 140.086685,
+    "precision": "district",
+    "source": "manual",
+    "matched": "茨城県つくば市沼田579 → 住所検索: 茨城県つくば市沼田"
    },
    "area_geocode": {
     "lat": 36.083611,
@@ -13527,11 +13471,10 @@
     "matched": "公式ページの地図"
    },
    "area_geocode": {
-    "lat": 35.089015,
-    "lon": 138.953393,
-    "matched": "静岡県函南町(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 35.08889,
+    "lon": 138.953339,
+    "matched": "静岡県函南町",
+    "precision": "approximate"
    }
   },
   {
@@ -13573,11 +13516,10 @@
     "matched": "公式ページの地図"
    },
    "area_geocode": {
-    "lat": 35.281478,
-    "lon": 139.67196,
-    "matched": "神奈川県横須賀市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 35.281467,
+    "lon": 139.672226,
+    "matched": "神奈川県横須賀市",
+    "precision": "municipality"
    }
   },
   {
@@ -13617,18 +13559,17 @@
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c2-kurihama-hananokuni",
    "geocode": {
-    "lat": 35.217266,
-    "lon": 139.701355,
+    "lat": 35.224331,
+    "lon": 139.700729,
     "precision": "facility",
-    "source": "official-map",
-    "matched": "公式ページの地図"
+    "source": "manual",
+    "matched": "神奈川県横須賀市神明町1 → 住所検索: 神奈川県横須賀市神明町１番地"
    },
    "area_geocode": {
-    "lat": 35.281478,
-    "lon": 139.67196,
-    "matched": "神奈川県横須賀市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 35.281467,
+    "lon": 139.672226,
+    "matched": "神奈川県横須賀市",
+    "precision": "municipality"
    }
   },
   {
@@ -13668,18 +13609,17 @@
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c2-komuroyama-misora",
    "geocode": {
-    "lat": 34.965832,
-    "lon": 139.101944,
-    "matched": "静岡県伊東市",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、同じ市区町村の以前の位置"
+    "lat": 34.939922,
+    "lon": 139.130157,
+    "precision": "facility",
+    "source": "manual",
+    "matched": "静岡県伊東市川奈1428 → 住所検索: 静岡県伊東市川奈１４２８番地"
    },
    "area_geocode": {
     "lat": 34.965832,
     "lon": 139.101944,
     "matched": "静岡県伊東市",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、同じ市区町村の以前の位置"
+    "precision": "approximate"
    }
   },
   {
@@ -13818,11 +13758,10 @@
     "matched": "公式ページの地図"
    },
    "area_geocode": {
-    "lat": 35.54668,
-    "lon": 139.4387,
-    "matched": "東京都町田市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 35.546604,
+    "lon": 139.438644,
+    "matched": "東京都町田市",
+    "precision": "municipality"
    }
   },
   {
@@ -13920,8 +13859,7 @@
     "lat": 35.991596,
     "lon": 139.085251,
     "matched": "埼玉県秩父市",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、同じ市区町村の以前の位置"
+    "precision": "approximate"
    }
   },
   {
@@ -13968,11 +13906,10 @@
     "matched": "宮城県柴田郡川崎町大字小野字二本松53-9"
    },
    "area_geocode": {
-    "lat": 38.1814275,
-    "lon": 140.6669364,
-    "precision": "district",
-    "source": "manual",
-    "matched": "宮城県柴田郡川崎町大字小野字二本松53-9"
+    "lat": 38.177757,
+    "lon": 140.643158,
+    "matched": "宮城県柴田郡川崎町",
+    "precision": "municipality"
    }
   },
   {
@@ -14096,24 +14033,22 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c3-johoku-chuo-dogrun",
    "geocode": {
-    "lat": 35.750644,
-    "lon": 139.616265,
-    "matched": "東京都練馬区(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 35.735641,
+    "lon": 139.65184,
+    "matched": "東京都練馬区",
+    "precision": "approximate"
    },
    "area_geocode": {
-    "lat": 35.750644,
-    "lon": 139.616265,
-    "matched": "東京都練馬区(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 35.735641,
+    "lon": 139.65184,
+    "matched": "東京都練馬区",
+    "precision": "approximate"
    }
   },
   {
@@ -14142,24 +14077,23 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c3-shinyoko-park-dogrun",
    "geocode": {
-    "lat": 35.511259,
-    "lon": 139.604831,
+    "lat": 35.51012,
+    "lon": 139.606674,
     "precision": "facility",
-    "source": "osm",
-    "matched": "新横浜公園, 首都高速神奈川7号横浜北線, 新羽町, 港北区, 横浜市, 神奈川県, 223-0057, 日本"
+    "source": "official-address",
+    "matched": "神奈川県横浜市港北区小机町３３００番地"
    },
    "area_geocode": {
-    "lat": 35.450338,
-    "lon": 139.63438,
-    "matched": "神奈川県横浜市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 35.518982,
+    "lon": 139.633011,
+    "matched": "神奈川県横浜市港北区",
+    "precision": "municipality"
    }
   },
   {
@@ -14188,24 +14122,23 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c3-honmoku-sancho-dogrun",
    "geocode": {
-    "lat": 35.425109,
-    "lon": 139.659603,
+    "lat": 35.426319,
+    "lon": 139.663193,
     "precision": "facility",
-    "source": "official-map",
-    "matched": "公式ページの地図"
+    "source": "official-address",
+    "matched": "神奈川県横浜市中区和田山１番"
    },
    "area_geocode": {
-    "lat": 35.450338,
-    "lon": 139.63438,
-    "matched": "神奈川県横浜市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 35.444721,
+    "lon": 139.642227,
+    "matched": "神奈川県横浜市中区",
+    "precision": "municipality"
    }
   },
   {
@@ -14234,7 +14167,7 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "has_rain_note": true
    },
@@ -14244,14 +14177,13 @@
     "lon": 139.474296,
     "precision": "district",
     "source": "manual",
-    "matched": "位置は OpenStreetMap「所沢航空記念公園」(2026-09-27)。国土地理院の住所検索が障害中のため"
+    "matched": "位置は OpenStreetMap「所沢航空記念公園」(2026-09-26)。国土地理院の住所検索が障害中のため"
    },
    "area_geocode": {
-    "lat": 35.798718,
-    "lon": 139.469676,
-    "matched": "埼玉県所沢市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 35.799648,
+    "lon": 139.468704,
+    "matched": "埼玉県所沢市",
+    "precision": "municipality"
    }
   },
   {
@@ -14280,7 +14212,7 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "weight_limit_kg_mentions": [
      15
@@ -14289,18 +14221,17 @@
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c3-dog-park-inage",
    "geocode": {
-    "lat": 35.618057,
-    "lon": 140.064578,
+    "lat": 35.62006,
+    "lon": 140.059479,
     "precision": "facility",
-    "source": "official-map",
-    "matched": "公式ページの地図"
+    "source": "official-address",
+    "matched": "千葉県千葉市美浜区高浜七丁目２番"
    },
    "area_geocode": {
-    "lat": 35.607063,
-    "lon": 140.106265,
-    "matched": "千葉県千葉市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 35.640453,
+    "lon": 140.06311,
+    "matched": "千葉県千葉市美浜区",
+    "precision": "municipality"
    }
   },
   {
@@ -14334,7 +14265,7 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "has_rain_note": true
    },
@@ -14347,11 +14278,10 @@
     "matched": "Mother's Cafe, 若宮大路, 由比ガ浜四丁目, 長谷, 鎌倉市, 神奈川県, 248-0016, 日本"
    },
    "area_geocode": {
-    "lat": 35.319281,
-    "lon": 139.546963,
-    "matched": "神奈川県鎌倉市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 35.319225,
+    "lon": 139.546936,
+    "matched": "神奈川県鎌倉市",
+    "precision": "approximate"
    }
   },
   {
@@ -14384,24 +14314,23 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c3-dogcafe-moimoi",
    "geocode": {
-    "lat": 35.281286,
-    "lon": 139.169387,
+    "lat": 35.281364,
+    "lon": 139.169037,
     "precision": "facility",
-    "source": "official-map",
-    "matched": "公式ページの地図"
+    "source": "official-address",
+    "matched": "神奈川県小田原市飯泉７４０番地"
    },
    "area_geocode": {
-    "lat": 35.26453,
-    "lon": 139.152246,
-    "matched": "神奈川県小田原市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 35.264725,
+    "lon": 139.152222,
+    "matched": "神奈川県小田原市",
+    "precision": "municipality"
    }
   },
   {
@@ -14430,7 +14359,7 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "has_rain_note": true
    },
@@ -14443,11 +14372,10 @@
     "matched": "公式ページの地図"
    },
    "area_geocode": {
-    "lat": 35.335061,
-    "lon": 139.349435,
-    "matched": "神奈川県平塚市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 35.335224,
+    "lon": 139.349579,
+    "matched": "神奈川県平塚市",
+    "precision": "approximate"
    }
   },
   {
@@ -14480,24 +14408,22 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c3-doubledoors-shichirigahama",
    "geocode": {
-    "lat": 35.319281,
-    "lon": 139.546963,
-    "matched": "神奈川県鎌倉市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 35.319225,
+    "lon": 139.546936,
+    "matched": "神奈川県鎌倉市",
+    "precision": "approximate"
    },
    "area_geocode": {
-    "lat": 35.319281,
-    "lon": 139.546963,
-    "matched": "神奈川県鎌倉市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 35.319225,
+    "lon": 139.546936,
+    "matched": "神奈川県鎌倉市",
+    "precision": "approximate"
    }
   },
   {
@@ -14531,24 +14457,23 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c3-cafe-remy-hiratsuka",
    "geocode": {
-    "lat": 35.365378,
-    "lon": 139.286077,
+    "lat": 35.365444,
+    "lon": 139.286331,
     "precision": "facility",
-    "source": "official-map",
-    "matched": "公式ページの地図"
+    "source": "official-address",
+    "matched": "神奈川県平塚市北金目二丁目８番"
    },
    "area_geocode": {
-    "lat": 35.335061,
-    "lon": 139.349435,
-    "matched": "神奈川県平塚市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 35.335224,
+    "lon": 139.349579,
+    "matched": "神奈川県平塚市",
+    "precision": "approximate"
    }
   },
   {
@@ -14577,7 +14502,7 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "has_rain_note": true
    },
@@ -14593,8 +14518,7 @@
     "lat": 36.303944,
     "lon": 137.905777,
     "matched": "長野県安曇野市",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、同じ市区町村の以前の位置"
+    "precision": "approximate"
    }
   },
   {
@@ -14627,7 +14551,7 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "has_rain_note": true
    },
@@ -14643,8 +14567,7 @@
     "lat": 36.648537,
     "lon": 138.194824,
     "matched": "長野県長野市",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、同じ市区町村の以前の位置"
+    "precision": "approximate"
    }
   },
   {
@@ -14677,24 +14600,23 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c3-sunny-terrace-nagano",
    "geocode": {
-    "lat": 36.648537,
-    "lon": 138.194824,
-    "matched": "長野県長野市",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、同じ市区町村の以前の位置"
+    "lat": 36.685085,
+    "lon": 138.239822,
+    "precision": "district",
+    "source": "official-address",
+    "matched": "長野県長野市西三才"
    },
    "area_geocode": {
     "lat": 36.648537,
     "lon": 138.194824,
     "matched": "長野県長野市",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、同じ市区町村の以前の位置"
+    "precision": "approximate"
    }
   },
   {
@@ -14727,24 +14649,23 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c3-pet-wizard-cafe-ueda",
    "geocode": {
-    "lat": 36.409147,
-    "lon": 138.24056,
+    "lat": 36.409027,
+    "lon": 138.240753,
     "precision": "facility",
-    "source": "official-map",
-    "matched": "公式ページの地図"
+    "source": "official-address",
+    "matched": "長野県上田市常磐城二丁目７番２７号"
    },
    "area_geocode": {
-    "lat": 36.402119,
-    "lon": 138.249051,
-    "matched": "長野県上田市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 36.401978,
+    "lon": 138.248672,
+    "matched": "長野県上田市",
+    "precision": "approximate"
    }
   },
   {
@@ -14773,24 +14694,22 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c3-ris-cafe-moka",
    "geocode": {
-    "lat": 36.440774,
-    "lon": 140.012528,
-    "matched": "栃木県真岡市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 36.440514,
+    "lon": 140.012451,
+    "matched": "栃木県真岡市",
+    "precision": "municipality"
    },
    "area_geocode": {
-    "lat": 36.440774,
-    "lon": 140.012528,
-    "matched": "栃木県真岡市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 36.440514,
+    "lon": 140.012451,
+    "matched": "栃木県真岡市",
+    "precision": "municipality"
    }
   },
   {
@@ -14818,7 +14737,7 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "has_rain_note": true
    },
@@ -14834,8 +14753,7 @@
     "lat": 37.01976,
     "lon": 140.121017,
     "matched": "栃木県那須町",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、同じ市区町村の以前の位置"
+    "precision": "approximate"
    }
   },
   {
@@ -14869,24 +14787,23 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c3-richfield-kanuma",
    "geocode": {
-    "lat": 36.568228,
-    "lon": 139.745778,
-    "matched": "栃木県鹿沼市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 36.603119,
+    "lon": 139.732391,
+    "precision": "facility",
+    "source": "official-address",
+    "matched": "栃木県鹿沼市富岡８５０番地"
    },
    "area_geocode": {
-    "lat": 36.568228,
-    "lon": 139.745778,
-    "matched": "栃木県鹿沼市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 36.566681,
+    "lon": 139.745041,
+    "matched": "栃木県鹿沼市",
+    "precision": "approximate"
    }
   },
   {
@@ -14915,24 +14832,22 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c3-onelove-mibu",
    "geocode": {
-    "lat": 36.427355,
-    "lon": 139.804682,
-    "matched": "栃木県壬生町(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 36.442177,
+    "lon": 139.814667,
+    "matched": "栃木県壬生町",
+    "precision": "municipality"
    },
    "area_geocode": {
-    "lat": 36.427355,
-    "lon": 139.804682,
-    "matched": "栃木県壬生町(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 36.442177,
+    "lon": 139.814667,
+    "matched": "栃木県壬生町",
+    "precision": "municipality"
    }
   },
   {
@@ -14960,24 +14875,22 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c3-cafe-green-johnson",
    "geocode": {
-    "lat": 35.835814,
-    "lon": 139.390929,
-    "matched": "埼玉県入間市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 35.835835,
+    "lon": 139.391113,
+    "matched": "埼玉県入間市",
+    "precision": "approximate"
    },
    "area_geocode": {
-    "lat": 35.835814,
-    "lon": 139.390929,
-    "matched": "埼玉県入間市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 35.835835,
+    "lon": 139.391113,
+    "matched": "埼玉県入間市",
+    "precision": "approximate"
    }
   },
   {
@@ -15011,24 +14924,22 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c3-hodaka-dogrun-n36",
    "geocode": {
-    "lat": 36.002894,
-    "lon": 139.558342,
-    "matched": "埼玉県桶川市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 36.002766,
+    "lon": 139.55838,
+    "matched": "埼玉県桶川市",
+    "precision": "approximate"
    },
    "area_geocode": {
-    "lat": 36.002894,
-    "lon": 139.558342,
-    "matched": "埼玉県桶川市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 36.002766,
+    "lon": 139.55838,
+    "matched": "埼玉県桶川市",
+    "precision": "approximate"
    }
   },
   {
@@ -15063,24 +14974,23 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c3-fukurou-no-mori",
    "geocode": {
-    "lat": 36.056417,
-    "lon": 139.320248,
-    "matched": "埼玉県嵐山町(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 36.021027,
+    "lon": 139.31572,
+    "precision": "district",
+    "source": "official-address",
+    "matched": "埼玉県嵐山町鎌形"
    },
    "area_geocode": {
-    "lat": 36.056417,
-    "lon": 139.320248,
-    "matched": "埼玉県嵐山町(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 36.056549,
+    "lon": 139.320633,
+    "matched": "埼玉県嵐山町",
+    "precision": "approximate"
    }
   },
   {
@@ -15108,24 +15018,23 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c3-wacafe-muu-kawagoe",
    "geocode": {
-    "lat": 35.925114,
-    "lon": 139.485693,
-    "matched": "埼玉県川越市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 35.919605,
+    "lon": 139.486374,
+    "precision": "facility",
+    "source": "official-address",
+    "matched": "埼玉県川越市久保町２番地"
    },
    "area_geocode": {
-    "lat": 35.925114,
-    "lon": 139.485693,
-    "matched": "埼玉県川越市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 35.925098,
+    "lon": 139.485825,
+    "matched": "埼玉県川越市",
+    "precision": "approximate"
    }
   },
   {
@@ -15159,24 +15068,22 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c3-wankuru-saitama",
    "geocode": {
-    "lat": 35.861614,
-    "lon": 139.645567,
-    "matched": "埼玉県さいたま市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 35.856171,
+    "lon": 139.610321,
+    "matched": "埼玉県さいたま市桜区",
+    "precision": "municipality"
    },
    "area_geocode": {
-    "lat": 35.861614,
-    "lon": 139.645567,
-    "matched": "埼玉県さいたま市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 35.856171,
+    "lon": 139.610321,
+    "matched": "埼玉県さいたま市桜区",
+    "precision": "municipality"
    }
   },
   {
@@ -15209,24 +15116,22 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c3-shiroinu-cafe",
    "geocode": {
-    "lat": 35.787267,
-    "lon": 139.904904,
-    "matched": "千葉県松戸市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 35.787666,
+    "lon": 139.903198,
+    "matched": "千葉県松戸市",
+    "precision": "approximate"
    },
    "area_geocode": {
-    "lat": 35.787267,
-    "lon": 139.904904,
-    "matched": "千葉県松戸市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 35.787666,
+    "lon": 139.903198,
+    "matched": "千葉県松戸市",
+    "precision": "approximate"
    }
   },
   {
@@ -15255,7 +15160,7 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "has_rain_note": true
    },
@@ -15268,11 +15173,10 @@
     "matched": "公式ページの地図"
    },
    "area_geocode": {
-    "lat": 35.787267,
-    "lon": 139.904904,
-    "matched": "千葉県松戸市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 35.787666,
+    "lon": 139.903198,
+    "matched": "千葉県松戸市",
+    "precision": "approximate"
    }
   },
   {
@@ -15300,24 +15204,23 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c3-sashiros-cafe",
    "geocode": {
-    "lat": 35.602943,
-    "lon": 140.413544,
-    "matched": "千葉県山武市",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、同じ市区町村の以前の位置"
+    "lat": 35.59346,
+    "lon": 140.511261,
+    "precision": "district",
+    "source": "official-address",
+    "matched": "千葉県山武市蓮沼ホ"
    },
    "area_geocode": {
     "lat": 35.602943,
     "lon": 140.413544,
     "matched": "千葉県山武市",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、同じ市区町村の以前の位置"
+    "precision": "approximate"
    }
   },
   {
@@ -15345,24 +15248,23 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c3-cote-cafe-chiba",
    "geocode": {
-    "lat": 35.622691,
-    "lon": 140.133021,
+    "lat": 35.622448,
+    "lon": 140.13768,
     "precision": "facility",
-    "source": "official-map",
-    "matched": "公式ページの地図"
+    "source": "official-address",
+    "matched": "千葉県千葉市若葉区高品町２５０番地"
    },
    "area_geocode": {
-    "lat": 35.607063,
-    "lon": 140.106265,
-    "matched": "千葉県千葉市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 35.634022,
+    "lon": 140.155655,
+    "matched": "千葉県千葉市若葉区",
+    "precision": "approximate"
    }
   },
   {
@@ -15391,7 +15293,7 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "has_rain_note": true
    },
@@ -15401,7 +15303,7 @@
     "lon": 139.931509,
     "precision": "district",
     "source": "manual",
-    "matched": "位置は OpenStreetMap「ドッグ＆ベジレストラン トゥルシー」(2026-09-27)。国土地理院の住所検索が障害中のため"
+    "matched": "位置は OpenStreetMap「ドッグ＆ベジレストラン トゥルシー」(2026-09-26)。国土地理院の住所検索が障害中のため"
    },
    "area_geocode": {
     "lat": 34.996468,
@@ -15440,7 +15342,7 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "has_rain_note": true
    },
@@ -15456,8 +15358,7 @@
     "lat": 36.516666,
     "lon": 138.530289,
     "matched": "群馬県嬬恋村",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、同じ市区町村の以前の位置"
+    "precision": "approximate"
    }
   },
   {
@@ -15486,24 +15387,23 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c3-wanport-suns",
    "geocode": {
-    "lat": 36.467725,
-    "lon": 138.95457,
+    "lat": 36.461811,
+    "lon": 138.971695,
     "precision": "facility",
-    "source": "official-map",
-    "matched": "公式ページの地図"
+    "source": "official-address",
+    "matched": "群馬県吉岡町上野田２３３９番地"
    },
    "area_geocode": {
-    "lat": 36.447387,
-    "lon": 139.009713,
-    "matched": "群馬県吉岡町(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 36.447437,
+    "lon": 139.009735,
+    "matched": "群馬県吉岡町",
+    "precision": "approximate"
    }
   },
   {
@@ -15532,24 +15432,23 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c3-cabotcha-maebashi",
    "geocode": {
-    "lat": 36.351607,
-    "lon": 139.104208,
+    "lat": 36.352051,
+    "lon": 139.103745,
     "precision": "facility",
-    "source": "official-map",
-    "matched": "公式ページの地図"
+    "source": "official-address",
+    "matched": "群馬県前橋市後閑町６５８番地"
    },
    "area_geocode": {
     "lat": 36.389462,
     "lon": 139.063461,
     "matched": "群馬県前橋市",
-    "precision": "approximate",
-    "note": "住所検索の停止中のため、同じ市区町村の以前の位置"
+    "precision": "approximate"
    }
   },
   {
@@ -15579,7 +15478,7 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "has_rain_note": true
    },
@@ -15595,8 +15494,7 @@
     "lat": 34.965832,
     "lon": 139.101944,
     "matched": "静岡県伊東市",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、同じ市区町村の以前の位置"
+    "precision": "approximate"
    }
   },
   {
@@ -15629,7 +15527,7 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "has_rain_note": true
    },
@@ -15645,8 +15543,7 @@
     "lat": 34.965832,
     "lon": 139.101944,
     "matched": "静岡県伊東市",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、同じ市区町村の以前の位置"
+    "precision": "approximate"
    }
   },
   {
@@ -15680,24 +15577,23 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c3-mameanzu-cafe-atami",
    "geocode": {
-    "lat": 35.096471,
-    "lon": 139.071787,
-    "matched": "静岡県熱海市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 35.137306,
+    "lon": 139.066605,
+    "precision": "facility",
+    "source": "official-address",
+    "matched": "静岡県熱海市泉２４０番地"
    },
    "area_geocode": {
-    "lat": 35.096471,
-    "lon": 139.071787,
-    "matched": "静岡県熱海市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 35.096352,
+    "lon": 139.071747,
+    "matched": "静岡県熱海市",
+    "precision": "approximate"
    }
   },
   {
@@ -15726,7 +15622,7 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "has_rain_note": true
    },
@@ -15739,11 +15635,10 @@
     "matched": "公式ページの地図"
    },
    "area_geocode": {
-    "lat": 34.710979,
-    "lon": 137.725943,
-    "matched": "静岡県浜松市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 34.791546,
+    "lon": 137.783157,
+    "matched": "静岡県浜松市浜名区",
+    "precision": "approximate"
    }
   },
   {
@@ -15772,24 +15667,22 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c3-dc-castle-haruno",
    "geocode": {
-    "lat": 34.710979,
-    "lon": 137.725943,
-    "matched": "静岡県浜松市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 34.872578,
+    "lon": 137.816238,
+    "matched": "静岡県浜松市天竜区",
+    "precision": "approximate"
    },
    "area_geocode": {
-    "lat": 34.710979,
-    "lon": 137.725943,
-    "matched": "静岡県浜松市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 34.872578,
+    "lon": 137.816238,
+    "matched": "静岡県浜松市天竜区",
+    "precision": "approximate"
    }
   },
   {
@@ -15817,24 +15710,23 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c3-glad-garden-cafe",
    "geocode": {
-    "lat": 37.91354,
-    "lon": 139.221603,
-    "matched": "新潟県新潟市北区",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、同じ市区町村の以前の位置"
+    "lat": 37.817459,
+    "lon": 138.89888,
+    "precision": "facility",
+    "source": "official-address",
+    "matched": "新潟県新潟市西区みずき野三丁目３番１５号"
    },
    "area_geocode": {
-    "lat": 37.91354,
-    "lon": 139.221603,
-    "matched": "新潟県新潟市北区",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、同じ市区町村の以前の位置"
+    "lat": 37.874226,
+    "lon": 138.97197,
+    "matched": "新潟県新潟市西区",
+    "precision": "approximate"
    }
   },
   {
@@ -15868,24 +15760,23 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c3-lotti-cafe-tsukuba",
    "geocode": {
-    "lat": 36.083611,
-    "lon": 140.076385,
-    "matched": "茨城県つくば市",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、同じ市区町村の以前の位置"
+    "lat": 36.083,
+    "lon": 140.132111,
+    "precision": "facility",
+    "source": "official-address",
+    "matched": "茨城県つくば市上ノ室２１６８番地"
    },
    "area_geocode": {
     "lat": 36.083611,
     "lon": 140.076385,
     "matched": "茨城県つくば市",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、同じ市区町村の以前の位置"
+    "precision": "approximate"
    }
   },
   {
@@ -15913,7 +15804,7 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "has_rain_note": true
    },
@@ -15922,15 +15813,13 @@
     "lat": 36.083611,
     "lon": 140.076385,
     "matched": "茨城県つくば市",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、同じ市区町村の以前の位置"
+    "precision": "approximate"
    },
    "area_geocode": {
     "lat": 36.083611,
     "lon": 140.076385,
     "matched": "茨城県つくば市",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、同じ市区町村の以前の位置"
+    "precision": "approximate"
    }
   },
   {
@@ -15959,7 +15848,7 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "has_rain_note": true
    },
@@ -15972,11 +15861,10 @@
     "matched": "都立小山内裏公園, 町田市, 東京都, 日本"
    },
    "area_geocode": {
-    "lat": 35.54668,
-    "lon": 139.4387,
-    "matched": "東京都町田市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 35.546604,
+    "lon": 139.438644,
+    "matched": "東京都町田市",
+    "precision": "approximate"
    }
   },
   {
@@ -16005,7 +15893,7 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "has_rain_note": true
    },
@@ -16018,11 +15906,10 @@
     "matched": "都立桜ヶ丘公園, 多摩市, 東京都, 日本"
    },
    "area_geocode": {
-    "lat": 35.637247,
-    "lon": 139.44611,
-    "matched": "東京都多摩市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 35.636944,
+    "lon": 139.446396,
+    "matched": "東京都多摩市",
+    "precision": "municipality"
    }
   },
   {
@@ -16051,7 +15938,7 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "has_rain_note": true
    },
@@ -16095,7 +15982,7 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "has_rain_note": true
    },
@@ -16105,14 +15992,13 @@
     "lon": 138.479039,
     "precision": "district",
     "source": "manual",
-    "matched": "位置は OpenStreetMap「SORA terrace」(2026-09-27)。国土地理院の住所検索が障害中のため"
+    "matched": "位置は OpenStreetMap「SORA terrace」(2026-09-26)。国土地理院の住所検索が障害中のため"
    },
    "area_geocode": {
-    "lat": 36.744591,
-    "lon": 138.412661,
-    "matched": "長野県山ノ内町(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 36.744598,
+    "lon": 138.412704,
+    "matched": "長野県山ノ内町",
+    "precision": "approximate"
    }
   },
   {
@@ -16141,24 +16027,23 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c3-shinsugita-dogrun",
    "geocode": {
-    "lat": 35.382849,
-    "lon": 139.623918,
+    "lat": 35.382614,
+    "lon": 139.622696,
     "precision": "facility",
-    "source": "osm",
-    "matched": "新杉田公園, 磯子区, 横浜市, 神奈川県, 231-0017, 日本"
+    "source": "official-address",
+    "matched": "神奈川県横浜市磯子区杉田五丁目３２番"
    },
    "area_geocode": {
-    "lat": 35.450338,
-    "lon": 139.63438,
-    "matched": "神奈川県横浜市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 35.402424,
+    "lon": 139.618484,
+    "matched": "神奈川県横浜市磯子区",
+    "precision": "municipality"
    }
   },
   {
@@ -16187,24 +16072,23 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c3-irifune-dogrun",
    "geocode": {
-    "lat": 35.498092,
-    "lon": 139.694976,
+    "lat": 35.497829,
+    "lon": 139.691452,
     "precision": "facility",
-    "source": "official-map",
-    "matched": "公式ページの地図"
+    "source": "official-address",
+    "matched": "神奈川県横浜市鶴見区弁天町３番地"
    },
    "area_geocode": {
-    "lat": 35.450338,
-    "lon": 139.63438,
-    "matched": "神奈川県横浜市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 35.508492,
+    "lon": 139.682388,
+    "matched": "神奈川県横浜市鶴見区",
+    "precision": "municipality"
    }
   },
   {
@@ -16232,16 +16116,17 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c3-ramber-dog-field",
    "geocode": {
-    "lat": 35.955051,
-    "lon": 139.874878,
-    "matched": "千葉県野田市",
-    "precision": "municipality"
+    "lat": 35.941746,
+    "lon": 139.898163,
+    "precision": "facility",
+    "source": "official-address",
+    "matched": "千葉県野田市大殿井１９番地"
    },
    "area_geocode": {
     "lat": 35.955051,
@@ -16276,7 +16161,7 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "has_rain_note": true
    },
@@ -16289,11 +16174,10 @@
     "matched": "公式ページの地図"
    },
    "area_geocode": {
-    "lat": 34.710979,
-    "lon": 137.725943,
-    "matched": "静岡県浜松市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 34.710808,
+    "lon": 137.726303,
+    "matched": "静岡県浜松市中央区",
+    "precision": "approximate"
    }
   },
   {
@@ -16321,24 +16205,23 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c3-kairakuen-park",
    "geocode": {
-    "lat": 36.371655,
-    "lon": 140.448935,
+    "lat": 36.376099,
+    "lon": 140.450745,
     "precision": "facility",
-    "source": "osm",
-    "matched": "偕楽園公園, 水戸市, 茨城県, 日本"
+    "source": "official-address",
+    "matched": "茨城県水戸市常磐町一丁目３番"
    },
    "area_geocode": {
-    "lat": 36.365917,
-    "lon": 140.473174,
-    "matched": "茨城県水戸市(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 36.365852,
+    "lon": 140.471588,
+    "matched": "茨城県水戸市",
+    "precision": "municipality"
    }
   },
   {
@@ -16372,7 +16255,7 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "has_rain_note": true
    },
@@ -16381,15 +16264,13 @@
     "lat": 35.221977,
     "lon": 138.621613,
     "matched": "静岡県富士宮市",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、同じ市区町村の以前の位置"
+    "precision": "approximate"
    },
    "area_geocode": {
     "lat": 35.221977,
     "lon": 138.621613,
     "matched": "静岡県富士宮市",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、同じ市区町村の以前の位置"
+    "precision": "approximate"
    }
   },
   {
@@ -16423,7 +16304,7 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": "2026-09-26",
    "dog_hints": {
     "has_rain_note": true
    },
@@ -16436,11 +16317,2296 @@
     "matched": "神奈川県足柄上郡松田町寄5605"
    },
    "area_geocode": {
-    "lat": 35.348165,
-    "lon": 139.139382,
-    "matched": "神奈川県松田町(OpenStreetMap)",
-    "precision": "municipality",
-    "note": "住所検索の停止中のため、OpenStreetMap の市区町村の位置"
+    "lat": 35.348171,
+    "lon": 139.139389,
+    "matched": "神奈川県松田町",
+    "precision": "approximate"
+   }
+  },
+  {
+   "id": "c4-cafe-armando-machida",
+   "type": "spot",
+   "name": "CAFE ARMANDO(アルマンド)",
+   "area": "東京都町田市・小野路町",
+   "region_group": "kanto",
+   "kinds": [
+    "cafe",
+    "run"
+   ],
+   "theme": "町田の丘陵地のアメリカンダイナー。ドッグラン(チロペロドッグラン)と一緒に楽しめるハンバーガーの店",
+   "facts": {
+    "犬の条件・同伴範囲": "ドッグランを併設(2023年開設の案内)。店内・テラスの同伴範囲は出発前に確認。",
+    "料金の目安/犬料金": "ドッグランの料金は出発前に確認。",
+    "持ち物": "リード、排泄物の処理用品、ワクチンの証明(ドッグランで求められた場合)。",
+    "雨の日": "出発前に確認",
+    "出発前に確認": "営業は土日祝のみ(平日はチロペロドッグラン内で営業の案内)。",
+    "公式で確認したこと": "公式サイトで、ドッグランの案内と営業日の変更を確認。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://www.cafe-armando.com/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-26",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-cafe-armando-machida",
+   "geocode": {
+    "lat": 35.546604,
+    "lon": 139.438644,
+    "matched": "東京都町田市",
+    "precision": "approximate"
+   },
+   "area_geocode": {
+    "lat": 35.546604,
+    "lon": 139.438644,
+    "matched": "東京都町田市",
+    "precision": "approximate"
+   }
+  },
+  {
+   "id": "c4-nikukyu-cafe",
+   "type": "spot",
+   "name": "にくきゅうカフェ",
+   "area": "東京都西東京市・田無",
+   "region_group": "kanto",
+   "kinds": [
+    "cafe"
+   ],
+   "theme": "田無駅近く、ドッグランのある小金井公園のそば。店内もテラス席も全部ペットOKのカフェ",
+   "facts": {
+    "犬の条件・同伴範囲": "店内・テラス席とも全てペットOK(ペットの種類は問わない)。",
+    "料金の目安/犬料金": "犬の料金の案内なし(飲食代)。",
+    "持ち物": "リード、マナーベルト(必要な場合)。",
+    "雨の日": "店内で過ごせる。",
+    "出発前に確認": "営業日・時間(キッチンカーの出店日はInstagramで案内)。",
+    "公式で確認したこと": "公式サイトで、店内・テラスとも全席ペットOKを確認。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://299cafe.jp/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-26",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-nikukyu-cafe",
+   "geocode": {
+    "lat": 35.722295,
+    "lon": 139.526289,
+    "precision": "facility",
+    "source": "official-map",
+    "matched": "公式ページの地図"
+   },
+   "area_geocode": {
+    "lat": 35.725704,
+    "lon": 139.538483,
+    "matched": "東京都西東京市",
+    "precision": "approximate"
+   }
+  },
+  {
+   "id": "c4-arms-yoyogi",
+   "type": "spot",
+   "name": "ARMS(アームズ) 代々木公園そば",
+   "area": "東京都渋谷区・富ヶ谷",
+   "region_group": "kanto",
+   "kinds": [
+    "cafe"
+   ],
+   "theme": "代々木公園のそばのハンバーガーショップ。犬連れで入れる(DOG OK)",
+   "facts": {
+    "犬の条件・同伴範囲": "犬同伴で来店できる(リード着用、他の客に迷惑をかけないようマナーを守る)。",
+    "料金の目安/犬料金": "犬の料金の案内なし(飲食代)。",
+    "持ち物": "リード。",
+    "雨の日": "店内で過ごせる。",
+    "出発前に確認": "営業11:00〜20:00、月曜定休(祝日は営業)。駐車場なし(近くの有料駐車場)。",
+    "公式で確認したこと": "公式サイトの店舗情報で『DOG OK!!』と営業時間・所在地を確認。"
+   },
+   "links": [
+    {
+     "label": "公式情報",
+     "url": "https://arms-burger.com/",
+     "affiliate": false
+    },
+    {
+     "label": "施設公式案内",
+     "url": "https://arms-burger.com/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-26",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-arms-yoyogi",
+   "geocode": {
+    "lat": 35.66367,
+    "lon": 139.697723,
+    "matched": "東京都渋谷区",
+    "precision": "approximate"
+   },
+   "area_geocode": {
+    "lat": 35.66367,
+    "lon": 139.697723,
+    "matched": "東京都渋谷区",
+    "precision": "approximate"
+   }
+  },
+  {
+   "id": "c4-marutto-oji",
+   "type": "spot",
+   "name": "和むすびや まるっと",
+   "area": "東京都北区・滝野川",
+   "region_group": "kanto",
+   "kinds": [
+    "cafe",
+    "run"
+   ],
+   "theme": "王子・飛鳥山公園の近く、手作りおむすびと定食のドッグカフェ。屋外の撮影スポット兼ミニドッグランも",
+   "facts": {
+    "犬の条件・同伴範囲": "店内も犬OK。屋外の撮影スポット『フォトまるっと』はミニドッグラン。",
+    "料金の目安/犬料金": "フォトまるっと(ミニドッグラン)は犬1頭1,000円(特別ブースは時間枠で別料金)。犬用のオーダーケーキあり。",
+    "持ち物": "リード、マナーベルト(必要な場合)。",
+    "雨の日": "店内で過ごせる。",
+    "出発前に確認": "営業日・時間、撮影ブースの予約。",
+    "公式で確認したこと": "公式サイトで、店内犬OKとミニドッグランの料金を確認。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://marutto.tokyo/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-26",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-marutto-oji",
+   "geocode": {
+    "lat": 35.749855,
+    "lon": 139.735565,
+    "precision": "facility",
+    "source": "official-address",
+    "matched": "東京都北区滝野川二丁目８番"
+   },
+   "area_geocode": {
+    "lat": 35.752777,
+    "lon": 139.733612,
+    "matched": "東京都北区",
+    "precision": "approximate"
+   }
+  },
+  {
+   "id": "c4-kuracafe-kanon",
+   "type": "spot",
+   "name": "蔵カフェ 風音(かのん)",
+   "area": "埼玉県さいたま市岩槻区",
+   "region_group": "kanto",
+   "kinds": [
+    "cafe"
+   ],
+   "theme": "城下町・岩槻の蔵を使ったカフェ。わんちゃんメニューが充実",
+   "facts": {
+    "犬の条件・同伴範囲": "犬と来店できるカフェ(犬用メニューあり)。細かな同伴ルールは出発前に確認。",
+    "料金の目安/犬料金": "犬用メニュー: クッキー・わんこパン200円〜、わんこプレート550円〜(税別)など。",
+    "持ち物": "リード、マナーベルト(必要な場合)。",
+    "雨の日": "店内で過ごせる。",
+    "出発前に確認": "定休日は水・木(祝日は営業)。",
+    "公式で確認したこと": "公式サイトの『DOG'S MENU』で、犬用メニュー・所在地・定休日を確認。"
+   },
+   "links": [
+    {
+     "label": "公式情報",
+     "url": "https://www.kuracafekanon.com/dog-s-menu",
+     "affiliate": false
+    },
+    {
+     "label": "施設公式案内",
+     "url": "https://www.kuracafekanon.com/dog-s-menu",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-26",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-kuracafe-kanon",
+   "geocode": {
+    "lat": 35.947109,
+    "lon": 139.694656,
+    "precision": "facility",
+    "source": "official-address",
+    "matched": "埼玉県さいたま市岩槻区本町二丁目１番２９号"
+   },
+   "area_geocode": {
+    "lat": 35.949722,
+    "lon": 139.694168,
+    "matched": "埼玉県さいたま市岩槻区",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c4-villapawa-minano",
+   "type": "spot",
+   "name": "薪窯 ビラパワ",
+   "area": "埼玉県皆野町(秩父)",
+   "region_group": "kanto",
+   "kinds": [
+    "cafe"
+   ],
+   "theme": "秩父の山あいの薪窯ピザの店。ペット同伴で利用できる",
+   "facts": {
+    "犬の条件・同伴範囲": "ペット同伴OK。リードは離さず、周りに配慮する案内。",
+    "料金の目安/犬料金": "犬の料金の案内なし(飲食代)。",
+    "持ち物": "リード。",
+    "雨の日": "出発前に確認",
+    "出発前に確認": "営業日・時間。交通量の少ない山間の店のため、駐車場(おもいやり優先3台・第1駐車場12台・第2駐車場8台)と乗り合わせの案内を確認。",
+    "公式で確認したこと": "公式サイトの『ご利用にあたってのお願い』で、ペット同伴の決まりと駐車場を確認。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "http://villapawa.com/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-26",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-villapawa-minano",
+   "geocode": {
+    "lat": 36.070805,
+    "lon": 139.098816,
+    "matched": "埼玉県皆野町",
+    "precision": "approximate"
+   },
+   "area_geocode": {
+    "lat": 36.070805,
+    "lon": 139.098816,
+    "matched": "埼玉県皆野町",
+    "precision": "approximate"
+   }
+  },
+  {
+   "id": "c4-maron-hanny-toda",
+   "type": "spot",
+   "name": "ドッグラン&カフェ Maron & Hanny",
+   "area": "埼玉県戸田市・笹目",
+   "region_group": "kanto",
+   "kinds": [
+    "cafe",
+    "run"
+   ],
+   "theme": "大型犬が横になってもゆったりできる広い店内と、小型犬用・大型犬用のドッグラン",
+   "facts": {
+    "犬の条件・同伴範囲": "店内で犬と一緒(床は滑りにくいテラコッタ)。ドッグランは小型犬用と大型犬用に分かれる。",
+    "料金の目安/犬料金": "出発前に確認。",
+    "持ち物": "リード、排泄物の処理用品、ワクチンの証明(求められた場合)。",
+    "雨の日": "ドッグランは水はけのよい砂で、小雨程度なら遊べる。",
+    "出発前に確認": "営業日・時間、ドッグランの料金。",
+    "公式で確認したこと": "公式サイトで、店内・ドッグランの案内と場所を確認。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://maron-hanny.cafe/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-26",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-maron-hanny-toda",
+   "geocode": {
+    "lat": 35.815388,
+    "lon": 139.644867,
+    "precision": "facility",
+    "source": "official-address",
+    "matched": "埼玉県戸田市笹目五丁目４番"
+   },
+   "area_geocode": {
+    "lat": 35.817623,
+    "lon": 139.677979,
+    "matched": "埼玉県戸田市",
+    "precision": "approximate"
+   }
+  },
+  {
+   "id": "c4-calm-cafe-hanyu",
+   "type": "spot",
+   "name": "Calm Cafe(ペットショップ Onlyワン)",
+   "area": "埼玉県羽生市",
+   "region_group": "kanto",
+   "kinds": [
+    "cafe",
+    "run"
+   ],
+   "theme": "東北道の羽生ICからも寄りやすい、ドッグカフェとドッグラン。自家製野菜のイタリアンと手作りの犬用メニュー",
+   "facts": {
+    "犬の条件・同伴範囲": "ドッグカフェ&ドッグラン併設。",
+    "料金の目安/犬料金": "出発前に確認。手作りの犬用メニューあり。",
+    "持ち物": "リード、排泄物の処理用品、ワクチンの証明(求められた場合)。",
+    "雨の日": "カフェは店内。",
+    "出発前に確認": "営業9:30〜19:00(店舗)。カフェ・ドッグランの営業時間。",
+    "公式で確認したこと": "Onlyワンの公式サイトで、ドッグカフェ&ドッグラン併設と営業時間を確認。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://pet-onlyone.com/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-26",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-calm-cafe-hanyu",
+   "geocode": {
+    "lat": 36.172634,
+    "lon": 139.548477,
+    "matched": "埼玉県羽生市",
+    "precision": "municipality"
+   },
+   "area_geocode": {
+    "lat": 36.172634,
+    "lon": 139.548477,
+    "matched": "埼玉県羽生市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c4-goros-cafe-kazo",
+   "type": "spot",
+   "name": "GORO'S CAFE(ゴローズカフェ)",
+   "area": "埼玉県加須市・三俣",
+   "region_group": "kanto",
+   "kinds": [
+    "cafe",
+    "run"
+   ],
+   "theme": "ブリトーとバーガーの小さなカフェ。ペット同伴の客は無料で使えるドッグランがある",
+   "facts": {
+    "犬の条件・同伴範囲": "ペット同伴OK。店を利用する犬連れの客にドッグラン(柵は小さめ)を無料開放。",
+    "料金の目安/犬料金": "ドッグランは店の利用者は無料。",
+    "持ち物": "リード、排泄物の処理用品。",
+    "雨の日": "出発前に確認",
+    "出発前に確認": "1人で営む店のため営業日・時間を確認。",
+    "公式で確認したこと": "公式サイトで、ドッグランの無料開放を確認。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://goros-cafe.jimdosite.com/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-26",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-goros-cafe-kazo",
+   "geocode": {
+    "lat": 36.13139,
+    "lon": 139.601944,
+    "matched": "埼玉県加須市",
+    "precision": "approximate"
+   },
+   "area_geocode": {
+    "lat": 36.13139,
+    "lon": 139.601944,
+    "matched": "埼玉県加須市",
+    "precision": "approximate"
+   }
+  },
+  {
+   "id": "c4-dog-lounge-voice",
+   "type": "spot",
+   "name": "DOG LOUNGE VOICE",
+   "area": "埼玉県さいたま市見沼区",
+   "region_group": "kanto",
+   "kinds": [
+    "cafe",
+    "run"
+   ],
+   "theme": "カフェ併設のドッグラン。西海岸風のテラスや冷房の効いたカフェから、走り回る犬を見守れる",
+   "facts": {
+    "犬の条件・同伴範囲": "カフェ併設の屋外ドッグラン。利用条件は出発前に確認。",
+    "料金の目安/犬料金": "出発前に確認(貸切はBエリアのみの受付はしない案内)。",
+    "持ち物": "リード、排泄物の処理用品、ワクチンの証明(求められた場合)。",
+    "雨の日": "カフェスペースで過ごせる。",
+    "出発前に確認": "営業日・時間、料金。駐車場18台。",
+    "公式で確認したこと": "公式ページで、カフェ併設のドッグランと駐車場を確認。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://roccs.jp/dogrun/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-26",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-dog-lounge-voice",
+   "geocode": {
+    "lat": 35.935276,
+    "lon": 139.654449,
+    "matched": "埼玉県さいたま市見沼区",
+    "precision": "municipality"
+   },
+   "area_geocode": {
+    "lat": 35.935276,
+    "lon": 139.654449,
+    "matched": "埼玉県さいたま市見沼区",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c4-foot-point-iwafune",
+   "type": "spot",
+   "name": "FOOT POINT(フットポイント)",
+   "area": "栃木県栃木市・岩舟町",
+   "region_group": "kanto",
+   "kinds": [
+    "cafe",
+    "run"
+   ],
+   "theme": "東北道の佐野藤岡ICに近い岩舟のドッグカフェ。ドッグランと、犬と登れるスカイデッキがある",
+   "facts": {
+    "犬の条件・同伴範囲": "ドッグカフェ。ドッグラン併設、スカイデッキにも犬と一緒に登れる。",
+    "料金の目安/犬料金": "出発前に確認。",
+    "持ち物": "リード、排泄物の処理用品、ワクチンの証明(求められた場合)。",
+    "雨の日": "スカイデッキの下で雨の日も過ごせる案内。",
+    "出発前に確認": "営業10:30〜19:00(4〜9月)、10:30〜18:00(10月〜)。定休日。",
+    "公式で確認したこと": "公式サイトで、ドッグカフェ・ドッグラン・営業時間・所在地を確認。"
+   },
+   "links": [
+    {
+     "label": "公式情報",
+     "url": "https://footpoint.wixsite.com/mysite",
+     "affiliate": false
+    },
+    {
+     "label": "施設公式案内",
+     "url": "https://footpoint.wixsite.com/mysite",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-26",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-foot-point-iwafune",
+   "geocode": {
+    "lat": 36.313606,
+    "lon": 139.658737,
+    "precision": "facility",
+    "source": "official-address",
+    "matched": "栃木県栃木市岩舟町静２１７７番地"
+   },
+   "area_geocode": {
+    "lat": 36.382435,
+    "lon": 139.7341,
+    "matched": "栃木県栃木市",
+    "precision": "approximate"
+   }
+  },
+  {
+   "id": "c4-lamer-bleu-maebashi",
+   "type": "spot",
+   "name": "PATISSERIE LA MER BLEU(ラメールブルー)",
+   "area": "群馬県前橋市・元総社町",
+   "region_group": "kanto",
+   "kinds": [
+    "cafe"
+   ],
+   "theme": "前橋ハニーカステラの洋菓子店のカフェ。テラス席で犬と一緒に",
+   "facts": {
+    "犬の条件・同伴範囲": "犬同伴はテラス席のみOK。",
+    "料金の目安/犬料金": "犬の料金の案内なし。イートインは1人100円+ドリンク(公式の案内で確認)。",
+    "持ち物": "リード。",
+    "雨の日": "テラス席は屋外。",
+    "出発前に確認": "営業日・時間。",
+    "公式で確認したこと": "公式サイトで、ワンちゃん同伴OK(テラス席のみ)を確認。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://www.lamer-bleu.com/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-26",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-lamer-bleu-maebashi",
+   "geocode": {
+    "lat": 36.392906,
+    "lon": 139.027206,
+    "precision": "facility",
+    "source": "official-address",
+    "matched": "群馬県前橋市元総社町１７１５番地"
+   },
+   "area_geocode": {
+    "lat": 36.389462,
+    "lon": 139.063461,
+    "matched": "群馬県前橋市",
+    "precision": "approximate"
+   }
+  },
+  {
+   "id": "c4-mahalo-fujioka",
+   "type": "spot",
+   "name": "ダイニングキッチン マハロ(旧 N&H)",
+   "area": "群馬県藤岡市・立石",
+   "region_group": "kanto",
+   "kinds": [
+    "cafe",
+    "run"
+   ],
+   "theme": "上信越道・関越道の藤岡エリアのレストラン。ドッグランがある(2026年1月に店名を変更)",
+   "facts": {
+    "犬の条件・同伴範囲": "ドッグランあり。店内の同伴範囲・利用条件は出発前に確認。",
+    "料金の目安/犬料金": "出発前に確認。",
+    "持ち物": "リード、排泄物の処理用品、ワクチンの証明(求められた場合)。",
+    "雨の日": "出発前に確認",
+    "出発前に確認": "営業日・時間(電話で確認の案内)。",
+    "公式で確認したこと": "公式サイトで、ドッグランの案内と店名変更(2026年1月1日)を確認。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://diningkitchen-nh.com/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-26",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-mahalo-fujioka",
+   "geocode": {
+    "lat": 36.280003,
+    "lon": 139.092026,
+    "precision": "facility",
+    "source": "official-address",
+    "matched": "群馬県藤岡市立石１２１３番地"
+   },
+   "area_geocode": {
+    "lat": 36.25861,
+    "lon": 139.074722,
+    "matched": "群馬県藤岡市",
+    "precision": "approximate"
+   }
+  },
+  {
+   "id": "c4-poapoa-fuji",
+   "type": "spot",
+   "name": "ドッグカフェ ポワポワキッチン",
+   "area": "静岡県富士市・御幸町",
+   "region_group": "shizuoka-east",
+   "kinds": [
+    "cafe"
+   ],
+   "theme": "犬の手作りおやつ屋さんが営むドッグカフェ。犬と一緒に来店できる",
+   "facts": {
+    "犬の条件・同伴範囲": "犬と一緒に来店できるドッグカフェ(ドッグホテル併設)。",
+    "料金の目安/犬料金": "犬の料金の案内なし。犬用メニューあり。",
+    "持ち物": "リード、マナーベルト(必要な場合)。",
+    "雨の日": "店内で過ごせる。",
+    "出発前に確認": "営業日・時間。",
+    "公式で確認したこと": "公式サイトで、ドッグカフェ・ワンコメニューの案内を確認。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "http://natural-sweet.pr-pro.jp/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-26",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-poapoa-fuji",
+   "geocode": {
+    "lat": 35.16135,
+    "lon": 138.676239,
+    "matched": "静岡県富士市",
+    "precision": "approximate"
+   },
+   "area_geocode": {
+    "lat": 35.16135,
+    "lon": 138.676239,
+    "matched": "静岡県富士市",
+    "precision": "approximate"
+   }
+  },
+  {
+   "id": "c4-wan-cafe-ito",
+   "type": "spot",
+   "name": "wan cafe & shop(Wan's dog salon)",
+   "area": "静岡県伊東市・吉田",
+   "region_group": "shizuoka-east",
+   "kinds": [
+    "cafe",
+    "run"
+   ],
+   "theme": "伊東の大自然の中のドッグサロン&カフェ。ドッグラン・トリミング・一時預かりができる",
+   "facts": {
+    "犬の条件・同伴範囲": "ドッグランで遊べる。トリミング・ペットホテル・一時預かりもある。",
+    "料金の目安/犬料金": "出発前に確認。犬の似顔絵ケーキ1個1,500円。",
+    "持ち物": "リード、排泄物の処理用品、ワクチンの証明(求められた場合)。",
+    "雨の日": "出発前に確認",
+    "出発前に確認": "営業9:30〜17:00。アンダの森から徒歩1分。",
+    "公式で確認したこと": "公式サイトで、ドッグラン・営業時間を確認。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://kenken91254.wixsite.com/wancafeshop",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-26",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-wan-cafe-ito",
+   "geocode": {
+    "lat": 34.924805,
+    "lon": 139.110199,
+    "precision": "facility",
+    "source": "official-address",
+    "matched": "静岡県伊東市吉田８３６番地"
+   },
+   "area_geocode": {
+    "lat": 34.965832,
+    "lon": 139.101944,
+    "matched": "静岡県伊東市",
+    "precision": "approximate"
+   }
+  },
+  {
+   "id": "c4-fukuchas-curry",
+   "type": "spot",
+   "name": "福茶's curry",
+   "area": "静岡県伊東市・伊豆高原",
+   "region_group": "shizuoka-east",
+   "kinds": [
+    "cafe",
+    "run"
+   ],
+   "theme": "伊豆高原の、天然芝のドッグランがあるログハウスのスパイスカレー店",
+   "facts": {
+    "犬の条件・同伴範囲": "テラス席・店内とも、小型犬から大型犬までOK。天然芝のドッグランあり。",
+    "料金の目安/犬料金": "犬の料金の案内なし(飲食代)。",
+    "持ち物": "リード、マナーベルト(必要な場合)。",
+    "雨の日": "店内で過ごせる。",
+    "出発前に確認": "月ごとの営業予定(臨時休業あり)。",
+    "公式で確認したこと": "公式サイトで、店内・テラスの犬同伴(小型〜大型)とドッグランを確認。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://tyasukegadaisuki.amebaownd.com/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-26",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-fukuchas-curry",
+   "geocode": {
+    "lat": 34.965832,
+    "lon": 139.101944,
+    "matched": "静岡県伊東市",
+    "precision": "approximate"
+   },
+   "area_geocode": {
+    "lat": 34.965832,
+    "lon": 139.101944,
+    "matched": "静岡県伊東市",
+    "precision": "approximate"
+   }
+  },
+  {
+   "id": "c4-mr-outdoor-lab",
+   "type": "spot",
+   "name": "m&R outdoor lab",
+   "area": "静岡県浜松市中央区・高林",
+   "region_group": "shizuoka-east",
+   "kinds": [
+    "cafe",
+    "run"
+   ],
+   "theme": "山道具の店に併設のドッグカフェ。テラス席からドッグランで遊ぶ犬を見守れる。夜も営業",
+   "facts": {
+    "犬の条件・同伴範囲": "ドッグカフェ(犬連れ向けの決まりは公式の『犬とご一緒のお客様へ』で確認)。ドッグランあり。",
+    "料金の目安/犬料金": "出発前に確認。",
+    "持ち物": "リード、排泄物の処理用品。",
+    "雨の日": "店内で過ごせる。",
+    "出発前に確認": "営業日・時間(夜も営業の案内)。",
+    "公式で確認したこと": "公式サイトで、ドッグカフェ・テラスとドッグランの案内を確認。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://www.mroutdoorlab.com/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-26",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-mr-outdoor-lab",
+   "geocode": {
+    "lat": 34.728104,
+    "lon": 137.732574,
+    "precision": "facility",
+    "source": "official-address",
+    "matched": "静岡県浜松市中央区高林四丁目４番３号"
+   },
+   "area_geocode": {
+    "lat": 34.710808,
+    "lon": 137.726303,
+    "matched": "静岡県浜松市中央区",
+    "precision": "approximate"
+   }
+  },
+  {
+   "id": "c4-doglle-house",
+   "type": "spot",
+   "name": "ドッグルハウス(浜松料理じねん 浜松城店)",
+   "area": "静岡県浜松市中央区・元城町",
+   "region_group": "shizuoka-east",
+   "kinds": [
+    "cafe",
+    "run"
+   ],
+   "theme": "浜松城公園の近くのドッグレストラン&ドッグラン。浜松の旬の料理をペットと一緒に",
+   "facts": {
+    "犬の条件・同伴範囲": "ペット同伴できる飲食店。室内ドッグルーム・ドッグランあり。",
+    "料金の目安/犬料金": "出発前に確認。",
+    "持ち物": "リード、マナーベルト(必要な場合)。",
+    "雨の日": "室内ドッグルームと店内で過ごせる。",
+    "出発前に確認": "営業日・時間、ドッグランの料金。",
+    "公式で確認したこと": "公式サイトで、ペット同伴の飲食店・室内ドッグルーム・ドッグランを確認。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://doglle-house.jp/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-26",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-doglle-house",
+   "geocode": {
+    "lat": 34.713144,
+    "lon": 137.727134,
+    "precision": "facility",
+    "source": "official-map",
+    "matched": "公式ページの地図"
+   },
+   "area_geocode": {
+    "lat": 34.710808,
+    "lon": 137.726303,
+    "matched": "静岡県浜松市中央区",
+    "precision": "approximate"
+   }
+  },
+  {
+   "id": "c4-kinmedai-no-eki",
+   "type": "spot",
+   "name": "金目鯛の駅 伊豆高原(徳造丸水産直営)",
+   "area": "静岡県伊東市・伊豆高原",
+   "region_group": "shizuoka-east",
+   "kinds": [
+    "cafe",
+    "run",
+    "rest-stop"
+   ],
+   "theme": "国道135号沿い、伊豆高原桜並木入口近くの海鮮の食事処。犬と一緒のドッグテラスとドッグラン&ドッグカフェ",
+   "facts": {
+    "犬の条件・同伴範囲": "ワンちゃんと一緒のドッグテラスあり。ドッグラン&ドッグカフェ(新設)。",
+    "料金の目安/犬料金": "出発前に確認。",
+    "持ち物": "リード、排泄物の処理用品。",
+    "雨の日": "出発前に確認",
+    "出発前に確認": "営業日・時間、ドッグランの料金。駐車場 普通車30台。",
+    "公式で確認したこと": "公式ページで、ドッグテラス・ドッグラン&ドッグカフェと場所(国道135号沿い)を確認。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "http://1930.co.jp/amimoto/kinmeeki",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-26",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-kinmedai-no-eki",
+   "geocode": {
+    "lat": 34.880404,
+    "lon": 139.106385,
+    "precision": "facility",
+    "source": "official-map",
+    "matched": "公式ページの地図"
+   },
+   "area_geocode": {
+    "lat": 34.965832,
+    "lon": 139.101944,
+    "matched": "静岡県伊東市",
+    "precision": "approximate"
+   }
+  },
+  {
+   "id": "c4-himawari-shokudo",
+   "type": "spot",
+   "name": "愛犬と同伴できる店 ひまわり食堂",
+   "area": "新潟県長岡市・青葉台",
+   "region_group": "koshinetsu",
+   "kinds": [
+    "cafe"
+   ],
+   "theme": "地元のコシヒカリの定食と手作り餃子の食堂。犬を連れて一緒に食事できる",
+   "facts": {
+    "犬の条件・同伴範囲": "犬を連れて一緒に食事できる。",
+    "料金の目安/犬料金": "犬の料金の案内なし(飲食代)。",
+    "持ち物": "リード、マナーベルト(必要な場合)。",
+    "雨の日": "店内で過ごせる。",
+    "出発前に確認": "営業日・時間。",
+    "公式で確認したこと": "公式ページで、犬同伴で食事できることを確認。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://r.goope.jp/sr-15-152023s0062/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-26",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-himawari-shokudo",
+   "geocode": {
+    "lat": 37.446405,
+    "lon": 138.750468,
+    "precision": "facility",
+    "source": "official-map",
+    "matched": "公式ページの地図"
+   },
+   "area_geocode": {
+    "lat": 37.446533,
+    "lon": 138.851486,
+    "matched": "新潟県長岡市",
+    "precision": "approximate"
+   }
+  },
+  {
+   "id": "c4-franks-niigata",
+   "type": "spot",
+   "name": "frank's dinner & dining",
+   "area": "新潟県新潟市北区・石動",
+   "region_group": "koshinetsu",
+   "kinds": [
+    "cafe"
+   ],
+   "theme": "新潟市北区のダイナー。ペット同伴OK(テラス席あり)",
+   "facts": {
+    "犬の条件・同伴範囲": "ペット同伴OK(詳細は店に問い合わせの案内)。",
+    "料金の目安/犬料金": "犬の料金の案内なし(飲食代)。",
+    "持ち物": "リード、マナーベルト(必要な場合)。",
+    "雨の日": "出発前に確認",
+    "出発前に確認": "ランチ11:00〜15:00(LO14:30)・ディナー、月曜定休。犬と座れる席。",
+    "公式で確認したこと": "公式ページで、ペット同伴OK・営業時間・所在地を確認。"
+   },
+   "links": [
+    {
+     "label": "公式情報",
+     "url": "https://r763500.gorp.jp/",
+     "affiliate": false
+    },
+    {
+     "label": "施設公式案内",
+     "url": "https://r763500.gorp.jp/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-26",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-franks-niigata",
+   "geocode": {
+    "lat": 37.921299,
+    "lon": 139.212585,
+    "precision": "facility",
+    "source": "official-address",
+    "matched": "新潟県新潟市北区石動一丁目１７番"
+   },
+   "area_geocode": {
+    "lat": 37.91354,
+    "lon": 139.221603,
+    "matched": "新潟県新潟市北区",
+    "precision": "approximate"
+   }
+  },
+  {
+   "id": "c4-yamacafe-ippo",
+   "type": "spot",
+   "name": "山cafe 一歩",
+   "area": "新潟県田上町",
+   "region_group": "koshinetsu",
+   "kinds": [
+    "cafe",
+    "run"
+   ],
+   "theme": "自然に囲まれた田上町の手作りの店。テラス席とハンモック、ドッグランがある",
+   "facts": {
+    "犬の条件・同伴範囲": "ドッグランを完備し、犬連れでも楽しめる案内。席の同伴範囲は出発前に確認。",
+    "料金の目安/犬料金": "出発前に確認。",
+    "持ち物": "リード、排泄物の処理用品。",
+    "雨の日": "出発前に確認",
+    "出発前に確認": "営業 平日11:00〜17:30・土日祝11:00〜、定休日。",
+    "公式で確認したこと": "公式サイトで、ドッグラン・テラス席・営業時間を確認。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://kimurakazuma0926.wixsite.com/yamacafeippo",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-26",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-yamacafe-ippo",
+   "geocode": {
+    "lat": 37.675323,
+    "lon": 139.06749,
+    "precision": "facility",
+    "source": "official-address",
+    "matched": "新潟県田上町川船河丙２３０番地"
+   },
+   "area_geocode": {
+    "lat": 37.698849,
+    "lon": 139.057968,
+    "matched": "新潟県田上町",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c4-star-rice-field",
+   "type": "spot",
+   "name": "Star Rice Field(スターライスフィールド)",
+   "area": "茨城県土浦市",
+   "region_group": "kanto",
+   "kinds": [
+    "cafe",
+    "run"
+   ],
+   "theme": "土浦の広々としたオープンカフェ。ドッグラン付きで、犬連れでも一人でもゆっくりできる",
+   "facts": {
+    "犬の条件・同伴範囲": "ワンちゃん同伴OKのオープンカフェ(ドッグラン付き)。",
+    "料金の目安/犬料金": "出発前に確認。",
+    "持ち物": "リード、排泄物の処理用品。",
+    "雨の日": "出発前に確認",
+    "出発前に確認": "営業10:00〜16:00・夜の部17:30〜22:00(要予約)、定休日。",
+    "公式で確認したこと": "公式サイトで、犬同伴のオープンカフェ・ドッグラン・営業時間を確認。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://hajyu1204.wixsite.com/website",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-26",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-star-rice-field",
+   "geocode": {
+    "lat": 36.078354,
+    "lon": 140.204193,
+    "matched": "茨城県土浦市",
+    "precision": "municipality"
+   },
+   "area_geocode": {
+    "lat": 36.078354,
+    "lon": 140.204193,
+    "matched": "茨城県土浦市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c4-tsurutontan-karuizawa",
+   "type": "spot",
+   "name": "つるとんたん UDON NOODLE Brasserie KARUIZAWA",
+   "area": "長野県軽井沢町・旧軽井沢",
+   "region_group": "koshinetsu",
+   "kinds": [
+    "cafe"
+   ],
+   "theme": "旧軽井沢のうどん店。1階に犬と一緒に使えるテラスエリアがあり、犬用の食事もある",
+   "facts": {
+    "犬の条件・同伴範囲": "1階に犬同伴で使えるエリアがあり、店内・店外を選べる。",
+    "料金の目安/犬料金": "犬の料金の案内なし。犬専用の食事あり。",
+    "持ち物": "リード、マナーベルト(必要な場合)。",
+    "雨の日": "店内のエリアを選べる。",
+    "出発前に確認": "営業時間・混雑、犬同伴エリアの空き。",
+    "公式で確認したこと": "公式ページの『With Dog』で、犬同伴エリアと犬用の食事を確認。"
+   },
+   "links": [
+    {
+     "label": "公式情報",
+     "url": "https://www.tsurutontan.co.jp/karuizawa/",
+     "affiliate": false
+    },
+    {
+     "label": "施設公式案内",
+     "url": "https://www.tsurutontan.co.jp/karuizawa/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-26",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-tsurutontan-karuizawa",
+   "geocode": {
+    "lat": 36.356902,
+    "lon": 138.63204,
+    "precision": "facility",
+    "source": "official-map",
+    "matched": "公式ページの地図"
+   },
+   "area_geocode": {
+    "lat": 36.348331,
+    "lon": 138.596954,
+    "matched": "長野県軽井沢町",
+    "precision": "approximate"
+   }
+  },
+  {
+   "id": "c4-dapple-back-cafe",
+   "type": "spot",
+   "name": "dapple back cafe(ダップルバックカフェ)",
+   "area": "神奈川県川崎市麻生区・はるひ野",
+   "region_group": "kanto",
+   "kinds": [
+    "cafe",
+    "run"
+   ],
+   "theme": "はるひ野のカフェ。店の客専用のドッグランと、ドッグランと店の間のテラス席",
+   "facts": {
+    "犬の条件・同伴範囲": "ドッグランは店の客専用。テラス席あり。",
+    "料金の目安/犬料金": "出発前に確認。",
+    "持ち物": "リード、排泄物の処理用品。",
+    "雨の日": "出発前に確認",
+    "出発前に確認": "営業日・時間。",
+    "公式で確認したこと": "公式サイトのドッグランのページで、客専用のドッグランとテラス席を確認。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "http://dapplebackcafe.com/dogrun.html",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-26",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-dapple-back-cafe",
+   "geocode": {
+    "lat": 35.60379,
+    "lon": 139.50589,
+    "matched": "神奈川県川崎市麻生区",
+    "precision": "approximate"
+   },
+   "area_geocode": {
+    "lat": 35.60379,
+    "lon": 139.50589,
+    "matched": "神奈川県川崎市麻生区",
+    "precision": "approximate"
+   }
+  },
+  {
+   "id": "c4-ikutopia-dogrun",
+   "type": "spot",
+   "name": "いくとぴあ食花 ドッグラン(多目的広場)",
+   "area": "新潟県新潟市中央区・鳥屋野潟",
+   "region_group": "koshinetsu",
+   "kinds": [
+    "run",
+    "park"
+   ],
+   "theme": "鳥屋野潟のほとりの『食と花』の複合施設。ドッグラン会員に登録すると多目的広場で犬を遊ばせられる",
+   "facts": {
+    "犬の条件・同伴範囲": "施設内はペットの入場を制限しているエリアがある。犬はドッグラン会員に登録すると『多目的広場』を使える(受付は動物愛護センター)。",
+    "料金の目安/犬料金": "登録料・更新料 1頭2,000円(年度更新)。一般開放は無料、貸切は1時間1,000円。",
+    "持ち物": "犬鑑札、本年度の狂犬病予防接種済票、5種以上のワクチン接種証明書、身分証明書、登録料。",
+    "雨の日": "屋外。",
+    "出発前に確認": "営業9:30〜16:30。貸切・イベントで一般開放できない日(予約状況を事前に確認)。",
+    "公式で確認したこと": "公式サイトの『ドッグランについて』で、登録の条件・料金・営業時間を確認。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://www.ikutopia.com/facilities/dogrun/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-26",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-ikutopia-dogrun",
+   "geocode": {
+    "lat": 37.88007,
+    "lon": 139.04932,
+    "precision": "facility",
+    "source": "official-map",
+    "matched": "公式ページの地図"
+   },
+   "area_geocode": {
+    "lat": 37.92252,
+    "lon": 139.043152,
+    "matched": "新潟県新潟市中央区",
+    "precision": "approximate"
+   }
+  },
+  {
+   "id": "c4-starry-park-izumigatake",
+   "type": "spot",
+   "name": "STARRY PARK 泉ヶ岳(スターリーパーク)",
+   "area": "宮城県仙台市泉区・朴沢",
+   "region_group": "tohoku",
+   "kinds": [
+    "run",
+    "cafe"
+   ],
+   "theme": "泉ヶ岳へ向かう県道沿い、七北田川を見下ろす天然芝のドッグランとショップ。施設全体で犬と一緒に過ごせる",
+   "facts": {
+    "犬の条件・同伴範囲": "天然芝のドッグランは小〜中型犬用と中〜大型犬用の2面。BBQサイト付きの貸切ドッグランもある。施設全体で犬同伴OK(テラス席・店内に休憩スペース)。",
+    "料金の目安/犬料金": "ドッグラン990円(税込)〜。",
+    "持ち物": "リード、排泄物の処理用品、ワクチンの証明(求められた場合)。",
+    "雨の日": "店内に休憩スペースあり(ドッグランは屋外)。",
+    "出発前に確認": "営業10:00〜17:00(夏は18:00まで)、年中無休(年末年始休業あり)。駐車場約15台。",
+    "公式で確認したこと": "運営会社の公式ページで、ドッグランの構成・料金・営業時間・所在地を確認。"
+   },
+   "links": [
+    {
+     "label": "公式情報",
+     "url": "https://nanairo-inc.jp/service/starry_park/",
+     "affiliate": false
+    },
+    {
+     "label": "施設公式案内",
+     "url": "https://nanairo-inc.jp/service/starry_park/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-26",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-starry-park-izumigatake",
+   "geocode": {
+    "lat": 38.368966,
+    "lon": 140.79527,
+    "precision": "district",
+    "source": "manual",
+    "matched": "宮城県仙台市泉区朴沢細田5番10"
+   },
+   "area_geocode": {
+    "lat": 38.326344,
+    "lon": 140.881287,
+    "matched": "宮城県仙台市泉区",
+    "precision": "approximate"
+   }
+  },
+  {
+   "id": "c4-hakone-yuransen",
+   "type": "spot",
+   "name": "箱根遊船(芦ノ湖遊覧船)",
+   "area": "神奈川県箱根町・芦ノ湖",
+   "region_group": "kanto",
+   "kinds": [
+    "travel"
+   ],
+   "theme": "芦ノ湖を犬と一緒にクルーズ。3・4階デッキはリードを付けて歩ける",
+   "facts": {
+    "犬の条件・同伴範囲": "体重30kg以下の犬と乗船できる(狂犬病・混合ワクチンの接種が必要)。3・4階デッキはリード着用で歩行可。客室は『大茶会』ならケージ・ペットバギー(頭や顔が全部隠れるもの)で利用可(3階『茶BAR』は不可)、『SORAKAZE』は客室利用不可。乗下船時はキャリーかバギーに入れる。港の建物内のレストラン・売店は犬の入店不可。",
+    "料金の目安/犬料金": "犬の乗船券1匹300円(毎月11日は無料)。小型犬用ペットキャリーの無料貸出(各港1個)。",
+    "持ち物": "ペットキャリーかペットバギー、リード、排泄物の処理用品。",
+    "雨の日": "天候で欠航の場合あり。",
+    "出発前に確認": "運航時刻と船の種類(大茶会・SORAKAZE)。",
+    "公式で確認したこと": "箱根遊船公式の『ワンちゃんのご乗船について』で、体重制限・乗り方・貸出を確認。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://www.hakone-yuransen.jp/pet/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-26",
+   "dog_hints": {
+    "weight_limit_kg_mentions": [
+     30
+    ],
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-hakone-yuransen",
+   "geocode": {
+    "lat": 35.203037,
+    "lon": 139.030975,
+    "precision": "facility",
+    "source": "official-address",
+    "matched": "神奈川県箱根町元箱根４５番地"
+   },
+   "area_geocode": {
+    "lat": 35.232388,
+    "lon": 139.106949,
+    "matched": "神奈川県箱根町",
+    "precision": "approximate"
+   }
+  },
+  {
+   "id": "c4-kusanagi-dogrun",
+   "type": "spot",
+   "name": "草薙総合運動場 ドッグラン",
+   "area": "静岡県静岡市駿河区・草薙",
+   "region_group": "shizuoka-east",
+   "kinds": [
+    "run",
+    "park"
+   ],
+   "theme": "静岡県の草薙総合運動場の無料ドッグラン。予約不要で開場中はいつでも使える",
+   "facts": {
+    "犬の条件・同伴範囲": "全犬種エリア169㎡と小型犬エリア85㎡。予約不要。ラン内での食事・犬への給餌は不可(飲み物は可)。",
+    "料金の目安/犬料金": "無料。",
+    "持ち物": "リード、排泄物の処理用品。",
+    "雨の日": "屋外(急な豪雨などで閉場の場合あり)。",
+    "出発前に確認": "7:30〜19:00。大会・イベントで使えない日。",
+    "公式で確認したこと": "草薙総合運動場の公式ページで、エリア・料金・時間・注意事項を確認。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://www.kusanagi-sportscomplex.jp/dogrun/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-26",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-kusanagi-dogrun",
+   "geocode": {
+    "lat": 34.989803,
+    "lon": 138.426682,
+    "precision": "facility",
+    "source": "official-address",
+    "matched": "静岡県静岡市駿河区栗原１９番１号"
+   },
+   "area_geocode": {
+    "lat": 34.960739,
+    "lon": 138.404114,
+    "matched": "静岡県静岡市駿河区",
+    "precision": "approximate"
+   }
+  },
+  {
+   "id": "c4-kanegawa-no-mori-dogrun",
+   "type": "spot",
+   "name": "金川の森 こもれびの森ドッグラン",
+   "area": "山梨県笛吹市",
+   "region_group": "koshinetsu",
+   "kinds": [
+    "run",
+    "park"
+   ],
+   "theme": "県営公園『金川の森』のこもれびの森にある、園内で唯一のノーリードのドッグラン",
+   "facts": {
+    "犬の条件・同伴範囲": "1年以内に狂犬病予防接種を受け、居住地の市町村に登録済みの中・小型犬のみ。注意事項に同意し『ドッグラン利用申込書』(入口の用紙かQRコード)を記入。発情期・感染する病気の犬は不可。",
+    "料金の目安/犬料金": "無料。",
+    "持ち物": "リード、排泄物の処理用品。",
+    "雨の日": "屋外。",
+    "出発前に確認": "公園の開園時間・休園日。",
+    "公式で確認したこと": "金川の森の公式ページで、対象犬・申込書・無料を確認。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://kanegawanomori.jp/enjoy/dogrun/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-26",
+   "dog_hints": {
+    "small_dog_only_mention": true,
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-kanegawa-no-mori-dogrun",
+   "geocode": {
+    "lat": 35.639865,
+    "lon": 138.676279,
+    "precision": "facility",
+    "source": "official-map",
+    "matched": "公式ページの地図"
+   },
+   "area_geocode": {
+    "lat": 35.647251,
+    "lon": 138.639801,
+    "matched": "山梨県笛吹市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c4-dogpark-runrunrun",
+   "type": "spot",
+   "name": "DOG PARK runrunrun(ランランラン)",
+   "area": "千葉県船橋市",
+   "region_group": "chiba",
+   "kinds": [
+    "run"
+   ],
+   "theme": "船橋市の中心の緑に囲まれた、超小型犬〜中型犬(15kg)専用のドッグラン。プール・噴水・シャワーあり",
+   "facts": {
+    "犬の条件・同伴範囲": "超小型犬〜中型犬(15kg)専用、総面積約2,600㎡。各エリアに噴水と浅めのプール。",
+    "料金の目安/犬料金": "平日 1頭1,320円・土日祝1,650円(2時間まで、同伴1名込み)。2人目以降 平日550円・土日祝770円。小学生以下無料。",
+    "持ち物": "リード、排泄物の処理用品、ワクチンの証明(公式で確認)。",
+    "雨の日": "屋外。",
+    "出発前に確認": "休園日・ナイターの日(営業カレンダー)。",
+    "公式で確認したこと": "公式サイトで、対象犬・料金・設備を確認。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://run-run-run.jp/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-26",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-dogpark-runrunrun",
+   "geocode": {
+    "lat": 35.725754,
+    "lon": 140.008647,
+    "precision": "facility",
+    "source": "official-map",
+    "matched": "公式ページの地図"
+   },
+   "area_geocode": {
+    "lat": 35.694721,
+    "lon": 139.982498,
+    "matched": "千葉県船橋市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c4-dogrun-ibaraki",
+   "type": "spot",
+   "name": "ドッグラン茨城",
+   "area": "茨城県筑西市・関本上",
+   "region_group": "kanto",
+   "kinds": [
+    "run"
+   ],
+   "theme": "屋根付きで特殊人工芝の貸切ドッグラン。夜10時まで使え、犬種・体重の制限なし",
+   "facts": {
+    "犬の条件・同伴範囲": "犬種・体重の制限なし、会員登録不要の時間貸しあり(家族に限り人数無制限)。飲食物持ち込み可。",
+    "料金の目安/犬料金": "時間貸し 1時間1頭1,900円(2頭目以降900円)、グループ貸し1日30,000円(税込)。",
+    "持ち物": "リード、排泄物の処理用品。",
+    "雨の日": "屋根があり急な雨でも安心の案内。",
+    "出発前に確認": "公式の利用条件に『土日祝日 ご利用可能時間 日の出〜22:00』(平日の利用は公式で確認)。予約はホームページのお問い合わせかInstagram。無料駐車場20台。",
+    "公式で確認したこと": "公式サイトで、料金・条件・予約方法・所在地を確認。"
+   },
+   "links": [
+    {
+     "label": "公式情報",
+     "url": "https://www.dogrunibaraki.com/",
+     "affiliate": false
+    },
+    {
+     "label": "施設公式案内",
+     "url": "https://www.dogrunibaraki.com/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-26",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-dogrun-ibaraki",
+   "geocode": {
+    "lat": 36.260561,
+    "lon": 139.914724,
+    "precision": "district",
+    "source": "manual",
+    "matched": "茨城県筑西市関本上1423-1"
+   },
+   "area_geocode": {
+    "lat": 36.305267,
+    "lon": 139.979401,
+    "matched": "茨城県筑西市",
+    "precision": "approximate"
+   }
+  },
+  {
+   "id": "c4-nagano-joyama-park",
+   "type": "spot",
+   "name": "城山公園(長野市)",
+   "area": "長野県長野市・善光寺の東",
+   "region_group": "koshinetsu",
+   "kinds": [
+    "park"
+   ],
+   "theme": "善光寺のすぐ東の公園。長野市が犬の散歩を認めている公園の一つ(指定区域)",
+   "facts": {
+    "犬の条件・同伴範囲": "指定区域に限り、マナーを守る条件で犬を連れて入れる(令和7年度に区域を拡大)。リードは必ず着用し短く持つ。フンは持ち帰り、おしっこは水で流す。水浴び・ブラッシングは不可。",
+    "料金の目安/犬料金": "無料。",
+    "持ち物": "リード、排泄物の処理用品、水。",
+    "雨の日": "屋外。",
+    "出発前に確認": "犬を連れて入ってよい区域(現地の案内)。",
+    "公式で確認したこと": "長野市公式ホームページ『犬の散歩ができる公園』で、対象公園とマナーを確認。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://www.city.nagano.nagano.jp/n202500/contents/p001051.html",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-26",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-nagano-joyama-park",
+   "geocode": {
+    "lat": 36.661994,
+    "lon": 138.190552,
+    "precision": "facility",
+    "source": "osm",
+    "matched": "城山公園, 大字三輪, 伊勢町, 長野市, 長野県, 日本"
+   },
+   "area_geocode": {
+    "lat": 36.648537,
+    "lon": 138.194824,
+    "matched": "長野県長野市",
+    "precision": "approximate"
+   }
+  },
+  {
+   "id": "c4-nagano-wakasato-park",
+   "type": "spot",
+   "name": "若里公園(県営・長野市)",
+   "area": "長野県長野市・若里",
+   "region_group": "koshinetsu",
+   "kinds": [
+    "park"
+   ],
+   "theme": "長野市街の県営公園。長野市が犬の散歩を認めている公園の一つ(指定区域)",
+   "facts": {
+    "犬の条件・同伴範囲": "指定区域に限り、マナーを守る条件で犬を連れて入れる。リードは必ず着用し短く持つ。フンは持ち帰り、おしっこは水で流す。",
+    "料金の目安/犬料金": "無料。",
+    "持ち物": "リード、排泄物の処理用品、水。",
+    "雨の日": "屋外。",
+    "出発前に確認": "犬を連れて入ってよい区域(現地の案内)。",
+    "公式で確認したこと": "長野市公式ホームページ『犬の散歩ができる公園』で確認。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://www.city.nagano.nagano.jp/n202500/contents/p001051.html",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-26",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-nagano-wakasato-park",
+   "geocode": {
+    "lat": 36.635547,
+    "lon": 138.187725,
+    "precision": "facility",
+    "source": "osm",
+    "matched": "若里公園, 南石堂町, 長野市, 長野県, 380-0928, 日本"
+   },
+   "area_geocode": {
+    "lat": 36.648537,
+    "lon": 138.194824,
+    "matched": "長野県長野市",
+    "precision": "approximate"
+   }
+  },
+  {
+   "id": "c4-kawanakajima-park-dogrun",
+   "type": "spot",
+   "name": "川中島古戦場史跡公園 ドッグラン",
+   "area": "長野県長野市・小島田町",
+   "region_group": "koshinetsu",
+   "kinds": [
+    "park",
+    "run"
+   ],
+   "theme": "川中島の戦いの史跡公園。指定区域で犬の散歩ができ、2018年度にドッグランも開設。長野ICから近い",
+   "facts": {
+    "犬の条件・同伴範囲": "指定区域に限り犬を連れて入れる(リード着用・フン持ち帰り)。ドッグランあり(平成30年度開設)。",
+    "料金の目安/犬料金": "出発前に確認。",
+    "持ち物": "リード、排泄物の処理用品、水。",
+    "雨の日": "屋外。",
+    "出発前に確認": "ドッグランの利用方法・時間。",
+    "公式で確認したこと": "長野市公式ホームページ『犬の散歩ができる公園』で、散歩できる公園とドッグラン開設を確認。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://www.city.nagano.nagano.jp/n202500/contents/p001051.html",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-26",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-kawanakajima-park-dogrun",
+   "geocode": {
+    "lat": 36.589757,
+    "lon": 138.187128,
+    "precision": "facility",
+    "source": "osm",
+    "matched": "川中島古戦場史跡公園, 長野真田線, 篠ノ井西寺尾, 長野市, 長野県, 381-2298, 日本"
+   },
+   "area_geocode": {
+    "lat": 36.648537,
+    "lon": 138.194824,
+    "matched": "長野県長野市",
+    "precision": "approximate"
+   }
+  },
+  {
+   "id": "c4-matsushiro-sanada-park",
+   "type": "spot",
+   "name": "真田公園(長野市松代)",
+   "area": "長野県長野市・松代",
+   "region_group": "koshinetsu",
+   "kinds": [
+    "park"
+   ],
+   "theme": "城下町・松代の公園。長野市が犬の散歩を認めている公園の一つ(指定区域)",
+   "facts": {
+    "犬の条件・同伴範囲": "指定区域に限り、マナーを守る条件で犬を連れて入れる(リード着用・フン持ち帰り)。",
+    "料金の目安/犬料金": "無料。",
+    "持ち物": "リード、排泄物の処理用品、水。",
+    "雨の日": "屋外。",
+    "出発前に確認": "犬を連れて入ってよい区域(現地の案内)。",
+    "公式で確認したこと": "長野市公式ホームページ『犬の散歩ができる公園』で確認。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://www.city.nagano.nagano.jp/n202500/contents/p001051.html",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-26",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-matsushiro-sanada-park",
+   "geocode": {
+    "lat": 36.563226,
+    "lon": 138.19754,
+    "precision": "facility",
+    "source": "osm",
+    "matched": "真田公園, 松代町松代, 長野市, 長野県, 日本"
+   },
+   "area_geocode": {
+    "lat": 36.648537,
+    "lon": 138.194824,
+    "matched": "長野県長野市",
+    "precision": "approximate"
+   }
+  },
+  {
+   "id": "c4-nagano-undo-park",
+   "type": "spot",
+   "name": "長野運動公園",
+   "area": "長野県長野市・吉田",
+   "region_group": "koshinetsu",
+   "kinds": [
+    "park"
+   ],
+   "theme": "長野市の運動公園。長野市が犬の散歩を認めている公園の一つ(指定区域)",
+   "facts": {
+    "犬の条件・同伴範囲": "指定区域に限り、マナーを守る条件で犬を連れて入れる(リード着用・フン持ち帰り)。",
+    "料金の目安/犬料金": "無料。",
+    "持ち物": "リード、排泄物の処理用品、水。",
+    "雨の日": "屋外。",
+    "出発前に確認": "犬を連れて入ってよい区域(現地の案内)。",
+    "公式で確認したこと": "長野市公式ホームページ『犬の散歩ができる公園』で確認。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://www.city.nagano.nagano.jp/n202500/contents/p001051.html",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-26",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-nagano-undo-park",
+   "geocode": {
+    "lat": 36.659377,
+    "lon": 138.231664,
+    "precision": "facility",
+    "source": "osm",
+    "matched": "長野運動公園, 東部幹線, 吉田五丁目, 大字石渡, 長野市, 長野県, 381-0038, 日本"
+   },
+   "area_geocode": {
+    "lat": 36.648537,
+    "lon": 138.194824,
+    "matched": "長野県長野市",
+    "precision": "approximate"
+   }
+  },
+  {
+   "id": "c4-saigawa-2-ryokuchi-dogrun",
+   "type": "spot",
+   "name": "犀川第2緑地 ドッグラン",
+   "area": "長野県長野市・犀川河川敷",
+   "region_group": "koshinetsu",
+   "kinds": [
+    "park",
+    "run"
+   ],
+   "theme": "犀川沿いの緑地。犬の散歩ができ、2025年度にドッグランが開設された",
+   "facts": {
+    "犬の条件・同伴範囲": "指定区域に限り犬を連れて入れる(リード着用・フン持ち帰り)。ドッグランあり(令和7年度開設)。",
+    "料金の目安/犬料金": "出発前に確認。",
+    "持ち物": "リード、排泄物の処理用品、水。",
+    "雨の日": "屋外。",
+    "出発前に確認": "ドッグランの利用方法・時間。",
+    "公式で確認したこと": "長野市公式ホームページ『犬の散歩ができる公園』で、散歩区域とドッグラン開設を確認。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://www.city.nagano.nagano.jp/n202500/contents/p001051.html",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-26",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-saigawa-2-ryokuchi-dogrun",
+   "geocode": {
+    "lat": 36.648537,
+    "lon": 138.194824,
+    "matched": "長野県長野市",
+    "precision": "approximate"
+   },
+   "area_geocode": {
+    "lat": 36.648537,
+    "lon": 138.194824,
+    "matched": "長野県長野市",
+    "precision": "approximate"
+   }
+  },
+  {
+   "id": "c4-sodegaura-kaihin-park",
+   "type": "spot",
+   "name": "袖ヶ浦海浜公園",
+   "area": "千葉県袖ケ浦市",
+   "region_group": "chiba",
+   "kinds": [
+    "park"
+   ],
+   "theme": "東京湾に面した海浜公園。展望塔から富士山や東京スカイツリーも望める。リードを付けて犬と散歩できる",
+   "facts": {
+    "犬の条件・同伴範囲": "公式の注意事項に『犬の放し飼いは止め、糞は持ち帰りましょう』とあり、リードを付けての散歩はできる。",
+    "料金の目安/犬料金": "無料。",
+    "持ち物": "リード、排泄物の処理用品。",
+    "雨の日": "屋外。",
+    "出発前に確認": "開園時間・駐車場。テトラポット内への立ち入りは禁止。",
+    "公式で確認したこと": "公式サイトの注意事項で、犬の扱いを確認。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://sodegaura-kaihinpark.com/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-26",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-sodegaura-kaihin-park",
+   "geocode": {
+    "lat": 35.455845,
+    "lon": 139.951784,
+    "precision": "facility",
+    "source": "official-map",
+    "matched": "公式ページの地図"
+   },
+   "area_geocode": {
+    "lat": 35.429874,
+    "lon": 139.954453,
+    "matched": "千葉県袖ケ浦市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c4-futtsu-park",
+   "type": "spot",
+   "name": "千葉県立富津公園",
+   "area": "千葉県富津市・富津岬",
+   "region_group": "chiba",
+   "kinds": [
+    "park"
+   ],
+   "theme": "東京湾に突き出した富津岬の県立公園。松林や海辺をリードを付けて散歩",
+   "facts": {
+    "犬の条件・同伴範囲": "ペットの放し飼いは遠慮し、フンは持ち帰る案内(リードを付けての散歩はできる)。",
+    "料金の目安/犬料金": "無料。",
+    "持ち物": "リード、排泄物の処理用品。",
+    "雨の日": "屋外。",
+    "出発前に確認": "駐車場、夏のジャンボプールの期間の混雑。",
+    "公式で確認したこと": "公式サイトで、ペットの扱い(放し飼い不可・フン持ち帰り)を確認。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://www.cue-net.or.jp/kouen/futtsu/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-26",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-futtsu-park",
+   "geocode": {
+    "lat": 35.310492,
+    "lon": 139.800352,
+    "precision": "facility",
+    "source": "official-map",
+    "matched": "公式ページの地図"
+   },
+   "area_geocode": {
+    "lat": 35.304169,
+    "lon": 139.857117,
+    "matched": "千葉県富津市",
+    "precision": "approximate"
+   }
+  },
+  {
+   "id": "c4-livingston-cafe-nasu",
+   "type": "spot",
+   "name": "リビングストンカフェ(LivingstonCafe)",
+   "area": "栃木県那須町",
+   "region_group": "kanto",
+   "kinds": [
+    "cafe"
+   ],
+   "theme": "ネイティブアメリカンジュエリーの店に併設の、全席ソファのカフェ。テラスも店内もペットOK",
+   "facts": {
+    "犬の条件・同伴範囲": "テラスも店内もペットOK(全席ソファー席)。",
+    "料金の目安/犬料金": "犬の料金の案内なし(飲食代)。",
+    "持ち物": "リード、マナーベルト(必要な場合)。",
+    "雨の日": "店内で過ごせる。",
+    "出発前に確認": "営業日・時間。",
+    "公式で確認したこと": "公式サイトで、店内・テラスのペットOKを確認。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://livingston-shop.com/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-26",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-livingston-cafe-nasu",
+   "geocode": {
+    "lat": 37.01976,
+    "lon": 140.121017,
+    "matched": "栃木県那須町",
+    "precision": "municipality"
+   },
+   "area_geocode": {
+    "lat": 37.01976,
+    "lon": 140.121017,
+    "matched": "栃木県那須町",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c4-komagatake-ropeway",
+   "type": "spot",
+   "name": "箱根 駒ヶ岳ロープウェー(箱根園)",
+   "area": "神奈川県箱根町・元箱根",
+   "region_group": "kanto",
+   "kinds": [
+    "travel"
+   ],
+   "theme": "箱根園から駒ヶ岳山頂へ。芦ノ湖と富士山を見渡す山頂で犬と写真撮影",
+   "facts": {
+    "犬の条件・同伴範囲": "犬と一緒に乗れる。乗車はペットキャリーなどに入れて床置き(抱っこ紐は不可)。山頂のみリードを付けてキャリーから出せる。狂犬病・混合ワクチン未接種の犬は不可。",
+    "料金の目安/犬料金": "犬の料金は公式で確認。小型犬用ペットキャリーの無料貸出(5個)。",
+    "持ち物": "ペットキャリー、リード、排泄物の処理用品。",
+    "雨の日": "強風・雷などで運休の場合あり。",
+    "出発前に確認": "運行時間・運賃(公式の運行時間・運賃のページ)。",
+    "公式で確認したこと": "公式ページの『ワンちゃんのご乗車について』で、乗り方と条件を確認。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://www.princehotels.co.jp/amuse/hakone-en/ropeway/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-26",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-komagatake-ropeway",
+   "geocode": {
+    "lat": 35.211807,
+    "lon": 139.009964,
+    "precision": "facility",
+    "source": "official-address",
+    "matched": "神奈川県箱根町元箱根１３９番地"
+   },
+   "area_geocode": {
+    "lat": 35.232388,
+    "lon": 139.106949,
+    "matched": "神奈川県箱根町",
+    "precision": "approximate"
+   }
+  },
+  {
+   "id": "c4-ashinoko-panorama-park",
+   "type": "spot",
+   "name": "富士芦ノ湖パノラマパーク(箱根園)",
+   "area": "神奈川県箱根町・元箱根",
+   "region_group": "kanto",
+   "kinds": [
+    "park",
+    "travel"
+   ],
+   "theme": "芦ノ湖と富士山を望む箱根園の広場。犬も入場できる",
+   "facts": {
+    "犬の条件・同伴範囲": "犬同伴で入場できる(トイレの処理・しつけなど他の客に迷惑をかけないルールあり)。",
+    "料金の目安/犬料金": "入場料 おとな600円・こども400円・ワンちゃん500円。",
+    "持ち物": "リード、排泄物の処理用品。",
+    "雨の日": "悪天候時はクローズの場合あり。",
+    "出発前に確認": "通年営業 9:00〜16:30(最終受付16:00)。",
+    "公式で確認したこと": "箱根園の公式ページで、犬の入場料と営業時間を確認。"
+   },
+   "links": [
+    {
+     "label": "公式情報",
+     "url": "https://www.princehotels.co.jp/amuse/hakone-en/play/",
+     "affiliate": false
+    },
+    {
+     "label": "施設公式案内",
+     "url": "https://www.princehotels.co.jp/amuse/hakone-en/play/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-26",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-ashinoko-panorama-park",
+   "geocode": {
+    "lat": 35.218547,
+    "lon": 139.010163,
+    "precision": "facility",
+    "source": "osm",
+    "matched": "富士芦ノ湖パノラマパーク, 湯河原箱根仙石原線, 元箱根, 箱根町, 足柄下郡, 神奈川県, 250-0398, 日本"
+   },
+   "area_geocode": {
+    "lat": 35.232388,
+    "lon": 139.106949,
+    "matched": "神奈川県箱根町",
+    "precision": "approximate"
+   }
+  },
+  {
+   "id": "c4-hakone-tenku-terrace",
+   "type": "spot",
+   "name": "はこね天空のテラス",
+   "area": "神奈川県箱根町・強羅",
+   "region_group": "kanto",
+   "kinds": [
+    "cafe"
+   ],
+   "theme": "箱根・強羅の山の上のカフェ。テラス席(52席)で犬と一緒に食事・カフェ。箱根甘酒茶屋の甘酒を使ったスイーツ",
+   "facts": {
+    "犬の条件・同伴範囲": "テラス席は犬OK。",
+    "料金の目安/犬料金": "犬の料金の案内なし(飲食代)。",
+    "持ち物": "リード。",
+    "雨の日": "テラス席は屋外。",
+    "出発前に確認": "営業10:00〜17:00(LO16:30)、水曜定休。店舗前駐車場14台。",
+    "公式で確認したこと": "公式サイトで、テラス席の犬OK・定休日・駐車場を確認。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://hakone-tenkuno-terrace.jp/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-26",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-hakone-tenku-terrace",
+   "geocode": {
+    "lat": 35.247044,
+    "lon": 139.037338,
+    "precision": "facility",
+    "source": "official-address",
+    "matched": "神奈川県箱根町強羅１３００番地"
+   },
+   "area_geocode": {
+    "lat": 35.232388,
+    "lon": 139.106949,
+    "matched": "神奈川県箱根町",
+    "precision": "approximate"
+   }
+  },
+  {
+   "id": "c4-dogdept-garden-karuizawa",
+   "type": "spot",
+   "name": "DOG DEPT GARDEN 軽井沢店",
+   "area": "長野県軽井沢町・南軽井沢",
+   "region_group": "koshinetsu",
+   "kinds": [
+    "cafe",
+    "run"
+   ],
+   "theme": "南軽井沢のDOG DEPTの大型店。カフェ&レストラン・ショップ・ドッグラン",
+   "facts": {
+    "犬の条件・同伴範囲": "DOG OK。ドッグランは狂犬病予防接種証明書と伝染病ワクチン接種証明書(コピー可)を持参。",
+    "料金の目安/犬料金": "ドッグラン1頭1,000円(+税)/日、2頭目以降500円(+税)。",
+    "持ち物": "接種証明書(コピー可)、リード、排泄物の処理用品。",
+    "雨の日": "カフェは店内。",
+    "出発前に確認": "営業時間(季節で変わるので店舗に確認)。",
+    "公式で確認したこと": "DOG DEPT公式の店舗ページで、設備・ドッグラン料金・必要書類を確認。"
+   },
+   "links": [
+    {
+     "label": "公式情報",
+     "url": "https://www.dogdept.com/shoplist/area02_1.html",
+     "affiliate": false
+    },
+    {
+     "label": "施設公式案内",
+     "url": "https://www.dogdept.com/shoplist/area02_1.html",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-26",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-dogdept-garden-karuizawa",
+   "geocode": {
+    "lat": 36.31494,
+    "lon": 138.629776,
+    "precision": "facility",
+    "source": "official-map",
+    "matched": "公式ページの地図"
+   },
+   "area_geocode": {
+    "lat": 36.348331,
+    "lon": 138.596954,
+    "matched": "長野県軽井沢町",
+    "precision": "approximate"
+   }
+  },
+  {
+   "id": "c4-dogdept-minatonomieruoka",
+   "type": "spot",
+   "name": "DOG DEPT 横浜 港の見える丘公園店",
+   "area": "神奈川県横浜市中区・山手町",
+   "region_group": "kanto",
+   "kinds": [
+    "cafe"
+   ],
+   "theme": "港の見える丘公園のそばのDOG DEPTのカフェ&レストラン。山手の散歩の途中に",
+   "facts": {
+    "犬の条件・同伴範囲": "DOG OK(カフェ&レストラン・ショップ)。",
+    "料金の目安/犬料金": "犬の料金の案内なし(飲食代)。",
+    "持ち物": "リード、マナーベルト(必要な場合)。",
+    "雨の日": "店内で過ごせる。",
+    "出発前に確認": "営業11:00〜18:00(LO17:00)、月曜定休(祝日の場合は翌日)。",
+    "公式で確認したこと": "DOG DEPT公式の店舗ページで、DOG OK・営業時間・所在地を確認。"
+   },
+   "links": [
+    {
+     "label": "公式情報",
+     "url": "https://www.dogdept.com/shoplist/area03_20.html",
+     "affiliate": false
+    },
+    {
+     "label": "施設公式案内",
+     "url": "https://www.dogdept.com/shoplist/area03_20.html",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-26",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-dogdept-minatonomieruoka",
+   "geocode": {
+    "lat": 35.441135,
+    "lon": 139.652679,
+    "precision": "facility",
+    "source": "official-address",
+    "matched": "神奈川県横浜市中区山手町１８４番地"
+   },
+   "area_geocode": {
+    "lat": 35.444721,
+    "lon": 139.642227,
+    "matched": "神奈川県横浜市中区",
+    "precision": "approximate"
+   }
+  },
+  {
+   "id": "c4-dogdept-garden-sano",
+   "type": "spot",
+   "name": "DOG DEPT GARDEN 佐野店",
+   "area": "栃木県佐野市・越名町",
+   "region_group": "kanto",
+   "kinds": [
+    "cafe",
+    "run"
+   ],
+   "theme": "東北道・佐野藤岡ICそば、佐野プレミアム・アウトレット近くのカフェ&ドッグラン",
+   "facts": {
+    "犬の条件・同伴範囲": "DOG OK(カフェ&レストラン・ショップ)。ドッグランは狂犬病などの証明書を持参。",
+    "料金の目安/犬料金": "ドッグラン1頭1,000円(+税)。レンタルカート2時間1,650円〜。",
+    "持ち物": "接種証明書、リード、排泄物の処理用品。",
+    "雨の日": "カフェは店内。",
+    "出発前に確認": "営業11:00〜18:00(LO17:00)、毎週水曜定休。",
+    "公式で確認したこと": "DOG DEPT公式の店舗ページで、営業時間・ドッグラン料金を確認。"
+   },
+   "links": [
+    {
+     "label": "公式情報",
+     "url": "https://www.dogdept.com/shoplist/area03_15.html",
+     "affiliate": false
+    },
+    {
+     "label": "施設公式案内",
+     "url": "https://www.dogdept.com/shoplist/area03_15.html",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-26",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-dogdept-garden-sano",
+   "geocode": {
+    "lat": 36.291416,
+    "lon": 139.602173,
+    "precision": "facility",
+    "source": "official-address",
+    "matched": "栃木県佐野市越名町２０６２番"
+   },
+   "area_geocode": {
+    "lat": 36.314484,
+    "lon": 139.578415,
+    "matched": "栃木県佐野市",
+    "precision": "approximate"
+   }
+  },
+  {
+   "id": "c4-dogdept-garden-gotemba",
+   "type": "spot",
+   "name": "DOG DEPT GARDEN 御殿場店",
+   "area": "静岡県御殿場市・東山",
+   "region_group": "shizuoka-east",
+   "kinds": [
+    "cafe",
+    "run"
+   ],
+   "theme": "御殿場のDOG DEPTのカフェとドッグラン。富士山麓ドライブの途中に",
+   "facts": {
+    "犬の条件・同伴範囲": "DOG OK。カフェはドリンクとわんちゃんメニューのみ。ドッグランは証明書の提示が必要(公式で確認)。",
+    "料金の目安/犬料金": "ドッグラン1頭1,100円/日、2頭目以降550円/頭。",
+    "持ち物": "接種証明書、リード、排泄物の処理用品。",
+    "雨の日": "カフェは店内。",
+    "出発前に確認": "営業11:00〜18:00(カフェLO16:00)、木曜定休。",
+    "公式で確認したこと": "DOG DEPT公式の店舗ページで、営業時間・カフェの内容・ドッグラン料金を確認。"
+   },
+   "links": [
+    {
+     "label": "公式情報",
+     "url": "https://www.dogdept.com/shoplist/area07_19.html",
+     "affiliate": false
+    },
+    {
+     "label": "施設公式案内",
+     "url": "https://www.dogdept.com/shoplist/area07_19.html",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-26",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-dogdept-garden-gotemba",
+   "geocode": {
+    "lat": 35.297695,
+    "lon": 138.957306,
+    "precision": "district",
+    "source": "official-address",
+    "matched": "静岡県御殿場市東山"
+   },
+   "area_geocode": {
+    "lat": 35.308693,
+    "lon": 138.934601,
+    "matched": "静岡県御殿場市",
+    "precision": "approximate"
+   }
+  },
+  {
+   "id": "c4-dogdept-karuizawa-prince",
+   "type": "spot",
+   "name": "DOG DEPT 軽井沢プリンス店(軽井沢・プリンスショッピングプラザ)",
+   "area": "長野県軽井沢町・軽井沢駅南口",
+   "region_group": "koshinetsu",
+   "kinds": [
+    "cafe",
+    "run"
+   ],
+   "theme": "軽井沢駅そばのアウトレット内、ツリーモールのDOG DEPT。カフェとドッグランがある",
+   "facts": {
+    "犬の条件・同伴範囲": "DOG OK(カフェ&レストラン・ショップ)。ドッグランは狂犬病予防接種証明書と伝染病ワクチン接種証明書(コピー可)を持参。",
+    "料金の目安/犬料金": "ドッグラン1頭1,000円(+税)/日、2頭目以降500円(+税)。",
+    "持ち物": "接種証明書(コピー可)、リード、排泄物の処理用品。",
+    "雨の日": "カフェは店内。",
+    "出発前に確認": "営業時間は軽井沢・プリンスショッピングプラザに準ずる。",
+    "公式で確認したこと": "DOG DEPT公式の店舗ページで、設備とドッグラン料金を確認。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://www.dogdept.com/shoplist/area07_8.html",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-26",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-dogdept-karuizawa-prince",
+   "geocode": {
+    "lat": 36.340888,
+    "lon": 138.630172,
+    "precision": "facility",
+    "source": "official-map",
+    "matched": "公式ページの地図"
+   },
+   "area_geocode": {
+    "lat": 36.348331,
+    "lon": 138.596954,
+    "matched": "長野県軽井沢町",
+    "precision": "approximate"
+   }
+  },
+  {
+   "id": "c4-kirara-no-sato",
+   "type": "spot",
+   "name": "奥日立きららの里",
+   "area": "茨城県日立市・入四間町",
+   "region_group": "kanto",
+   "kinds": [
+    "park",
+    "run"
+   ],
+   "theme": "日立市の山あいの広い自然公園。ドッグラン・アスレチック・日本一長いすべり台・オートキャンプ場",
+   "facts": {
+    "犬の条件・同伴範囲": "園内にドッグランあり。利用条件は出発前に確認。",
+    "料金の目安/犬料金": "出発前に確認(入園料が必要な場合あり)。",
+    "持ち物": "リード、排泄物の処理用品、ワクチンの証明(求められた場合)。",
+    "雨の日": "屋外。",
+    "出発前に確認": "開園時間・休園日、ドッグランの料金と条件。",
+    "公式で確認したこと": "日立市公式ウェブサイトの施設案内で、ドッグランがあることと所在地を確認。"
+   },
+   "links": [
+    {
+     "label": "公式情報",
+     "url": "https://www.city.hitachi.lg.jp/shisetsu/kanko_bunka/1003952/1004395.html",
+     "affiliate": false
+    },
+    {
+     "label": "施設公式案内",
+     "url": "https://www.city.hitachi.lg.jp/shisetsu/kanko_bunka/1003952/1004395.html",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-26",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-kirara-no-sato",
+   "geocode": {
+    "lat": 36.645158,
+    "lon": 140.591717,
+    "precision": "facility",
+    "source": "osm",
+    "matched": "奥日立きららの里, 日立市, 茨城県, 日本"
+   },
+   "area_geocode": {
+    "lat": 36.599152,
+    "lon": 140.65062,
+    "matched": "茨城県日立市",
+    "precision": "approximate"
    }
   }
  ]
