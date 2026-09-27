@@ -6425,8 +6425,7 @@ window.WANKO_FOOD_FACTS = {
     "ingredient_text": "肉類（鶏、七面鳥）、とうもろこし、小麦、動物性脂肪、米",
     "target": "～12ヶ月まで／小・中型犬用 ※成犬時体重 20kgまで",
     "age": [
-      "子犬",
-      "成犬"
+      "子犬"
     ],
     "age_range": [
       0,
@@ -6435,6 +6434,12 @@ window.WANKO_FOOD_FACTS = {
     "breed": [],
     "all_breeds": false,
     "weight": [
+      [
+        0,
+        20.0
+      ]
+    ],
+    "adult_weight": [
       [
         0,
         20.0
@@ -6465,8 +6470,7 @@ window.WANKO_FOOD_FACTS = {
     "ingredient_text": "肉類（鶏、七面鳥）、小麦、とうもろこし、とうもろこし粉、動物性脂肪",
     "target": "～24ヶ月まで／大型犬用 ※成犬時体重 20kg以上",
     "age": [
-      "子犬",
-      "成犬"
+      "子犬"
     ],
     "age_range": [
       0,
@@ -6475,6 +6479,12 @@ window.WANKO_FOOD_FACTS = {
     "breed": [],
     "all_breeds": false,
     "weight": [
+      [
+        20.0,
+        null
+      ]
+    ],
+    "adult_weight": [
       [
         20.0,
         null
@@ -6521,6 +6531,7 @@ window.WANKO_FOOD_FACTS = {
         null
       ]
     ],
+    "adult_weight": [],
     "form": "ドライ",
     "texture": [],
     "grain": "",
@@ -6555,6 +6566,7 @@ window.WANKO_FOOD_FACTS = {
     "breed": [],
     "all_breeds": false,
     "weight": [],
+    "adult_weight": [],
     "form": "ドライ",
     "texture": [],
     "grain": "",
@@ -6589,6 +6601,7 @@ window.WANKO_FOOD_FACTS = {
     "breed": [],
     "all_breeds": false,
     "weight": [],
+    "adult_weight": [],
     "form": "ドライ",
     "texture": [],
     "grain": "",
@@ -6630,6 +6643,7 @@ window.WANKO_FOOD_FACTS = {
         null
       ]
     ],
+    "adult_weight": [],
     "form": "ドライ",
     "texture": [],
     "grain": "",
@@ -6658,6 +6672,7 @@ window.WANKO_FOOD_FACTS = {
     "breed": [],
     "all_breeds": false,
     "weight": [],
+    "adult_weight": [],
     "form": "ドライ",
     "texture": [],
     "grain": "",
@@ -6692,6 +6707,7 @@ window.WANKO_FOOD_FACTS = {
     "breed": [],
     "all_breeds": false,
     "weight": [],
+    "adult_weight": [],
     "form": "ドライ",
     "texture": [],
     "grain": "",
@@ -6729,6 +6745,7 @@ window.WANKO_FOOD_FACTS = {
     "breed": [],
     "all_breeds": false,
     "weight": [],
+    "adult_weight": [],
     "form": "ドライ",
     "texture": [],
     "grain": "",
@@ -6763,6 +6780,7 @@ window.WANKO_FOOD_FACTS = {
     "breed": [],
     "all_breeds": false,
     "weight": [],
+    "adult_weight": [],
     "form": "ドライ",
     "texture": [],
     "grain": "",
@@ -6805,6 +6823,7 @@ window.WANKO_FOOD_FACTS = {
     "breed": [],
     "all_breeds": false,
     "weight": [],
+    "adult_weight": [],
     "form": "ドライ",
     "texture": [],
     "grain": "",
@@ -6836,10 +6855,14 @@ window.WANKO_FOOD_FACTS = {
     "age": [
       "子犬"
     ],
-    "age_range": null,
+    "age_range": [
+      0,
+      12.0
+    ],
     "breed": [],
     "all_breeds": false,
     "weight": [],
+    "adult_weight": [],
     "form": "ドライ",
     "texture": [],
     "grain": "",
@@ -6875,6 +6898,7 @@ window.WANKO_FOOD_FACTS = {
     "breed": [],
     "all_breeds": false,
     "weight": [],
+    "adult_weight": [],
     "form": "ドライ",
     "texture": [],
     "grain": "",
@@ -6907,6 +6931,7 @@ window.WANKO_FOOD_FACTS = {
     "breed": [],
     "all_breeds": false,
     "weight": [],
+    "adult_weight": [],
     "form": "ドライ",
     "texture": [],
     "grain": "",
@@ -6940,6 +6965,7 @@ window.WANKO_FOOD_FACTS = {
     "breed": [],
     "all_breeds": false,
     "weight": [],
+    "adult_weight": [],
     "form": "ドライ",
     "texture": [],
     "grain": "",
@@ -6967,10 +6993,14 @@ window.WANKO_FOOD_FACTS = {
     "age": [
       "子犬"
     ],
-    "age_range": null,
+    "age_range": [
+      0,
+      12.0
+    ],
     "breed": [],
     "all_breeds": false,
     "weight": [],
+    "adult_weight": [],
     "form": "ドライ",
     "texture": [],
     "grain": "",
@@ -7003,6 +7033,7 @@ window.WANKO_FOOD_FACTS = {
     "breed": [],
     "all_breeds": false,
     "weight": [],
+    "adult_weight": [],
     "form": "ドライ",
     "texture": [],
     "grain": "",
@@ -7047,6 +7078,7 @@ window.WANKO_FOOD_FACTS = {
         null
       ]
     ],
+    "adult_weight": [],
     "form": "ドライ",
     "texture": [],
     "grain": "小粒",
@@ -7086,6 +7118,7 @@ window.WANKO_FOOD_FACTS = {
         null
       ]
     ],
+    "adult_weight": [],
     "form": "ドライ",
     "texture": [],
     "grain": "",
@@ -7125,6 +7158,7 @@ window.WANKO_FOOD_FACTS = {
         null
       ]
     ],
+    "adult_weight": [],
     "form": "ドライ",
     "texture": [],
     "grain": "",
@@ -7158,10 +7192,14 @@ window.WANKO_FOOD_FACTS = {
       "シニア",
       "全年齢"
     ],
-    "age_range": null,
+    "age_range": [
+      0,
+      null
+    ],
     "breed": [],
     "all_breeds": false,
     "weight": [],
+    "adult_weight": [],
     "form": "ドライ",
     "texture": [],
     "grain": "",
@@ -7203,6 +7241,7 @@ window.WANKO_FOOD_FACTS = {
     "breed": [],
     "all_breeds": false,
     "weight": [],
+    "adult_weight": [],
     "form": "ドライ",
     "texture": [],
     "grain": "",
@@ -7237,6 +7276,7 @@ window.WANKO_FOOD_FACTS = {
     "breed": [],
     "all_breeds": false,
     "weight": [],
+    "adult_weight": [],
     "form": "ウェット",
     "texture": [],
     "grain": "",
@@ -7261,12 +7301,19 @@ window.WANKO_FOOD_FACTS = {
     "ingredient_text": "ターキー生肉（骨抜き）、エンドウ豆、ポテト、乾燥鶏卵、ポテト粉",
     "target": "オールライフステージ",
     "age": [
-      "子犬"
+      "子犬",
+      "成犬",
+      "シニア",
+      "全年齢"
     ],
-    "age_range": null,
+    "age_range": [
+      0,
+      null
+    ],
     "breed": [],
     "all_breeds": false,
     "weight": [],
+    "adult_weight": [],
     "form": "ドライ",
     "texture": [],
     "grain": "",
@@ -7299,12 +7346,19 @@ window.WANKO_FOOD_FACTS = {
     "ingredient_text": "ターキー生肉（骨抜き）、乾燥鶏卵、エンドウ豆、エンドウ豆粉、ポテト",
     "target": "オールライフステージ／小型犬",
     "age": [
-      "子犬"
+      "子犬",
+      "成犬",
+      "シニア",
+      "全年齢"
     ],
-    "age_range": null,
+    "age_range": [
+      0,
+      null
+    ],
     "breed": [],
     "all_breeds": false,
     "weight": [],
+    "adult_weight": [],
     "form": "ドライ",
     "texture": [],
     "grain": "",
@@ -7342,6 +7396,7 @@ window.WANKO_FOOD_FACTS = {
     "breed": [],
     "all_breeds": false,
     "weight": [],
+    "adult_weight": [],
     "form": "ドライ",
     "texture": [],
     "grain": "",
@@ -7381,6 +7436,7 @@ window.WANKO_FOOD_FACTS = {
     "breed": [],
     "all_breeds": false,
     "weight": [],
+    "adult_weight": [],
     "form": "ドライ",
     "texture": [],
     "grain": "",
@@ -7424,6 +7480,7 @@ window.WANKO_FOOD_FACTS = {
     "breed": [],
     "all_breeds": false,
     "weight": [],
+    "adult_weight": [],
     "form": "ドライ",
     "texture": [],
     "grain": "",
@@ -7458,6 +7515,7 @@ window.WANKO_FOOD_FACTS = {
     "breed": [],
     "all_breeds": false,
     "weight": [],
+    "adult_weight": [],
     "form": "ドライ",
     "texture": [],
     "grain": "",
@@ -7483,12 +7541,17 @@ window.WANKO_FOOD_FACTS = {
     "ingredient_text": "チキン、小麦、米、とうもろこし、コーングルテン",
     "target": "成犬用(7歳頃～)／中型犬・大型犬",
     "age": [
-      "成犬"
+      "成犬",
+      "シニア"
     ],
-    "age_range": null,
+    "age_range": [
+      84.0,
+      null
+    ],
     "breed": [],
     "all_breeds": false,
     "weight": [],
+    "adult_weight": [],
     "form": "ドライ",
     "texture": [],
     "grain": "",
@@ -7524,12 +7587,13 @@ window.WANKO_FOOD_FACTS = {
       "成犬"
     ],
     "age_range": [
-      0,
-      96.0
+      12.0,
+      108.0
     ],
     "breed": [],
     "all_breeds": false,
     "weight": [],
+    "adult_weight": [],
     "form": "ドライ",
     "texture": [],
     "grain": "",
@@ -7569,6 +7633,7 @@ window.WANKO_FOOD_FACTS = {
     "breed": [],
     "all_breeds": false,
     "weight": [],
+    "adult_weight": [],
     "form": "ドライ",
     "texture": [],
     "grain": "",
@@ -7594,7 +7659,6 @@ window.WANKO_FOOD_FACTS = {
     "ingredient_text": "穀類(とうもろこし、小麦粉、コーングルテンフィード、コーングルテンミール、小麦全粒粉、小麦ふすま)、肉類(チキンミール、チキンレバーパウダー、ミートミール)、豆類(おから)、油脂類(動物性油脂、フィッシュオイル：DHA・EPA源、アマニ油)、ビートパルプ",
     "target": "11歳から",
     "age": [
-      "成犬",
       "シニア"
     ],
     "age_range": [
@@ -7604,6 +7668,7 @@ window.WANKO_FOOD_FACTS = {
     "breed": [],
     "all_breeds": false,
     "weight": [],
+    "adult_weight": [],
     "form": "ドライ",
     "texture": [],
     "grain": "",
@@ -7633,12 +7698,13 @@ window.WANKO_FOOD_FACTS = {
       "子犬"
     ],
     "age_range": [
-      0,
+      2.0,
       12.0
     ],
     "breed": [],
     "all_breeds": false,
     "weight": [],
+    "adult_weight": [],
     "form": "ドライ",
     "texture": [],
     "grain": "",
@@ -7674,6 +7740,7 @@ window.WANKO_FOOD_FACTS = {
     "breed": [],
     "all_breeds": false,
     "weight": [],
+    "adult_weight": [],
     "form": "ドライ",
     "texture": [],
     "grain": "",
@@ -7695,11 +7762,20 @@ window.WANKO_FOOD_FACTS = {
     ],
     "ingredient_text": "ビーフ生肉、ビーフラング生肉、ビーフキドニー生肉、ビーフトライプ生肉、ヒヨコ豆",
     "target": "any life stage, from puppies to seniors",
-    "age": [],
-    "age_range": null,
+    "age": [
+      "子犬",
+      "成犬",
+      "シニア",
+      "全年齢"
+    ],
+    "age_range": [
+      0,
+      null
+    ],
     "breed": [],
     "all_breeds": false,
     "weight": [],
+    "adult_weight": [],
     "form": "ウェット",
     "texture": [],
     "grain": "",
@@ -7721,11 +7797,20 @@ window.WANKO_FOOD_FACTS = {
     ],
     "ingredient_text": "チキン生肉、チキンレバー生肉、チキンハート生肉、ヒヨコ豆、ニュージーランド緑イ貝",
     "target": "any life stage, from puppies to seniors",
-    "age": [],
-    "age_range": null,
+    "age": [
+      "子犬",
+      "成犬",
+      "シニア",
+      "全年齢"
+    ],
+    "age_range": [
+      0,
+      null
+    ],
     "breed": [],
     "all_breeds": false,
     "weight": [],
+    "adult_weight": [],
     "form": "ウェット",
     "texture": [],
     "grain": "",
@@ -7747,11 +7832,20 @@ window.WANKO_FOOD_FACTS = {
     ],
     "ingredient_text": "ラム生肉、ラムラング生肉、ラムキドニー生肉、ヒヨコ豆、ラムレバー生肉",
     "target": "any life stage, from puppies to seniors",
-    "age": [],
-    "age_range": null,
+    "age": [
+      "子犬",
+      "成犬",
+      "シニア",
+      "全年齢"
+    ],
+    "age_range": [
+      0,
+      null
+    ],
     "breed": [],
     "all_breeds": false,
     "weight": [],
+    "adult_weight": [],
     "form": "ウェット",
     "texture": [],
     "grain": "",
@@ -7773,11 +7867,20 @@ window.WANKO_FOOD_FACTS = {
     ],
     "ingredient_text": "ラムトライプ生肉、ラム生肉、ラムラング生肉、ヒヨコ豆、ラムレバー生肉",
     "target": "any life stage, from puppies to seniors",
-    "age": [],
-    "age_range": null,
+    "age": [
+      "子犬",
+      "成犬",
+      "シニア",
+      "全年齢"
+    ],
+    "age_range": [
+      0,
+      null
+    ],
     "breed": [],
     "all_breeds": false,
     "weight": [],
+    "adult_weight": [],
     "form": "ウェット",
     "texture": [],
     "grain": "",
@@ -7797,11 +7900,20 @@ window.WANKO_FOOD_FACTS = {
     "ingredients": [],
     "ingredient_text": "ベニソン生肉、ベニソントライプ生肉、ベニソンレバー生肉、ヒヨコ豆、ベニソンラング生肉",
     "target": "any life stage, from puppies to seniors",
-    "age": [],
-    "age_range": null,
+    "age": [
+      "子犬",
+      "成犬",
+      "シニア",
+      "全年齢"
+    ],
+    "age_range": [
+      0,
+      null
+    ],
     "breed": [],
     "all_breeds": false,
     "weight": [],
+    "adult_weight": [],
     "form": "ウェット",
     "texture": [],
     "grain": "",
@@ -7841,6 +7953,7 @@ window.WANKO_FOOD_FACTS = {
         null
       ]
     ],
+    "adult_weight": [],
     "form": "フレッシュ",
     "texture": [],
     "grain": "",
@@ -7888,6 +8001,7 @@ window.WANKO_FOOD_FACTS = {
         null
       ]
     ],
+    "adult_weight": [],
     "form": "フレッシュ",
     "texture": [],
     "grain": "",
@@ -7935,6 +8049,7 @@ window.WANKO_FOOD_FACTS = {
         null
       ]
     ],
+    "adult_weight": [],
     "form": "フレッシュ",
     "texture": [],
     "grain": "",
@@ -7967,7 +8082,9 @@ window.WANKO_FOOD_FACTS = {
     ],
     "ingredient_text": "穀類(とうもろこし、コーングルテンフィード、小麦粉、コーングルテンミール、小麦全粒粉、小麦ふすま)、肉類(チキンミール、チキンレバーパウダー、ミートミール)、豆類(おから)、油脂類(動物性油脂、フィッシュオイル：DHA・EPA源 、アマニ油)、ビートパルプ",
     "target": "7歳から",
-    "age": [],
+    "age": [
+      "シニア"
+    ],
     "age_range": [
       84.0,
       null
@@ -7975,6 +8092,7 @@ window.WANKO_FOOD_FACTS = {
     "breed": [],
     "all_breeds": false,
     "weight": [],
+    "adult_weight": [],
     "form": "ドライ",
     "texture": [],
     "grain": "",
@@ -8001,10 +8119,14 @@ window.WANKO_FOOD_FACTS = {
     "age": [
       "成犬"
     ],
-    "age_range": null,
+    "age_range": [
+      12.0,
+      null
+    ],
     "breed": [],
     "all_breeds": false,
     "weight": [],
+    "adult_weight": [],
     "form": "ドライ",
     "texture": [],
     "grain": "",
@@ -8036,6 +8158,7 @@ window.WANKO_FOOD_FACTS = {
     "breed": [],
     "all_breeds": false,
     "weight": [],
+    "adult_weight": [],
     "form": "ドライ",
     "texture": [],
     "grain": "",
@@ -8068,6 +8191,7 @@ window.WANKO_FOOD_FACTS = {
     "breed": [],
     "all_breeds": false,
     "weight": [],
+    "adult_weight": [],
     "form": "ドライ",
     "texture": [],
     "grain": "",
@@ -8104,6 +8228,7 @@ window.WANKO_FOOD_FACTS = {
         null
       ]
     ],
+    "adult_weight": [],
     "form": "ドライ",
     "texture": [],
     "grain": "",
@@ -8132,6 +8257,7 @@ window.WANKO_FOOD_FACTS = {
     "breed": [],
     "all_breeds": false,
     "weight": [],
+    "adult_weight": [],
     "form": "ドライ",
     "texture": [],
     "grain": "小粒",
@@ -8163,6 +8289,7 @@ window.WANKO_FOOD_FACTS = {
     "breed": [],
     "all_breeds": false,
     "weight": [],
+    "adult_weight": [],
     "form": "ドライ",
     "texture": [],
     "grain": "",
