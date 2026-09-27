@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "source": "https://sorapapa-creator.github.io/wanko-affiliate-guide/",
- "generated_at": "2026-09-27T12:06:15+09:00",
+ "generated_at": "2026-09-27T13:16:24+09:00",
  "places": [
   {
    "id": "la-dog-resort",
@@ -14010,51 +14010,6 @@
    }
   },
   {
-   "id": "c5-tansen-hotel-akayu",
-   "type": "lodging",
-   "name": "赤湯温泉 丹泉ホテル(ワンちゃんと泊まれる部屋)",
-   "area": "山形県南陽市・赤湯温泉",
-   "co_sleep": "添い寝 予約前確認",
-   "facts": {
-    "対象犬・頭数": "超小型犬・小型犬から、抱っこができる中型犬(柴犬サイズ)まで。ペット同伴は1頭あたり2,200円(税込)の追加料金。狂犬病予防接種と混合ワクチン接種(いずれも1年以内)の証明書を必ず持参。トイレトレーニング済みの犬。館内は抱っこかケージで移動し、マナーベルトを着用。",
-    "犬の宿泊料金": "2,200円/頭(税込)",
-    "ケージ・持参判断": "予約前確認(貸出グッズあり。部屋に残す時はケージに入れる) ケージまたはキャリーバッグを持参の案内",
-    "夜はどこで寝る？": "客室(犬と泊まれる部屋) 室内は犬フリー。トイレの失敗はクリーニング代が別途かかる場合あり。",
-    "食事同伴": "夕食は個室会食で犬と一緒に過ごせる(朝食は会場食)",
-    "ドッグラン": "なし(近隣のペット預かり施設に200坪のドッグラン併設)",
-    "予約前の重要確認": "頭数の上限、添い寝は公式ページで確認できず予約前確認。持ち物はリード・フード・予備のペットシート・ケージorキャリー・食器・マナーベルト・室内トイレ。"
-   },
-   "links": [
-    {
-     "label": "公式の条件を確認",
-     "url": "https://www.tansen.co.jp/pet/",
-     "affiliate": false
-    },
-    {
-     "label": "Yahoo!トラベルで赤湯温泉 丹泉ホテルの宿泊プランを見る",
-     "url": "https://travel.yahoo.co.jp/00902730/",
-     "affiliate": false
-    }
-   ],
-   "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
-   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
-   "geocode": {
-    "lat": 38.055111,
-    "lon": 140.148392,
-    "matched": "山形県南陽市",
-    "precision": "approximate"
-   },
-   "area_geocode": {
-    "lat": 38.055111,
-    "lon": 140.148392,
-    "matched": "山形県南陽市",
-    "precision": "approximate"
-   }
-  },
-  {
    "id": "c5-yamagata-glam",
    "type": "lodging",
    "name": "yamagata glam(わんちゃん専用ドームテント japan)",
@@ -15392,52 +15347,6 @@
     "precision": "district",
     "source": "manual",
     "matched": "群馬県吾妻郡嬬恋村鎌原1054-1268 → 住所検索: 群馬県嬬恋村鎌原"
-   }
-  },
-  {
-   "id": "c6-00002930",
-   "type": "lodging",
-   "name": "鬼怒川 絆",
-   "area": "栃木県日光市",
-   "co_sleep": "添い寝 可",
-   "facts": {
-    "対象犬・頭数": "愛犬の頭数制限はありません。ただし、ヒート中（発情中）や室外で生活しているワンちゃんのご宿泊は頂けません。また、狂犬病ワクチン及び混合ワクチン未接種の場合は、ドッグランや館内での他のワンちゃんとのふれあいを控えてください。",
-    "犬の宿泊料金": "予約前確認",
-    "ケージ・持参判断": "予約前確認",
-    "夜はどこで寝る？": "客室（お布団・ベッド） 一緒のお布団、ベッドでおやすみ頂けます。",
-    "食事同伴": "可",
-    "ドッグラン": "予約前確認",
-    "予約前の重要確認": "犬の宿泊料金、ケージの用意状況、犬同伴可能な客室の限定・違いは公式ページで確認できず予約前確認。"
-   },
-   "links": [
-    {
-     "label": "公式の条件を確認",
-     "url": "https://kizuna-kinugawa.com/",
-     "affiliate": false
-    },
-    {
-     "label": "Yahoo!トラベルで鬼怒川 絆の宿泊プランを見る",
-     "url": "https://travel.yahoo.co.jp/00002930/",
-     "affiliate": false
-    }
-   ],
-   "checked_at": "2026-09-27",
-   "dog_hints": {
-    "has_rain_note": true
-   },
-   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
-   "geocode": {
-    "lat": 36.82272,
-    "lon": 139.71199,
-    "precision": "facility",
-    "source": "official-address",
-    "matched": "栃木県日光市鬼怒川温泉大原１４２２番地"
-   },
-   "area_geocode": {
-    "lat": 36.720013,
-    "lon": 139.697617,
-    "matched": "栃木県日光市",
-    "precision": "municipality"
    }
   },
   {
@@ -20533,50 +20442,6 @@
     "lat": 36.389462,
     "lon": 139.063461,
     "matched": "群馬県前橋市",
-    "precision": "municipality"
-   }
-  },
-  {
-   "id": "c2-yatsugatake-wanko-niwa",
-   "type": "spot",
-   "name": "八ヶ岳自然文化園 ドッグラン「わんこのお庭」",
-   "area": "長野県原村",
-   "region_group": "koshinetsu",
-   "kinds": [
-    "run",
-    "park"
-   ],
-   "theme": "標高1300mの高原で、5000㎡のドッグランをノーリードで走る",
-   "facts": {
-    "犬の条件・同伴範囲": "5000㎡のドッグラン(通年。冬は雪原)。利用条件・証明書は公式のドッグランのページで確認。",
-    "料金の目安/犬料金": "例: 1頭目1,300円・2頭目以降650円(冬季は1頭650円)など、利用時間と会員で違う。",
-    "持ち物": "リード、排泄袋、飲み水、証明書(公式で確認)。",
-    "雨の日": "屋外。12月〜4月中旬はセルフシャワー・屋外水道など一部使えない。",
-    "出発前に確認": "料金の区分(時間・会員)と冬季の設備。",
-    "公式で確認したこと": "八ヶ岳自然文化園の公式ページで、ドッグランの広さ・料金・冬季の扱いを確認。"
-   },
-   "links": [
-    {
-     "label": "施設公式案内",
-     "url": "https://www.yatsugatake-ncp.com/facility/22/",
-     "affiliate": false
-    }
-   ],
-   "checked_at": "2026-09-26",
-   "dog_hints": {
-    "has_rain_note": true
-   },
-   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c2-yatsugatake-wanko-niwa",
-   "geocode": {
-    "lat": 35.964363,
-    "lon": 138.217499,
-    "matched": "長野県原村",
-    "precision": "municipality"
-   },
-   "area_geocode": {
-    "lat": 35.964363,
-    "lon": 138.217499,
-    "matched": "長野県原村",
     "precision": "municipality"
    }
   },
@@ -26017,50 +25882,6 @@
    }
   },
   {
-   "id": "c4-saigawa-2-ryokuchi-dogrun",
-   "type": "spot",
-   "name": "犀川第2緑地 ドッグラン",
-   "area": "長野県長野市・犀川河川敷",
-   "region_group": "koshinetsu",
-   "kinds": [
-    "park",
-    "run"
-   ],
-   "theme": "犀川沿いの緑地。犬の散歩ができ、2025年度にドッグランが開設された",
-   "facts": {
-    "犬の条件・同伴範囲": "指定区域に限り犬を連れて入れる(リード着用・フン持ち帰り)。ドッグランあり(令和7年度開設)。",
-    "料金の目安/犬料金": "出発前に確認。",
-    "持ち物": "リード、排泄物の処理用品、水。",
-    "雨の日": "屋外。",
-    "出発前に確認": "ドッグランの利用方法・時間。",
-    "公式で確認したこと": "長野市公式ホームページ『犬の散歩ができる公園』で、散歩区域とドッグラン開設を確認。"
-   },
-   "links": [
-    {
-     "label": "施設公式案内",
-     "url": "https://www.city.nagano.nagano.jp/n202500/contents/p001051.html",
-     "affiliate": false
-    }
-   ],
-   "checked_at": "2026-09-26",
-   "dog_hints": {
-    "has_rain_note": true
-   },
-   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-saigawa-2-ryokuchi-dogrun",
-   "geocode": {
-    "lat": 36.648537,
-    "lon": 138.194824,
-    "matched": "長野県長野市",
-    "precision": "approximate"
-   },
-   "area_geocode": {
-    "lat": 36.648537,
-    "lon": 138.194824,
-    "matched": "長野県長野市",
-    "precision": "approximate"
-   }
-  },
-  {
    "id": "c4-sodegaura-kaihin-park",
    "type": "spot",
    "name": "袖ヶ浦海浜公園",
@@ -26189,50 +26010,6 @@
     "lon": 140.121017,
     "matched": "栃木県那須町",
     "precision": "municipality"
-   }
-  },
-  {
-   "id": "c4-komagatake-ropeway",
-   "type": "spot",
-   "name": "箱根 駒ヶ岳ロープウェー(箱根園)",
-   "area": "神奈川県箱根町・元箱根",
-   "region_group": "kanto",
-   "kinds": [
-    "travel"
-   ],
-   "theme": "箱根園から駒ヶ岳山頂へ。芦ノ湖と富士山を見渡す山頂で犬と写真撮影",
-   "facts": {
-    "犬の条件・同伴範囲": "犬と一緒に乗れる。乗車はペットキャリーなどに入れて床置き(抱っこ紐は不可)。山頂のみリードを付けてキャリーから出せる。狂犬病・混合ワクチン未接種の犬は不可。",
-    "料金の目安/犬料金": "犬の料金は公式で確認。小型犬用ペットキャリーの無料貸出(5個)。",
-    "持ち物": "ペットキャリー、リード、排泄物の処理用品。",
-    "雨の日": "強風・雷などで運休の場合あり。",
-    "出発前に確認": "運行時間・運賃(公式の運行時間・運賃のページ)。",
-    "公式で確認したこと": "公式ページの『ワンちゃんのご乗車について』で、乗り方と条件を確認。"
-   },
-   "links": [
-    {
-     "label": "施設公式案内",
-     "url": "https://www.princehotels.co.jp/amuse/hakone-en/ropeway/",
-     "affiliate": false
-    }
-   ],
-   "checked_at": "2026-09-26",
-   "dog_hints": {
-    "has_rain_note": true
-   },
-   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-komagatake-ropeway",
-   "geocode": {
-    "lat": 35.211807,
-    "lon": 139.009964,
-    "precision": "facility",
-    "source": "official-address",
-    "matched": "神奈川県箱根町元箱根１３９番地"
-   },
-   "area_geocode": {
-    "lat": 35.232388,
-    "lon": 139.106949,
-    "matched": "神奈川県箱根町",
-    "precision": "approximate"
    }
   },
   {
@@ -27998,62 +27775,6 @@
    }
   },
   {
-   "id": "c5-meiken-bokujo-maebashi",
-   "type": "spot",
-   "name": "世界の名犬牧場(ドッグ・コミュニティパーク)",
-   "area": "群馬県前橋市・富士見町",
-   "region_group": "kanto",
-   "kinds": [
-    "run",
-    "park",
-    "cafe"
-   ],
-   "theme": "赤城山麓の『犬と人のコミュニティパーク』。緩やかな丘の『ドッグヒルズ』など日本最大級のドッグラン、小型犬用・中大型犬用のプール、セルフグルーミング、ドッグカフェ、世界の犬とふれあえるコーナー。犬を連れていなくても楽しめる",
-   "facts": {
-    "犬の条件・同伴範囲": "狂犬病予防接種と混合ワクチン接種済みの犬(獣医師の判断で接種できない場合はスタッフに相談)。体重8kg未満は小型犬専用、8kg以上は中・大型犬専用ドッグラン。",
-    "料金の目安/犬料金": "入場料 大人(中学生以上)1,000円、子ども(4歳以上)700円、犬700円。アプリ会員は平日割引あり。",
-    "持ち物": "ワクチンの証明、リード、排泄物の処理用品、タオル(プール利用時)。",
-    "雨の日": "屋外中心(カフェあり)。",
-    "出発前に確認": "開園 10:00〜18:00(受付・大型犬ふれあいは17:00まで)。休園日は公式の営業カレンダーで確認。",
-    "公式で確認したこと": "公式サイトで、入場料・ワクチン条件・体重によるドッグランの区分・営業時間・所在地を確認。"
-   },
-   "links": [
-    {
-     "label": "公式情報",
-     "url": "https://www.meiken-bokujou.com/",
-     "affiliate": false
-    },
-    {
-     "label": "施設公式案内",
-     "url": "https://www.meiken-bokujou.com/dogrun/",
-     "affiliate": false
-    }
-   ],
-   "checked_at": "2026-09-27",
-   "dog_hints": {
-    "weight_limit_kg_mentions": [
-     8
-    ],
-    "small_dog_only_mention": true,
-    "has_rain_note": true,
-    "vaccine_required": true
-   },
-   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-meiken-bokujo-maebashi",
-   "geocode": {
-    "lat": 36.447452,
-    "lon": 139.122799,
-    "precision": "facility",
-    "source": "official-map",
-    "matched": "公式ページの地図"
-   },
-   "area_geocode": {
-    "lat": 36.389462,
-    "lon": 139.063461,
-    "matched": "群馬県前橋市",
-    "precision": "approximate"
-   }
-  },
-  {
    "id": "c5-kalrs-cafe-maebashi",
    "type": "spot",
    "name": "KALR’s cafe(ドッグラン併設カフェ)",
@@ -28688,155 +28409,6 @@
    }
   },
   {
-   "id": "c5-tokorozawa-kokukinen-dogrun",
-   "type": "spot",
-   "name": "所沢航空記念公園 ドッグラン",
-   "area": "埼玉県所沢市・並木",
-   "region_group": "kanto",
-   "kinds": [
-    "run",
-    "park"
-   ],
-   "theme": "航空公園の東側にある無料のドッグラン。ボランティアと利用者の協力で開放されていて、朝7時(夏は6時)から19時まで使える。小型犬エリアと中・大型犬エリアに分かれる",
-   "facts": {
-    "犬の条件・同伴範囲": "利用案内(公式PDF)のルールに従う。小型犬エリアと中・大型犬エリア。狂犬病予防接種などの条件は利用案内で確認。",
-    "料金の目安/犬料金": "無料。駐車場は有料。",
-    "持ち物": "リード、排泄物の処理用品、水、ワクチンの証明(求められた場合)。",
-    "雨の日": "屋外。",
-    "出発前に確認": "開場 7:00〜19:00(6/1〜9/30は6:00〜19:00)。休場日 施設点検日・12/31・1/1。",
-    "公式で確認したこと": "埼玉県公園緑地協会の公式ページで、開場期間・時間・休場日・無料・エリア区分・公園の所在地を確認。"
-   },
-   "links": [
-    {
-     "label": "公式情報",
-     "url": "https://www.parks.or.jp/tokorozawa-kokuu/",
-     "affiliate": false
-    },
-    {
-     "label": "施設公式案内",
-     "url": "https://www.parks.or.jp/tokorozawa-kokuu/guide/001/001586.html",
-     "affiliate": false
-    }
-   ],
-   "checked_at": "2026-09-27",
-   "dog_hints": {
-    "has_rain_note": true
-   },
-   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-tokorozawa-kokukinen-dogrun",
-   "geocode": {
-    "lat": 35.798306,
-    "lon": 139.469131,
-    "precision": "facility",
-    "source": "official-address",
-    "matched": "埼玉県所沢市並木一丁目１３番"
-   },
-   "area_geocode": {
-    "lat": 35.799648,
-    "lon": 139.468704,
-    "matched": "埼玉県所沢市",
-    "precision": "approximate"
-   }
-  },
-  {
-   "id": "c5-spa-dogsrun-chichibu",
-   "type": "spot",
-   "name": "スパ・ドッグズラン秩父(犬用温泉＋ドッグラン)",
-   "area": "埼玉県秩父市・小柱",
-   "region_group": "kanto",
-   "kinds": [
-    "run"
-   ],
-   "theme": "秩父川端温泉『梵の湯』に併設。本格ドッグランと、梵の湯の源泉を使った犬用温泉(シャワー・お風呂・シャンプー・ドライヤー無料)。定休日なし・予約なしで遊べる",
-   "facts": {
-    "犬の条件・同伴範囲": "入場に1年以内のワクチン接種証明書と狂犬病予防接種証明書が必要。病気治療中・ノミダニが多い・発情期の犬は不可。指定場所以外ではリードを外さない。犬の餌や人の飲食物はドッグラン内に持ち込まない(しつけ用フードは可)。",
-    "料金の目安/犬料金": "1頭あたりの料金は公式サイトで確認(頭数が増えると1頭あたりが割安、5頭まで。梵の湯カード払いで割引)。飼い主は5名まで無料(6名以上は1名+1,000円)。シャンプー・ドライヤー無料、タオルは持参。",
-    "持ち物": "ワクチン・狂犬病の証明、リード、タオル、排泄物の処理用品。",
-    "雨の日": "屋外(犬用温泉あり)。",
-    "出発前に確認": "営業時間 9:00〜17:00(最終入館受付16:00)、定休日なし。受付は梵の湯。",
-    "公式で確認したこと": "公式サイトで、営業時間・受付場所・利用規約(証明書・禁止事項)・料金の仕組み・所在地を確認。"
-   },
-   "links": [
-    {
-     "label": "公式情報",
-     "url": "http://www.spa-dogsrun.com/",
-     "affiliate": false
-    },
-    {
-     "label": "施設公式案内",
-     "url": "http://www.spa-dogsrun.com/",
-     "affiliate": false
-    }
-   ],
-   "checked_at": "2026-09-27",
-   "dog_hints": {
-    "has_rain_note": true,
-    "cert_required": true
-   },
-   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-spa-dogsrun-chichibu",
-   "geocode": {
-    "lat": 36.062427,
-    "lon": 139.091308,
-    "precision": "facility",
-    "source": "official-map",
-    "matched": "公式ページの地図"
-   },
-   "area_geocode": {
-    "lat": 35.991596,
-    "lon": 139.085251,
-    "matched": "埼玉県秩父市",
-    "precision": "approximate"
-   }
-  },
-  {
-   "id": "c5-chichibu-muse-park",
-   "type": "spot",
-   "name": "秩父ミューズパーク",
-   "area": "埼玉県秩父市・小鹿野町",
-   "region_group": "kanto",
-   "kinds": [
-    "park"
-   ],
-   "theme": "秩父の丘陵に広がる広大な公園。銀杏並木や展望スポットを、リード着用で犬と散歩できる。園内にはメープル専門のカフェ『MAPLE BASE』もある",
-   "facts": {
-    "犬の条件・同伴範囲": "散歩の際は犬にリードを着用し、フンは必ず持ち帰る(公園の公式なお願い)。施設内(建物)への同伴は各施設で確認。",
-    "料金の目安/犬料金": "入園無料(施設・駐車場は一部有料)。",
-    "持ち物": "リード、排泄物の処理用品、水。",
-    "雨の日": "屋外。",
-    "出発前に確認": "駐車場の場所と料金、イベント時の規制。",
-    "公式で確認したこと": "秩父ミューズパーク公式サイトの『お客様へのお願い』で、リード着用とフンの持ち帰りを確認。"
-   },
-   "links": [
-    {
-     "label": "公式情報",
-     "url": "https://www.muse-park.com/",
-     "affiliate": false
-    },
-    {
-     "label": "施設公式案内",
-     "url": "https://www.muse-park.com/",
-     "affiliate": false
-    }
-   ],
-   "checked_at": "2026-09-27",
-   "dog_hints": {
-    "has_rain_note": true
-   },
-   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-chichibu-muse-park",
-   "geocode": {
-    "lat": 35.992984,
-    "lon": 139.051788,
-    "precision": "facility",
-    "source": "osm",
-    "matched": "秩父ミューズパーク, 秩父市, 秩父郡, 埼玉県, 日本"
-   },
-   "area_geocode": {
-    "lat": 35.991596,
-    "lon": 139.085251,
-    "matched": "埼玉県秩父市",
-    "precision": "approximate"
-   }
-  },
-  {
    "id": "c5-konas-coffee-koshigaya",
    "type": "spot",
    "name": "Konas Coffee 越谷店(コナズ珈琲)",
@@ -29075,56 +28647,6 @@
    }
   },
   {
-   "id": "c5-aoba-no-mori-dogrun",
-   "type": "spot",
-   "name": "千葉県立青葉の森公園 ドッグラン",
-   "area": "千葉県千葉市中央区・青葉町",
-   "region_group": "kanto",
-   "kinds": [
-    "run",
-    "park"
-   ],
-   "theme": "千葉市中心部に近い県立公園の無料ドッグラン(1,280㎡)。事前登録制でガイダンス受講が必要。朝6時から夜7時まで、通年使える",
-   "facts": {
-    "犬の条件・同伴範囲": "事前登録制(ガイダンスの受講が必須)。登録証明書を首から下げて利用。2025年12月から入口ドアに錠があり、『つくしんぼの家』(9:00〜17:00)で登録証明書を提示して解除番号を取得。",
-    "料金の目安/犬料金": "無料。",
-    "持ち物": "登録証明書、リード、排泄物の処理用品、水。",
-    "雨の日": "屋外。",
-    "出発前に確認": "開場 6:00〜19:00(通年)。休場日 月曜(祝日の場合は翌日)、1/1〜1/3、施設管理日。登録方法(ガイダンス日程)は公式の『ドッグラン利用登録』ページで確認。",
-    "公式で確認したこと": "公園公式サイトで、面積・場所・無料・事前登録制・開場時間・休場日・ドア錠の運用を確認。"
-   },
-   "links": [
-    {
-     "label": "公式情報",
-     "url": "https://www.cue-net.or.jp/kouen/aoba/",
-     "affiliate": false
-    },
-    {
-     "label": "施設公式案内",
-     "url": "https://www.cue-net.or.jp/kouen/aoba/dogrun/",
-     "affiliate": false
-    }
-   ],
-   "checked_at": "2026-09-27",
-   "dog_hints": {
-    "has_rain_note": true
-   },
-   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-aoba-no-mori-dogrun",
-   "geocode": {
-    "lat": 35.597885,
-    "lon": 140.138885,
-    "precision": "facility",
-    "source": "official-address",
-    "matched": "千葉県千葉市中央区青葉町９７７番地"
-   },
-   "area_geocode": {
-    "lat": 35.607414,
-    "lon": 140.122833,
-    "matched": "千葉県千葉市中央区",
-    "precision": "approximate"
-   }
-  },
-  {
    "id": "c5-doggy-park-bell-house",
    "type": "spot",
    "name": "Doggy Park BELL HOUSE(ドギーパーク ベルハウス)",
@@ -29171,58 +28693,6 @@
     "lat": 35.634022,
     "lon": 140.155655,
     "matched": "千葉県千葉市若葉区",
-    "precision": "approximate"
-   }
-  },
-  {
-   "id": "c5-dog-park-runrunrun",
-   "type": "spot",
-   "name": "DOG PARK runrunrun(小・中型犬専用)",
-   "area": "千葉県船橋市・高根町",
-   "region_group": "kanto",
-   "kinds": [
-    "run"
-   ],
-   "theme": "船橋市の中央にある総面積約2,600㎡の超小型〜中型犬(15kg以下)専用ドッグラン。天然芝に噴水・浅めのプール・シャワー・カフェスペース・キッチンカー。ナイター営業の日もある",
-   "facts": {
-    "犬の条件・同伴範囲": "超小型犬・小型犬・中型犬(15kg以下)専用。エリアは体重で分かれる。ワクチンなどの条件は利用案内で確認。",
-    "料金の目安/犬料金": "犬1頭(同伴1名) 平日1,320円・土日祝1,650円(2時間まで)。2人目以降 平日550円・土日祝770円。小学生以下無料。貸切スペース 1家族2,750円(2時間)。セルフシャワーあり。",
-    "持ち物": "ワクチンの証明、リード、タオル(プール利用時)、排泄物の処理用品。",
-    "雨の日": "屋外。",
-    "出発前に確認": "営業時間 9:00〜17:00(時期により変動、ナイターDAYは20:00まで)。休業日 第2月曜(祝日の場合は翌平日)ほか。駐車場10台。",
-    "公式で確認したこと": "公式サイトで、対象犬・料金・営業時間・休業日・設備・所在地を確認。"
-   },
-   "links": [
-    {
-     "label": "公式情報",
-     "url": "https://run-run-run.jp/",
-     "affiliate": false
-    },
-    {
-     "label": "施設公式案内",
-     "url": "https://run-run-run.jp/",
-     "affiliate": false
-    }
-   ],
-   "checked_at": "2026-09-27",
-   "dog_hints": {
-    "weight_limit_kg_mentions": [
-     15
-    ],
-    "has_rain_note": true
-   },
-   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-dog-park-runrunrun",
-   "geocode": {
-    "lat": 35.725754,
-    "lon": 140.008647,
-    "precision": "facility",
-    "source": "official-map",
-    "matched": "公式ページの地図"
-   },
-   "area_geocode": {
-    "lat": 35.694721,
-    "lon": 139.982498,
-    "matched": "千葉県船橋市",
     "precision": "approximate"
    }
   },
@@ -29421,57 +28891,6 @@
     "lon": 139.924896,
     "matched": "千葉県木更津市",
     "precision": "municipality"
-   }
-  },
-  {
-   "id": "c5-tokyo-doitsumura-wanchan-land",
-   "type": "spot",
-   "name": "東京ドイツ村 わんちゃんランド",
-   "area": "千葉県袖ケ浦市・永吉",
-   "region_group": "kanto",
-   "kinds": [
-    "run",
-    "park"
-   ],
-   "theme": "ドイツの田園風景を再現したテーマパークの中の、全面芝生・広大なドッグラン。小型犬用 約1,000㎡、中・大型犬用 約1,000㎡、全犬種用 約4,000㎡の3コース。園内は車で移動できる",
-   "facts": {
-    "犬の条件・同伴範囲": "混合ワクチン・狂犬病予防接種済み(接種できない場合は猶予証明書)。しつけの行き届いていない犬は不可。わんちゃんランド以外の園内はペットカートなどでの移動のみ(公式ルール)。犬同士の事故は飼い主の自己責任。",
-    "料金の目安/犬料金": "わんちゃんランドはすべて有料(当日受付で申し込み、現金のみ)。金額は公式サイトで確認。東京ドイツ村の入園料は別途。",
-    "持ち物": "ワクチン・狂犬病の証明、リード、排泄物の処理用品、現金。",
-    "雨の日": "屋外。",
-    "出発前に確認": "わんちゃんランド 10:00〜16:30(冬季は変動)。東京ドイツ村の営業時間 9:30〜17:00。",
-    "公式で確認したこと": "東京ドイツ村公式サイトで、3つのコースの広さ・ワクチン条件・利用ルール・営業時間・受付方法を確認。所在地は公式FAQで確認。"
-   },
-   "links": [
-    {
-     "label": "公式情報",
-     "url": "https://t-doitsumura.co.jp/faq/",
-     "affiliate": false
-    },
-    {
-     "label": "施設公式案内",
-     "url": "https://t-doitsumura.co.jp/experience/wanchan-land/",
-     "affiliate": false
-    }
-   ],
-   "checked_at": "2026-09-27",
-   "dog_hints": {
-    "has_rain_note": true,
-    "vaccine_required": true
-   },
-   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-tokyo-doitsumura-wanchan-land",
-   "geocode": {
-    "lat": 35.405704,
-    "lon": 140.054489,
-    "precision": "facility",
-    "source": "official-address",
-    "matched": "千葉県袖ケ浦市永吉４１９番地"
-   },
-   "area_geocode": {
-    "lat": 35.429874,
-    "lon": 139.954453,
-    "matched": "千葉県袖ケ浦市",
-    "precision": "approximate"
    }
   },
   {
@@ -29922,57 +29341,6 @@
    }
   },
   {
-   "id": "c5-rokakoshunen-dogrun",
-   "type": "spot",
-   "name": "蘆花恒春園 ドッグラン(都立公園)",
-   "area": "東京都世田谷区・粕谷",
-   "region_group": "kanto",
-   "kinds": [
-    "run",
-    "park"
-   ],
-   "theme": "文豪・徳冨蘆花の旧宅を残す都立公園のドッグラン。2026年度から利用登録がWEB申請になり、都立12公園のドッグランを共通で使える。運営はボランティア『蘆花恒春園ワンクラブ』",
-   "facts": {
-    "犬の条件・同伴範囲": "利用登録(WEB申請)が必要。今年度(令和8年度)の狂犬病注射済票が必要(前年度の黄色いプレートでは申込不可)。利用規約への同意。入口ゲートは暗証番号キー。登録は都立12公園共通。",
-    "料金の目安/犬料金": "入園無料。ドッグランの登録料は公式の案内で確認。駐車場42台(有料)。",
-    "持ち物": "狂犬病注射済票、リード、排泄物の処理用品。",
-    "雨の日": "屋外。",
-    "出発前に確認": "申請期限(令和9年6月20日まで、有効期限は令和9年6月30日)、公園別の利用ルール早見表、ドッグランの利用時間。",
-    "公式で確認したこと": "東京都公園協会の公式ページで、WEB申請・注射済票の条件・12公園共通化・所在地・開園時間を確認。"
-   },
-   "links": [
-    {
-     "label": "公式情報",
-     "url": "https://www.tokyo-park.or.jp/park/rokakoshun-en/",
-     "affiliate": false
-    },
-    {
-     "label": "施設公式案内",
-     "url": "https://www.tokyo-park.or.jp/park/rokakoshun-en/facility/index.html",
-     "affiliate": false
-    }
-   ],
-   "checked_at": "2026-09-27",
-   "dog_hints": {
-    "has_rain_note": true,
-    "cert_required": true
-   },
-   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-rokakoshunen-dogrun",
-   "geocode": {
-    "lat": 35.662312,
-    "lon": 139.613663,
-    "precision": "facility",
-    "source": "official-address",
-    "matched": "東京都世田谷区粕谷一丁目２５番"
-   },
-   "area_geocode": {
-    "lat": 35.64595,
-    "lon": 139.653183,
-    "matched": "東京都世田谷区",
-    "precision": "approximate"
-   }
-  },
-  {
    "id": "c5-dogcafe-mushroom-todoroki",
    "type": "spot",
    "name": "DogCafe マッシュルーム(等々力)",
@@ -30022,57 +29390,6 @@
    }
   },
   {
-   "id": "c5-johoku-chuo-park-dogrun",
-   "type": "spot",
-   "name": "城北中央公園 ドッグラン(都立公園)",
-   "area": "東京都板橋区・練馬区(桜川・氷川台)",
-   "region_group": "kanto",
-   "kinds": [
-    "run",
-    "park"
-   ],
-   "theme": "板橋区と練馬区にまたがる緑豊かな都立公園の無料ドッグラン。ボランティア団体『城北ドッグワン』が運営を支え、2026年度から都立12公園共通のWEB登録で使える",
-   "facts": {
-    "犬の条件・同伴範囲": "利用登録(WEB申請)が必要。今年度(令和8年度)の狂犬病注射済票が必要(前年度の黄色いプレートでは不可)。利用規約・ルールとマナー(公式PDF)への同意。扉は暗証番号キー(令和4年7月〜)。登録証は毎年更新。",
-    "料金の目安/犬料金": "無料。入園無料。",
-    "持ち物": "狂犬病注射済票、リード、排泄物の処理用品。",
-    "雨の日": "屋外。",
-    "出発前に確認": "申請期限(令和9年6月20日)と有効期限(令和9年6月30日)、公園別利用ルール早見表、ドッグランの利用時間。",
-    "公式で確認したこと": "東京都公園協会の公式ページで、無料・WEB申請・注射済票の条件・暗証番号キー・所在地を確認。"
-   },
-   "links": [
-    {
-     "label": "公式情報",
-     "url": "https://www.tokyo-park.or.jp/park/johoku-chuo/",
-     "affiliate": false
-    },
-    {
-     "label": "施設公式案内",
-     "url": "https://www.tokyo-park.or.jp/park/johoku-chuo/facility/index.html",
-     "affiliate": false
-    }
-   ],
-   "checked_at": "2026-09-27",
-   "dog_hints": {
-    "has_rain_note": true,
-    "cert_required": true
-   },
-   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-johoku-chuo-park-dogrun",
-   "geocode": {
-    "lat": 35.756275,
-    "lon": 139.67174,
-    "precision": "facility",
-    "source": "official-map",
-    "matched": "公式ページの地図"
-   },
-   "area_geocode": {
-    "lat": 35.751221,
-    "lon": 139.709229,
-    "matched": "東京都板橋区",
-    "precision": "approximate"
-   }
-  },
-  {
    "id": "c5-dog-house-unique-cafe",
    "type": "spot",
    "name": "ドッグハウスユニーク ドッグカフェ(練馬)",
@@ -30118,57 +29435,6 @@
     "lat": 35.735641,
     "lon": 139.65184,
     "matched": "東京都練馬区",
-    "precision": "approximate"
-   }
-  },
-  {
-   "id": "c5-showa-kinen-park-dogrun",
-   "type": "spot",
-   "name": "国営昭和記念公園 ドッグラン",
-   "area": "東京都立川市・緑町",
-   "region_group": "kanto",
-   "kinds": [
-    "run",
-    "park"
-   ],
-   "theme": "東京ドーム約40個分の国営公園にある、日本の国営公園初のドッグラン。公園の入園料だけで利用でき、小型犬エリア・わんぱくエリア・ビギナーズエリアなどに分かれる。ドッグトレーナー有資格のスタッフが常駐",
-   "facts": {
-    "犬の条件・同伴範囲": "入園時に『ペット同伴誓約書』を記入。ドッグランでは毎回、3種以上の混合ワクチンと狂犬病予防注射の証明(1年以内、コピー・写真可。猶予証明書可)か、『わんパス！』(愛犬登録カード、1頭300円・1年有効)を提示。攻撃的な犬、発情中のメス犬は不可。エリア内での飲食(水のみ可)・ベビーカーやカート・フリスビー・ハイヒール・訓練教室・オフ会での独占は禁止。",
-    "料金の目安/犬料金": "公園入園料(大人450円など)のみ。犬は無料。わんパス!は1頭300円/年。",
-    "持ち物": "ワクチン・狂犬病の証明(またはわんパス!)、リード、排泄物の処理用品(ウンチは持ち帰り)。",
-    "雨の日": "屋外。",
-    "出発前に確認": "ドッグラン 9:30〜閉園15分前(閉園時間は季節で変わる)。最寄りは立川ゲート(徒歩約1分)。",
-    "公式で確認したこと": "公園公式サイトのドッグランページで、提示書類・わんパス!・利用規則・エリア・時間・所在地を確認。"
-   },
-   "links": [
-    {
-     "label": "公式情報",
-     "url": "https://www.showakinen-koen.jp/guide/",
-     "affiliate": false
-    },
-    {
-     "label": "施設公式案内",
-     "url": "https://www.showakinen-koen.jp/facility/facility-522",
-     "affiliate": false
-    }
-   ],
-   "checked_at": "2026-09-27",
-   "dog_hints": {
-    "has_rain_note": true,
-    "cert_required": true
-   },
-   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-showa-kinen-park-dogrun",
-   "geocode": {
-    "lat": 35.712259,
-    "lon": 139.394322,
-    "precision": "facility",
-    "source": "osm",
-    "matched": "国営昭和記念公園, 立川市, 東京都, 日本"
-   },
-   "area_geocode": {
-    "lat": 35.71389,
-    "lon": 139.407776,
-    "matched": "東京都立川市",
     "precision": "approximate"
    }
   },
@@ -30568,56 +29834,6 @@
    }
   },
   {
-   "id": "c5-jindai-botanical-park-dogrun",
-   "type": "spot",
-   "name": "神代植物公園 ドッグラン(都立)",
-   "area": "東京都調布市・深大寺北町",
-   "region_group": "kanto",
-   "kinds": [
-    "run"
-   ],
-   "theme": "神代植物公園の外側(東側の開放区域)にある都立公園のドッグラン。第一駐車場のすぐそばで、深大寺の散策と組み合わせやすい。都立12公園共通のWEB登録で使える",
-   "facts": {
-    "犬の条件・同伴範囲": "WEB登録申請が必要(今年度の狂犬病注射済票。前年度の黄色いプレートは不可)。利用規約(2026年6月更新)に同意。出入口の扉は施錠して使う。植物公園本園にはペット連れで入園できない。",
-    "料金の目安/犬料金": "ドッグランの登録・利用は公式の案内で確認。植物公園本園は入園料500円だがペット不可。駐車場は有料(第一駐車場838台、24時間)。",
-    "持ち物": "狂犬病注射済票、リード、排泄物の処理用品、水。",
-    "雨の日": "屋外。",
-    "出発前に確認": "申請期限(令和9年6月20日)、公園別利用ルール早見表、ドッグランの利用時間。",
-    "公式で確認したこと": "東京都公園協会の公式ページで、ドッグランの場所・WEB申請・注射済票の条件・本園ペット不可・駐車場を確認。"
-   },
-   "links": [
-    {
-     "label": "公式情報",
-     "url": "https://www.tokyo-park.or.jp/park/jindai/",
-     "affiliate": false
-    },
-    {
-     "label": "施設公式案内",
-     "url": "https://www.tokyo-park.or.jp/park/jindai/facility/index.html",
-     "affiliate": false
-    }
-   ],
-   "checked_at": "2026-09-27",
-   "dog_hints": {
-    "has_rain_note": true,
-    "cert_required": true
-   },
-   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-jindai-botanical-park-dogrun",
-   "geocode": {
-    "lat": 35.673012,
-    "lon": 139.547791,
-    "precision": "facility",
-    "source": "official-address",
-    "matched": "東京都調布市深大寺北町一丁目４番"
-   },
-   "area_geocode": {
-    "lat": 35.650555,
-    "lon": 139.540833,
-    "matched": "東京都調布市",
-    "precision": "approximate"
-   }
-  },
-  {
    "id": "c5-the-dog-park-toyosu",
    "type": "spot",
    "name": "THE DOG PARK TOYOSU",
@@ -30967,55 +30183,6 @@
    }
   },
   {
-   "id": "c5-dog-cafe-moi-moi-odawara",
-   "type": "spot",
-   "name": "dog cafe moi moi(小田原)",
-   "area": "神奈川県小田原市・飯泉",
-   "region_group": "kanto",
-   "kinds": [
-    "cafe"
-   ],
-   "theme": "箱根・伊豆の玄関口、小田原にある2013年オープンの屋内ドッグカフェ。伊豆で12年ペンションを営んだオーナーの手作りごはんを、落ち着いた屋内で犬と一緒に。予約制ディナーも",
-   "facts": {
-    "犬の条件・同伴範囲": "全14席(全席禁煙)の屋内で犬と一緒に過ごせる。利用時のマナーとお願い事項は公式で確認。",
-    "料金の目安/犬料金": "犬の料金なし(飲食代)。",
-    "持ち物": "リード、マナーベルト、排泄物の処理用品。",
-    "雨の日": "屋内。",
-    "出発前に確認": "営業時間 11:30〜17:00(L.O.16:30)、ディナーは予約制。定休日 火・水・第3木曜。駐車場8台。",
-    "公式で確認したこと": "公式サイトで、所在地・営業時間・定休日・席数・駐車場を確認。"
-   },
-   "links": [
-    {
-     "label": "公式情報",
-     "url": "https://dogcafemoimoi.main.jp/",
-     "affiliate": false
-    },
-    {
-     "label": "施設公式案内",
-     "url": "https://dogcafemoimoi.main.jp/",
-     "affiliate": false
-    }
-   ],
-   "checked_at": "2026-09-27",
-   "dog_hints": {
-    "has_rain_note": true
-   },
-   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-dog-cafe-moi-moi-odawara",
-   "geocode": {
-    "lat": 35.281364,
-    "lon": 139.169037,
-    "precision": "facility",
-    "source": "official-address",
-    "matched": "神奈川県小田原市飯泉７４０番地"
-   },
-   "area_geocode": {
-    "lat": 35.264725,
-    "lon": 139.152222,
-    "matched": "神奈川県小田原市",
-    "precision": "approximate"
-   }
-  },
-  {
    "id": "c5-kimura-botanical-dogfield",
    "type": "spot",
    "name": "木村植物園 ドッグフォレスト湘南(平塚・会員制ドッグラン)",
@@ -31266,56 +30433,6 @@
    }
   },
   {
-   "id": "c5-shimami-ryokuchi-dogrun",
-   "type": "spot",
-   "name": "新潟県立島見緑地 ドッグラン",
-   "area": "新潟県新潟市北区・島見町",
-   "region_group": "koshinetsu",
-   "kinds": [
-    "run",
-    "park"
-   ],
-   "theme": "新潟市北区の県立緑地にある登録制・無料のドッグラン。通常エリアのほか、他の犬と遊べない子やデビュー犬向けの『おもいやりエリア』、登録なしでも使える有料・貸切のプライベートエリアがある(2026年8月に整備完了)",
-   "facts": {
-    "犬の条件・同伴範囲": "通常エリアは登録制(中学生以上。犬種・体高・体重不問)。登録には利用登録同意書、1年以内の狂犬病予防注射済票(原本)、本人確認書類。登録証を首から下げて利用。しつけに不安がある犬はプライベートエリア(有料・貸切)のみ。通常エリアは犬・人の食べ物の持ち込み禁止。公園内はリード着用。",
-    "料金の目安/犬料金": "通常エリア・おもいやりエリアは無料(要登録)。プライベートエリアは有料・貸切(料金は公式で確認)。",
-    "持ち物": "狂犬病予防注射済票(原本)、本人確認書類、登録証、犬の写真(30mm×30mm)、リード、排泄物の処理用品。",
-    "雨の日": "屋外。",
-    "出発前に確認": "登録・更新の受付は島見緑地管理事務所で10:00〜15:00。整備などによる利用中止のお知らせ。",
-    "公式で確認したこと": "公園公式サイトで、エリア構成・登録に必要なもの・受付時間・所在地・利用規約を確認。"
-   },
-   "links": [
-    {
-     "label": "公式情報",
-     "url": "https://shimami-seiro.com/dogrun/",
-     "affiliate": false
-    },
-    {
-     "label": "施設公式案内",
-     "url": "https://shimami-seiro.com/dogrun/",
-     "affiliate": false
-    }
-   ],
-   "checked_at": "2026-09-27",
-   "dog_hints": {
-    "has_rain_note": true
-   },
-   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-shimami-ryokuchi-dogrun",
-   "geocode": {
-    "lat": 37.970719,
-    "lon": 139.206167,
-    "precision": "facility",
-    "source": "osm",
-    "matched": "新潟県立島見緑地, 北区, 新潟市, 新潟県, 日本"
-   },
-   "area_geocode": {
-    "lat": 37.91354,
-    "lon": 139.221603,
-    "matched": "新潟県新潟市北区",
-    "precision": "approximate"
-   }
-  },
-  {
    "id": "c5-carufun-joetsu",
    "type": "spot",
    "name": "わんわんガーデン ca ru fun(上越)",
@@ -31410,56 +30527,6 @@
     "lat": 37.147865,
     "lon": 138.236099,
     "matched": "新潟県上越市",
-    "precision": "approximate"
-   }
-  },
-  {
-   "id": "c5-myoko-skycable-dogrun",
-   "type": "spot",
-   "name": "妙高高原スカイケーブル ドッグラン(赤倉)",
-   "area": "新潟県妙高市・田切(赤倉温泉)",
-   "region_group": "koshinetsu",
-   "kinds": [
-    "run"
-   ],
-   "theme": "妙高高原スカイケーブル山麓駅近く、駐車場上部のゲレンデにある芝生のドッグラン。車を降りてすぐ使え、小型犬専用エリアと中型・大型犬エリアに分かれる。ベーカリーやスカイテラスも",
-   "facts": {
-    "犬の条件・同伴範囲": "小型犬専用エリアと中型・大型犬エリア。『ドッグランのご利用時のお願い』(公式)に従う。",
-    "料金の目安/犬料金": "出発前に確認(電話 0255-87-2503)。",
-    "持ち物": "リード、排泄物の処理用品、水。",
-    "雨の日": "屋外。",
-    "出発前に確認": "グリーンシーズンの営業期間・営業時間(フロントラウンジ8:00〜16:30)。",
-    "公式で確認したこと": "スカイケーブル公式サイトの施設案内で、ドッグランの場所・エリア区分・所在地を確認。料金は公式で確認できず出発前に確認。"
-   },
-   "links": [
-    {
-     "label": "公式情報",
-     "url": "https://akr-sky.com/facility",
-     "affiliate": false
-    },
-    {
-     "label": "施設公式案内",
-     "url": "https://akr-sky.com/facility",
-     "affiliate": false
-    }
-   ],
-   "checked_at": "2026-09-27",
-   "dog_hints": {
-    "small_dog_only_mention": true,
-    "has_rain_note": true
-   },
-   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-myoko-skycable-dogrun",
-   "geocode": {
-    "lat": 36.886314,
-    "lon": 138.153488,
-    "precision": "facility",
-    "source": "official-address",
-    "matched": "新潟県妙高市田切２１６番地"
-   },
-   "area_geocode": {
-    "lat": 37.025269,
-    "lon": 138.253342,
-    "matched": "新潟県妙高市",
     "precision": "approximate"
    }
   },
@@ -31598,54 +30665,6 @@
     "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-yatsugatake-wanko-no-oniwa",
-   "geocode": {
-    "lat": 35.964363,
-    "lon": 138.217499,
-    "matched": "長野県原村",
-    "precision": "municipality"
-   },
-   "area_geocode": {
-    "lat": 35.964363,
-    "lon": 138.217499,
-    "matched": "長野県原村",
-    "precision": "municipality"
-   }
-  },
-  {
-   "id": "c5-haramura-cafe",
-   "type": "spot",
-   "name": "原村CAFE(八ヶ岳)",
-   "area": "長野県原村",
-   "region_group": "koshinetsu",
-   "kinds": [
-    "cafe"
-   ],
-   "theme": "八ヶ岳を見渡す大自然の中の、愛犬も一緒に楽しめるカフェ。高い天井と大きな窓の明るい店内に犬用の椅子やケージがあり、芝生エリアのテラス席は席同士が離れていて犬同士のトラブルの心配が少ない。犬用メニューもある",
-   "facts": {
-    "犬の条件・同伴範囲": "店内・芝生のテラス席で犬と一緒に食事ができる(店内に犬用椅子・ケージあり)。犬連れでなくても利用可。",
-    "料金の目安/犬料金": "犬の料金なし(飲食代。モーニング1,300円など)。犬用メニューあり。",
-    "持ち物": "リード、マナーベルト、排泄物の処理用品。",
-    "雨の日": "店内で過ごせる。",
-    "出発前に確認": "営業時間・定休日(公式サイトのお知らせで確認)。",
-    "公式で確認したこと": "公式サイトで、店内・テラスの犬同伴・犬用設備・犬用メニュー・所在地を確認。営業時間は公式で確認できず出発前に確認。"
-   },
-   "links": [
-    {
-     "label": "公式情報",
-     "url": "https://ddf-c.com/",
-     "affiliate": false
-    },
-    {
-     "label": "施設公式案内",
-     "url": "https://ddf-c.com/",
-     "affiliate": false
-    }
-   ],
-   "checked_at": "2026-09-27",
-   "dog_hints": {
-    "has_rain_note": true
-   },
-   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-haramura-cafe",
    "geocode": {
     "lat": 35.964363,
     "lon": 138.217499,
@@ -31851,56 +30870,6 @@
     "precision": "facility",
     "source": "official-address",
     "matched": "長野県上田市小泉塩田川原２５７５番地"
-   },
-   "area_geocode": {
-    "lat": 36.401978,
-    "lon": 138.248672,
-    "matched": "長野県上田市",
-    "precision": "approximate"
-   }
-  },
-  {
-   "id": "c5-pet-wizard-cafe-ueda",
-   "type": "spot",
-   "name": "ペットの魔法カフェ(上田・屋根付きドッグランカフェ)",
-   "area": "長野県上田市・常磐城",
-   "region_group": "koshinetsu",
-   "kinds": [
-    "cafe",
-    "run"
-   ],
-   "theme": "2023年3月オープンの、テント付きで雨の日も安心なドッグランカフェ。犬目線の小窓やプロジェクター、イタリア製マシンのソフトクリーム、犬の名前入りバースデーケーキ(要予約)も",
-   "facts": {
-    "犬の条件・同伴範囲": "店内とテント付きドッグランで犬と一緒に過ごせる。ドッグランの注意事項は公式で確認。貸切営業の日あり。",
-    "料金の目安/犬料金": "出発前に確認。犬用メニュー・バースデーケーキあり。",
-    "持ち物": "リード、排泄物の処理用品、ワクチンの証明(求められた場合)。",
-    "雨の日": "テント付きドッグラン。",
-    "出発前に確認": "営業時間 11:00〜17:00。定休日 木・金曜(GW・祝日は営業)。貸切営業日はNEWSで確認。",
-    "公式で確認したこと": "公式サイトで、所在地・営業時間・定休日・テント付きドッグラン・メニューを確認。"
-   },
-   "links": [
-    {
-     "label": "公式情報",
-     "url": "https://pet-wizardcafe.com/",
-     "affiliate": false
-    },
-    {
-     "label": "施設公式案内",
-     "url": "https://pet-wizardcafe.com/",
-     "affiliate": false
-    }
-   ],
-   "checked_at": "2026-09-27",
-   "dog_hints": {
-    "has_rain_note": true
-   },
-   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-pet-wizard-cafe-ueda",
-   "geocode": {
-    "lat": 36.409027,
-    "lon": 138.240753,
-    "precision": "facility",
-    "source": "official-address",
-    "matched": "長野県上田市常磐城二丁目７番２７号"
    },
    "area_geocode": {
     "lat": 36.401978,
@@ -32214,56 +31183,6 @@
    }
   },
   {
-   "id": "c5-makiba-park-yatsugatake",
-   "type": "spot",
-   "name": "山梨県立まきば公園(八ヶ岳)",
-   "area": "山梨県北杜市・大泉町",
-   "region_group": "koshinetsu",
-   "kinds": [
-    "park",
-    "cafe"
-   ],
-   "theme": "標高1,100〜1,700mの八ヶ岳南麓に広がる県立牧場の公園。羊やポニーのそばをリードで犬と散歩でき、『まきばレストラン』のテラス席も犬OK。甲州ワインビーフなど山梨の食材が味わえる",
-   "facts": {
-    "犬の条件・同伴範囲": "犬と散歩OK(必ずリード着用)。動物のいる広場には入れない。レストランのテラス席は犬同伴可。禁止事項(公式ポップアップ)を確認。",
-    "料金の目安/犬料金": "入園無料。",
-    "持ち物": "リード、排泄物の処理用品、水。",
-    "雨の日": "屋外。",
-    "出発前に確認": "開園時間 9:00〜17:00(駐車場も17:00閉鎖)。11月中旬〜4月中旬は冬期閉園。休園日は公式の一覧で確認。放牧地への遊歩道は1時間以上かかる。",
-    "公式で確認したこと": "まきば公園公式サイトで、犬の散歩ルール・開園時間・冬期閉園・所在地を確認。"
-   },
-   "links": [
-    {
-     "label": "公式情報",
-     "url": "https://www.yatuboku.jp/makiba-home",
-     "affiliate": false
-    },
-    {
-     "label": "施設公式案内",
-     "url": "https://www.yatuboku.jp/makiba-home",
-     "affiliate": false
-    }
-   ],
-   "checked_at": "2026-09-27",
-   "dog_hints": {
-    "has_rain_note": true
-   },
-   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-makiba-park-yatsugatake",
-   "geocode": {
-    "lat": 35.895557,
-    "lon": 138.326645,
-    "precision": "district",
-    "source": "official-address",
-    "matched": "山梨県北杜市小淵沢町"
-   },
-   "area_geocode": {
-    "lat": 35.776493,
-    "lon": 138.42363,
-    "matched": "山梨県北杜市",
-    "precision": "approximate"
-   }
-  },
-  {
    "id": "c5-komazawa-fruit-farm-dogrun",
    "type": "spot",
    "name": "こまざわフルーツファーム(いちご狩り＋無料ドッグラン)",
@@ -32363,57 +31282,6 @@
    }
   },
   {
-   "id": "c5-aiken-no-eki-izukogen",
-   "type": "spot",
-   "name": "愛犬の駅 伊豆高原",
-   "area": "静岡県伊東市・八幡野",
-   "region_group": "kanto",
-   "kinds": [
-    "run",
-    "cafe"
-   ],
-   "theme": "国道135号線沿い、城ヶ崎入口交差点すぐの『愛犬ととことん遊べる総合ドライブイン』。店内もテラスも犬OKのカフェ＆デリ(手作りの犬用『ワンコDELI』、テラスに足湯)、屋外と屋内のドッグラン、愛犬と一緒の陶芸体験まで。獣医師のメディカルアドバイザーと連携",
-   "facts": {
-    "犬の条件・同伴範囲": "店内・テラスとも犬同伴OK、大型犬OK。屋外ドッグラン(小型〜大型)と屋内ドッグランあり。ワクチンなどの条件は施設で確認。",
-    "料金の目安/犬料金": "ドッグランの料金は公式で確認。駐車場無料。",
-    "持ち物": "ワクチンの証明、リード、排泄物の処理用品、タオル(足湯)。",
-    "雨の日": "屋内ドッグランと店内席がある。",
-    "出発前に確認": "カフェ 10:00〜17:00(フードL.O.16:00、ドリンク・犬フード16:30)。ショップ・ドッグラン 10:00〜18:00(最終受付17:30)。",
-    "公式で確認したこと": "公式サイトで、所在地・営業時間・店内/テラスの犬同伴・屋内外ドッグラン・設備を確認。"
-   },
-   "links": [
-    {
-     "label": "公式情報",
-     "url": "https://www.welovedogs.jp/station",
-     "affiliate": false
-    },
-    {
-     "label": "施設公式案内",
-     "url": "https://www.welovedogs.jp/station",
-     "affiliate": false
-    }
-   ],
-   "checked_at": "2026-09-27",
-   "dog_hints": {
-    "large_dog_ok_mention": true,
-    "has_rain_note": true
-   },
-   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-aiken-no-eki-izukogen",
-   "geocode": {
-    "lat": 34.883061,
-    "lon": 139.109361,
-    "precision": "facility",
-    "source": "official-map",
-    "matched": "公式ページの地図"
-   },
-   "area_geocode": {
-    "lat": 34.965832,
-    "lon": 139.101944,
-    "matched": "静岡県伊東市",
-    "precision": "approximate"
-   }
-  },
-  {
    "id": "c5-cafe-famille-izukogen",
    "type": "spot",
    "name": "Cafe Famille(伊豆高原ドッグカフェ)",
@@ -32459,107 +31327,6 @@
     "lat": 34.965832,
     "lon": 139.101944,
     "matched": "静岡県伊東市",
-    "precision": "approximate"
-   }
-  },
-  {
-   "id": "c5-dogdept-garden-gotemba",
-   "type": "spot",
-   "name": "DOG DEPT GARDEN 御殿場店(カフェ・ラン・ショップ)",
-   "area": "静岡県御殿場市・東山",
-   "region_group": "kanto",
-   "kinds": [
-    "cafe",
-    "run"
-   ],
-   "theme": "御殿場のドッグデプトのガーデン店。カフェ＆レストラン、ショップ、ドッグランがそろい、富士山麓のドライブの立ち寄りに。ドッグランは1頭1,100円で1日使える",
-   "facts": {
-    "犬の条件・同伴範囲": "カフェ・ショップ・ドッグランで犬と一緒に利用できる(店内の同伴条件は店舗で確認)。",
-    "料金の目安/犬料金": "ドッグラン 1頭1,100円/1日。",
-    "持ち物": "リード、マナーベルト、排泄物の処理用品、ワクチンの証明(求められた場合)。",
-    "雨の日": "カフェ・ショップは屋内。",
-    "出発前に確認": "営業時間 11:00〜18:00(カフェL.O.16:00、以降はドリンクと犬メニューのみ)。定休日 木曜。",
-    "公式で確認したこと": "ドッグデプト公式の店舗ページで、所在地・営業時間・定休日・ドッグラン料金を確認。"
-   },
-   "links": [
-    {
-     "label": "公式情報",
-     "url": "https://www.dogdept.com/shoplist/area07_19.html",
-     "affiliate": false
-    },
-    {
-     "label": "施設公式案内",
-     "url": "https://www.dogdept.com/shoplist/area07_19.html",
-     "affiliate": false
-    }
-   ],
-   "checked_at": "2026-09-27",
-   "dog_hints": {
-    "has_rain_note": true
-   },
-   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-dogdept-garden-gotemba",
-   "geocode": {
-    "lat": 35.297695,
-    "lon": 138.957306,
-    "precision": "district",
-    "source": "official-address",
-    "matched": "静岡県御殿場市東山"
-   },
-   "area_geocode": {
-    "lat": 35.308693,
-    "lon": 138.934601,
-    "matched": "静岡県御殿場市",
-    "precision": "approximate"
-   }
-  },
-  {
-   "id": "c5-doglle-house-hamamatsu",
-   "type": "spot",
-   "name": "ドッグルハウス(浜松城公園近く・ドッグレストラン＆ドッグラン)",
-   "area": "静岡県浜松市中央区・元城町",
-   "region_group": "kanto",
-   "kinds": [
-    "cafe",
-    "run"
-   ],
-   "theme": "浜松城公園近くの、ペット同伴で『浜松料理じねん』の旬の料理が味わえるドッグレストラン。浜松食材のソフトクリーム、ペット食育指導士監修の手作りごはん、小型犬専用の室内ドッグルーム＆ドッグラン、屋上ドッグランも",
-   "facts": {
-    "犬の条件・同伴範囲": "ペット同伴可のレストラン(宴会コースも犬同伴可)。小型犬専用の室内ドッグルームあり(イベント・貸切で使えない日あり)。屋上ドッグランは2025年12月3日以降、当面の間お休み(公式お知らせ)。",
-    "料金の目安/犬料金": "出発前に確認。犬用の手作りごはん・お菓子を販売。",
-    "持ち物": "リード、マナーベルト、排泄物の処理用品。",
-    "雨の日": "室内ドッグルームと店内席がある。",
-    "出発前に確認": "営業時間 11:00〜22:00(施設により異なる)。屋上ドッグランの再開状況、室内ドッグルームの貸切・イベントの有無。",
-    "公式で確認したこと": "公式サイトで、所在地・営業時間・ペット同伴可・室内ドッグルーム・屋上ドッグラン休止のお知らせ(2025-12-03)を確認。"
-   },
-   "links": [
-    {
-     "label": "公式情報",
-     "url": "https://doglle-house.jp/",
-     "affiliate": false
-    },
-    {
-     "label": "施設公式案内",
-     "url": "https://doglle-house.jp/",
-     "affiliate": false
-    }
-   ],
-   "checked_at": null,
-   "dog_hints": {
-    "small_dog_only_mention": true,
-    "has_rain_note": true
-   },
-   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-doglle-house-hamamatsu",
-   "geocode": {
-    "lat": 34.713144,
-    "lon": 137.727134,
-    "precision": "facility",
-    "source": "official-map",
-    "matched": "公式ページの地図"
-   },
-   "area_geocode": {
-    "lat": 34.710808,
-    "lon": 137.726303,
-    "matched": "静岡県浜松市中央区",
     "precision": "approximate"
    }
   },
@@ -32952,56 +31719,6 @@
    }
   },
   {
-   "id": "c5-oinusama-park-fukushima",
-   "type": "spot",
-   "name": "お犬さまパーク(福島市・屋内外ドッグラン＆カフェ)",
-   "area": "福島県福島市・瀬上町",
-   "region_group": "tohoku",
-   "kinds": [
-    "run",
-    "cafe"
-   ],
-   "theme": "国道4号線沿い、福島県最大級の広さの屋内ドッグラン＆カフェ。雨でも雪でも遊べて、晴れた日は屋外ドッグランでのびのび。小型犬から大型犬まで。犬の保育園『お犬さま学園』も併設",
-   "facts": {
-    "犬の条件・同伴範囲": "屋内ドッグラン(カフェ併設)と屋外ドッグラン。オフ会利用可。ワクチンなどの条件は公式で確認。",
-    "料金の目安/犬料金": "ドッグラン・カフェの料金表は公式サイトで確認(学園コースは2時間平日1,800円〜など)。",
-    "持ち物": "ワクチンの証明、リード、排泄物の処理用品。",
-    "雨の日": "屋内ドッグランがある。",
-    "出発前に確認": "営業時間 9:00〜18:00(L.O.17:00、ランチ11:00〜15:00、カフェ11:00〜17:00)。定休日。",
-    "公式で確認したこと": "公式サイトで、所在地・営業時間・屋内外ドッグランとカフェ・料金表の掲載を確認。"
-   },
-   "links": [
-    {
-     "label": "公式情報",
-     "url": "https://oinusamapark.com/",
-     "affiliate": false
-    },
-    {
-     "label": "施設公式案内",
-     "url": "https://oinusamapark.com/",
-     "affiliate": false
-    }
-   ],
-   "checked_at": "2026-09-27",
-   "dog_hints": {
-    "has_rain_note": true
-   },
-   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-oinusama-park-fukushima",
-   "geocode": {
-    "lat": 37.802349,
-    "lon": 140.49324,
-    "precision": "facility",
-    "source": "official-address",
-    "matched": "福島県福島市瀬上町寺前７番地"
-   },
-   "area_geocode": {
-    "lat": 37.76083,
-    "lon": 140.474747,
-    "matched": "福島県福島市",
-    "precision": "approximate"
-   }
-  },
-  {
    "id": "c5-azuma36cafe-fukushima",
    "type": "spot",
    "name": "AZUMA36cafe(アヅマサンロクカフェ・福島市)",
@@ -33097,56 +31814,6 @@
     "lat": 37.050453,
     "lon": 140.887726,
     "matched": "福島県いわき市",
-    "precision": "approximate"
-   }
-  },
-  {
-   "id": "c5-zao-wanwan-land",
-   "type": "spot",
-   "name": "蔵王わん！ワン！ランド 〜森のドッグラン〜(川崎町)",
-   "area": "宮城県川崎町・前川(蔵王山麓)",
-   "region_group": "tohoku",
-   "kinds": [
-    "run",
-    "cafe"
-   ],
-   "theme": "仙台市内から車で約60分、蔵王山麓の457号線沿いにある約3,000坪の森のドッグラン。小型犬用・全犬種用・プライベートランの3つに散策道、犬同伴OKのカフェも。春は芝桜と新緑",
-   "facts": {
-    "犬の条件・同伴範囲": "犬種を問わず利用可(ワクチン・狂犬病予防接種済み)。入場できない犬の条件(公式)あり。屋内施設に入る場合はマナーベルト(+100円)。",
-    "料金の目安/犬料金": "入園無料。ドッグラン 大型犬・中型犬 平日1,000円・土日祝1,200円(公式の料金表で確認。2頭目割引・パスポートあり)。",
-    "持ち物": "ワクチン・狂犬病の証明、リード、マナーベルト、排泄物の処理用品。",
-    "雨の日": "屋外(カフェあり)。",
-    "出発前に確認": "営業時間 9:00〜16:00(時短の場合あり)。定休日 水・木曜(年末年始・貸切あり。カフェは不定休)。12月中〜3月はドッグランのネットを撤去し要予約。",
-    "公式で確認したこと": "公式サイトで、所在地・営業時間・定休日・料金・冬期の運用・利用条件を確認。"
-   },
-   "links": [
-    {
-     "label": "公式情報",
-     "url": "https://zao-wan-wan-land.jimdosite.com/",
-     "affiliate": false
-    },
-    {
-     "label": "施設公式案内",
-     "url": "https://zao-wan-wan-land.jimdosite.com/",
-     "affiliate": false
-    }
-   ],
-   "checked_at": "2026-09-27",
-   "dog_hints": {
-    "has_rain_note": true,
-    "vaccine_required": true
-   },
-   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-zao-wanwan-land",
-   "geocode": {
-    "lat": 38.177757,
-    "lon": 140.643158,
-    "matched": "宮城県川崎町",
-    "precision": "approximate"
-   },
-   "area_geocode": {
-    "lat": 38.177757,
-    "lon": 140.643158,
-    "matched": "宮城県川崎町",
     "precision": "approximate"
    }
   },
@@ -33630,56 +32297,6 @@
     "lat": 35.965702,
     "lon": 140.644791,
     "matched": "茨城県鹿嶋市",
-    "precision": "approximate"
-   }
-  },
-  {
-   "id": "c5-rich-field-kanuma",
-   "type": "spot",
-   "name": "ドッグラン＆カフェ リッチフィールド(鹿沼)",
-   "area": "栃木県鹿沼市・富岡",
-   "region_group": "kanto",
-   "kinds": [
-    "run",
-    "cafe"
-   ],
-   "theme": "鹿沼市北部・富岡地区の田んぼの中にある、2013年オープンのドッグラン＆カフェ。犬も人もリフレッシュできるのどかな場所で、ハンバーグ丼などのランチも",
-   "facts": {
-    "犬の条件・同伴範囲": "ドッグランとカフェで犬と一緒に過ごせる(店内・テラスの同伴範囲とワクチン条件は出発前に確認)。",
-    "料金の目安/犬料金": "出発前に確認。",
-    "持ち物": "ワクチンの証明、リード、排泄物の処理用品。",
-    "雨の日": "ドッグランは屋外。",
-    "出発前に確認": "ドッグラン 10:00〜日没(最終受付16:00)、カフェ 11:00〜16:00。休業日は毎月公式サイトで案内。",
-    "公式で確認したこと": "公式サイトで、所在地・営業時間・休業日の案内を確認。料金は公式で確認できず出発前に確認。"
-   },
-   "links": [
-    {
-     "label": "公式情報",
-     "url": "http://rich-field.net/",
-     "affiliate": false
-    },
-    {
-     "label": "施設公式案内",
-     "url": "http://rich-field.net/",
-     "affiliate": false
-    }
-   ],
-   "checked_at": "2026-09-27",
-   "dog_hints": {
-    "has_rain_note": true
-   },
-   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-rich-field-kanuma",
-   "geocode": {
-    "lat": 36.603119,
-    "lon": 139.732391,
-    "precision": "facility",
-    "source": "official-address",
-    "matched": "栃木県鹿沼市富岡８５０番地"
-   },
-   "area_geocode": {
-    "lat": 36.566681,
-    "lon": 139.745041,
-    "matched": "栃木県鹿沼市",
     "precision": "approximate"
    }
   },
@@ -34418,51 +33035,6 @@
     "lat": 35.144176,
     "lon": 139.620773,
     "matched": "神奈川県三浦市",
-    "precision": "municipality"
-   }
-  },
-  {
-   "id": "c6-soleil-park-jp",
-   "type": "spot",
-   "name": "ソレイユの丘",
-   "area": "神奈川県横須賀市",
-   "region_group": "kanto",
-   "kinds": [
-    "run",
-    "park"
-   ],
-   "theme": "ソレイユの丘は23年4月のリニューアル後から、一部エリアを愛犬と一緒に過ごすことが出来るようになっています。ワンちゃんと一緒に楽しめる施設として、ドッグランなどの体験コンテンツも用意されています。",
-   "facts": {
-    "犬の条件・同伴範囲": "一部エリアで愛犬と一緒に過ごすことが可能",
-    "料金の目安/犬料金": "記載なし",
-    "持ち物": "記載なし",
-    "雨の日": "雨天の場合、ドッグランはお休みとなります",
-    "出発前に確認": "台風被害によるメンテナンスのため、レトロボート・カナディアンカヌー・バナナフロートは当面の間休止。温浴施設「海と夕日の湯」も休業中。じゃぶじゃぶ池もご利用いただけません。",
-    "公式で確認したこと": "ソレイユの丘は一部エリアを愛犬と一緒に過ごすことが出来、ドッグランなどの体験コンテンツが用意されていることを確認しました。"
-   },
-   "links": [
-    {
-     "label": "施設公式案内",
-     "url": "https://soleil-park.jp",
-     "affiliate": false
-    }
-   ],
-   "checked_at": "2026-09-27",
-   "dog_hints": {
-    "has_rain_note": true
-   },
-   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c6-soleil-park-jp",
-   "geocode": {
-    "lat": 35.194252,
-    "lon": 139.610292,
-    "precision": "facility",
-    "source": "official-map",
-    "matched": "公式ページの地図"
-   },
-   "area_geocode": {
-    "lat": 35.281467,
-    "lon": 139.672226,
-    "matched": "神奈川県横須賀市",
     "precision": "municipality"
    }
   },

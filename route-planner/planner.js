@@ -196,7 +196,7 @@
 
     // サイトの各カードから「?dest=<id>」付きで開かれたら、行き先を選んだ状態にする
     // 統合して外したカードの古いIDは、残したカードのIDに読み替える(外部から古いリンクで来た人のため)
-    const DEST_ALIASES = { "add60-ishinoie": "izu-ishinoie", "c2-haiji-no-mura": "c-heidi-village" };
+    const DEST_ALIASES = { "add60-ishinoie": "izu-ishinoie", "c2-haiji-no-mura": "c-heidi-village", "c4-komagatake-ropeway": "c2-komagatake-ropeway", "c5-aiken-no-eki-izukogen": "c3-aiken-no-eki-izukogen", "c6-00002930": "c2-kizuna-kinugawa", "c5-tansen-hotel-akayu": "c3-tansen-hotel", "c5-haramura-cafe": "haramura-cafe-dogfield", "c5-shimami-ryokuchi-dogrun": "niigata-shimami-dogrun", "c4-saigawa-2-ryokuchi-dogrun": "nagano-saigawa-second-dogrun", "c5-oinusama-park-fukushima": "fukushima-oinusama-park", "c5-aoba-no-mori-dogrun": "add60-aoba", "c5-jindai-botanical-park-dogrun": "add60-jindai", "c5-rokakoshunen-dogrun": "add60-rokakoshun-en", "c5-johoku-chuo-park-dogrun": "c3-johoku-chuo-dogrun", "c5-tokyo-doitsumura-wanchan-land": "n0924-doitsumura-wanland", "c5-zao-wanwan-land": "c-zao-wanwanland", "c5-meiken-bokujo-maebashi": "c-meiken-bokujo", "c5-myoko-skycable-dogrun": "c-myoko-skycable", "c5-showa-kinen-park-dogrun": "c2-showakinen", "c2-yatsugatake-wanko-niwa": "c-yatsugatake-shizen", "c5-makiba-park-yatsugatake": "c2-makiba-park", "c5-spa-dogsrun-chichibu": "c2-spa-dogsrun-chichibu", "c6-soleil-park-jp": "c2-soleil-no-oka", "c5-chichibu-muse-park": "c-chichibu-muse-park", "c5-tokorozawa-kokukinen-dogrun": "c3-tokorozawa-kokuu-dogrun", "c5-dog-cafe-moi-moi-odawara": "c3-dogcafe-moimoi", "c5-pet-wizard-cafe-ueda": "c3-pet-wizard-cafe-ueda", "c5-rich-field-kanuma": "c3-richfield-kanuma", "c5-doglle-house-hamamatsu": "c4-doglle-house", "c5-dog-park-runrunrun": "c4-dogpark-runrunrun", "c5-dogdept-garden-gotemba": "c4-dogdept-garden-gotemba" };
     const rawDest = new URLSearchParams(location.search).get("dest");
     const destId = DEST_ALIASES[rawDest] || rawDest;
     if (destId && byId.has(destId)) select.value = destId;
@@ -346,7 +346,8 @@
         const closure = dogRunClosure(stop, date);
         const dogRun = stop.dog_run && !closure;
         // 休憩はSA・PAを優先(道の駅は高速を降りることが多いので最後)
-        const score = dogRun ? 3 : stop.pet_facility ? 2 : stop.kind === "SA" ? 1 : stop.kind === "道の駅" ? 0.3 : 0.5;
+        const walk = Boolean((stop.dog_walk || {}).available), dine = Boolean((stop.dog_dining || {}).available);
+        const score = dogRun ? 3 : dine ? 2.5 : stop.pet_facility ? 2 : walk ? 1.5 : stop.kind === "SA" ? 1 : stop.kind === "道の駅" ? 0.3 : 0.5;
         return { stop, tSec, d, closure, dogRun, score };
       })
       .filter((c) => c.tSec > EDGE_START_MIN * 60 && c.tSec < driveSec - EDGE_END_MIN * 60)
@@ -471,6 +472,8 @@
       r.stop.kind === "道の駅" ? '<span class="badge">道の駅</span>' : `<span class="badge">${esc(r.stop.kind)}</span>`,
       r.dogRun ? '<span class="badge b-run">ドッグラン</span>' : "",
       r.stop.pet_facility ? '<span class="badge b-pet">ペット施設</span>' : "",
+      (r.stop.dog_walk || {}).available ? '<span class="badge b-pet">散歩できる</span>' : "",
+      (r.stop.dog_dining || {}).available ? '<span class="badge b-rec">犬同伴で食事</span>' : "",
       r.closure ? `<span class="badge b-closed">${esc(r.closure)}</span>` : "",
     ].join("");
   }
