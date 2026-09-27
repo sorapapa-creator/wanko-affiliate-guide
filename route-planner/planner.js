@@ -731,10 +731,10 @@
         add(day, tt, "stop", `<span class="badge b-via">${esc(TYPE_LABEL[p.type])}</span> <b>${esc(p.name)}</b> <span class="note">(車で約${mv.min}分${mv.exact ? "" : "・目安"})</span><br><span class="note">滞在${fmtStay(stay)} → ${fmtClock(addSec(tt, stay * 60))}発${p.page_url ? ` ・ <a href="${esc(p.page_url)}">施設情報</a>` : ""}</span>`);
         tt = addSec(tt, stay * 60); prev = { lat: Number(p.geocode.lat), lon: Number(p.geocode.lon) };
       }
-      if (items.length) {
+      if (items.length && day === 1) {  // 到着日は最後に宿へ戻る。翌日は最後の場所からそのまま帰路へ
         const back = km([prev.lat, prev.lon], [Number(state.place.geocode.lat), Number(state.place.geocode.lon)]);
         const bm = Math.max(5, Math.round(back * 1.3 / 35 * 60)); tt = addSec(tt, bm * 60);
-        add(day, tt, "stop", `<span class="badge b-go">${day === 1 ? "宿へ戻る" : "宿を出発して帰路へ"}</span> <span class="note">(車で約${bm}分・目安)</span>`);
+        add(day, tt, "stop", `<span class="badge b-go">宿へ戻る</span> <span class="note">(車で約${bm}分・目安)</span>`);
       }
       return tt;
     };
@@ -749,7 +749,7 @@
       const end2 = visit(2, checkout, day2);
       const driveBack = o.totals.driveSec;
       const home = addSec(day2.length ? end2 : checkout, driveBack);
-      add(2, home, "stop", `<span class="badge b-go">帰着</span> <b>${esc(state.origin.name)}</b> <span class="note">(往路と同じ運転${fmtDur(driveBack)}の目安。休憩は別途)</span>`);
+      add(2, home, "stop", `<span class="badge b-go">帰着</span> <b>${esc(state.origin.name)}</b> <span class="note">(${day2.length ? "最後の場所から" : "宿から"}往路と同じ運転${fmtDur(driveBack)}の目安。休憩は別途)</span>`);
       if (home.getHours() >= 21) warns.push(`帰着が${fmtClock(home)}になる計算です。翌日の予定を減らすか、早めの出発を検討してください。`);
     } else if (day2.length) {
       warns.push("行き先が宿ではないため、「翌日」に選んだ場所は到着日の続きとして扱いました。");
