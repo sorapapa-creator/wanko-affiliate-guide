@@ -322,11 +322,30 @@
       <label class="t planner-field-label" for="nearby-select"><span>近くの掲載先</span><small>NEARBY</small></label>
       <select id="nearby-select"><option value="">掲載先を選ぶと施設情報へ移動します</option></select>
       <p class="hint" id="nearby-select-hint">候補の選択後、施設情報の該当位置を開きます。</p>
+      <p class="hint">下の一覧でチェックした場所は、<b>到着日</b>なら宿(行き先)に着いたあとに順番に回る予定として、<b>翌日</b>なら「帰りのプラン」で帰り道に経由する予定として、最終行程表に時刻つきで入ります。</p>
       <div class="nearby" id="nearby"></div>
       <div id="nearby-pick" style="margin-top:12px"></div>
       <div class="actions" id="nearby-actions"></div>
     </div>
 
+
+    <div class="card hidden" id="return-card">
+      <h2>帰りのプラン（帰宅は何時？）</h2>
+      <p class="hint">行き先(宿・おでかけ先)から出発地へ戻る時間を、出発日と同じ方法で計算します。「翌日」に選んだ近くの場所は帰り道に経由でき、長い区間には休憩の候補を出します。</p>
+      <div class="row three">
+        <div><label class="t planner-field-label" for="ret-day"><span>帰る日</span><small>RETURN DAY</small></label>
+          <select id="ret-day"><option value="1">到着日(日帰り)</option><option value="2" selected>翌日</option><option value="3">翌々日</option></select></div>
+        <div><label class="t planner-field-label" for="ret-start"><span>出発時刻</span><small>DEPART</small></label><input type="time" id="ret-start" value="10:00" step="900"></div>
+        <div><label class="t planner-field-label" for="ret-via"><span>近くの場所を経由</span><small>VIA</small></label><label class="chips"><input type="checkbox" id="ret-via" checked> チェックした「近くの掲載先」を帰り道に回る</label></div>
+      </div>
+      <div class="actions"><button type="button" class="primary" id="ret-go">帰りの時間を計算</button></div>
+      <p class="note" id="ret-status"></p>
+      <div id="ret-warn"></div>
+      <ol class="timeline" id="ret-plan"></ol>
+      <h3 id="ret-rest-title" class="hidden">帰り道の休憩を選ぶ</h3>
+      <p class="note" id="ret-rest-intro"></p>
+      <div id="ret-rest-pick"></div>
+    </div>
     <div class="card hidden" id="itinerary-card">
       <h2 id="itinerary-title">最終行程表</h2>
       <div id="itinerary-warn"></div>
@@ -347,7 +366,7 @@
 </div>
 <!-- 更新したら ?v= の値を変える(ブラウザに古いファイルが残って新しい動作にならないのを防ぐ) -->
 <script src="config.js?v=2026092601"></script>
-<script src="planner.js?v=20260927-dedupe1"></script>
+<script src="planner.js?v=20260927-return1"></script>
 <script src="trip-check.js?v=2026092602"></script>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "2847001768a143df87fa4e78edba9c7e"}'></script><!-- End Cloudflare Web Analytics -->
 
