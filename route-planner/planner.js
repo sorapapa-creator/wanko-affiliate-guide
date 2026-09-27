@@ -286,9 +286,9 @@
   }
 
   // 休憩に使えない地点(チェーン着脱場など)は立ち寄り候補に出さない
-  const NOT_REST = /チェーン着脱|着脱場|ポンプ場|トラック|駐輪場|Smoking|ラウンジ|検定待合所|インターチェンジ|駅舎|図書館|健康館|百貨店|イベントスペース/;  // OSM 由来の名前で休憩地点でないもの
+  const NOT_REST = /チェーン着脱|着脱場|ポンプ場|トラック|駐輪場|Smoking|ラウンジ|検定待合所|インターチェンジ|駅舎|図書館|健康館|百貨店|イベントスペース|ウォークインゲート|歩行者|コインパーキング|駐車場$|駐車帯/;  // OSM 由来の名前で休憩地点でないもの
 
-  const baseName = (name) => name.replace(/\s*[（(]\s*[上下]り?\s*[)）]\s*/g, "").trim();
+  const baseName = (name) => name.replace(/\s*[（(]\s*[上下]り?\s*[)）]\s*/g, "").replace(/サービスエリア/g, "SA").replace(/パーキングエリア/g, "PA").replace(/\s+/g, "").trim();
 
   // 東京から放射状に延びる高速道路(東北道・関越道・常磐道・東名・中央道など)は、東京から離れる向きが「下り」。
   // OSMで上下線の施設が同じ側に登録されていて左右で判定できない場合に、進行方向から上り/下りを決める。
@@ -375,9 +375,12 @@
   }
 
   // sinceRestSec: この区間の出発時点で、前の休憩から何秒運転しているか(立ち寄り先をまたいで引き継ぐ)
-  function planRests(cands, driveSec, intervalMin, sinceRestSec = 0) {
+  function planRests(cands, driveSec, intervalMin, sinceRestSec = 0, avoid = null) {
+    // avoid: 避けたい休憩(行きで選んだSA・PAの名前)。同じ時間帯に別の候補があればそちらを優先し、無ければ従来どおり選ぶ
     const I = intervalMin * 60, W = WINDOW_MIN * 60;
-    const pickBest = (arr) => arr.slice().sort((a, b) => b.score - a.score || b.tSec - a.tSec)[0];
+    const pen = (c) => (avoid && avoid.has(baseName(c.stop.name)) ? 1 : 0);
+    const pickBest = (arr) => arr.slice().sort((a, b) => pen(a) - pen(b) || b.score - a.score || b.tSec - a.tSec)[0];
+    const lastPreferred = (arr) => { const ok = arr.filter((c) => !pen(c)); return (ok.length ? ok : arr)[(ok.length ? ok : arr).length - 1]; };
     const plan = [];
     let last = -sinceRestSec;
     while (driveSec - last > I) {
@@ -385,10 +388,11 @@
       let late = false;
       if (!pick) {
         const early = cands.filter((c) => c.tSec > last + MIN_GAP_MIN * 60 && c.tSec <= last + I - W);
-        pick = early[early.length - 1];
+        pick = lastPreferred(early);
       }
       if (!pick) {
-        pick = cands.find((c) => c.tSec > last + I);
+        const after = cands.filter((c) => c.tSec > last + I);
+        pick = after.find((c) => !pen(c)) || after[0];
         late = Boolean(pick);
       }
       if (!pick) break;
@@ -897,6 +901,9 @@
       const start = { lat: Number(state.place.geocode.lat), lon: Number(state.place.geocode.lon), name: state.place.name, approx: state.place.geocode.precision !== "facility" };
       const wps = picks.map(({ p, stay }) => ({ lat: Number(p.geocode.lat), lon: Number(p.geocode.lon), name: p.name, stayMin: stay, place: p, kind: TYPE_LABEL[p.type] }));
       const points = [start, ...wps, { ...state.origin, name: state.origin.name }];
+      // 行きで選んだ休憩は帰りでは自動で選ばない(別の候補があれば)。上下線の別施設でも同じ場所なので名前(上り/下りを除く)で見る
+      const avoid = new Set();
+      for (const l of withChosenRests(state, state.options[state.current])) for (const r of l.rests) avoid.add(baseName(r.stop.name));
       const legs = []; let cursor = dep; let sinceRest = 0;
       for (let k = 0; k < points.length - 1; k++) {
         if (isApproxLeg({ from: points[k], to: points[k + 1] })) throw new Error(`${points[k].name} → ${points[k + 1].name} は位置が大まかなため計算できません。`);
@@ -907,7 +914,7 @@
         const pts = decodePolyline(r.polyline);
         const cands = stopsAlongRoute(pts, cumulative(pts), r.durationSec, cursor).filter((c) => !NOT_REST.test(c.stop.name));
         const sinceRestAtEnd = sinceRest + r.durationSec;
-        const recommended = planRests(cands, r.durationSec, state.interval.minutes, sinceRest);
+        const recommended = planRests(cands, r.durationSec, state.interval.minutes, sinceRest, avoid);
         legs.push({ from: points[k], to: points[k + 1], dep: cursor, arrive: addSec(cursor, r.durationSec), cands, recommended, sinceRestAtStart: sinceRest, sinceRestAtEnd,
           needsRest: sinceRestAtEnd > (state.interval.minutes + REST_SLACK_MIN) * 60, durationSec: r.durationSec, staticDurationSec: r.staticDurationSec });
         cursor = addSec(cursor, r.durationSec + recommended.length * CFG.restMinutes * 60);  // 次の区間はおすすめ休憩込みの出発時刻で問い合わせる
@@ -915,7 +922,7 @@
         if (k < wps.length) { const stay = wps[k].stayMin; if (stay >= REST_RESET_MIN) sinceRest = 0; cursor = addSec(cursor, stay * 60); }
       }
       if (!alive()) return;
-      returnState = { seq, dep, day, via, legs, waypoints: wps, selected: legs.map((l) => new Set(l.recommended.map(restKey))), interval: state.interval, origin: state.origin, place: state.place };
+      returnState = { seq, dep, day, via, legs, waypoints: wps, selected: legs.map((l) => new Set(l.recommended.map(restKey))), interval: state.interval, origin: state.origin, place: state.place, avoid };
       renderReturn(state);
       if (!$("itinerary-card").classList.contains("hidden")) renderItinerary(state);
     } catch (e) {
@@ -957,11 +964,11 @@
     // 休憩の選択(45分以上の区間)
     const long = legs.map((l, k) => [l, k]).filter(([l]) => l.needsRest || l.durationSec >= 45 * 60);
     $("ret-rest-title").classList.toggle("hidden", !long.length);
-    $("ret-rest-intro").textContent = long.length ? `運転45分以上の区間ごとに、ルート沿いのSA・PA・道の駅を候補に出します(おすすめは選択済み。前の休憩から${intervalText(rs.interval.minutes)}を超える区間には印)。休憩を変えても渋滞は再計算しません。` : "";
+    $("ret-rest-intro").textContent = long.length ? `運転45分以上の区間ごとに、ルート沿いのSA・PA・道の駅を候補に出します(おすすめは選択済み。行きで選んだ休憩は「行きで休憩」の印を付け、別の候補があればそちらをおすすめにします。前の休憩から${intervalText(rs.interval.minutes)}を超える区間には印)。休憩を変えても渋滞は再計算しません。` : "";
     $("ret-rest-pick").innerHTML = long.map(([l, k]) => {
       const rec = new Set(l.recommended.map(restKey));
       const rows = l.cands.map((c) => { const key = restKey(c), fac = (c.stop.facilities || [])[0];
-        return `<label class="rest-opt"><input type="checkbox" data-leg="${k}" value="${esc(key)}"${rs.selected[k]?.has(key) ? " checked" : ""}><span><b>${esc(c.stop.name)}</b> ${restBadges(c)}${rec.has(key) ? '<span class="badge b-rec">おすすめ</span>' : ""}<br><span class="note">この区間の運転${fmtDur(c.tSec)}の地点${fac?.road ? ` / ${esc(fac.road)}` : ""}</span></span></label>`; }).join("");
+        return `<label class="rest-opt"><input type="checkbox" data-leg="${k}" value="${esc(key)}"${rs.selected[k]?.has(key) ? " checked" : ""}><span><b>${esc(c.stop.name)}</b> ${restBadges(c)}${rec.has(key) ? '<span class="badge b-rec">おすすめ</span>' : ""}${rs.avoid && rs.avoid.has(key) ? '<span class="badge">行きで休憩</span>' : ""}<br><span class="note">この区間の運転${fmtDur(c.tSec)}の地点${fac?.road ? ` / ${esc(fac.road)}` : ""}</span></span></label>`; }).join("");
       return `<div class="rest-leg"><h3>${esc(l.from.name)} → ${esc(l.to.name)}${l.needsRest ? ' <span class="badge b-rec">目安を超える区間</span>' : ' <span class="badge">任意</span>'}</h3><p class="note">運転${fmtDur(l.durationSec)}</p>${rows ? `<div class="rest-list">${rows}</div>` : '<p class="note">ルート沿いに休憩できるSA・PA・道の駅が見つかりませんでした。</p>'}</div>`;
     }).join("");
     $("ret-rest-pick").querySelectorAll('input[type="checkbox"]').forEach((cb) => cb.addEventListener("change", () => {
