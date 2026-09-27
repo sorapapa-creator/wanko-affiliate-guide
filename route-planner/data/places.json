@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "source": "https://sorapapa-creator.github.io/wanko-affiliate-guide/",
- "generated_at": "2026-09-27T11:54:59+09:00",
+ "generated_at": "2026-09-27T12:06:15+09:00",
  "places": [
   {
    "id": "la-dog-resort",
@@ -679,8 +679,7 @@
      10,
      25
     ],
-    "has_rain_note": true,
-    "cert_required": true
+    "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -2053,7 +2052,7 @@
    ],
    "checked_at": "2026-09-21",
    "dog_hints": {
-    "cert_required": true
+    "vaccine_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -3116,8 +3115,7 @@
    "dog_hints": {
     "weight_limit_kg_mentions": [
      20
-    ],
-    "cert_required": true
+    ]
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -3162,9 +3160,7 @@
     }
    ],
    "checked_at": "2026-09-23",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 34.749137,
@@ -3213,9 +3209,7 @@
     }
    ],
    "checked_at": "2026-09-23",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 34.898922,
@@ -3264,9 +3258,7 @@
     }
    ],
    "checked_at": "2026-09-23",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.43325,
@@ -3305,9 +3297,7 @@
     }
    ],
    "checked_at": "2026-09-23",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.315674,
@@ -3347,8 +3337,7 @@
    ],
    "checked_at": "2026-09-23",
    "dog_hints": {
-    "has_rain_note": true,
-    "cert_required": true
+    "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -3393,9 +3382,7 @@
     }
    ],
    "checked_at": "2026-09-23",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 34.976101,
@@ -3443,8 +3430,7 @@
     "weight_limit_kg_mentions": [
      6
     ],
-    "small_dog_only_mention": true,
-    "cert_required": true
+    "small_dog_only_mention": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -3537,7 +3523,7 @@
    "checked_at": "2026-09-24",
    "dog_hints": {
     "small_dog_only_mention": true,
-    "cert_required": true
+    "vaccine_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -3784,7 +3770,7 @@
    ],
    "checked_at": "2026-09-24",
    "dog_hints": {
-    "cert_required": true
+    "vaccine_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -3976,7 +3962,7 @@
    ],
    "checked_at": "2026-09-24",
    "dog_hints": {
-    "cert_required": true
+    "vaccine_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -4022,8 +4008,7 @@
    ],
    "checked_at": "2026-09-24",
    "dog_hints": {
-    "large_dog_ok_mention": true,
-    "cert_required": true
+    "large_dog_ok_mention": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -4205,8 +4190,7 @@
    "dog_hints": {
     "weight_limit_kg_mentions": [
      15
-    ],
-    "cert_required": true
+    ]
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -4483,9 +4467,7 @@
     }
    ],
    "checked_at": "2026-09-24",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.3241,
@@ -4524,9 +4506,7 @@
     }
    ],
    "checked_at": "2026-09-25",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.882005,
@@ -4565,9 +4545,7 @@
     }
    ],
    "checked_at": "2026-09-25",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.887427,
@@ -4892,9 +4870,7 @@
     }
    ],
    "checked_at": "2026-09-26",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.711758,
@@ -5129,9 +5105,7 @@
     }
    ],
    "checked_at": "2026-09-26",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 34.922745,
@@ -6599,8 +6573,7 @@
    "dog_hints": {
     "weight_limit_kg_mentions": [
      23
-    ],
-    "cert_required": true
+    ]
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -6645,9 +6618,7 @@
     }
    ],
    "checked_at": "2026-09-26",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 37.230891,
@@ -8159,9 +8130,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 37.078663,
@@ -8200,9 +8169,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 37.040542,
@@ -8283,9 +8250,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.517372,
@@ -8363,9 +8328,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.410591,
@@ -8452,9 +8415,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 38.098026,
@@ -8500,8 +8461,7 @@
    "dog_hints": {
     "weight_limit_kg_mentions": [
      10
-    ],
-    "cert_required": true
+    ]
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -8546,9 +8506,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 37.413964,
@@ -8679,9 +8637,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 37.559641,
@@ -8725,9 +8681,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 37.200378,
@@ -8949,9 +8903,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 38.170176,
@@ -8995,9 +8947,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 37.682281,
@@ -9136,9 +9086,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 38.725721,
@@ -9229,8 +9177,7 @@
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "has_rain_note": true,
-    "cert_required": true
+    "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -9367,9 +9314,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 38.914268,
@@ -9413,9 +9358,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.834209,
@@ -9552,8 +9495,7 @@
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "large_dog_ok_mention": true,
-    "cert_required": true
+    "large_dog_ok_mention": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -9738,9 +9680,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.744627,
@@ -9828,9 +9768,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.5774,
@@ -9877,8 +9815,7 @@
    "dog_hints": {
     "weight_limit_kg_mentions": [
      6
-    ],
-    "cert_required": true
+    ]
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -10061,9 +9998,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 37.025423,
@@ -10199,8 +10134,7 @@
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "has_rain_note": true,
-    "cert_required": true
+    "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -10383,9 +10317,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.707447,
@@ -10429,9 +10361,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.671375,
@@ -10521,9 +10451,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.253887,
@@ -10566,9 +10494,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.534257,
@@ -10616,8 +10542,7 @@
     "weight_limit_kg_mentions": [
      10
     ],
-    "small_dog_only_mention": true,
-    "cert_required": true
+    "small_dog_only_mention": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -10707,9 +10632,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.535049,
@@ -10753,8 +10676,7 @@
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "large_dog_ok_mention": true,
-    "cert_required": true
+    "large_dog_ok_mention": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -10799,7 +10721,7 @@
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "cert_required": true
+    "vaccine_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -10844,9 +10766,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 34.91354,
@@ -10979,9 +10899,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 34.968318,
@@ -11065,9 +10983,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.304169,
@@ -11201,9 +11117,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.37262,
@@ -11241,9 +11155,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.535049,
@@ -11286,9 +11198,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.167656,
@@ -11333,8 +11243,7 @@
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "large_dog_ok_mention": true,
-    "cert_required": true
+    "large_dog_ok_mention": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -11379,9 +11288,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.142914,
@@ -11517,9 +11424,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.357333,
@@ -11611,9 +11516,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.285179,
@@ -11834,9 +11737,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.053715,
@@ -11880,9 +11781,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 34.766634,
@@ -11975,8 +11874,7 @@
    "dog_hints": {
     "weight_limit_kg_mentions": [
      6
-    ],
-    "cert_required": true
+    ]
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -12022,8 +11920,7 @@
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "has_rain_note": true,
-    "cert_required": true
+    "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -12071,8 +11968,7 @@
    "dog_hints": {
     "weight_limit_kg_mentions": [
      6
-    ],
-    "cert_required": true
+    ]
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -12117,9 +12013,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 34.907227,
@@ -12207,9 +12101,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 34.675198,
@@ -12253,9 +12145,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 34.965832,
@@ -12298,9 +12188,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.250057,
@@ -12345,8 +12233,7 @@
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "has_rain_note": true,
-    "cert_required": true
+    "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -12391,9 +12278,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 34.913593,
@@ -12437,9 +12322,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 34.932362,
@@ -12486,8 +12369,7 @@
    "dog_hints": {
     "weight_limit_kg_mentions": [
      15
-    ],
-    "cert_required": true
+    ]
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -12624,9 +12506,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.20586,
@@ -12670,9 +12550,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 34.962369,
@@ -12806,9 +12684,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 34.910137,
@@ -12852,9 +12728,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 34.863438,
@@ -12948,8 +12822,7 @@
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "has_rain_note": true,
-    "cert_required": true
+    "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -12995,8 +12868,7 @@
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "has_rain_note": true,
-    "cert_required": true
+    "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -13043,7 +12915,7 @@
    "checked_at": "2026-09-27",
    "dog_hints": {
     "large_dog_ok_mention": true,
-    "cert_required": true
+    "vaccine_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -13088,9 +12960,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.052063,
@@ -13178,9 +13048,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.446344,
@@ -13454,9 +13322,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.037884,
@@ -13728,8 +13594,7 @@
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "has_rain_note": true,
-    "cert_required": true
+    "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -13773,9 +13638,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 34.62138,
@@ -13819,9 +13682,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 37.316304,
@@ -13865,9 +13726,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 38.146217,
@@ -13911,9 +13770,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.564731,
@@ -13957,9 +13814,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.079025,
@@ -14003,9 +13858,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.080407,
@@ -14050,8 +13903,7 @@
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "has_rain_note": true,
-    "cert_required": true
+    "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -14142,9 +13994,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.964443,
@@ -14324,9 +14174,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 37.065556,
@@ -14369,9 +14217,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 37.947952,
@@ -14414,9 +14260,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.78947,
@@ -14461,7 +14305,7 @@
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "cert_required": true
+    "vaccine_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -14506,9 +14350,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 37.829403,
@@ -14552,9 +14394,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 37.102852,
@@ -14918,9 +14758,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 37.655678,
@@ -14958,9 +14796,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 37.494492,
@@ -15085,9 +14921,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.46199,
@@ -15175,9 +15009,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.495186,
@@ -15258,9 +15090,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.449881,
@@ -15304,9 +15134,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.174709,
@@ -15389,8 +15217,7 @@
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "small_dog_only_mention": true,
-    "cert_required": true
+    "small_dog_only_mention": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -15681,9 +15508,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 37.059341,
@@ -15721,9 +15546,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 37.01976,
@@ -15764,8 +15587,7 @@
    "dog_hints": {
     "weight_limit_kg_mentions": [
      10
-    ],
-    "cert_required": true
+    ]
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -15811,8 +15633,7 @@
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "small_dog_only_mention": true,
-    "cert_required": true
+    "small_dog_only_mention": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -15852,7 +15673,7 @@
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "cert_required": true
+    "vaccine_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -15985,9 +15806,7 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 37.080495,
@@ -16636,8 +16455,7 @@
    ],
    "checked_at": "2026-09-22",
    "dog_hints": {
-    "has_rain_note": true,
-    "cert_required": true
+    "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#chikusei-cafe-sora",
    "geocode": {
@@ -16845,8 +16663,7 @@
    ],
    "checked_at": "2026-09-22",
    "dog_hints": {
-    "has_rain_note": true,
-    "cert_required": true
+    "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#haramura-cafe-dogfield",
    "geocode": {
@@ -16950,8 +16767,7 @@
    ],
    "checked_at": "2026-09-22",
    "dog_hints": {
-    "has_rain_note": true,
-    "cert_required": true
+    "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#zao-sangoro-green",
    "geocode": {
@@ -17002,8 +16818,7 @@
    ],
    "checked_at": "2026-09-22",
    "dog_hints": {
-    "has_rain_note": true,
-    "cert_required": true
+    "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#yamagata-fairway-dogrun",
    "geocode": {
@@ -17050,8 +16865,7 @@
    ],
    "checked_at": "2026-09-22",
    "dog_hints": {
-    "has_rain_note": true,
-    "cert_required": true
+    "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#sendai-bowmu",
    "geocode": {
@@ -17107,7 +16921,7 @@
      10
     ],
     "has_rain_note": true,
-    "cert_required": true
+    "vaccine_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#niigata-shimami-dogrun",
    "geocode": {
@@ -17212,8 +17026,7 @@
    ],
    "checked_at": "2026-09-22",
    "dog_hints": {
-    "has_rain_note": true,
-    "cert_required": true
+    "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#sendai-withdog-asahigaoka",
    "geocode": {
@@ -17315,8 +17128,7 @@
     "weight_limit_kg_mentions": [
      10
     ],
-    "has_rain_note": true,
-    "cert_required": true
+    "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#joetsu-tanihama-dogrun",
    "geocode": {
@@ -17697,8 +17509,7 @@
    ],
    "checked_at": "2026-09-23",
    "dog_hints": {
-    "has_rain_note": true,
-    "cert_required": true
+    "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#add60-yoyogi",
    "geocode": {
@@ -17755,8 +17566,7 @@
    ],
    "checked_at": "2026-09-23",
    "dog_hints": {
-    "has_rain_note": true,
-    "cert_required": true
+    "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#add60-mizumoto",
    "geocode": {
@@ -17808,8 +17618,7 @@
    ],
    "checked_at": "2026-09-23",
    "dog_hints": {
-    "has_rain_note": true,
-    "cert_required": true
+    "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#add60-koganei",
    "geocode": {
@@ -17861,8 +17670,7 @@
    ],
    "checked_at": "2026-09-23",
    "dog_hints": {
-    "has_rain_note": true,
-    "cert_required": true
+    "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#add60-jindai",
    "geocode": {
@@ -17914,8 +17722,7 @@
    ],
    "checked_at": "2026-09-23",
    "dog_hints": {
-    "has_rain_note": true,
-    "cert_required": true
+    "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#add60-kiba",
    "geocode": {
@@ -17967,8 +17774,7 @@
    ],
    "checked_at": "2026-09-23",
    "dog_hints": {
-    "has_rain_note": true,
-    "cert_required": true
+    "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#add60-komazawa-olympic",
    "geocode": {
@@ -18025,8 +17831,7 @@
    ],
    "checked_at": "2026-09-23",
    "dog_hints": {
-    "has_rain_note": true,
-    "cert_required": true
+    "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#add60-toneri",
    "geocode": {
@@ -18078,8 +17883,7 @@
    ],
    "checked_at": "2026-09-23",
    "dog_hints": {
-    "has_rain_note": true,
-    "cert_required": true
+    "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#add60-shinozaki",
    "geocode": {
@@ -18131,8 +17935,7 @@
    ],
    "checked_at": "2026-09-23",
    "dog_hints": {
-    "has_rain_note": true,
-    "cert_required": true
+    "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#add60-rokakoshun-en",
    "geocode": {
@@ -18606,8 +18409,7 @@
    ],
    "checked_at": null,
    "dog_hints": {
-    "has_rain_note": true,
-    "cert_required": true
+    "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#dear-wan-terrace-chiba",
    "geocode": {
@@ -18909,8 +18711,7 @@
    "checked_at": "2026-09-24",
    "dog_hints": {
     "small_dog_only_mention": true,
-    "has_rain_note": true,
-    "cert_required": true
+    "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#n0924-doitsumura-wanland",
    "geocode": {
@@ -19087,9 +18888,7 @@
     }
    ],
    "checked_at": "2026-09-24",
-   "dog_hints": {
-    "cert_required": true
-   },
+   "dog_hints": {},
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#n0924-shinrinkoen",
    "geocode": {
     "lat": 36.091298,
@@ -20527,8 +20326,7 @@
    ],
    "checked_at": "2026-09-26",
    "dog_hints": {
-    "has_rain_note": true,
-    "cert_required": true
+    "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c2-showakinen",
    "geocode": {
@@ -20998,8 +20796,7 @@
    ],
    "checked_at": "2026-09-26",
    "dog_hints": {
-    "has_rain_note": true,
-    "cert_required": true
+    "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c2-spa-dogsrun-chichibu",
    "geocode": {
@@ -21052,8 +20849,7 @@
     "weight_limit_kg_mentions": [
      10
     ],
-    "has_rain_note": true,
-    "cert_required": true
+    "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c2-onioshidashi",
    "geocode": {
@@ -22105,8 +21901,7 @@
    ],
    "checked_at": "2026-09-26",
    "dog_hints": {
-    "has_rain_note": true,
-    "cert_required": true
+    "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c-michinoku-park",
    "geocode": {
@@ -23192,7 +22987,7 @@
    "checked_at": "2026-09-26",
    "dog_hints": {
     "has_rain_note": true,
-    "cert_required": true
+    "vaccine_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c3-fukurou-no-mori",
    "geocode": {
@@ -23885,8 +23680,7 @@
    ],
    "checked_at": "2026-09-26",
    "dog_hints": {
-    "has_rain_note": true,
-    "cert_required": true
+    "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c3-dc-castle-haruno",
    "geocode": {
@@ -24246,8 +24040,7 @@
    ],
    "checked_at": "2026-09-26",
    "dog_hints": {
-    "has_rain_note": true,
-    "cert_required": true
+    "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c3-shinsugita-dogrun",
    "geocode": {
@@ -24292,8 +24085,7 @@
    ],
    "checked_at": "2026-09-26",
    "dog_hints": {
-    "has_rain_note": true,
-    "cert_required": true
+    "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c3-irifune-dogrun",
    "geocode": {
@@ -25937,8 +25729,7 @@
    ],
    "checked_at": "2026-09-26",
    "dog_hints": {
-    "has_rain_note": true,
-    "cert_required": true
+    "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-dogpark-runrunrun",
    "geocode": {
@@ -26722,8 +26513,7 @@
    ],
    "checked_at": "2026-09-26",
    "dog_hints": {
-    "has_rain_note": true,
-    "cert_required": true
+    "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-dogdept-garden-gotemba",
    "geocode": {
@@ -27105,8 +26895,7 @@
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "has_rain_note": true,
-    "cert_required": true
+    "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-chateau-princesse",
    "geocode": {
@@ -31509,8 +31298,7 @@
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "has_rain_note": true,
-    "cert_required": true
+    "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-shimami-ryokuchi-dogrun",
    "geocode": {
@@ -33295,8 +33083,7 @@
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "has_rain_note": true,
-    "cert_required": true
+    "has_rain_note": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-asuka-mebuki-no-mori-iwaki",
    "geocode": {
