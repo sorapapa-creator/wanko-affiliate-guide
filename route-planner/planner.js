@@ -161,7 +161,9 @@
       for (const place of options) {
         const option = document.createElement("option");
         option.value = place.id;
-        option.textContent = `${place.name}（${place.area || "地域未登録"}）`;
+        const hints = place.dog_hints || {};
+        if (hints.cert_required) option.dataset.cert = "1";
+        option.textContent = `${place.name}（${place.area || "地域未登録"}）${hints.cert_required ? "【証明書】" : ""}`;
         group.appendChild(option);
       }
       select.appendChild(group);
@@ -172,6 +174,8 @@
       ? `掲載ページの一部が読み込めませんでした。移動時間を計算できる場所 ${withRoute}件／施設紹介のみ確認できる場所 ${withoutRoute}件。`
       : `行き先一覧 ${DESTINATIONS.length}件を表示中（移動時間を計算できる場所 ${withRoute}件・施設紹介のみ確認できる場所 ${withoutRoute}件）。`;
     $("dest-hint").textContent = destinationSummary;
+    applyCertFilter();
+    $("vaccine")?.addEventListener("change", () => { applyCertFilter(); if (lastState) renderNearby(lastState.place); });
 
     // 立ち寄り先の候補: 位置のある掲載先(宿・おでかけ)と、SA・PA・道の駅
     wpByLabel.clear();
@@ -198,6 +202,18 @@
     if (destId && byId.has(destId)) select.value = destId;
     updateDestinationLink();
     refreshWaypointChoices();
+  }
+
+  // ワクチン・狂犬病の証明書: 「持っていく」のチェックを外すと、証明書の提示・持参が条件の宿・おでかけ先は選べなくする
+  const hasCert = () => !$("vaccine") || $("vaccine").checked;
+  function applyCertFilter() {
+    const has = hasCert();
+    let n = 0;
+    for (const o of $("dest-q").options) if (o.dataset.cert) { o.disabled = !has; n++; }
+    const sel = $("dest-q").selectedOptions[0];
+    if (sel && sel.disabled) { $("dest-q").value = ""; updateDestinationLink(); }
+    const hint = $("cert-hint");
+    if (hint) hint.textContent = has ? "" : `ワクチン・狂犬病の証明書の提示・持参が条件の宿・おでかけ先(${n}件、【証明書】印)は、持っていない場合は選べません。持っていくならチェックを入れてください。`;
   }
 
   function hasRouteCoordinates(place) {
@@ -607,6 +623,8 @@
       warns.push("掲載情報に小型犬向け・体重制限の記載があります。うちの子が対象か、条件を確認してください。");
     }
     if (profile.heatCycle) warns.push("ヒート中(発情期)は受け入れない宿・ドッグランが多いです。予約前に施設へ確認してください。");
+    if (h.cert_required) warns.push(profile.vaccine ? "ワクチン・狂犬病の証明書の提示・持参が条件です(公式の条件文を確認)。忘れずに持っていきましょう。" : "ワクチン・狂犬病の証明書の提示・持参が条件の行き先です。証明書がないと利用できません。");
+    else if (h.vaccine_required) warns.push("ワクチン接種済みが条件です(証明書の要否は公式で確認)。");
     const official = (place.links || []).filter((l) => !l.affiliate).slice(0, 2);
     const aff = (place.links || []).filter((l) => l.affiliate).slice(0, 1);
     $("dest-card").innerHTML = `
@@ -625,7 +643,10 @@
   function renderNearby(place) {
     const here = [place.geocode.lat, place.geocode.lon];
     // 宿は出さない(行き先の近くで犬と行けるおでかけ先だけ)
+    const certOK = hasCert();
+    let certHidden = 0;
     const list = PLACES.filter((p) => p.id !== place.id && p.page_url && p.type === "spot")
+      .filter((p) => { if (!certOK && (p.dog_hints || {}).cert_required) { certHidden++; return false; } return true; })
       .map((p) => ({ p, d: km(here, [p.geocode.lat, p.geocode.lon]) }))
       .filter((x) => x.d <= CFG.nearbyKm)
       .sort((a, b) => compareDestinations(a.p, b.p))
@@ -646,7 +667,7 @@
       }
       if (group.children.length) select.appendChild(group);
     }
-    $("nearby-select-hint").textContent = `行き先から直線${CFG.nearbyKm}km以内のおでかけ先を50音順で表示（宿は除く。読み未登録の英字名は末尾）。地域の代表点を含む目安です。選ぶと施設情報を開きます。`;
+    $("nearby-select-hint").textContent = (certHidden ? `証明書が必要な${certHidden}件は非表示(「証明書を持っていく」にチェックすると出ます)。` : "") + `行き先から直線${CFG.nearbyKm}km以内のおでかけ先を50音順で表示（宿は除く。読み未登録の英字名は末尾）。地域の代表点を含む目安です。選ぶと施設情報を開きます。`;
     select.onchange = () => {
       if (select.value) window.location.assign(select.value);
     };

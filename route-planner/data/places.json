@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "source": "https://sorapapa-creator.github.io/wanko-affiliate-guide/",
- "generated_at": "2026-09-27T07:58:38+09:00",
+ "generated_at": "2026-09-27T11:54:59+09:00",
  "places": [
   {
    "id": "la-dog-resort",
@@ -679,7 +679,8 @@
      10,
      25
     ],
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -1432,7 +1433,8 @@
    "dog_hints": {
     "weight_limit_kg_mentions": [
      7
-    ]
+    ],
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -2050,7 +2052,9 @@
     }
    ],
    "checked_at": "2026-09-21",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.99152,
@@ -2098,7 +2102,9 @@
     }
    ],
    "checked_at": "2026-09-21",
-   "dog_hints": {},
+   "dog_hints": {
+    "vaccine_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.347942,
@@ -2151,7 +2157,9 @@
     }
    ],
    "checked_at": "2026-09-26",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.556107,
@@ -3108,7 +3116,8 @@
    "dog_hints": {
     "weight_limit_kg_mentions": [
      20
-    ]
+    ],
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -3153,7 +3162,9 @@
     }
    ],
    "checked_at": "2026-09-23",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 34.749137,
@@ -3202,7 +3213,9 @@
     }
    ],
    "checked_at": "2026-09-23",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 34.898922,
@@ -3251,7 +3264,9 @@
     }
    ],
    "checked_at": "2026-09-23",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.43325,
@@ -3290,7 +3305,9 @@
     }
    ],
    "checked_at": "2026-09-23",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.315674,
@@ -3330,7 +3347,8 @@
    ],
    "checked_at": "2026-09-23",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -3375,7 +3393,9 @@
     }
    ],
    "checked_at": "2026-09-23",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 34.976101,
@@ -3423,7 +3443,8 @@
     "weight_limit_kg_mentions": [
      6
     ],
-    "small_dog_only_mention": true
+    "small_dog_only_mention": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -3515,7 +3536,8 @@
    ],
    "checked_at": "2026-09-24",
    "dog_hints": {
-    "small_dog_only_mention": true
+    "small_dog_only_mention": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -3661,7 +3683,8 @@
    "dog_hints": {
     "weight_limit_kg_mentions": [
      15
-    ]
+    ],
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -3760,7 +3783,9 @@
     }
    ],
    "checked_at": "2026-09-24",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.341606,
@@ -3858,7 +3883,9 @@
     }
    ],
    "checked_at": "2026-09-24",
-   "dog_hints": {},
+   "dog_hints": {
+    "vaccine_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 38.166237,
@@ -3948,7 +3975,9 @@
     }
    ],
    "checked_at": "2026-09-24",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.764363,
@@ -3993,7 +4022,8 @@
    ],
    "checked_at": "2026-09-24",
    "dog_hints": {
-    "large_dog_ok_mention": true
+    "large_dog_ok_mention": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -4175,7 +4205,8 @@
    "dog_hints": {
     "weight_limit_kg_mentions": [
      15
-    ]
+    ],
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -4220,7 +4251,9 @@
     }
    ],
    "checked_at": "2026-09-24",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.806198,
@@ -4350,7 +4383,8 @@
    "dog_hints": {
     "weight_limit_kg_mentions": [
      20
-    ]
+    ],
+    "vaccine_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -4449,7 +4483,9 @@
     }
    ],
    "checked_at": "2026-09-24",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.3241,
@@ -4488,7 +4524,9 @@
     }
    ],
    "checked_at": "2026-09-25",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.882005,
@@ -4527,7 +4565,9 @@
     }
    ],
    "checked_at": "2026-09-25",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.887427,
@@ -4760,7 +4800,9 @@
     }
    ],
    "checked_at": "2026-09-26",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.467445,
@@ -4804,7 +4846,9 @@
     }
    ],
    "checked_at": "2026-09-26",
-   "dog_hints": {},
+   "dog_hints": {
+    "vaccine_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.348331,
@@ -4848,7 +4892,9 @@
     }
    ],
    "checked_at": "2026-09-26",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.711758,
@@ -4945,7 +4991,9 @@
     }
    ],
    "checked_at": "2026-09-26",
-   "dog_hints": {},
+   "dog_hints": {
+    "vaccine_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 38.113247,
@@ -4989,7 +5037,9 @@
     }
    ],
    "checked_at": "2026-09-26",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.230106,
@@ -5033,7 +5083,9 @@
     }
    ],
    "checked_at": "2026-09-26",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.081528,
@@ -5077,7 +5129,9 @@
     }
    ],
    "checked_at": "2026-09-26",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 34.922745,
@@ -5121,7 +5175,9 @@
     }
    ],
    "checked_at": "2026-09-26",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.167797,
@@ -5204,7 +5260,9 @@
     }
    ],
    "checked_at": "2026-09-26",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 37.104355,
@@ -5244,7 +5302,8 @@
    ],
    "checked_at": "2026-09-26",
    "dog_hints": {
-    "small_dog_only_mention": true
+    "small_dog_only_mention": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -5367,7 +5426,9 @@
     }
    ],
    "checked_at": "2026-09-26",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.317597,
@@ -5411,7 +5472,9 @@
     }
    ],
    "checked_at": "2026-09-26",
-   "dog_hints": {},
+   "dog_hints": {
+    "vaccine_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.240471,
@@ -5500,7 +5563,8 @@
    ],
    "checked_at": "2026-09-26",
    "dog_hints": {
-    "small_dog_only_mention": true
+    "small_dog_only_mention": true,
+    "vaccine_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -5540,7 +5604,9 @@
     }
    ],
    "checked_at": "2026-09-26",
-   "dog_hints": {},
+   "dog_hints": {
+    "vaccine_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 37.083221,
@@ -5626,7 +5692,8 @@
    "dog_hints": {
     "weight_limit_kg_mentions": [
      10
-    ]
+    ],
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -5671,7 +5738,8 @@
    ],
    "checked_at": "2026-09-26",
    "dog_hints": {
-    "large_dog_ok_mention": true
+    "large_dog_ok_mention": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -5760,7 +5828,9 @@
     }
    ],
    "checked_at": "2026-09-26",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 38.438152,
@@ -5838,7 +5908,9 @@
     }
    ],
    "checked_at": "2026-09-26",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.979691,
@@ -6003,7 +6075,9 @@
     }
    ],
    "checked_at": "2026-09-26",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.141956,
@@ -6042,7 +6116,9 @@
     }
    ],
    "checked_at": "2026-09-26",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.126644,
@@ -6082,7 +6158,8 @@
    ],
    "checked_at": "2026-09-26",
    "dog_hints": {
-    "small_dog_only_mention": true
+    "small_dog_only_mention": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -6262,7 +6339,8 @@
    ],
    "checked_at": "2026-09-26",
    "dog_hints": {
-    "large_dog_ok_mention": true
+    "large_dog_ok_mention": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -6345,7 +6423,9 @@
     }
    ],
    "checked_at": "2026-09-26",
-   "dog_hints": {},
+   "dog_hints": {
+    "vaccine_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.495186,
@@ -6519,7 +6599,8 @@
    "dog_hints": {
     "weight_limit_kg_mentions": [
      23
-    ]
+    ],
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -6564,7 +6645,9 @@
     }
    ],
    "checked_at": "2026-09-26",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 37.230891,
@@ -6603,7 +6686,9 @@
     }
    ],
    "checked_at": "2026-09-26",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.984348,
@@ -6642,7 +6727,9 @@
     }
    ],
    "checked_at": "2026-09-26",
-   "dog_hints": {},
+   "dog_hints": {
+    "vaccine_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 37.693153,
@@ -6686,7 +6773,9 @@
     }
    ],
    "checked_at": "2026-09-26",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 37.025269,
@@ -6724,7 +6813,9 @@
     }
    ],
    "checked_at": "2026-09-26",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 37.236431,
@@ -6851,7 +6942,8 @@
    ],
    "checked_at": "2026-09-26",
    "dog_hints": {
-    "large_dog_ok_mention": true
+    "large_dog_ok_mention": true,
+    "vaccine_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -6896,7 +6988,9 @@
     }
    ],
    "checked_at": "2026-09-26",
-   "dog_hints": {},
+   "dog_hints": {
+    "vaccine_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 37.879732,
@@ -7023,7 +7117,9 @@
     }
    ],
    "checked_at": "2026-09-26",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 38.050556,
@@ -7071,7 +7167,8 @@
     "weight_limit_kg_mentions": [
      10
     ],
-    "small_dog_only_mention": true
+    "small_dog_only_mention": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -7116,7 +7213,9 @@
     }
    ],
    "checked_at": "2026-09-26",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.680594,
@@ -7251,7 +7350,8 @@
    "dog_hints": {
     "weight_limit_kg_mentions": [
      10
-    ]
+    ],
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -7386,7 +7486,8 @@
    "dog_hints": {
     "weight_limit_kg_mentions": [
      40
-    ]
+    ],
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -7509,7 +7610,9 @@
     }
    ],
    "checked_at": "2026-09-26",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.624563,
@@ -7592,7 +7695,9 @@
     }
    ],
    "checked_at": "2026-09-26",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 34.771263,
@@ -7678,7 +7783,8 @@
    "dog_hints": {
     "weight_limit_kg_mentions": [
      15
-    ]
+    ],
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -7718,7 +7824,9 @@
     }
    ],
    "checked_at": "2026-09-26",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.091167,
@@ -7803,7 +7911,8 @@
    "dog_hints": {
     "weight_limit_kg_mentions": [
      20
-    ]
+    ],
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -7851,7 +7960,8 @@
    "dog_hints": {
     "weight_limit_kg_mentions": [
      25
-    ]
+    ],
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -7892,7 +8002,8 @@
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "large_dog_ok_mention": true
+    "large_dog_ok_mention": true,
+    "vaccine_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -8048,7 +8159,9 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 37.078663,
@@ -8087,7 +8200,9 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 37.040542,
@@ -8127,7 +8242,8 @@
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "large_dog_ok_mention": true
+    "large_dog_ok_mention": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -8167,7 +8283,9 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.517372,
@@ -8245,7 +8363,9 @@
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.410591,
@@ -8279,6 +8399,11 @@
     {
      "label": "公式の条件を確認",
      "url": "https://mercure-urabandai-resortandspa.jp/plan/861-2/",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでメルキュール裏磐梯リゾート＆スパの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00003162/",
      "affiliate": false
     }
    ],
@@ -8319,10 +8444,17 @@
      "label": "公式の条件を確認",
      "url": "https://www.bettei-yamabuki.com/rooms/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで別邸 山風木の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00001285/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 38.098026,
@@ -8357,13 +8489,19 @@
      "label": "公式の条件を確認",
      "url": "https://www.marumine.co.jp/pet/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで丸峰観光ホテルの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00002303/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
     "weight_limit_kg_mentions": [
      10
-    ]
+    ],
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -8400,10 +8538,17 @@
      "label": "公式の条件を確認",
      "url": "https://www.lakehide-konan.com/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでLakehide Konanの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00052463/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 37.413964,
@@ -8438,6 +8583,11 @@
     {
      "label": "公式の条件を確認",
      "url": "https://makirogi.jp/about/",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで薪のくつろぎ蔵王の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00052475/",
      "affiliate": false
     }
    ],
@@ -8476,6 +8626,11 @@
     {
      "label": "公式の条件を確認",
      "url": "https://www.tabinoteitaku.jp/miyagi/yamamoto/woodstay/",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでたびの邸宅 WOOD STAY 山元の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00052684/",
      "affiliate": false
     }
    ],
@@ -8516,10 +8671,17 @@
      "label": "公式の条件を確認",
      "url": "https://corisu.sakura.ne.jp/petstay1.html",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでペットと泊まれる宿 ペンションこりすの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00902637/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 37.559641,
@@ -8555,10 +8717,17 @@
      "label": "公式の条件を確認",
      "url": "https://www.p-felice.com/price",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでペンション フェリチェの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00902995/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 37.200378,
@@ -8586,12 +8755,17 @@
     "夜はどこで寝る？": "客室(ペット専用客室) 布団・座布団の上には乗せない。",
     "食事同伴": "会食場への同伴は不可。犬の食事は持参",
     "ドッグラン": "なし(公式に記載なし)",
-    "予約前の重要確認": "犬の大きさ・頭数の上限、ケージの有無、ワクチン証明は公式ページで確認できず予約前確認。布団を汚した場合は洗濯代3,000円。"
+    "予約前の重要確認": "犬の食事とペットシートは持参。布団を汚した場合は洗濯代3,000円。"
    },
    "links": [
     {
      "label": "公式の条件を確認",
      "url": "https://www.sumirekan.jp/pet.html",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでスパホテル スミレ館の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00903397/",
      "affiliate": false
     }
    ],
@@ -8616,7 +8790,7 @@
    "id": "c5-shintomitei-onikobe",
    "type": "lodging",
    "name": "花ごころの湯 新富亭(ワンちゃんと御宿泊プラン)",
-   "area": "宮城県大崎市・鳴子温泉郷",
+   "area": "宮城県松島町・松島温泉",
    "co_sleep": "添い寝 予約前確認",
    "facts": {
     "対象犬・頭数": "小型犬のみ。専用プラン『ワンちゃんと御宿泊プラン』で申し込んだ場合に限り、ワンちゃん専用客室内で滞在できる(保健所の指導により、それ以外は盲導犬を除きペットの持ち込み不可)。",
@@ -8625,12 +8799,17 @@
     "夜はどこで寝る？": "ワンちゃん専用客室",
     "食事同伴": "予約前確認(館内への持ち込みは不可の案内)",
     "ドッグラン": "なし(公式に記載なし)",
-    "予約前の重要確認": "犬の料金・頭数・備品・添い寝・ワクチン証明は公式ページで確認できず予約前確認。"
+    "予約前の重要確認": "犬の料金・頭数・ケージ・添い寝・食事同伴は公式ページで確認できず予約前確認。所在地は松島町松島字垣ノ内38-1(公式)。"
    },
    "links": [
     {
      "label": "公式の条件を確認",
      "url": "https://www.hotel-shintomi.co.jp/faq/",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで花ごころの湯 新富亭の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00903692/",
      "affiliate": false
     }
    ],
@@ -8640,15 +8819,16 @@
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
-    "lat": 38.577541,
-    "lon": 140.955719,
-    "matched": "宮城県大崎市",
-    "precision": "approximate"
+    "lat": 38.374382,
+    "lon": 141.065308,
+    "precision": "facility",
+    "source": "official-address",
+    "matched": "宮城県松島町松島垣ノ内３８番地"
    },
    "area_geocode": {
-    "lat": 38.577541,
-    "lon": 140.955719,
-    "matched": "宮城県大崎市",
+    "lat": 38.380192,
+    "lon": 141.067368,
+    "matched": "宮城県松島町",
     "precision": "approximate"
    }
   },
@@ -8672,10 +8852,17 @@
      "label": "公式の条件を確認",
      "url": "http://p-pellmell.com/stay_hotel.php",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでラヂオの古民家 ペルメルの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00906358/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "vaccine_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 37.557777,
@@ -8709,6 +8896,11 @@
     {
      "label": "公式の条件を確認",
      "url": "http://www.ashipri.com/page6",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで会津芦ノ牧温泉 芦ノ牧プリンスホテルの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00906528/",
      "affiliate": false
     }
    ],
@@ -8749,10 +8941,17 @@
      "label": "公式の条件を確認",
      "url": "https://lodgescole.com/facilities/pet/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでロッジスコーレの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00906718/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 38.170176,
@@ -8788,10 +8987,17 @@
      "label": "公式の条件を確認",
      "url": "http://www.newougiya.com/dog",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで土湯温泉 源泉湯庵 ニュー扇屋の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00911395/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 37.682281,
@@ -8827,6 +9033,11 @@
      "label": "公式の条件を確認",
      "url": "https://www.syakunage.com/guide/498-2/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでしゃくなげ平貸別荘 No.498の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00912926/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
@@ -8834,7 +9045,8 @@
     "weight_limit_kg_mentions": [
      10,
      25
-    ]
+    ],
+    "vaccine_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -8870,10 +9082,17 @@
      "label": "公式の条件を確認",
      "url": "https://www.tabino-camp.jp/miyagi/kami/yuland-cottage/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでたびのCAMPING BASE 加美ゆーらんど コテージBの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00913631/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 38.634078,
@@ -8909,10 +9128,17 @@
      "label": "公式の条件を確認",
      "url": "https://hotspring.hebinoyuyukichi.com/reserve/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで蛇のゆ湯吉の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00914662/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 38.725721,
@@ -8948,10 +9174,17 @@
      "label": "公式の条件を確認",
      "url": "https://www.morinocottage.com/ペットについて/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで星逢える宿〜森のコテージ気仙沼の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00914692/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "vaccine_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 38.87204,
@@ -8987,11 +9220,17 @@
      "label": "公式の条件を確認",
      "url": "https://www.aoneonsen.com/hanabusa_doglamping/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでHANABUSA DOGlampingの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00916514/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -9028,10 +9267,17 @@
      "label": "公式の条件を確認",
      "url": "https://kibotcha.com/about/facilities/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでKIBOTCHAの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00916725/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 38.426266,
@@ -9066,11 +9312,17 @@
      "label": "公式の条件を確認",
      "url": "https://r.goope.jp/omochabako/free/pet-info",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでペンションおもちゃばこの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00918969/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "large_dog_ok_mention": true
+    "large_dog_ok_mention": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -9107,10 +9359,17 @@
      "label": "公式の条件を確認",
      "url": "https://s-camps.com/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでSAKATANTO Container Hotel CAMPS ペット専用棟の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00919765/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 38.914268,
@@ -9146,10 +9405,17 @@
      "label": "公式の条件を確認",
      "url": "https://www.kinugawakokusaihotel.co.jp/pet/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでペット同室宿泊パイオニアの宿 きぬ川国際ホテルの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00030095/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.834209,
@@ -9185,10 +9451,17 @@
      "label": "公式の条件を確認",
      "url": "https://kunel-nasu.com/welcome.html",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで那須の犬宿クーネルの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00920642/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "vaccine_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 37.064338,
@@ -9224,10 +9497,17 @@
      "label": "公式の条件を確認",
      "url": "https://www.the-heartfield-inn.com/reservation.html",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで愛犬と泊まれるプチホテル ザ ハートフィールド インの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00030379/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 37.107292,
@@ -9263,11 +9543,17 @@
      "label": "公式の条件を確認",
      "url": "https://www.fukurakunoyakata.jp/pet.html",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで伏楽の館 那須湯本店の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00906520/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "large_dog_ok_mention": true
+    "large_dog_ok_mention": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -9304,10 +9590,17 @@
      "label": "公式の条件を確認",
      "url": "https://akagi-futokoro.com/with-dogs/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで愛犬と泊まれる古民家リトリート 赤城山 - 懐 -の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00921492/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.463619,
@@ -9342,6 +9635,11 @@
     {
      "label": "公式の条件を確認",
      "url": "http://nasu-resta.com/sp/room6.html",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでHotelRestaの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00904728/",
      "affiliate": false
     }
    ],
@@ -9386,10 +9684,17 @@
      "label": "公式の条件を確認",
      "url": "https://flatlet-kusatsu.com/pet/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでペットと泊まれる宿 コンドミニアム フラットレット草津の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00903379/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "vaccine_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.622543,
@@ -9425,10 +9730,17 @@
      "label": "公式の条件を確認",
      "url": "https://animal-goten.com/facility",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでShareResortあにまる御殿の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00915590/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.744627,
@@ -9463,6 +9775,11 @@
     {
      "label": "公式の条件を確認",
      "url": "https://www.shimeikan.jp/pages/room",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで風木立の川辺 紫明館の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00905914/",
      "affiliate": false
     }
    ],
@@ -9503,10 +9820,17 @@
      "label": "公式の条件を確認",
      "url": "https://www.hotelhigashinihon.com/stay/pop_pet.html",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでホテル東日本 宇都宮の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00001374/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.5774,
@@ -9542,13 +9866,19 @@
      "label": "公式の条件を確認",
      "url": "https://www.morinokaze-nasu.com/rooms/index.html",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでホテル森の風那須の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00002529/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
     "weight_limit_kg_mentions": [
      6
-    ]
+    ],
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -9585,10 +9915,17 @@
      "label": "公式の条件を確認",
      "url": "https://earthboat.jp/minakami_fujiwara",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでEarthboat Minakami Fujiwaraの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00052061/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "vaccine_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.851199,
@@ -9624,10 +9961,17 @@
      "label": "公式の条件を確認",
      "url": "https://earthboat.jp/minakami_hodaigi",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでEarthboat Minakami Hodaigiの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00052092/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "vaccine_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.837203,
@@ -9663,10 +10007,17 @@
      "label": "公式の条件を確認",
      "url": "https://earthboat.jp/nasu",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでEarthboat Nasuの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00052389/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "vaccine_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 37.089949,
@@ -9702,10 +10053,17 @@
      "label": "公式の条件を確認",
      "url": "https://dwarvenvillage.jp/news/【新プラン】大切な愛犬と泊まれるコテージが誕/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで北欧伝説 ドワーフの村の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00052571/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 37.025423,
@@ -9741,10 +10099,17 @@
      "label": "公式の条件を確認",
      "url": "https://www.villa-kagura.com/dog/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでヴィラ楓倉の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00052683/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.961666,
@@ -9779,10 +10144,17 @@
      "label": "公式の条件を確認",
      "url": "http://onga.co.jp/pet01.html",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで草津温泉 ペットと泊まれる宿 音雅の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00903975/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "vaccine_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.629856,
@@ -9818,11 +10190,17 @@
      "label": "公式の条件を確認",
      "url": "http://www.asama-kogen-hotel.com/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで浅間高原ホテルの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00906121/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -9859,10 +10237,17 @@
      "label": "公式の条件を確認",
      "url": "https://earthboat.jp/kitakaruizawa",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでEarthboat Kitakaruizawaの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00052831/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "vaccine_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.462929,
@@ -9898,10 +10283,17 @@
      "label": "公式の条件を確認",
      "url": "https://akasawaonsen.com/room/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで赤沢温泉旅館の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00910848/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "vaccine_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.958061,
@@ -9937,10 +10329,17 @@
      "label": "公式の条件を確認",
      "url": "http://www.la-piste.com/petinfo.html",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでゲストハウス ラ・ピステの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00911411/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "vaccine_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 37.084159,
@@ -9976,10 +10375,17 @@
      "label": "公式の条件を確認",
      "url": "https://soranohotel.com/plan/detail/116/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでSORANO HOTELの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00003297/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.707447,
@@ -10015,10 +10421,17 @@
      "label": "公式の条件を確認",
      "url": "https://www.imperialhotel.co.jp/tokyo/stay/purpose/dog-plan",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで帝国ホテル 東京の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00000315/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.671375,
@@ -10054,10 +10467,17 @@
      "label": "公式の条件を確認",
      "url": "https://www.sumisunoie.com/%E3%82%B9%E3%83%9F%E3%82%B9%E3%81%AE%E3%81%84%E3%81%88%E4%BC%8A%E8%B1%86%E5%A4%A7%E5%B3%B6/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでスミスのいえ伊豆大島の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00920217/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "vaccine_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 34.683419,
@@ -10093,10 +10513,17 @@
      "label": "公式の条件を確認",
      "url": "https://www.isumi-chiba-suitevilla.com/privatevilla/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで五氣里 -itsukiri-の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00003154/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.253887,
@@ -10131,10 +10558,17 @@
      "label": "公式の条件を確認",
      "url": "https://dog-surfside.com/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでドッグコテージsurfside九十九里の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00919841/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.534257,
@@ -10170,6 +10604,11 @@
      "label": "公式の条件を確認",
      "url": "https://marunomori-glamping.com/faq/ワンちゃんについて/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでまるのもり Glamping with Dogの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00919187/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
@@ -10177,7 +10616,8 @@
     "weight_limit_kg_mentions": [
      10
     ],
-    "small_dog_only_mention": true
+    "small_dog_only_mention": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -10206,7 +10646,7 @@
     "ケージ・持参判断": "用意なし 使い慣れたベッド・マットを持参",
     "夜はどこで寝る？": "1階(持参のベッド) 夜は持参のマット(ベッド)で寝る。",
     "食事同伴": "一棟貸しのため室内で一緒",
-    "ドッグラン": "なし(天然芝の庭)",
+    "ドッグラン": "あり(天然芝の広場。愛犬が走り回れる)",
     "予約前の重要確認": "持参: 食事・食器・タオル・寝具・おもちゃ。特殊清掃が必要な場合は13,000円。"
    },
    "links": [
@@ -10214,10 +10654,17 @@
      "label": "公式の条件を確認",
      "url": "https://villa-pour-moi.com/pet/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでヴィラ プールモアの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00921221/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "vaccine_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.602943,
@@ -10252,10 +10699,17 @@
      "label": "公式の条件を確認",
      "url": "https://d-99.net/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでドッグコテージD-99の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00914720/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.535049,
@@ -10282,7 +10736,7 @@
     "ケージ・持参判断": "予約前確認",
     "夜はどこで寝る？": "コテージ内",
     "食事同伴": "一棟貸しのため室内・庭のBBQで一緒",
-    "ドッグラン": "なし(庭あり)",
+    "ドッグラン": "あり(敷地内に約550㎡のドッグラン。ほかにBBQエリア約50㎡)",
     "予約前の重要確認": "ワクチン証明・添い寝・ケージは公式ページで確認できず予約前確認。"
    },
    "links": [
@@ -10290,11 +10744,17 @@
      "label": "公式の条件を確認",
      "url": "https://www.harvey-dog-cottage.com/施設情報",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでHarvey Dog Cottageの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00914707/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "large_dog_ok_mention": true
+    "large_dog_ok_mention": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -10330,10 +10790,17 @@
      "label": "公式の条件を確認",
      "url": "https://wanfort.com/faq.html",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでWAN FORTの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00915066/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.013264,
@@ -10369,10 +10836,17 @@
      "label": "公式の条件を確認",
      "url": "https://www.seaglass-shirahama.com/price/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでシーグラス白浜の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00050719/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 34.91354,
@@ -10408,10 +10882,17 @@
      "label": "公式の条件を確認",
      "url": "https://www.go-yutei.jp/dog/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでDogサバトリーのある宿 ご・遊庭の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00002180/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "vaccine_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.126919,
@@ -10446,6 +10927,11 @@
     {
      "label": "公式の条件を確認",
      "url": "http://www.camel-golf.com/pet/dogs.html",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでキャメルホテルリゾートの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00001932/",
      "affiliate": false
     }
    ],
@@ -10485,10 +10971,17 @@
      "label": "公式の条件を確認",
      "url": "https://otw-tateyama.com/dog/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでOn the wave 館山の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00052150/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 34.968318,
@@ -10524,10 +11017,17 @@
      "label": "公式の条件を確認",
      "url": "https://sendouq.jp/terms/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでsendouQ third dogの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00051461/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "vaccine_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.37262,
@@ -10557,10 +11057,17 @@
      "label": "公式の条件を確認",
      "url": "https://www.cotomaru.com/wanship/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでコトマル。わんshipの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00050629/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.304169,
@@ -10595,10 +11102,17 @@
      "label": "公式の条件を確認",
      "url": "https://shirahama-ocean-resort.com/pet/faq.html",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで白浜オーシャンリゾートの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00030952/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.107699,
@@ -10634,10 +11148,17 @@
      "label": "公式の条件を確認",
      "url": "https://resort-solana.com/pets-welcome/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでSolana千葉白浜の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00917410/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "vaccine_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.043152,
@@ -10672,10 +11193,17 @@
      "label": "公式の条件を確認",
      "url": "https://all-season-resort.jp/faq/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでALL SEASON RESORT NO.5 蔵の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00913934/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.37262,
@@ -10705,10 +11233,17 @@
      "label": "公式の条件を確認",
      "url": "https://hotel-r9.jp/hotels/coff/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでHOTEL R9 九十九里の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00050466/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.535049,
@@ -10743,10 +11278,17 @@
      "label": "公式の条件を確認",
      "url": "https://www.bayside-kanaya.jp/room",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでBAYSIDE KANAYAの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00916380/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.167656,
@@ -10782,11 +11324,17 @@
      "label": "公式の条件を確認",
      "url": "https://www.cotomaru.com/distinations/wanpaina/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでコトマル。わんpainaの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00913037/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "large_dog_ok_mention": true
+    "large_dog_ok_mention": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -10823,10 +11371,17 @@
      "label": "公式の条件を確認",
      "url": "https://www.tkp-resort.net/lectore/hanyu/pet/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでレクトーレ 羽生TERRACEの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00920827/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.142914,
@@ -10862,10 +11417,17 @@
      "label": "公式の条件を確認",
      "url": "https://www.riviera.co.jp/area/zushi/withdog/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでMALIBU HOTELの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00002776/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "vaccine_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.298893,
@@ -10901,10 +11463,17 @@
      "label": "公式の条件を確認",
      "url": "https://resort-solana.com/facility/kamogawa/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでSolana鴨川の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00915204/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "vaccine_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.128212,
@@ -10940,10 +11509,17 @@
      "label": "公式の条件を確認",
      "url": "https://www.takatakiko-glamping.com/stay/pet.html",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで高滝湖グランピングリゾートの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00912392/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.357333,
@@ -10979,6 +11555,11 @@
      "label": "公式の条件を確認",
      "url": "https://www.blueberry-hill.co.jp/comfort/easthill_pet",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでホテルブルーベリーヒル勝浦 イーストヒルペットホテルの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00001503/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
@@ -11009,10 +11590,10 @@
    "area": "千葉県大多喜町",
    "co_sleep": "添い寝 予約前確認",
    "facts": {
-    "対象犬・頭数": "愛犬と一緒に泊まれるスイートヴィラ(ラコタンスイート/プレミアスイート、最大定員大人2名+添い寝の子ども2名)。客室内では愛犬の利用制限あり(公式で確認)。犬の大きさ・頭数・料金は予約前確認。",
+    "対象犬・頭数": "愛犬と一緒に泊まれるスイートヴィラ(ラコタンスイート/プレミアスイート、最大定員大人2名+添い寝の子ども2名)。客室内では愛犬の利用制限を設けておらず、自宅と同じように過ごせる(公式)。犬の大きさ・頭数・料金は予約前確認。",
     "犬の宿泊料金": "予約前確認",
     "ケージ・持参判断": "用意あり(木製・リクエスト制)",
-    "夜はどこで寝る？": "客室(犬用クッションあり) 客室内の利用制限を公式で確認。",
+    "夜はどこで寝る？": "客室(犬用クッションあり) 客室内での利用制限なし(公式)。人の寝具の利用可否は予約前確認。",
     "食事同伴": "客室内で一緒",
     "ドッグラン": "なし(1,000㎡の専用庭)",
     "予約前の重要確認": "犬の料金・大きさ・頭数・ワクチン証明は公式ページで確認できず予約前確認。"
@@ -11022,10 +11603,17 @@
      "label": "公式の条件を確認",
      "url": "https://lakotan.com/dog/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでTHE LAKOTANの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00003333/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.285179,
@@ -11060,10 +11648,17 @@
      "label": "公式の条件を確認",
      "url": "https://birdhotel.jp/faq/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでBIRD HOTELの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00031293/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.319225,
@@ -11097,6 +11692,11 @@
     {
      "label": "公式の条件を確認",
      "url": "https://hachinobo.com/dog/",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで小松家八の坊の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00901789/",
      "affiliate": false
     }
    ],
@@ -11139,6 +11739,11 @@
      "label": "公式の条件を確認",
      "url": "http://www.fukuriteiogawaya.com/pet.html",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで福狸亭小川家の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00903296/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
@@ -11178,6 +11783,11 @@
      "label": "公式の条件を確認",
      "url": "https://yururi-nishiizu.com/dogs",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで愛犬と泊まれる温泉宿 ゆるり西伊豆の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00909696/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
@@ -11216,10 +11826,17 @@
      "label": "公式の条件を確認",
      "url": "https://newtomi.jp/room/2-2-058-4/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで味と湯の宿 ニューとみよしの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00905679/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.053715,
@@ -11240,12 +11857,12 @@
    "type": "lodging",
    "name": "ペットと泊まれる宿 西伊豆 シーガル(堂ヶ島)",
    "area": "静岡県西伊豆町・堂ヶ島",
-   "co_sleep": "添い寝 可",
+   "co_sleep": "添い寝 不可",
    "facts": {
     "対象犬・頭数": "愛犬と一緒に泊まれるペット同伴専用の客室2室のみ。犬はベッドの上でゆっくり休んでよく、ケージの方が落ち着く犬にはケージの無料貸出(要予約)。",
     "犬の宿泊料金": "予約前確認",
     "ケージ・持参判断": "貸出あり(無料・要予約)",
-    "夜はどこで寝る？": "客室(ベッド可) 公式に『ベッドの上でゆっくり休んで』の記載。",
+    "夜はどこで寝る？": "客室(ベッド可) 館内のソファー・椅子に座らせること、ベッド・寝具での添い寝、客室浴室でのシャンプー・入浴・ブラッシングは不可(公式)。",
     "食事同伴": "食堂・ラウンジに仲良しフックあり(同伴可)",
     "ドッグラン": "あり(70坪)",
     "予約前の重要確認": "犬の料金・大きさ・頭数・ワクチン証明は公式ページで確認できず予約前確認。"
@@ -11255,10 +11872,17 @@
      "label": "公式の条件を確認",
      "url": "https://hpdsp.jp/seagull/facility/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでペットと泊まれる宿 西伊豆 シーガルの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00030834/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 34.766634,
@@ -11294,10 +11918,17 @@
      "label": "公式の条件を確認",
      "url": "https://amis.zone/pet_room.php",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでAmis Droles アミ・ドローラの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00916354/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "vaccine_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 34.740952,
@@ -11333,13 +11964,19 @@
      "label": "公式の条件を確認",
      "url": "https://www.shikinoyakata-hakone-ashinoko.com/room/index.html",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでホテル四季の館箱根芦ノ湖の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00002931/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
     "weight_limit_kg_mentions": [
      6
-    ]
+    ],
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -11376,11 +12013,17 @@
      "label": "公式の条件を確認",
      "url": "https://kizuna-shuzenji.com/for/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで愛犬と楽しむ温泉旅館 伊豆修善寺 絆+の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00913152/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -11417,13 +12060,19 @@
      "label": "公式の条件を確認",
      "url": "https://www.morinokaze-hakone-sengokuhara.com/room/index.html",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでホテル森の風箱根仙石原の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00002994/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
     "weight_limit_kg_mentions": [
      6
-    ]
+    ],
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -11460,10 +12109,17 @@
      "label": "公式の条件を確認",
      "url": "https://izukogen-gluck.com/dog.php",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで愛犬憩い宿 GLÜCK 伊豆高原の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00920220/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 34.907227,
@@ -11484,20 +12140,25 @@
    "type": "lodging",
    "name": "ペットと泊まれる温泉宿 サニーのあしあと(伊豆高原・1日3組)",
    "area": "静岡県伊東市・伊豆高原",
-   "co_sleep": "添い寝 予約前確認",
+   "co_sleep": "添い寝 不可",
    "facts": {
-    "対象犬・頭数": "小型犬〜大型犬・猫と自由に過ごせる1日3組限定の宿(2023年11月に『あしあとの杜』からリニューアル)。頭数・料金・ワクチンの条件は予約前確認。",
-    "犬の宿泊料金": "予約前確認",
-    "ケージ・持参判断": "予約前確認",
-    "夜はどこで寝る？": "客室",
-    "食事同伴": "予約前確認",
-    "ドッグラン": "なし(公式に記載なし)",
-    "予約前の重要確認": "犬の料金・頭数・ワクチン証明・添い寝・アメニティは公式ページで確認できず予約前確認。"
+    "対象犬・頭数": "小型犬〜大型犬・猫と一緒に泊まれる1日3組限定の宿(2023年11月に『あしあとの杜』からリニューアル)。ペット宿泊料金は小型〜大型犬・猫とも1頭1,500円(税込)。ノミ・ダニ駆除済みで、前日までにシャンプー・ブラッシングした状態で来館。無駄吠え・トイレなど基本的なしつけができていること。予約時に種類と頭数を伝える。客室以外ではリード着用。",
+    "犬の宿泊料金": "1,500円/頭(税込)",
+    "ケージ・持参判断": "あり(ケージ・クレートの貸出)",
+    "夜はどこで寝る？": "客室 衛生上、布団にペットが触れないようにという案内。",
+    "食事同伴": "客室のウッドテラスでBBQ(一緒に過ごせる)",
+    "ドッグラン": "あり(併設の広いドッグラン)",
+    "予約前の重要確認": "頭数の上限は公式ページに明記なし(予約時に申告)。"
    },
    "links": [
     {
      "label": "公式の条件を確認",
      "url": "https://sunnynoashiato.com/pet/",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでペットと泊まれる温泉宿 サニーのあしあとの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00916890/",
      "affiliate": false
     }
    ],
@@ -11538,10 +12199,17 @@
      "label": "公式の条件を確認",
      "url": "https://www.kurofune-hotel.com/pet/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで黒船ホテルの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00911198/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 34.675198,
@@ -11577,10 +12245,17 @@
      "label": "公式の条件を確認",
      "url": "https://www.tokyu-vacations.com/facilities/izukogen/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで東急バケーションズ伊豆高原の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00051148/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 34.965832,
@@ -11615,10 +12290,17 @@
      "label": "公式の条件を確認",
      "url": "https://www.laforet.co.jp/special/dogcottage/gora.html",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでラフォーレ箱根強羅 湯の棲の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00002019/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.250057,
@@ -11654,11 +12336,17 @@
      "label": "公式の条件を確認",
      "url": "https://furan-resort.jp/attention.html",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで歩羅无 湯河原の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00051733/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -11695,10 +12383,17 @@
      "label": "公式の条件を確認",
      "url": "https://ufufu-village.jp/stay/pet.html",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでUFUFU VILLAGEの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00050594/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 34.913593,
@@ -11734,10 +12429,17 @@
      "label": "公式の条件を確認",
      "url": "https://appleseed.red/dogrun-playroom",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで伊東温泉 愛犬と泊まれる宿 アップルシードの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00903469/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 34.932362,
@@ -11773,13 +12475,19 @@
      "label": "公式の条件を確認",
      "url": "http://piccolarouge.com/dog/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでワンちゃんと一緒！海一望の宿 ピッコラルージュの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00906804/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
     "weight_limit_kg_mentions": [
      15
-    ]
+    ],
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -11816,10 +12524,17 @@
      "label": "公式の条件を確認",
      "url": "https://lux-hakone.com/faq/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでルクス箱根湯本の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00051701/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "vaccine_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.227936,
@@ -11847,7 +12562,7 @@
     "ケージ・持参判断": "用意あり",
     "夜はどこで寝る？": "客室",
     "食事同伴": "すべて部屋食で一緒",
-    "ドッグラン": "なし(テラス)",
+    "ドッグラン": "あり(1階テラスに人工芝のドッグラン。伊豆の海を眺めながら利用できる)",
     "予約前の重要確認": "大型犬は不可(中型20kgまで)。添い寝の可否は同意書で確認(予約前確認)。"
    },
    "links": [
@@ -11855,10 +12570,17 @@
      "label": "公式の条件を確認",
      "url": "https://www.hoozue.jp/rooms.html",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで愛犬と泊まれる海と夕陽の楽園 頬杖の刻の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00001843/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 34.918541,
@@ -11894,10 +12616,17 @@
      "label": "公式の条件を確認",
      "url": "https://odawara.hiltonjapan.co.jp/plans/rooms/plan-cat/pet",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでヒルトン小田原リゾート＆スパの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00000770/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.20586,
@@ -11917,14 +12646,14 @@
    "id": "c5-tenkuu-terrace-numazu-with-pets",
    "type": "lodging",
    "name": "西伊豆グランピング 天空テラス(ペット同伴和洋室)",
-   "area": "静岡県沼津市・西浦",
+   "area": "静岡県沼津市・戸田(西伊豆)",
    "co_sleep": "添い寝 予約前確認",
    "facts": {
     "対象犬・頭数": "ホテル棟の『ペット同伴和洋室ルーム』(2室・定員2名)でペットと宿泊(ドームテントにもペット同伴可のタイプ)。ケージは中型犬1頭まで。デッキや部屋の中では自由に過ごせるが、場内は必ずリード(持参)。管理棟(風呂・シャワー・トイレ)は不可。汚物はデッキシンク下の汚物BOXへ。ペット同伴宿泊規約書に同意。",
     "犬の宿泊料金": "予約前確認",
     "ケージ・持参判断": "用意あり(中型犬1頭まで)",
     "夜はどこで寝る？": "客室(和洋室)",
-    "食事同伴": "予約前確認",
+    "食事同伴": "可(ペット同伴和洋室は夕朝食とも部屋食)",
     "ドッグラン": "なし(公式に記載なし)",
     "予約前の重要確認": "犬の料金・頭数・ワクチン証明・添い寝は規約書で確認(予約前確認)。"
    },
@@ -11933,10 +12662,17 @@
      "label": "公式の条件を確認",
      "url": "https://www.tenkuu-terrace.jp/hotel/stay/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで西伊豆グランピング 天空テラスの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00031064/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 34.962369,
@@ -11971,6 +12707,11 @@
     {
      "label": "公式の条件を確認",
      "url": "http://www.fg-hotel.jp/08reseve/",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでペットと泊まれる ファームガーデンホテルの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00921228/",
      "affiliate": false
     }
    ],
@@ -12009,6 +12750,11 @@
     {
      "label": "公式の条件を確認",
      "url": "https://ilazzurri.by-onko-chishin.com/guest-rooms/dog-friendly-deluxe/",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでil azzurriの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00000960/",
      "affiliate": false
     }
    ],
@@ -12052,10 +12798,17 @@
      "label": "公式の条件を確認",
      "url": "https://kanadenomori-resorts.jp/pet/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで奏の森リゾート フォレストグランピングの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00916427/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 34.910137,
@@ -12091,10 +12844,17 @@
      "label": "公式の条件を確認",
      "url": "https://akazawa-lenessa.com/question/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで離れのプレミアムコテージ ルネッサ赤沢の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00910280/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 34.863438,
@@ -12130,13 +12890,19 @@
      "label": "公式の条件を確認",
      "url": "https://www.laboland.jp/with-pet/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでラボランドくろひめの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00907157/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
     "weight_limit_kg_mentions": [
      15
-    ]
+    ],
+    "vaccine_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -12173,11 +12939,17 @@
      "label": "公式の条件を確認",
      "url": "http://www.pam1976.com/pam-3pet.html",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでペンション浅間マンサードの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00902297/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -12214,11 +12986,17 @@
      "label": "公式の条件を確認",
      "url": "http://sirakaba.mfbessou.com/cottage/sasayuri.html",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで軽井沢貸別荘FURUYA しらかばテラスの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00050148/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -12255,11 +13033,17 @@
      "label": "公式の条件を確認",
      "url": "https://villa-saison-fuji.com/pet-post/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでVILLA SAISON FUJIの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00051661/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "large_dog_ok_mention": true
+    "large_dog_ok_mention": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -12296,10 +13080,17 @@
      "label": "公式の条件を確認",
      "url": "https://resort-hotel-tateshina.jp/pages/59/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでリゾートホテル蓼科の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00030204/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.052063,
@@ -12334,6 +13125,11 @@
     {
      "label": "公式の条件を確認",
      "url": "https://www.arthotel.jp/DOGLEG/dog.html",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでアート ホテル ドッグレッグ 軽井沢の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00030395/",
      "affiliate": false
     }
    ],
@@ -12374,10 +13170,17 @@
      "label": "公式の条件を確認",
      "url": "https://achi-yamaboshi.com/pet/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで天然温泉 阿智 星降りの宿 やま星の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00917460/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.446344,
@@ -12412,6 +13215,11 @@
     {
      "label": "公式の条件を確認",
      "url": "https://ichi-fuji.jp/pet/",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでICHI 縁の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00052370/",
      "affiliate": false
     }
    ],
@@ -12451,10 +13259,17 @@
      "label": "公式の条件を確認",
      "url": "https://resort-solana.com/facility/solanafuji/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでSolana富士山中湖の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00915206/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "vaccine_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.420097,
@@ -12490,13 +13305,19 @@
      "label": "公式の条件を確認",
      "url": "https://loof-inn.com/hotels/okanoie/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで古民家宿るうふ 丘之家の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00051611/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
     "weight_limit_kg_mentions": [
      20
-    ]
+    ],
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -12533,13 +13354,19 @@
      "label": "公式の条件を確認",
      "url": "https://loof-inn.com/hotels/shonoie/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで古民家宿るうふ 書之家の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00051612/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
     "weight_limit_kg_mentions": [
      20
-    ]
+    ],
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -12570,13 +13397,19 @@
      "label": "公式の条件を確認",
      "url": "https://mercure-naganomatsushiro-resortandspa.jp/plan/dogfriendlytwin/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでメルキュール長野松代リゾート＆スパの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00003163/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
     "weight_limit_kg_mentions": [
      5
-    ]
+    ],
+    "vaccine_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -12613,10 +13446,17 @@
      "label": "公式の条件を確認",
      "url": "https://www.tateshina-parkhotel.com/plan/pet.php",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでいろりの宿 蓼科パークホテルの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00905460/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.037884,
@@ -12651,6 +13491,11 @@
     {
      "label": "公式の条件を確認",
      "url": "https://www.bousenkaku.co.jp/pet/",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで咲花温泉 望川閣の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00030007/",
      "affiliate": false
     }
    ],
@@ -12691,10 +13536,17 @@
      "label": "公式の条件を確認",
      "url": "https://oosawakan.com/news/22/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで大沢山温泉 大沢舘の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00031238/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 37.021019,
@@ -12730,10 +13582,17 @@
      "label": "公式の条件を確認",
      "url": "https://www.fuyo-no-yado.jp/pet/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで富士山リゾートログハウス ふようの宿の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00050854/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.497223,
@@ -12768,10 +13627,17 @@
      "label": "公式の条件を確認",
      "url": "https://www.yutorelo-karuizawa.com/faq",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでゆとりろ軽井沢ホテルの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00030917/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.338863,
@@ -12807,10 +13673,17 @@
      "label": "公式の条件を確認",
      "url": "https://yutorelo-echigoyuzawa.com/dogs",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでゆとりろ越後湯沢の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00031286/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.921602,
@@ -12831,12 +13704,12 @@
    "type": "lodging",
    "name": "フォレストガーデン軽井沢 ラ トピアリー(小型犬10頭までOKの貸別荘)",
    "area": "長野県軽井沢町",
-   "co_sleep": "添い寝 予約前確認",
+   "co_sleep": "添い寝 不可",
    "facts": {
-    "対象犬・頭数": "軽井沢では唯一、ペット10頭までOK(小型犬は10頭まで。中・大型犬は小型犬2頭分として計算)。ペット料金は大型犬3,000円/中型犬2,500円/小型犬2,000円(現地払い)。",
+    "対象犬・頭数": "軽井沢では唯一、ペット10頭までOK(小型犬は10頭まで。中・大型犬は小型犬2頭分として計算)。ペット料金は大型犬3,000円/中型犬2,500円/小型犬2,000円(現地払い)。利用規約により、ペットの2階寝室への入室は禁止(寝具に毛や糞尿が付いた場合は買い替え・清掃費用)。宿泊していない人の犬をドッグラン・別荘に入れるのは禁止。",
     "犬の宿泊料金": "大型犬3,000円、中型犬2,500円、小型犬2,000円",
     "ケージ・持参判断": "予約前確認",
-    "夜はどこで寝る？": "室内",
+    "夜はどこで寝る？": "1階 2階寝室への入室禁止(利用規約)。",
     "食事同伴": "一棟貸しのため室内・デッキのBBQで一緒",
     "ドッグラン": "あり(芝生のドッグラン付きの庭)",
     "予約前の重要確認": "ワクチン証明・添い寝・アメニティは公式ページで確認できず予約前確認。"
@@ -12846,11 +13719,17 @@
      "label": "公式の条件を確認",
      "url": "https://www.karuizawakashibessou.com/latopiary",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでフォレストガーデン軽井沢 ラ トピアリーの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00050159/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -12886,10 +13765,17 @@
      "label": "公式の条件を確認",
      "url": "http://www.taiyoubito.net/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで愛犬と癒しのアジアンリゾート 海宿 太陽人の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00918258/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 34.62138,
@@ -12925,10 +13811,17 @@
      "label": "公式の条件を確認",
      "url": "https://hibikinoyado.com/faq/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで響きの宿の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00904970/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 37.316304,
@@ -12964,10 +13857,17 @@
      "label": "公式の条件を確認",
      "url": "http://www.aoneonsen.co.jp/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで青根温泉 一棟温泉宿 星垂の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00050548/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 38.146217,
@@ -13003,10 +13903,17 @@
      "label": "公式の条件を確認",
      "url": "https://www.iwabitsu.co.jp/sp/room/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでフォレストリゾートコニファーいわびつの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00900137/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.564731,
@@ -13042,10 +13949,17 @@
      "label": "公式の条件を確認",
      "url": "https://www.lucyresort.com/glamping/room/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでLUCY RESORT 完全プライベートグランピングの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00915145/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.079025,
@@ -13081,10 +13995,17 @@
      "label": "公式の条件を確認",
      "url": "https://tsukuba.bub-resort.com/pets/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでBUB RESORT Tsukubaの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00921054/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.080407,
@@ -13120,11 +14041,17 @@
      "label": "公式の条件を確認",
      "url": "https://www.cosumo.jp/annai/annai.html",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでペンション コスモスの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00921909/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -13161,10 +14088,17 @@
      "label": "公式の条件を確認",
      "url": "https://earthboat.jp/saitama_kawajima",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでEarthboat Saitama Kawajimaの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00052536/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "vaccine_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.005561,
@@ -13200,10 +14134,17 @@
      "label": "公式の条件を確認",
      "url": "https://opark.jp/faq/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでBIO-RESORT HOTEL＆SPA O Park OGOSEの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00916351/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.964443,
@@ -13238,10 +14179,17 @@
      "label": "公式の条件を確認",
      "url": "https://www.tansen.co.jp/pet/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで赤湯温泉 丹泉ホテルの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00902730/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 38.055111,
@@ -13276,10 +14224,17 @@
      "label": "公式の条件を確認",
      "url": "https://yamagata-glam.com/pet/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでyamagata glamの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00921076/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 38.485879,
@@ -13315,10 +14270,17 @@
      "label": "公式の条件を確認",
      "url": "https://www.tabinoteitaku.jp/yamagata/sakata/chokaizan-view-villa/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでたびの邸宅 Villa 鳥海山 viewの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00922139/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "vaccine_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 38.942214,
@@ -13354,10 +14316,17 @@
      "label": "公式の条件を確認",
      "url": "http://s-v-b-w.com/facility.php",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでロッヂB＆Wの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00902220/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 37.065556,
@@ -13392,10 +14361,17 @@
      "label": "公式の条件を確認",
      "url": "https://www.humming-tour.jp/ハミングの宿/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでハミングの宿の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00902851/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 37.947952,
@@ -13430,10 +14406,17 @@
      "label": "公式の条件を確認",
      "url": "https://www.chyo.net/pet/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでホテル 丁の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00904617/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.78947,
@@ -13469,10 +14452,17 @@
      "label": "公式の条件を確認",
      "url": "http://www.kokuha.com/sisetu.html",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで池の平温泉 ロッジ コクハの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00904887/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.865856,
@@ -13508,10 +14498,17 @@
      "label": "公式の条件を確認",
      "url": "https://www.swanlake.co.jp/aganoresort/pet/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで五十嵐邸ガーデン 新潟阿賀野リゾートの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00910764/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 37.829403,
@@ -13547,10 +14544,17 @@
      "label": "公式の条件を確認",
      "url": "https://mizuakari.jp/facilities/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでオーベルジュみずあかりの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00917387/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 37.102852,
@@ -13586,11 +14590,17 @@
      "label": "公式の条件を確認",
      "url": "https://thecanvashotel.jp/blog/detail/index.php?id=744",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでThe Canvas Hayama Parkの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00050004/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "large_dog_ok_mention": true
+    "large_dog_ok_mention": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -13627,10 +14637,17 @@
      "label": "公式の条件を確認",
      "url": "https://beach.funnyfunny.jp/andsun-terracehouse/information/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで＆SUN Terrace houseの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00050242/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "vaccine_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.275677,
@@ -13666,10 +14683,17 @@
      "label": "公式の条件を確認",
      "url": "https://beach.funnyfunny.jp/andsun-penthouse/information/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで＆SUN Penthouseの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00050243/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "vaccine_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.272079,
@@ -13704,10 +14728,17 @@
      "label": "公式の条件を確認",
      "url": "https://beach.funnyfunny.jp/funnyhouse-morito/information/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでMORITO Funny houseの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00050244/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "vaccine_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 35.271217,
@@ -13743,11 +14774,17 @@
      "label": "公式の条件を確認",
      "url": "https://beach.funnyfunny.jp/andmoon/information/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで＆MOON Noaの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00051104/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "vaccine_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -13783,6 +14820,11 @@
     {
      "label": "公式の条件を確認",
      "url": "http://www.okina-inn.com/pet/",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでおきな旅館の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00918694/",
      "affiliate": false
     }
    ],
@@ -13825,6 +14867,11 @@
      "label": "公式の条件を確認",
      "url": "https://oppawan-terrace.jp/dog-run",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでわんちゃんと海を一望する一棟貸し 追波湾テラス～考える葦～の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00921981/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
@@ -13848,12 +14895,12 @@
    "type": "lodging",
    "name": "ペンション歩野慕野",
    "area": "福島県耶麻郡",
-   "co_sleep": "添い寝 予約前確認",
+   "co_sleep": "添い寝 可",
    "facts": {
     "対象犬・頭数": "予約前確認",
     "犬の宿泊料金": "予約前確認",
     "ケージ・持参判断": "あり(ケージを備え付け)。首輪とリードのご持参のみでご宿泊でき、各種ペットアメニティ（ケージ、ペットシーツなど）をご用意しています。",
-    "夜はどこで寝る？": "客室(同じ部屋で眠る) 添い寝OKです。旅行中もいつもの距離感で過ごせます。",
+    "夜はどこで寝る？": "客室(同じ部屋で眠る) 公式に『添い寝OK』『寝るときも同じ部屋』の記載。",
     "食事同伴": "可(愛犬と一緒にお食事を楽しめます。ワンちゃん専用メニューもあります。)",
     "ドッグラン": "あり(約500㎡のドッグラン。小型犬から大型犬まで利用可能。夜はライトアップされたナイトランも可能。宿泊者無料。水遊び場あり。テラス席あり。日帰り利用OK)",
     "予約前の重要確認": "犬の宿泊料金、同伴可能な頭数、ワクチン証明書の有無は公式ページで確認できず予約前確認。"
@@ -13863,10 +14910,17 @@
      "label": "公式の条件を確認",
      "url": "https://honobono-urabandai-pension.com/pet/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでペンション歩野慕野の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00923052/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 37.655678,
@@ -13896,10 +14950,17 @@
      "label": "公式の条件を確認",
      "url": "https://www.ikoi-namie.com/lodging",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで福島いこいの村なみえの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00923585/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 37.494492,
@@ -13928,6 +14989,11 @@
     {
      "label": "公式の条件を確認",
      "url": "https://ooishiya.com/news/sample-news2/",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで大石屋旅館の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00908161/",
      "affiliate": false
     }
    ],
@@ -13968,6 +15034,11 @@
      "label": "公式の条件を確認",
      "url": "http://www.manriki.jp/reserve.php",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで高瀬温泉 花みちる宿ニュー萬力の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00918025/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
@@ -14006,10 +15077,17 @@
      "label": "公式の条件を確認",
      "url": "https://blissful-g.jp/qa/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでBlissful Gardenの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00913846/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.46199,
@@ -14030,12 +15108,12 @@
    "type": "lodging",
    "name": "THE FIVE RIVERS FINE GLAMPING群馬白沢",
    "area": "群馬県沼田市",
-   "co_sleep": "添い寝 可",
+   "co_sleep": "添い寝 予約前確認",
    "facts": {
     "対象犬・頭数": "ドッグラン付グランピングでの宿泊となります。完全ノーリードでプライベート空間を提供しており、出入り口の鍵を閉めれば柵やネットで囲われた広大な天然芝エリアでのびのび過ごせます。万が一の可能性がある場合はマナーパンツ着用のご協力をお願いしております。",
     "犬の宿泊料金": "予約前確認",
     "ケージ・持参判断": "用意なし(ゲージレス仕様)",
-    "夜はどこで寝る？": "客室(ドームテント内) オールゲージレスを採用しており、愛犬と共にゆっくりとした時間をお過ごしいただけます。万が一の可能性がある場合はマナーパンツ着用のご協力をお願いしております。",
+    "夜はどこで寝る？": "客室(ドームテント内) 客室はオールゲージレス仕様(公式)。人の寝具に乗せてよいかは公式に明記なし。",
     "食事同伴": "条件付き可",
     "ドッグラン": "あり(関東最大級のドッグラン、1日2組限定、完全ノーリード、プライベート空間)",
     "予約前の重要確認": "犬同伴時の宿泊料金(基本料金)、同伴可能な犬の頭数制限、ワクチン証明書の提出義務の有無、大型犬・中型犬・小型犬のサイズ区分基準は公式ページで確認できず予約前確認。"
@@ -14044,6 +15122,11 @@
     {
      "label": "公式の条件を確認",
      "url": "https://www.thefiveriversfineglamping.com/dogrun",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでTHE FIVE RIVERS FINE GLAMPING群馬白沢の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00913910/",
      "affiliate": false
     }
    ],
@@ -14084,10 +15167,17 @@
      "label": "公式の条件を確認",
      "url": "http://www.millilab.jp/dogcafe.php",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで犬と泊まれる貸別荘 ミリーズ・ラブの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00916337/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.495186,
@@ -14117,13 +15207,19 @@
      "label": "公式の条件を確認",
      "url": "https://dot-glamping.com/kitakaruizawa/dog_friendly",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでDot Glamping 北軽井沢の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00918505/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
     "weight_limit_kg_mentions": [
      40
-    ]
+    ],
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -14141,8 +15237,8 @@
    "area": "群馬県吾妻郡嬬恋村",
    "co_sleep": "添い寝 予約前確認",
    "facts": {
-    "対象犬・頭数": "大型犬から小型犬まで、頭数制限なく同伴可能です。ただし「大人しい」犬であることが条件とされています。ワクチンやしつけに関する具体的な記載はありません。",
-    "犬の宿泊料金": "予約前確認",
+    "対象犬・頭数": "小型犬から大型犬まで同伴可(「大人しい」犬であることが条件)。同伴できる頭数と追加料金は公式ページに規定があるので予約前に確認(公式の記載: 上限あり・一定頭数まで無料・超過分は追加料金)。",
+    "犬の宿泊料金": "予約前確認(一定頭数まで無料、超過分は1頭ごとに追加料金の記載あり)",
     "ケージ・持参判断": "予約前確認",
     "夜はどこで寝る？": "予約前確認",
     "食事同伴": "条件付き",
@@ -14154,10 +15250,17 @@
      "label": "公式の条件を確認",
      "url": "https://www.morinowancororin.com",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでVilla森のわんころりんの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00918871/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.449881,
@@ -14178,12 +15281,12 @@
    "type": "lodging",
    "name": "鬼石観光ホテル",
    "area": "群馬県藤岡市",
-   "co_sleep": "添い寝 可",
+   "co_sleep": "添い寝 予約前確認",
    "facts": {
     "対象犬・頭数": "ペット専用客室（和室10畳・バストイレ付）をご用意しています。トイレのしつけ、予防接種、無駄吠えしないなどの最低限のマナーをご確認ください。",
     "犬の宿泊料金": "宿泊代(大人料金)の20％を別途頂戴いたします",
     "ケージ・持参判断": "予約前確認",
-    "夜はどこで寝る？": "客室（ペット専用客室内） かわいいペットと同じお部屋でお泊まりいただけるペット同室プランがあります。",
+    "夜はどこで寝る？": "客室（ペット専用客室内） ペット同室プラン(専用客室)。人の寝具に乗せてよいかは公式に明記なし。",
     "食事同伴": "予約前確認",
     "ドッグラン": "なし(公式に記載なし)",
     "予約前の重要確認": "犬の頭数制限、食事同伴可否、ワクチン証明書の提出義務の有無は公式ページで確認できず予約前確認。"
@@ -14193,10 +15296,17 @@
      "label": "公式の条件を確認",
      "url": "https://www.4143.jp/plan.html",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで鬼石観光ホテルの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00920856/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.174709,
@@ -14232,6 +15342,11 @@
      "label": "公式の条件を確認",
      "url": "https://kusatsuonsen.net/cottage/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでＹＡＭＡＩＲＯコテージの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00920921/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
@@ -14265,11 +15380,17 @@
      "label": "公式の条件を確認",
      "url": "https://www.kasugaro.com/愛犬と一緒に",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで旅館 春日楼の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00922839/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "small_dog_only_mention": true
+    "small_dog_only_mention": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -14305,10 +15426,17 @@
      "label": "公式の条件を確認",
      "url": "https://karenminakami.jp/dog-run/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでKAREN みなかみ たくみの里 with Dogの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00922844/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.701118,
@@ -14337,6 +15465,11 @@
     {
      "label": "公式の条件を確認",
      "url": "https://www.asama-resort.com/faq?category=308",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで貸別荘 浅間リゾート・インの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00924270/",
      "affiliate": false
     }
    ],
@@ -14371,10 +15504,17 @@
      "label": "公式の条件を確認",
      "url": "http://www.kitakaruizawa-hotel.com/activities/dogrun",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでホリデイビラ ホテル＆リゾート 軽井沢の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00905508/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "vaccine_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.516666,
@@ -14409,6 +15549,11 @@
      "label": "公式の条件を確認",
      "url": "https://hanakappo.com/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでペンション花闊歩の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00919194/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
@@ -14441,6 +15586,11 @@
     {
      "label": "公式の条件を確認",
      "url": "https://kizuna-kinugawa.com/",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで鬼怒川 絆の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00002930/",
      "affiliate": false
     }
    ],
@@ -14483,10 +15633,17 @@
      "label": "公式の条件を確認",
      "url": "https://dogcottage-hearthills.com/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでドッグコテージハートヒルズの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00913046/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "vaccine_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 37.001896,
@@ -14516,10 +15673,17 @@
      "label": "公式の条件を確認",
      "url": "https://www.dog-lv.jp/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで愛犬と暮らす宿 VILLA Leafの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00913232/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 37.059341,
@@ -14549,10 +15713,17 @@
      "label": "公式の条件を確認",
      "url": "https://y-resort.com/faq/faq-55/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでWHITE LAMPの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00913372/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 37.01976,
@@ -14582,13 +15753,19 @@
      "label": "公式の条件を確認",
      "url": "https://brilliant-village.com/news/20250516-2/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでグランピングリゾート ブリリアントヴィレッジ日光の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00914671/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
     "weight_limit_kg_mentions": [
      10
-    ]
+    ],
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -14625,11 +15802,17 @@
      "label": "公式の条件を確認",
      "url": "https://nasu-altopiano.com/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでDOG SPA RESORT アルトピアーノの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00914930/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "small_dog_only_mention": true
+    "small_dog_only_mention": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
@@ -14660,10 +15843,17 @@
      "label": "公式の条件を確認",
      "url": "https://resort-solana.com/pets-welcome",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでSolana日光の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00915179/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 36.720013,
@@ -14698,10 +15888,17 @@
      "label": "公式の条件を確認",
      "url": "http://www.kurumi-no-ki.com/dog.html",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで森のコテージ くるみの木の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00916650/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "vaccine_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 37.078663,
@@ -14736,6 +15933,11 @@
     {
      "label": "公式の条件を確認",
      "url": "https://www.nagomi-camp.jp/dog-glamping",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで和モダングランピング｜NAGOMI CAMPの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00917555/",
      "affiliate": false
     }
    ],
@@ -14775,10 +15977,17 @@
      "label": "公式の条件を確認",
      "url": "https://luakaha.net/pet.html",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでワンコと泊まれる宿 ルアカハの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00917633/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 37.080495,
@@ -14801,7 +16010,7 @@
    "area": "栃木県那須町",
    "co_sleep": "添い寝 条件付き可",
    "facts": {
-    "対象犬・頭数": "1年以内に狂犬病およびワクチンの予防接種を受けた室内犬に限ります。基本的なしつけ（トイレ・無駄吠えなど）が入っている必要があります。ヒート期間前後2週間の宿泊は不可です。",
+    "対象犬・頭数": "1年以内に狂犬病およびワクチンの予防接種を受けた室内犬に限ります。基本的なしつけ（トイレ・無駄吠えなど）が入っている必要があります。ヒート期間前後2週間の宿泊は不可です。接種証明書を必ず持参(公式規約01)。",
     "犬の宿泊料金": "予約前確認",
     "ケージ・持参判断": "予約前確認",
     "夜はどこで寝る？": "客室（ベッド・ソファー利用時は防水カバー必須） ベッドやソファーに乗せる場合は、必ず防水カバーを使用してください。",
@@ -14814,10 +16023,17 @@
      "label": "公式の条件を確認",
      "url": "https://shanonchi.com/pets.php",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでdog's pension しゃのんちの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00918226/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 37.050186,
@@ -14853,6 +16069,11 @@
      "label": "公式の条件を確認",
      "url": "https://nenn-nasu.com/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで那須温泉グランピング Nennの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00919170/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
@@ -14878,7 +16099,7 @@
     "ケージ・持参判断": "予約前確認",
     "夜はどこで寝る？": "予約前確認",
     "食事同伴": "予約前確認",
-    "ドッグラン": "あり。隣接するグランピング「那須ハミルの森」でドッグランを無料で利用できます（車で約10分）。",
+    "ドッグラン": "なし(宿にはドッグランなし)。系列のグランピング「那須ハミルの森」のドッグランを無料で利用できる(宿から車で約10分)。",
     "予約前の重要確認": "添い寝の可否、犬の就寝場所の詳細、ケージの用意・持参の有無、犬同伴可能な客室の限定有無は公式ページで確認できず予約前確認。"
    },
    "links": [
@@ -14886,10 +16107,17 @@
      "label": "公式の条件を確認",
      "url": "https://www.hamirus-forest.com/",
      "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでHAMIRU’S FOREST WITH DOGの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00920155/",
+     "affiliate": false
     }
    ],
    "checked_at": "2026-09-27",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
    "geocode": {
     "lat": 37.01976,
@@ -14950,7 +16178,9 @@
     }
    ],
    "checked_at": null,
-   "dog_hints": {},
+   "dog_hints": {
+    "vaccine_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html",
    "geocode": {
     "lat": 35.776665,
@@ -15040,7 +16270,9 @@
     }
    ],
    "checked_at": null,
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html",
    "geocode": {
     "lat": 35.71389,
@@ -15404,7 +16636,8 @@
    ],
    "checked_at": "2026-09-22",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#chikusei-cafe-sora",
    "geocode": {
@@ -15455,7 +16688,8 @@
    ],
    "checked_at": "2026-09-22",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#tsukuba-mo-cafe",
    "geocode": {
@@ -15611,7 +16845,8 @@
    ],
    "checked_at": "2026-09-22",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#haramura-cafe-dogfield",
    "geocode": {
@@ -15715,7 +16950,8 @@
    ],
    "checked_at": "2026-09-22",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#zao-sangoro-green",
    "geocode": {
@@ -15766,7 +17002,8 @@
    ],
    "checked_at": "2026-09-22",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#yamagata-fairway-dogrun",
    "geocode": {
@@ -15813,7 +17050,8 @@
    ],
    "checked_at": "2026-09-22",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#sendai-bowmu",
    "geocode": {
@@ -15868,7 +17106,8 @@
     "weight_limit_kg_mentions": [
      10
     ],
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#niigata-shimami-dogrun",
    "geocode": {
@@ -15921,7 +17160,8 @@
     "weight_limit_kg_mentions": [
      10
     ],
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#shibata-shiunji-dogrun",
    "geocode": {
@@ -15972,7 +17212,8 @@
    ],
    "checked_at": "2026-09-22",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#sendai-withdog-asahigaoka",
    "geocode": {
@@ -16020,7 +17261,8 @@
     "weight_limit_kg_mentions": [
      10
     ],
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#nagano-saigawa-second-dogrun",
    "geocode": {
@@ -16073,7 +17315,8 @@
     "weight_limit_kg_mentions": [
      10
     ],
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#joetsu-tanihama-dogrun",
    "geocode": {
@@ -16134,7 +17377,8 @@
     "weight_limit_kg_mentions": [
      10
     ],
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#fukushima-oinusama-park",
    "geocode": {
@@ -16244,7 +17488,8 @@
    ],
    "checked_at": "2026-09-23",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#add60-kashiwanoha",
    "geocode": {
@@ -16452,7 +17697,8 @@
    ],
    "checked_at": "2026-09-23",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#add60-yoyogi",
    "geocode": {
@@ -16509,7 +17755,8 @@
    ],
    "checked_at": "2026-09-23",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#add60-mizumoto",
    "geocode": {
@@ -16561,7 +17808,8 @@
    ],
    "checked_at": "2026-09-23",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#add60-koganei",
    "geocode": {
@@ -16613,7 +17861,8 @@
    ],
    "checked_at": "2026-09-23",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#add60-jindai",
    "geocode": {
@@ -16665,7 +17914,8 @@
    ],
    "checked_at": "2026-09-23",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#add60-kiba",
    "geocode": {
@@ -16717,7 +17967,8 @@
    ],
    "checked_at": "2026-09-23",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#add60-komazawa-olympic",
    "geocode": {
@@ -16774,7 +18025,8 @@
    ],
    "checked_at": "2026-09-23",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#add60-toneri",
    "geocode": {
@@ -16826,7 +18078,8 @@
    ],
    "checked_at": "2026-09-23",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#add60-shinozaki",
    "geocode": {
@@ -16878,7 +18131,8 @@
    ],
    "checked_at": "2026-09-23",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#add60-rokakoshun-en",
    "geocode": {
@@ -17352,7 +18606,8 @@
    ],
    "checked_at": null,
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#dear-wan-terrace-chiba",
    "geocode": {
@@ -17503,7 +18758,8 @@
    ],
    "checked_at": null,
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "vaccine_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#fuefukigawa-fruit-park-dogrun",
    "geocode": {
@@ -17606,7 +18862,8 @@
    ],
    "checked_at": "2026-09-24",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "vaccine_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#n0924-sagamiko-morimori",
    "geocode": {
@@ -17652,7 +18909,8 @@
    "checked_at": "2026-09-24",
    "dog_hints": {
     "small_dog_only_mention": true,
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#n0924-doitsumura-wanland",
    "geocode": {
@@ -17788,7 +19046,8 @@
    "checked_at": "2026-09-24",
    "dog_hints": {
     "small_dog_only_mention": true,
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#n0924-nasu-oukoku",
    "geocode": {
@@ -17828,7 +19087,9 @@
     }
    ],
    "checked_at": "2026-09-24",
-   "dog_hints": {},
+   "dog_hints": {
+    "cert_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#n0924-shinrinkoen",
    "geocode": {
     "lat": 36.091298,
@@ -18098,7 +19359,8 @@
    ],
    "checked_at": "2026-09-24",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#n0924-rindoko",
    "geocode": {
@@ -18277,7 +19539,9 @@
     }
    ],
    "checked_at": "2026-09-24",
-   "dog_hints": {},
+   "dog_hints": {
+    "vaccine_required": true
+   },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#n0924-tambara-lavender",
    "geocode": {
     "lat": 36.778543,
@@ -18597,7 +19861,8 @@
    ],
    "checked_at": "2026-09-24",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#sodegaura-fureai-dobutsu-en",
    "geocode": {
@@ -18842,7 +20107,8 @@
    "checked_at": "2026-09-26",
    "dog_hints": {
     "small_dog_only_mention": true,
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c-meiken-bokujo",
    "geocode": {
@@ -19261,7 +20527,8 @@
    ],
    "checked_at": "2026-09-26",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c2-showakinen",
    "geocode": {
@@ -19305,7 +20572,8 @@
    ],
    "checked_at": "2026-09-26",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "vaccine_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c2-tobu-world-square",
    "geocode": {
@@ -19730,7 +20998,8 @@
    ],
    "checked_at": "2026-09-26",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c2-spa-dogsrun-chichibu",
    "geocode": {
@@ -19783,7 +21052,8 @@
     "weight_limit_kg_mentions": [
      10
     ],
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c2-onioshidashi",
    "geocode": {
@@ -20351,7 +21621,8 @@
    ],
    "checked_at": "2026-09-26",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "vaccine_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c2-tsukuba-wanwanland",
    "geocode": {
@@ -20397,7 +21668,8 @@
    "checked_at": "2026-09-26",
    "dog_hints": {
     "small_dog_only_mention": true,
-    "has_rain_note": true
+    "has_rain_note": true,
+    "vaccine_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c2-jukkoku-cable",
    "geocode": {
@@ -20442,7 +21714,8 @@
    ],
    "checked_at": "2026-09-26",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "vaccine_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c2-soleil-no-oka",
    "geocode": {
@@ -20832,7 +22105,8 @@
    ],
    "checked_at": "2026-09-26",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c-michinoku-park",
    "geocode": {
@@ -21061,7 +22335,8 @@
    ],
    "checked_at": "2026-09-26",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "vaccine_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c3-honmoku-sancho-dogrun",
    "geocode": {
@@ -21154,7 +22429,8 @@
     "weight_limit_kg_mentions": [
      15
     ],
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c3-dog-park-inage",
    "geocode": {
@@ -21298,7 +22574,8 @@
    ],
    "checked_at": "2026-09-26",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "vaccine_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c3-cafe-nature-hiratsuka",
    "geocode": {
@@ -21396,7 +22673,8 @@
    ],
    "checked_at": "2026-09-26",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c3-cafe-remy-hiratsuka",
    "geocode": {
@@ -21913,7 +23191,8 @@
    ],
    "checked_at": "2026-09-26",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c3-fukurou-no-mori",
    "geocode": {
@@ -22606,7 +23885,8 @@
    ],
    "checked_at": "2026-09-26",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c3-dc-castle-haruno",
    "geocode": {
@@ -22966,7 +24246,8 @@
    ],
    "checked_at": "2026-09-26",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c3-shinsugita-dogrun",
    "geocode": {
@@ -23011,7 +24292,8 @@
    ],
    "checked_at": "2026-09-26",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c3-irifune-dogrun",
    "geocode": {
@@ -24420,7 +25702,8 @@
    ],
    "checked_at": "2026-09-26",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "vaccine_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-ikutopia-dogrun",
    "geocode": {
@@ -24517,7 +25800,8 @@
     "weight_limit_kg_mentions": [
      30
     ],
-    "has_rain_note": true
+    "has_rain_note": true,
+    "vaccine_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-hakone-yuransen",
    "geocode": {
@@ -24608,7 +25892,8 @@
    "checked_at": "2026-09-26",
    "dog_hints": {
     "small_dog_only_mention": true,
-    "has_rain_note": true
+    "has_rain_note": true,
+    "vaccine_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-kanegawa-no-mori-dogrun",
    "geocode": {
@@ -24652,7 +25937,8 @@
    ],
    "checked_at": "2026-09-26",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-dogpark-runrunrun",
    "geocode": {
@@ -25285,7 +26571,8 @@
    ],
    "checked_at": "2026-09-26",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-dogdept-garden-karuizawa",
    "geocode": {
@@ -25384,7 +26671,8 @@
    ],
    "checked_at": "2026-09-26",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-dogdept-garden-sano",
    "geocode": {
@@ -25434,7 +26722,8 @@
    ],
    "checked_at": "2026-09-26",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-dogdept-garden-gotemba",
    "geocode": {
@@ -25479,7 +26768,8 @@
    ],
    "checked_at": "2026-09-26",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c4-dogdept-karuizawa-prince",
    "geocode": {
@@ -25668,7 +26958,8 @@
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "vaccine_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-tsukuba-wellness-park-dogrun",
    "geocode": {
@@ -25814,7 +27105,8 @@
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-chateau-princesse",
    "geocode": {
@@ -25864,7 +27156,8 @@
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "vaccine_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-aspire-no-mori-mito",
    "geocode": {
@@ -26346,7 +27639,8 @@
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-and-haus-kasama",
    "geocode": {
@@ -26394,7 +27688,8 @@
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-forest-hills-nasu-dogpark",
    "geocode": {
@@ -26444,7 +27739,8 @@
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-mori-no-dogrun-nasushiobara",
    "geocode": {
@@ -26593,7 +27889,8 @@
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "vaccine_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-pfirst-nikko-dogrun",
    "geocode": {
@@ -26843,7 +28140,8 @@
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-inu-no-ie-relair",
    "geocode": {
@@ -26892,7 +28190,8 @@
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "vaccine_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-dogrun-shimokomoriya",
    "geocode": {
@@ -26947,7 +28246,8 @@
      8
     ],
     "small_dog_only_mention": true,
-    "has_rain_note": true
+    "has_rain_note": true,
+    "vaccine_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-meiken-bokujo-maebashi",
    "geocode": {
@@ -27046,7 +28346,8 @@
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-mercury-dog-club",
    "geocode": {
@@ -27237,7 +28538,8 @@
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "vaccine_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-kusatsu-ski-dogrun-gondola",
    "geocode": {
@@ -27287,7 +28589,8 @@
    "checked_at": "2026-09-27",
    "dog_hints": {
     "small_dog_only_mention": true,
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-karen-minakami-dogrun-dayuse",
    "geocode": {
@@ -27381,7 +28684,8 @@
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-fetch-cafe-kawagoe",
    "geocode": {
@@ -27576,7 +28880,8 @@
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-the-doggys-park-tokorozawa",
    "geocode": {
@@ -27675,7 +28980,8 @@
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-spa-dogsrun-chichibu",
    "geocode": {
@@ -28061,7 +29367,8 @@
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-doggy-park-bell-house",
    "geocode": {
@@ -28165,7 +29472,8 @@
     "weight_limit_kg_mentions": [
      12
     ],
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-andersen-park-dogrun",
    "geocode": {
@@ -28359,7 +29667,8 @@
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "vaccine_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-tokyo-doitsumura-wanchan-land",
    "geocode": {
@@ -28409,7 +29718,8 @@
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-domeki-park-dogrun",
    "geocode": {
@@ -28459,7 +29769,8 @@
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-narita-yume-bokujo-dog-garden",
    "geocode": {
@@ -28559,7 +29870,8 @@
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-inzai-animal-therapy-place",
    "geocode": {
@@ -28853,7 +30165,8 @@
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-rokakoshunen-dogrun",
    "geocode": {
@@ -28952,7 +30265,8 @@
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-johoku-chuo-park-dogrun",
    "geocode": {
@@ -29051,7 +30365,8 @@
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-showa-kinen-park-dogrun",
    "geocode": {
@@ -29177,12 +30492,12 @@
    ],
    "theme": "Jリーグ仕様の人工芝で泥んこにならないドッグラン。地面には東京オリンピックのマラソンで使われた『熱くならない特殊アスファルト』、地下水を使ったプール、星形テント、夜はイルミネーション。夏は朝7時から夜10時まで",
    "facts": {
-    "犬の条件・同伴範囲": "小型・中型・大型犬で料金区分あり。ワクチンなどの条件は公式サイトで確認。飼い主にも入場料がかかる。",
+    "犬の条件・同伴範囲": "初回は利用登録申し込みフォームの記入が必要。小型・中型・大型犬で料金区分あり(小型犬は犬種交流会時のみ入場可、と公式に注記)。秋田犬など利用できない犬種があるので、公式の利用規約で確認。飼い主にも入場料がかかる。",
     "料金の目安/犬料金": "入場料 大人 平日1,500円・土日2,000円、子ども(4歳〜小学生)平日700円・土日1,000円、3歳以下無料。愛犬 小型1,000円、中型・大型 平日1,500円・土日祝2,000円。",
     "持ち物": "ワクチンの証明、リード、タオル(プール利用時)、排泄物の処理用品。",
     "雨の日": "屋外。",
-    "出発前に確認": "営業時間 冬季11:00〜20:00、夏季7:00〜22:00。定休日は公式で確認。ナビは小野路町4392でセット。",
-    "公式で確認したこと": "公式サイトで、設備・料金表・営業時間・所在地を確認。"
+    "出発前に確認": "営業時間 冬季11:00〜20:00、夏季7:00〜22:00。定休日・利用できない犬種は公式で確認。ナビは小野路町4392でセット。",
+    "公式で確認したこと": "公式サイトで、設備・料金表・営業時間・所在地・利用登録の案内を確認。"
    },
    "links": [
     {
@@ -29196,7 +30511,7 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": null,
    "dog_hints": {
     "has_rain_note": true
    },
@@ -29276,7 +30591,7 @@
    "theme": "獣医師太鼓判の『手作り・無添加・国産・低脂肪』の犬用ごはんがあるドッグカフェ。小型犬も大型犬も店内OKで、ドッグランも併設。土曜は夜22時半まで",
    "facts": {
     "犬の条件・同伴範囲": "店内に犬と入れる。必ずリード着用(貸出あり)。初回はワクチン証明(打てない場合は猶予証明書)で登録(多頭カードあり)。4名以上は要予約。ドッグランは希望日を予約。",
-    "料金の目安/犬料金": "犬の料金なし(飲食代)。ドッグランの料金・貸切プラン(3名〜)は公式で確認。",
+    "料金の目安/犬料金": "カフェの通常利用は飲食代のみ。室内ドッグランは会員登録制(登録料1,100円、公式)。貸切プラン(3名〜)は公式で確認。",
     "持ち物": "ワクチンの証明、リード、排泄物の処理用品。",
     "雨の日": "店内で過ごせる。",
     "出発前に確認": "営業時間 土曜11:30〜22:30(L.O.20:00)、日祝11:30〜18:00(L.O.17:00)、平日は公式で確認。定休日 火・水曜(臨時営業・臨時休業あり)。駐車場は1〜5番。",
@@ -29294,7 +30609,7 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": null,
    "dog_hints": {
     "has_rain_note": true
    },
@@ -29396,7 +30711,8 @@
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-kyunakagawa-dogrun",
    "geocode": {
@@ -29494,7 +30810,8 @@
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-jindai-botanical-park-dogrun",
    "geocode": {
@@ -29912,7 +31229,7 @@
   {
    "id": "c5-kimura-botanical-dogfield",
    "type": "spot",
-   "name": "木村植物園 ドッグフィールド(平塚)",
+   "name": "木村植物園 ドッグフォレスト湘南(平塚・会員制ドッグラン)",
    "area": "神奈川県平塚市・土屋",
    "region_group": "kanto",
    "kinds": [
@@ -29921,12 +31238,12 @@
    ],
    "theme": "『人に優しい・緑に優しい・ペットに優しい』がテーマの植物園。植物に囲まれたプールサイドのカフェのテラス席で犬と過ごせて、小型犬から大型犬まで遊べるよう区切られたドッグフィールドがある",
    "facts": {
-    "犬の条件・同伴範囲": "ドッグフィールドは犬のサイズでスペースが区切られている。カフェはテラス席で犬同伴可。ワクチンなどの条件は出発前に確認。",
-    "料金の目安/犬料金": "出発前に確認(電話 0120-152-887、対応9:30〜18:00)。",
-    "持ち物": "ワクチンの証明、リード、排泄物の処理用品。",
+    "犬の条件・同伴範囲": "完全会員制のドッグラン(初回は会員登録が必要。狂犬病・混合ワクチンの接種確認と利用規約への同意)。1人3頭まで(状況により2頭以下に制限)。ラン内はノーリード可だが首輪またはハーネスは必ず装着。2025年8月1日から秋田犬・土佐犬・ロットワイラー・ドーベルマン・ピットブル系など指定犬種(とそのMIX)は利用不可。",
+    "料金の目安/犬料金": "会員登録料 2,000円。入場料 平日(3時間まで)800円、休日(2時間まで)1,000円。追加の犬は平日450円・休日550円。回数券あり(有効期限1年)。",
+    "持ち物": "狂犬病・混合ワクチンの接種証明、首輪またはハーネス、リード、排泄物の処理用品。アルコール・ビン・缶は持ち込み不可。",
     "雨の日": "屋外。",
-    "出発前に確認": "ドッグフィールドの営業時間・料金、カフェの営業時間。平塚駅からバス(小熊天神前下車すぐ)。",
-    "公式で確認したこと": "公式サイトで、ドッグフィールドの区分け・テラス席の犬同伴・所在地・アクセスを確認。料金は公式で確認できず出発前に確認。"
+    "出発前に確認": "営業時間・休業日、犬種の利用制限。平塚駅からバス(小熊天神前下車すぐ)。",
+    "公式で確認したこと": "公式のドッグランページで、完全会員制・接種確認・頭数制限・料金表・利用禁止犬種(2025-08-01〜)を確認。"
    },
    "links": [
     {
@@ -29936,11 +31253,11 @@
     },
     {
      "label": "施設公式案内",
-     "url": "http://www.241.co.jp/dogfield/",
+     "url": "http://www.241.co.jp/dogrun/",
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": null,
    "dog_hints": {
     "has_rain_note": true
    },
@@ -30141,7 +31458,8 @@
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-wonderrun-niigata",
    "geocode": {
@@ -30191,7 +31509,8 @@
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-shimami-ryokuchi-dogrun",
    "geocode": {
@@ -30487,7 +31806,8 @@
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-yatsugatake-wanko-no-oniwa",
    "geocode": {
@@ -30584,7 +31904,8 @@
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "vaccine_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-mizu-no-ne-shimosuwa",
    "geocode": {
@@ -30884,7 +32205,8 @@
     "weight_limit_kg_mentions": [
      3
     ],
-    "has_rain_note": true
+    "has_rain_note": true,
+    "vaccine_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-fuji-subaru-land-doggy-park",
    "geocode": {
@@ -31414,12 +32736,12 @@
    ],
    "theme": "浜松城公園近くの、ペット同伴で『浜松料理じねん』の旬の料理が味わえるドッグレストラン。浜松食材のソフトクリーム、ペット食育指導士監修の手作りごはん、小型犬専用の室内ドッグルーム＆ドッグラン、屋上ドッグランも",
    "facts": {
-    "犬の条件・同伴範囲": "ペット同伴可のレストラン(宴会コースも犬同伴可)。小型犬専用の室内ドッグルーム＆ドッグランあり。屋上ドッグランは公式のお知らせで最新状況を確認。",
+    "犬の条件・同伴範囲": "ペット同伴可のレストラン(宴会コースも犬同伴可)。小型犬専用の室内ドッグルームあり(イベント・貸切で使えない日あり)。屋上ドッグランは2025年12月3日以降、当面の間お休み(公式お知らせ)。",
     "料金の目安/犬料金": "出発前に確認。犬用の手作りごはん・お菓子を販売。",
     "持ち物": "リード、マナーベルト、排泄物の処理用品。",
     "雨の日": "室内ドッグルームと店内席がある。",
-    "出発前に確認": "営業時間 11:00〜22:00(施設により異なる)。",
-    "公式で確認したこと": "公式サイトで、所在地・営業時間・ペット同伴可・室内ドッグルーム/ドッグラン・販売品を確認。"
+    "出発前に確認": "営業時間 11:00〜22:00(施設により異なる)。屋上ドッグランの再開状況、室内ドッグルームの貸切・イベントの有無。",
+    "公式で確認したこと": "公式サイトで、所在地・営業時間・ペット同伴可・室内ドッグルーム・屋上ドッグラン休止のお知らせ(2025-12-03)を確認。"
    },
    "links": [
     {
@@ -31433,7 +32755,7 @@
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": null,
    "dog_hints": {
     "small_dog_only_mention": true,
     "has_rain_note": true
@@ -31777,7 +33099,8 @@
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-wanwan-land-hiwada",
    "geocode": {
@@ -31972,7 +33295,8 @@
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-asuka-mebuki-no-mori-iwaki",
    "geocode": {
@@ -32022,7 +33346,8 @@
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "vaccine_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-zao-wanwan-land",
    "geocode": {
@@ -32293,17 +33618,22 @@
     "料金の目安/犬料金": "犬の料金なし(飲食代)。",
     "持ち物": "マナーベルト/パンツ、リード、排泄物の処理用品。",
     "雨の日": "店内で過ごせる。",
-    "出発前に確認": "営業時間 11:30〜17:00(L.O.14:30)。定休日 木・金曜。駐車場6台。所在地は公式で確認。",
-    "公式で確認したこと": "公式サイトで、営業時間・定休日・犬のサイズ条件・マナーベルト・リードのルールを確認。所在地は公式で確認できず出発前に確認。"
+    "出発前に確認": "営業時間 11:30〜17:00(L.O.14:30)。定休日 木・金曜。駐車場あり。米沢駅西口から徒歩約25分。",
+    "公式で確認したこと": "公式サイトで、営業時間・定休日・犬のサイズ条件・マナーベルト・リードのルール・所在地(アクセスページ)を確認。"
    },
    "links": [
+    {
+     "label": "公式アクセス",
+     "url": "https://lino.moo.jp/access.html",
+     "affiliate": false
+    },
     {
      "label": "施設公式案内",
      "url": "https://lino.moo.jp/",
      "affiliate": false
     }
    ],
-   "checked_at": "2026-09-27",
+   "checked_at": null,
    "dog_hints": {
     "has_rain_note": true
    },
@@ -32598,7 +33928,8 @@
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-nitta-farm-dogrun-cafe-ota",
    "geocode": {
@@ -32796,7 +34127,8 @@
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-dog-cafe-chiot-fukaya",
    "geocode": {
@@ -33041,7 +34373,8 @@
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c5-keisei-dogrun-matsudo",
    "geocode": {
@@ -33123,6 +34456,11 @@
    },
    "links": [
     {
+     "label": "公式情報",
+     "url": "https://www.dharma.llc/ome",
+     "affiliate": false
+    },
+    {
      "label": "施設公式案内",
      "url": "https://www.dharma.llc/ome",
      "affiliate": false
@@ -33150,7 +34488,7 @@
   {
    "id": "c6-tokyo-dg-com-dog-run-2",
    "type": "spot",
-   "name": "ドッグランゲート",
+   "name": "東京ドギーズガーデン(TOKYO DOGGIES GARDEN・青梅IC1分のドッグラン)",
    "area": "東京都青梅市",
    "region_group": "kanto",
    "kinds": [
@@ -33158,7 +34496,7 @@
    ],
    "theme": "大型犬・中型犬用エリアと小型犬用エリアが分かれており、ハンモックや遊具も設置されています。予約不要で利用でき、パスポート制度もあるので月間利用にも対応しています。",
    "facts": {
-    "犬の条件・同伴範囲": "狂犬病予防注射・感染症のワクチン(5種以上)接種証明書の提示が必要。ヒート中・妊娠中の雌犬、1歳未満で未接種の犬、感染症や寄生虫に感染している犬は利用不可。愛犬だけを残しての一時退場は不可。",
+    "犬の条件・同伴範囲": "狂犬病予防注射・感染症のワクチン(5種以上)接種証明書の提示が必要。ヒート中・妊娠中の雌犬、1歳未満で未接種の犬、感染症や寄生虫に感染している犬は利用不可。愛犬だけを残しての一時退場は不可。ヒート中およびヒート後2週間・妊娠中の犬は利用不可(公式)。",
     "料金の目安/犬料金": "平日フリー1頭700円、パスポート1ヶ月3,000円。土日祝日フリー1頭1,000円（多頭割引あり）、パスポート1ヶ月5,000円。",
     "持ち物": "排泄後の処理用ペットボトルの水、狂犬病予防注射・感染症のワクチン接種証明書(コピー可)。おもちゃのご使用はご遠慮ください。",
     "雨の日": "記載なし",
@@ -33167,6 +34505,11 @@
    },
    "links": [
     {
+     "label": "公式情報",
+     "url": "https://tokyo-dg.com/",
+     "affiliate": false
+    },
+    {
      "label": "施設公式案内",
      "url": "https://tokyo-dg.com/dog-run-2",
      "affiliate": false
@@ -33174,7 +34517,8 @@
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c6-tokyo-dg-com-dog-run-2",
    "geocode": {
@@ -33211,6 +34555,11 @@
     "公式で確認したこと": "店内ワンコOKのわんちゃんファーストなドッグカフェであり、無料ドッグランを併設していることが確認できた。"
    },
    "links": [
+    {
+     "label": "公式情報",
+     "url": "https://miura-info.ne.jp/gourmet-aburatsubo/amielle-dog",
+     "affiliate": false
+    },
     {
      "label": "施設公式案内",
      "url": "https://miura-info.ne.jp/gourmet-aburatsubo/amielle-dog",
@@ -33255,6 +34604,11 @@
     "公式で確認したこと": "神奈川県三浦市にあるDOG CAFE Bellは、ペット同伴可能なカフェであり、広場や貸切プランを提供していることが確認できた。"
    },
    "links": [
+    {
+     "label": "公式情報",
+     "url": "https://dogcafebell.owst.jp",
+     "affiliate": false
+    },
     {
      "label": "施設公式案内",
      "url": "https://dogcafebell.owst.jp",
@@ -33346,6 +34700,11 @@
    },
    "links": [
     {
+     "label": "公式情報",
+     "url": "https://ocean-dog-park.net",
+     "affiliate": false
+    },
+    {
      "label": "施設公式案内",
      "url": "https://ocean-dog-park.net",
      "affiliate": false
@@ -33382,13 +34741,18 @@
    "theme": "湘南藤沢にある事前予約貸切制のプレミアムリゾートドッグランです。水深調整可能なプールやフォトスポット、開閉式ルーフ付きテラスなど設備が整っており、人の目を気にせず愛犬と至福のひとときを過ごせます。",
    "facts": {
     "犬の条件・同伴範囲": "会員制であり、狂犬病および混合ワクチン接種証明書（1年以内）の提示が必要。グループに1名以上の会員必須。",
-    "料金の目安/犬料金": "記載なし",
+    "料金の目安/犬料金": "会員料金(年会費/登録料、1グループ1名の入会必須、1家族2名4頭まで)+ドッグラン利用料(スペース使用料・入園料)。金額は公式の料金ページで確認。",
     "持ち物": "同意書、狂犬病ワクチン接種証明書、混合ワクチン接種証明書。",
     "雨の日": "日差しや雨を凌げる開閉式ルーフのあるテラス席およびガーデンルーム（エアコン完備）がある。",
     "出発前に確認": "事前予約貸切制（1日4枠、夏季5枠）。前日AM9:00まで予約。定休日は木曜日。キャンセル料発生注意。",
     "公式で確認したこと": "mahalohaleは湘南藤沢にある事前予約貸切制の会員制プレミアムリゾートドッグランであることが確認できた。"
    },
    "links": [
+    {
+     "label": "公式情報",
+     "url": "https://mahalohale.mahalo-garden.com",
+     "affiliate": false
+    },
     {
      "label": "施設公式案内",
      "url": "https://mahalohale.mahalo-garden.com",
@@ -33397,7 +34761,8 @@
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "cert_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c6-mahalohale-mahalo-garden-com",
    "geocode": {
@@ -33511,7 +34876,7 @@
    "kinds": [
     "run"
    ],
-   "theme": "三条市総合運動公園内のスタンド付き野球場の芝生地を活用したドッグランです。会員制で運営されており、人と犬のふれあいや飼い主のマナー向上を目的としています。小型犬用の退避場も設置されています。",
+   "theme": "三条市総合運動公園内(三条パール金属スタジアム正面玄関の西側の芝生地)にある会員制ドッグラン。人と犬のふれあいや飼い主のマナー向上を目的に運営されている。",
    "facts": {
     "犬の条件・同伴範囲": "狂犬病予防注射および3種以上混合ワクチン接種（1年以内）が必要。発情期や病気、生後6ヶ月未満は不可。リードを付けた状態で入場し、安全確認後に外す。",
     "料金の目安/犬料金": "利用は無料だが、登録料（運営協力費）として初年度2,000円、次年度以降3,000円（1頭あたり）。",
@@ -33529,7 +34894,8 @@
    ],
    "checked_at": "2026-09-27",
    "dog_hints": {
-    "has_rain_note": true
+    "has_rain_note": true,
+    "vaccine_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c6-ballpark-sanjo-com-shisetsu",
    "geocode": {
@@ -33564,6 +34930,11 @@
     "公式で確認したこと": "山梨県富士吉田市の道の駅に隣接する無料ドッグランであることが確認できた"
    },
    "links": [
+    {
+     "label": "公式情報",
+     "url": "https://fujiyoshida.net/spot/index.php?p=25",
+     "affiliate": false
+    },
     {
      "label": "施設公式案内",
      "url": "https://fujiyoshida.net/spot/index.php?p=25",
@@ -33663,7 +35034,8 @@
     "weight_limit_kg_mentions": [
      10
     ],
-    "has_rain_note": true
+    "has_rain_note": true,
+    "vaccine_required": true
    },
    "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c6-fumotto-jp-info-pet",
    "geocode": {
@@ -33747,6 +35119,11 @@
    },
    "links": [
     {
+     "label": "公式情報",
+     "url": "https://daitoonsen.jp",
+     "affiliate": false
+    },
+    {
      "label": "施設公式案内",
      "url": "https://daitoonsen.jp",
      "affiliate": false
@@ -33790,6 +35167,11 @@
     "公式で確認したこと": "Heart of WANの商品販売店であり、隣に犬同伴可能なカフェがあることを確認した。"
    },
    "links": [
+    {
+     "label": "公式情報",
+     "url": "https://www.dogcafe-wan.jp/shop.html",
+     "affiliate": false
+    },
     {
      "label": "施設公式案内",
      "url": "https://www.dogcafe-wan.jp/shop.html",
