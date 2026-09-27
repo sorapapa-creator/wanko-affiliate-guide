@@ -379,6 +379,7 @@
     // avoid: 避けたい休憩(行きで選んだSA・PAの名前)。同じ時間帯に別の候補があればそちらを優先し、無ければ従来どおり選ぶ
     const I = intervalMin * 60, W = WINDOW_MIN * 60;
     const pen = (c) => (avoid && avoid.has(baseName(c.stop.name)) ? 1 : 0);
+    if (avoid) cands = cands.filter((c) => !pen(c));  // 帰りは行きで選んだ休憩を自動では選ばない(候補一覧には残す。別の候補が無ければ空)
     const pickBest = (arr) => arr.slice().sort((a, b) => pen(a) - pen(b) || b.score - a.score || b.tSec - a.tSec)[0];
     const lastPreferred = (arr) => { const ok = arr.filter((c) => !pen(c)); return (ok.length ? ok : arr)[(ok.length ? ok : arr).length - 1]; };
     const plan = [];
@@ -964,7 +965,7 @@
     // 休憩の選択(45分以上の区間)
     const long = legs.map((l, k) => [l, k]).filter(([l]) => l.needsRest || l.durationSec >= 45 * 60);
     $("ret-rest-title").classList.toggle("hidden", !long.length);
-    $("ret-rest-intro").textContent = long.length ? `運転45分以上の区間ごとに、ルート沿いのSA・PA・道の駅を候補に出します(おすすめは選択済み。行きで選んだ休憩は「行きで休憩」の印を付け、別の候補があればそちらをおすすめにします。前の休憩から${intervalText(rs.interval.minutes)}を超える区間には印)。休憩を変えても渋滞は再計算しません。` : "";
+    $("ret-rest-intro").textContent = long.length ? `運転45分以上の区間ごとに、ルート沿いのSA・PA・道の駅を候補に出します(おすすめは選択済み。行きで選んだ休憩には「行きで休憩」の印を付け、帰りでは自動で選びません。同じ所にしたいときはチェックしてください。前の休憩から${intervalText(rs.interval.minutes)}を超える区間には印)。休憩を変えても渋滞は再計算しません。` : "";
     $("ret-rest-pick").innerHTML = long.map(([l, k]) => {
       const rec = new Set(l.recommended.map(restKey));
       const rows = l.cands.map((c) => { const key = restKey(c), fac = (c.stop.facilities || [])[0];
