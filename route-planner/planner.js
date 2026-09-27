@@ -649,7 +649,7 @@
     const list = PLACES.filter((p) => p.id !== place.id && p.page_url && p.type === "spot")
       .filter((p) => { if (!certOK && (p.dog_hints || {}).cert_required) { certHidden++; return false; } return true; })
       .map((p) => ({ p, d: km(here, [p.geocode.lat, p.geocode.lon]) }))
-      .filter((x) => x.d <= CFG.nearbyKm)
+      .filter((x) => x.d <= CFG.nearbyKm && x.d >= 0.15)  // 同じ敷地(0km)の別カードは出さない
       .sort((a, b) => compareDestinations(a.p, b.p))
       .map(({ p, d }) => {
         try {
