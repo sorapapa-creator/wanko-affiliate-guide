@@ -502,6 +502,7 @@
     state.current = i;
     renderPlan(state, i);
     renderRestPicker(state, i);
+    if (!$("itinerary-card").classList.contains("hidden")) renderItinerary(state);
   }
 
   const intervalText = (m) => (m >= 60 ? `${m / 60}時間`.replace(".5時間", "時間30分") : `${m}分`);
@@ -743,7 +744,7 @@
     add(1, last.arrive, "stop", `<span class="badge b-go">到着</span> <b>${esc(state.place.name)}</b>`);
     // 到着日の近くの掲載先(到着後に順番に回り、宿へ戻る)
     let t = last.arrive; let here = { lat: state.place.geocode.lat, lon: state.place.geocode.lon };
-    const visit = (day, startTime, items) => {
+    const visit = (day, startTime, items, backToLodging = true) => {
       let tt = startTime; let prev = { lat: Number(state.place.geocode.lat), lon: Number(state.place.geocode.lon) };
       for (const { p, stay } of items) {
         const straight = km([prev.lat, prev.lon], [Number(p.geocode.lat), Number(p.geocode.lon)]);
@@ -752,7 +753,7 @@
         add(day, tt, "stop", `<span class="badge b-via">${esc(TYPE_LABEL[p.type])}</span> <b>${esc(p.name)}</b> <span class="note">(車で約${mv.min}分${mv.exact ? "" : "・目安"})</span><br><span class="note">滞在${fmtStay(stay)} → ${fmtClock(addSec(tt, stay * 60))}発${p.page_url ? ` ・ <a href="${esc(p.page_url)}">施設情報</a>` : ""}</span>`);
         tt = addSec(tt, stay * 60); prev = { lat: Number(p.geocode.lat), lon: Number(p.geocode.lon) };
       }
-      if (items.length && day === 1) {  // 到着日は最後に宿へ戻る。翌日は最後の場所からそのまま帰路へ
+      if (items.length && day === 1 && backToLodging) {  // 到着日は最後に宿へ戻る(宿泊のとき)。翌日は最後の場所からそのまま帰路へ
         const back = km([prev.lat, prev.lon], [Number(state.place.geocode.lat), Number(state.place.geocode.lon)]);
         const bm = Math.max(5, Math.round(back * 1.3 / 35 * 60)); tt = addSec(tt, bm * 60);
         add(day, tt, "stop", `<span class="badge b-go">宿へ戻る</span> <span class="note">(車で約${bm}分・目安)</span>`);
@@ -760,12 +761,17 @@
       return tt;
     };
     const day1 = picks.filter((x) => x.day === 1), day2 = picks.filter((x) => x.day === 2);
-    let end1 = visit(1, t, day1);
-    if (day1.length && (end1.getHours() >= 19)) warns.push(`到着日の予定は${fmtClock(end1)}に宿へ戻る計算です。宿の夕食・門限を確認してください。`);
-    // 翌日: 宿を出て近くの掲載先→帰路(往路と同じ運転時間の目安)
     const isLodging = state.place.type === "lodging";
+    let end1 = visit(1, t, day1, isLodging);
+    if (isLodging && day1.length && (end1.getHours() >= 19)) warns.push(`到着日の予定は${fmtClock(end1)}に宿へ戻る計算です。宿の夕食・門限を確認してください。`);
+    if (!isLodging) {  // 日帰り: 最後の場所からそのまま帰路
+      const home = addSec(end1, o.totals.driveSec);
+      add(1, home, "stop", `<span class="badge b-go">帰着</span> <b>${esc(state.origin.name)}</b> <span class="note">(往路と同じ運転${fmtDur(o.totals.driveSec)}の目安。休憩は別途)</span>`);
+      if (home.getHours() >= 21 || home.getDate() !== o.dep.getDate()) warns.push(`帰着が${fmtClock(home)}になる計算です。滞在を短くするか、早めの出発を検討してください。`);
+    }
+    // 翌日: 宿を出て近くの掲載先→帰路(往路と同じ運転時間の目安)
     if (isLodging) {
-      const checkout = clockOf(addSec(o.dep, 24 * 3600), "10:00");
+      const checkout = clockOf(addSec(last.arrive, 24 * 3600), "10:00");
       add(2, checkout, "stop", `<span class="badge b-go">チェックアウト(目安10:00)</span> <b>${esc(state.place.name)}</b>`);
       const end2 = visit(2, checkout, day2);
       const driveBack = o.totals.driveSec;
