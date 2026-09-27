@@ -218,7 +218,7 @@
             <option value="34.6790,138.9450">伊豆急下田駅</option>
             <option value="35.3000,138.9350">御殿場駅</option>
           </optgroup>
-          <option value="here">現在地を使う</option>
+          <option value="35.7312,139.7084">池袋駅</option><option value="35.6307,139.7374">品川駅</option><option value="35.6587,139.7001">渋谷駅</option><option value="35.5457,139.7761">羽田空港</option><option value="35.7759,140.3933">成田空港</option><option value="35.5815,139.3707">相模原駅</option><option value="35.3274,139.3492">平塚駅</option><option value="35.2797,139.6701">横須賀中央駅</option><option value="35.4522,139.3917">海老名駅</option><option value="35.7868,139.4733">所沢駅</option><option value="35.8883,139.7860">越谷駅</option><option value="35.9801,139.7521">春日部駅</option><option value="35.7845,139.9002">松戸駅</option><option value="35.7288,139.9082">市川駅</option><option value="35.8019,139.7175">川口駅</option><option value="35.8975,140.0639">取手駅</option><option value="36.1947,139.7099">古河駅</option><option value="36.3116,139.8061">小山駅</option><option value="36.3722,139.7301">栃木駅</option><option value="36.3163,139.5790">佐野駅</option><option value="36.2941,139.3788">太田駅</option><option value="36.4113,139.3327">桐生駅</option><option value="36.3262,139.1943">伊勢崎駅</option><option value="36.6424,139.0357">沼田駅</option><option value="36.4907,139.0084">渋川駅</option><option value="36.1907,140.2807">石岡駅</option><option value="36.5909,140.6621">日立駅</option><option value="35.9707,140.6260">鹿島神宮駅</option><option value="35.4985,138.7686">河口湖駅</option><option value="35.6133,138.9426">大月駅</option><option value="35.7104,138.4509">韮崎駅</option><option value="36.3970,138.2495">上田駅</option><option value="36.2778,138.4636">佐久平駅</option><option value="35.5188,137.8207">飯田駅</option><option value="37.4479,138.8539">長岡駅</option><option value="37.0814,138.2480">上越妙高駅</option><option value="37.6484,138.9391">燕三条駅</option><option value="36.9359,138.8094">越後湯沢駅</option><option value="35.1518,138.6518">富士駅</option><option value="34.7052,137.7337">浜松駅</option><option value="34.7694,138.0146">掛川駅</option><option value="34.8723,138.3182">焼津駅</option><option value="35.2214,138.6150">富士宮駅</option><option value="34.9792,138.9505">修善寺駅</option><option value="37.1302,140.2130">白河駅</option><option value="37.1231,140.1884">新白河駅</option><option value="37.3005,140.3719">須賀川駅</option><option value="37.0582,140.8922">いわき駅</option><option value="37.6440,139.8678">喜多方駅</option><option value="37.9096,140.1281">米沢駅</option><option value="38.3600,140.3696">天童駅</option><option value="38.1733,140.8828">名取駅</option><option value="38.4336,141.3044">石巻駅</option><option value="37.9954,140.6332">白石蔵王駅</option><option value="38.5720,140.9615">古川駅</option><option value="here">現在地を使う</option>
         </select>
         <div class="hint">各駅の周辺を出発地点の目安として計算します。細かな住所ではないため、到着先も含めルートを確認してください。</div>
       </fieldset>
@@ -261,9 +261,18 @@
       </div>
       <div class="chips" style="margin-top:8px">
         <label><input type="checkbox" id="carsick">車酔いしやすい</label>
-        <label><input type="checkbox" id="heat">暑さに弱い(短頭種など)</label>
+        <label><input type="checkbox" id="heat">暑さに弱い</label>
+        <label><input type="checkbox" id="brachy">短頭種(パグ・フレブル・ボストンなど)</label>
+        <label><input type="checkbox" id="heat-cycle">ヒート中(発情期)</label>
+        <label><input type="checkbox" id="vaccine" checked>ワクチン・狂犬病の証明書を持っていく</label>
       </div>
-      <div class="hint">休憩の間隔は、成犬は2時間、子犬・シニア・車酔いする子は1時間、暑さに弱い子は夏季1.5時間を目安にします。持病がある子は獣医さんの指示を優先してください。</div>
+      <div class="row three" style="margin-top:8px">
+        <div><label class="t planner-field-label" for="toilet"><span>トイレの間隔</span><small>TOILET</small></label>
+          <select id="toilet"><option value="">気にしない(休憩の目安どおり)</option><option value="90">1時間30分ごと</option><option value="120">2時間ごと</option><option value="180">3時間ごと</option></select></div>
+        <div><label class="t planner-field-label" for="meal-time"><span>ごはんの時刻(任意)</span><small>MEAL</small></label><input type="time" id="meal-time" step="900"></div>
+        <div><label class="t planner-field-label" for="med-time"><span>薬の時刻(任意)</span><small>MEDICINE</small></label><input type="time" id="med-time" step="900"></div>
+      </div>
+      <div class="hint">休憩の間隔は、成犬は2時間、子犬・シニア・車酔いする子は1時間、暑さに弱い子・短頭種は夏季1.5時間、トイレの間隔を入れた場合はその間隔を目安にします。ヒート中は受け入れない宿・ドッグランが多いので、行程表で確認事項として出します。持病がある子は獣医さんの指示を優先してください。</div>
     </fieldset>
     <details class="trip-extra" id="trip-extra">
       <summary>日付・人数・犬の条件でも確認する(任意)</summary>
@@ -313,6 +322,16 @@
       <select id="nearby-select"><option value="">掲載先を選ぶと施設情報へ移動します</option></select>
       <p class="hint" id="nearby-select-hint">候補の選択後、施設情報の該当位置を開きます。</p>
       <div class="nearby" id="nearby"></div>
+      <div id="nearby-pick" style="margin-top:12px"></div>
+      <div class="actions" id="nearby-actions"></div>
+    </div>
+
+    <div class="card hidden" id="itinerary-card">
+      <h2 id="itinerary-title">最終行程表</h2>
+      <div id="itinerary-warn"></div>
+      <div id="itinerary"></div>
+      <div class="actions" id="itinerary-actions"></div>
+      <p class="note">行程表の時刻は、ルート計算の結果(出発日の混み具合)と、近くの掲載先までの道路所要時間(前計算。無い場合は直線距離からの目安)を足したものです。営業時間・犬同伴条件・予約の要否は各施設の公式情報で確認してください。</p>
     </div>
   </section>
 
@@ -327,7 +346,7 @@
 </div>
 <!-- 更新したら ?v= の値を変える(ブラウザに古いファイルが残って新しい動作にならないのを防ぐ) -->
 <script src="config.js?v=2026092601"></script>
-<script src="planner.js?v=2026092703"></script>
+<script src="planner.js?v=20260927-itin1"></script>
 <script src="trip-check.js?v=2026092602"></script>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "2847001768a143df87fa4e78edba9c7e"}'></script><!-- End Cloudflare Web Analytics -->
 
