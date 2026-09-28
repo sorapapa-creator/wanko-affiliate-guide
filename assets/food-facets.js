@@ -8420,8 +8420,8 @@ window.WANKO_FOOD_FACTS = {
       "大麦",
       "オーツ麦"
     ],
-    "ingredient_text": "チキン(肉), チキンミール, 玄米, 大麦, オートミール",
-    "target": "小型犬(成犬時の体重が4〜10kg) / 生後8ヶ月以上",
+    "ingredient_text": "チキン(肉)、チキンミール、玄米*2、大麦、オートミール*2",
+    "target": "小型犬用 成犬用 生後8ヶ月以上 / 成犬時の体重が4〜10kg",
     "age": [
       "成犬"
     ],
@@ -8439,8 +8439,8 @@ window.WANKO_FOOD_FACTS = {
     "concern": [],
     "price": 9274,
     "price_date": "2026-09-28",
-    "source": "",
-    "checked": "",
+    "source": "https://nutro.jp/products/nc_d_adult_small_chiken_br",
+    "checked": "2026-09-28",
     "limited_puppy": false,
     "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
     "additives": [],
@@ -8491,7 +8491,7 @@ window.WANKO_FOOD_FACTS = {
       "米"
     ],
     "ingredient_text": "チキン(肉)、玄米、レンズマメ、米糠、ラムミール",
-    "target": "超小型犬〜小型犬(成犬時の体重が10kg以下) 成犬(生後8ヶ月以上)",
+    "target": "超小型犬〜小型犬(成犬時の体重が10kg以下) 成犬(生後8ヶ月以上) / 成犬用 / 超小型犬〜小型犬用",
     "age": [
       "成犬"
     ],
@@ -8522,8 +8522,8 @@ window.WANKO_FOOD_FACTS = {
     ],
     "price": 9532,
     "price_date": "2026-09-28",
-    "source": "",
-    "checked": "",
+    "source": "https://nutro.jp/products/nc_d_adult_toy_lite_chicken_br",
+    "checked": "2026-09-28",
     "limited_puppy": false,
     "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
     "additives": [],
@@ -8537,8 +8537,8 @@ window.WANKO_FOOD_FACTS = {
       "米",
       "オーツ麦"
     ],
-    "ingredient_text": "チキン(肉), チキンミール, 玄米*2, 粗挽き米, オートミール*2",
-    "target": "成犬(避妊・去勢した後の生後8ヶ月以上) / 超小型犬〜小型犬",
+    "ingredient_text": "チキン(肉)、チキンミール、玄米*2、粗挽き米、オートミール*2",
+    "target": "避妊・去勢犬用 超小型犬~小型犬用 成犬用 生後8ヶ月以上",
     "age": [
       "成犬"
     ],
@@ -8569,8 +8569,8 @@ window.WANKO_FOOD_FACTS = {
     ],
     "price": 9532,
     "price_date": "2026-09-28",
-    "source": "",
-    "checked": "",
+    "source": "https://nutro.jp/products/nc_d_adult_toy_neuterd_chicken_br",
+    "checked": "2026-09-28",
     "limited_puppy": false,
     "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
     "additives": [],
@@ -8690,7 +8690,7 @@ window.WANKO_FOOD_FACTS = {
       "オーツ麦"
     ],
     "ingredient_text": "チキン(肉)、チキンミール、大麦、玄米、オーツ麦",
-    "target": "成犬 / 超小型犬〜小型犬",
+    "target": "超小型犬〜小型犬、成犬",
     "age": [
       "成犬"
     ],
@@ -8707,8 +8707,8 @@ window.WANKO_FOOD_FACTS = {
     ],
     "price": 10216,
     "price_date": "2026-09-28",
-    "source": "",
-    "checked": "",
+    "source": "https://nutro.jp/products/supremo_d_adult_toy_lite",
+    "checked": "2026-09-28",
     "limited_puppy": false,
     "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
     "additives": [],
@@ -8756,8 +8756,8 @@ window.WANKO_FOOD_FACTS = {
       "米",
       "オーツ麦"
     ],
-    "ingredient_text": "ラム(肉), ラムミール, 粗挽き米, 米糠, オートミール",
-    "target": "中型犬〜大型犬(成犬時の体重が10kg以上)",
+    "ingredient_text": "ラム(肉)、ラムミール、粗挽き米、米糠、オートミール",
+    "target": "中型犬〜大型犬用 成犬用",
     "age": [
       "成犬"
     ],
@@ -8774,8 +8774,8 @@ window.WANKO_FOOD_FACTS = {
     "concern": [],
     "price": 17600,
     "price_date": "2026-09-28",
-    "source": "",
-    "checked": "",
+    "source": "https://nutro.jp/products/nc_d_adult_medium_lamb_br",
+    "checked": "2026-09-28",
     "limited_puppy": false,
     "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
     "additives": [],
@@ -8863,8 +8863,8 @@ window.WANKO_FOOD_FACTS = {
       "米",
       "オーツ麦"
     ],
-    "ingredient_text": "チキン(肉)、チキンミール、玄米、粗挽き米、オートミール",
-    "target": "超小型犬〜小型犬 (避妊・去勢後) 成犬(避妊・去勢した後の生後8ヶ月以上)",
+    "ingredient_text": "チキン(肉)、チキンミール、玄米*2、粗挽き米、オートミール*2",
+    "target": "超小型犬〜小型犬、成犬（生後8ヶ月以上）、避妊・去勢犬",
     "age": [
       "成犬"
     ],
@@ -8895,8 +8895,8 @@ window.WANKO_FOOD_FACTS = {
     ],
     "price": 9532,
     "price_date": "2026-09-28",
-    "source": "",
-    "checked": "",
+    "source": "https://nutro.jp/products/nc_d_adult_toy_neuterd_chicken_br",
+    "checked": "2026-09-28",
     "limited_puppy": false,
     "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
     "additives": [],
@@ -8911,8 +8911,8 @@ window.WANKO_FOOD_FACTS = {
       "大麦",
       "オーツ麦"
     ],
-    "ingredient_text": "チキン(肉)、チキンミール、大麦、オーツ麦、玄米",
-    "target": "超小型犬〜小型犬用 シニア犬用 / 高齢犬",
+    "ingredient_text": "チキン(肉), チキンミール, 大麦, オーツ麦, 玄米",
+    "target": "超小型犬〜小型犬のシニア犬 / 高齢犬",
     "age": [
       "シニア"
     ],
@@ -8927,8 +8927,8 @@ window.WANKO_FOOD_FACTS = {
     "concern": [],
     "price": 10216,
     "price_date": "2026-09-28",
-    "source": "",
-    "checked": "",
+    "source": "https://nutro.jp/products/supremo_d_senior_toy",
+    "checked": "2026-09-28",
     "limited_puppy": false,
     "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
     "additives": [],
@@ -9124,10 +9124,11 @@ window.WANKO_FOOD_FACTS = {
     "ingredients": [
       "鶏",
       "米",
+      "大麦",
       "オーツ麦"
     ],
-    "ingredient_text": "チキン(肉), チキンミール, オートミール, 玄米*2, エンドウマメ",
-    "target": "超小型犬(成犬時の体重が4kg以下) (チワワ、ポメラニアン、ヨークシャー・テリア、トイ・プードル、マルチーズ、カニーンヘン・ダックスフンド、パピヨン等) / 生後8ヶ月以上",
+    "ingredient_text": "チキン(肉)、チキンミール、玄米*2、大麦、オートミール*2",
+    "target": "小型犬用 成犬用 生後8ヶ月以上",
     "age": [
       "成犬"
     ],
@@ -9152,8 +9153,8 @@ window.WANKO_FOOD_FACTS = {
     "concern": [],
     "price": 6100,
     "price_date": "2026-09-28",
-    "source": "",
-    "checked": "",
+    "source": "https://nutro.jp/products/nc_d_adult_small_chiken_br",
+    "checked": "2026-09-28",
     "limited_puppy": false,
     "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
     "additives": [],
@@ -9245,14 +9246,11 @@ window.WANKO_FOOD_FACTS = {
       "米"
     ],
     "ingredient_text": "ラム(肉)、ラムミール、粗挽き米、米糠、エンドウマメ",
-    "target": "超小型犬〜小型犬(成犬時の体重が10kg以下) 成犬(生後8ヶ月以上)",
+    "target": "超小型犬〜小型犬用 成犬用",
     "age": [
       "成犬"
     ],
-    "age_range": [
-      8.0,
-      null
-    ],
+    "age_range": null,
     "breed": [
       "フレンチブルドッグ",
       "ダックスフンド",
@@ -9274,8 +9272,8 @@ window.WANKO_FOOD_FACTS = {
     "concern": [],
     "price": 8880,
     "price_date": "2026-09-28",
-    "source": "",
-    "checked": "",
+    "source": "https://nutro.jp/products/nc_d_adult_toy_lamb_br",
+    "checked": "2026-09-28",
     "limited_puppy": false,
     "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
     "additives": [],
@@ -9324,7 +9322,7 @@ window.WANKO_FOOD_FACTS = {
       "鶏"
     ],
     "ingredient_text": "チキン(肉)、チキンミール、エンドウマメ、乾燥ポテト、鶏脂",
-    "target": "成犬 / 超小型犬〜小型犬",
+    "target": "超小型犬〜小型犬用 成犬用",
     "age": [
       "成犬"
     ],
@@ -9339,8 +9337,8 @@ window.WANKO_FOOD_FACTS = {
     "concern": [],
     "price": 6980,
     "price_date": "2026-09-28",
-    "source": "",
-    "checked": "",
+    "source": "https://nutro.jp/products/wr_d_adult_toy_chicken",
+    "checked": "2026-09-28",
     "limited_puppy": false,
     "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
     "additives": [],
@@ -9353,8 +9351,8 @@ window.WANKO_FOOD_FACTS = {
       "鶏",
       "魚"
     ],
-    "ingredient_text": "サーモン(すり身)、チキンミール、ヒヨコマメ、フィッシュミール、鶏脂*",
-    "target": "成犬 / 超小型犬〜小型犬",
+    "ingredient_text": "サーモン(すり身), チキンミール, ヒヨコマメ, フィッシュミール, 鶏脂*",
+    "target": "超小型犬〜小型犬用 成犬用",
     "age": [
       "成犬"
     ],
@@ -9369,8 +9367,8 @@ window.WANKO_FOOD_FACTS = {
     "concern": [],
     "price": 6980,
     "price_date": "2026-09-28",
-    "source": "",
-    "checked": "",
+    "source": "https://nutro.jp/products/wr_d_adult_toy_salmon",
+    "checked": "2026-09-28",
     "limited_puppy": false,
     "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
     "additives": [],
@@ -9384,7 +9382,7 @@ window.WANKO_FOOD_FACTS = {
       "羊"
     ],
     "ingredient_text": "ラム(肉)、チキンミール、エンドウマメ、乾燥ポテト、鶏脂",
-    "target": "成犬 / 超小型犬〜小型犬",
+    "target": "超小型犬〜小型犬用 成犬用",
     "age": [
       "成犬"
     ],
@@ -9399,8 +9397,8 @@ window.WANKO_FOOD_FACTS = {
     "concern": [],
     "price": 6980,
     "price_date": "2026-09-28",
-    "source": "",
-    "checked": "",
+    "source": "https://nutro.jp/products/wr_d_adult_toy_lamb",
+    "checked": "2026-09-28",
     "limited_puppy": false,
     "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
     "additives": [],
@@ -9411,11 +9409,10 @@ window.WANKO_FOOD_FACTS = {
     "label": "ニュートロ ナチュラルチョイス 超小型犬用 エイジングケア チキン＆玄米",
     "ingredients": [
       "鶏",
-      "米",
-      "大麦"
+      "米"
     ],
-    "ingredient_text": "チキン(肉), チキンミール, 玄米, エンドウマメ, 大麦",
-    "target": "超小型犬(成犬時の体重が4kg以下) シニア犬(7歳以上)",
+    "ingredient_text": "チキン(肉)、チキンミール*2、玄米*3、粗挽き米、米糠",
+    "target": "超小型犬(成犬時の体重が4kg以下) シニア犬(7歳以上) / 超小型犬〜小型犬",
     "age": [
       "シニア"
     ],
@@ -9440,8 +9437,8 @@ window.WANKO_FOOD_FACTS = {
     "concern": [],
     "price": 6180,
     "price_date": "2026-09-28",
-    "source": "",
-    "checked": "",
+    "source": "https://nutro.jp/products/nc_d_senior_toy_neuterd_chicken_br",
+    "checked": "2026-09-28",
     "limited_puppy": false,
     "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
     "additives": [],
@@ -9597,8 +9594,8 @@ window.WANKO_FOOD_FACTS = {
       "鶏",
       "羊"
     ],
-    "ingredient_text": "チキン(肉), チキンミール, エンドウ豆, ラムミール, 乾燥ポテト",
-    "target": "成犬 / 超小型犬〜小型犬",
+    "ingredient_text": "チキン(肉)、チキンミール、エンドウマメ、ラムミール、乾燥ポテト",
+    "target": "超小型犬〜小型犬、成犬",
     "age": [
       "成犬"
     ],
@@ -9613,8 +9610,8 @@ window.WANKO_FOOD_FACTS = {
     "concern": [],
     "price": 7675,
     "price_date": "2026-09-28",
-    "source": "",
-    "checked": "",
+    "source": "https://nutro.jp/products/supremo_d_adult_toy_grainfree_chicken",
+    "checked": "2026-09-28",
     "limited_puppy": false,
     "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
     "additives": [],
@@ -9628,7 +9625,7 @@ window.WANKO_FOOD_FACTS = {
       "羊"
     ],
     "ingredient_text": "ラム(肉)、チキンミール、エンドウマメ、乾燥ポテト、鶏脂",
-    "target": "成犬 / 超小型犬〜小型犬",
+    "target": "超小型犬〜小型犬用 成犬用",
     "age": [
       "成犬"
     ],
@@ -9643,8 +9640,8 @@ window.WANKO_FOOD_FACTS = {
     "concern": [],
     "price": 6980,
     "price_date": "2026-09-28",
-    "source": "",
-    "checked": "",
+    "source": "https://nutro.jp/products/wr_d_adult_toy_lamb",
+    "checked": "2026-09-28",
     "limited_puppy": false,
     "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
     "additives": [],
@@ -9658,7 +9655,7 @@ window.WANKO_FOOD_FACTS = {
       "豚"
     ],
     "ingredient_text": "ラム(肉), ラムミール, ポークミール, ヒヨコマメ, 乾燥ポテト",
-    "target": "成犬 / 超小型犬〜小型犬",
+    "target": "超小型犬〜小型犬 成犬用",
     "age": [
       "成犬"
     ],
@@ -9673,8 +9670,8 @@ window.WANKO_FOOD_FACTS = {
     "concern": [],
     "price": 7398,
     "price_date": "2026-09-28",
-    "source": "",
-    "checked": "",
+    "source": "https://nutro.jp/products/supremo_d_adult_toy_grainfree_lamb",
+    "checked": "2026-09-28",
     "limited_puppy": false,
     "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
     "additives": [],
@@ -9688,8 +9685,8 @@ window.WANKO_FOOD_FACTS = {
       "牛",
       "豚"
     ],
-    "ingredient_text": "ビーフ(肉)、エンドウマメ、チキンミール、ポークミール、鶏脂*1*2",
-    "target": "超小型犬〜小型犬、成犬",
+    "ingredient_text": "ビーフ(肉)、エンドウマメ、チキンミール、ポークミール、鶏脂",
+    "target": "超小型犬〜小型犬用 成犬用",
     "age": [
       "成犬"
     ],
@@ -9704,8 +9701,8 @@ window.WANKO_FOOD_FACTS = {
     "concern": [],
     "price": 6980,
     "price_date": "2026-09-28",
-    "source": "",
-    "checked": "",
+    "source": "https://nutro.jp/products/wr_d_adlut_toy_beef",
+    "checked": "2026-09-28",
     "limited_puppy": false,
     "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
     "additives": [],
@@ -9839,8 +9836,8 @@ window.WANKO_FOOD_FACTS = {
     "ingredients": [
       "鶏"
     ],
-    "ingredient_text": "チキン(肉)、チキンミール、エンドウマメ、乾燥ポテト、鶏脂",
-    "target": "成犬 / 超小型犬〜小型犬",
+    "ingredient_text": "チキン(肉), チキンミール, エンドウマメ, 乾燥ポテト, 鶏脂",
+    "target": "超小型犬〜小型犬用 成犬用",
     "age": [
       "成犬"
     ],
@@ -9855,8 +9852,8 @@ window.WANKO_FOOD_FACTS = {
     "concern": [],
     "price": 6980,
     "price_date": "2026-09-28",
-    "source": "",
-    "checked": "",
+    "source": "https://nutro.jp/products/wr_d_adult_toy_chicken",
+    "checked": "2026-09-28",
     "limited_puppy": false,
     "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
     "additives": [],
