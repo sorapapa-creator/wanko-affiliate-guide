@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "source": "https://sorapapa-creator.github.io/wanko-affiliate-guide/",
- "generated_at": "2026-09-30T13:24:46+09:00",
+ "generated_at": "2026-09-30T13:44:25+09:00",
  "places": [
   {
    "id": "la-dog-resort",
@@ -49317,6 +49317,202 @@
     "lat": 35.734699,
     "lon": 140.826569,
     "matched": "千葉県銚子市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-petitmura-com",
+   "type": "spot",
+   "name": "吉祥寺プティット村",
+   "area": "東京都武蔵野市",
+   "region_group": "kanto",
+   "kinds": [
+    "park",
+    "cafe"
+   ],
+   "theme": "さまざまな店舗が集まる小さなテーマパークのような複合施設で、中庭は他のお客様に配慮すれば犬連れでも入場可能です。施設内の「TEA HOUSE はっぱ」ではテラス席でペット同伴の飲食も楽しめます。",
+   "facts": {
+    "犬の条件・同伴範囲": "中庭は他のお客様にご配慮いただけましたら一緒にお入りいただくことが可能です。「TEA HOUSE はっぱ」のテラス席はペットと一緒にご利用いただけます。「Cat Cafe てまりのおしろ」はペットと一緒に店内へお入りいただくことは出来ません。その他の店舗は事前に各店舗のHPよりご確認・お問い合せください。",
+    "料金の目安/犬料金": "吉祥寺プティット村自体の入場料は無料となっております。施設内の店舗のご利用料金に関しましては各店舗のHP をご確認ください。",
+    "持ち物": "記載なし",
+    "雨の日": "記載なし",
+    "出発前に確認": "中庭は平日11:00～20:00、土日祝日は10:00～20:00 のお時間に開放しております。営業時間や定休日は施設内の店舗ごとに異なりますので、各店舗のHP をご確認ください。吉祥寺プティット村自体の入場に関しては予約の必要はございません。",
+    "公式で確認したこと": "中庭での同伴条件、特定店舗での同伴可否、入場料無料、営業時間、予約不要であることが確認できました。"
+   },
+   "links": [
+    {
+     "label": "公式情報",
+     "url": "https://petitmura.com",
+     "affiliate": false
+    },
+    {
+     "label": "施設公式案内",
+     "url": "https://petitmura.com",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c8-petitmura-com",
+   "geocode": {
+    "lat": 35.704613,
+    "lon": 139.57457,
+    "precision": "facility",
+    "source": "official-address",
+    "matched": "東京都武蔵野市吉祥寺本町二丁目３３番２号"
+   },
+   "area_geocode": {
+    "lat": 35.717777,
+    "lon": 139.566116,
+    "matched": "東京都武蔵野市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-ilpiacere-owst-jp",
+   "type": "spot",
+   "name": "イルピアチェーレ",
+   "area": "神奈川県足柄下郡箱根町",
+   "region_group": "kanto",
+   "kinds": [
+    "cafe"
+   ],
+   "theme": "自然豊かな中でティータイムを楽しめるテラス席があり、ペット同席が可能です。基本はランチのみですが、ディナーは17時半ご予約時のみ応相談できます。雨天時はご予約を受け付けておりません。",
+   "facts": {
+    "犬の条件・同伴範囲": "ペットをお連れのお客様はランチタイムのテラス席でご利用いただけます。",
+    "料金の目安/犬料金": "記載なし",
+    "持ち物": "記載なし",
+    "雨の日": "雨天時はご予約受け付けておりません。",
+    "出発前に確認": "基本ランチのみになります。ディナーは17時半ご予約時のみ応相談。雨天時はご予約受け付けておりません。",
+    "公式で確認したこと": "ペット同伴は可であり、ランチタイムのテラス席での利用が可能と記載されている。"
+   },
+   "links": [
+    {
+     "label": "公式情報",
+     "url": "https://ilpiacere.owst.jp",
+     "affiliate": false
+    },
+    {
+     "label": "施設公式案内",
+     "url": "https://ilpiacere.owst.jp",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c8-ilpiacere-owst-jp",
+   "geocode": {
+    "lat": 35.267868,
+    "lon": 139.013794,
+    "precision": "facility",
+    "source": "official-address",
+    "matched": "神奈川県箱根町仙石原９０１番地"
+   },
+   "area_geocode": {
+    "lat": 35.232388,
+    "lon": 139.106949,
+    "matched": "神奈川県足柄下郡箱根町",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-kiwa-group-co-jp-demodeheaven-sagamihara",
+   "type": "spot",
+   "name": "デモデヘブン 相模原",
+   "area": "神奈川県相模原市中央区",
+   "region_group": "kanto",
+   "kinds": [
+    "cafe"
+   ],
+   "theme": "国道16号線から少し入った場所に位置するテラス付きのアメリカンダイナーです。店内だけでなくテラスでも犬同伴が可能で、隠れ家のような2階ロフト席やカウンター席も楽しめます。",
+   "facts": {
+    "犬の条件・同伴範囲": "店内、テラスでの同伴OK",
+    "料金の目安/犬料金": "記載なし",
+    "持ち物": "記載なし",
+    "雨の日": "記載なし",
+    "出発前に確認": "営業時間は月～木・日が11:30-22:00、金・土・祝が11:30-23:00、定休日はなし",
+    "公式で確認したこと": "店内とテラスでの犬同伴が許可されており、営業時間や定休日などの基本情報が記載されている"
+   },
+   "links": [
+    {
+     "label": "公式情報",
+     "url": "https://kiwa-group.co.jp/demodeheaven_sagamihara",
+     "affiliate": false
+    },
+    {
+     "label": "施設公式案内",
+     "url": "https://kiwa-group.co.jp/demodeheaven_sagamihara",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c8-kiwa-group-co-jp-demodeheaven-sagamihara",
+   "geocode": {
+    "lat": 35.573035,
+    "lon": 139.366814,
+    "precision": "facility",
+    "source": "official-map",
+    "matched": "公式ページの地図"
+   },
+   "area_geocode": {
+    "lat": 35.571388,
+    "lon": 139.373337,
+    "matched": "神奈川県相模原市中央区",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-azzurramare-jp-index-html",
+   "type": "spot",
+   "name": "AzzurrA Mare SAJIMA",
+   "area": "神奈川県横須賀市",
+   "region_group": "kanto",
+   "kinds": [
+    "cafe"
+   ],
+   "theme": "湘南エリアの旬な魚や三浦半島の食材を使ったイタリア料理が楽しめます。海目の前の絶景空間で、テラス席の一部でペット同伴が可能です。",
+   "facts": {
+    "犬の条件・同伴範囲": "テラス席の一部にて終日承っております。",
+    "料金の目安/犬料金": "記載なし",
+    "持ち物": "記載なし",
+    "雨の日": "記載なし",
+    "出発前に確認": "席に限りがございますので、あらかじめご予約をいただけますとスムーズなご案内が可能となります。",
+    "公式で確認したこと": "ペット同伴はテラス席の一部のみで、予約が推奨されていることを確認しました。"
+   },
+   "links": [
+    {
+     "label": "公式情報",
+     "url": "https://www.azzurramare.jp/index.html",
+     "affiliate": false
+    },
+    {
+     "label": "施設公式案内",
+     "url": "https://www.azzurramare.jp/index.html",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c8-azzurramare-jp-index-html",
+   "geocode": {
+    "lat": 35.281467,
+    "lon": 139.672226,
+    "matched": "神奈川県横須賀市",
+    "precision": "municipality"
+   },
+   "area_geocode": {
+    "lat": 35.281467,
+    "lon": 139.672226,
+    "matched": "神奈川県横須賀市",
     "precision": "municipality"
    }
   }
