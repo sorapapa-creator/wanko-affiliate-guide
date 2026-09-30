@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "source": "https://sorapapa-creator.github.io/wanko-affiliate-guide/",
- "generated_at": "2026-09-30T16:12:30+09:00",
+ "generated_at": "2026-09-30T16:34:30+09:00",
  "places": [
   {
    "id": "la-dog-resort",
@@ -50492,6 +50492,445 @@
     "lat": 37.065556,
     "lon": 138.876114,
     "matched": "新潟県南魚沼市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-hakuba-lion-adventure-com-activity-dogsup",
+   "type": "spot",
+   "name": "青木湖わんわんSUP（Hakuba Lion Adventure）",
+   "area": "長野県大町市（青木湖）",
+   "region_group": "koshinetsu",
+   "kinds": [
+    "run"
+   ],
+   "theme": "流行りのSUPに大好きなワンちゃんと一緒に乗れるアクティビティです。船のように囲いがないため、湖面を滑るかのように進んでいけます。バランスを崩すと飼い主さんごと湖にドボンと全身ずぶ濡れで楽しめます。",
+   "facts": {
+    "犬の条件・同伴範囲": "愛犬1匹：￥500（25㎏まで）",
+    "料金の目安/犬料金": "1艇レンタル90分：￥3,000〜￥5,000（小学生以上）、愛犬1匹：￥500（25㎏まで）、別途施設使用料お一人様につき1日300円",
+    "持ち物": "記載なし",
+    "雨の日": "川と湖の体験は、雨天決行です ※当社規定の警告レベルに達した場合は中止判断いたします",
+    "出発前に確認": "事前予約が必要になります、開催期間2026年4月25日（土）～10月25日（日） ※5月11日～6月19日は除外日、最少催行人数4名様以上（1名から参加可）",
+    "公式で確認したこと": "青木湖ベースでSUPレンタルを行い、25kgまでの愛犬を同伴できる体験の詳細が記載されている"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://hakuba.lion-adventure.com/activity/dogsup",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c8-hakuba-lion-adventure-com-activity-dogsup",
+   "geocode": {
+    "lat": 36.607445,
+    "lon": 137.856108,
+    "precision": "facility",
+    "source": "official-map",
+    "matched": "公式ページの地図"
+   },
+   "area_geocode": {
+    "lat": 36.502983,
+    "lon": 137.850922,
+    "matched": "長野県大町市",
+    "precision": "approximate"
+   }
+  },
+  {
+   "id": "c8-musee-de-jansem-jp-information-ok",
+   "type": "spot",
+   "name": "安曇野ジャンセン美術館 カフェテラス",
+   "area": "長野県安曇野市",
+   "region_group": "koshinetsu",
+   "kinds": [
+    "cafe"
+   ],
+   "theme": "テラス席ではリードまたはゲージでペット同伴が可能で、店内を通らずお庭から直接入れます。木製デッキ仕様で自然の緑を眺めながらリラックスできます。",
+   "facts": {
+    "犬の条件・同伴範囲": "テラス席のみ。リードをおつけいただくかゲージに入れていただく。美術館への同伴は不可。",
+    "料金の目安/犬料金": "記載なし",
+    "持ち物": "記載なし",
+    "雨の日": "記載なし",
+    "出発前に確認": "美術館への同伴は不可。店内席は動物不可。",
+    "公式で確認したこと": "テラス席でのペット同伴条件と美術館への同伴不可について確認。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "http://www.musee-de-jansem.jp/information/ok",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c8-musee-de-jansem-jp-information-ok",
+   "geocode": {
+    "lat": 36.350101,
+    "lon": 137.841919,
+    "precision": "facility",
+    "source": "official-address",
+    "matched": "長野県安曇野市穂高有明４０１８番地"
+   },
+   "area_geocode": {
+    "lat": 36.303944,
+    "lon": 137.905777,
+    "matched": "長野県安曇野市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-vinsanchi-com-museum-html",
+   "type": "spot",
+   "name": "安曇野ビンサンチ美術館",
+   "area": "長野県安曇野市",
+   "region_group": "koshinetsu",
+   "kinds": [
+    "park"
+   ],
+   "theme": "安曇野の森の中にある美術館で、屋外展示場やガーデンを散歩しながら作品鑑賞ができます。愛犬にレンタルドレスやタキシードを着せて、作品の前や庭で記念撮影を楽しむ体験も提供されています。",
+   "facts": {
+    "犬の条件・同伴範囲": "愛犬にレンタルドレスやタキシードを着せて、作品の前や庭で写真を撮って楽しんでいただけます。",
+    "料金の目安/犬料金": "入館料大人１,２００円、小中生７００円（体験参加時の記載より）。犬の料金は記載なし。",
+    "持ち物": "記載なし",
+    "雨の日": "記載なし",
+    "出発前に確認": "館内・庭での同伴範囲とレンタルドレスの利用方法は公式で確認。",
+    "公式で確認したこと": "愛犬のドレスアップ体験や、体験プログラムの予約方法・料金・定員などが記載されている。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://vinsanchi.com/museum.html",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c8-vinsanchi-com-museum-html",
+   "geocode": {
+    "lat": 36.357368,
+    "lon": 137.819351,
+    "precision": "facility",
+    "source": "official-address",
+    "matched": "長野県安曇野市穂高有明２１８６番地"
+   },
+   "area_geocode": {
+    "lat": 36.303944,
+    "lon": 137.905777,
+    "matched": "長野県安曇野市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-ontake-rope2150-jp-guide",
+   "type": "spot",
+   "name": "おんたけロープウェイ",
+   "area": "長野県木曽郡木曽町",
+   "region_group": "koshinetsu",
+   "kinds": [
+    "park"
+   ],
+   "theme": "ワンちゃん用の乗車券を購入すればロープウェイに乗車可能です。センターハウス内では抱っこやケージ、バッグに入れる必要がありますが、屋外ではリードをつけて歩かせることができます。ただし、レストランや売店への同伴は不可です。",
+   "facts": {
+    "犬の条件・同伴範囲": "センターハウス内は抱っこかケージ、バッグに入れる。レストラン、売店には一緒に入れない。屋外で歩かせるときは必ずリードをつける。登山道や「しらびその小径」には入場不可。",
+    "料金の目安/犬料金": "ワンちゃん乗車料金【往復】500円（片道乗車は不可）",
+    "持ち物": "ワンちゃん用の乗車券（チケット売り場で購入）",
+    "雨の日": "気象状況悪化（雷、風、雨など）により運行休止となる場合があります。",
+    "出発前に確認": "2026年営業期間は4月25日～11月8日の予定。状況により変更や定休日の設定がある場合あり。",
+    "公式で確認したこと": "ワンちゃんの乗車条件、料金、禁止事項、および天候による運休の可能性について記載がある。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://ontake-rope2150.jp/guide",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c8-ontake-rope2150-jp-guide",
+   "geocode": {
+    "lat": 35.901814,
+    "lon": 137.534622,
+    "precision": "facility",
+    "source": "official-map",
+    "matched": "公式ページの地図"
+   },
+   "area_geocode": {
+    "lat": 35.841755,
+    "lon": 137.691223,
+    "matched": "長野県木曽郡木曽町",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-ryokuiku-net-info-h30",
+   "type": "spot",
+   "name": "篠ノ井中央公園",
+   "area": "長野県長野市",
+   "region_group": "koshinetsu",
+   "kinds": [
+    "park"
+   ],
+   "theme": "平成30年1月1日から、指定エリアに限り犬連れでの入園が可能です。マナーを守って散歩を楽しめる公園です。",
+   "facts": {
+    "犬の条件・同伴範囲": "指定エリアに限り、常にリード（引き綱等）でつなぐこと、フンを持ち帰ること、水浴びやブラッシングをしないこと、他人に恐怖感や迷惑を与えないこと",
+    "料金の目安/犬料金": "記載なし",
+    "持ち物": "記載なし",
+    "雨の日": "記載なし",
+    "出発前に確認": "犬と散歩ができるエリアの確認（PDF参照）",
+    "公式で確認したこと": "平成30年1月1日から指定エリアでマナー遵守のもと犬連れ入園が可能であること"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://ryokuiku.net/info/【篠ノ井中央公園】犬連れでの入園について（h30",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c8-ryokuiku-net-info-h30",
+   "geocode": {
+    "lat": 36.571365,
+    "lon": 138.148727,
+    "precision": "district",
+    "source": "official-address",
+    "matched": "長野県長野市篠ノ井会"
+   },
+   "area_geocode": {
+    "lat": 36.648537,
+    "lon": 138.194824,
+    "matched": "長野県長野市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-herb-fuji-com",
+   "type": "spot",
+   "name": "ハーブ庭園 旅日記 富士河口湖庭園",
+   "area": "山梨県南都留郡富士河口湖町",
+   "region_group": "koshinetsu",
+   "kinds": [
+    "park",
+    "cafe"
+   ],
+   "theme": "大型犬を含む全てのワンちゃんが入園できる庭園です。富士山を一望できるデッキスペースでの食事や、専用ドッグランの利用も可能です。",
+   "facts": {
+    "犬の条件・同伴範囲": "庭園内は大型犬含む全てのワンちゃんが入園可能。大温室・ショップ館は大型犬不可。中型・小型犬は抱っこまたはバッグ・カートで入場可。ふじパノラマカフェは店内不可だがデッキスペースで食事可。ふじドッグランあり。",
+    "料金の目安/犬料金": "入園料は無料。ふじさんデッキ（展望台）の利用にはチケットが必要。",
+    "持ち物": "記載なし",
+    "雨の日": "記載なし",
+    "出発前に確認": "年中無休で365日オープン。荒天でお休みする場合はホームページのお知らせ欄にてお知らせ。",
+    "公式で確認したこと": "入園無料、大型犬含む全犬種入園可、カフェはデッキのみ同伴可、ドッグランあり、年中無休であること。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://herb-fuji.com/よくある質問",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c8-herb-fuji-com",
+   "geocode": {
+    "lat": 35.493835,
+    "lon": 138.754791,
+    "precision": "facility",
+    "source": "official-address",
+    "matched": "山梨県富士河口湖町船津１９９６番地"
+   },
+   "area_geocode": {
+    "lat": 35.497223,
+    "lon": 138.755005,
+    "matched": "山梨県南都留郡富士河口湖町",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-asakan-gr-jp-leisure-boat-php",
+   "type": "spot",
+   "name": "山中湖遊覧ボート（旭日丘観光）",
+   "area": "山梨県南都留郡山中湖村",
+   "region_group": "koshinetsu",
+   "kinds": [
+    "park"
+   ],
+   "theme": "愛犬と一緒に自由に湖を遊覧できるスポットです。足こぎスワンボートやエンジン付きボートなど種類が豊富で、湖上ならではの景色を楽しめます。",
+   "facts": {
+    "犬の条件・同伴範囲": "ペットも乗れます",
+    "料金の目安/犬料金": "記載なし",
+    "持ち物": "記載なし",
+    "雨の日": "記載なし",
+    "出発前に確認": "ペットの乗船条件(サイズ・リード等)は受付で確認。",
+    "公式で確認したこと": "複数のボートプランでペット同伴が可能であること、および料金体系を確認しました。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://asakan.gr.jp/leisure_boat.php",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c8-asakan-gr-jp-leisure-boat-php",
+   "geocode": {
+    "lat": 35.410591,
+    "lon": 138.861084,
+    "matched": "山梨県南都留郡山中湖村",
+    "precision": "municipality"
+   },
+   "area_geocode": {
+    "lat": 35.410591,
+    "lon": 138.861084,
+    "matched": "山梨県南都留郡山中湖村",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-minobusanropeway-co-jp-fee",
+   "type": "spot",
+   "name": "身延山ロープウェイ",
+   "area": "山梨県南巨摩郡身延町",
+   "region_group": "koshinetsu",
+   "kinds": [
+    "park"
+   ],
+   "theme": "補助犬はそのまま同伴乗車可能で、他のペットもペット用ケースに入れればゴンドラ内で一緒に楽しめます。大型犬を含む有料ペット代は1匹800円から1,000円です。",
+   "facts": {
+    "犬の条件・同伴範囲": "補助犬（盲導犬・聴導犬・介助犬）はそのまま同伴乗車可能。補助犬を除くペット（小動物）はゴンドラ内のみ、ペット用ケース（体全体がすっぽりと入る物）に入れて頂く事で乗車可能。",
+    "料金の目安/犬料金": "有料ペット（補助犬含む）代として1匹 800円（大型犬 1,000円）",
+    "持ち物": "ペット用ケース（体全体がすっぽりと入る物）。持っていない場合は若干数を用意、お貸ししております。",
+    "雨の日": "記載なし",
+    "出発前に確認": "ペット用ケースをお持ちでない場合は係員にお申し出ください。",
+    "公式で確認したこと": "身延山ロープウェイでは補助犬はそのまま、他のペットはケースに入れて乗車でき、有料ペット代が発生する。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://www.minobusanropeway.co.jp/fee",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c8-minobusanropeway-co-jp-fee",
+   "geocode": {
+    "lat": 35.383338,
+    "lon": 138.41012,
+    "precision": "facility",
+    "source": "official-map",
+    "matched": "公式ページの地図"
+   },
+   "area_geocode": {
+    "lat": 35.467499,
+    "lon": 138.442505,
+    "matched": "山梨県南巨摩郡身延町",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-sakurakagami-com-2026-01-13-post-2971",
+   "type": "spot",
+   "name": "リストランテ桜鏡（御殿場）",
+   "area": "静岡県御殿場市",
+   "region_group": "shizuoka-east",
+   "kinds": [
+    "cafe"
+   ],
+   "theme": "晴天時のみテラス席でペット同伴が可能。雨天時はペット同伴不可となるため、天候確認が必須。",
+   "facts": {
+    "犬の条件・同伴範囲": "晴天時に限りテラス席のみ可能。雨天時は不可。",
+    "料金の目安/犬料金": "記載なし",
+    "持ち物": "記載なし",
+    "雨の日": "雨天時はテラス席がご利用いただけないため、ペット同伴は不可となります。",
+    "出発前に確認": "ご予約当日が雨天の場合は、ペットをお連れでない場合に限り店内席へご案内可能です。雨天によりテラス席のご利用ができずキャンセルされる場合は、キャンセル料を頂戴いたします。",
+    "公式で確認したこと": "ペット同伴は晴天時のテラス席のみ可能であり、雨天時は同伴不可かつキャンセル料が発生する可能性がある。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://sakurakagami.com/2026/01/13/post-2971",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c8-sakurakagami-com-2026-01-13-post-2971",
+   "geocode": {
+    "lat": 35.308693,
+    "lon": 138.934601,
+    "matched": "静岡県御殿場市",
+    "precision": "municipality"
+   },
+   "area_geocode": {
+    "lat": 35.308693,
+    "lon": 138.934601,
+    "matched": "静岡県御殿場市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-friendsraft-com-dog-rafting-fujikawa",
+   "type": "spot",
+   "name": "フレンズ ドッグリバークルーズ（富士川）",
+   "area": "静岡県富士宮市",
+   "region_group": "shizuoka-east",
+   "kinds": [
+    "park"
+   ],
+   "theme": "愛犬が主役になれる特別な川遊び体験で、ボートに乗って川を下ったり、一緒に川に浮かんだりできます。スタッフがしっかりサポートするため、初めてでも安心で、愛犬の楽しそうな姿を一緒に味わえます。",
+   "facts": {
+    "犬の条件・同伴範囲": "狂犬病ワクチン接種済みの犬のみ参加可能。犬用のライフジャケットの持参が必須（レンタル不可）。施設敷地内ではリード着用、マナーパンツ着用推奨（着用しない場合は用足し禁止）。うんちは持ち帰り。犬1頭につき飼い主1名の同乗が必須。",
+    "料金の目安/犬料金": "通常期（4/1〜7/24, 9/14〜10/31）は5人までグループで42,500円、6人以上は犬1頭8,500円。夏季（7/25〜8/31）は5人まで平日45,000円・土日51,000円、6人以上は犬1頭9,000円。秋季（9/1〜9/13）は5人まで平日42,500円・土日45,000円。レンタルシューズ300円。",
+    "持ち物": "犬用ライフジャケット、リード、マナーパンツ、うんち袋、タオル。人間はタオル、水着、かかとのある靴（クロックス・サンダルNG）。",
+    "雨の日": "記載なし",
+    "出発前に確認": "開催期間は4月下旬〜7月中旬、8月下旬〜10月末。8月は河原の熱や犬のケアの観点から受付なし。予約はLINEまたは電話（08:30〜19:00）。5日前17:00までのキャンセルは無料。飲酒・大幅遅刻は100%キャンセル料。",
+    "公式で確認したこと": "富士川サービスエリアスマートICから3分の場所にある、犬同伴可能なリバークルーズ体験の公式ページであること。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://friendsraft.com/dog-rafting-fujikawa",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "has_rain_note": true,
+    "vaccine_required": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c8-friendsraft-com-dog-rafting-fujikawa",
+   "geocode": {
+    "lat": 35.221977,
+    "lon": 138.621613,
+    "matched": "静岡県富士宮市",
+    "precision": "municipality"
+   },
+   "area_geocode": {
+    "lat": 35.221977,
+    "lon": 138.621613,
+    "matched": "静岡県富士宮市",
     "precision": "municipality"
    }
   }
