@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "source": "https://sorapapa-creator.github.io/wanko-affiliate-guide/",
- "generated_at": "2026-09-30T15:38:37+09:00",
+ "generated_at": "2026-09-30T16:12:30+09:00",
  "places": [
   {
    "id": "la-dog-resort",
@@ -49814,6 +49814,684 @@
     "lat": 35.71389,
     "lon": 139.407776,
     "matched": "東京都立川市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-yumenoshima-marina-com-charter-cruise",
+   "type": "spot",
+   "name": "東京夢の島マリーナ（愛犬同伴チャータークルーズ）",
+   "area": "東京都江東区",
+   "region_group": "kanto",
+   "kinds": [
+    "park"
+   ],
+   "theme": "都内最大級のドッグガーデンと併設されたマリーナで、愛犬と一緒に東京湾クルーズを楽しめます。360度開放的なオープン船で、レインボーブリッジやフジテレビを背景に愛犬との写真撮影も可能です。潮風に吹かれながら、他では味わえないプライベートな船上時間を過ごせます。",
+   "facts": {
+    "犬の条件・同伴範囲": "リードの着用が必須。ライフジャケットやおむつの着用推奨。船内にペット用トイレなし。頭数やサイズにより人数調整あり。",
+    "料金の目安/犬料金": "AX220ボート: 平日25,000円(税別)/土日祝30,000円(税別)。G3ポンツーンボート: 平日35,000円(税別)/土日祝50,000円(税別)。",
+    "持ち物": "おやつ、ペットシート。ライフジャケットやおむつ(推奨)。",
+    "雨の日": "記載なし",
+    "出発前に確認": "予約カレンダーの確認。当日の気候や状況により船長がルート判断。季節や日没により運行時間変動。現金払い。",
+    "公式で確認したこと": "愛犬同乗可のチャータークルーズの詳細、料金、および同伴時のルール(リード必須等)を確認。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://yumenoshima-marina.com/charter-cruise",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c8-yumenoshima-marina-com-charter-cruise",
+   "geocode": {
+    "lat": 35.648682,
+    "lon": 139.837799,
+    "precision": "facility",
+    "source": "official-address",
+    "matched": "東京都江東区夢の島三丁目３番"
+   },
+   "area_geocode": {
+    "lat": 35.67318,
+    "lon": 139.817047,
+    "matched": "東京都江東区",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-howldeli-ariake-jp",
+   "type": "spot",
+   "name": "HOWL DELI 〜ハウルデリ〜 有明アーバンスポーツパーク店",
+   "area": "東京都江東区",
+   "region_group": "kanto",
+   "kinds": [
+    "cafe"
+   ],
+   "theme": "愛犬同伴で本格洋食デリを楽しめるペットフレンドリーな空間です。ワンちゃん専用のローストビーフ丼やオーガニックヤギミルクなど、ペット向けメニューも充実しています。200席規模の広々とした共有フードコート型座席で、家族全員が快適に過ごせます。",
+   "facts": {
+    "犬の条件・同伴範囲": "愛犬同伴でお食事をお楽しみいただけるペットフレンドリーな環境。ワンちゃん専用のローストビーフ丼やオーガニックヤギミルクなどのペット向けメニューあり。",
+    "料金の目安/犬料金": "記載なし",
+    "持ち物": "記載なし",
+    "雨の日": "記載なし",
+    "出発前に確認": "営業時間 11:00～21:00、定休日 年末年始。ケータリングは10名様以上から対応。",
+    "公式で確認したこと": "愛犬同伴歓迎の洋食デリとして、ペット向けメニューや広々とした座席、営業時間・定休日などを確認しました。"
+   },
+   "links": [
+    {
+     "label": "公式情報",
+     "url": "https://howldeli-ariake.jp",
+     "affiliate": false
+    },
+    {
+     "label": "施設公式案内",
+     "url": "https://howldeli-ariake.jp",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c8-howldeli-ariake-jp",
+   "geocode": {
+    "lat": 35.639145,
+    "lon": 139.785385,
+    "precision": "facility",
+    "source": "official-address",
+    "matched": "東京都江東区有明一丁目１３番"
+   },
+   "area_geocode": {
+    "lat": 35.67318,
+    "lon": 139.817047,
+    "matched": "東京都江東区",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-mitaketozan-co-jp-ti-dog-html",
+   "type": "spot",
+   "name": "御岳登山鉄道（御岳山ケーブルカー・ペット券）",
+   "area": "東京都青梅市",
+   "region_group": "kanto",
+   "kinds": [
+    "park"
+   ],
+   "theme": "ワンちゃんと散策しやすいお山で、日本狼の神様「おいぬ様」を祀る武蔵御嶽神社での参拝やご祈祷も可能です。ケーブルカーはペット券購入でケージなしで乗車でき、平日ならゆったりと愛犬散歩コースを楽しめます。",
+   "facts": {
+    "犬の条件・同伴範囲": "ペット券購入のうえケージなしでケーブルカーに乗車可能。神社では参拝やご祈祷が可能。散策時は6つのルールを守ること。",
+    "料金の目安/犬料金": "記載なし",
+    "持ち物": "記載なし",
+    "雨の日": "記載なし",
+    "出発前に確認": "散策前に6つのルールをご一読ください。",
+    "公式で確認したこと": "御岳山はワンちゃんと散策でき、ケーブルカーはペット券でケージなし利用可、神社では参拝・祈祷可と確認。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://www.mitaketozan.co.jp/ti_dog.html",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c8-mitaketozan-co-jp-ti-dog-html",
+   "geocode": {
+    "lat": 35.798351,
+    "lon": 139.162048,
+    "precision": "facility",
+    "source": "official-address",
+    "matched": "東京都青梅市御岳二丁目４８３番地"
+   },
+   "area_geocode": {
+    "lat": 35.787956,
+    "lon": 139.275848,
+    "matched": "東京都青梅市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-winds-rafting-jp-tour-dog",
+   "type": "spot",
+   "name": "DOG SUP ツアー（多摩川ラフティング ウィンズ）",
+   "area": "東京都西多摩郡奥多摩町",
+   "region_group": "kanto",
+   "kinds": [
+    "park"
+   ],
+   "theme": "奥多摩の自然に囲まれた穏やかな流れの中で、愛犬と一緒にSUP（スタンドアップパドルボード）に乗って湖を楽しむアクティビティです。ワンちゃんも飼い主さんもリラックスしながら特別な体験ができます。",
+   "facts": {
+    "犬の条件・同伴範囲": "小型犬〜大型犬、基本的な健康状態に問題のないワンちゃん、ワクチン・狂犬病予防接種済み、飼い主さまが犬をコントロールできること。ライフジャケットの着用は必須です。",
+    "料金の目安/犬料金": "小型犬 1,500円（税込）、中型犬 3,000円（税込）、大型犬 4,500円（税込）",
+    "持ち物": "必ず犬用ライフジャケットをご持参ください。排泄物の処理ができるようご準備をお願いいたします。",
+    "雨の日": "記載なし",
+    "出発前に確認": "予約フォームから予約し、備考欄にワンちゃんの頭数とサイズを記載。開催時期・時間は予約カレンダーで確認。ペット保険はご自身で加入。",
+    "公式で確認したこと": "愛犬と一緒にSUPに乗って湖を楽しむアクティビティの参加条件、料金、持ち物、予約方法が記載されている。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://winds-rafting.jp/tour/dog",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "has_rain_note": true,
+    "vaccine_required": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c8-winds-rafting-jp-tour-dog",
+   "geocode": {
+    "lat": 35.809544,
+    "lon": 139.096222,
+    "matched": "東京都西多摩郡奥多摩町",
+    "precision": "municipality"
+   },
+   "area_geocode": {
+    "lat": 35.809544,
+    "lon": 139.096222,
+    "matched": "東京都西多摩郡奥多摩町",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-anthill-co-jp-leon-bianco",
+   "type": "spot",
+   "name": "Wine& Kitchen Leon Bianco",
+   "area": "東京都品川区",
+   "region_group": "kanto",
+   "kinds": [
+    "cafe"
+   ],
+   "theme": "ディナータイムにはワンちゃん連れも大歓迎で、大切な家族のペットとともにリラックスした時間をお過ごしいただけます。武蔵小山のワインバルとして、多彩なワインとリーズナブルなおつまみを楽しめる空間です。",
+   "facts": {
+    "犬の条件・同伴範囲": "ディナータイムのみペット同伴可能です。",
+    "料金の目安/犬料金": "記載なし",
+    "持ち物": "記載なし",
+    "雨の日": "記載なし",
+    "出発前に確認": "営業時間は平日11:30～15:00/17:30～22:00、土日祝11:00～15:00/17:30～22:00、定休日は不定休です。",
+    "公式で確認したこと": "ディナータイムにペット同伴が可能であること、および店舗の所在地と営業時間を確認しました。"
+   },
+   "links": [
+    {
+     "label": "公式情報",
+     "url": "https://www.anthill.co.jp/leon_bianco",
+     "affiliate": false
+    },
+    {
+     "label": "施設公式案内",
+     "url": "https://www.anthill.co.jp/leon_bianco",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c8-anthill-co-jp-leon-bianco",
+   "geocode": {
+    "lat": 35.619764,
+    "lon": 139.703591,
+    "precision": "facility",
+    "source": "official-map",
+    "matched": "公式ページの地図"
+   },
+   "area_geocode": {
+    "lat": 35.608997,
+    "lon": 139.730225,
+    "matched": "東京都品川区",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-icyokohama-pier8-com-plan-dogfriendly",
+   "type": "spot",
+   "name": "Larboard（インターコンチネンタル横浜Pier 8）",
+   "area": "神奈川県横浜市中区",
+   "region_group": "kanto",
+   "kinds": [
+    "cafe"
+   ],
+   "theme": "心地いい海風を感じながらテラスで愛犬と特別なひとときを過ごせます。小型犬から大型犬までサイズ制限がなく、店内ではお水やドッグフード用の器も用意されているため、余分なお荷物なく気軽に利用できます。",
+   "facts": {
+    "犬の条件・同伴範囲": "テラス席のみ。リードの着用が必要。椅子やテーブルへの乗り上げは不可（シート利用で椅子に座ることは可）。排泄物の処理はお客様自身で対応。店舗入口など離れた場所へのつなぎ止めは不可。",
+    "料金の目安/犬料金": "記載なし",
+    "持ち物": "記載なし",
+    "雨の日": "雨天時はテラスへのご案内が出来かねます",
+    "出発前に確認": "4月24日（金）よりサービス開始。入店場所は「横浜ハンマーヘッド」2階からテラスへ直接。",
+    "公式で確認したこと": "Larboardでは4月24日よりテラス限定でドッグフレンドリーサービスを開始し、サイズ制限なくリード着用で利用可能と記載されている。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://icyokohama-pier8.com/plan/dogfriendly",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c8-icyokohama-pier8-com-plan-dogfriendly",
+   "geocode": {
+    "lat": 35.455051,
+    "lon": 139.63855,
+    "precision": "district",
+    "source": "official-address",
+    "matched": "神奈川県横浜市中区新港二丁目"
+   },
+   "area_geocode": {
+    "lat": 35.444721,
+    "lon": 139.642227,
+    "matched": "神奈川県横浜市中区",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-aikawa-park-jp-smarts-index-3",
+   "type": "spot",
+   "name": "県立あいかわ公園",
+   "area": "神奈川県愛甲郡愛川町",
+   "region_group": "kanto",
+   "kinds": [
+    "park"
+   ],
+   "theme": "宮ヶ瀬ダム直下に広がる広大な敷地で、四季折々の景色や大型遊具が楽しめます。犬連れの場合はリード着用が必須ですが、建物内への同伴は禁止されています。",
+   "facts": {
+    "犬の条件・同伴範囲": "散歩は必ずリード着用（伸縮リードの伸ばし利用禁止）、建物内への同伴は禁止（補助犬可）",
+    "料金の目安/犬料金": "記載なし",
+    "持ち物": "記載なし",
+    "雨の日": "遊具が濡れて滑りやすい場合や雨上がりで乾くまで利用を制限する場合があります",
+    "出発前に確認": "建物内は不可。リードは伸ばさずに。",
+    "公式で確認したこと": "犬の散歩はリード着用が必須であり、建物内への同伴は補助犬を除き禁止されている"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "http://www.aikawa-park.jp/smarts/index/3",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c8-aikawa-park-jp-smarts-index-3",
+   "geocode": {
+    "lat": 35.539577,
+    "lon": 139.257156,
+    "precision": "facility",
+    "source": "official-address",
+    "matched": "神奈川県愛川町半原５４２３番地"
+   },
+   "area_geocode": {
+    "lat": 35.528889,
+    "lon": 139.321671,
+    "matched": "神奈川県愛甲郡愛川町",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-st-hakone-yuransen-jp-pet-index-html",
+   "type": "spot",
+   "name": "箱根 芦ノ湖遊覧船",
+   "area": "神奈川県足柄下郡箱根町",
+   "region_group": "kanto",
+   "kinds": [
+    "park"
+   ],
+   "theme": "箱根芦ノ湖を犬連れでクルーズできる遊覧船です。船内ではペットキャリーやバギーでの同伴が基本ですが、3階・4階デッキではリードを付けた状態での歩行が可能です。小型犬用のペットキャリーを無料でレンタルできるサービスも利用できます。",
+   "facts": {
+    "犬の条件・同伴範囲": "狂犬病・混合ワクチンの予防接種必須。船内はペットキャリーやペットバギー（頭や顔が全て隠れるもの）に入れた状態でお願いします。3階・4階デッキのみリードを付けた状態での歩行が可能。レストラン及び売店エリアへの入店は不可。",
+    "料金の目安/犬料金": "ワンちゃんの乗船券（300円/1匹）。レンタルペットキャリーは無料。",
+    "持ち物": "狂犬病・混合ワクチンの予防接種証明書（暗黙の前提）、ペットキャリーまたはペットバギー（頭や顔が全て隠れるもの）。",
+    "雨の日": "記載なし",
+    "出発前に確認": "レンタルペットキャリーは数に限りがあるため、必要な方はスタッフへ申し付けください。",
+    "公式で確認したこと": "箱根芦ノ湖遊覧船での犬同伴のルール、料金、およびデッキでの歩行条件を確認しました。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "http://st.hakone-yuransen.jp/pet/index.html",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "has_rain_note": true,
+    "vaccine_required": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c8-st-hakone-yuransen-jp-pet-index-html",
+   "geocode": {
+    "lat": 35.203037,
+    "lon": 139.030975,
+    "precision": "facility",
+    "source": "official-address",
+    "matched": "神奈川県箱根町元箱根４５番地"
+   },
+   "area_geocode": {
+    "lat": 35.232388,
+    "lon": 139.106949,
+    "matched": "神奈川県足柄下郡箱根町",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-jukkoku-cable-jp-enjoy-pet-html",
+   "type": "spot",
+   "name": "十国峠山頂「天空のドッグラン」",
+   "area": "静岡県田方郡函南町（十国峠）",
+   "region_group": "kanto",
+   "kinds": [
+    "run"
+   ],
+   "theme": "十国峠山頂にある「天空のドッグラン」で、天気が良い日には富士山を眺めながら気持ちの良い芝生広場で愛犬と遊ぶことができます。小型犬専用エリアと犬種フリーエリアの2つがあり、旅の思い出作りに最適です。",
+   "facts": {
+    "犬の条件・同伴範囲": "狂犬病予防および混合ワクチンを接種していること（接種後1年以内）、メスは交配シーズン中でないこと、病気やケガの治療中でないこと、攻撃性がないこと。ドッグラン内ではリードなしで遊べますが、ケーブルカー乗車時はリード装着必須。",
+    "料金の目安/犬料金": "ドッグラン利用料は記載なし（ケーブルカー乗車料としてワンちゃん1匹300円）。",
+    "持ち物": "排泄物処理用の袋（糞は必ず持ち帰り適切に処理すること）。",
+    "雨の日": "雨天・強風等の荒天時または当施設がその他の理由で利用困難と認めた場合は閉鎖する場合があります。",
+    "出発前に確認": "営業時間は9:00～16:45。ケーブルカーを利用されたお客様及び宿泊されたお客様のワンちゃん専用。混雑時は長時間の利用はご遠慮ください。",
+    "公式で確認したこと": "2023年11月11日に営業再開し、ケーブルカー乗車客や宿泊客の犬が利用可能であること。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://www.jukkoku-cable.jp/enjoy/pet.html",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "small_dog_only_mention": true,
+    "has_rain_note": true,
+    "vaccine_required": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c8-jukkoku-cable-jp-enjoy-pet-html",
+   "geocode": {
+    "lat": 35.127235,
+    "lon": 139.040359,
+    "precision": "facility",
+    "source": "official-address",
+    "matched": "静岡県函南町桑原１４００番地"
+   },
+   "area_geocode": {
+    "lat": 35.08889,
+    "lon": 138.953339,
+    "matched": "静岡県田方郡函南町",
+    "precision": "approximate"
+   }
+  },
+  {
+   "id": "c8-restore-sea-jp-page-id-399",
+   "type": "spot",
+   "name": "レストア 観音崎店",
+   "area": "神奈川県横須賀市",
+   "region_group": "kanto",
+   "kinds": [
+    "cafe"
+   ],
+   "theme": "観音崎の絶景オーシャンビューを眺めながらコーヒーとワインを楽しめるカフェ兼ワインショップです。店内・テラス共にわんちゃんOKで、テラスは広く気持ちよく走り回れます。",
+   "facts": {
+    "犬の条件・同伴範囲": "店内・テラス共にわんちゃんOK",
+    "料金の目安/犬料金": "記載なし",
+    "持ち物": "記載なし",
+    "雨の日": "記載なし",
+    "出発前に確認": "テイクアウト＆ケータリングサービスのご予約はインスタグラムのDMもしくは公式ラインで受け付けております",
+    "公式で確認したこと": "店内・テラス共にわんちゃんOKであり、店内で食べられるこだわりのわんちゃんフードやテイクアウト用のわんちゃんフードもご用意している"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://restore-sea.jp/?page_id=399",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c8-restore-sea-jp-page-id-399",
+   "geocode": {
+    "lat": 35.280388,
+    "lon": 139.673203,
+    "precision": "facility",
+    "source": "official-address",
+    "matched": "神奈川県横須賀市日の出町一丁目２番"
+   },
+   "area_geocode": {
+    "lat": 35.281467,
+    "lon": 139.672226,
+    "matched": "神奈川県横須賀市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-sasagawanagare-co-jp-guide",
+   "type": "spot",
+   "name": "笹川流れ観光汽船",
+   "area": "新潟県村上市",
+   "region_group": "koshinetsu",
+   "kinds": [
+    "park"
+   ],
+   "theme": "遊覧船に乗船して笹川流れの絶景を眺めたり、岸壁でカモメと触れ合ったりできる観光施設です。ペットはキャリーケースやゲージなどに入れて乗船可能です。",
+   "facts": {
+    "犬の条件・同伴範囲": "ペットはキャリーケースやゲージ、バッグなどに入れて乗船いただけます。手荷物扱いとなります。",
+    "料金の目安/犬料金": "大人（中学生以上）1,800円（税込）、小人（3〜12歳）800円（税込）、幼児（0〜2歳）無料。ペットの料金は記載なし。",
+    "持ち物": "ペットはキャリーケースやゲージ、バッグなどに入れる必要があります。",
+    "雨の日": "海上が荒天（強風・高波）となった場合は欠航となります。",
+    "出発前に確認": "運航期間：3月末ごろ～11月末ごろ。繁忙時期は予約を受け付けておりません。予約受付締切：乗船予定前日22時まで。",
+    "公式で確認したこと": "ペットはキャリーケースやゲージ、バッグなどに入れて乗船可能であり、手荷物扱いとなること。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://sasagawanagare.co.jp/guide",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c8-sasagawanagare-co-jp-guide",
+   "geocode": {
+    "lat": 38.372921,
+    "lon": 139.457565,
+    "precision": "district",
+    "source": "official-address",
+    "matched": "新潟県村上市桑川"
+   },
+   "area_geocode": {
+    "lat": 38.224163,
+    "lon": 139.480011,
+    "matched": "新潟県村上市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-kaiholo-jp-about",
+   "type": "spot",
+   "name": "ワイナリーリゾートCafe KAIHOLO（カイホロ）",
+   "area": "新潟県胎内市",
+   "region_group": "koshinetsu",
+   "kinds": [
+    "cafe"
+   ],
+   "theme": "テラス席では愛犬と同伴で珈琲や食事を 즐길 수 있으며、芝生の庭や南国の樹々を眺めながらリゾート気分を味わえます。海と山に囲まれたカーブドッチワイナリーリゾート内に位置し、自然豊かな環境が魅力です。",
+   "facts": {
+    "犬の条件・同伴範囲": "テラス席のみ同伴OK。混雑時やワンちゃんの相性によりご利用いただけない場合があります。",
+    "料金の目安/犬料金": "記載なし",
+    "持ち物": "記載なし",
+    "雨の日": "記載なし",
+    "出発前に確認": "混雑時やワンちゃんの相性によりご利用いただけない場合があります。",
+    "公式で確認したこと": "カイホロのテラス席はワンちゃん同伴OKであり、カーブドッチワイナリー内に位置していること。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://kaiholo.jp/about",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c8-kaiholo-jp-about",
+   "geocode": {
+    "lat": 38.059719,
+    "lon": 139.410294,
+    "matched": "新潟県胎内市",
+    "precision": "municipality"
+   },
+   "area_geocode": {
+    "lat": 38.059719,
+    "lon": 139.410294,
+    "matched": "新潟県胎内市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-sadokisen-co-jp-user-guide-with-pet",
+   "type": "spot",
+   "name": "佐渡汽船（ペット同伴乗船）",
+   "area": "新潟県新潟市・佐渡市",
+   "region_group": "koshinetsu",
+   "kinds": [
+    "park"
+   ],
+   "theme": "カーフェリー船内でペットコーナーや冷暖房完備のケージエリアを利用できます。直江津～小木航路の「こがね丸」では、小型・中型犬と過ごせるウィズドッグルームや利用者限定のドッグランも楽しめます。",
+   "facts": {
+    "犬の条件・同伴範囲": "カーフェリーではペットコーナー（自由席）またはペットケージエリア（冷暖房完備、航行中は施錠）で過ごせます。ジェットフォイルは小型ペットのみ運送用容器に入れて携帯可能です。ウィズドッグルームは小型・中型犬（20kg未満）限定で、ドッグラン利用可。",
+    "料金の目安/犬料金": "1匹につきペット料金をいただきます（具体的な金額は記載なし）。身体障害者補助犬は無料。",
+    "持ち物": "運送用容器（ペットケージなど）の使用にご協力をお願いいたします。ケージに入れた状態で名前札をお付けください。",
+    "雨の日": "記載なし",
+    "出発前に確認": "ウィズドッグルームは予約制（空きがあれば当日可）。予約センター営業時間10:00～13:00、14:00～17:00、日・祝・年末年始休業。大型ペットは受付できない場合がございます。",
+    "公式で確認したこと": "佐渡汽船の公式サイトで、ペットとのご乗船に関する料金、船内での過ごし方（カーフェリー・ジェットフォイル）、ウィズドッグルームの予約方法が確認できました。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://www.sadokisen.co.jp/user-guide/with-pet",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "weight_limit_kg_mentions": [
+     20
+    ],
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c8-sadokisen-co-jp-user-guide-with-pet",
+   "geocode": {
+    "lat": 37.929565,
+    "lon": 139.061783,
+    "precision": "facility",
+    "source": "official-address",
+    "matched": "新潟県新潟市中央区万代島９番"
+   },
+   "area_geocode": {
+    "lat": 37.916077,
+    "lon": 139.036545,
+    "matched": "新潟県新潟市",
+    "precision": "approximate"
+   }
+  },
+  {
+   "id": "c8-yuzawa-nakazato-com-summer-forest-adventure",
+   "type": "spot",
+   "name": "フォレストアドベンチャー・湯沢中里",
+   "area": "新潟県南魚沼郡湯沢町",
+   "region_group": "koshinetsu",
+   "kinds": [
+    "park"
+   ],
+   "theme": "専用のハーネスを着用し、森の木から木へ空中を移動していくフランス発祥のアウトドアパークです。大人も子供も楽しめる新しい遊びがいっぱいで、ご家族やお友達同士で森の冒険を楽しめます。",
+   "facts": {
+    "犬の条件・同伴範囲": "法定狂犬病ワクチンを済ませたワンちゃんのみ。特定犬・闘犬は不可。必ず大人(18歳以上)が同伴し、長さ1メートル程度のリードを付けるか短く持つ。放し飼いは禁止で、指定の遊歩道外には出ない。",
+    "料金の目安/犬料金": "大人(18歳以上) ￥4,300～￥4,800、子供(小学4年生〜17歳) ￥3,300～￥3,800、キャノピーコースは年齢に関わらずお1人様 ￥3,300～￥3,800。犬の料金は記載なし。",
+    "持ち物": "水分（両手が自由になるもの）、小さめのバッグ（体にフィットするもの）、カメラ・携帯電話等（両手が自由になるもの）。手袋の着用を推奨。",
+    "雨の日": "雨でも基本的には通常通り営業を行います。ただし、雷、強風、豪雨の際は営業を見合わせる場合がございます。",
+    "出発前に確認": "完全予約制です。現地で直接の予約受付は行っておりません。当日ご利用希望の場合、スタート1時間前までならインターネットからご予約が可能です。",
+    "公式で確認したこと": "ペットの同伴条件、料金体系、予約方法、天候による営業方針などが記載されていることを確認しました。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://www.yuzawa-nakazato.com/summer/forest-adventure",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "has_rain_note": true,
+    "vaccine_required": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c8-yuzawa-nakazato-com-summer-forest-adventure",
+   "geocode": {
+    "lat": 36.918125,
+    "lon": 138.860336,
+    "precision": "facility",
+    "source": "official-address",
+    "matched": "新潟県湯沢町土樽５０４４番地"
+   },
+   "area_geocode": {
+    "lat": 36.933987,
+    "lon": 138.817474,
+    "matched": "新潟県南魚沼郡湯沢町",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-ishiuchi-or-jp-green-veranda-dogfield",
+   "type": "spot",
+   "name": "ザ・ヴェランダ石打丸山",
+   "area": "新潟県南魚沼市",
+   "region_group": "koshinetsu",
+   "kinds": [
+    "run",
+    "park"
+   ],
+   "theme": "夏のスキー場の広々とした草原で、リードなしで愛犬を走らせることができるドッグフィールドが魅力です。専用ドームテントやワンコごはんなど、愛犬と一緒に心安らぐ時間を過ごせる施設です。",
+   "facts": {
+    "犬の条件・同伴範囲": "ドッグフィールド内はリード不要、屋外エリア・展望テラスは要リード、ゴンドラは要ケージ、建物内（テラスカフェ、六華、リゾートセンター）は入場不可",
+    "料金の目安/犬料金": "ペット500円",
+    "持ち物": "ワクチン接種、狂犬病予防接種済みの証明（暗黙の条件）、排泄物処理用品（自己責任）、ケージ（レンタル可）",
+    "雨の日": "記載なし",
+    "出発前に確認": "営業時間（ドッグフィールド 9:30〜16:30）、ドームテントは事前予約または当日受付、ケージレンタルはチケット購入時にお申し出",
+    "公式で確認したこと": "夏季営業期間中はペット同伴可だが、建物内は入場不可であり、ドッグフィールドではリードなしで遊べる"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://ishiuchi.or.jp/green/veranda/dogfield",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "has_rain_note": true,
+    "vaccine_required": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c8-ishiuchi-or-jp-green-veranda-dogfield",
+   "geocode": {
+    "lat": 36.979322,
+    "lon": 138.802411,
+    "precision": "facility",
+    "source": "official-map",
+    "matched": "公式ページの地図"
+   },
+   "area_geocode": {
+    "lat": 37.065556,
+    "lon": 138.876114,
+    "matched": "新潟県南魚沼市",
     "precision": "municipality"
    }
   }
