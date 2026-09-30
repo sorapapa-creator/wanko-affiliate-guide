@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "source": "https://sorapapa-creator.github.io/wanko-affiliate-guide/",
- "generated_at": "2026-09-30T13:44:25+09:00",
+ "generated_at": "2026-09-30T14:18:32+09:00",
  "places": [
   {
    "id": "la-dog-resort",
@@ -49513,6 +49513,275 @@
     "lat": 35.281467,
     "lon": 139.672226,
     "matched": "神奈川県横須賀市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-dog-run-jp",
+   "type": "spot",
+   "name": "ドッグフィールドMAIKO ドッグラン",
+   "area": "新潟県南魚沼市",
+   "region_group": "koshinetsu",
+   "kinds": [
+    "run"
+   ],
+   "theme": "飯士山の麓に広がる自然に囲まれた広さ約3,000坪のドッグランです。ウッドチップを敷き詰め、ペットにも人の足にも優しい環境で、ワンちゃんがノーリードで自由に遊ぶことができます。",
+   "facts": {
+    "犬の条件・同伴範囲": "ノーリードで自由に遊ぶことができる",
+    "料金の目安/犬料金": "記載なし",
+    "持ち物": "記載なし",
+    "雨の日": "記載なし",
+    "出発前に確認": "料金・利用条件(ワクチン証明など)は公式で確認。",
+    "公式で確認したこと": "広さ約3,000坪のドッグランで、一般1回券は880円、市民は660円であること"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://dog-run.jp/施設のご案内/ドッグラン",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c8-dog-run-jp",
+   "geocode": {
+    "lat": 36.987334,
+    "lon": 138.819765,
+    "precision": "facility",
+    "source": "official-map",
+    "matched": "公式ページの地図"
+   },
+   "area_geocode": {
+    "lat": 37.065556,
+    "lon": 138.876114,
+    "matched": "新潟県南魚沼市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-hotakajinja-com",
+   "type": "spot",
+   "name": "穗髙神社（犬とお参りができる神社）",
+   "area": "長野県安曇野市",
+   "region_group": "koshinetsu",
+   "kinds": [
+    "park"
+   ],
+   "theme": "犬連れで参拝が可能なお寺です。常にリードを短く持ち、境内での排泄を禁止するなどマナーを守ることが求められます。しつけのできていないペットは参拝を遠慮するよう案内されています。",
+   "facts": {
+    "犬の条件・同伴範囲": "常に引綱・リード等をし、短く持つこと。境内ではフンをさせないこと。万が一、フンをしてしまった場合は持ち帰ること。石造物や樹木への尿はさせないこと。他人に迷惑となる行為、恐怖感を与える行為をしないこと。神社職員の注意指導を聞き守ること。マナーを守れない方、しつけのできていないペットはお参りをご遠慮頂きます。",
+    "料金の目安/犬料金": "記載なし",
+    "持ち物": "記載なし",
+    "雨の日": "記載なし",
+    "出発前に確認": "マナーを守れない方、しつけのできていないペットはお参りをご遠慮頂きます。",
+    "公式で確認したこと": "犬は常にリードを短く持ち、境内での排泄禁止、マナー遵守が必須であることが確認できました。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://hotakajinja.com/犬とお参りができる穗髙神社",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c8-hotakajinja-com",
+   "geocode": {
+    "lat": 36.338837,
+    "lon": 137.884232,
+    "precision": "facility",
+    "source": "official-address",
+    "matched": "長野県安曇野市穂高６０７９番地"
+   },
+   "area_geocode": {
+    "lat": 36.303944,
+    "lon": 137.905777,
+    "matched": "長野県安曇野市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-ykj-or-jp-asamaen-grape-html",
+   "type": "spot",
+   "name": "浅間園（フルーツ狩り）",
+   "area": "山梨県笛吹市",
+   "region_group": "koshinetsu",
+   "kinds": [
+    "park"
+   ],
+   "theme": "日本一のフルーツの里として知られ、40分間畑の中で自分でぶどうを摘み取って食べ放題が楽しめます。ペット同伴が可能で、有料ですが一緒に体験できます。",
+   "facts": {
+    "犬の条件・同伴範囲": "ペット同伴可。本年からフルーツ狩りのペットの入園は有料（1頭につき500円税込み）。身体障害者補助犬は無料。",
+    "料金の目安/犬料金": "個人料金：大人1600円〜2800円(税込)、小人1500円〜2500円(税込)。ペット料金：1頭につき500円(税込み)。",
+    "持ち物": "雨具、歩きやすい靴・服装。大きいバック、袋物の畑への持ち込みは不可（貴重品・マスク等感染防止グッズのみ可）。",
+    "雨の日": "雨天時も営業いたしますが、畑には屋根はありませんので雨具をご持参ください。巨峰狩り・シャインマスカット狩りは雨天用の畑はありません。",
+    "出発前に確認": "要予約。営業時間8:30～14:30(最終受付)。11月1日以降は最終受付が14:30。",
+    "公式で確認したこと": "ペット同伴可だが有料(500円/頭)であること、雨天時は雨具持参が必要であること、予約が必要であることを確認。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "http://www.ykj.or.jp/asamaen/Grape.html",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c8-ykj-or-jp-asamaen-grape-html",
+   "geocode": {
+    "lat": 35.647251,
+    "lon": 138.639801,
+    "matched": "山梨県笛吹市",
+    "precision": "municipality"
+   },
+   "area_geocode": {
+    "lat": 35.647251,
+    "lon": 138.639801,
+    "matched": "山梨県笛吹市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-nakagominouen-com-pages-71",
+   "type": "spot",
+   "name": "中込農園（フルーツ狩り）",
+   "area": "山梨県南アルプス市",
+   "region_group": "koshinetsu",
+   "kinds": [
+    "park"
+   ],
+   "theme": "小型犬のみ同伴可能で、籠に入れる等の配慮があれば入園できます。果物狩りを楽しめる観光農園です。",
+   "facts": {
+    "犬の条件・同伴範囲": "小型犬のみ。大型・中型犬は不可。原則として籠に入れること。ノミ・ダニ駆除、各種予防接種済みであること。",
+    "料金の目安/犬料金": "記載なし",
+    "持ち物": "記載なし",
+    "雨の日": "記載なし",
+    "出発前に確認": "来園前にあらかじめ排泄を促すこと。",
+    "公式で確認したこと": "ペット同伴は小型犬のみ許可され、籠に入れる等の配慮と衛生管理が条件とされている。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://nakagominouen.com/pages/71",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "small_dog_only_mention": true,
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c8-nakagominouen-com-pages-71",
+   "geocode": {
+    "lat": 35.645447,
+    "lon": 138.458817,
+    "precision": "facility",
+    "source": "official-address",
+    "matched": "山梨県南アルプス市飯野２２８１番地"
+   },
+   "area_geocode": {
+    "lat": 35.608334,
+    "lon": 138.464996,
+    "matched": "山梨県南アルプス市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-marisa-hamanako-owst-jp",
+   "type": "spot",
+   "name": "マリーザ 浜名湖",
+   "area": "静岡県浜松市浜名区",
+   "region_group": "shizuoka-east",
+   "kinds": [
+    "cafe"
+   ],
+   "theme": "イタリア世界ピッツァ選手権優勝の実績を誇る本格ピッツァと自慢のパスタが楽しめるカフェです。風が爽やかな屋外テラスやサンルーム風の屋内テラス席があり、ペット同伴でリラックスした時間を過ごせます。",
+   "facts": {
+    "犬の条件・同伴範囲": "テラス席のみ同伴可（屋外テラス&サンルーム風の屋内テラス席）",
+    "料金の目安/犬料金": "記載なし",
+    "持ち物": "記載なし",
+    "雨の日": "サンルーム風の屋内テラス席あり",
+    "出発前に確認": "営業時間 11:00～20:30、定休日 不定休",
+    "公式で確認したこと": "ペット同伴可であり、テラス席（屋外およびサンルーム風屋内）での利用が可能であること"
+   },
+   "links": [
+    {
+     "label": "公式情報",
+     "url": "https://marisa-hamanako.owst.jp",
+     "affiliate": false
+    },
+    {
+     "label": "施設公式案内",
+     "url": "https://marisa-hamanako.owst.jp",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c8-marisa-hamanako-owst-jp",
+   "geocode": {
+    "lat": 34.803772,
+    "lon": 137.660812,
+    "precision": "facility",
+    "source": "official-address",
+    "matched": "静岡県浜松市浜名区細江町中川５３８６番地"
+   },
+   "area_geocode": {
+    "lat": 34.791546,
+    "lon": 137.783157,
+    "matched": "静岡県浜松市浜名区",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-hattasan-or-jp-newwp-archives-5075",
+   "type": "spot",
+   "name": "法多山 尊永寺",
+   "area": "静岡県袋井市",
+   "region_group": "shizuoka-east",
+   "kinds": [
+    "park"
+   ],
+   "theme": "大切なご家族であるペットと共にご参拝をしていただくことができます。境内は仏様や神様がおわす清らかな祈りの場でもございます。すべての方が心穏やかに気持ちよくお参りできますよう、皆様にいくつかのお願いがございます。",
+   "facts": {
+    "犬の条件・同伴範囲": "本堂ならびにお堂などの寺院の建物内、およびだんご茶屋の店内へのお立ち入りはご遠慮いただいております。（抱っこをされている場合や、ケージに入っている場合も同様となります）",
+    "料金の目安/犬料金": "記載なし",
+    "持ち物": "排泄物は必ずお持ち帰りくださいませ",
+    "雨の日": "記載なし",
+    "出発前に確認": "境内を歩かれる際は、周りの方へのご配慮として、必ずリードをお着けいただき、飼い主様の手元で短くお持ちくださいますようお願いいたします。",
+    "公式で確認したこと": "ペットと共にご参拝が可能だが、建物内への立ち入りは不可であり、リード着用と排泄物の持ち帰りが必須である。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://www.hattasan.or.jp/newwp/archives/5075",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c8-hattasan-or-jp-newwp-archives-5075",
+   "geocode": {
+    "lat": 34.740025,
+    "lon": 137.977585,
+    "precision": "facility",
+    "source": "official-address",
+    "matched": "静岡県袋井市豊沢２７７７番地"
+   },
+   "area_geocode": {
+    "lat": 34.750278,
+    "lon": 137.925003,
+    "matched": "静岡県袋井市",
     "precision": "municipality"
    }
   }
