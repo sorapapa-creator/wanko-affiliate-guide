@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "source": "https://sorapapa-creator.github.io/wanko-affiliate-guide/",
- "generated_at": "2026-09-30T12:37:51+09:00",
+ "generated_at": "2026-09-30T12:52:27+09:00",
  "places": [
   {
    "id": "la-dog-resort",
@@ -22108,6 +22108,1090 @@
     "lat": 35.381248,
     "lon": 139.924896,
     "matched": "千葉県木更津市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-00082225",
+   "type": "lodging",
+   "name": "ORDA HOTEL",
+   "area": "千葉県千葉市中央区",
+   "co_sleep": "添い寝 予約前確認",
+   "facts": {
+    "対象犬・頭数": "生後4ヶ月以上かつ体重10kg以下のワンちゃんとし、家庭犬として最低限のしつけがされており、トイレのしつけや無駄吠え、咬み癖等で迷惑をかけないこと。狂犬病予防ワクチンおよびウイルス性伝染病の混合ワクチン(5種以上)を接種済で、接種後2週間以上1年未満であり、その接種証明証のコピーまたは同意書に接種詳細をご記入いただき、当ホテルへ提出いただけること。",
+    "犬の宿泊料金": "2匹目のワンちゃんは1泊につき5,000円の追加料金がかかります。",
+    "ケージ・持参判断": "あり(完備)。ケージやペット用ベッド、トイレなども完備しております。",
+    "夜はどこで寝る？": "客室(ケージやペット用ベッド、トイレなども完備)",
+    "食事同伴": "予約前確認",
+    "ドッグラン": "予約前確認(公式に記載なし)",
+    "予約前の重要確認": "1匹目の犬の宿泊料金、食事の場での同伴可否、添い寝の可否"
+   },
+   "links": [
+    {
+     "label": "公式の条件を確認",
+     "url": "https://ordahotel.jp/pet",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでORDA HOTELの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00082225/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "weight_limit_kg_mentions": [
+     10
+    ],
+    "cert_required": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
+   "geocode": {
+    "lat": 35.609234,
+    "lon": 140.122681,
+    "precision": "facility",
+    "source": "official-address",
+    "matched": "千葉県千葉市中央区中央三丁目６番１号"
+   },
+   "area_geocode": {
+    "lat": 35.607414,
+    "lon": 140.122833,
+    "matched": "千葉県千葉市中央区",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-00902815",
+   "type": "lodging",
+   "name": "太陽と星が輝く宿 季楽～KIRA～",
+   "area": "千葉県いすみ市",
+   "co_sleep": "添い寝 不可",
+   "facts": {
+    "対象犬・頭数": "飼い主様ご本人のワンちゃんのみで、最大小型犬2頭を上限とします。大型犬・中型犬は大きさ相談で1頭までです。きちんと躾ができていること（トイレ・散歩時の外での排泄、基本コマンド、無駄吠えなし、人を噛まない）が条件です。",
+    "犬の宿泊料金": "1頭につき1泊2000円（税別）",
+    "ケージ・持参判断": "あり（持参）。ゲージの利用・滞在のみに限ります。 ゲージの持参が必要です。",
+    "夜はどこで寝る？": "客室（「海」の部屋）内のゲージ内 ワンちゃんはゲージでの利用のみで、お客様用の布団やベッドに入れないようにしてください。",
+    "食事同伴": "不可（食事の場への同伴禁止）。ワンちゃんの食事はガーデンスペースで与えてください。",
+    "ドッグラン": "予約前確認(公式に記載なし)",
+    "予約前の重要確認": "ワクチン証明の提出義務（狂犬病・混合ワクチン）、ノミ・ダニ対策の詳細、中型犬・大型犬の具体的なサイズ基準、食事同伴の可否（本文では禁止と記載）、ケージのサイズ制限"
+   },
+   "links": [
+    {
+     "label": "公式の条件を確認",
+     "url": "https://kira-resort.com/facility/",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで太陽と星が輝く宿 季楽～KIRA～の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00902815/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {},
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
+   "geocode": {
+    "lat": 35.338971,
+    "lon": 140.372496,
+    "precision": "facility",
+    "source": "official-map",
+    "matched": "公式ページの地図"
+   },
+   "area_geocode": {
+    "lat": 35.253887,
+    "lon": 140.385284,
+    "matched": "千葉県いすみ市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-00904717",
+   "type": "lodging",
+   "name": "Hota Beach",
+   "area": "千葉県安房郡鋸南町",
+   "co_sleep": "添い寝 予約前確認",
+   "facts": {
+    "対象犬・頭数": "愛犬は大人のご宿泊様の人数まで無料、それ以上は1頭増えるごとに2,000円です。コテージ内では室内も含め、ご自宅同様に、すべてノーリードでお過ごしいただけます。",
+    "犬の宿泊料金": "大人のご宿泊様の人数まで無料、それ以上は1頭増えるごとに2,000円",
+    "ケージ・持参判断": "予約前確認",
+    "夜はどこで寝る？": "客室（コテージ内）",
+    "食事同伴": "予約前確認",
+    "ドッグラン": "あり。塀と垣根に守られた緑の中庭は、プライベートなドッグラン。",
+    "予約前の重要確認": "ケージの用意、食事の場の同伴可否、ワクチン等の健康条件"
+   },
+   "links": [
+    {
+     "label": "公式の条件を確認",
+     "url": "https://hota-beach.com/dogrestaurants",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでHota Beachの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00904717/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {},
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
+   "geocode": {
+    "lat": 35.149078,
+    "lon": 139.857834,
+    "precision": "district",
+    "source": "official-address",
+    "matched": "千葉県鋸南町保田"
+   },
+   "area_geocode": {
+    "lat": 35.111038,
+    "lon": 139.835541,
+    "matched": "千葉県安房郡鋸南町",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-00912197",
+   "type": "lodging",
+   "name": "and SEA 鴨川",
+   "area": "千葉県鴨川市",
+   "co_sleep": "添い寝 予約前確認",
+   "facts": {
+    "対象犬・頭数": "中型犬まで同伴可能です。トイレのしつけができていないペットは断られる場合があります。",
+    "犬の宿泊料金": "清掃代として、ペット1匹に対し¥6,600",
+    "ケージ・持参判断": "用意なし(持参)。ペットトイレやゲージなどのご用意はございません。 ペットトイレやゲージなどのご用意はございません。ご自身でご用意ください。",
+    "夜はどこで寝る？": "客室",
+    "食事同伴": "予約前確認",
+    "ドッグラン": "予約前確認",
+    "予約前の重要確認": "犬の頭数制限、ワクチン証明の有無、添い寝の可否、食事時の同伴可否、大型犬の可否"
+   },
+   "links": [
+    {
+     "label": "公式の条件を確認",
+     "url": "https://www.and-sea.com/",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでand SEA 鴨川の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00912197/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {},
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
+   "geocode": {
+    "lat": 35.12417,
+    "lon": 140.132053,
+    "precision": "facility",
+    "source": "official-map",
+    "matched": "公式ページの地図"
+   },
+   "area_geocode": {
+    "lat": 35.114075,
+    "lon": 140.098953,
+    "matched": "千葉県鴨川市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-00912516",
+   "type": "lodging",
+   "name": "いすみベース",
+   "area": "千葉県いすみ市",
+   "co_sleep": "添い寝 不可",
+   "facts": {
+    "対象犬・頭数": "小型犬2頭まで同伴可能です。ケージの持参が必須です。",
+    "犬の宿泊料金": "予約前確認",
+    "ケージ・持参判断": "用意なし(持参) ケージ持参必須",
+    "夜はどこで寝る？": "客室内のケージ又はサークル内 ワンちゃんを絶対に布団で寝かせないでください。就寝時はケージ又はサークル内に入れてください。",
+    "食事同伴": "予約前確認",
+    "ドッグラン": "予約前確認(公式に記載なし)",
+    "予約前の重要確認": "食事の場での同伴可否、ワクチン証明の有無、大型犬の可否"
+   },
+   "links": [
+    {
+     "label": "公式の条件を確認",
+     "url": "https://isumibase.com/",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでいすみベースの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00912516/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {},
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
+   "geocode": {
+    "lat": 35.314102,
+    "lon": 140.408478,
+    "precision": "facility",
+    "source": "official-address",
+    "matched": "千葉県いすみ市岬町和泉２４２８番地"
+   },
+   "area_geocode": {
+    "lat": 35.253887,
+    "lon": 140.385284,
+    "matched": "千葉県いすみ市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-00913326",
+   "type": "lodging",
+   "name": "and SEA The Terrace",
+   "area": "千葉県鴨川市",
+   "co_sleep": "添い寝 予約前確認",
+   "facts": {
+    "対象犬・頭数": "中型犬まで同伴可能です。トイレのしつけができている必要があります。",
+    "犬の宿泊料金": "清掃代として、ペット1匹に対し¥6000",
+    "ケージ・持参判断": "用意なし(持参)。ペットトイレやゲージなどのご用意はございません。 ペットトイレやゲージなどのご用意はございません。ご自身でご用意ください。",
+    "夜はどこで寝る？": "客室",
+    "食事同伴": "予約前確認",
+    "ドッグラン": "予約前確認",
+    "予約前の重要確認": "犬の頭数制限、ワクチン証明の有無、添い寝の可否、食事時の同伴可否、犬同伴可能な客室の特定"
+   },
+   "links": [
+    {
+     "label": "公式の条件を確認",
+     "url": "https://www.andsea-terrace.com/",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでand SEA The Terraceの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00913326/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {},
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
+   "geocode": {
+    "lat": 35.124211,
+    "lon": 140.131972,
+    "precision": "facility",
+    "source": "official-map",
+    "matched": "公式ページの地図"
+   },
+   "area_geocode": {
+    "lat": 35.114075,
+    "lon": 140.098953,
+    "matched": "千葉県鴨川市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-00914120",
+   "type": "lodging",
+   "name": "Private Villa オーシャンリゾート館山 プールハウス",
+   "area": "千葉県館山市",
+   "co_sleep": "添い寝 予約前確認",
+   "facts": {
+    "対象犬・頭数": "ペット宿泊が可能で、室内やテラスで一緒に過ごせます。具体的な大きさ・頭数・ワクチン等の条件は記載がなく、予約時に相談が必要です。",
+    "犬の宿泊料金": "予約前確認",
+    "ケージ・持参判断": "予約前確認",
+    "夜はどこで寝る？": "客室(室内)",
+    "食事同伴": "可(条件付き)。素泊まりで食材はお客様ご自身でご準備いただきます。",
+    "ドッグラン": "予約前確認(公式に記載なし)",
+    "予約前の重要確認": "ペット同伴料金、同伴できる犬の頭数・サイズ・ワクチン証明の有無、ケージの用意・持参の要否、ベッドでの添い寝の可否、食事時の同伴ルール"
+   },
+   "links": [
+    {
+     "label": "公式の条件を確認",
+     "url": "https://oceanresort.asia/pool_house.html",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでPrivate Villa オーシャンリゾート館山 プールハウスの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00914120/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "vaccine_required": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
+   "geocode": {
+    "lat": 34.996468,
+    "lon": 139.870041,
+    "matched": "千葉県館山市",
+    "precision": "municipality"
+   },
+   "area_geocode": {
+    "lat": 34.996468,
+    "lon": 139.870041,
+    "matched": "千葉県館山市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-00914381",
+   "type": "lodging",
+   "name": "シーカレント ゆな CHIKURA",
+   "area": "千葉県南房総市",
+   "co_sleep": "添い寝 不可",
+   "facts": {
+    "対象犬・頭数": "小型犬・中型犬は1匹まで無料です。大型犬（25kg以上）または2匹目からは清掃代として2,000円追加となります。",
+    "犬の宿泊料金": "小型犬・中型犬1匹まで無料。大型犬(25kg以上)または2匹目から2,000円/頭(課金単位は予約前確認)",
+    "ケージ・持参判断": "用意なし(持参) ペットのための道具はお客様自身でご準備下さい",
+    "夜はどこで寝る？": "1階 布団で一緒に寝る行為は厳禁です。違反した場合はクリーニング代を請求させて頂きます。",
+    "食事同伴": "予約前確認",
+    "ドッグラン": "予約前確認(公式に記載なし)",
+    "予約前の重要確認": "食事の場での同伴可否、ワクチン証明の有無、具体的なケージのサイズ制限"
+   },
+   "links": [
+    {
+     "label": "公式の条件を確認",
+     "url": "https://www.seacurrentyuna.com/よくある質問/",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでシーカレント ゆな CHIKURAの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00914381/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {},
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
+   "geocode": {
+    "lat": 34.968369,
+    "lon": 139.950745,
+    "precision": "district",
+    "source": "official-address",
+    "matched": "千葉県南房総市千倉町北朝夷"
+   },
+   "area_geocode": {
+    "lat": 35.043152,
+    "lon": 139.839981,
+    "matched": "千葉県南房総市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-00914404",
+   "type": "lodging",
+   "name": "いろりの小屋",
+   "area": "千葉県南房総市",
+   "co_sleep": "添い寝 予約前確認",
+   "facts": {
+    "対象犬・頭数": "小型犬から中型犬までで、大型犬は現在お受けしておりません。狂犬病や伝染病のワクチン接種が必須で、トイレのしつけができている必要があります。ゲージの関係上、予約は2頭までとし、3頭目からは予約前にご相談ください。",
+    "犬の宿泊料金": "1頭目 0円、2頭目 500円（税込550円）",
+    "ケージ・持参判断": "あり（ゲージの関係上2頭迄としております）",
+    "夜はどこで寝る？": "客室（ゲージ内）",
+    "食事同伴": "可（BBQ設備は無料、食材持参）",
+    "ドッグラン": "あり（プライベートドッグラン、ノーリードで利用可）",
+    "予約前の重要確認": "添い寝の可否、食事の場での同伴条件（室内での食事可否）、ワクチン証明書の提出方法"
+   },
+   "links": [
+    {
+     "label": "公式の条件を確認",
+     "url": "https://www.villafarotto.com/review/",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでいろりの小屋の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00914404/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "vaccine_required": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
+   "geocode": {
+    "lat": 34.968269,
+    "lon": 139.909354,
+    "precision": "facility",
+    "source": "official-map",
+    "matched": "公式ページの地図"
+   },
+   "area_geocode": {
+    "lat": 35.043152,
+    "lon": 139.839981,
+    "matched": "千葉県南房総市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-00914406",
+   "type": "lodging",
+   "name": "DANQOO",
+   "area": "千葉県南房総市",
+   "co_sleep": "添い寝 予約前確認",
+   "facts": {
+    "対象犬・頭数": "生後6ヶ月以上で体重10kgまでの小型犬に限ります。狂犬病および5種以上の混合ワクチンの接種後2週間以上1年未満であること、ノミ・マダニの駆除対策済みであること、基本的なしつけができていることが条件です。1部屋につき2頭まで同伴可能です。",
+    "犬の宿泊料金": "予約前確認",
+    "ケージ・持参判断": "あり(客室に備え付け)",
+    "夜はどこで寝る？": "客室(ゲージやベッドなど)",
+    "食事同伴": "可(完全個室のダイニングにて、愛犬用のダイニングチェアと特製のお食事を提供)",
+    "ドッグラン": "あり(300坪のドッグランと屋上ドッグランの2面。無料・時間制限なし・夜間照明あり)",
+    "予約前の重要確認": "犬の宿泊料金、ベッドでの添い寝の可否、大型犬以外の中型犬の対応"
+   },
+   "links": [
+    {
+     "label": "公式の条件を確認",
+     "url": "https://www.danqoo.jp/",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでDANQOOの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00914406/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {},
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
+   "geocode": {
+    "lat": 35.094154,
+    "lon": 139.844254,
+    "precision": "district",
+    "source": "official-address",
+    "matched": "千葉県南房総市久枝"
+   },
+   "area_geocode": {
+    "lat": 35.043152,
+    "lon": 139.839981,
+    "matched": "千葉県南房総市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-00914533",
+   "type": "lodging",
+   "name": "TACO GLAMP(タコグランピング)",
+   "area": "千葉県香取郡",
+   "co_sleep": "添い寝 予約前確認",
+   "facts": {
+    "対象犬・頭数": "犬・猫・鳥・うさぎが宿泊可能で、頭数の制限はありません。狂犬病や混合ワクチンの接種が難しい場合でも宿泊いただけますが、予約時にペット同伴規約の確認が必要です。",
+    "犬の宿泊料金": "3,300円/頭",
+    "ケージ・持参判断": "あり。1サイトにつき1つのみご用意となります。2匹以上の場合には交代でご利用ください。 2匹以上の場合には交代でご利用ください。",
+    "夜はどこで寝る？": "客室(テント内)または客室のケージ内",
+    "食事同伴": "予約前確認",
+    "ドッグラン": "予約前確認(公式に記載なし)",
+    "予約前の重要確認": "食事の場に犬を同伴できるか、人の寝具で犬が一緒に寝てよいか"
+   },
+   "links": [
+    {
+     "label": "公式の条件を確認",
+     "url": "https://www.tacoglamp.com/glamping/tent.html",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでTACO GLAMPの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00914533/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {},
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
+   "geocode": null
+  },
+  {
+   "id": "c8-00914630",
+   "type": "lodging",
+   "name": "プレジャーポイント一宮",
+   "area": "千葉県長生郡",
+   "co_sleep": "添い寝 不可",
+   "facts": {
+    "対象犬・頭数": "小型犬は無料、中型〜大型犬は大人一人分のご料金をいただきます。室内での同伴は可能ですが、寝具の上は厳禁です。",
+    "犬の宿泊料金": "小型犬：無料、中型〜大型犬：大人一人分のご料金をいただきます",
+    "ケージ・持参判断": "予約前確認",
+    "夜はどこで寝る？": "客室内（寝具の上不可） 室内ok。ただし寝具の上は厳禁。",
+    "食事同伴": "予約前確認",
+    "ドッグラン": "予約前確認(公式に記載なし)",
+    "予約前の重要確認": "ケージの用意、食事の場での同伴可否、ワクチン等の健康条件、具体的な犬の頭数制限"
+   },
+   "links": [
+    {
+     "label": "公式の条件を確認",
+     "url": "https://pleasurepoint.life/information/",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでプレジャーポイント一宮の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00914630/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {},
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
+   "geocode": null
+  },
+  {
+   "id": "c8-00914987",
+   "type": "lodging",
+   "name": "ドリームドームグランピングスタジオ市原",
+   "area": "千葉県市原市",
+   "co_sleep": "添い寝 予約前確認",
+   "facts": {
+    "対象犬・頭数": "ペット同伴でのご宿泊が可能ですが、ペット専用施設ではございません。屋外の芝生スペースをご利用の際は、必ず20mリードを着用のうえ、飼い主様の目の届く範囲でお過ごしください。",
+    "犬の宿泊料金": "予約前確認",
+    "ケージ・持参判断": "ペット専用の布テントをご用意しております",
+    "夜はどこで寝る？": "ペット専用の布テント",
+    "食事同伴": "予約前確認",
+    "ドッグラン": "柵で完全に囲われたドッグランではございません。屋外の芝生スペースは、ワンちゃん連れのお客様にもご好評をいただいておりますが、柵の隙間や屋外環境にご不安を感じられる場合がございます。",
+    "予約前の重要確認": "犬の宿泊料金、犬の頭数制限、犬の大きさ・ワクチン等の条件、食事時の同伴可否、ケージ持参の必要性"
+   },
+   "links": [
+    {
+     "label": "公式の条件を確認",
+     "url": "https://dreamdomeglampingstudio.com/room/",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでドリームドームグランピングスタジオ市原の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00914987/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "vaccine_required": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
+   "geocode": {
+    "lat": 35.484558,
+    "lon": 140.190842,
+    "precision": "facility",
+    "source": "official-address",
+    "matched": "千葉県市原市犬成８５８番地"
+   },
+   "area_geocode": {
+    "lat": 35.498055,
+    "lon": 140.115555,
+    "matched": "千葉県市原市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-00915462",
+   "type": "lodging",
+   "name": "ISUMI Glamping Resort & Spa SOLAS",
+   "area": "千葉県いすみ市",
+   "co_sleep": "添い寝 予約前確認",
+   "facts": {
+    "対象犬・頭数": "ペットドームテント3部屋で宿泊可能です。大型動物（体重制限あり）や毒を持つ生物、危害を加える可能性のある動物は宿泊不可です。",
+    "犬の宿泊料金": "予約前確認",
+    "ケージ・持参判断": "室内にケージが完備されています。",
+    "夜はどこで寝る？": "客室内（ケージ完備）",
+    "食事同伴": "予約前確認",
+    "ドッグラン": "あり。全客室に専用のドッグランが併設されています。",
+    "予約前の重要確認": "犬の宿泊料金、犬の頭数制限、ワクチン証明の有無、食事への同伴可否、添い寝の可否"
+   },
+   "links": [
+    {
+     "label": "公式の条件を確認",
+     "url": "https://solas-glamping.jp/blog/わんちゃん以外も泊まれるペットフリープランを/",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでISUMI Glamping Resort & Spa SOLASの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00915462/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {},
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
+   "geocode": {
+    "lat": 35.225021,
+    "lon": 140.370911,
+    "precision": "facility",
+    "source": "official-address",
+    "matched": "千葉県いすみ市釈迦谷１６１０番地"
+   },
+   "area_geocode": {
+    "lat": 35.253887,
+    "lon": 140.385284,
+    "matched": "千葉県いすみ市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-00915794",
+   "type": "lodging",
+   "name": "ETOWA KISARAZU（エトワ木更津）",
+   "area": "千葉県木更津市",
+   "co_sleep": "添い寝 予約前確認",
+   "facts": {
+    "対象犬・頭数": "1室あたり4頭まで宿泊可能ですが、25kg以上の大型犬は2頭までです。1年以内に接種した狂犬病および5種類以上の混合ワクチンの証明書の提示が必須です。生理中、伝染性疾患や感染症を発症している、または噛み癖のある犬は宿泊できません。",
+    "犬の宿泊料金": "予約前確認",
+    "ケージ・持参判断": "施設側でケージ・食器はご用意しておりますが、他の愛犬と共有して使用しておりますので、普段使い慣れたものをご持参いただくことをお勧めします。室内に愛犬のみを残す際は、安全のため必ずケージ（またはクレートやキャリー）に入れてください。 普段使い慣れたものをご持参いただくことをお勧めします",
+    "夜はどこで寝る？": "客室（DOG CABIN）",
+    "食事同伴": "条件付き可。夕食会場のBBQ SITEではリード着用で同伴可。朝食はDOG LOUNGEまたはBBQ SITEで同伴可。カフェラウンジ・マーケット内は同伴不可。",
+    "ドッグラン": "あり。DOG CABIN全客室に25㎡のプライベートドッグランが付いております。また、DOG LOUNGEは室内ドッグランになっており、リードフリーで遊べます。",
+    "予約前の重要確認": "犬の宿泊料金、添い寝の可否（規約に明記なし）、具体的なワクチン証明書の提出方法"
+   },
+   "links": [
+    {
+     "label": "公式の条件を確認",
+     "url": "https://www.cigr.co.jp/etowa/kisarazu/dog-stay/",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでETOWA KISARAZUの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00915794/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "cert_required": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
+   "geocode": {
+    "lat": 35.354086,
+    "lon": 140.038469,
+    "precision": "facility",
+    "source": "official-map",
+    "matched": "公式ページの地図"
+   },
+   "area_geocode": {
+    "lat": 35.381248,
+    "lon": 139.924896,
+    "matched": "千葉県木更津市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-00916046",
+   "type": "lodging",
+   "name": "ペンション ＫＥＩＫＯ",
+   "area": "千葉県館山市",
+   "co_sleep": "添い寝 予約前確認",
+   "facts": {
+    "対象犬・頭数": "室内犬（小型から中型犬15㎏まで）が対象です。1部屋に2匹までで、トイレのしつけができており、無駄吠えしないことが必要です。",
+    "犬の宿泊料金": "1匹 1泊 税込2,200円",
+    "ケージ・持参判断": "あり。お部屋にはペット用サークルを1台設置してあります。サークルのお持ち込みも可能です。",
+    "夜はどこで寝る？": "客室のサークル内（または持参したケージ内）。本館のお食事中やお部屋を不在にする際はサークル内でお願いします。",
+    "食事同伴": "不可。お食事は本館1階でのご用意となります。本館（お食事中）にはペットはお連れいただけません。",
+    "ドッグラン": "あり。プールサイドには小スペースですがドッグランがございます。いつでもお連れいただき、お楽しみください。",
+    "予約前の重要確認": "添い寝の可否、ワクチン証明の有無"
+   },
+   "links": [
+    {
+     "label": "公式の条件を確認",
+     "url": "https://www.p-keiko.com/",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでペンション ＫＥＩＫＯの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00916046/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {},
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
+   "geocode": {
+    "lat": 34.934029,
+    "lon": 139.830429,
+    "precision": "facility",
+    "source": "official-address",
+    "matched": "千葉県館山市犬石１６８７番地"
+   },
+   "area_geocode": {
+    "lat": 34.996468,
+    "lon": 139.870041,
+    "matched": "千葉県館山市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-00917003",
+   "type": "lodging",
+   "name": "九十九里ヴィラそとぼう",
+   "area": "千葉県いすみ市",
+   "co_sleep": "添い寝 不可",
+   "facts": {
+    "対象犬・頭数": "犬種については予約の際フロントにご相談ください。狂犬病予防のワクチンを接種していないペットはご宿泊頂けません。しつけのなされていないペット（吠える、噛む、トイレのしつけ等）はお断りさせていただきます。",
+    "犬の宿泊料金": "予約前確認",
+    "ケージ・持参判断": "用意なし(持参) ペットの餌、食器、ゲージ、トイレシート、ペット用タオル等はご持参ください。",
+    "夜はどこで寝る？": "客室（毛布類があればご持参ください） ご用意している布団でペットが飼い主と寝るのは禁止です。",
+    "食事同伴": "予約前確認",
+    "ドッグラン": "予約前確認(公式に記載なし)",
+    "予約前の重要確認": "犬の宿泊料金、食事の場での同伴可否、具体的な犬の頭数制限"
+   },
+   "links": [
+    {
+     "label": "公式の条件を確認",
+     "url": "https://www.villa-sotobou.com/ご宿泊/",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで九十九里ヴィラそとぼうの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00917003/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {},
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
+   "geocode": {
+    "lat": 35.293655,
+    "lon": 140.403992,
+    "precision": "facility",
+    "source": "official-address",
+    "matched": "千葉県いすみ市岬町和泉４４２７番地"
+   },
+   "area_geocode": {
+    "lat": 35.253887,
+    "lon": 140.385284,
+    "matched": "千葉県いすみ市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-00917023",
+   "type": "lodging",
+   "name": "ちくらつなぐホテル",
+   "area": "千葉県南房総市",
+   "co_sleep": "添い寝 予約前確認",
+   "facts": {
+    "対象犬・頭数": "トレーラーハウス客室（Stella Port・Breeze Port）では、中型犬まで2頭まで同伴可能です。テント泊プランも1組につき2頭まで可能ですが、2026年5月9日以降は販売終了しています。",
+    "犬の宿泊料金": "1頭あたり3,300円（税込）",
+    "ケージ・持参判断": "予約前確認",
+    "夜はどこで寝る？": "客室内（ペットベッド利用可）",
+    "食事同伴": "予約前確認",
+    "ドッグラン": "予約前確認(公式に記載なし)",
+    "予約前の重要確認": "ケージの用意、添い寝の可否、食事時の同伴可否、ワクチン証明の有無、テント泊プランの詳細（販売終了前）"
+   },
+   "links": [
+    {
+     "label": "公式の条件を確認",
+     "url": "https://chikura.tsunaguhotel.jp/2020/02/19/dog_tent/",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでちくらつなぐホテルの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00917023/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {},
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
+   "geocode": {
+    "lat": 34.967158,
+    "lon": 139.956412,
+    "precision": "facility",
+    "source": "official-map",
+    "matched": "公式ページの地図"
+   },
+   "area_geocode": {
+    "lat": 35.043152,
+    "lon": 139.839981,
+    "matched": "千葉県南房総市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-00917373",
+   "type": "lodging",
+   "name": "WITH SEA 一宮 NORTH",
+   "area": "千葉県長生郡",
+   "co_sleep": "添い寝 不可",
+   "facts": {
+    "対象犬・頭数": "同伴宿泊ができるのは愛犬のみで、1組につき最大2頭までです。1年以内に狂犬病予防接種および5種以上の混合ワクチン接種を受け、接種後7日以上経過している必要があります。攻撃性がないこと、無駄吠えの習慣がないこと、決められた場所での排泄ができることなどの基本的なしつけがなされていることが必要です。",
+    "犬の宿泊料金": "追加料金はございません",
+    "ケージ・持参判断": "ケージのご持参は必須です。お留守番や就寝時には、愛犬をケージに入れてください。 ケージのご持参は必須です。",
+    "夜はどこで寝る？": "客室のケージ内 愛犬をベッドやソファ、テーブルの上に乗せないでください。",
+    "食事同伴": "不可",
+    "ドッグラン": "予約前確認(公式に記載なし)",
+    "予約前の重要確認": "なし"
+   },
+   "links": [
+    {
+     "label": "公式の条件を確認",
+     "url": "https://life.umito.jp/with-sea-with-dog/",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでWITH SEA 一宮 NORTHの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00917373/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "vaccine_required": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
+   "geocode": null
+  },
+  {
+   "id": "c8-00917707",
+   "type": "lodging",
+   "name": "木のおうち こんた",
+   "area": "千葉県勝浦市",
+   "co_sleep": "添い寝 不可",
+   "facts": {
+    "対象犬・頭数": "生後4か月以上の室内犬で、トイレ等の最低限のしつけができているワンちゃんに限ります。狂犬病及びウィルス性伝染病の予防接種終了後2週間以上、1年未満であること、およびノミ・マダニ・寄生虫の駆除対策を済ませていることが条件です。小型犬は最大2頭、中型犬は1頭まで、大型犬の追加はできません。",
+    "犬の宿泊料金": "基本プラン（大人5名まで＋ワンちゃん1頭まで）に一律料金として含まれています。2頭目からのワンちゃんは追加料金4,400円/1頭です。",
+    "ケージ・持参判断": "あり。ペットトイレ、ケージはございますが、デリケートなワンちゃんの場合はご自宅のものをお持ちください。",
+    "夜はどこで寝る？": "客室内のケージ内 室内ではケージの外には出さないようご協力をお願いします。",
+    "食事同伴": "予約前確認",
+    "ドッグラン": "あり。ドギーハウス宿泊者専用のプライベートドックラン（天然芝約270㎡）があります。",
+    "予約前の重要確認": "食事の場での犬の同伴可否、大型犬の宿泊可否（追加不可とあるが基本1頭が大型犬の場合の可否）、具体的なワクチン証明書の提出方法"
+   },
+   "links": [
+    {
+     "label": "公式の条件を確認",
+     "url": "https://www.kinoouchi-conta.com/宿泊料金",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで木のおうち こんたの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00917707/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {},
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
+   "geocode": {
+    "lat": 35.170979,
+    "lon": 140.229019,
+    "precision": "district",
+    "source": "official-address",
+    "matched": "千葉県勝浦市大森"
+   },
+   "area_geocode": {
+    "lat": 35.152233,
+    "lon": 140.320923,
+    "matched": "千葉県勝浦市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-00917912",
+   "type": "lodging",
+   "name": "Tabist ペンション サードプレイス",
+   "area": "千葉県一宮町",
+   "co_sleep": "添い寝 予約前確認",
+   "facts": {
+    "対象犬・頭数": "メゾネットスウィートはWEST SIDEのみ、エアストリームグランピングは全室で宿泊可能です。頭数は2匹までで、3匹以上は問い合わせが必要です。",
+    "犬の宿泊料金": "2匹までは宿泊料金に含まれる（3匹以上は要確認）",
+    "ケージ・持参判断": "予約前確認",
+    "夜はどこで寝る？": "客室",
+    "食事同伴": "予約前確認",
+    "ドッグラン": "あり（併設ドッグラン）",
+    "予約前の重要確認": "3匹以上の宿泊料金、ケージの持参義務、添い寝の可否、食事時の同伴可否、ワクチン証明の有無"
+   },
+   "links": [
+    {
+     "label": "公式の条件を確認",
+     "url": "https://www.pension-third-place.com/magic-wands",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでTabist ペンション サードプレイスの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00917912/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {},
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
+   "geocode": {
+    "lat": 35.37262,
+    "lon": 140.368652,
+    "matched": "千葉県一宮町",
+    "precision": "municipality"
+   },
+   "area_geocode": {
+    "lat": 35.37262,
+    "lon": 140.368652,
+    "matched": "千葉県一宮町",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-00918017",
+   "type": "lodging",
+   "name": "ひだまりINN",
+   "area": "千葉県鴨川市",
+   "co_sleep": "添い寝 予約前確認",
+   "facts": {
+    "対象犬・頭数": "ペットは日常室内で飼育されているものに限ります。ヴィラ1では小型犬から大型犬まで、ヴィラ2では10kg以下の小型ペットが対象です。補助犬（盲導犬・聴導犬・介助犬）は体重に限らず宿泊可能です。",
+    "犬の宿泊料金": "無料",
+    "ケージ・持参判断": "あり（クレート / メッシュサークル / ペットベッド / ペット用ドライヤー / 足ふき用タオル / バスタオル / 食器 / シリコンマット / トイレシート / 除菌消臭スプレー / 粘着ローラー）",
+    "夜はどこで寝る？": "客室（一棟貸しヴィラ内）",
+    "食事同伴": "条件付き可（一棟貸し専用お部屋食プランの場合、わんちゃんとともに気兼ねなく過ごせます。レストランでの同伴可否は記載なし）",
+    "ドッグラン": "予約前確認(公式に記載なし)",
+    "予約前の重要確認": "レストランでの食事同伴可否、ワクチン証明書の提出義務、具体的なしつけルール"
+   },
+   "links": [
+    {
+     "label": "公式の条件を確認",
+     "url": "https://hidamari-inn.jp/page1",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでひだまりINNの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00918017/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "weight_limit_kg_mentions": [
+     10
+    ]
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
+   "geocode": {
+    "lat": 35.123959,
+    "lon": 140.152359,
+    "precision": "facility",
+    "source": "official-address",
+    "matched": "千葉県鴨川市天津１０７２番地"
+   },
+   "area_geocode": {
+    "lat": 35.114075,
+    "lon": 140.098953,
+    "matched": "千葉県鴨川市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-00918856",
+   "type": "lodging",
+   "name": "theView 南房総",
+   "area": "千葉県南房総市",
+   "co_sleep": "添い寝 可",
+   "facts": {
+    "対象犬・頭数": "愛犬同伴でのご宿泊が可能ですが、有料です。ペット同伴の詳細な条件についてはお問い合わせください。",
+    "犬の宿泊料金": "予約前確認",
+    "ケージ・持参判断": "あり（ゲージ、フードボウル、ウォーターボウル、ペットシート等をご用意しております）",
+    "夜はどこで寝る？": "客室（添い寝を含む） 添い寝を含め最大10名様まで宿泊可能です。",
+    "食事同伴": "予約前確認",
+    "ドッグラン": "予約前確認(公式に記載なし)",
+    "予約前の重要確認": "犬の宿泊料金、犬の頭数制限、食事時の同伴可否、ワクチン証明の有無"
+   },
+   "links": [
+    {
+     "label": "公式の条件を確認",
+     "url": "https://theview-house.com/the-view-kyujitsu-inubu/",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでtheView 南房総の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00918856/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {},
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
+   "geocode": {
+    "lat": 35.075806,
+    "lon": 139.835815,
+    "precision": "district",
+    "source": "official-address",
+    "matched": "千葉県南房総市小浦"
+   },
+   "area_geocode": {
+    "lat": 35.043152,
+    "lon": 139.839981,
+    "matched": "千葉県南房総市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-00918916",
+   "type": "lodging",
+   "name": "Solana九十九里",
+   "area": "千葉県九十九里町",
+   "co_sleep": "添い寝 条件付き可",
+   "facts": {
+    "対象犬・頭数": "狂犬病予防接種、混合ワクチン接種を済ませているワンコに限ります。トイレの躾が出来ており、飼い主様の制止がきく、無駄吠え癖・脱走癖・引っ掻き癖・噛み癖のないワンちゃんです。小型犬から大型犬まで、すべてのワンちゃんにご宿泊いただけます。",
+    "犬の宿泊料金": "無料",
+    "ケージ・持参判断": "あり(備え付け)",
+    "夜はどこで寝る？": "客室(ベッド・ソファベッド・マットレス等) ワンちゃんがソファーベッドをご使用する場合はペットシーツをご利用ください。",
+    "食事同伴": "可(各お部屋にガス式BBQグリルを設置しており、食材や調味料をご用意いただくだけでご利用いただけます)",
+    "ドッグラン": "あり(各部屋の目の前に100センチ高の仕切り網で区切られたプライベートドッグランがあり、専有して利用できます)",
+    "予約前の重要確認": "犬の頭数制限の有無、ワクチン接種証明書の提示方法(メール・お電話での確認は記載あり)、特定の犬種制限の詳細"
+   },
+   "links": [
+    {
+     "label": "公式の条件を確認",
+     "url": "https://resort-solana.com/pets-welcome",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでSolana九十九里の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00918916/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "vaccine_required": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
+   "geocode": {
+    "lat": 35.535049,
+    "lon": 140.440353,
+    "matched": "千葉県九十九里町",
+    "precision": "municipality"
+   },
+   "area_geocode": {
+    "lat": 35.535049,
+    "lon": 140.440353,
+    "matched": "千葉県九十九里町",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-00919593",
+   "type": "lodging",
+   "name": "ドッグリゾートD&K",
+   "area": "千葉県富津市",
+   "co_sleep": "添い寝 可",
+   "facts": {
+    "対象犬・頭数": "小型犬（10kgまで）から大型犬（30kgまで）まで、上限3頭まで宿泊可能です。各種ワクチン接種とトイレ等の基本的なしつけが必要です。ヒート中のワンちゃんや危険動物は宿泊できません。",
+    "犬の宿泊料金": "予約前確認",
+    "ケージ・持参判断": "予約前確認",
+    "夜はどこで寝る？": "客室のベッド（ワンちゃんと一緒に）またはワンちゃんベッド ベッドでワンちゃんと一緒に寝れます。ワンちゃんベッドは上質フェザーの羽毛100%で寝心地抜群です。",
+    "食事同伴": "予約前確認",
+    "ドッグラン": "あり。屋外に小さなドッグランがあります。",
+    "予約前の重要確認": "食事の場での同伴可否、ケージの用意有無、特定の客室の限定有無"
+   },
+   "links": [
+    {
+     "label": "公式の条件を確認",
+     "url": "https://dogresort-dk.com/",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでドッグリゾートD&Kの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00919593/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "vaccine_required": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
+   "geocode": {
+    "lat": 35.306713,
+    "lon": 139.811325,
+    "precision": "facility",
+    "source": "official-address",
+    "matched": "千葉県富津市富津６７９番地"
+   },
+   "area_geocode": {
+    "lat": 35.304169,
+    "lon": 139.857117,
+    "matched": "千葉県富津市",
     "precision": "municipality"
    }
   },
