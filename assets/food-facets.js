@@ -18965,5 +18965,1659 @@ window.WANKO_FOOD_FACTS = {
     "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
     "additives": [],
     "additive_evidence": {}
+  },
+  "foodys-ニュートロ-ニュートロ-ナチュラルチョイス-中型犬-大型犬用-成犬用-チキン-玄": {
+    "id": "foodys-ニュートロ-ニュートロ-ナチュラルチョイス-中型犬-大型犬用-成犬用-チキン-玄",
+    "label": "ニュートロ ナチュラルチョイス 中型犬〜大型犬用 成犬用 チキン&玄米",
+    "ingredients": [
+      "鶏",
+      "米",
+      "大麦",
+      "オーツ麦"
+    ],
+    "ingredient_text": "チキン(肉), チキンミール, 玄米, 大麦, オートミール",
+    "target": "中型犬〜大型犬(成犬時の体重が10kg以上) 成犬",
+    "age": [
+      "成犬"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 9274,
+    "price_date": "2026-09-30",
+    "source": "",
+    "checked": "",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "foodys-サイエンスダイエット-サイエンスダイエット-シニアプラス-小型犬用-チキン": {
+    "id": "foodys-サイエンスダイエット-サイエンスダイエット-シニアプラス-小型犬用-チキン",
+    "label": "サイエンスダイエット シニアプラス 小型犬用 チキン",
+    "ingredients": [
+      "鶏",
+      "七面鳥",
+      "米",
+      "小麦",
+      "とうもろこし"
+    ],
+    "ingredient_text": "小麦、米、玄米、とうもろこし、トリ肉(チキン、ターキー)",
+    "target": "10歳以上 / 小型犬",
+    "age": [
+      "シニア"
+    ],
+    "age_range": [
+      120.0,
+      null
+    ],
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 8506,
+    "price_date": "2026-09-30",
+    "source": "",
+    "checked": "",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用"
+    ],
+    "additive_evidence": {
+      "source": "",
+      "checked": "",
+      "note": "不使用表示は公式商品ページの記載(着色料は使用しておりません。)"
+    }
+  },
+  "foodys-サイエンス-ダイエット-サイエンス-ダイエット-小型犬用-アダルト-チキン": {
+    "id": "foodys-サイエンス-ダイエット-サイエンス-ダイエット-小型犬用-アダルト-チキン",
+    "label": "サイエンス・ダイエット 小型犬用 アダルト チキン",
+    "ingredients": [
+      "鶏",
+      "七面鳥",
+      "米",
+      "小麦"
+    ],
+    "ingredient_text": "トリ肉(チキン、ターキー)、トウモロコシ、小麦、米、動物性油脂",
+    "target": "1〜6歳 / 小型犬",
+    "age": [
+      "成犬"
+    ],
+    "age_range": [
+      12.0,
+      84.0
+    ],
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 6090,
+    "price_date": "2026-09-30",
+    "source": "",
+    "checked": "",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用"
+    ],
+    "additive_evidence": {
+      "source": "",
+      "checked": "",
+      "note": "不使用表示は公式商品ページの記載(着色料は使用しておりません。)"
+    }
+  },
+  "foodys-ニュートロ-ニュートロ-シュプレモ-ドライ-超小型犬-小型犬用-体重管理用": {
+    "id": "foodys-ニュートロ-ニュートロ-シュプレモ-ドライ-超小型犬-小型犬用-体重管理用",
+    "label": "ニュートロ シュプレモ ドライ 超小型犬〜小型犬用 体重管理用",
+    "ingredients": [
+      "鶏",
+      "米",
+      "大麦",
+      "オーツ麦"
+    ],
+    "ingredient_text": "チキン(肉),チキンミール,大麦,玄米,オーツ麦",
+    "target": "超小型犬〜小型犬用 体重管理用",
+    "age": [],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [
+      "体重管理"
+    ],
+    "price": 9200,
+    "price_date": "2026-09-30",
+    "source": "",
+    "checked": "",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "foodys-ニュートロ-ニュートロ-シュプレモ-全犬種用-エイジングケア": {
+    "id": "foodys-ニュートロ-ニュートロ-シュプレモ-全犬種用-エイジングケア",
+    "label": "ニュートロ シュプレモ 全犬種用 エイジングケア",
+    "ingredients": [
+      "鶏",
+      "米",
+      "オーツ麦"
+    ],
+    "ingredient_text": "チキン(肉),チキンミール,モロコシ,オーツ麦,玄米",
+    "target": "エイジングケア",
+    "age": [
+      "シニア"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": true,
+    "weight": [
+      [
+        0,
+        null
+      ]
+    ],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 18300,
+    "price_date": "2026-09-30",
+    "source": "",
+    "checked": "",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "foodys-サンライズ-サンライズ-ナチュラハ-グレインフリー-やわらかビーフ-野菜入り-1": {
+    "id": "foodys-サンライズ-サンライズ-ナチュラハ-グレインフリー-やわらかビーフ-野菜入り-1",
+    "label": "サンライズ ナチュラハ グレインフリー やわらかビーフ&野菜入り 13歳以上",
+    "ingredients": [
+      "鶏",
+      "牛",
+      "豚"
+    ],
+    "ingredient_text": "肉類(ビーフ、ポーク、チキン)、野菜類(ニンジン、エンドウマメ、パプリカ)、いも類(ポテト)、食物繊維、油脂類",
+    "target": "13歳以上",
+    "age": [
+      "シニア"
+    ],
+    "age_range": [
+      156.0,
+      null
+    ],
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ウェット",
+    "texture": [
+      "ソフト・半生"
+    ],
+    "grain": "",
+    "concern": [],
+    "price": 2304,
+    "price_date": "2026-09-30",
+    "source": "",
+    "checked": "",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "foodys-ドットわん-ドットわん-ごはん-成犬用": {
+    "id": "foodys-ドットわん-ドットわん-ごはん-成犬用",
+    "label": "ドットわん ごはん 成犬用",
+    "ingredients": [
+      "牛",
+      "米",
+      "小麦"
+    ],
+    "ingredient_text": "豆腐おから(埼玉・神泉村産)、牛肉(国産)、玄米(山形産・他)、牛エキス(国産)、小麦胚芽(北海道産・他)",
+    "target": "成犬用",
+    "age": [
+      "成犬"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 13640,
+    "price_date": "2026-09-30",
+    "source": "",
+    "checked": "",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "foodys-ナチュラハ-ナチュラハ-グレインフリー-チキン-野菜入り-11歳以上": {
+    "id": "foodys-ナチュラハ-ナチュラハ-グレインフリー-チキン-野菜入り-11歳以上",
+    "label": "ナチュラハ グレインフリー チキン&野菜入り 11歳以上",
+    "ingredients": [
+      "鶏",
+      "豚"
+    ],
+    "ingredient_text": "肉類(チキン、ポーク)、野菜類(ニンジン、エンドウマメ)、いも類(ポテト)、油脂類、マリーゴールド",
+    "target": "全犬種 / 11歳以上",
+    "age": [
+      "シニア"
+    ],
+    "age_range": [
+      132.0,
+      null
+    ],
+    "breed": [],
+    "all_breeds": true,
+    "weight": [
+      [
+        0,
+        null
+      ]
+    ],
+    "adult_weight": [],
+    "form": "ウェット",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 146,
+    "price_date": "2026-09-30",
+    "source": "",
+    "checked": "",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "foodys-ニュートロ-ニュートロ-シュプレモ-カロリーケア-シニア犬用": {
+    "id": "foodys-ニュートロ-ニュートロ-シュプレモ-カロリーケア-シニア犬用",
+    "label": "ニュートロ シュプレモ カロリーケア シニア犬用",
+    "ingredients": [
+      "鶏",
+      "豚",
+      "七面鳥",
+      "魚"
+    ],
+    "ingredient_text": "チキン, 鶏レバー, サーモン, ターキー, ポークレバー",
+    "target": "シニア犬用",
+    "age": [
+      "シニア"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ウェット",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 5163,
+    "price_date": "2026-09-30",
+    "source": "",
+    "checked": "",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "foodys-ナチュラハ-ナチュラハ-グレインフリー-やわらかビーフ-野菜入り-13歳以上": {
+    "id": "foodys-ナチュラハ-ナチュラハ-グレインフリー-やわらかビーフ-野菜入り-13歳以上",
+    "label": "ナチュラハ グレインフリー やわらかビーフ&野菜入り 13歳以上",
+    "ingredients": [
+      "鶏",
+      "牛",
+      "豚"
+    ],
+    "ingredient_text": "肉類(ビーフ、ポーク、チキン)、野菜類(ニンジン、エンドウマメ、パプリカ)、いも類(ポテト)、食物繊維、油脂類",
+    "target": "13歳以上",
+    "age": [
+      "シニア"
+    ],
+    "age_range": [
+      156.0,
+      null
+    ],
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ウェット",
+    "texture": [
+      "ソフト・半生"
+    ],
+    "grain": "",
+    "concern": [],
+    "price": 146,
+    "price_date": "2026-09-30",
+    "source": "",
+    "checked": "",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "foodys-now-fresh-ナウフレッシュ-アダルト": {
+    "id": "foodys-now-fresh-ナウフレッシュ-アダルト",
+    "label": "ナウフレッシュ アダルト",
+    "ingredients": [
+      "鶏",
+      "七面鳥",
+      "卵"
+    ],
+    "ingredient_text": "ターキー(生・骨抜き), ポテト, エンドウ豆, 鶏卵(乾燥・全卵), ポテト粉",
+    "target": "成犬・シニア犬用",
+    "age": [
+      "成犬",
+      "シニア"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 8580,
+    "price_date": "2026-09-30",
+    "source": "",
+    "checked": "",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "foodys-ziwi-peak-ziwi-peak-エアドライ-ドッグフード-マッカロー-ラ": {
+    "id": "foodys-ziwi-peak-ziwi-peak-エアドライ-ドッグフード-マッカロー-ラ",
+    "label": "ZIWI Peak エアドライ・ドッグフード マッカロー&ラム 全犬種・年齢対応",
+    "ingredients": [
+      "羊"
+    ],
+    "ingredient_text": "丸ごとマッカロー(サバ),ラム生肉,ラムトライプ生肉,ラムラング生肉,ラムハート生肉",
+    "target": "全犬種・年齢対応",
+    "age": [],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": true,
+    "weight": [
+      [
+        0,
+        null
+      ]
+    ],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 11330,
+    "price_date": "2026-09-30",
+    "source": "",
+    "checked": "",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "foodys-fish4dogs-fish4dogs-フィッシュ4ドッグ-ファイネスト-サーデ": {
+    "id": "foodys-fish4dogs-fish4dogs-フィッシュ4ドッグ-ファイネスト-サーデ",
+    "label": "FISH4DOGS フィッシュ4ドッグ (ファイネスト) サーディン(イワシ) (小粒)",
+    "ingredients": [
+      "魚"
+    ],
+    "ingredient_text": "サーディン, サーモンミール, スイートポテト, エンドウ, ビートファイバー",
+    "target": "",
+    "age": [],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "小粒",
+    "concern": [],
+    "price": 13750,
+    "price_date": "2026-09-30",
+    "source": "",
+    "checked": "",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "foodys-いなば-いなば-ちゅ-る-総合栄養食-かつお-成犬用": {
+    "id": "foodys-いなば-いなば-ちゅ-る-総合栄養食-かつお-成犬用",
+    "label": "いなば ちゅ〜る 総合栄養食 かつお 成犬用",
+    "ingredients": [
+      "魚"
+    ],
+    "ingredient_text": "かつお, 植物油脂含有粉末, かつお節エキス, 酵母エキス, DHA・EPA含有精製魚油",
+    "target": "成犬 / 1歳からの成犬",
+    "age": [
+      "成犬"
+    ],
+    "age_range": [
+      12.0,
+      null
+    ],
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ウェット",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 214,
+    "price_date": "2026-09-30",
+    "source": "",
+    "checked": "",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "foodys-natural-balance-ナチュラルバランス-lid-reserve-成犬": {
+    "id": "foodys-natural-balance-ナチュラルバランス-lid-reserve-成犬",
+    "label": "ナチュラルバランス LID RESERVE 成犬用 ダック&ポテトレシピ",
+    "ingredients": [
+      "鴨"
+    ],
+    "ingredient_text": "新鮮なポテト, ダックミール(乾燥肉), 新鮮なダック肉, キャノーラオイル, ポテトファイバー",
+    "target": "",
+    "age": [
+      "成犬"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 6299,
+    "price_date": "2026-09-30",
+    "source": "",
+    "checked": "",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "foodys-sunday-pets-サンデーペッツ-ローテーションセット-ビーフ-ウィズトラ": {
+    "id": "foodys-sunday-pets-サンデーペッツ-ローテーションセット-ビーフ-ウィズトラ",
+    "label": "サンデーペッツ ローテーションセット ビーフ ウィズトライプ+ワイルドホキ ウィズトライプ 成犬用",
+    "ingredients": [
+      "牛"
+    ],
+    "ingredient_text": "ビーフ64%(牛肉、ビーフトライプ*、ビーフレバー*、ビーフキドニー*、ビーフハート*)、野菜34.9%(カボチャ、亜麻仁、ニンジン、有機オオウキモ(海藻))、緑イ貝0.2%、ブルーベリー0.2%、マヌカハニー0.1%",
+    "target": "小型・中型の成犬(12ヶ月以降の小型および中型の成犬)用",
+    "age": [
+      "成犬"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 7040,
+    "price_date": "2026-09-30",
+    "source": "",
+    "checked": "",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "foodys-nutripe-ニュートライプ-ウェット-ピュア-ビーフ-グリーントライプ": {
+    "id": "foodys-nutripe-ニュートライプ-ウェット-ピュア-ビーフ-グリーントライプ",
+    "label": "ニュートライプ ウェット ピュア ビーフ&グリーントライプ",
+    "ingredients": [
+      "牛",
+      "魚"
+    ],
+    "ingredient_text": "ビーフ, サーモン, グリーンベニソントライプ, ビーフラング(肺), ビーフキドニー(腎臓)",
+    "target": "(2-3kg)104-224g (3-5kg)140-328g (5-10kg)206-552g (10-20kg)346-928g",
+    "age": [],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [
+      [
+        2.0,
+        3.0
+      ],
+      [
+        3.0,
+        5.0
+      ],
+      [
+        5.0,
+        10.0
+      ],
+      [
+        10.0,
+        20.0
+      ]
+    ],
+    "adult_weight": [],
+    "form": "ウェット",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 12252,
+    "price_date": "2026-09-30",
+    "source": "",
+    "checked": "",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "foodys-nutripe-ニュートライプ-ウェット-ピュア-グリーントライプ": {
+    "id": "foodys-nutripe-ニュートライプ-ウェット-ピュア-グリーントライプ",
+    "label": "ニュートライプ ウェット ピュア グリーントライプ",
+    "ingredients": [
+      "羊",
+      "魚"
+    ],
+    "ingredient_text": "グリーンベニソントライプ,ラムラング(肺),サーモン,ラムレバー(肝臓),ポテトスターチ",
+    "target": "",
+    "age": [],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ウェット",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 12252,
+    "price_date": "2026-09-30",
+    "source": "",
+    "checked": "",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "foodys-k9-k9-ナチュラル-チキン-オーブンベイクド-犬用": {
+    "id": "foodys-k9-k9-ナチュラル-チキン-オーブンベイクド-犬用",
+    "label": "K9 ナチュラル チキン オーブンベイクド 犬用",
+    "ingredients": [
+      "鶏",
+      "米",
+      "オーツ麦"
+    ],
+    "ingredient_text": "鶏肉(生),鶏肉(乾燥粉末),オーツ麦,玄米,白米",
+    "target": "子犬からシニア犬まで、全年齢・全犬種対応",
+    "age": [
+      "子犬",
+      "成犬",
+      "シニア",
+      "全年齢"
+    ],
+    "age_range": [
+      0,
+      null
+    ],
+    "breed": [],
+    "all_breeds": true,
+    "weight": [
+      [
+        0,
+        null
+      ]
+    ],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 13200,
+    "price_date": "2026-09-30",
+    "source": "",
+    "checked": "",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用",
+      "香料不使用",
+      "保存料不使用"
+    ],
+    "additive_evidence": {
+      "source": "",
+      "checked": "",
+      "note": "不使用表示は公式商品ページの記載(人工保存料・人工着色料・人工香料、一切不使用)"
+    }
+  },
+  "foodys-ロイヤルカナン-ロイヤルカナン-シーズー-成犬-高齢犬用": {
+    "id": "foodys-ロイヤルカナン-ロイヤルカナン-シーズー-成犬-高齢犬用",
+    "label": "ロイヤルカナン シーズー 成犬〜高齢犬用",
+    "ingredients": [
+      "鶏",
+      "七面鳥",
+      "米",
+      "小麦",
+      "鴨"
+    ],
+    "ingredient_text": "米, 肉類(鶏、七面鳥、ダック), 動物性油脂, 超高消化性小麦タンパク(消化率90%以上), 加水分解タンパク(鶏、七面鳥)",
+    "target": "シーズー 成犬〜高齢犬用(生後10ヵ月齢以上)",
+    "age": [
+      "成犬",
+      "シニア"
+    ],
+    "age_range": [
+      10.0,
+      null
+    ],
+    "breed": [
+      "シーズー"
+    ],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 11337,
+    "price_date": "2026-09-30",
+    "source": "",
+    "checked": "",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "foodys-メディコート-メディコートアドバンス-アレルゲンカット-魚-えんどう豆たんぱく-": {
+    "id": "foodys-メディコート-メディコートアドバンス-アレルゲンカット-魚-えんどう豆たんぱく-",
+    "label": "メディコートアドバンス アレルゲンカット 魚&えんどう豆たんぱく 11歳から",
+    "ingredients": [
+      "魚",
+      "米",
+      "とうもろこし"
+    ],
+    "ingredient_text": "豆類(えんどう豆たんぱく、えんどう豆繊維)、でん粉類(コーンスターチ)、油脂類(動物性油脂、フィッシュオイル:DHA・EPA源、ライスファットカルシウム)、魚介類(フィッシュミール、フィッシュエキス)、種実類(ゴマ粉末)",
+    "target": "11歳以上",
+    "age": [
+      "シニア"
+    ],
+    "age_range": [
+      132.0,
+      null
+    ],
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 2765,
+    "price_date": "2026-09-30",
+    "source": "",
+    "checked": "",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "foodys-日本ペットフード-ビューティープロ-ドッグ-1歳から-成犬用": {
+    "id": "foodys-日本ペットフード-ビューティープロ-ドッグ-1歳から-成犬用",
+    "label": "ビューティープロ ドッグ 1歳から 成犬用",
+    "ingredients": [
+      "鶏",
+      "魚",
+      "米",
+      "小麦",
+      "とうもろこし"
+    ],
+    "ingredient_text": "穀類(トウモロコシ、コーングルテンミール、小麦ブラン、小麦粉、ライスブラン)、肉類(チキンミール、チキンレバーパウダー)、油脂類(動物性油脂、植物性油脂(オメガ‐6脂肪酸含む)、共役リノール酸)、魚介類(フィッシュエキスパウダー、マリンコラーゲン、小魚粉末(DHA、EPA/オメガ‐3脂肪酸源))、ビール酵母(β‐グルカン源)",
+    "target": "成犬用 / 1歳から",
+    "age": [
+      "成犬"
+    ],
+    "age_range": [
+      12.0,
+      null
+    ],
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 3960,
+    "price_date": "2026-09-30",
+    "source": "",
+    "checked": "",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "foodys-ニュートロ-ニュートロ-シュプレモ-全犬種用-体重管理用": {
+    "id": "foodys-ニュートロ-ニュートロ-シュプレモ-全犬種用-体重管理用",
+    "label": "ニュートロ シュプレモ 全犬種用 体重管理用",
+    "ingredients": [
+      "鶏",
+      "米",
+      "大麦"
+    ],
+    "ingredient_text": "チキン(肉),チキンミール,大麦,玄米,モロコシ",
+    "target": "体重管理用",
+    "age": [],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": true,
+    "weight": [
+      [
+        0,
+        null
+      ]
+    ],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [
+      "体重管理"
+    ],
+    "price": 18300,
+    "price_date": "2026-09-30",
+    "source": "",
+    "checked": "",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "foodys-select-balance-select-balance-エイジングケア-チキ": {
+    "id": "foodys-select-balance-select-balance-エイジングケア-チキ",
+    "label": "SELECT BALANCE エイジングケア チキン 小粒 7才以上の成犬用",
+    "ingredients": [
+      "鶏",
+      "米",
+      "とうもろこし"
+    ],
+    "ingredient_text": "乾燥チキン,とうもろこし,米,玄米,ソイビーンミール",
+    "target": "7歳以上の成犬",
+    "age": [
+      "成犬",
+      "シニア"
+    ],
+    "age_range": [
+      84.0,
+      null
+    ],
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "小粒",
+    "concern": [],
+    "price": 10340,
+    "price_date": "2026-09-30",
+    "source": "",
+    "checked": "",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "foodys-ベッツチョイス-セレクトバランス-パピー-ラム小粒-子犬-母犬用": {
+    "id": "foodys-ベッツチョイス-セレクトバランス-パピー-ラム小粒-子犬-母犬用",
+    "label": "セレクトバランス パピー ラム小粒 子犬・母犬用",
+    "ingredients": [
+      "鶏",
+      "羊",
+      "米"
+    ],
+    "ingredient_text": "乾燥ラム,エンドウ豆プロテイン,玄米,米,鶏脂(オメガ6脂肪酸・オメガ3脂肪酸源)",
+    "target": "1才未満の子犬",
+    "age": [
+      "子犬"
+    ],
+    "age_range": [
+      0,
+      12.0
+    ],
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "小粒",
+    "concern": [],
+    "price": 5830,
+    "price_date": "2026-09-30",
+    "source": "",
+    "checked": "",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用",
+      "香料不使用",
+      "保存料不使用"
+    ],
+    "additive_evidence": {
+      "source": "",
+      "checked": "",
+      "note": "不使用表示は公式商品ページの記載(着色料や香料、合成保存料は一切使用していません。)"
+    }
+  },
+  "foodys-aatu-aatu-ツナ-サーモン-犬用-総合栄養食": {
+    "id": "foodys-aatu-aatu-ツナ-サーモン-犬用-総合栄養食",
+    "label": "AATU ツナ&サーモン 犬用 総合栄養食",
+    "ingredients": [
+      "魚"
+    ],
+    "ingredient_text": "90% ツナ&サーモン(マグロ 40%、サーモン 20%、マグロスープ 15%、サーモンスープ 15%)、 サツマイモ、ニンジン、ルーサン、エンドウ",
+    "target": "",
+    "age": [],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ウェット",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 880,
+    "price_date": "2026-09-30",
+    "source": "",
+    "checked": "",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用"
+    ],
+    "additive_evidence": {
+      "source": "",
+      "checked": "",
+      "note": "不使用表示は公式商品ページの記載(増粘剤不使用、着色料不使用)"
+    }
+  },
+  "foodys-ホリスティックレセピー-ホリスティックレセピー-ライス-チキン-シニア": {
+    "id": "foodys-ホリスティックレセピー-ホリスティックレセピー-ライス-チキン-シニア",
+    "label": "ホリスティックレセピー ライス&チキン シニア",
+    "ingredients": [
+      "鶏",
+      "米",
+      "大麦"
+    ],
+    "ingredient_text": "玄米,鶏肉粉,大麦,鶏肉,鶏脂",
+    "target": "7歳以上の高齢犬",
+    "age": [
+      "シニア"
+    ],
+    "age_range": [
+      84.0,
+      null
+    ],
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 3254,
+    "price_date": "2026-09-30",
+    "source": "",
+    "checked": "",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用",
+      "香料不使用",
+      "保存料不使用"
+    ],
+    "additive_evidence": {
+      "source": "",
+      "checked": "",
+      "note": "不使用表示は公式商品ページの記載(合成保存料・合成着色料・人工香料を使用せず)"
+    }
+  },
+  "foodys-ファーストチョイス-ファーストチョイス-choices-アレルゲンケアに-成犬1": {
+    "id": "foodys-ファーストチョイス-ファーストチョイス-choices-アレルゲンケアに-成犬1",
+    "label": "ファーストチョイス ChoiceS アレルゲンケアに 成犬1歳以上",
+    "ingredients": [
+      "鶏",
+      "魚"
+    ],
+    "ingredient_text": "えんどう豆、さつまいも、白身魚(オメガ3脂肪酸源)、えんどう豆たん白、鶏脂(オメガ6脂肪酸源)",
+    "target": "1歳以上",
+    "age": [
+      "成犬"
+    ],
+    "age_range": [
+      12.0,
+      null
+    ],
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 5980,
+    "price_date": "2026-09-30",
+    "source": "",
+    "checked": "",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "foodys-ファーストチョイス-ファーストチョイス-choices-ダイエットしたい子に-成": {
+    "id": "foodys-ファーストチョイス-ファーストチョイス-choices-ダイエットしたい子に-成",
+    "label": "ファーストチョイス ChoiceS ダイエットしたい子に 成犬1歳以上",
+    "ingredients": [
+      "鶏",
+      "米",
+      "とうもろこし"
+    ],
+    "ingredient_text": "コーン、鶏肉※、玄米、たん白加水分解物、ビートパルプ",
+    "target": "成犬(1歳以上)",
+    "age": [
+      "成犬"
+    ],
+    "age_range": [
+      12.0,
+      null
+    ],
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 5480,
+    "price_date": "2026-09-30",
+    "source": "",
+    "checked": "",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "foodys-ファーストチョイス-ファーストチョイス-choices-アレルゲンケアに-高齢犬": {
+    "id": "foodys-ファーストチョイス-ファーストチョイス-choices-アレルゲンケアに-高齢犬",
+    "label": "ファーストチョイス ChoiceS アレルゲンケアに 高齢犬7歳以上",
+    "ingredients": [
+      "魚"
+    ],
+    "ingredient_text": "えんどう豆, 白身魚※, さつまいも, ビートパルプ, えんどう豆でんぷん",
+    "target": "7歳以上",
+    "age": [
+      "シニア"
+    ],
+    "age_range": [
+      84.0,
+      null
+    ],
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 5480,
+    "price_date": "2026-09-30",
+    "source": "",
+    "checked": "",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "foodys-ドギーマン-ドギーマン-無添加良品-からだ想いの毎日ごはん-11歳からのエイジン": {
+    "id": "foodys-ドギーマン-ドギーマン-無添加良品-からだ想いの毎日ごはん-11歳からのエイジン",
+    "label": "ドギーマン 無添加良品 からだ想いの毎日ごはん 11歳からのエイジングケア",
+    "ingredients": [
+      "鶏",
+      "牛",
+      "小麦",
+      "大豆"
+    ],
+    "ingredient_text": "肉類(鶏肉、鶏ささみ、鶏むね肉、牛肉)、穀類(小麦粉、グルテン)、脱脂大豆、でん粉類、糖類(オリゴ糖を含む)",
+    "target": "11歳から",
+    "age": [
+      "シニア"
+    ],
+    "age_range": [
+      132.0,
+      null
+    ],
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ソフトドライ",
+    "texture": [
+      "ソフト・半生"
+    ],
+    "grain": "",
+    "concern": [],
+    "price": 422,
+    "price_date": "2026-09-30",
+    "source": "",
+    "checked": "",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用",
+      "保存料不使用"
+    ],
+    "additive_evidence": {
+      "source": "",
+      "checked": "",
+      "note": "不使用表示は公式商品ページの記載(保存料、合成着色料、発色剤、酸化防止剤不使用です。)"
+    }
+  },
+  "foodys-デビフ-デビフ-プリモデビィ-グレインフリー-シニア犬用-チキン": {
+    "id": "foodys-デビフ-デビフ-プリモデビィ-グレインフリー-シニア犬用-チキン",
+    "label": "デビフ プリモデビィ グレインフリー シニア犬用 チキン",
+    "ingredients": [
+      "鶏"
+    ],
+    "ingredient_text": "鶏胸肉,鶏肉,鶏内臓,ポテトスターチ,寒天",
+    "target": "シニア犬",
+    "age": [
+      "シニア"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ウェット",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 4633,
+    "price_date": "2026-09-30",
+    "source": "",
+    "checked": "",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "foodys-デビフペット-デビフペット-ささみ-レバーミンチ-野菜入り": {
+    "id": "foodys-デビフペット-デビフペット-ささみ-レバーミンチ-野菜入り",
+    "label": "デビフペット ささみ&レバーミンチ 野菜入り",
+    "ingredients": [
+      "鶏"
+    ],
+    "ingredient_text": "鶏肉、鶏ささみ、野菜類(じゃがいも、人参、グリンピース)、鶏レバー、食塩",
+    "target": "幼犬からシニア犬",
+    "age": [
+      "子犬",
+      "シニア"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ウェット",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 4980,
+    "price_date": "2026-09-30",
+    "source": "",
+    "checked": "",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "foodys-デビフ-デビフ-シニア犬の食事-ささみ-すりおろし野菜": {
+    "id": "foodys-デビフ-デビフ-シニア犬の食事-ささみ-すりおろし野菜",
+    "label": "デビフ シニア犬の食事 ささみ＆すりおろし野菜",
+    "ingredients": [
+      "鶏"
+    ],
+    "ingredient_text": "鶏ささみ、鶏肉、さつまいも、野菜類(じゃがいも、人参、グリンピース)、鶏レバー",
+    "target": "シニア犬",
+    "age": [
+      "シニア"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ウェット",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 3904,
+    "price_date": "2026-09-30",
+    "source": "",
+    "checked": "",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "foodys-デビフペット-デビフペット-カロリーエースプラス-ムースタイプ": {
+    "id": "foodys-デビフペット-デビフペット-カロリーエースプラス-ムースタイプ",
+    "label": "デビフペット カロリーエースプラス ムースタイプ",
+    "ingredients": [
+      "鶏",
+      "大豆",
+      "卵"
+    ],
+    "ingredient_text": "乳等を主要原料とする食品,砂糖,乳たん白,鶏卵,大豆油",
+    "target": "離乳期から、飲み込む力や噛む力の衰えた老齢期まで",
+    "age": [
+      "シニア"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ウェット",
+    "texture": [
+      "ペースト・ムース"
+    ],
+    "grain": "",
+    "concern": [],
+    "price": 5050,
+    "price_date": "2026-09-30",
+    "source": "",
+    "checked": "",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用"
+    ],
+    "additive_evidence": {
+      "source": "",
+      "checked": "",
+      "note": "不使用表示は公式商品ページの記載(着色料無添加 発色剤無添加)"
+    }
+  },
+  "foodys-イースター-プロステージ-フォーミュラ-ドッグ-サーモン-アダルト": {
+    "id": "foodys-イースター-プロステージ-フォーミュラ-ドッグ-サーモン-アダルト",
+    "label": "プロステージ フォーミュラ ドッグ サーモン アダルト",
+    "ingredients": [
+      "魚"
+    ],
+    "ingredient_text": "サーモン,エンドウ豆,ナマズ魚粉,エンドウ豆たん白,ポテトプロテイン",
+    "target": "1歳からの成犬用",
+    "age": [
+      "成犬"
+    ],
+    "age_range": [
+      12.0,
+      null
+    ],
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 2945,
+    "price_date": "2026-09-30",
+    "source": "",
+    "checked": "",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "foodys-日本ペットフード-日本ペットフード-コンボ-ピュア-ドッグ-厳選チーズ-国産鶏肉": {
+    "id": "foodys-日本ペットフード-日本ペットフード-コンボ-ピュア-ドッグ-厳選チーズ-国産鶏肉",
+    "label": "日本ペットフード コンボ ピュア ドッグ 厳選チーズ・国産鶏肉入り 成犬用",
+    "ingredients": [
+      "鶏",
+      "牛",
+      "豚",
+      "米",
+      "小麦",
+      "とうもろこし",
+      "大豆"
+    ],
+    "ingredient_text": "穀類(トウモロコシ、小麦ブラン、ライスブラン、コーングルテンフィード)、肉類(チキンミール、牛肉粉、豚肉粉、チキンレバーパウダー、フリーズドライ鶏肉)、豆類(脱脂大豆、おから粉末)、油脂類(動物性油脂、植物性油脂(ピュアオリーブオイル含む))、乳類(フリーズドライチーズ、チーズパウダー)",
+    "target": "生後12ヵ月以上",
+    "age": [
+      "成犬"
+    ],
+    "age_range": [
+      12.0,
+      null
+    ],
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 2610,
+    "price_date": "2026-09-30",
+    "source": "",
+    "checked": "",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用",
+      "香料不使用",
+      "保存料不使用"
+    ],
+    "additive_evidence": {
+      "source": "",
+      "checked": "",
+      "note": "不使用表示は公式商品ページの記載(着色料・香料・保存料無添加)"
+    }
+  },
+  "foodys-サンライズ-サンライズ-ナチュラハ-グレインフリー-野菜入りセット": {
+    "id": "foodys-サンライズ-サンライズ-ナチュラハ-グレインフリー-野菜入りセット",
+    "label": "サンライズ ナチュラハ グレインフリー 野菜入りセット",
+    "ingredients": [
+      "鶏",
+      "羊",
+      "豚"
+    ],
+    "ingredient_text": "肉類(ラム、ポーク、チキン)、野菜類(ニンジン、エンドウマメ、パプリカ)、いも類(ポテト)、藻類、油脂類",
+    "target": "オールステージ",
+    "age": [
+      "子犬",
+      "成犬",
+      "シニア",
+      "全年齢"
+    ],
+    "age_range": [
+      0,
+      null
+    ],
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ウェット",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 1712,
+    "price_date": "2026-09-30",
+    "source": "",
+    "checked": "",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "保存料不使用"
+    ],
+    "additive_evidence": {
+      "source": "",
+      "checked": "",
+      "note": "不使用表示は公式商品ページの記載(保存料、酸化防止剤無添加)"
+    }
+  },
+  "foodys-ニュートロ-ニュートロ-ナチュラルチョイス-超小型犬-エイジングケア-チキン-玄": {
+    "id": "foodys-ニュートロ-ニュートロ-ナチュラルチョイス-超小型犬-エイジングケア-チキン-玄",
+    "label": "ニュートロ ナチュラルチョイス 超小型犬 エイジングケア チキン&玄米",
+    "ingredients": [
+      "鶏",
+      "米",
+      "大麦"
+    ],
+    "ingredient_text": "チキン(肉), チキンミール, 玄米, エンドウマメ, 大麦",
+    "target": "超小型犬 シニア犬(7歳以上)",
+    "age": [
+      "シニア"
+    ],
+    "age_range": [
+      84.0,
+      null
+    ],
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 4417,
+    "price_date": "2026-09-30",
+    "source": "",
+    "checked": "",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "foodys-go-ゴー-go-ゴー-グレインフリー-カー二ボア-アダルト-チキン": {
+    "id": "foodys-go-ゴー-go-ゴー-グレインフリー-カー二ボア-アダルト-チキン",
+    "label": "go! (ゴー) グレインフリー カー二ボア アダルト チキン",
+    "ingredients": [
+      "鶏",
+      "七面鳥",
+      "魚"
+    ],
+    "ingredient_text": "チキンミール,ターキーミール,サーモンミール,チキン生肉(骨抜き),ターキー生肉(骨抜き)",
+    "target": "成犬用",
+    "age": [
+      "成犬"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 4455,
+    "price_date": "2026-09-30",
+    "source": "",
+    "checked": "",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用",
+      "香料不使用"
+    ],
+    "additive_evidence": {
+      "source": "",
+      "checked": "",
+      "note": "不使用表示は公式商品ページの記載(着色料・香料を使用していない)"
+    }
+  },
+  "foodys-ziwi-peak-ziwi-peak-エアドライ-ドッグフード-トライプ-ラム": {
+    "id": "foodys-ziwi-peak-ziwi-peak-エアドライ-ドッグフード-トライプ-ラム",
+    "label": "ZIWI Peak エアドライ・ドッグフード トライプ&ラム 全犬種・年齢対応",
+    "ingredients": [
+      "羊"
+    ],
+    "ingredient_text": "ラムトライプ生肉, ラムラング生肉, ラムハート 生肉, ラム生肉, ラムレバー生肉",
+    "target": "全犬種・年齢対応",
+    "age": [],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": true,
+    "weight": [
+      [
+        0,
+        null
+      ]
+    ],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 23980,
+    "price_date": "2026-09-30",
+    "source": "",
+    "checked": "",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "foodys-ピュリナ-プロプラン-ピュリナ-プロプラン-ドッグ-超小型犬-小型犬用-子犬用-": {
+    "id": "foodys-ピュリナ-プロプラン-ピュリナ-プロプラン-ドッグ-超小型犬-小型犬用-子犬用-",
+    "label": "ピュリナ プロプラン ドッグ 超小型犬 小型犬用 子犬用 チキン",
+    "ingredients": [
+      "鶏",
+      "米",
+      "小麦"
+    ],
+    "ingredient_text": "乾燥チキン, チキン, 鶏脂(オメガ6脂肪酸源), 小麦タンパク, 米",
+    "target": "子犬用(1歳まで)/母犬用(妊娠・授乳期用)/超小型用・小型犬用",
+    "age": [
+      "子犬"
+    ],
+    "age_range": [
+      0,
+      12.0
+    ],
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 5808,
+    "price_date": "2026-09-30",
+    "source": "",
+    "checked": "",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用",
+      "香料不使用"
+    ],
+    "additive_evidence": {
+      "source": "",
+      "checked": "",
+      "note": "不使用表示は公式商品ページの記載(合成着色料 無香料 無添加)"
+    }
+  },
+  "foodys-ピュリナ-プロプラン-ピュリナ-プロプラン-成犬用-健康的な体重ケア-チキン": {
+    "id": "foodys-ピュリナ-プロプラン-ピュリナ-プロプラン-成犬用-健康的な体重ケア-チキン",
+    "label": "ピュリナ プロプラン 成犬用 健康的な体重ケア チキン",
+    "ingredients": [
+      "鶏",
+      "米",
+      "小麦",
+      "とうもろこし"
+    ],
+    "ingredient_text": "チキン, 米, 小麦, コーングルテン, 鶏脂(オメガ6脂肪酸源)",
+    "target": "成犬用(1歳から)/全犬種用",
+    "age": [
+      "成犬"
+    ],
+    "age_range": [
+      12.0,
+      null
+    ],
+    "breed": [],
+    "all_breeds": true,
+    "weight": [
+      [
+        0,
+        null
+      ]
+    ],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [
+      "体重管理"
+    ],
+    "price": 6248,
+    "price_date": "2026-09-30",
+    "source": "",
+    "checked": "",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用",
+      "香料不使用"
+    ],
+    "additive_evidence": {
+      "source": "",
+      "checked": "",
+      "note": "不使用表示は公式商品ページの記載(合成着色料 無香料 無添加)"
+    }
+  },
+  "foodys-ユーカヌバ-ユーカヌバ-スモール-フィット-ボディ-成犬用-小型犬用": {
+    "id": "foodys-ユーカヌバ-ユーカヌバ-スモール-フィット-ボディ-成犬用-小型犬用",
+    "label": "ユーカヌバ スモール フィット ボディ 成犬用 小型犬用",
+    "ingredients": [
+      "鶏",
+      "七面鳥",
+      "小麦",
+      "大麦",
+      "とうもろこし"
+    ],
+    "ingredient_text": "肉類(鶏、七面鳥)、とうもろこし、小麦、大麦、動物性脂肪",
+    "target": "1歳以上 / 小型犬",
+    "age": [
+      "成犬"
+    ],
+    "age_range": [
+      12.0,
+      null
+    ],
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 8700,
+    "price_date": "2026-09-30",
+    "source": "",
+    "checked": "",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "foodys-ユーカヌバ-ユーカヌバ-スモール-スーパーシニア-小型犬用-11歳以上": {
+    "id": "foodys-ユーカヌバ-ユーカヌバ-スモール-スーパーシニア-小型犬用-11歳以上",
+    "label": "ユーカヌバ スモール スーパーシニア 小型犬用 11歳以上",
+    "ingredients": [
+      "鶏",
+      "七面鳥",
+      "小麦",
+      "とうもろこし"
+    ],
+    "ingredient_text": "肉類(鶏、七面鳥)、小麦、とうもろこし、動物性脂肪、とうもろこし粉",
+    "target": "11歳以上 / 小型犬",
+    "age": [
+      "シニア"
+    ],
+    "age_range": [
+      132.0,
+      null
+    ],
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 2796,
+    "price_date": "2026-09-30",
+    "source": "",
+    "checked": "",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "foodys-ソルビダ-ソルビダ-グレインフリー-ターキー-室内飼育全年齢対応": {
+    "id": "foodys-ソルビダ-ソルビダ-グレインフリー-ターキー-室内飼育全年齢対応",
+    "label": "ソルビダ グレインフリー ターキー 室内飼育全年齢対応",
+    "ingredients": [
+      "七面鳥"
+    ],
+    "ingredient_text": "オーガニックターキー生肉,乾燥ターキー,オーガニック乾燥豆類,オーガニックエンドウ豆粉,オーガニックタピオカ粉",
+    "target": "室内飼育全年齢対応 / 子犬からシニア犬まで安心して与えていただける全年齢対応",
+    "age": [
+      "子犬",
+      "成犬",
+      "シニア",
+      "全年齢"
+    ],
+    "age_range": [
+      0,
+      null
+    ],
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 15367,
+    "price_date": "2026-09-30",
+    "source": "",
+    "checked": "",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "保存料不使用"
+    ],
+    "additive_evidence": {
+      "source": "",
+      "checked": "",
+      "note": "不使用表示は公式商品ページの記載(合成保存料並びに人工の酸化防止剤は使用しておりません)"
+    }
   }
 };
