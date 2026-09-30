@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "source": "https://sorapapa-creator.github.io/wanko-affiliate-guide/",
- "generated_at": "2026-09-30T14:18:32+09:00",
+ "generated_at": "2026-09-30T14:33:51+09:00",
  "places": [
   {
    "id": "la-dog-resort",
@@ -49782,6 +49782,55 @@
     "lat": 34.750278,
     "lon": 137.925003,
     "matched": "静岡県袋井市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-cross-wonder-dining-com",
+   "type": "spot",
+   "name": "クロスワンダーダイニング",
+   "area": "福島県いわき市",
+   "region_group": "tohoku",
+   "kinds": [
+    "cafe",
+    "park"
+   ],
+   "theme": "福島県いわき市のトマトパーク・ワンダーファームにあるカジュアルイタリアンレストランです。ペット同伴ならテラスや広大な屋外エリアでの楽しみ方ができ、BBQやトマト狩りも堪能できます。隣接する「森のマルシェ」で地元の商品をお買い物することも可能です。",
+   "facts": {
+    "犬の条件・同伴範囲": "ペット同伴ならテラスや広大な屋外エリアを使った楽しみ方ができる",
+    "料金の目安/犬料金": "記載なし",
+    "持ち物": "記載なし",
+    "雨の日": "記載なし",
+    "出発前に確認": "レストランは火〜土11:00-20:00（L.O.19:00）、日11:00-16:00（L.O.15:00）。BBQは11:00-20:00。定休日は毎週日曜日ディナー、毎週月曜日（祝日営業/翌火曜定休）。",
+    "公式で確認したこと": "福島県いわき市四倉町中島字広町95番地1に位置し、ペット同伴でテラスや屋外エリアの利用が可能であること、および営業時間と定休日が確認できた。"
+   },
+   "links": [
+    {
+     "label": "公式情報",
+     "url": "https://www.cross-wonder-dining.com",
+     "affiliate": false
+    },
+    {
+     "label": "施設公式案内",
+     "url": "https://www.cross-wonder-dining.com",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c8-cross-wonder-dining-com",
+   "geocode": {
+    "lat": 37.050453,
+    "lon": 140.887726,
+    "matched": "福島県いわき市",
+    "precision": "municipality"
+   },
+   "area_geocode": {
+    "lat": 37.050453,
+    "lon": 140.887726,
+    "matched": "福島県いわき市",
     "precision": "municipality"
    }
   }
