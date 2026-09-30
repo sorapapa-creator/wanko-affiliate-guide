@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "source": "https://sorapapa-creator.github.io/wanko-affiliate-guide/",
- "generated_at": "2026-09-30T12:52:27+09:00",
+ "generated_at": "2026-09-30T13:02:39+09:00",
  "places": [
   {
    "id": "la-dog-resort",
@@ -23194,6 +23194,81 @@
     "matched": "千葉県富津市",
     "precision": "municipality"
    }
+  },
+  {
+   "id": "c8-00920205",
+   "type": "lodging",
+   "name": "古民家サウナ&BBQ TK亭",
+   "area": "千葉県市原市",
+   "co_sleep": "添い寝 不可",
+   "facts": {
+    "対象犬・頭数": "トイレトレーニングが完了している愛犬のみ室内可能です。1年以内に伝染病等の予防接種を受けている室内犬に限ります。施設側の判断により愛犬の躾が著しく出来ていないと判断した場合は宿泊をキャンセルする場合がございます。",
+    "犬の宿泊料金": "予約前確認",
+    "ケージ・持参判断": "予約前確認",
+    "夜はどこで寝る？": "客室（布団利用不可） 愛犬の布団利用はご遠慮ください",
+    "食事同伴": "条件付き可",
+    "ドッグラン": "あり。小型犬用のドッグランをご用意しました。BBQ＋ドッグランプランではドッグランスペースでバーベキューをご利用頂けます。",
+    "予約前の重要確認": "犬の宿泊料金、ケージの用意、食事の場での同伴可否の詳細"
+   },
+   "links": [
+    {
+     "label": "公式の条件を確認",
+     "url": "https://tk-tei.jp/",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで古民家サウナ&BBQ TK亭の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00920205/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {},
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
+   "geocode": {
+    "lat": 35.498055,
+    "lon": 140.115555,
+    "matched": "千葉県市原市",
+    "precision": "municipality"
+   },
+   "area_geocode": {
+    "lat": 35.498055,
+    "lon": 140.115555,
+    "matched": "千葉県市原市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-00920330",
+   "type": "lodging",
+   "name": "TOCA KUJUKURI",
+   "area": "千葉県山武郡",
+   "co_sleep": "添い寝 予約前確認",
+   "facts": {
+    "対象犬・頭数": "中型犬もしくは小型犬1匹のみ同伴可能です。健康であり、ノミ・ダニ・フィラリア・寄生虫などが駆除されている屋内犬に限ります。ケージトレーニング・トイレ・無駄吠え・破壊行動など必要最低限のしつけがされている必要があります。",
+    "犬の宿泊料金": "5,500円(税込)",
+    "ケージ・持参判断": "あり(基本備え付けのケージをご利用ください)",
+    "夜はどこで寝る？": "1階ソファーベット(ペット専用布団・枕使用)または備え付けのケージ内",
+    "食事同伴": "予約前確認",
+    "ドッグラン": "予約前確認(公式に記載なし)",
+    "予約前の重要確認": "食事の場での同伴可否、ワクチン証明書の提出義務の有無"
+   },
+   "links": [
+    {
+     "label": "公式の条件を確認",
+     "url": "https://www.toca.co.jp/concept/",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでTOCA KUJUKURIの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00920330/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {},
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
+   "geocode": null
   },
   {
    "id": "p-636a59b749",
@@ -48543,6 +48618,511 @@
     "lat": 38.883446,
     "lon": 140.339417,
     "matched": "山形県最上郡金山町",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-izumotaisha-or-jp-grounds",
+   "type": "spot",
+   "name": "常陸国出雲大社",
+   "area": "茨城県笠間市",
+   "region_group": "kanto",
+   "kinds": [
+    "park"
+   ],
+   "theme": "ペット同伴での参拝が可能で、リード着用と排泄物の始末が条件です。境内は平坦な道が多く、車椅子の貸し出しはありませんが、上り下りのない環境で参拝できます。",
+   "facts": {
+    "犬の条件・同伴範囲": "参拝のみ可。拝殿での祈祷は不可。必ずリード着用、排泄物は飼い主責任で始末。",
+    "料金の目安/犬料金": "記載なし",
+    "持ち物": "リード",
+    "雨の日": "記載なし",
+    "出発前に確認": "ペットは参拝のみ(拝殿での祈祷は不可)。リード着用。",
+    "公式で確認したこと": "ペット同伴の参拝が可能だが、拝殿での祈祷は不可であり、リード着用と排泄物処理が必須であること。"
+   },
+   "links": [
+    {
+     "label": "公式情報",
+     "url": "https://izumotaisha.or.jp/grounds",
+     "affiliate": false
+    },
+    {
+     "label": "施設公式案内",
+     "url": "https://izumotaisha.or.jp/grounds",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c8-izumotaisha-or-jp-grounds",
+   "geocode": {
+    "lat": 36.354153,
+    "lon": 140.182068,
+    "precision": "facility",
+    "source": "official-map",
+    "matched": "公式ページの地図"
+   },
+   "area_geocode": {
+    "lat": 36.345196,
+    "lon": 140.30426,
+    "matched": "茨城県笠間市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-kashimajinja-com",
+   "type": "spot",
+   "name": "鹿島神社（益子）",
+   "area": "栃木県芳賀郡益子町",
+   "region_group": "kanto",
+   "kinds": [
+    "park"
+   ],
+   "theme": "基本的にペット同伴の参拝は禁止されていますが、抱っこまたはカートに乗せている場合は許可されています。境内は清浄を心がける神域であり、リードでの参拝は不可です。",
+   "facts": {
+    "犬の条件・同伴範囲": "抱っこをした状態での参拝、またはカートに乗せての参拝のみ許可。リードをつけての参拝は許可しておりません。",
+    "料金の目安/犬料金": "記載なし",
+    "持ち物": "記載なし",
+    "雨の日": "記載なし",
+    "出発前に確認": "ご祈祷は要予約制です。当日受付では社務予定によってはお受けできませんので必ずご予約をお願い申し上げます。",
+    "公式で確認したこと": "ペット同伴は抱っこまたはカートでのみ許可され、リードでの参拝は禁止されていることを確認しました。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://kashimajinja.com/境内での撮影に関する注意事項",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c8-kashimajinja-com",
+   "geocode": {
+    "lat": 36.463649,
+    "lon": 140.092686,
+    "precision": "facility",
+    "source": "official-map",
+    "matched": "公式ページの地図"
+   },
+   "area_geocode": {
+    "lat": 36.467407,
+    "lon": 140.093384,
+    "matched": "栃木県芳賀郡益子町",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-yasakajinja-net-komainusankomanekosan",
+   "type": "spot",
+   "name": "今泉 八坂神社（ペット参拝所 こま犬さん・こま猫さん）",
+   "area": "栃木県宇都宮市",
+   "region_group": "kanto",
+   "kinds": [
+    "park"
+   ],
+   "theme": "ペットの長寿と健康を願い奉納された「こま犬さん・こま猫さん」で、ペットと共にご参拝いただけます。毎年多くの方々がペットと一緒に参拝しており、東日本盲導犬協会への寄付も兼ねた盲導犬支援の取り組みが行われています。",
+   "facts": {
+    "犬の条件・同伴範囲": "ペットと共にご参拝いただけます",
+    "料金の目安/犬料金": "記載なし",
+    "持ち物": "記載なし",
+    "雨の日": "記載なし",
+    "出発前に確認": "記載なし",
+    "公式で確認したこと": "ペット参拝所《こま犬さん・こま猫さん》でペットと共にご参拝でき、御賽銭は東日本盲導犬協会に寄付されている"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://yasakajinja.net/komainusankomanekosan",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c8-yasakajinja-net-komainusankomanekosan",
+   "geocode": {
+    "lat": 36.565956,
+    "lon": 139.899246,
+    "precision": "facility",
+    "source": "official-address",
+    "matched": "栃木県宇都宮市今泉四丁目１６番２８号"
+   },
+   "area_geocode": {
+    "lat": 36.555115,
+    "lon": 139.882599,
+    "matched": "栃木県宇都宮市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-blueberry-base-moka-com-farm-information",
+   "type": "spot",
+   "name": "BLUEBERRY BASE MOKA",
+   "area": "栃木県真岡市",
+   "region_group": "kanto",
+   "kinds": [
+    "park"
+   ],
+   "theme": "6200平米の広大な農園で、大粒で甘いブルーベリーの収穫体験を楽しめます。ワンちゃんもカートやオムツ着用で同伴でき、芝生エリアではリードを外して遊ばせることも可能です。雨の日も傘の貸し出しや宝探しなど、天候を問わず楽しめる体験が用意されています。",
+   "facts": {
+    "犬の条件・同伴範囲": "カートか、オムツ着用でお願いします。園内の芝生エリアはおろして大丈夫です。",
+    "料金の目安/犬料金": "記載なし",
+    "持ち物": "記載なし",
+    "雨の日": "雨の日もブルーベリー狩りやその他の体験も楽しめます。かわいい傘の貸し出しもあります。",
+    "出発前に確認": "営業期間(ブルーベリー狩りシーズン)と予約は公式で確認。",
+    "公式で確認したこと": "農園にワンちゃんも一緒に入園でき、芝生エリアではリードを外せること、および入園が無料であることを確認しました。"
+   },
+   "links": [
+    {
+     "label": "公式情報",
+     "url": "https://www.blueberry-base-moka.com/farm-information",
+     "affiliate": false
+    },
+    {
+     "label": "施設公式案内",
+     "url": "https://www.blueberry-base-moka.com/farm-information",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c8-blueberry-base-moka-com-farm-information",
+   "geocode": {
+    "lat": 36.486775,
+    "lon": 140.00491,
+    "precision": "facility",
+    "source": "official-map",
+    "matched": "公式ページの地図"
+   },
+   "area_geocode": {
+    "lat": 36.440514,
+    "lon": 140.012451,
+    "matched": "栃木県真岡市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-koyama-farm-jp-strawberry-picking",
+   "type": "spot",
+   "name": "小山ファーム",
+   "area": "栃木県小山市",
+   "region_group": "kanto",
+   "kinds": [
+    "park"
+   ],
+   "theme": "愛犬同伴の専用ハウスや専用テーブル席があり、ゆっくりといちご狩りが楽しめます。体重約20kgまでの犬はペットカートかスリングでの抱っこ状態で入園可能です。",
+   "facts": {
+    "犬の条件・同伴範囲": "体重約20kgまで。園内ではペットカートかスリングでの抱っこ状態でのみ入園可能。自由に歩かせることは不可。",
+    "料金の目安/犬料金": "ワンちゃんがいちごを食べない場合も1頭ごとに入園料が掛かります。",
+    "持ち物": "記載なし",
+    "雨の日": "記載なし",
+    "出発前に確認": "愛犬同伴プランは【予約必須】。【じゃらん】のペットプランよりご予約。体験時間は50分。",
+    "公式で確認したこと": "愛犬同伴プランは予約必須で、体重約20kgまでペットカートかスリングでの抱っこ状態で入園可能と記載されている。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://www.koyama-farm.jp/strawberry-picking",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c8-koyama-farm-jp-strawberry-picking",
+   "geocode": {
+    "lat": 36.314495,
+    "lon": 139.800781,
+    "matched": "栃木県小山市",
+    "precision": "municipality"
+   },
+   "area_geocode": {
+    "lat": 36.314495,
+    "lon": 139.800781,
+    "matched": "栃木県小山市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-mamada-hachiman-jp-information-202203",
+   "type": "spot",
+   "name": "間々田八幡宮",
+   "area": "栃木県小山市",
+   "region_group": "kanto",
+   "kinds": [
+    "park"
+   ],
+   "theme": "広い境内で毎日たくさんのワンちゃんが散歩を楽しんでいます。近くには思川の土手や桜、菜の花といった春の景色が広がり、散歩コースとして人気です。",
+   "facts": {
+    "犬の条件・同伴範囲": "広い境内で散歩が可能",
+    "料金の目安/犬料金": "記載なし",
+    "持ち物": "記載なし",
+    "雨の日": "記載なし",
+    "出発前に確認": "境内の散歩は他の参拝者への配慮とリード着用を。",
+    "公式で確認したこと": "4月の限定御朱印のお知らせと、境内での犬の散歩の状況について記載されている"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://www.mamada-hachiman.jp/information/202203",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c8-mamada-hachiman-jp-information-202203",
+   "geocode": {
+    "lat": 36.274338,
+    "lon": 139.765656,
+    "precision": "facility",
+    "source": "official-address",
+    "matched": "栃木県小山市間々田２３３０番地"
+   },
+   "area_geocode": {
+    "lat": 36.314495,
+    "lon": 139.800781,
+    "matched": "栃木県小山市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-hachioujinouen-com",
+   "type": "spot",
+   "name": "八王子農園",
+   "area": "群馬県太田市",
+   "region_group": "kanto",
+   "kinds": [
+    "run",
+    "cafe",
+    "park"
+   ],
+   "theme": "ワンちゃん専用のドッグハウスと広いドッグランを備え、他のお客様に気兼ねなく愛犬と過ごせます。展望レストランでの食事やBBQ、ウエディングなど、愛犬同伴で楽しめる多目的な施設です。",
+   "facts": {
+    "犬の条件・同伴範囲": "ワンちゃん専用のドッグハウスをご用意しており、お食事・BBQ・ウエディング・ご法要など愛犬同伴で利用可能。広いドッグランもご利用いただけます。",
+    "料金の目安/犬料金": "記載なし",
+    "持ち物": "記載なし",
+    "雨の日": "記載なし",
+    "出発前に確認": "営業時間はランチ11:00〜15:00、ディナー17:00〜22:00で木曜定休。アクセス時は強戸スマートICのパーキング利用は不可。",
+    "公式で確認したこと": "群馬県太田市に位置し、ドッグラン・ドッグハウス・展望レストランなどを備えたウエディング／ガーデンパレスであること。"
+   },
+   "links": [
+    {
+     "label": "公式情報",
+     "url": "http://www.hachioujinouen.com",
+     "affiliate": false
+    },
+    {
+     "label": "施設公式案内",
+     "url": "http://www.hachioujinouen.com",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c8-hachioujinouen-com",
+   "geocode": {
+    "lat": 36.34523,
+    "lon": 139.342743,
+    "precision": "facility",
+    "source": "official-address",
+    "matched": "群馬県太田市菅塩町１０２９番地"
+   },
+   "area_geocode": {
+    "lat": 36.291157,
+    "lon": 139.375504,
+    "matched": "群馬県太田市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-houtokuji-jp-petkigan-html",
+   "type": "spot",
+   "name": "宝徳寺",
+   "area": "群馬県桐生市",
+   "region_group": "kanto",
+   "kinds": [
+    "park"
+   ],
+   "theme": "ペットと飼い主さまがご一緒に祈願できる寺院です。ペットの健康長寿や病気平癒、飼い主さまの無病息災などを願うセット祈願も受付しています。",
+   "facts": {
+    "犬の条件・同伴範囲": "ペットと飼い主さまご一緒に祈願できます。客殿にて祈願を行います。",
+    "料金の目安/犬料金": "ペットのみ祈願（1匹）5,000円、ペットと飼い主さまセット祈願6,000円。複数匹の場合は5000円×匹。",
+    "持ち物": "記載なし",
+    "雨の日": "記載なし",
+    "出発前に確認": "ペット祈願の日程・申込方法は公式で確認。",
+    "公式で確認したこと": "ペット祈願の受付方法、料金、時間、受付不可日、授与品の内容を確認しました。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://www.houtokuji.jp/petkigan.html",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c8-houtokuji-jp-petkigan-html",
+   "geocode": {
+    "lat": 36.452722,
+    "lon": 139.31725,
+    "precision": "facility",
+    "source": "osm",
+    "matched": "宝徳寺, 駒形大間々線, 川内町五丁目, 桐生市, 群馬県, 376-0113, 日本"
+   },
+   "area_geocode": {
+    "lat": 36.405743,
+    "lon": 139.330826,
+    "matched": "群馬県桐生市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-ichigogari-org-ichigonosato-dog",
+   "type": "spot",
+   "name": "苺の里（わんちゃんといちご狩り）",
+   "area": "埼玉県入間郡毛呂山町",
+   "region_group": "kanto",
+   "kinds": [
+    "park"
+   ],
+   "theme": "わんちゃんと一緒にいちご狩りを楽しめるプランが用意されています。敷地内やハウス内ではマナーパンツやバギーの使用が求められ、安全に過ごせる環境です。",
+   "facts": {
+    "犬の条件・同伴範囲": "敷地内、ハウス内ではマナーパンツ・マナーベルト着用で、持参したバギーまたはドッグスリングの使用をお願いいたします。バギーを降りてハウス内を歩くことはできません。",
+    "料金の目安/犬料金": "小型犬（〜10kg） ¥500／匹",
+    "持ち物": "マナーパンツ・マナーベルト、バギーまたはドッグスリング",
+    "雨の日": "記載なし",
+    "出発前に確認": "予約はじゃらんからのみ（電話・HP予約は不可）。前月の15日（15日が月曜日の場合は16日）に予約開始。予約時間厳守（遅れてしまうとキャンセルまたは短時間でのご参加になります）。",
+    "公式で確認したこと": "2026年3月・4月の土曜日に実施される犬同伴いちご狩りプランの詳細と予約方法を確認しました。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://ichigogari.org/ichigonosato/dog",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c8-ichigogari-org-ichigonosato-dog",
+   "geocode": {
+    "lat": 35.947252,
+    "lon": 139.356874,
+    "precision": "facility",
+    "source": "osm",
+    "matched": "苺の里, 川越越生線, 西大久保, 毛呂山町, 入間郡, 埼玉県, 350-0244, 日本"
+   },
+   "area_geocode": {
+    "lat": 35.941498,
+    "lon": 139.316025,
+    "matched": "埼玉県入間郡毛呂山町",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-tsurugijinja-com-pet-prayer",
+   "type": "spot",
+   "name": "剣神社（ペット祈願）",
+   "area": "埼玉県蕨市",
+   "region_group": "kanto",
+   "kinds": [
+    "park"
+   ],
+   "theme": "大切なご家族である犬の健康や交通安全を祈願できるペット祈願が受けられます。リードやケージなどのマナーを守れば、ご一緒にご参列いただくことも可能です。",
+   "facts": {
+    "犬の条件・同伴範囲": "リードやマナーベルトの着用、ケージやカートの利用が必要。他の参拝者様のご迷惑にならないように対応すること。",
+    "料金の目安/犬料金": "初穂料：5,000円 / 8,000円 / 10,000円（授与品が変わります）",
+    "持ち物": "飼主様が代表してご祈祷を受ける際は、ペットの写真と身に付けるもの（リード、ハーネスなど）。",
+    "雨の日": "記載なし",
+    "出発前に確認": "祈祷はご予約が必須。予約可能時間は10:00-16:00（年中無休）。所要時間は約20分。",
+    "公式で確認したこと": "鶴見神社のペット祈願サービスについて、予約方法や料金、同伴時のマナーが記載されている。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://www.tsurugijinja.com/pet-prayer",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c8-tsurugijinja-com-pet-prayer",
+   "geocode": {
+    "lat": 35.819164,
+    "lon": 139.695663,
+    "precision": "district",
+    "source": "official-address",
+    "matched": "埼玉県蕨市南町二丁目"
+   },
+   "area_geocode": {
+    "lat": 35.825581,
+    "lon": 139.679581,
+    "matched": "埼玉県蕨市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-tsm-farm-com",
+   "type": "spot",
+   "name": "tsm-farm ドッグラン（越谷）",
+   "area": "埼玉県越谷市",
+   "region_group": "kanto",
+   "kinds": [
+    "run",
+    "park"
+   ],
+   "theme": "無農薬・無肥料の自然栽培貸農園とドッグラン、BBQ施設が一体となった広大な施設です。貸農園契約者はドッグランの利用料が無料になるなど、農業と犬の遊びを同時に楽しめる環境が整っています。",
+   "facts": {
+    "犬の条件・同伴範囲": "ドッグランは完全予約制で、予約時間は貸切となります。貸農園ご契約者が優先され、契約者は利用料無料です。",
+    "料金の目安/犬料金": "ドッグランは500円/時間（現金払いのみ）。貸農園ご契約者は利用料無料です。",
+    "持ち物": "記載なし",
+    "雨の日": "記載なし",
+    "出発前に確認": "ドッグランは完全予約制で、公式LINEから予約・見学を行います。新規での「ドッグラン・BBQのみのご利用」は一時的に制限されています。",
+    "公式で確認したこと": "tsm-farmは貸農園・ドッグラン・BBQを提供し、ドッグランは完全予約制で貸農園契約者が優先される。"
+   },
+   "links": [
+    {
+     "label": "公式情報",
+     "url": "https://www.tsm-farm.com",
+     "affiliate": false
+    },
+    {
+     "label": "施設公式案内",
+     "url": "https://www.tsm-farm.com",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c8-tsm-farm-com",
+   "geocode": {
+    "lat": 35.890644,
+    "lon": 139.791031,
+    "matched": "埼玉県越谷市",
+    "precision": "municipality"
+   },
+   "area_geocode": {
+    "lat": 35.890644,
+    "lon": 139.791031,
+    "matched": "埼玉県越谷市",
     "precision": "municipality"
    }
   }
