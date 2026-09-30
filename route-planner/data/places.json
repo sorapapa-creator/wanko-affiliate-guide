@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "source": "https://sorapapa-creator.github.io/wanko-affiliate-guide/",
- "generated_at": "2026-09-30T16:34:30+09:00",
+ "generated_at": "2026-09-30T17:05:57+09:00",
  "places": [
   {
    "id": "la-dog-resort",
@@ -50931,6 +50931,270 @@
     "lat": 35.221977,
     "lon": 138.621613,
     "matched": "静岡県富士宮市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-fwa-kp-hd-com",
+   "type": "spot",
+   "name": "富士山ワイルドアドベンチャー（FWA）",
+   "area": "静岡県富士宮市",
+   "region_group": "shizuoka-east",
+   "kinds": [
+    "park"
+   ],
+   "theme": "富士山を目前に望む約14,000坪の広大なアウトドアパークで、フリーサイトキャンプや自然共生型アスレチックが楽しめます。リードまたはケージ必須であればペット同伴も可能で、白糸の滝やまかいの牧場など周辺観光地へのアクセスも良好です。",
+   "facts": {
+    "犬の条件・同伴範囲": "キャンプサイト（フリーサイト・富士見サイト）ではリードまたはケージ必須で同伴可。ゲストハウス（宿泊施設）はペット不可。",
+    "料金の目安/犬料金": "キャンプ日帰りプランは基本料金880円/日～、宿泊プランは3,300円/日～（車1台含む）。犬の個別料金は記載なし。",
+    "持ち物": "リードまたはケージ（ペット同伴時）。",
+    "雨の日": "記載なし",
+    "出発前に確認": "チェックイン11:00～、チェックアウト17:00（キャンプ）。BBQ食材は事前予約が必要。シーズンにより料金が変動する場合あり。",
+    "公式で確認したこと": "キャンプサイトではリードまたはケージ必須でペット同伴が可能であること、および各プランの料金体系と利用時間を確認した。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "http://fwa.kp-hd.com",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c8-fwa-kp-hd-com",
+   "geocode": {
+    "lat": 35.33039,
+    "lon": 138.616597,
+    "precision": "facility",
+    "source": "official-map",
+    "matched": "公式ページの地図"
+   },
+   "area_geocode": {
+    "lat": 35.221977,
+    "lon": 138.621613,
+    "matched": "静岡県富士宮市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-hamanako-yuransen-com-archives-2699",
+   "type": "spot",
+   "name": "浜名湖遊覧船 わんわんクルーズ",
+   "area": "静岡県浜松市",
+   "region_group": "shizuoka-east",
+   "kinds": [
+    "park"
+   ],
+   "theme": "浜名湖を愛犬と一緒にクルーズできる体験です。開催時はリードだけでOKなので、大きなワンちゃんも大歓迎です。",
+   "facts": {
+    "犬の条件・同伴範囲": "リードだけでOK。狂犬病、混合ワクチン予防接種を受けていないワンちゃんはご乗船いただけません。",
+    "料金の目安/犬料金": "ワンちゃん:無料、おとな:1,000円、こども:500円",
+    "持ち物": "記載なし",
+    "雨の日": "記載なし",
+    "出発前に確認": "開催曜日・時間は公式で確認。ワクチン接種済みが条件。",
+    "公式で確認したこと": "浜名湖を愛犬と一緒にクルーズできる「わんわんクルーズ」の開催概要と注意事項を確認しました。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://hamanako-yuransen.com/archives/2699",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "has_rain_note": true,
+    "vaccine_required": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c8-hamanako-yuransen-com-archives-2699",
+   "geocode": {
+    "lat": 34.710808,
+    "lon": 137.726303,
+    "matched": "静岡県浜松市",
+    "precision": "municipality"
+   },
+   "area_geocode": {
+    "lat": 34.710808,
+    "lon": 137.726303,
+    "matched": "静岡県浜松市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-nylfmuseum-com-pet",
+   "type": "spot",
+   "name": "ニューヨークランプミュージアム＆フラワーガーデン",
+   "area": "静岡県伊東市",
+   "region_group": "shizuoka-east",
+   "kinds": [
+    "park",
+    "cafe"
+   ],
+   "theme": "四季折々の花々が咲くフラワーガーデンや、約120年前に作られたティファニーランプの鑑賞が可能な施設です。ペット用のフォトスポットも用意されており、SNS映えする写真撮影も楽しめます。",
+   "facts": {
+    "犬の条件・同伴範囲": "フラワーガーデン、ティファニーミュージアム、ミュージアムカフェで同伴可能。マナーを守ること。",
+    "料金の目安/犬料金": "記載なし",
+    "持ち物": "記載なし",
+    "雨の日": "記載なし",
+    "出発前に確認": "同伴のマナー(リード等)は公式で確認。",
+    "公式で確認したこと": "ペット連れのお客様を歓迎しており、園内のミュージアムもペット入館OKであること。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://nylfmuseum.com/pet",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c8-nylfmuseum-com-pet",
+   "geocode": {
+    "lat": 34.884688,
+    "lon": 139.130124,
+    "precision": "facility",
+    "source": "official-map",
+    "matched": "公式ページの地図"
+   },
+   "area_geocode": {
+    "lat": 34.965832,
+    "lon": 139.101944,
+    "matched": "静岡県伊東市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-matsushima-ribtour-com-pet",
+   "type": "spot",
+   "name": "松島RIBボートツアー（リブツアー）",
+   "area": "宮城県宮城郡松島町",
+   "region_group": "tohoku",
+   "kinds": [
+    "park"
+   ],
+   "theme": "窓のないリブボートで、ワンちゃんも景色と風をダイレクトに楽しめる開放感あふれる体験です。揺れが少なく安定性が高いため、初めての船旅でも安心です。松島の島々をバックに、愛犬の「いい顔」が撮れる最高のシャッターチャンスも期待できます。",
+   "facts": {
+    "犬の条件・同伴範囲": "リード着用、マナーウェア着用が必須。小型犬は抱っこして乗る場合、大型犬は座席に余裕がある場合のみ参加可能。ペット用ライフジャケットは貸出なしでお客様でご用意が必要。",
+    "料金の目安/犬料金": "小型犬（抱っこして乗る場合）3,000円（1頭につき）、大型犬5,000円（1頭につき）。",
+    "持ち物": "ペット用ライフジャケット（貸出なしのためお客様でご用意）、マナーウェア。",
+    "雨の日": "記載なし",
+    "出発前に確認": "ペット同伴の場合はできるだけ前日までにご予約。大型犬は事前に要予約。乗船の2～3時間前までに食事をすませ、トイレも乗船前にすませておく。",
+    "公式で確認したこと": "愛犬と一緒に乗船OKで、リード・マナーウェア着用が必須、小型犬3,000円・大型犬5,000円、ペット用ライフジャケットは貸出なし、大型犬は座席余裕時に事前予約が必要。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://matsushima-ribtour.com/pet",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c8-matsushima-ribtour-com-pet",
+   "geocode": {
+    "lat": 38.380192,
+    "lon": 141.067368,
+    "matched": "宮城県宮城郡松島町",
+    "precision": "municipality"
+   },
+   "area_geocode": {
+    "lat": 38.380192,
+    "lon": 141.067368,
+    "matched": "宮城県宮城郡松島町",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-matsushima-or-jp-faq",
+   "type": "spot",
+   "name": "松島島巡り観光船（仁王丸コース）",
+   "area": "宮城県宮城郡松島町",
+   "region_group": "tohoku",
+   "kinds": [
+    "park"
+   ],
+   "theme": "松島の景観を船から眺められる遊覧船です。小型犬はケージやキャリーバックに入っていれば同伴可能です。盲導犬や介助犬はそのまま乗船できます。",
+   "facts": {
+    "犬の条件・同伴範囲": "乗船中は顔が出ないようにケージやキャリーバック等に入っていれば一緒に乗っていただいて構いません。小型犬用であれば数に限りはありますが窓口にて無料で貸し出しもしております。盲導犬や介助犬はそのまま乗っていただくことができます。",
+    "料金の目安/犬料金": "記載なし",
+    "持ち物": "記載なし",
+    "雨の日": "記載なし",
+    "出発前に確認": "大型定期船「仁王丸コース」は予約は必要ありませんが、予約して頂けると１割引きの特典がつきます。GWや繁忙期などの混雑が予想されるときは安全の為に乗船人数の制限をかけさせていただいております。",
+    "公式で確認したこと": "ペットはケージやキャリーバック等に入っていれば乗船可能であり、小型犬用の貸し出しもあると確認しました。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://www.matsushima.or.jp/faq",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c8-matsushima-or-jp-faq",
+   "geocode": {
+    "lat": 38.369179,
+    "lon": 141.06308,
+    "precision": "facility",
+    "source": "official-address",
+    "matched": "宮城県松島町松島町内８５番地"
+   },
+   "area_geocode": {
+    "lat": 38.380192,
+    "lon": 141.067368,
+    "matched": "宮城県宮城郡松島町",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-kinkasan-com-2023-03-03-2",
+   "type": "spot",
+   "name": "金華山観光クルーズ",
+   "area": "宮城県石巻市",
+   "region_group": "tohoku",
+   "kinds": [
+    "park"
+   ],
+   "theme": "宮城県石巻市鮎川港から金華山へ向かう定期船や海上タクシーの運航情報ページです。小型犬・大型犬ともにケージに入れての乗船が可能で、料金も明確に示されています。悪天候時の欠航情報や支払い方法など、犬連れでの船旅に必要な実用的な情報が記載されています。",
+   "facts": {
+    "犬の条件・同伴範囲": "ケージに入れての乗船にご協力をいただいております。",
+    "料金の目安/犬料金": "小型犬 500円、大型犬 1,000円",
+    "持ち物": "記載なし",
+    "雨の日": "悪天候（強風・高波）の場合は欠航になります。",
+    "出発前に確認": "悪天候時は欠航あり。現金のみ。ケージ持参。",
+    "公式で確認したこと": "ペットはケージに入れて乗船可能で、小型犬500円・大型犬1,000円の料金設定があること。"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://kinkasan.com/2023/03/03/お問い合わせの多いご質問-2",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c8-kinkasan-com-2023-03-03-2",
+   "geocode": {
+    "lat": 38.297394,
+    "lon": 141.508667,
+    "precision": "district",
+    "source": "official-address",
+    "matched": "宮城県石巻市鮎川浜丁"
+   },
+   "area_geocode": {
+    "lat": 38.43425,
+    "lon": 141.302734,
+    "matched": "宮城県石巻市",
     "precision": "municipality"
    }
   }
