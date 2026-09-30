@@ -15639,5 +15639,182 @@ window.WANKO_FOOD_FACTS = {
     "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
     "additives": [],
     "additive_evidence": {}
+  },
+  "foodys-パーパス-ホリスティックレセピー-チキン-ライス-成犬": {
+    "id": "foodys-パーパス-ホリスティックレセピー-チキン-ライス-成犬",
+    "label": "ホリスティックレセピー チキン＆ライス 成犬",
+    "ingredients": [
+      "鶏",
+      "米",
+      "大麦"
+    ],
+    "ingredient_text": "鶏肉粉,玄米,醸造米,大麦,鶏脂",
+    "target": "成犬",
+    "age": [
+      "成犬"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 3254,
+    "price_date": "2026-09-30",
+    "source": "",
+    "checked": "",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用",
+      "香料不使用",
+      "保存料不使用"
+    ],
+    "additive_evidence": {
+      "source": "",
+      "checked": "",
+      "note": "不使用表示は公式商品ページの記載(合成保存料・合成着色料・人工香料を使用せず)"
+    }
+  },
+  "foodys-アース-ペット-ファーストチョイス-choices-ダイエットしたい子に-高齢犬": {
+    "id": "foodys-アース-ペット-ファーストチョイス-choices-ダイエットしたい子に-高齢犬",
+    "label": "ファーストチョイス ChoiceS ダイエットしたい子に 高齢犬7歳以上 チキン",
+    "ingredients": [
+      "鶏",
+      "米",
+      "とうもろこし"
+    ],
+    "ingredient_text": "コーン、鶏肉※、玄米、たん白加水分解物、ビートパルプ",
+    "target": "7歳以上",
+    "age": [
+      "シニア"
+    ],
+    "age_range": [
+      84.0,
+      null
+    ],
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 5480,
+    "price_date": "2026-09-30",
+    "source": "",
+    "checked": "",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "foodys-ファーストチョイス-ファーストチョイス-choices-お肉が好きな子に-ラム-": {
+    "id": "foodys-ファーストチョイス-ファーストチョイス-choices-お肉が好きな子に-ラム-",
+    "label": "ファーストチョイス ChoiceS お肉が好きな子に ラム 成犬1歳以上",
+    "ingredients": [
+      "羊",
+      "米",
+      "大麦",
+      "とうもろこし",
+      "オーツ麦"
+    ],
+    "ingredient_text": "ラム肉,オーツ麦,大麦,玄米,コーン",
+    "target": "1歳以上",
+    "age": [
+      "成犬"
+    ],
+    "age_range": [
+      12.0,
+      null
+    ],
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 5480,
+    "price_date": "2026-09-30",
+    "source": "",
+    "checked": "",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "foodys-デビフ-デビフ-シニア食-dha-epa配合": {
+    "id": "foodys-デビフ-デビフ-シニア食-dha-epa配合",
+    "label": "デビフ シニア食 DHA・EPA配合",
+    "ingredients": [
+      "鶏",
+      "豚"
+    ],
+    "ingredient_text": "鶏胸肉,豚心臓,野菜類(じゃがいも,人参,グリンピース),鶏内臓,砂糖",
+    "target": "全犬種、シニア犬 / 成犬用",
+    "age": [
+      "成犬",
+      "シニア"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": true,
+    "weight": [
+      [
+        0,
+        null
+      ]
+    ],
+    "adult_weight": [],
+    "form": "ウェット",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 4562,
+    "price_date": "2026-09-30",
+    "source": "",
+    "checked": "",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "foodys-いなば-いなば-ちゅ-る-総合栄養食-とりささみバラエティ": {
+    "id": "foodys-いなば-いなば-ちゅ-る-総合栄養食-とりささみバラエティ",
+    "label": "いなば ちゅ〜る 総合栄養食 とりささみバラエティ",
+    "ingredients": [
+      "鶏"
+    ],
+    "ingredient_text": "鶏肉(ささみ)、鶏脂、チキンエキス、酵母エキス、タンパク加水分解物",
+    "target": "1歳からの成犬",
+    "age": [
+      "成犬"
+    ],
+    "age_range": [
+      12.0,
+      null
+    ],
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ウェット",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 4018,
+    "price_date": "2026-09-30",
+    "source": "",
+    "checked": "",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
   }
 };
