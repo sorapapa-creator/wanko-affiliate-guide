@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "source": "https://sorapapa-creator.github.io/wanko-affiliate-guide/",
- "generated_at": "2026-09-30T15:32:00+09:00",
+ "generated_at": "2026-09-30T15:38:37+09:00",
  "places": [
   {
    "id": "la-dog-resort",
@@ -49674,6 +49674,147 @@
     "lon": 139.772003,
     "matched": "東京都中央区",
     "precision": "approximate"
+   }
+  },
+  {
+   "id": "c8-nojimazakikaiteitoushisen-com",
+   "type": "spot",
+   "name": "野島崎海底透視船（遊覧船）",
+   "area": "千葉県館山市",
+   "region_group": "chiba",
+   "kinds": [
+    "park"
+   ],
+   "theme": "グラスボートに乗って野島埼灯台周辺の海を遊覧し、船底のガラス窓から海底の様子や海の生き物を間近で観察できます。定員40名で、ペットもご一緒に乗船可能です。",
+   "facts": {
+    "犬の条件・同伴範囲": "ペットもご一緒に乗船可能です",
+    "料金の目安/犬料金": "記載なし",
+    "持ち物": "記載なし",
+    "雨の日": "気象状況により海の中が見えない場合があります",
+    "出発前に確認": "運航時間・天候による欠航・ペット同伴のルール(キャリー等)は公式で確認。",
+    "公式で確認したこと": "ペット同伴可、所要時間約20分、定員40名、気象状況による視界の制限"
+   },
+   "links": [
+    {
+     "label": "施設公式案内",
+     "url": "https://www.nojimazakikaiteitoushisen.com",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c8-nojimazakikaiteitoushisen-com",
+   "geocode": {
+    "lat": 34.996468,
+    "lon": 139.870041,
+    "matched": "千葉県館山市",
+    "precision": "municipality"
+   },
+   "area_geocode": {
+    "lat": 34.996468,
+    "lon": 139.870041,
+    "matched": "千葉県館山市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-e-vino-owst-jp",
+   "type": "spot",
+   "name": "E vino（エ ヴィーノ）",
+   "area": "東京都世田谷区",
+   "region_group": "kanto",
+   "kinds": [
+    "cafe"
+   ],
+   "theme": "大型犬を含むペット連れOKで、ランチ・ディナーともに愛犬と一緒に本格イタリアンとナチュラルワインを楽しめます。散歩がてらお気軽にお立ち寄りいただける隠れ家イタリアンです。",
+   "facts": {
+    "犬の条件・同伴範囲": "発情期のわんちゃんは入店不可/リードとマナーパンツ着用必須/わんちゃん同士のトラブルは責任負いかねます",
+    "料金の目安/犬料金": "昼：1501～2000円 夜：3001～4000円",
+    "持ち物": "リードとマナーパンツ",
+    "雨の日": "記載なし",
+    "出発前に確認": "月～日: 11:00～15:00 （料理L.O. 14:30 ドリンクL.O. 14:30）17:00～23:00 （料理L.O. 22:00 ドリンクL.O. 22:00） 定休日: 不定休",
+    "公式で確認したこと": "大型犬を含むペット連れOKで、リードとマナーパンツの着用が必須であること"
+   },
+   "links": [
+    {
+     "label": "公式情報",
+     "url": "https://e-vino.owst.jp",
+     "affiliate": false
+    },
+    {
+     "label": "施設公式案内",
+     "url": "https://e-vino.owst.jp",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c8-e-vino-owst-jp",
+   "geocode": {
+    "lat": 35.601192,
+    "lon": 139.671646,
+    "precision": "facility",
+    "source": "official-address",
+    "matched": "東京都世田谷区奥沢四丁目１５番１５号"
+   },
+   "area_geocode": {
+    "lat": 35.64595,
+    "lon": 139.653183,
+    "matched": "東京都世田谷区",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-pcube-owst-jp",
+   "type": "spot",
+   "name": "Warehousecafe P cube",
+   "area": "東京都立川市",
+   "region_group": "kanto",
+   "kinds": [
+    "cafe"
+   ],
+   "theme": "築100年を超える蔵を利用したカフェレストランで、テラス席ではペット同伴が可能です。リードフックやお水、わんちゃん用のジャーキーなども用意されており、動物好きなスタッフが歓迎してくれます。",
+   "facts": {
+    "犬の条件・同伴範囲": "テラス席のみペット同伴可。リードフックやお水、わんちゃん猫ちゃん用のジャーキーなどもご用意ございます。",
+    "料金の目安/犬料金": "昼：1501～2000円 夜：3001～4000円（犬の料金は記載なし）",
+    "持ち物": "記載なし",
+    "雨の日": "記載なし",
+    "出発前に確認": "定休日は水曜日、年末年始（12月30,31 1月1,2,3）はお休み。営業時間は11:00～23:00。",
+    "公式で確認したこと": "テラス席のみペット同伴が可能であり、関連する設備や注意事項が記載されていることを確認しました。"
+   },
+   "links": [
+    {
+     "label": "公式情報",
+     "url": "https://pcube.owst.jp",
+     "affiliate": false
+    },
+    {
+     "label": "施設公式案内",
+     "url": "https://pcube.owst.jp",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "has_rain_note": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/east-japan-dog-trips.html#c8-pcube-owst-jp",
+   "geocode": {
+    "lat": 35.731167,
+    "lon": 139.362747,
+    "precision": "facility",
+    "source": "official-address",
+    "matched": "東京都立川市西砂町五丁目６番"
+   },
+   "area_geocode": {
+    "lat": 35.71389,
+    "lon": 139.407776,
+    "matched": "東京都立川市",
+    "precision": "municipality"
    }
   }
  ]
