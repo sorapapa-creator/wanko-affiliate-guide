@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "source": "https://sorapapa-creator.github.io/wanko-affiliate-guide/",
- "generated_at": "2026-09-30T12:27:04+09:00",
+ "generated_at": "2026-09-30T12:37:51+09:00",
  "places": [
   {
    "id": "la-dog-resort",
@@ -1288,7 +1288,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでわんわんパラダイス プレミア 山中湖の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00031005/",
      "affiliate": false
     }
@@ -1438,7 +1438,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでセルリアンタワー東急ホテルの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00000355/",
      "affiliate": false
     }
@@ -1496,7 +1496,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでVIALA鬼怒川渓翠の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00002984/",
      "affiliate": false
     }
@@ -2576,7 +2576,7 @@
      "affiliate": true
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでRakuten STAY VILLA 那須の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00051735/",
      "affiliate": false
     }
@@ -2629,7 +2629,7 @@
      "affiliate": true
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでRakuten STAY VILLA 草津温泉の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00052632/",
      "affiliate": false
     }
@@ -2682,7 +2682,7 @@
      "affiliate": true
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでRakuten STAY VILLA 箱根強羅の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00052618/",
      "affiliate": false
     }
@@ -2735,7 +2735,7 @@
      "affiliate": true
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでRakuten STAY 箱根すすき草原の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00052248/",
      "affiliate": false
     }
@@ -2788,7 +2788,7 @@
      "affiliate": true
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでRakuten STAY VILLA 箱根桃源台の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00052234/",
      "affiliate": false
     }
@@ -2841,7 +2841,7 @@
      "affiliate": true
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでRakuten STAY TERRACE 箱根小涌谷の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00052040/",
      "affiliate": false
     }
@@ -2894,7 +2894,7 @@
      "affiliate": true
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでRakuten STAY FUJIMI TERRACE 箱根芦ノ湖の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00051871/",
      "affiliate": false
     }
@@ -4796,7 +4796,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで最上高湯 善七乃湯の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00908620/",
      "affiliate": false
     }
@@ -4847,7 +4847,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでゆとりろガーデン北軽井沢 with DOGSの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00912409/",
      "affiliate": false
     }
@@ -4898,7 +4898,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで軽井沢ホテルそよかぜの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00901105/",
      "affiliate": false
     }
@@ -4949,7 +4949,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでプチホテル グラスハウスの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00904000/",
      "affiliate": false
     }
@@ -5003,7 +5003,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでコートヤード・バイ・マリオット 白馬の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00002417/",
      "affiliate": false
     }
@@ -5107,7 +5107,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでモリトソラ箱根の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00924537/",
      "affiliate": false
     }
@@ -5601,7 +5601,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで鬼怒川 絆の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00002930/",
      "affiliate": false
     }
@@ -5650,7 +5650,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで犬と泊まれる宿 虹の詩の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00904170/",
      "affiliate": false
     }
@@ -6531,7 +6531,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでホテルグリーンプラザ軽井沢の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00900385/",
      "affiliate": false
     }
@@ -6621,7 +6621,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで天空の庭 天馬夢 -AMAMU-の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00002047/",
      "affiliate": false
     }
@@ -6670,7 +6670,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでエンゼルフォレスト中伊豆の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00052423/",
      "affiliate": false
     }
@@ -6719,7 +6719,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでアパホテル&リゾート〈上越妙高〉の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00081172/",
      "affiliate": false
     }
@@ -6903,7 +6903,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでONSEN COTTAGE AJISAIの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00915943/",
      "affiliate": false
     }
@@ -7257,7 +7257,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで赤湯温泉 丹泉ホテルの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00902730/",
      "affiliate": false
     }
@@ -7935,7 +7935,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでザ・ペニンシュラ東京の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00001279/",
      "affiliate": false
     }
@@ -7984,7 +7984,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで星野リゾート リゾナーレ熱海の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00001791/",
      "affiliate": false
     }
@@ -8122,7 +8122,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで佐原商家町ホテル NIPPONIAの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00002778/",
      "affiliate": false
     }
@@ -8261,7 +8261,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでICIホテル浅草橋 by RELIEFの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00081663/",
      "affiliate": false
     }
@@ -8305,7 +8305,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでホテル椿山荘東京の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00000186/",
      "affiliate": false
     }
@@ -8349,7 +8349,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで那須ハイランドパーク オフィシャルホテル TOWAピュアコテージの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00031145/",
      "affiliate": false
     }
@@ -8393,7 +8393,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで那須ハミルの森の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00911931/",
      "affiliate": false
     }
@@ -8437,7 +8437,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでグランドメルキュール南房総リゾート＆スパの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00003136/",
      "affiliate": false
     }
@@ -8528,7 +8528,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでGodere hotel 富士山中湖 Tabistの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00920202/",
      "affiliate": false
     }
@@ -8572,7 +8572,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでペンション コットンテールの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00906822/",
      "affiliate": false
     }
@@ -8615,7 +8615,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでメルキュール裏磐梯リゾート＆スパの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00003162/",
      "affiliate": false
     }
@@ -8659,7 +8659,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで別邸 山風木の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00001285/",
      "affiliate": false
     }
@@ -8702,7 +8702,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで丸峰観光ホテルの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00002303/",
      "affiliate": false
     }
@@ -8750,7 +8750,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでLakehide Konanの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00052463/",
      "affiliate": false
     }
@@ -8794,7 +8794,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで薪のくつろぎ蔵王の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00052475/",
      "affiliate": false
     }
@@ -8837,7 +8837,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでたびの邸宅 WOOD STAY 山元の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00052684/",
      "affiliate": false
     }
@@ -8881,7 +8881,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでペットと泊まれる宿 ペンションこりすの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00902637/",
      "affiliate": false
     }
@@ -8925,7 +8925,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでペンション フェリチェの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00902995/",
      "affiliate": false
     }
@@ -8968,7 +8968,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでスパホテル スミレ館の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00903397/",
      "affiliate": false
     }
@@ -9012,7 +9012,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで花ごころの湯 新富亭の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00903692/",
      "affiliate": false
     }
@@ -9058,7 +9058,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでラヂオの古民家 ペルメルの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00906358/",
      "affiliate": false
     }
@@ -9103,7 +9103,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで会津芦ノ牧温泉 芦ノ牧プリンスホテルの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00906528/",
      "affiliate": false
     }
@@ -9147,7 +9147,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでロッジスコーレの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00906718/",
      "affiliate": false
     }
@@ -9191,7 +9191,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで土湯温泉 源泉湯庵 ニュー扇屋の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00911395/",
      "affiliate": false
     }
@@ -9235,7 +9235,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでしゃくなげ平貸別荘 No.498の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00912926/",
      "affiliate": false
     }
@@ -9284,7 +9284,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでたびのCAMPING BASE 加美ゆーらんど コテージBの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00913631/",
      "affiliate": false
     }
@@ -9330,7 +9330,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで蛇のゆ湯吉の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00914662/",
      "affiliate": false
     }
@@ -9374,7 +9374,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで星逢える宿〜森のコテージ気仙沼の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00914692/",
      "affiliate": false
     }
@@ -9420,7 +9420,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでHANABUSA DOGlampingの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00916514/",
      "affiliate": false
     }
@@ -9466,7 +9466,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでKIBOTCHAの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00916725/",
      "affiliate": false
     }
@@ -9511,7 +9511,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでペンションおもちゃばこの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00918969/",
      "affiliate": false
     }
@@ -9558,7 +9558,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでSAKATANTO Container Hotel CAMPS ペット専用棟の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00919765/",
      "affiliate": false
     }
@@ -9602,7 +9602,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでペット同室宿泊パイオニアの宿 きぬ川国際ホテルの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00030095/",
      "affiliate": false
     }
@@ -9646,7 +9646,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで那須の犬宿クーネルの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00920642/",
      "affiliate": false
     }
@@ -9692,7 +9692,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで愛犬と泊まれるプチホテル ザ ハートフィールド インの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00030379/",
      "affiliate": false
     }
@@ -9738,7 +9738,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで伏楽の館 那須湯本店の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00906520/",
      "affiliate": false
     }
@@ -9784,7 +9784,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで愛犬と泊まれる古民家リトリート 赤城山 - 懐 -の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00921492/",
      "affiliate": false
     }
@@ -9830,7 +9830,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでHotelRestaの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00904728/",
      "affiliate": false
     }
@@ -9878,7 +9878,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでペットと泊まれる宿 コンドミニアム フラットレット草津の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00903379/",
      "affiliate": false
     }
@@ -9924,7 +9924,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでShareResortあにまる御殿の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00915590/",
      "affiliate": false
     }
@@ -9968,7 +9968,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで風木立の川辺 紫明館の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00905914/",
      "affiliate": false
     }
@@ -10012,7 +10012,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでホテル東日本 宇都宮の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00001374/",
      "affiliate": false
     }
@@ -10056,7 +10056,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでホテル森の風那須の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00002529/",
      "affiliate": false
     }
@@ -10104,7 +10104,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでEarthboat Minakami Fujiwaraの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00052061/",
      "affiliate": false
     }
@@ -10150,7 +10150,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでEarthboat Minakami Hodaigiの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00052092/",
      "affiliate": false
     }
@@ -10196,7 +10196,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでEarthboat Nasuの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00052389/",
      "affiliate": false
     }
@@ -10242,7 +10242,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで北欧伝説 ドワーフの村の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00052571/",
      "affiliate": false
     }
@@ -10286,7 +10286,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでヴィラ楓倉の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00052683/",
      "affiliate": false
     }
@@ -10331,7 +10331,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで草津温泉 ペットと泊まれる宿 音雅の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00903975/",
      "affiliate": false
     }
@@ -10377,7 +10377,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで浅間高原ホテルの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00906121/",
      "affiliate": false
     }
@@ -10423,7 +10423,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでEarthboat Kitakaruizawaの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00052831/",
      "affiliate": false
     }
@@ -10469,7 +10469,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで赤沢温泉旅館の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00910848/",
      "affiliate": false
     }
@@ -10515,7 +10515,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでゲストハウス ラ・ピステの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00911411/",
      "affiliate": false
     }
@@ -10561,7 +10561,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでSORANO HOTELの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00003297/",
      "affiliate": false
     }
@@ -10605,7 +10605,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで帝国ホテル 東京の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00000315/",
      "affiliate": false
     }
@@ -10649,7 +10649,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでスミスのいえ伊豆大島の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00920217/",
      "affiliate": false
     }
@@ -10695,7 +10695,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで五氣里 -itsukiri-の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00003154/",
      "affiliate": false
     }
@@ -10738,7 +10738,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでドッグコテージsurfside九十九里の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00919841/",
      "affiliate": false
     }
@@ -10782,7 +10782,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでまるのもり Glamping with Dogの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00919187/",
      "affiliate": false
     }
@@ -10831,7 +10831,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでヴィラ プールモアの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00921221/",
      "affiliate": false
     }
@@ -10876,7 +10876,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでドッグコテージD-99の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00914720/",
      "affiliate": false
     }
@@ -10919,7 +10919,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでHarvey Dog Cottageの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00914707/",
      "affiliate": false
     }
@@ -10964,7 +10964,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでWAN FORTの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00915066/",
      "affiliate": false
     }
@@ -11010,7 +11010,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでシーグラス白浜の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00050719/",
      "affiliate": false
     }
@@ -11054,7 +11054,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでDogサバトリーのある宿 ご・遊庭の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00002180/",
      "affiliate": false
     }
@@ -11100,7 +11100,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでキャメルホテルリゾートの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00001932/",
      "affiliate": false
     }
@@ -11143,7 +11143,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでOn the wave 館山の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00052150/",
      "affiliate": false
     }
@@ -11187,7 +11187,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでsendouQ third dogの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00051461/",
      "affiliate": false
     }
@@ -11227,7 +11227,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでコトマル。わんshipの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00050629/",
      "affiliate": false
     }
@@ -11270,7 +11270,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで白浜オーシャンリゾートの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00030952/",
      "affiliate": false
     }
@@ -11316,7 +11316,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでSolana千葉白浜の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00917410/",
      "affiliate": false
     }
@@ -11361,7 +11361,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでALL SEASON RESORT NO.5 蔵の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00913934/",
      "affiliate": false
     }
@@ -11399,7 +11399,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでHOTEL R9 九十九里の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00050466/",
      "affiliate": false
     }
@@ -11442,7 +11442,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでBAYSIDE KANAYAの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00916380/",
      "affiliate": false
     }
@@ -11486,7 +11486,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでコトマル。わんpainaの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00913037/",
      "affiliate": false
     }
@@ -11532,7 +11532,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでレクトーレ 羽生TERRACEの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00920827/",
      "affiliate": false
     }
@@ -11576,7 +11576,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでMALIBU HOTELの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00002776/",
      "affiliate": false
     }
@@ -11622,7 +11622,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでSolana鴨川の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00915204/",
      "affiliate": false
     }
@@ -11668,7 +11668,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで高滝湖グランピングリゾートの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00912392/",
      "affiliate": false
     }
@@ -11712,7 +11712,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでホテルブルーベリーヒル勝浦 イーストヒルペットホテルの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00001503/",
      "affiliate": false
     }
@@ -11760,7 +11760,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでTHE LAKOTANの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00003333/",
      "affiliate": false
     }
@@ -11803,7 +11803,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでBIRD HOTELの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00031293/",
      "affiliate": false
     }
@@ -11848,7 +11848,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで小松家八の坊の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00901789/",
      "affiliate": false
     }
@@ -11894,7 +11894,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで福狸亭小川家の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00903296/",
      "affiliate": false
     }
@@ -11938,7 +11938,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで愛犬と泊まれる温泉宿 ゆるり西伊豆の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00909696/",
      "affiliate": false
     }
@@ -11981,7 +11981,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで味と湯の宿 ニューとみよしの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00905679/",
      "affiliate": false
     }
@@ -12025,7 +12025,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでペットと泊まれる宿 西伊豆 シーガルの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00030834/",
      "affiliate": false
     }
@@ -12069,7 +12069,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでAmis Droles アミ・ドローラの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00916354/",
      "affiliate": false
     }
@@ -12115,7 +12115,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでホテル四季の館箱根芦ノ湖の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00002931/",
      "affiliate": false
     }
@@ -12163,7 +12163,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで愛犬と楽しむ温泉旅館 伊豆修善寺 絆+の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00913152/",
      "affiliate": false
     }
@@ -12209,7 +12209,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでホテル森の風箱根仙石原の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00002994/",
      "affiliate": false
     }
@@ -12257,7 +12257,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで愛犬憩い宿 GLÜCK 伊豆高原の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00920220/",
      "affiliate": false
     }
@@ -12301,7 +12301,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでペットと泊まれる温泉宿 サニーのあしあとの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00916890/",
      "affiliate": false
     }
@@ -12345,7 +12345,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで黒船ホテルの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00911198/",
      "affiliate": false
     }
@@ -12389,7 +12389,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで東急バケーションズ伊豆高原の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00051148/",
      "affiliate": false
     }
@@ -12432,7 +12432,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでラフォーレ箱根強羅 湯の棲の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00002019/",
      "affiliate": false
     }
@@ -12476,7 +12476,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで歩羅无 湯河原の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00051733/",
      "affiliate": false
     }
@@ -12522,7 +12522,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでUFUFU VILLAGEの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00050594/",
      "affiliate": false
     }
@@ -12566,7 +12566,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで伊東温泉 愛犬と泊まれる宿 アップルシードの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00903469/",
      "affiliate": false
     }
@@ -12610,7 +12610,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでワンちゃんと一緒！海一望の宿 ピッコラルージュの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00906804/",
      "affiliate": false
     }
@@ -12658,7 +12658,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでルクス箱根湯本の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00051701/",
      "affiliate": false
     }
@@ -12704,7 +12704,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで愛犬と泊まれる海と夕陽の楽園 頬杖の刻の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00001843/",
      "affiliate": false
     }
@@ -12750,7 +12750,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでヒルトン小田原リゾート＆スパの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00000770/",
      "affiliate": false
     }
@@ -12794,7 +12794,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで西伊豆グランピング 天空テラスの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00031064/",
      "affiliate": false
     }
@@ -12838,7 +12838,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでペットと泊まれる ファームガーデンホテルの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00921228/",
      "affiliate": false
     }
@@ -12881,7 +12881,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでil azzurriの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00000960/",
      "affiliate": false
     }
@@ -12928,7 +12928,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで奏の森リゾート フォレストグランピングの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00916427/",
      "affiliate": false
     }
@@ -12972,7 +12972,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで離れのプレミアムコテージ ルネッサ赤沢の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00910280/",
      "affiliate": false
     }
@@ -13016,7 +13016,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでラボランドくろひめの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00907157/",
      "affiliate": false
     }
@@ -13065,7 +13065,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでペンション浅間マンサードの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00902297/",
      "affiliate": false
     }
@@ -13111,7 +13111,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで軽井沢貸別荘FURUYA しらかばテラスの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00050148/",
      "affiliate": false
     }
@@ -13157,7 +13157,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでVILLA SAISON FUJIの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00051661/",
      "affiliate": false
     }
@@ -13204,7 +13204,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでリゾートホテル蓼科の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00030204/",
      "affiliate": false
     }
@@ -13248,7 +13248,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでアート ホテル ドッグレッグ 軽井沢の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00030395/",
      "affiliate": false
     }
@@ -13292,7 +13292,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで天然温泉 阿智 星降りの宿 やま星の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00917460/",
      "affiliate": false
     }
@@ -13336,7 +13336,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでICHI 縁の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00052370/",
      "affiliate": false
     }
@@ -13379,7 +13379,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでSolana富士山中湖の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00915206/",
      "affiliate": false
     }
@@ -13425,7 +13425,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで古民家宿るうふ 丘之家の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00051611/",
      "affiliate": false
     }
@@ -13474,7 +13474,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで古民家宿るうふ 書之家の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00051612/",
      "affiliate": false
     }
@@ -13517,7 +13517,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでメルキュール長野松代リゾート＆スパの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00003163/",
      "affiliate": false
     }
@@ -13566,7 +13566,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでいろりの宿 蓼科パークホテルの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00905460/",
      "affiliate": false
     }
@@ -13610,7 +13610,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで咲花温泉 望川閣の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00030007/",
      "affiliate": false
     }
@@ -13654,7 +13654,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで大沢山温泉 大沢舘の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00031238/",
      "affiliate": false
     }
@@ -13700,7 +13700,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで富士山リゾートログハウス ふようの宿の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00050854/",
      "affiliate": false
     }
@@ -13745,7 +13745,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでゆとりろ軽井沢ホテルの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00030917/",
      "affiliate": false
     }
@@ -13791,7 +13791,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでゆとりろ越後湯沢の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00031286/",
      "affiliate": false
     }
@@ -13837,7 +13837,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでフォレストガーデン軽井沢 ラ トピアリーの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00050159/",
      "affiliate": false
     }
@@ -13882,7 +13882,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで愛犬と癒しのアジアンリゾート 海宿 太陽人の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00918258/",
      "affiliate": false
     }
@@ -13926,7 +13926,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで響きの宿の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00904970/",
      "affiliate": false
     }
@@ -13970,7 +13970,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで青根温泉 一棟温泉宿 星垂の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00050548/",
      "affiliate": false
     }
@@ -14014,7 +14014,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでフォレストリゾートコニファーいわびつの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00900137/",
      "affiliate": false
     }
@@ -14058,7 +14058,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでLUCY RESORT 完全プライベートグランピングの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00915145/",
      "affiliate": false
     }
@@ -14102,7 +14102,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでBUB RESORT Tsukubaの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00921054/",
      "affiliate": false
     }
@@ -14146,7 +14146,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでペンション コスモスの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00921909/",
      "affiliate": false
     }
@@ -14192,7 +14192,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでEarthboat Saitama Kawajimaの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00052536/",
      "affiliate": false
     }
@@ -14238,7 +14238,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでBIO-RESORT HOTEL＆SPA O Park OGOSEの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00916351/",
      "affiliate": false
     }
@@ -14281,7 +14281,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでyamagata glamの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00921076/",
      "affiliate": false
     }
@@ -14327,7 +14327,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでたびの邸宅 Villa 鳥海山 viewの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00922139/",
      "affiliate": false
     }
@@ -14373,7 +14373,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでロッヂB＆Wの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00902220/",
      "affiliate": false
     }
@@ -14416,7 +14416,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでハミングの宿の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00902851/",
      "affiliate": false
     }
@@ -14459,7 +14459,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでホテル 丁の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00904617/",
      "affiliate": false
     }
@@ -14503,7 +14503,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで池の平温泉 ロッジ コクハの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00904887/",
      "affiliate": false
     }
@@ -14549,7 +14549,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで五十嵐邸ガーデン 新潟阿賀野リゾートの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00910764/",
      "affiliate": false
     }
@@ -14593,7 +14593,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでオーベルジュみずあかりの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00917387/",
      "affiliate": false
     }
@@ -14637,7 +14637,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでThe Canvas Hayama Parkの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00050004/",
      "affiliate": false
     }
@@ -14684,7 +14684,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで＆SUN Terrace houseの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00050242/",
      "affiliate": false
     }
@@ -14730,7 +14730,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで＆SUN Penthouseの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00050243/",
      "affiliate": false
     }
@@ -14775,7 +14775,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでMORITO Funny houseの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00050244/",
      "affiliate": false
     }
@@ -14821,7 +14821,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで＆MOON Noaの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00051104/",
      "affiliate": false
     }
@@ -14868,7 +14868,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでおきな旅館の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00918694/",
      "affiliate": false
     }
@@ -14914,7 +14914,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでわんちゃんと海を一望する一棟貸し 追波湾テラス～考える葦～の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00921981/",
      "affiliate": false
     }
@@ -14957,7 +14957,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでペンション歩野慕野の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00923052/",
      "affiliate": false
     }
@@ -14995,7 +14995,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで福島いこいの村なみえの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00923585/",
      "affiliate": false
     }
@@ -15033,7 +15033,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで大石屋旅館の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00908161/",
      "affiliate": false
     }
@@ -15077,7 +15077,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで高瀬温泉 花みちる宿ニュー萬力の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00918025/",
      "affiliate": false
     }
@@ -15120,7 +15120,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでBlissful Gardenの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00913846/",
      "affiliate": false
     }
@@ -15164,7 +15164,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでTHE FIVE RIVERS FINE GLAMPING群馬白沢の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00913910/",
      "affiliate": false
     }
@@ -15208,7 +15208,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで犬と泊まれる貸別荘 ミリーズ・ラブの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00916337/",
      "affiliate": false
     }
@@ -15246,7 +15246,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでDot Glamping 北軽井沢の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00918505/",
      "affiliate": false
     }
@@ -15289,7 +15289,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでVilla森のわんころりんの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00918871/",
      "affiliate": false
     }
@@ -15333,7 +15333,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで鬼石観光ホテルの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00920856/",
      "affiliate": false
     }
@@ -15377,7 +15377,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでＹＡＭＡＩＲＯコテージの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00920921/",
      "affiliate": false
     }
@@ -15415,7 +15415,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで旅館 春日楼の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00922839/",
      "affiliate": false
     }
@@ -15460,7 +15460,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでKAREN みなかみ たくみの里 with Dogの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00922844/",
      "affiliate": false
     }
@@ -15500,7 +15500,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで貸別荘 浅間リゾート・インの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00924270/",
      "affiliate": false
     }
@@ -15538,7 +15538,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでホリデイビラ ホテル＆リゾート 軽井沢の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00905508/",
      "affiliate": false
     }
@@ -15583,7 +15583,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでペンション花闊歩の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00919194/",
      "affiliate": false
     }
@@ -15621,7 +15621,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでドッグコテージハートヒルズの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00913046/",
      "affiliate": false
     }
@@ -15661,7 +15661,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで愛犬と暮らす宿 VILLA Leafの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00913232/",
      "affiliate": false
     }
@@ -15699,7 +15699,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでWHITE LAMPの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00913372/",
      "affiliate": false
     }
@@ -15737,7 +15737,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでグランピングリゾート ブリリアントヴィレッジ日光の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00914671/",
      "affiliate": false
     }
@@ -15785,7 +15785,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでDOG SPA RESORT アルトピアーノの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00914930/",
      "affiliate": false
     }
@@ -15825,7 +15825,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでSolana日光の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00915179/",
      "affiliate": false
     }
@@ -15870,7 +15870,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで森のコテージ くるみの木の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00916650/",
      "affiliate": false
     }
@@ -15916,7 +15916,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで和モダングランピング｜NAGOMI CAMPの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00917555/",
      "affiliate": false
     }
@@ -15959,7 +15959,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでワンコと泊まれる宿 ルアカハの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00917633/",
      "affiliate": false
     }
@@ -16003,7 +16003,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでdog's pension しゃのんちの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00918226/",
      "affiliate": false
     }
@@ -16049,7 +16049,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで那須温泉グランピング Nennの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00919170/",
      "affiliate": false
     }
@@ -16087,7 +16087,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでHAMIRU’S FOREST WITH DOGの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00920155/",
      "affiliate": false
     }
@@ -16127,7 +16127,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで58 RUSTIC CAMPの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00922629/",
      "affiliate": false
     }
@@ -16171,7 +16171,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでゲストハウス もみの木の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00923193/",
      "affiliate": false
     }
@@ -16205,7 +16205,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでMimoza Retreat NASUの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00924096/",
      "affiliate": false
     }
@@ -16251,7 +16251,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでSAJIMA Funny houseの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00051411/",
      "affiliate": false
     }
@@ -16297,7 +16297,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで3rd HOUSE INAMURAGASAKIの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00051544/",
      "affiliate": false
     }
@@ -16341,7 +16341,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでLENOMA HOTELの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00051853/",
      "affiliate": false
     }
@@ -16385,7 +16385,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでholohouseの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00052413/",
      "affiliate": false
     }
@@ -16419,7 +16419,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでMARSOL C.S.Beach hotelの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00914781/",
      "affiliate": false
     }
@@ -16468,7 +16468,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでthe View 三浦市晴海町の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00917891/",
      "affiliate": false
     }
@@ -16514,7 +16514,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでオーシャンフロント サウナ付き一棟貸し Oceanfront Villa Hale Kahakaiの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00920357/",
      "affiliate": false
     }
@@ -16558,7 +16558,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでパーパスリゾート オーシャンビュー鎌倉の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00921313/",
      "affiliate": false
     }
@@ -16607,7 +16607,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでR.KAMAKURAの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00921319/",
      "affiliate": false
     }
@@ -16653,7 +16653,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでPICAさがみ湖の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00923103/",
      "affiliate": false
     }
@@ -16697,7 +16697,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでHOTEL SWAY yugawaraの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00000433/",
      "affiliate": false
     }
@@ -16741,7 +16741,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで東急バケーションズ箱根強羅の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00051149/",
      "affiliate": false
     }
@@ -16788,7 +16788,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでmysa hakoneの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00051581/",
      "affiliate": false
     }
@@ -16831,7 +16831,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでWITH SEA 真鶴の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00052095/",
      "affiliate": false
     }
@@ -16865,7 +16865,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでポイントバケーション箱根の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00914670/",
      "affiliate": false
     }
@@ -16897,7 +16897,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでHOTEL FARO manazuruの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00918014/",
      "affiliate": false
     }
@@ -16943,7 +16943,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでクスクスグランピング真鶴の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00922831/",
      "affiliate": false
     }
@@ -16978,7 +16978,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでTHE BASE GLAMPING YUGAWARAの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00923026/",
      "affiliate": false
     }
@@ -17010,7 +17010,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで仙石高原大箱根一の湯の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00923940/",
      "affiliate": false
     }
@@ -17044,7 +17044,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでhotel norm. fujiの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00051147/",
      "affiliate": false
     }
@@ -17087,7 +17087,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで東急バケーションズ山中湖の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00051152/",
      "affiliate": false
     }
@@ -17130,7 +17130,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでASH Villa 富士河口湖の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00051816/",
      "affiliate": false
     }
@@ -17162,7 +17162,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでenico.Mt.Fuji Resort & Glampingの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00052118/",
      "affiliate": false
     }
@@ -17194,7 +17194,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで郷音 -G.O.A.T.- The Summit Clubの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00052312/",
      "affiliate": false
     }
@@ -17238,7 +17238,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでFIKA FUJIYAMAの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00052552/",
      "affiliate": false
     }
@@ -17270,7 +17270,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでmoi sauna Villaの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00052732/",
      "affiliate": false
     }
@@ -17302,7 +17302,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで石和びゅーほてるの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00900581/",
      "affiliate": false
     }
@@ -17346,7 +17346,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでサンダンス・リゾート山中湖の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00904655/",
      "affiliate": false
     }
@@ -17381,7 +17381,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでシャトレーゼホテル石和の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00905812/",
      "affiliate": false
     }
@@ -17425,7 +17425,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでTOCORO. Mt.Fuji CAMP&GLAMPINGの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00913381/",
      "affiliate": false
     }
@@ -17457,7 +17457,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでPICA富士吉田の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00916420/",
      "affiliate": false
     }
@@ -17501,7 +17501,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでPICAFujiyamaの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00916426/",
      "affiliate": false
     }
@@ -17545,7 +17545,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで山中湖貸別荘 BAROSSA HOUSEの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00917328/",
      "affiliate": false
     }
@@ -17577,7 +17577,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでGlampark S.O.P Fuji Kawaguchikoの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00917863/",
      "affiliate": false
     }
@@ -17611,7 +17611,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでフェアリーフォレストの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00918771/",
      "affiliate": false
     }
@@ -17655,7 +17655,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでenico.Mt.Fuji-和の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00922774/",
      "affiliate": false
     }
@@ -17687,7 +17687,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでおそとのてらす 南アルプスの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00925085/",
      "affiliate": false
     }
@@ -17731,7 +17731,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでABBA RESORTS IZU - 坐漁荘の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00000247/",
      "affiliate": false
     }
@@ -17779,7 +17779,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでログハウス愛犬かしまの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00030239/",
      "affiliate": false
     }
@@ -17826,7 +17826,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで伊東小涌園の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00030739/",
      "affiliate": false
     }
@@ -17873,7 +17873,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでAMAO VILLA 伊豆高原の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00051604/",
      "affiliate": false
     }
@@ -17919,7 +17919,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでAMAO VILLA 城ヶ崎の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00052017/",
      "affiliate": false
     }
@@ -17963,7 +17963,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでVACANCES.izukogenの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00052327/",
      "affiliate": false
     }
@@ -18007,7 +18007,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでヴィラージュ伊豆高原の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00080640/",
      "affiliate": false
     }
@@ -18053,7 +18053,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで河津・花小町の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00906942/",
      "affiliate": false
     }
@@ -18085,7 +18085,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでファスティングホテル海の杜の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00911603/",
      "affiliate": false
     }
@@ -18129,7 +18129,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで伊豆グランヴィレッジ グランピングの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00914094/",
      "affiliate": false
     }
@@ -18178,7 +18178,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでペットとのんびり過ごす温泉宿 FukuFuku－ふくふく－の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00915013/",
      "affiliate": false
     }
@@ -18224,7 +18224,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで西伊豆ぐらんぷの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00916284/",
      "affiliate": false
     }
@@ -18271,7 +18271,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでCoco De Merの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00916711/",
      "affiliate": false
     }
@@ -18317,7 +18317,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでkieto 秩父の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00052277/",
      "affiliate": false
     }
@@ -18349,7 +18349,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでPICA秩父の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00916432/",
      "affiliate": false
     }
@@ -18395,7 +18395,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで蔵王温泉 最上高湯 善七乃湯の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00908620/",
      "affiliate": false
     }
@@ -18439,7 +18439,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでDoggy's Coast Oaraiの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00031230/",
      "affiliate": false
     }
@@ -18473,7 +18473,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでグランピングヴィレッジIBARAKIの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00918575/",
      "affiliate": false
     }
@@ -18517,7 +18517,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでSugar Beach Oaraiの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00917009/",
      "affiliate": false
     }
@@ -18549,7 +18549,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでNature Cottage Akabekoの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00903456/",
      "affiliate": false
     }
@@ -18583,7 +18583,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで花月ハイランドホテルの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00903583/",
      "affiliate": false
     }
@@ -18629,7 +18629,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでメルキュール宮城蔵王リゾート&スパの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00003172/",
      "affiliate": false
     }
@@ -18666,7 +18666,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでプライベートドッグラン 民泊ROAの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00924990/",
      "affiliate": false
     }
@@ -18712,7 +18712,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでONSEN COTTAGE AJISAIの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00915943/",
      "affiliate": false
     }
@@ -18758,7 +18758,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで丸山温泉 古城館の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00901858/",
      "affiliate": false
     }
@@ -18803,7 +18803,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルであてま高原リゾート ベルナティオの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00001415/",
      "affiliate": false
     }
@@ -18846,7 +18846,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでリブマックスリゾート草津温泉の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00908118/",
      "affiliate": false
     }
@@ -18880,7 +18880,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルであさま空山望の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00051122/",
      "affiliate": false
     }
@@ -18914,7 +18914,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでゆとりろガーデン北軽井沢 with DOGSの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00912409/",
      "affiliate": false
     }
@@ -18948,7 +18948,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでwith Dogs ホテルフォレストヒルズ那須の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00917439/",
      "affiliate": false
     }
@@ -18985,7 +18985,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでエンゼルフォレスト那須の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00031172/",
      "affiliate": false
     }
@@ -19017,7 +19017,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでホテル四季の館那須の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00002530/",
      "affiliate": false
     }
@@ -19065,7 +19065,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでゆるり奥日光withDOGSの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00920695/",
      "affiliate": false
     }
@@ -19112,7 +19112,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでリブマックスリゾート那須高原の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00921728/",
      "affiliate": false
     }
@@ -19146,7 +19146,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで奥日光湯元温泉 奥日光高原ホテルの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00901707/",
      "affiliate": false
     }
@@ -19192,7 +19192,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでホテルサンバレー那須の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00030794/",
      "affiliate": false
     }
@@ -19238,7 +19238,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでリブマックスリゾート川治の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00901562/",
      "affiliate": false
     }
@@ -19284,7 +19284,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでDog’s dayの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00030229/",
      "affiliate": false
     }
@@ -19328,7 +19328,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでSea Shell Vacation Houseの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00050478/",
      "affiliate": false
     }
@@ -19379,7 +19379,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで海彩テラス熱海別邸の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00051764/",
      "affiliate": false
     }
@@ -19423,7 +19423,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでTHE BASE GLAMPING ATAMI PREMIERの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00052670/",
      "affiliate": false
     }
@@ -19468,7 +19468,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで伊豆長岡温泉 弘法の湯 長岡店の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00902647/",
      "affiliate": false
     }
@@ -19512,7 +19512,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでゲストハウス倭荘の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00907829/",
      "affiliate": false
     }
@@ -19556,7 +19556,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでルネッサ城ヶ崎の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00909880/",
      "affiliate": false
     }
@@ -19602,7 +19602,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで優鶴の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00914651/",
      "affiliate": false
     }
@@ -19651,7 +19651,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでKandoStay 伊豆高原パークガーデンの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00915759/",
      "affiliate": false
     }
@@ -19695,7 +19695,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでペットのお宿 ころぽっくるの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00916703/",
      "affiliate": false
     }
@@ -19741,7 +19741,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでリブマックスリゾート箱根芦ノ湖の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00900857/",
      "affiliate": false
     }
@@ -19786,7 +19786,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで癒やしのわんこ宿 にこまめちの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00919402/",
      "affiliate": false
     }
@@ -19831,7 +19831,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでスイートヴィラ パノーラ熱海桜沢の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00919452/",
      "affiliate": false
     }
@@ -19880,7 +19880,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでホテル 森のしずくの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00920522/",
      "affiliate": false
     }
@@ -19926,7 +19926,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで伊東温泉 源泉かけ流し貸切風呂 伊豆Cocoグランピングリゾートの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00920584/",
      "affiliate": false
     }
@@ -19969,7 +19969,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでスミスのいえ伊東瓶山の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00921227/",
      "affiliate": false
     }
@@ -20015,7 +20015,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでSolana伊豆高原の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00921405/",
      "affiliate": false
     }
@@ -20061,7 +20061,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでTiny Base The Irita-hamaの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00922543/",
      "affiliate": false
     }
@@ -20107,7 +20107,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでIl Tramontoの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00922680/",
      "affiliate": false
     }
@@ -20153,7 +20153,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでTHEGLAMPING箱根十国峠の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00922793/",
      "affiliate": false
     }
@@ -20200,7 +20200,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでAMMOS PET FRIENDLY HOTELの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00923686/",
      "affiliate": false
     }
@@ -20246,7 +20246,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでWITH SEA 伊東の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00923930/",
      "affiliate": false
     }
@@ -20292,7 +20292,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでリブマックスリゾート伊豆高原テラス＆スパの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00920387/",
      "affiliate": false
     }
@@ -20338,7 +20338,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでリブマックスリゾート伊豆高原ANNEXの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00920389/",
      "affiliate": false
     }
@@ -20384,7 +20384,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで白馬 旅籠丸八の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00050680/",
      "affiliate": false
     }
@@ -20429,7 +20429,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで森泊 -MORIHAKU-の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00050855/",
      "affiliate": false
     }
@@ -20474,7 +20474,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでレンシャレーの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00051578/",
      "affiliate": false
     }
@@ -20506,7 +20506,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで海野宿一棟貸し宿 上州屋の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00051830/",
      "affiliate": false
     }
@@ -20550,7 +20550,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで軽井沢365 プレイガーデン大日向の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00051937/",
      "affiliate": false
     }
@@ -20584,7 +20584,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで軽井沢365 リバーサイドヴィラ八風台の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00052360/",
      "affiliate": false
     }
@@ -20629,7 +20629,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで軽井沢365フォレストテラス八風台の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00052750/",
      "affiliate": false
     }
@@ -20663,7 +20663,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで軽井沢365 ツリーネスト八風台の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00052751/",
      "affiliate": false
     }
@@ -20697,7 +20697,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでペンション KEYAKIの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00902145/",
      "affiliate": false
     }
@@ -20741,7 +20741,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで軽井沢 RENTAVILLA 森のコテージの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00912673/",
      "affiliate": false
     }
@@ -20776,7 +20776,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルで野沢温泉 LODGEでんべえの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00913795/",
      "affiliate": false
     }
@@ -20812,7 +20812,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでコテージホテルフェニーチェ白馬の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00916897/",
      "affiliate": false
     }
@@ -20856,7 +20856,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでPrivateHotelWithDog紡ぐ結ぶの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00917364/",
      "affiliate": false
     }
@@ -20900,7 +20900,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでポンタビレッジ軽井沢の宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00919201/",
      "affiliate": false
     }
@@ -20946,7 +20946,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでペンション チロルの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00919406/",
      "affiliate": false
     }
@@ -20994,7 +20994,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでレンタヴィラ軽井沢オナーズヒルの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00920421/",
      "affiliate": false
     }
@@ -21028,7 +21028,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでペンション ル・シャレーの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00920602/",
      "affiliate": false
     }
@@ -21074,7 +21074,7 @@
      "affiliate": false
     },
     {
-     "label": "Yahoo!トラベルで予約プランを見る",
+     "label": "Yahoo!トラベルでペットと泊まる 陽だまりの宿泊プランを見る",
      "url": "https://travel.yahoo.co.jp/00920821/",
      "affiliate": false
     }
@@ -21098,6 +21098,1016 @@
     "lat": 36.238056,
     "lon": 137.971954,
     "matched": "長野県松本市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-00921768",
+   "type": "lodging",
+   "name": "のぞみグランピング＆スパ佐久×軽井沢",
+   "area": "長野県佐久市",
+   "co_sleep": "添い寝 予約前確認",
+   "facts": {
+    "対象犬・頭数": "13kg以内の小型室内犬で、無駄吠え・噛み癖・トイレのしつけができている犬に限ります。ドームテントは1部屋につき2頭、ヴィラ棟は1部屋につき3頭まで宿泊可能です。1年以内の狂犬病及び混合ワクチン接種の証明書コピーが必要です。",
+    "犬の宿泊料金": "予約前確認",
+    "ケージ・持参判断": "用意なし(持参) / 客室にドッグゲージが備え付けられている場合あり",
+    "夜はどこで寝る？": "客室（ドッグラン付きのお部屋）",
+    "食事同伴": "予約前確認",
+    "ドッグラン": "あり。ドッグラン付きのお部屋ではプライベートドッグランを利用でき、ドームテント宿泊者は共有の広々としたドッグランも利用可能です。",
+    "予約前の重要確認": "犬の宿泊料金、食事への同伴可否、添い寝の可否"
+   },
+   "links": [
+    {
+     "label": "公式の条件を確認",
+     "url": "https://www.nozomi-g.co.jp/glamping/",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでのぞみグランピング＆スパ佐久×軽井沢の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00921768/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "cert_required": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
+   "geocode": {
+    "lat": 36.24042,
+    "lon": 138.416366,
+    "precision": "facility",
+    "source": "official-map",
+    "matched": "公式ページの地図"
+   },
+   "area_geocode": {
+    "lat": 36.24889,
+    "lon": 138.476944,
+    "matched": "長野県佐久市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-00922016",
+   "type": "lodging",
+   "name": "フィオーレ渚",
+   "area": "長野県松本市",
+   "co_sleep": "添い寝 予約前確認",
+   "facts": {
+    "対象犬・頭数": "中型・小型犬で躾ができている犬に限り、2匹まで同伴可能です。",
+    "犬の宿泊料金": "2,000円/日",
+    "ケージ・持参判断": "予約前確認",
+    "夜はどこで寝る？": "予約前確認",
+    "食事同伴": "予約前確認",
+    "ドッグラン": "予約前確認(公式に記載なし)",
+    "予約前の重要確認": "ケージの用意、犬の寝場所、食事時の同伴可否、ワクチン証明の有無"
+   },
+   "links": [
+    {
+     "label": "公式の条件を確認",
+     "url": "https://www.office-sho.jp/price",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでフィオーレ渚の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00922016/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {},
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
+   "geocode": {
+    "lat": 36.234726,
+    "lon": 137.954483,
+    "precision": "facility",
+    "source": "official-address",
+    "matched": "長野県松本市渚一丁目７番３８号"
+   },
+   "area_geocode": {
+    "lat": 36.238056,
+    "lon": 137.971954,
+    "matched": "長野県松本市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-00922284",
+   "type": "lodging",
+   "name": "時空の杜",
+   "area": "長野県須坂市",
+   "co_sleep": "添い寝 不可",
+   "facts": {
+    "対象犬・頭数": "小型犬のみ同伴可能です。吠えないなど基本的なしつけがされているワンちゃんに限ります。",
+    "犬の宿泊料金": "1頭1泊5,000円（税別）",
+    "ケージ・持参判断": "用意なし(持参)。ケージをお持ちください。 ケージをお持ちください。",
+    "夜はどこで寝る？": "客室のケージ内 寝具の上には乗せないでください。",
+    "食事同伴": "不可。衛生上、ダイニングルームへは入らないようにしてください。",
+    "ドッグラン": "予約前確認(公式に記載なし)",
+    "予約前の重要確認": "ワクチン証明の有無、具体的な頭数制限、館内共用部分以外の移動時の詳細ルール"
+   },
+   "links": [
+    {
+     "label": "公式の条件を確認",
+     "url": "https://www.soramori.info/news/news4210.html",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで時空の杜の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00922284/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "small_dog_only_mention": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
+   "geocode": {
+    "lat": 36.555162,
+    "lon": 138.357027,
+    "precision": "facility",
+    "source": "official-map",
+    "matched": "公式ページの地図"
+   },
+   "area_geocode": {
+    "lat": 36.6511,
+    "lon": 138.307251,
+    "matched": "長野県須坂市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-00923046",
+   "type": "lodging",
+   "name": "haku36stay",
+   "area": "長野県安曇野市",
+   "co_sleep": "添い寝 不可",
+   "facts": {
+    "対象犬・頭数": "約10kg以下の中型犬種で1匹までです。狂犬病・ワクチン接種済みであること、基本的なマナーが身に付いており決まった場所で排泄ができることが条件です。",
+    "犬の宿泊料金": "予約前確認",
+    "ケージ・持参判断": "あり。幅146cm×奥行70cmのケージを宿側が用意しています。",
+    "夜はどこで寝る？": "客室のケージ内 就寝時はケージをご利用ください。同じ寝室での寝泊まりはご遠慮ください。",
+    "食事同伴": "不可。お食事処への入室はご遠慮ください。",
+    "ドッグラン": "予約前確認(公式に記載なし)",
+    "予約前の重要確認": "犬の宿泊料金、犬同伴可能な客室の限定・違い"
+   },
+   "links": [
+    {
+     "label": "公式の条件を確認",
+     "url": "https://haku36stay.com/pet/",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでhaku36stayの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00923046/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "weight_limit_kg_mentions": [
+     10
+    ],
+    "vaccine_required": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
+   "geocode": {
+    "lat": 36.370968,
+    "lon": 137.842621,
+    "precision": "facility",
+    "source": "official-address",
+    "matched": "長野県安曇野市穂高有明２１０５番地"
+   },
+   "area_geocode": {
+    "lat": 36.303944,
+    "lon": 137.905777,
+    "matched": "長野県安曇野市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-00923101",
+   "type": "lodging",
+   "name": "一棟貸しLog「nagare」",
+   "area": "長野県上伊那郡",
+   "co_sleep": "添い寝 不可",
+   "facts": {
+    "対象犬・頭数": "10kg以下の中型小型犬種で、1匹まで同伴可能です。狂犬病およびワクチンの予防接種済みであること、基本的なマナーが身に付いており決まった場所で排泄ができることが条件です。",
+    "犬の宿泊料金": "予約前確認",
+    "ケージ・持参判断": "あり。ゲージ、トイレ、お食事ケース等の基本的なグッズはご用意がございますが、不安な場合は普段お持ちのグッズをご持参くださいませ。",
+    "夜はどこで寝る？": "客室（寝室・浴室・2階を除くエリア） 寝室、浴室、及び2階へは入室できかねます。",
+    "食事同伴": "条件付き。自炊は可能ですが、室内は火気厳禁です。室外で食事をされる場合は、食べ残しやごみを放置せず室内のごみ箱にお入れください。",
+    "ドッグラン": "予約前確認(公式に記載なし)",
+    "予約前の重要確認": "愛犬同伴オプションの料金"
+   },
+   "links": [
+    {
+     "label": "公式の条件を確認",
+     "url": "https://log-nagare.booking.chillnn.com/ja/magazine/?resourceType=plan&resourceID=19d98f85e4e92",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで一棟貸しLog「nagare」の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00923101/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "weight_limit_kg_mentions": [
+     10
+    ],
+    "vaccine_required": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
+   "geocode": null
+  },
+  {
+   "id": "c8-00923187",
+   "type": "lodging",
+   "name": "FOREST BASE 安曇野",
+   "area": "長野県安曇野市",
+   "co_sleep": "添い寝 条件付き可",
+   "facts": {
+    "対象犬・頭数": "大型犬や多頭飼いも大歓迎で、頭数や行動に制限はありません。マナーウェアの着用が求められます。",
+    "犬の宿泊料金": "無料",
+    "ケージ・持参判断": "用意なし(持参) 本文にケージの持参義務や用意に関する記載はありません",
+    "夜はどこで寝る？": "客室(お布団) ペットと一緒にお布団で寝る場合は、マナーウェアの着用をお願いします",
+    "食事同伴": "予約前確認",
+    "ドッグラン": "予約前確認",
+    "予約前の重要確認": "食事の場での同伴可否、ワクチン証明の有無、ケージの持参義務の有無"
+   },
+   "links": [
+    {
+     "label": "公式の条件を確認",
+     "url": "https://forestbase1221.com/",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでFOREST BASE 安曇野の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00923187/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {},
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
+   "geocode": {
+    "lat": 36.351284,
+    "lon": 137.835449,
+    "precision": "facility",
+    "source": "official-address",
+    "matched": "長野県安曇野市穂高有明３６１８番地"
+   },
+   "area_geocode": {
+    "lat": 36.303944,
+    "lon": 137.905777,
+    "matched": "長野県安曇野市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-00924089",
+   "type": "lodging",
+   "name": "ホテル豊生",
+   "area": "長野県湯田中温泉・渋温泉郷・山田温泉",
+   "co_sleep": "添い寝 可",
+   "facts": {
+    "対象犬・頭数": "ペットとずっと一緒に過ごせる安心の宿です。館内のご移動は、ケージに入れるか抱っこでお願いいたします。",
+    "犬の宿泊料金": "予約前確認",
+    "ケージ・持参判断": "ケージ不要・お布団もOKです。ただし、館内のご移動は、ケージに入れるか抱っこでお願いいたします。",
+    "夜はどこで寝る？": "客室（お布団） お布団もOKです。",
+    "食事同伴": "予約前確認",
+    "ドッグラン": "予約前確認(公式に記載なし)",
+    "予約前の重要確認": "犬の宿泊料金、食事の場での同伴可否、ワクチン等の健康条件"
+   },
+   "links": [
+    {
+     "label": "公式の条件を確認",
+     "url": "https://yudanaka-housei.com/",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでホテル豊生の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00924089/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {},
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
+   "geocode": {
+    "lat": 36.737562,
+    "lon": 138.414152,
+    "precision": "facility",
+    "source": "osm",
+    "matched": "ホテル豊生, 宮村湯田中停車場線, 湯河原, 佐野, 山ノ内町, 下高井郡, 長野県, 381-0402, 日本"
+   },
+   "area_geocode": {
+    "lat": 36.651306,
+    "lon": 138.180908,
+    "matched": "長野県",
+    "precision": "prefecture"
+   }
+  },
+  {
+   "id": "c8-00924714",
+   "type": "lodging",
+   "name": "REN Hanare Hakuba",
+   "area": "長野県北安曇郡",
+   "co_sleep": "添い寝 予約前確認",
+   "facts": {
+    "対象犬・頭数": "室内飼いのワンちゃんとのご宿泊が歓迎されています。同伴される場合は事前にお知らせください。",
+    "犬の宿泊料金": "予約前確認",
+    "ケージ・持参判断": "予約前確認",
+    "夜はどこで寝る？": "予約前確認",
+    "食事同伴": "予約前確認",
+    "ドッグラン": "あり。白馬最大級・総面積290㎡の敷地に天然芝のプライベートドッグランを完備しています。",
+    "予約前の重要確認": "犬の宿泊料金、ケージの用意、犬の寝場所（添い寝可否）、食事時の同伴可否、犬の頭数制限、ワクチン証明の有無"
+   },
+   "links": [
+    {
+     "label": "公式の条件を確認",
+     "url": "https://www.renhakuba.com/ja/ren-chalet-hakuba",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでREN Hanare Hakubaの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00924714/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {},
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
+   "geocode": null
+  },
+  {
+   "id": "c8-00925112",
+   "type": "lodging",
+   "name": "INU邸 SKY TERRACE SUWA",
+   "area": "長野県諏訪市",
+   "co_sleep": "添い寝 可",
+   "facts": {
+    "対象犬・頭数": "犬種やサイズによる制限はなく、小型犬から超大型犬まで歓迎です。原則として1棟につき3頭まで、全頭が10kg未満の場合は4頭まで宿泊可能です。生後4か月以上で、狂犬病および混合ワクチンの接種証明書（過去1年以内）の提出が必須です。",
+    "犬の宿泊料金": "無料",
+    "ケージ・持参判断": "用意なし(持参)/予約前確認。サークルは凛・栞棟には設置しておりません。 サークルは凛・栞棟には設置しておりません。",
+    "夜はどこで寝る？": "客室（ベッドやソファなど） ベッドやソファもご愛犬と一緒にご利用いただけます。排泄や汚れの心配がある場合は、マナーパンツ着用やカバー敷きなどのご配慮をお願いいたします。",
+    "食事同伴": "可。当施設ではお食事の提供を行っておらず、食材の持ち込みが可能です。各棟にBBQ設備やIHコンロ、調理器具を備えています。",
+    "ドッグラン": "あり。各棟に宿泊者専用のドッグランを備えており、リードを外して利用できます。",
+    "予約前の重要確認": "犬同伴できる客室の限定・違い"
+   },
+   "links": [
+    {
+     "label": "公式の条件を確認",
+     "url": "https://www.inutei.com/qa.html",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでINU邸 SKY TERRACE SUWAの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00925112/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "weight_limit_kg_mentions": [
+     10
+    ],
+    "cert_required": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
+   "geocode": {
+    "lat": 36.006775,
+    "lon": 138.056183,
+    "precision": "district",
+    "source": "official-address",
+    "matched": "長野県諏訪市大字豊田"
+   },
+   "area_geocode": {
+    "lat": 36.039165,
+    "lon": 138.114166,
+    "matched": "長野県諏訪市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-00050140",
+   "type": "lodging",
+   "name": "Ocean's Terrace TORAMII",
+   "area": "千葉県一宮町東浪見",
+   "co_sleep": "添い寝 不可",
+   "facts": {
+    "対象犬・頭数": "しつけがされている犬のみ同伴可能です。放し飼いはできず、リードを着けてください。他の方に恐怖感を与えるような動物（闘犬など）はご利用をお断りいたします。",
+    "犬の宿泊料金": "予約前確認",
+    "ケージ・持参判断": "グランピング、ミニグランピングの施設はペットの持ち込みは禁止しております。グランピング、ミニグランピングをご利用の際は各自持ち込みのテントやサークル等でお過ごしください。",
+    "夜はどこで寝る？": "客室（貸切一軒家）内、ただしレンタル品の中は不可。グランピング施設利用時は各自持ち込みのテントやサークル内。 テント・マットレス・寝袋などのレンタル品の中へ入れることはご遠慮いただいております。",
+    "食事同伴": "予約前確認",
+    "ドッグラン": "予約前確認(公式に記載なし)",
+    "予約前の重要確認": "犬の宿泊料金、ケージの用意有無、食事時の同伴可否、具体的な寝る場所の指定（室内のどこか等）"
+   },
+   "links": [
+    {
+     "label": "公式の条件を確認",
+     "url": "https://toramii.jp/camp-toramii/terms.html",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでOcean's Terrace TORAMIIの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00050140/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {},
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
+   "geocode": {
+    "lat": 35.36407,
+    "lon": 140.38271,
+    "precision": "facility",
+    "source": "official-map",
+    "matched": "公式ページの地図"
+   },
+   "area_geocode": {
+    "lat": 35.350773,
+    "lon": 140.37999,
+    "matched": "千葉県一宮町東浪見",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-00050751",
+   "type": "lodging",
+   "name": "フォレストヴィラ南総の丘",
+   "area": "千葉県南房総",
+   "co_sleep": "添い寝 予約前確認",
+   "facts": {
+    "対象犬・頭数": "ペット（犬/猫/小動物）の同伴が可能ですが、事前にペット同伴の旨のご連絡が必要です。",
+    "犬の宿泊料金": "一匹につき3,000円",
+    "ケージ・持参判断": "予約前確認",
+    "夜はどこで寝る？": "予約前確認",
+    "食事同伴": "予約前確認",
+    "ドッグラン": "予約前確認(公式に記載なし)",
+    "予約前の重要確認": "ケージの用意、犬の寝場所、食事時の同伴可否、犬の大きさや頭数の制限、ワクチン等の条件"
+   },
+   "links": [
+    {
+     "label": "公式の条件を確認",
+     "url": "https://hidarod.wixsite.com/forestvilla",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでフォレストヴィラ南総の丘の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00050751/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {},
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
+   "geocode": {
+    "lat": 35.043152,
+    "lon": 139.839981,
+    "matched": "千葉県南房総市",
+    "precision": "approximate"
+   },
+   "area_geocode": {
+    "lat": 35.043152,
+    "lon": 139.839981,
+    "matched": "千葉県南房総市",
+    "precision": "approximate"
+   }
+  },
+  {
+   "id": "c8-00051395",
+   "type": "lodging",
+   "name": "Beach Resort ～CHIKURA～",
+   "area": "千葉県南房総市",
+   "co_sleep": "添い寝 不可",
+   "facts": {
+    "対象犬・頭数": "室内で飼われている小型・中型・大型の愛犬で、トイレのしつけができており、狂犬病とウィルス性伝染病の予防接種を受けている必要があります。また、ノミ・ダニ・寄生虫が駆除されており、雌犬の場合は発情期又は妊娠状態でないことが条件です。",
+    "犬の宿泊料金": "2頭までは無料です。3頭目からは一泊につき小型犬¥3,300 / 大型犬¥5,500 です。",
+    "ケージ・持参判断": "用意なし(持参)。夜は持参されたマット（ベッド）で寝ることが出来ること。使い慣れたベッドをご持参ください。 夜は持参されたマット（ベッド）で寝ることが出来ること。使い慣れたベッドをご持参ください。",
+    "夜はどこで寝る？": "客室の持参されたマット（ベッド） 当館の浴室やベッドの愛犬の使用はご遠慮ください。",
+    "食事同伴": "予約前確認",
+    "ドッグラン": "あり。監視カメラの設置をさせていただいております。",
+    "予約前の重要確認": "食事の場に犬を同伴できるか、犬同伴できる客室の限定・違い"
+   },
+   "links": [
+    {
+     "label": "公式の条件を確認",
+     "url": "https://beachresort-chikura.com/notice/",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでBeach Resort ～CHIKURA～の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00051395/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "vaccine_required": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
+   "geocode": {
+    "lat": 34.944518,
+    "lon": 139.961294,
+    "precision": "facility",
+    "source": "official-map",
+    "matched": "公式ページの地図"
+   },
+   "area_geocode": {
+    "lat": 35.043152,
+    "lon": 139.839981,
+    "matched": "千葉県南房総市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-00051432",
+   "type": "lodging",
+   "name": "古民家宿るうふ 杉之家",
+   "area": "千葉県山武市",
+   "co_sleep": "添い寝 予約前確認",
+   "facts": {
+    "対象犬・頭数": "生後4か月以上であり、2匹までとさせていただきます。また、わんちゃんの合計体重が20㎏を下回ることを条件とします。頭数を超える場合、大型犬の場合はご相談ください。",
+    "犬の宿泊料金": "無料",
+    "ケージ・持参判断": "あり。ケージ（幅135cm×奥行108cm×高さ72cm、25㎏まで）",
+    "夜はどこで寝る？": "予約前確認",
+    "食事同伴": "予約前確認",
+    "ドッグラン": "予約前確認(系列の丘之家のページにドッグランの記載。杉之家は要確認)",
+    "予約前の重要確認": "犬の寝場所（ケージ内か客室内か）、食事時の同伴可否、添い寝の可否、特定犬種以外の大型犬の具体的な制限、ワクチン証明書の提出方法の詳細"
+   },
+   "links": [
+    {
+     "label": "公式の条件を確認",
+     "url": "https://loof-inn.com/hotels/okanoie/",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで古民家宿るうふ 杉之家の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00051432/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {},
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
+   "geocode": {
+    "lat": 35.655281,
+    "lon": 140.42739,
+    "precision": "facility",
+    "source": "official-map",
+    "matched": "公式ページの地図"
+   },
+   "area_geocode": {
+    "lat": 35.602943,
+    "lon": 140.413544,
+    "matched": "千葉県山武市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-00051447",
+   "type": "lodging",
+   "name": "amane",
+   "area": "千葉県安房郡",
+   "co_sleep": "添い寝 可",
+   "facts": {
+    "対象犬・頭数": "小型犬のみで、1室につき2匹までお泊りいただけます。メゾネットルームのみ利用可能です。",
+    "犬の宿泊料金": "1匹につき3,000円",
+    "ケージ・持参判断": "あり(備え付け)。愛犬用のゲージが取り揃えられています。",
+    "夜はどこで寝る？": "客室(ベッドルーム) ベッドからバスタブまでどのスペースも愛犬と自由にお使いいただけます。",
+    "食事同伴": "可。お食事はお客様のお好きなタイミングで、お部屋でゆっくりとお召し上がりいただけます。",
+    "ドッグラン": "あり。メゾネットルームには専用ドッグランが直結しており、1階にはドッグランにもなるプライベートテラスがあります。",
+    "予約前の重要確認": "ワクチン接種の有無、しつけの程度、具体的な体重制限(小型犬の定義)"
+   },
+   "links": [
+    {
+     "label": "公式の条件を確認",
+     "url": "https://www.awa-amane.com/",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでamaneの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00051447/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "small_dog_only_mention": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
+   "geocode": null
+  },
+  {
+   "id": "c8-00051508",
+   "type": "lodging",
+   "name": "CAP MARTIN Funny house",
+   "area": "千葉県安房郡",
+   "co_sleep": "添い寝 予約前確認",
+   "facts": {
+    "対象犬・頭数": "小型犬一頭のみ宿泊可能です。1年以内に狂犬病の予防接種を受けている、極度な吠え癖・噛み癖のない室内ペットに限ります。",
+    "犬の宿泊料金": "8,000円/税込",
+    "ケージ・持参判断": "あり(ゲージ・トイレシート・食器の準備はございますが、お使い慣れた物をご持参ください) お使い慣れた物をご持参ください",
+    "夜はどこで寝る？": "予約前確認",
+    "食事同伴": "予約前確認",
+    "ドッグラン": "あり(ドッグラン完備の前庭)",
+    "予約前の重要確認": "犬の具体的な寝場所(ケージ内か客室内か)、食事の場での同伴可否、ワクチン証明書の提出方法、大型犬の可否"
+   },
+   "links": [
+    {
+     "label": "公式の条件を確認",
+     "url": "https://beach.funnyfunny.jp/funnyhouse-cap-martin/faq/",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでCAP MARTIN Funny houseの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00051508/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "vaccine_required": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
+   "geocode": null
+  },
+  {
+   "id": "c8-00051610",
+   "type": "lodging",
+   "name": "The Villa J1",
+   "area": "千葉県館山市",
+   "co_sleep": "添い寝 予約前確認",
+   "facts": {
+    "対象犬・頭数": "室内でのしつけのできている小型犬に限ります。大型犬は不可、中型犬は要問合せです。",
+    "犬の宿泊料金": "予約前確認",
+    "ケージ・持参判断": "用意なし(持参) ゲージ等その他わんちゃん用のアメニティ類などはお客様のご用意でお願い致します。",
+    "夜はどこで寝る？": "予約前確認",
+    "食事同伴": "予約前確認",
+    "ドッグラン": "予約前確認(公式に記載なし)",
+    "予約前の重要確認": "犬の宿泊料金、中型犬の可否、添い寝の可否、食事時の同伴可否、ワクチン証明の有無"
+   },
+   "links": [
+    {
+     "label": "公式の条件を確認",
+     "url": "https://j1wellness.com/facility",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでThe Villa J1の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00051610/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {},
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
+   "geocode": {
+    "lat": 34.997009,
+    "lon": 139.867196,
+    "precision": "facility",
+    "source": "official-map",
+    "matched": "公式ページの地図"
+   },
+   "area_geocode": {
+    "lat": 34.996468,
+    "lon": 139.870041,
+    "matched": "千葉県館山市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-00051613",
+   "type": "lodging",
+   "name": "古民家宿るうふ 波之家",
+   "area": "千葉県いすみ市",
+   "co_sleep": "添い寝 予約前確認",
+   "facts": {
+    "対象犬・頭数": "生後4か月以上であり、2匹までとさせていただきます。また、わんちゃんの合計体重が20㎏を下回ることを条件とします。",
+    "犬の宿泊料金": "無料",
+    "ケージ・持参判断": "あり。ケージ（幅135cm×奥行108cm×高さ72cm、25㎏まで）が備え付けられています。",
+    "夜はどこで寝る？": "客室（ケージ内または客室内、詳細は記載なし）",
+    "食事同伴": "予約前確認",
+    "ドッグラン": "予約前確認(公式に記載なし)",
+    "予約前の重要確認": "犬の添い寝可否、食事時の同伴可否、犬同伴可能な客室の限定、ワクチン証明書等の書類提出詳細"
+   },
+   "links": [
+    {
+     "label": "公式の条件を確認",
+     "url": "https://loof-inn.com/hotels/okanoie/",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで古民家宿るうふ 波之家の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00051613/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {},
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
+   "geocode": {
+    "lat": 35.203185,
+    "lon": 140.372871,
+    "precision": "facility",
+    "source": "official-map",
+    "matched": "公式ページの地図"
+   },
+   "area_geocode": {
+    "lat": 35.253887,
+    "lon": 140.385284,
+    "matched": "千葉県いすみ市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-00051644",
+   "type": "lodging",
+   "name": "and RIVER勝浦",
+   "area": "千葉県勝浦市",
+   "co_sleep": "添い寝 不可",
+   "facts": {
+    "対象犬・頭数": "中型犬までで、トイレトレーニング等の躾がしっかりされていること、ワクチン等の予防接種を受けていることが条件です。基本的なマナー（トイレ、無駄吠え、噛み癖等のしつけ）ができているわんちゃんのみ宿泊可能です。",
+    "犬の宿泊料金": "予約前確認",
+    "ケージ・持参判断": "あり。施設備品としてペットケージ（90×60×55.2cm）が1つ用意されています。頭数にかかわらず1つずつのご用意となります。 追加で必要な場合はご持参をお願いいたします。",
+    "夜はどこで寝る？": "客室のケージ内 わんちゃんの施設の布団、ベッドのご利用はご遠慮ください。添い寝が必要な場合は使い慣れた寝具やベッドをご持参いただきますようお願い致します。",
+    "食事同伴": "予約前確認",
+    "ドッグラン": "予約前確認(公式に記載なし)",
+    "予約前の重要確認": "犬の宿泊料金、食事の場での同伴可否、犬同伴可能な客室の限定・違い"
+   },
+   "links": [
+    {
+     "label": "公式の条件を確認",
+     "url": "https://www.andriver-katsuura.com/petrules",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでand RIVER勝浦の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00051644/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "vaccine_required": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
+   "geocode": {
+    "lat": 35.229043,
+    "lon": 140.25611,
+    "precision": "facility",
+    "source": "official-map",
+    "matched": "公式ページの地図"
+   },
+   "area_geocode": {
+    "lat": 35.152233,
+    "lon": 140.320923,
+    "matched": "千葉県勝浦市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-00051881",
+   "type": "lodging",
+   "name": "緑邸～OHTAKI～",
+   "area": "千葉県夷隅郡",
+   "co_sleep": "添い寝 不可",
+   "facts": {
+    "対象犬・頭数": "小型犬用のケージは宿側で用意していますが、中型犬以上はお客様自身で用意する必要があります。",
+    "犬の宿泊料金": "予約前確認",
+    "ケージ・持参判断": "小型犬用のケージはご用意しています。中型犬以上はお客様でご用意願います。 中型犬以上はお客様でご用意願います",
+    "夜はどこで寝る？": "客室のケージ内（小型犬は宿用意、中型犬以上は持参） リビング、寝室内はNGですので、ご注意ください。",
+    "食事同伴": "条件付き可",
+    "ドッグラン": "予約前確認(公式に記載なし)",
+    "予約前の重要確認": "犬の宿泊料金、同伴可能な犬の頭数、具体的なワクチンやしつけの条件、食事時の同伴範囲の詳細"
+   },
+   "links": [
+    {
+     "label": "公式の条件を確認",
+     "url": "https://www.ryokutei.jp/contact",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルで緑邸～OHTAKI～の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00051881/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {},
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
+   "geocode": null
+  },
+  {
+   "id": "c8-00051942",
+   "type": "lodging",
+   "name": "ビーチテラス房総",
+   "area": "千葉県富津市",
+   "co_sleep": "添い寝 予約前確認",
+   "facts": {
+    "対象犬・頭数": "愛犬のみで、1棟につき2頭まで同伴可能です。混合ワクチン予防接種証明書および狂犬病予防注射済証のコピーの提出が必須です。",
+    "犬の宿泊料金": "5,000円/頭・泊（税込）",
+    "ケージ・持参判断": "あり（W60㎝H74㎝×8枚）",
+    "夜はどこで寝る？": "客室（1Fのみ）",
+    "食事同伴": "可（1F・2Fのキッチンまたは1FテラスのBBQスペースで自炊・調理が可能）",
+    "ドッグラン": "予約前確認(公式に記載なし)",
+    "予約前の重要確認": "犬が人の寝具で一緒に寝てよいか（添い寝の可否）、犬の大きさの制限（小型犬限定か否か）、食事の場での具体的な同伴ルール"
+   },
+   "links": [
+    {
+     "label": "公式の条件を確認",
+     "url": "https://beach-terrace.jp/boso/villa/",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでビーチテラス房総の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00051942/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "small_dog_only_mention": true,
+    "cert_required": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
+   "geocode": {
+    "lat": 35.173904,
+    "lon": 139.836441,
+    "precision": "district",
+    "source": "official-address",
+    "matched": "千葉県富津市金谷"
+   },
+   "area_geocode": {
+    "lat": 35.304169,
+    "lon": 139.857117,
+    "matched": "千葉県富津市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-00051959",
+   "type": "lodging",
+   "name": "SEA-LIFE TSURIGASAKI",
+   "area": "千葉県長生郡",
+   "co_sleep": "添い寝 不可",
+   "facts": {
+    "対象犬・頭数": "普段室内で飼育され躾の出来ている小型犬に限ります。狂犬病とウイルス性伝染病の予防接種（5種類以上の混合ワクチン）を受けており、接種後2週間以上1年未満である必要があります。ノミ・マダニの駆除対策を済ませてあること、雌犬の場合は発情期及び妊娠状態ではないことが条件です。",
+    "犬の宿泊料金": "3頭まで無料、4頭目からは1頭につき1泊8,000円(税別)の追加料金",
+    "ケージ・持参判断": "あり(持参必須)。就寝時にはリビングにて必ずゲージ(お持ち込みケージ)内にペットを収容すること リード、ペット用食事、食器、トイレ、ブラシ、専用寝具は、普段使い慣れたものをご持参ください。",
+    "夜はどこで寝る？": "リビングのゲージ(お持ち込みケージ)内 ペットの建物への入館はリビングまでとし、寝室内は禁止とします。",
+    "食事同伴": "予約前確認",
+    "ドッグラン": "予約前確認(公式に記載なし)",
+    "予約前の重要確認": "食事の場での同伴可否、犬同伴可能な客室の限定・違い、具体的な料金体系(税込/税別、頭数上限など)"
+   },
+   "links": [
+    {
+     "label": "公式の条件を確認",
+     "url": "https://sea-life.ne.jp/term-use/",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでSEA-LIFE TSURIGASAKIの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00051959/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "vaccine_required": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
+   "geocode": null
+  },
+  {
+   "id": "c8-00052014",
+   "type": "lodging",
+   "name": "Refwind",
+   "area": "千葉県安房郡",
+   "co_sleep": "添い寝 不可",
+   "facts": {
+    "対象犬・頭数": "B棟のみ同伴可能で、最大4頭まで（大型犬は2頭まで）です。狂犬病ワクチンの予防接種済みの犬に限ります。A棟への入室は禁止されています。",
+    "犬の宿泊料金": "予約前確認",
+    "ケージ・持参判断": "あり（クレート、トイレトレイ、トイレシーツなどを備え付け）",
+    "夜はどこで寝る？": "客室内（布団の上は不可、ベッドや床など） ワンちゃんをお布団の上にはあげないでください。布団を汚した場合、クリーニング費用を頂戴します。",
+    "食事同伴": "予約前確認",
+    "ドッグラン": "あり（100㎡の広さ、天然芝の小山あり）",
+    "予約前の重要確認": "食事の場での同伴可否"
+   },
+   "links": [
+    {
+     "label": "公式の条件を確認",
+     "url": "https://refwind.jp/faq/",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでRefwindの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00052014/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "vaccine_required": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
+   "geocode": null
+  },
+  {
+   "id": "c8-00052069",
+   "type": "lodging",
+   "name": "and FOREST勝浦 竹の離れ",
+   "area": "千葉県勝浦市",
+   "co_sleep": "添い寝 不可",
+   "facts": {
+    "対象犬・頭数": "狂犬病予防接種、混合ワクチン接種を済ませているわんちゃんに限り、ご宿泊いただけます。基本的なマナー（トイレ、無駄吠え、噛み癖等のしつけ）ができているわんちゃんのみ宿泊可能です。",
+    "犬の宿泊料金": "予約前確認",
+    "ケージ・持参判断": "あり。ペットケージ ×1（90×60×55.2cm）が施設備品として用意されています。頭数にかかわらず1つずつのご用意となります。 追加で必要な場合はご持参をお願いいたします。",
+    "夜はどこで寝る？": "客室のケージ内または持参した寝具 わんちゃんの施設の布団、ベッドのご利用はご遠慮ください。添い寝が必要な場合は使い慣れた寝具やベッドをご持参いただきますようお願い致します。",
+    "食事同伴": "予約前確認",
+    "ドッグラン": "予約前確認(公式に記載なし)",
+    "予約前の重要確認": "犬の宿泊料金、食事の場での同伴可否、犬同伴可能な客室の限定・違い"
+   },
+   "links": [
+    {
+     "label": "公式の条件を確認",
+     "url": "https://www.takenohanare.com/petrules",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでand FOREST勝浦 竹の離れの宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00052069/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "vaccine_required": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
+   "geocode": {
+    "lat": 35.228252,
+    "lon": 140.263428,
+    "precision": "district",
+    "source": "official-address",
+    "matched": "千葉県勝浦市佐野"
+   },
+   "area_geocode": {
+    "lat": 35.152233,
+    "lon": 140.320923,
+    "matched": "千葉県勝浦市",
+    "precision": "municipality"
+   }
+  },
+  {
+   "id": "c8-00052288",
+   "type": "lodging",
+   "name": "オールドルーキーサウナホテル木更津金田",
+   "area": "千葉県木更津市",
+   "co_sleep": "添い寝 予約前確認",
+   "facts": {
+    "対象犬・頭数": "10キロ未満の小型犬のみで、1部屋につき2匹までです。狂犬病予防注射の接種が必須で、トイレのしつけができていること、およびノミ・ダニなどの予防薬が投与されていることが必要です。",
+    "犬の宿泊料金": "無料",
+    "ケージ・持参判断": "用意なし(持参)/予約前確認。長時間にわたり愛犬だけを部屋に放置しないよう、部屋を離れる際はケージに入れるか連れ出す必要があります。 長時間の留守番時はケージに入れるか連れ出す必要があります",
+    "夜はどこで寝る？": "客室(ペットサークル内または床)",
+    "食事同伴": "不可。愛犬用の食事は当ホテルではご用意がございませんので、宿泊者がご持参ください。",
+    "ドッグラン": "予約前確認(公式に記載なし)",
+    "予約前の重要確認": "添い寝の可否、ケージの貸出有無"
+   },
+   "links": [
+    {
+     "label": "公式の条件を確認",
+     "url": "https://saunahotel-kk.oldrookiesauna.com/pet-suite/",
+     "affiliate": false
+    },
+    {
+     "label": "Yahoo!トラベルでオールドルーキーサウナホテル木更津金田の宿泊プランを見る",
+     "url": "https://travel.yahoo.co.jp/00052288/",
+     "affiliate": false
+    }
+   ],
+   "checked_at": "2026-09-30",
+   "dog_hints": {
+    "small_dog_only_mention": true,
+    "vaccine_required": true
+   },
+   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
+   "geocode": {
+    "lat": 35.403177,
+    "lon": 139.920173,
+    "precision": "facility",
+    "source": "official-map",
+    "matched": "公式ページの地図"
+   },
+   "area_geocode": {
+    "lat": 35.381248,
+    "lon": 139.924896,
+    "matched": "千葉県木更津市",
     "precision": "municipality"
    }
   },
