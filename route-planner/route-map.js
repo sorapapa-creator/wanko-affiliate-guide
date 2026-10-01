@@ -9,14 +9,18 @@
   const COLOR = { origin: "#2e7d4f", dest: "#b3261e", via: "#c0612b", rest: "#6f665d", go: "#c0612b", back: "#1f5fa8", picked: "#1b1b1b" };
   // 候補の種類: 色・印の文字・表示名(planner.js の candCategory と対応)
   const CAT = {
-    run: { color: "#2e7d4f", glyph: "ラ", label: "ドッグラン" },
-    cafe: { color: "#a8571f", glyph: "カ", label: "カフェ・食事" },
-    park: { color: "#3b7ea1", glyph: "園", label: "公園・観光" },
-    animal: { color: "#8a6d3b", glyph: "牧", label: "動物・牧場" },
-    shopping: { color: "#7b4fa3", glyph: "買", label: "買い物" },
-    rest: { color: "#6f665d", glyph: "休", label: "SA・PA・道の駅" },
-    other: { color: "#9a9087", glyph: "・", label: "その他" },
+    run: { color: "#2e7d4f", icon: "🐕", label: "ドッグラン" },
+    cafe: { color: "#a8571f", icon: "☕", label: "カフェ・食事" },
+    park: { color: "#3b7ea1", icon: "🌳", label: "公園・観光" },
+    animal: { color: "#8a6d3b", icon: "🐄", label: "動物・牧場" },
+    shopping: { color: "#7b4fa3", icon: "🛍️", label: "買い物" },
+    rest: { color: "#6f665d", icon: "🅿️", label: "SA・PA・道の駅" },
+    other: { color: "#9a9087", icon: "📍", label: "その他" },
   };
+  const ICON = { origin: "🚗", dest: "🏁", rest: "🅿️" };
+  // 候補の丸いアイコンの中身。SA・PA・道の駅は文字(SA / PA / 道の駅)で区別する
+  const candIcon = (c) => (c.cat === "rest" ? (c.kind === "道の駅" ? "道の駅" : c.kind || "休") : (CAT[c.cat] || CAT.other).icon);
+  const shortName = (name, n = 14) => (name.length > n ? name.slice(0, n - 1) + "…" : name);
 
   let apiPromise = null;   // Maps JavaScript API の読み込み(1 回だけ)
   let map = null;          // google.maps.Map(1 ページ 1 回だけ作る = Dynamic Maps の課金は 1 回)
@@ -65,12 +69,28 @@
     candMarkers = new Map();
   }
 
-  function pinEl({ color, glyph, scale = 1 }) {
-    return new google.maps.marker.PinElement({ background: color, borderColor: "#ffffff", glyphColor: "#ffffff", glyph, scale }).element;
+  // 主要地点のピン(絵文字または番号)+ 下に名前ラベル
+  function pinEl({ color, glyph, scale = 1, label }) {
+    const pin = new google.maps.marker.PinElement({ background: color, borderColor: "#ffffff", glyphColor: "#ffffff", glyph, scale });
+    const glyphEl = pin.element.querySelector(".gm-glyph, [class*='glyph']");
+    const wrap = document.createElement("div");
+    wrap.className = "mk mk-pin";
+    wrap.appendChild(pin.element);
+    if (label) { const l = document.createElement("div"); l.className = "mk-l"; l.textContent = label; wrap.appendChild(l); }
+    return wrap;
+  }
+  // 候補の丸いアイコン(種類の絵文字)。選択済みは黒い縁と名前ラベル
+  function dotEl({ color, icon, picked, label, small }) {
+    const wrap = document.createElement("div");
+    wrap.className = "mk mk-dot" + (picked ? " mk-picked" : "");
+    const i = document.createElement("div"); i.className = "mk-i" + (small ? " mk-s" : ""); i.style.background = color; i.textContent = icon;
+    wrap.appendChild(i);
+    if (label) { const l = document.createElement("div"); l.className = "mk-l"; l.textContent = label; wrap.appendChild(l); }
+    return wrap;
   }
 
-  function marker(p, { color, glyph, scale = 1, zIndex = 1, html, content }) {
-    const m = new google.maps.marker.AdvancedMarkerElement({ map, position: { lat: Number(p.lat), lng: Number(p.lon) }, title: p.name || "", content: pinEl({ color, glyph, scale }), zIndex });
+  function marker(p, { color, glyph, scale = 1, zIndex = 1, html, content, label, el }) {
+    const m = new google.maps.marker.AdvancedMarkerElement({ map, position: { lat: Number(p.lat), lng: Number(p.lon) }, title: p.name || "", content: el || pinEl({ color, glyph, scale, label }), zIndex });
     if (html || content) m.addListener("click", () => openInfo(m, html, content));
     layers.push(m);
     return m;
@@ -96,7 +116,7 @@
 
   function candBadges(c) {
     const cat = CAT[c.cat] || CAT.other;
-    return [`<span class="badge">${esc(cat.label)}</span>`, c.dogRun ? '<span class="badge b-run">ドッグラン</span>' : "", c.cert ? '<span class="badge">証明書</span>' : ""].join("");
+    return [`<span class="badge"><span class="mk-i mk-inline" style="background:${cat.color}">${esc(candIcon(c))}</span>${esc(cat.label)}</span>`, c.dogRun ? '<span class="badge b-run">ドッグラン</span>' : "", c.cert ? '<span class="badge">証明書</span>' : ""].join("");
   }
 
   // 吹き出しの中身(DOM で作ってボタンに処理を付ける)
@@ -119,7 +139,8 @@
   function candMarker(c) {
     const cat = CAT[c.cat] || CAT.other;
     const picked = picks.has(c.id);
-    const m = marker(c, { color: picked ? COLOR.picked : cat.color, glyph: picked ? "✓" : cat.glyph, scale: picked ? 0.95 : 0.72, zIndex: picked ? 3 : 1 });
+    const icon = candIcon(c);
+    const m = marker(c, { zIndex: picked ? 3 : 1, el: dotEl({ color: picked ? COLOR.picked : cat.color, icon: picked ? "✓" : icon, picked, label: picked ? shortName(c.name) : "", small: c.cat === "rest" && icon.length > 2 }) });
     m.addListener("click", () => { setActive(c.id, false); openInfo(m, null, candPopup(c)); });
     candMarkers.set(c.id, m);
     return m;
@@ -209,12 +230,12 @@
       for (const pt of leg.points) bounds.extend({ lat: pt[0], lng: pt[1] });
     }
     const link = (url, label) => (url ? `<br><a href="${esc(url)}" target="_blank" rel="noopener">${esc(label)}</a>` : "");
-    (data.rests || []).forEach((r) => { marker(r, { color: COLOR.rest, glyph: "休", scale: 0.85, zIndex: 4, html: `<b>${esc(r.name)}</b><br>${esc(r.kind || "")} 休憩${esc(r.note || "")}` }); extend(r); });
-    (data.returnRests || []).forEach((r) => { marker(r, { color: COLOR.back, glyph: "休", scale: 0.85, zIndex: 4, html: `<b>${esc(r.name)}</b><br>${esc(r.kind || "")} 帰りの休憩` }); extend(r); });
-    (data.waypoints || []).forEach((w, i) => { marker(w, { color: COLOR.via, glyph: String(i + 1), zIndex: 5, html: `<b>${esc(w.name)}</b><br>立ち寄り${i + 1}${w.kind ? "・" + esc(w.kind) : ""}${w.stayMin ? `・滞在${esc(w.stayMin)}分` : ""}${link(w.url, "施設情報を開く")}` }); extend(w); });
-    (data.returnWaypoints || []).forEach((w, i) => { marker(w, { color: COLOR.back, glyph: String(i + 1), zIndex: 5, html: `<b>${esc(w.name)}</b><br>帰り道に経由${w.kind ? "・" + esc(w.kind) : ""}${w.stayMin ? `・滞在${esc(w.stayMin)}分` : ""}${link(w.url, "施設情報を開く")}` }); extend(w); });
-    if (data.origin) { marker(data.origin, { color: COLOR.origin, glyph: "発", zIndex: 6, html: `<b>${esc(data.origin.name)}</b><br>出発地` }); extend(data.origin); }
-    if (data.destination) { marker(data.destination, { color: COLOR.dest, glyph: "着", scale: 1.15, zIndex: 7, html: `<b>${esc(data.destination.name)}</b><br>行き先${link(data.destination.url, "条件を見る")}` }); extend(data.destination); }
+    (data.rests || []).forEach((r) => { marker(r, { color: COLOR.rest, glyph: ICON.rest, scale: 0.9, zIndex: 4, label: `休憩 ${shortName(r.name)}`, html: `<b>${esc(r.name)}</b><br>${esc(r.kind || "")} 休憩${esc(r.note || "")}` }); extend(r); });
+    (data.returnRests || []).forEach((r) => { marker(r, { color: COLOR.back, glyph: ICON.rest, scale: 0.9, zIndex: 4, label: `帰り休憩 ${shortName(r.name)}`, html: `<b>${esc(r.name)}</b><br>${esc(r.kind || "")} 帰りの休憩` }); extend(r); });
+    (data.waypoints || []).forEach((w, i) => { marker(w, { color: COLOR.via, glyph: String(i + 1), scale: 1.05, zIndex: 5, label: `立ち寄り${i + 1} ${shortName(w.name)}`, html: `<b>${esc(w.name)}</b><br>立ち寄り${i + 1}${w.kind ? "・" + esc(w.kind) : ""}${w.stayMin ? `・滞在${esc(w.stayMin)}分` : ""}${link(w.url, "施設情報を開く")}` }); extend(w); });
+    (data.returnWaypoints || []).forEach((w, i) => { marker(w, { color: COLOR.back, glyph: String(i + 1), scale: 1.05, zIndex: 5, label: `帰りに経由${i + 1} ${shortName(w.name)}`, html: `<b>${esc(w.name)}</b><br>帰り道に経由${w.kind ? "・" + esc(w.kind) : ""}${w.stayMin ? `・滞在${esc(w.stayMin)}分` : ""}${link(w.url, "施設情報を開く")}` }); extend(w); });
+    if (data.origin) { marker(data.origin, { color: COLOR.origin, glyph: ICON.origin, scale: 1.15, zIndex: 6, label: `出発 ${shortName(data.origin.name)}`, html: `<b>${esc(data.origin.name)}</b><br>出発地` }); extend(data.origin); }
+    if (data.destination) { marker(data.destination, { color: COLOR.dest, glyph: ICON.dest, scale: 1.25, zIndex: 7, label: `行き先 ${shortName(data.destination.name)}`, html: `<b>${esc(data.destination.name)}</b><br>行き先${link(data.destination.url, "条件を見る")}` }); extend(data.destination); }
     if (!bounds.isEmpty()) map.fitBounds(bounds, 40);
     drawCandidates();
   }

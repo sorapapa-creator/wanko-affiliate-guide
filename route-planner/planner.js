@@ -659,7 +659,7 @@
       if (!(distance <= CAND_KM)) continue;
       const hints = v.place?.dog_hints || {};
       out.push({ id: v.place ? `place:${v.place.id}` : `stop:${v.name}`, label, lat: v.lat, lon: v.lon, name: v.name, cat: candCategory(v),
-        area: v.place ? v.place.area || "" : v.kind, url: v.place?.page_url, distance, along: routeAlong(points, cum, [v.lat, v.lon]),
+        area: v.place ? v.place.area || "" : v.kind, kind: v.stop ? v.kind : "", url: v.place?.page_url, distance, along: routeAlong(points, cum, [v.lat, v.lon]),
         dogRun: Boolean(v.stop?.dog_run), checkedAt: v.place?.checked_at || "", cert: Boolean(hints.cert_required), theme: v.place?.theme || "" });
     }
     return out.sort((a, b) => a.distance - b.distance).slice(0, CAND_MAX).sort((a, b) => a.along - b.along);
