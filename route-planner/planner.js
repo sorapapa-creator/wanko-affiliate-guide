@@ -85,12 +85,14 @@
   }
 
   async function loadData() {
-    const [p, s, dt] = await Promise.all([
+    const [p, s, dt, lt] = await Promise.all([
       fetch(`${CFG.dataBase}places.json`).then((r) => r.json()),
       fetch(`${CFG.dataBase}rest_stops.json`).then((r) => r.json()),
       fetch(`${CFG.dataBase}drive_times.json`).then((r) => (r.ok ? r.json() : null)).catch(() => null),
+      fetch(`${CFG.dataBase}lodging_times.json`).then((r) => (r.ok ? r.json() : null)).catch(() => null),
     ]);
     STOPS = s.stops;
+    TIMES = lt && typeof lt === "object" ? lt : {};
     setDriveTimes(dt);
 
     // 掲載ページのarticle[id]を読み取り、施設カードの増減を選択肢へ自動反映する。
@@ -572,7 +574,13 @@
     }
     const last = legs[legs.length - 1];
     const h = jst(last.arrive).h;
-    if (state.place.type === "lodging" && (h >= 20 || h < 5)) warns.push(`宿への到着が${fmtClock(last.arrive)}になります。チェックインの受付時間を宿に確認してください。`);
+    const ht = state.place.type === "lodging" ? hotelTimes(state.place) : null;
+    if (ht) {
+      const am = jstMinutes(last.arrive), ci = minutesOf(ht.checkin), lc = minutesOf(ht.last_checkin);
+      if (ci != null && am < ci) warns.push(`宿への到着が${fmtClock(last.arrive)}で、チェックイン開始(${ht.checkin})より${fmtDur((ci - am) * 60)}早い計算です。荷物を預けられるか宿に確認するか、立ち寄り先や近くの場所で時間を調整してください。`);
+      else if (lc != null && am > lc) warns.push(`宿への到着が${fmtClock(last.arrive)}で、最終チェックイン(${ht.last_checkin})を過ぎる計算です。出発を早めるか、遅れる旨を宿に連絡してください。`);
+      else if (h >= 20 || h < 5) warns.push(`宿への到着が${fmtClock(last.arrive)}になります。チェックインの受付時間を宿に確認してください。`);
+    } else if (state.place.type === "lodging" && (h >= 20 || h < 5)) warns.push(`宿への到着が${fmtClock(last.arrive)}になります。チェックインの受付時間を宿に確認してください。`);
     if (restCount) warns.push("休憩を入れた分だけ後ろの時刻をずらしています。ずれた後の渋滞の変化は計算し直していません。");
     $("plan-warn").innerHTML = warns.map((w) => `<div class="warnbox">${esc(w)}</div>`).join("");
 
@@ -780,6 +788,7 @@
     $("dest-card").innerHTML = `
       <h2>${esc(place.name)} <span class="badge">${esc(TYPE_LABEL[place.type])}</span></h2>
       <p class="note">${esc(place.area)}${place.theme ? " / " + esc(place.theme) : ""}${place.co_sleep ? " / " + esc(place.co_sleep) : ""}</p>
+      ${hotelTimes(place) ? `<p class="note"><b>チェックイン:</b> ${esc(hotelTimes(place).checkin || "—")}${hotelTimes(place).last_checkin ? `〜${esc(hotelTimes(place).last_checkin)}` : ""} ／ <b>チェックアウト:</b> ${esc(hotelTimes(place).checkout || "—")} <span class="note">(楽天トラベル掲載情報・${esc((hotelTimes(place).fetched_at || "").slice(0, 10))}時点。プランによって異なる場合があります)</span></p>` : ""}
       ${warns.map((w) => `<div class="warnbox">${esc(w)}</div>`).join("")}
       ${facts}
       <div class="actions">
@@ -834,6 +843,10 @@
   // ---------------------------------------------------------------- 主要駅からの走行時間(OSRM 前計算)・近くの掲載先の行程
 
   let DRIVE = null; // drive_times.json
+  let TIMES = {};   // lodging_times.json: 宿ごとのチェックイン・最終チェックイン・チェックアウト(楽天トラベル掲載情報)
+  const hotelTimes = (place) => (place && TIMES[place.id] && (TIMES[place.id].checkin || TIMES[place.id].checkout)) ? TIMES[place.id] : null;
+  const minutesOf = (hhmm) => { const m = /^(\d{1,2}):(\d{2})/.exec(hhmm || ""); return m ? +m[1] * 60 + +m[2] : null; };
+  const jstMinutes = (d) => { const j = jst(d); return j.h * 60 + j.mi; };
   function setDriveTimes(d) { DRIVE = d && d.places ? d : null; }
   function renderDriveFrom(place) {
     const box = $("dest-card");
@@ -894,7 +907,9 @@
       cursor = l.arrive;
     });
     const last = legs[legs.length - 1];
-    add(1, last.arrive, "stop", `<span class="badge b-go">到着</span> <b>${esc(state.place.name)}</b>`);
+    const htA = state.place.type === "lodging" ? hotelTimes(state.place) : null;
+    const earlyNote = htA && minutesOf(htA.checkin) != null && jstMinutes(last.arrive) < minutesOf(htA.checkin) ? ` <span class="note">(チェックイン開始 ${esc(htA.checkin)} より前)</span>` : "";
+    add(1, last.arrive, "stop", `<span class="badge b-go">到着</span> <b>${esc(state.place.name)}</b>${earlyNote}`);
     // 到着日の近くの掲載先(到着後に順番に回り、宿へ戻る)
     let t = last.arrive; let here = { lat: state.place.geocode.lat, lon: state.place.geocode.lon };
     const visit = (day, startTime, items, backToLodging = true) => {
@@ -943,8 +958,9 @@
         if (jst(home).h >= 21 || jstYmd(home) !== jstYmd(o.dep)) warns.push(`帰宅が${fmtClock(home)}になる計算です。滞在を短くするか、早めの出発を検討してください。`);
       }
       if (isLodging) {  // 翌日: 宿を出て近くの掲載先→帰路(往路と同じ運転時間の目安)
-        const checkout = clockOf(addSec(last.arrive, 24 * 3600), "10:00");
-        add(2, checkout, "stop", `<span class="badge b-go">チェックアウト(目安10:00)</span> <b>${esc(state.place.name)}</b>`);
+        const ht2 = hotelTimes(state.place); const coTime = (ht2 && ht2.checkout) || "10:00";
+        const checkout = clockOf(addSec(last.arrive, 24 * 3600), coTime);
+        add(2, checkout, "stop", `<span class="badge b-go">チェックアウト(${ht2 && ht2.checkout ? esc(coTime) : "目安10:00"})</span> <b>${esc(state.place.name)}</b>`);
         const end2 = visit(2, checkout, day2);
         const driveBack = o.totals.driveSec;
         const home = addSec(day2.length ? end2 : checkout, driveBack);
@@ -1247,7 +1263,7 @@
     const isLodging = state.place.type === "lodging";
     $("ret-day").value = isLodging ? "2" : "1";
     for (const opt of $("ret-day").options) opt.textContent = opt.textContent.replace(/\s*\d+\/\d+\(.\)$/, "") + " " + dayDate(state, Number(opt.value));
-    const defaultStart = () => ($("ret-day").value === "1" ? hhmm(addSec(last.arrive, 2 * 3600)) : "10:00");
+    const defaultStart = () => ($("ret-day").value === "1" ? hhmm(addSec(last.arrive, 2 * 3600)) : ((hotelTimes(state.place) || {}).checkout || "10:00"));
     $("ret-start").value = defaultStart();
     const changed = () => invalidateReturn("条件を変えたので「帰りの時間を計算」を押してください。");
     $("ret-go").onclick = () => computeReturn(state);
