@@ -127,6 +127,8 @@
             area: address || existing.area || "掲載ページで確認",
             type: spec.type,
             page_url: detailUrl.href,
+            sleep: article.dataset.sleep || existing.sleep || "",
+            cage: article.dataset.cage || existing.cage || "",
           });
         }
       } catch (error) {
@@ -202,6 +204,14 @@
     if (destId && byId.has(destId)) select.value = destId;
     updateDestinationLink();
     refreshWaypointChoices();
+    // 空室逆算(vacancy.js)などの別スクリプトへ、行き先データと所要時間データを渡す
+    window.PlannerData = {
+      byId: (id) => byId.get(id),
+      drive: () => DRIVE,
+      // 主要駅(drive_times の hub)の id から出発地プルダウンを合わせる(駅名で一致)
+      originForHub: (hubId) => { const hub = DRIVE && DRIVE.hubs.find((h) => h.id === hubId); const opt = hub && [...$("origin").options].find((o) => o.textContent.trim() === hub.name); if (opt) { $("origin").value = opt.value; $("origin").dispatchEvent(new Event("change", { bubbles: true })); } },
+    };
+    document.dispatchEvent(new CustomEvent("planner:data"));
   }
 
   // ワクチン・狂犬病の証明書: 「持っていく」のチェックを外すと、証明書の提示・持参が条件の宿・おでかけ先は選べなくする

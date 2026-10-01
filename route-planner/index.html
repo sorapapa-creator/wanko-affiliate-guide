@@ -105,6 +105,12 @@
   .map-legend span { display: inline-flex; align-items: center; gap: 4px; }
   .lg-pin { display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; border-radius: 50% 50% 50% 0; transform: rotate(-45deg); color: #fff; font-style: normal; font-weight: 700; font-size: 12px; border: 1.5px solid #fff; box-shadow: 0 1px 3px rgba(0,0,0,.4); margin: 0 4px 4px 0; }
   .lg-pin b { display: inline-block; transform: rotate(45deg); }
+  .vc-card { margin: 10px 0; padding: 12px 14px; }
+  .vc-card h3 { margin: 0 0 6px; font-size: 1.02rem; }
+  .vc-card.vc-ng { opacity: .85; }
+  .vc-plans { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 6px; }
+  .vc-plan { border: 1px solid var(--line); border-radius: 10px; padding: 8px 10px; }
+  .vc-plan.vc-pet { border-color: var(--good); background: var(--accent-soft); }
   .diffbox { border-left: 4px solid var(--good); padding: 6px 10px; background: var(--accent-soft); border-radius: 6px; margin: 8px 0; font-size: .9rem; }
   .lg-line { display: inline-block; width: 26px; height: 0; border-top: 4px solid #c0612b; border-radius: 2px; }
   .lg-line.lg-back { border-top: 3px dashed #1f5fa8; }
@@ -179,6 +185,27 @@
 <div class="ad" style="font-size:12px;color:#76786f;padding:8px 16px"><strong>広告</strong> このページにはアフィリエイト広告リンクが含まれる場合があります。リンク先で購入・予約されると運営者に紹介料が入る場合があります。バリューコマースの LinkSwitch により、提携先(Yahoo!ショッピング・Yahoo!トラベルなど)へのリンクが自動的に広告リンクとして扱われる場合があります。</div>
   <p class="lead">① 出発地・立ち寄り先(滞在時間つき)・行き先を選んで、出発時刻ごとの予想時間を出します。② そのあと、運転が長い区間だけ休憩場所(SA・PA・道の駅)を選ぶと、プランの時刻に休憩を足します。</p>
   <div class="mock" id="mock">テスト用の仮データで表示しています(渋滞は実データではありません)。</div>
+
+  <div class="card" id="vacancy-card">
+    <h2>泊まれる日から宿を探す(空室から逆算)</h2>
+    <p class="hint">次の週末にどこなら泊まれるか、から決めたいときに。掲載宿(犬の条件を確認済み)のうち楽天トラベルに空室がある宿を、犬の条件と出発地からの所要時間で並べます。見つかったら「この宿で旅行プランを作る」で、そのまま往復の行程を作れます。</p>
+    <div class="row three">
+      <div><label class="t planner-field-label" for="vc-date"><span>チェックイン日</span><small>CHECK-IN</small></label><select id="vc-date"><option value="">読み込み中…</option></select></div>
+      <div><label class="t planner-field-label" for="vc-origin"><span>出発地(主要駅)</span><small>FROM</small></label><select id="vc-origin"><option value="tokyo">東京駅</option></select></div>
+      <div><label class="t planner-field-label" for="vc-budget"><span>予算(2名1泊・上限)</span><small>BUDGET</small></label>
+        <select id="vc-budget"><option value="0">指定なし</option><option value="20000">2万円まで</option><option value="30000">3万円まで</option><option value="40000">4万円まで</option><option value="60000">6万円まで</option><option value="80000">8万円まで</option></select></div>
+    </div>
+    <div class="row three">
+      <div><label class="t planner-field-label" for="vc-size"><span>犬の大きさ</span><small>SIZE</small></label><select id="vc-size"><option value="small">小型(〜10kg)</option><option value="medium">中型(〜25kg)</option><option value="large">大型(25kg〜)</option></select></div>
+      <div><label class="t planner-field-label" for="vc-dogs"><span>頭数</span><small>DOGS</small></label><select id="vc-dogs"><option value="1">1頭</option><option value="2">2頭</option><option value="3">3頭以上</option></select></div>
+      <div><label class="t planner-field-label"><span>条件</span><small>FILTER</small></label>
+        <div class="chips"><label><input type="checkbox" id="vc-petonly" checked> 犬対応プランの空室がある宿だけ</label><label><input type="checkbox" id="vc-sleep"> 添い寝したい</label><label><input type="checkbox" id="vc-strict" checked> 条件に合わない記載のある宿は出さない</label></div></div>
+    </div>
+    <div class="actions"><button type="button" class="primary" id="vc-go">空室のある宿を探す</button></div>
+    <p class="note" id="vc-status"></p>
+    <div id="vc-results"></div>
+    <p class="note hidden" id="vc-credit">空室・料金・予約リンクは楽天ウェブサービス(楽天トラベル空室検索)から取得した情報です。予約時に楽天トラベルで最新の空室・料金・犬の受け入れ条件をご確認ください。「一般プラン」はその客室が犬対応かどうか未確認です。<a href="https://developers.rakuten.com/" target="_blank" rel="noopener">Supported by Rakuten Developers</a></p>
+  </div>
 
   <form id="form" autocomplete="off">
     <div class="row two">
@@ -441,7 +468,8 @@
 <!-- 更新したら ?v= の値を変える(ブラウザに古いファイルが残って新しい動作にならないのを防ぐ) -->
 <script src="config.js?v=2026100101"></script>
 <script src="route-map.js?v=2026100105"></script>
-<script src="planner.js?v=2026100104-map4"></script>
+<script src="planner.js?v=2026100105-vacancy"></script>
+<script src="vacancy.js?v=2026100105"></script>
 <script src="trip-check.js?v=2026092602"></script>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "2847001768a143df87fa4e78edba9c7e"}'></script><!-- End Cloudflare Web Analytics -->
 
