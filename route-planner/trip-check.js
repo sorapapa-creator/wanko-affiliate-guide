@@ -122,7 +122,7 @@
     const v = dogVerdict(rule, x);
     return `
       <h3>宿の空室と犬の条件</h3>
-      <p><span class="badge">空室未確認</span> 空室はこのページでは調べていません。${x.checkout ? `${esc(x.checkin)} から ${nights}泊` : `${esc(x.checkin)} チェックイン`}${who ? `(${esc(who)})` : ""}で、宿の公式サイトや予約サイトで確かめてください。</p>
+      <p><span class="badge">空室未確認</span> この条件確認では空室を調べていません(最終行程表の「予約する」に、楽天トラベルの取得時点の空室を出します)。${x.checkout ? `${esc(x.checkin)} から ${nights}泊` : `${esc(x.checkin)} チェックイン`}${who ? `(${esc(who)})` : ""}で、宿の公式サイトや予約サイトで確かめてください。</p>
       <div class="actions">${official.map((l, i) => `<a href="${esc(l.url)}" target="_blank" rel="noopener">${i ? "宿の公式ページ(2) ↗" : "宿の公式ページ ↗"}</a>`).join("")}
         <a href="${esc(place.page_url)}" target="_blank" rel="noopener">わんことのじかんで条件を見る</a></div>
       <p><span class="badge dog-${v.cls}">${esc(v.label)}</span> ${esc(v.why)}</p>

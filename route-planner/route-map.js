@@ -201,6 +201,7 @@
   function refreshAfterPick() {
     if (map && !failed && shown) drawCandidates();
     renderPicks();
+    document.dispatchEvent(new CustomEvent("routemap:picks"));
   }
 
   function setActive(id, pan) {
@@ -241,6 +242,7 @@
     const pn = $("map-pick-note");
     if (pn) pn.textContent = `${r.used.length}か所を立ち寄り先に入れて再計算しています。` + (r.over.length ? `${r.over.map((x) => x.name).join("・")} は立ち寄り${pending.maxWaypoints || 3}か所の上限で入れていません。到着後に回る場所は下の「近くの掲載先」で選べます。` : "");
     renderPicks();
+    document.dispatchEvent(new CustomEvent("routemap:picks"));
   }
 
   // data: { origin, destination, waypoints, rests, legs:[{points, back}], returnWaypoints, returnRests, candidates, onApply, maxWaypoints, stayChoices, summary }
@@ -304,6 +306,8 @@
       renderPicks();
     },
     hide() { pending = null; $("map-card")?.classList.add("hidden"); if (map && !failed) clearLayers(); },
+    // まだ立ち寄りに入れていない選択(確認カードの表示用)
+    pendingPicks() { return [...picks.values()].map((p) => p.cand.name); },
   };
   $("map-show")?.addEventListener("click", show);
   $("map-apply")?.addEventListener("click", applyPicks);

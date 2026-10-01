@@ -130,6 +130,9 @@
     } finally { btn.disabled = false; }
   }
 
+  // 行程表の「予約する」(planner.js)と共有する空室データの読み込み
+  window.VacancyData = { loadIndex, loadDate };
+
   async function init() {
     const card = $("vacancy-card"); if (!card) return;
     try {

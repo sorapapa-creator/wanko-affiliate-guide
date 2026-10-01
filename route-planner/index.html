@@ -105,6 +105,15 @@
   .map-legend span { display: inline-flex; align-items: center; gap: 4px; }
   .lg-pin { display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; border-radius: 50% 50% 50% 0; transform: rotate(-45deg); color: #fff; font-style: normal; font-weight: 700; font-size: 12px; border: 1.5px solid #fff; box-shadow: 0 1px 3px rgba(0,0,0,.4); margin: 0 4px 4px 0; }
   .lg-pin b { display: inline-block; transform: rotate(45deg); }
+  .checklist { list-style: none; margin: 0 0 8px; padding: 0; }
+  .checklist li { display: flex; gap: 8px; align-items: flex-start; padding: 7px 0; border-top: 1px solid var(--line); font-size: .93rem; }
+  .checklist li:first-child { border-top: 0; }
+  .checklist .mark { flex: none; width: 22px; height: 22px; border-radius: 50%; display: grid; place-items: center; font-weight: 700; font-size: .8rem; color: #fff; background: var(--good); }
+  .checklist li.todo .mark { background: var(--warn); }
+  .checklist .fix { margin-left: auto; flex: none; }
+  .checklist .fix a, .sub-link { font-weight: 700; color: var(--accent); white-space: nowrap; }
+  .book-src { border-top: 1px solid var(--line); padding-top: 8px; margin-top: 8px; }
+  .book-src h4 { margin: 0 0 4px; font-size: .95rem; }
   .vc-card { margin: 10px 0; padding: 12px 14px; }
   .vc-card h3 { margin: 0 0 6px; font-size: 1.02rem; }
   .vc-card.vc-ng { opacity: .85; }
@@ -448,8 +457,14 @@
       <p class="note" id="ret-rest-intro"></p>
       <div id="ret-rest-pick"></div>
     </div>
+    <div class="card hidden" id="check-card">
+      <h2>最終行程表を作る前に確認</h2>
+      <p class="hint">今の選択内容です。足りないところはリンクから直して、最後に「最終行程表を作る」を押してください。近くの施設を入れずに作ることもできます。</p>
+      <ul class="checklist" id="checklist"></ul>
+      <div class="actions"><button type="button" class="primary" id="make-itinerary">最終行程表を作る</button></div>
+    </div>
     <div class="card hidden" id="itinerary-card">
-      <h2 id="itinerary-title">最終行程表</h2>
+      <h2 id="itinerary-title" tabindex="-1">最終行程表</h2>
       <div id="itinerary-warn"></div>
       <div id="itinerary"></div>
       <div class="actions" id="itinerary-actions"></div>
@@ -468,10 +483,10 @@
 </div>
 <!-- 更新したら ?v= の値を変える(ブラウザに古いファイルが残って新しい動作にならないのを防ぐ) -->
 <script src="config.js?v=2026100101"></script>
-<script src="route-map.js?v=2026100105"></script>
-<script src="planner.js?v=2026100105-vacancy"></script>
-<script src="vacancy.js?v=2026100107"></script>
-<script src="trip-check.js?v=2026092602"></script>
+<script src="route-map.js?v=2026100108"></script>
+<script src="vacancy.js?v=2026100108"></script>
+<script src="planner.js?v=2026100108-itin"></script>
+<script src="trip-check.js?v=2026100108"></script>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "2847001768a143df87fa4e78edba9c7e"}'></script><!-- End Cloudflare Web Analytics -->
 
 <!-- valuecommerce-linkswitch --><script type="text/javascript" language="javascript">
