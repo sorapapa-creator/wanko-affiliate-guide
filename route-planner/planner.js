@@ -787,6 +787,7 @@
         ${official.map((l) => `<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label || "公式サイト")}</a>`).join("")}
         ${aff.map((l) => `<a href="${esc(l.url)}" target="_blank" rel="noopener sponsored">${esc(l.label || "予約サイトで空室を見る")}<span class="ad">広告</span></a>`).join("")}
       </div>
+      <div id="dest-booking"></div>
       ${place.checked_at ? `<p class="note">掲載情報の確認日: ${esc(place.checked_at)}</p>` : ""}`;
   }
 
@@ -1168,21 +1169,17 @@
   let bookingGen = 0;
   const PET_NEG_JS = /(ペット|愛犬|わんこ|ワンちゃん|わんちゃん|犬)[^。]{0,8}(不可|NG|ＮＧ|禁止|お断り|ご遠慮|なし)|(不可|NG|ＮＧ)[^。]{0,4}(ペット|犬)/;
   const yen = (n) => (n == null ? "—" : `${Number(n).toLocaleString("ja-JP")}円`);
-  async function renderBooking(state) {
-    const box = $("itin-booking"); if (!box) return;
-    const gen = ++bookingGen; const place = state.place; const o = state.options[state.current];
-    const sections = [];
-    if (place.type === "lodging") {
-      const ci = jstYmd(o.dep);
-      const adultsRaw = $("adults") ? $("adults").value : ""; const adults = adultsRaw === "4" ? 4 : 2;
-      const mismatch = adultsRaw && !["2", "4"].includes(adultsRaw);
-      const nights = $("checkout")?.value ? Math.round((Date.parse($("checkout").value) - Date.parse($("date").value)) / 86400000) : 1;
-      box.innerHTML = `<h3>予約する</h3><p class="note">楽天トラベルの取得時点の空室を確認しています…</p>`;
-      let rak = "";
-      try {
-        if (!window.VacancyData) throw new Error("no-module");
-        const data = await window.VacancyData.loadDate(ci, adults);
-        if (gen !== bookingGen) return;
+  // 楽天トラベルの取得時点の空室(計算済み行程の出発日 = チェックイン・1 泊・人数)。行程表と行き先カードで共用。空室情報が無ければ短い注記を返す
+  async function rakutenVacancy(place, o) {
+    const ci = jstYmd(o.dep);
+    const adultsRaw = $("adults") ? $("adults").value : ""; const adults = adultsRaw === "4" ? 4 : 2;
+    const mismatch = adultsRaw && !["2", "4"].includes(adultsRaw);
+    const nights = $("checkout")?.value ? Math.round((Date.parse($("checkout").value) - Date.parse($("date").value)) / 86400000) : 1;
+    let rak = ""; let hasPlans = false;
+    try {
+      if (!window.VacancyData) throw new Error("no-module");
+      const data = await window.VacancyData.loadDate(ci, adults);
+      {
         const h = data && data.hotels && data.hotels[place.id];
         const scannedMs = data ? Date.parse(data.scanned_at + "+09:00") : NaN;
         const stale = !Number.isFinite(scannedMs) || Date.now() - scannedMs > 36 * 3600 * 1000;
@@ -1194,15 +1191,37 @@
           const petPlans = h.plans.filter((p) => p.pet);
           const unknown = h.plans.filter((p) => !p.pet && !PET_NEG_JS.test(`${p.plan || ""} ${p.room || ""}`));
           const row = (p, kind) => `<li class="vc-plan${kind === "pet" ? " vc-pet" : ""}">${kind === "pet" ? '<span class="badge b-run">犬対応プラン</span>' : '<span class="badge">一般客室(犬同伴の可否は未確認)</span>'} <b>${yen(p.total)}</b><span class="note">(${adults}名1泊・楽天表示)</span><br><span class="note">${esc(p.plan || "")}${p.room ? ` ／ ${esc(p.room)}` : ""}</span><br>${p.url ? `<a href="${esc(p.url)}" target="_blank" rel="noopener sponsored">楽天トラベルでこのプランを予約する(${esc(cond)})<span class="ad">広告</span></a>` : ""}</li>`;
+          hasPlans = petPlans.length > 0 || unknown.length > 0;
           rak = `<p class="note">楽天トラベルの取得時点(${esc(fmtWhen(data.scanned_at))})の空室情報(${esc(cond)}${mismatch ? `。入力の人数 ${esc(adultsRaw)}名とは条件が違います` : ""})。現在は変わっている場合があります。</p>
             <ul class="vc-plans">${petPlans.map((p) => row(p, "pet")).join("")}${!petPlans.length ? unknown.slice(0, 2).map((p) => row(p, "unknown")).join("") : ""}</ul>
             ${!petPlans.length && !unknown.length ? '<p class="note">取得時点の空室はペット不可の客室だけでした。</p>' : ""}`;
         }
-      } catch (e) {
-        if (gen !== bookingGen) return;
-        rak = e && e.message === "no-module" ? "" : `<p class="note">この条件(${esc(jstMd(o.dep))}・${adults}名)の空室は未確認です(満室とは限りません)。予約サイトでご確認ください。</p>`;
       }
-      sections.push(`<div class="book-src"><h4>楽天トラベルの空室情報</h4>${rak}<p class="rakuten-credit note"><a href="https://developers.rakuten.com/" target="_blank" rel="noopener">Supported by Rakuten Developers</a></p></div>`);
+    } catch (e) {
+      rak = e && e.message === "no-module" ? "" : `<p class="note">この条件(${esc(jstMd(o.dep))}・${adults}名)の空室は未確認です(満室とは限りません)。予約サイトでご確認ください。</p>`;
+    }
+    const credit = `<p class="rakuten-credit note"><a href="https://developers.rakuten.com/" target="_blank" rel="noopener">Supported by Rakuten Developers</a></p>`;
+    return { html: rak ? rak + credit : "", hasPlans };
+  }
+  // 行き先カード(行程表を作らない人向け): 同じ空室判定で日付入りの予約ボタンを出す
+  let destBookingGen = 0;
+  async function renderDestBooking(state) {
+    const box = $("dest-booking"); if (!box || state.place.type !== "lodging") return;
+    const gen = ++destBookingGen;
+    box.innerHTML = `<p class="note">この日の空室(楽天トラベル・取得時点)を確認しています…</p>`;
+    const r = await rakutenVacancy(state.place, state.options[state.current]);
+    if (gen !== destBookingGen) return;
+    box.innerHTML = r.html ? `<div class="book-src"><h4>${r.hasPlans ? "この日に予約できる客室(楽天トラベル・取得時点)" : "この日の空室(楽天トラベル・取得時点)"}</h4>${r.html}</div>` : "";
+  }
+  async function renderBooking(state) {
+    const box = $("itin-booking"); if (!box) return;
+    const gen = ++bookingGen; const place = state.place; const o = state.options[state.current];
+    const sections = [];
+    if (place.type === "lodging") {
+      box.innerHTML = `<h3>予約する</h3><p class="note">楽天トラベルの取得時点の空室を確認しています…</p>`;
+      const r = await rakutenVacancy(place, o);
+      if (gen !== bookingGen) return;
+      sections.push(`<div class="book-src"><h4>楽天トラベルの空室情報</h4>${r.html || '<p class="note">空室データを読み込めませんでした。予約サイトでご確認ください。</p>'}</div>`);
       const others = (place.reserve || []).filter((l) => l.label !== "楽天トラベル").slice(0, 3);
       const rakutenPage = (place.reserve || []).find((l) => l.label === "楽天トラベル");
       const OTA = /rakuten\.co\.jp|travel\.yahoo\.co\.jp|ikyu\.com|jalan\.net|valuecommerce\.com|a8\.net|jtb\.co\.jp/;
@@ -1545,6 +1564,7 @@
       renderCompare(lastState);
       showOption(lastState, bestIndex);
       renderDestination(place, profile);
+      renderDestBooking(lastState);
       renderNearby(place);
       lastState.profile = profile;
       renderDriveFrom(place);
