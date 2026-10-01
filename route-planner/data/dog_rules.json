@@ -355,16 +355,6 @@
    "max_dogs": 2,
    "checked_at": "2026-09-26"
   },
-  "c3-okina-ryokan": {
-   "text": "小型犬2匹まで(中型犬以上は電話で問い合わせ)。",
-   "source_url": "https://www.okina-inn.com/pet/",
-   "max_dogs": 2,
-   "sizes": [
-    "small"
-   ],
-   "soft": true,
-   "checked_at": "2026-09-26"
-  },
   "c3-tsumagoi-prince": {
    "text": "小型犬(おおむね10kg未満)、最大2頭。狂犬病と5種以上の混合ワクチンの証明書。",
    "source_url": "https://www.princehotels.co.jp/tsumagoi/dog/",

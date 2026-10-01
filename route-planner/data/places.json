@@ -7006,50 +7006,6 @@
    }
   },
   {
-   "id": "c3-okina-ryokan",
-   "type": "lodging",
-   "name": "穴原温泉 おきな旅館",
-   "area": "福島県福島市・穴原温泉",
-   "co_sleep": "添い寝 不可",
-   "facts": {
-    "対象犬・頭数": "小型犬(または猫)2匹まで。中型犬以上は電話で問い合わせ。予約時にペットの種類と数を伝える。",
-    "犬の宿泊料金": "無料(小型・2匹まで)",
-    "ケージ・持参判断": "館内用ケージの貸出あり(3組限定) 組立式ケージの持参をお願いする案内",
-    "夜はどこで寝る？": "客室(ケージから出して部屋で一緒に過ごせる) ペットを布団に入れない案内。",
-    "食事同伴": "キャリーバッグに入れれば食事会場へ同行できる(朝食は会場食)",
-    "ドッグラン": "予約前確認",
-    "予約前の重要確認": "館内の移動は抱っこかキャリーバッグ。ペットの入浴は不可。ペットの食事・敷物は持参。"
-   },
-   "links": [
-    {
-     "label": "公式アクセス",
-     "url": "https://www.okina-inn.com/access/",
-     "affiliate": false
-    },
-    {
-     "label": "公式の条件を確認",
-     "url": "https://www.okina-inn.com/pet/",
-     "affiliate": false
-    }
-   ],
-   "checked_at": "2026-09-26",
-   "dog_hints": {},
-   "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
-   "geocode": {
-    "lat": 37.84177,
-    "lon": 140.438797,
-    "precision": "facility",
-    "source": "official-address",
-    "matched": "福島県福島市飯坂町北原２６番地"
-   },
-   "area_geocode": {
-    "lat": 37.76083,
-    "lon": 140.474747,
-    "matched": "福島県福島市",
-    "precision": "approximate"
-   }
-  },
-  {
    "id": "c3-akabeko-cottage",
    "type": "lodging",
    "name": "Nature Cottage Akabeko",
