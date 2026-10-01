@@ -120,7 +120,8 @@
       const idx = await loadIndex();
       const dates = Object.keys(idx.dates || {}).sort();
       const sel = $("vc-date");
-      sel.replaceChildren(...dates.map((ci) => new Option(`${jstMd(ci)} 〜 ${jstMd(idx.dates[ci].checkout)}(空室 ${idx.dates[ci].available}宿・犬対応プラン ${idx.dates[ci].pet}宿)`, ci)));
+      const isSat = (ci) => /\(土\)/.test(jstMd(ci));
+      sel.replaceChildren(...dates.map((ci) => new Option(`${jstMd(ci)} 〜 ${jstMd(idx.dates[ci].checkout)}${isSat(ci) ? "" : "・祝前日"}(空室 ${idx.dates[ci].available}宿・犬対応プラン ${idx.dates[ci].pet}宿)`, ci)));
       if (!dates.length) { $("vc-status").textContent = "空室データの準備中です(毎晩更新)。"; $("vc-go").disabled = true; return; }
       $("vc-status").textContent = `空室データ: ${dates.length}日分(次の週末。毎晩更新、取得時刻は結果に表示)。`;
     } catch (e) {
