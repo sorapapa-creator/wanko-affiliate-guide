@@ -102,7 +102,8 @@
   .map-legend { display: flex; flex-wrap: wrap; gap: 6px 14px; margin: 8px 0 4px; font-size: .85rem; color: var(--muted); align-items: center; }
   .map-legend span { display: inline-flex; align-items: center; gap: 4px; }
   .lg-pin { display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; border-radius: 50% 50% 50% 0; transform: rotate(-45deg); color: #fff; font-style: normal; font-weight: 700; font-size: 12px; border: 1.5px solid #fff; box-shadow: 0 1px 3px rgba(0,0,0,.4); margin: 0 4px 4px 0; }
-  .lg-pin > * , .lg-pin { }
+  .lg-pin b { display: inline-block; transform: rotate(45deg); }
+  .diffbox { border-left: 4px solid var(--good); padding: 6px 10px; background: var(--accent-soft); border-radius: 6px; margin: 8px 0; font-size: .9rem; }
   .lg-line { display: inline-block; width: 26px; height: 0; border-top: 4px solid #c0612b; border-radius: 2px; }
   .lg-line.lg-back { border-top: 3px dashed #1f5fa8; }
   .gm-pop { font: 14px/1.5 system-ui, sans-serif; color: #2b2622; max-width: 260px; }
@@ -337,6 +338,7 @@
     <div class="card">
       <h2 id="plan-title">わんこ旅行プラン</h2>
       <div id="plan-warn"></div>
+      <div id="plan-diff"></div>
       <ol class="timeline" id="plan"></ol>
       <div class="actions" id="plan-actions"></div>
     </div>
@@ -364,10 +366,10 @@
         <p class="note" id="map-pick-note"></p>
       </div>
       <div class="map-legend" aria-label="印の見方">
-        <span><i class="lg-pin" style="background:#2e7d4f">🚗</i>出発地</span>
-        <span><i class="lg-pin" style="background:#b3261e">🏁</i>行き先</span>
-        <span><i class="lg-pin" style="background:#c0612b">1</i>立ち寄り(番号順)</span>
-        <span><i class="lg-pin" style="background:#6f665d">🅿️</i>休憩(SA・PA)</span>
+        <span><i class="lg-pin" style="background:#2e7d4f"><b>🚗</b></i>出発地</span>
+        <span><i class="lg-pin" style="background:#b3261e"><b>🏁</b></i>行き先</span>
+        <span><i class="lg-pin" style="background:#c0612b"><b>1</b></i>立ち寄り(番号順)</span>
+        <span><i class="lg-pin" style="background:#6f665d"><b>🅿️</b></i>休憩(SA・PA)</span>
         <span><i class="lg-line"></i>行きの経路</span>
         <span><i class="lg-line lg-back"></i>帰りの経路(計算後)</span>
         <span><i class="mk-i mk-inline" style="background:#2e7d4f">🐕</i>などの丸い印 = 中継地の候補(種類は上のチップと同じ)</span>
@@ -435,8 +437,8 @@
 </div>
 <!-- 更新したら ?v= の値を変える(ブラウザに古いファイルが残って新しい動作にならないのを防ぐ) -->
 <script src="config.js?v=2026100101"></script>
-<script src="route-map.js?v=2026100103"></script>
-<script src="planner.js?v=2026100103-map3"></script>
+<script src="route-map.js?v=2026100104"></script>
+<script src="planner.js?v=2026100104-map4"></script>
 <script src="trip-check.js?v=2026092602"></script>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "2847001768a143df87fa4e78edba9c7e"}'></script><!-- End Cloudflare Web Analytics -->
 

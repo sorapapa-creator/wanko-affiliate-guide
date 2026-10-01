@@ -664,9 +664,24 @@
     }
     return out.sort((a, b) => a.distance - b.distance).slice(0, CAND_MAX).sort((a, b) => a.along - b.along);
   }
+  // 地図から再計算する前のプラン(同じ出発時刻で、運転時間の差と滞在込み到着の差を出すため)
+  let planBaseline = null;
+  function renderPlanDiff(state) {
+    const box = $("plan-diff"); if (!box) return;
+    const b = planBaseline; planBaseline = null;
+    if (!b) { box.innerHTML = ""; return; }
+    const idx = state.options.findIndex((o) => !o.error && o.dep.getTime() === b.depMs);
+    if (idx < 0) { box.innerHTML = `<p class="note">再計算前(${esc(b.label)}出発)と同じ出発時刻の結果が無いため、時間の差は出せません。</p>`; return; }
+    if (state.current !== idx) showOption(state, idx);  // 差を見比べられるよう、同じ出発時刻のプランを表示する
+    const o = state.options[idx];
+    const dd = Math.round((o.totals.driveSec - b.driveSec) / 60), da = Math.round((o.finalArrive.getTime() - b.arriveMs) / 60000);
+    const sgn = (m) => (m > 0 ? `+${m}分` : m < 0 ? `${m}分` : "変わらず");
+    box.innerHTML = `<div class="diffbox"><b>地図で選んだ場所を入れた結果</b>(${esc(b.label)}出発で比較・立ち寄り ${b.waypoints}→${state.waypoints.length}か所)<br>運転時間 <b>${sgn(dd)}</b>(寄り道の分)・到着 <b>${sgn(da)}</b>(滞在時間を含む)。休憩の時間は含みません。</div>`;
+  }
   // 地図で選んだ候補を立ち寄り行に入れて再計算する。既存の立ち寄りと合わせて経路に沿った順に並べ、MAX_WAYPOINTS を超える分は入れない
   function applyMapPicks(state, picks) {
     const o = state.options[state.current];
+    planBaseline = { depMs: o.dep.getTime(), driveSec: o.totals.driveSec, arriveMs: o.finalArrive.getTime(), waypoints: state.waypoints.length, label: fmtClock(o.dep) };
     const points = o.legs.flatMap((l) => l.points || []); const cum = cumulative(points);
     const existing = [...$("wps").children]
       .map((row) => ({ label: row.querySelector(".wp-q").value, stayMin: Number(row.querySelector(".wp-stay").value) }))
@@ -1408,11 +1423,13 @@
       renderDriveFrom(place);
       setupReturnCard(lastState);
       $("itinerary-card").classList.add("hidden");
+      renderPlanDiff(lastState);
       // 段階0(日付・人数・犬の条件の確認。trip-check.js)へ結果を渡す。任意の欄が空なら何も表示しない
       document.dispatchEvent(new CustomEvent("planner:rendered", { detail: { place, origin, date: $("date").value, places: PLACES } }));
       $("results").classList.remove("hidden");
       $("results").scrollIntoView({ behavior: "smooth", block: "start" });
     } catch (e) {
+      planBaseline = null;
       if (seq === planSeq) showError(e.message || "エラーが発生しました。");
     } finally {
       if (seq === planSeq) { $("go").disabled = false; $("go").textContent = "予想時間を出す"; }

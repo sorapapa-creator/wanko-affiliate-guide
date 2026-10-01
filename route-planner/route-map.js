@@ -39,6 +39,8 @@
   const stayChoices = () => pending?.stayChoices || [15, 30, 45, 60, 90, 120, 180, 240];
   const fmtStay = (min) => (min < 60 ? `${min}分` : `${min / 60}時間`.replace(".5時間", "時間30分"));
   const distText = (d) => (d < 1 ? "1km未満" : `約${Math.round(d)}km`);
+  // 寄り道の目安(分): 経路からの直線距離を往復し、道のりは直線の 1.3 倍・平均 40km/h とした概算。実際の差は再計算で出す
+  const detourMin = (d) => Math.max(2, Math.round(d * 2 * 1.3 / 40 * 60));
 
   // Google 公式の動的ローダー(https://developers.google.com/maps/documentation/javascript/load-maps-js-api)
   function loadApi() {
@@ -124,7 +126,7 @@
     const picked = picks.has(c.id);
     const wrap = document.createElement("div");
     wrap.className = "gm-pop";
-    wrap.innerHTML = `<b>${esc(c.name)}</b><br>${candBadges(c)}<br><span class="gm-note">${esc(c.area || "")}・ルートから直線${esc(distText(c.distance))}${c.theme ? "<br>" + esc(c.theme) : ""}${c.checkedAt ? `<br>掲載情報の確認日 ${esc(c.checkedAt)}` : ""}</span>
+    wrap.innerHTML = `<b>${esc(c.name)}</b><br>${candBadges(c)}<br><span class="gm-note">${esc(c.area || "")}・ルートから直線${esc(distText(c.distance))}・寄り道の目安 +${detourMin(c.distance)}分(概算。正確な差は再計算で)${c.theme ? "<br>" + esc(c.theme) : ""}${c.checkedAt ? `<br>掲載情報の確認日 ${esc(c.checkedAt)}` : ""}</span>
       ${c.url ? `<br><a href="${esc(c.url)}" target="_blank" rel="noopener">施設情報を開く</a>` : ""}
       <div class="gm-act"><label>滞在 <select class="gm-stay">${stayChoices().map((m) => `<option value="${m}"${m === (picks.get(c.id)?.stayMin || 60) ? " selected" : ""}>${fmtStay(m)}</option>`).join("")}</select></label>
       <button type="button" class="gm-btn">${picked ? "候補から外す" : "この場所を選ぶ"}</button></div>`;
@@ -196,7 +198,7 @@
     const max = pending?.maxWaypoints || 3;
     list.innerHTML = items.map(({ cand: c, stayMin }, i) => `<li data-id="${esc(c.id)}"${c.id === activeId ? ' class="active"' : ""}>
       <span class="pk-no">${i + 1}</span>
-      <span class="pk-name"><b>${esc(c.name)}</b> ${candBadges(c)}<br><span class="note">${esc(c.area || "")}・ルートから${esc(distText(c.distance))}${i >= max ? `・${max}か所の上限を超えるため立ち寄りには入りません` : ""}</span></span>
+      <span class="pk-name"><b>${esc(c.name)}</b> ${candBadges(c)}<br><span class="note">${esc(c.area || "")}・ルートから${esc(distText(c.distance))}・寄り道の目安 +${detourMin(c.distance)}分${i >= max ? `・${max}か所の上限を超えるため立ち寄りには入りません` : ""}</span></span>
       <select class="pk-stay" aria-label="滞在時間">${stayChoices().map((m) => `<option value="${m}"${m === stayMin ? " selected" : ""}>滞在 ${fmtStay(m)}</option>`).join("")}</select>
       ${c.url ? `<a class="pk-link" href="${esc(c.url)}" target="_blank" rel="noopener">詳細</a>` : ""}
       <button type="button" class="sub pk-del" aria-label="候補から外す">外す</button></li>`).join("");
