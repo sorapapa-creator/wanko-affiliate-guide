@@ -614,8 +614,71 @@
       data.returnRests = rl.flatMap((l) => l.rests.map(stopPt));
       data.legs.push(...rl.map((l) => ({ points: l.points, back: true })));
     }
-    data.summary = `${fmtClock(o.dep)}出発の経路${state.waypoints.length ? `(立ち寄り${state.waypoints.length}か所)` : ""}${rs ? "・帰りは点線" : ""}。印をタップすると名前と詳細リンクが出ます。`;
+    data.summary = `${fmtClock(o.dep)}出発の経路${state.waypoints.length ? `(立ち寄り${state.waypoints.length}か所)` : ""}${rs ? "・帰りは点線" : ""}。印をタップすると名前と詳細リンクが出ます。小さな印は中継地の候補です。`;
+    data.candidates = mapCandidates(state, legs);
+    data.candidateKm = CAND_KM;
+    data.maxWaypoints = MAX_WAYPOINTS;
+    data.stayChoices = STAY_CHOICES;
+    data.onApply = (picks) => applyMapPicks(state, picks);
     window.RouteMap.render(data);
+  }
+
+  // ---- 地図の中継地候補(段階3)
+  // 選択中の出発時刻の経路(立ち寄りを含む全区間)から直線 CAND_KM 以内の、位置が施設まで分かるおでかけ先と、
+  // 進行方向で使える SA・PA・道の駅(各区間の休憩候補と同じ判定)。宿・行き先・すでに立ち寄りに入れた場所は出さない。
+  // 候補はこの経路に固定(追加後の経路から候補を取り直すと候補が際限なく広がるため)。再計算は「立ち寄りに入れて再計算」でだけ行う
+  const CAND_KM = 8;
+  const CAND_MAX = 200;
+  const candCategory = (v) => {
+    if (v.stop) return "rest";
+    const ks = v.place?.kinds || [];
+    for (const [k, c] of [["run", "run"], ["cafe", "cafe"], ["park", "park"], ["travel", "park"], ["animal", "animal"], ["shopping", "shopping"], ["rest-stop", "rest"]]) if (ks.includes(k)) return c;
+    return "other";
+  };
+  // 経路上の最寄り頂点までの走行距離(km)。候補を経路に沿った順に並べるために使う
+  function routeAlong(points, cum, p) {
+    let best = Infinity, idx = 0;
+    for (let i = 0; i < points.length; i++) { const d = km(points[i], p); if (d < best) { best = d; idx = i; } }
+    return cum[idx];
+  }
+  function mapCandidates(state, legs) {
+    const points = legs.flatMap((l) => l.points || []);
+    if (points.length < 2) return [];
+    const cum = cumulative(points);
+    let minLat = 90, maxLat = -90, minLon = 180, maxLon = -180;
+    for (const [la, lo] of points) { minLat = Math.min(minLat, la); maxLat = Math.max(maxLat, la); minLon = Math.min(minLon, lo); maxLon = Math.max(maxLon, lo); }
+    const m = CAND_KM / 80;  // 緯度 1 度 ≈ 111km。前絞りの箱は少し広めに
+    const used = new Set(state.waypoints.map((w) => w.input));
+    const restOK = new Set(legs.flatMap((l) => l.cands.map((c) => c.stop.name)));
+    const out = [];
+    for (const [label, v] of wpByLabel) {
+      if (used.has(label)) continue;
+      if (v.place ? (v.place.id === state.place.id || v.place.type === "lodging" || v.approx) : !restOK.has(v.name)) continue;
+      if (v.lat < minLat - m || v.lat > maxLat + m || v.lon < minLon - m || v.lon > maxLon + m) continue;
+      const distance = distanceToRoute([v.lat, v.lon], points);
+      if (!(distance <= CAND_KM)) continue;
+      const hints = v.place?.dog_hints || {};
+      out.push({ id: v.place ? `place:${v.place.id}` : `stop:${v.name}`, label, lat: v.lat, lon: v.lon, name: v.name, cat: candCategory(v),
+        area: v.place ? v.place.area || "" : v.kind, url: v.place?.page_url, distance, along: routeAlong(points, cum, [v.lat, v.lon]),
+        dogRun: Boolean(v.stop?.dog_run), checkedAt: v.place?.checked_at || "", cert: Boolean(hints.cert_required), theme: v.place?.theme || "" });
+    }
+    return out.sort((a, b) => a.distance - b.distance).slice(0, CAND_MAX).sort((a, b) => a.along - b.along);
+  }
+  // 地図で選んだ候補を立ち寄り行に入れて再計算する。既存の立ち寄りと合わせて経路に沿った順に並べ、MAX_WAYPOINTS を超える分は入れない
+  function applyMapPicks(state, picks) {
+    const o = state.options[state.current];
+    const points = o.legs.flatMap((l) => l.points || []); const cum = cumulative(points);
+    const existing = [...$("wps").children]
+      .map((row) => ({ label: row.querySelector(".wp-q").value, stayMin: Number(row.querySelector(".wp-stay").value) }))
+      .filter((w) => w.label && wpByLabel.has(w.label))
+      .map((w) => ({ ...w, name: wpByLabel.get(w.label).name, along: routeAlong(points, cum, [wpByLabel.get(w.label).lat, wpByLabel.get(w.label).lon]) }));
+    const all = [...existing, ...picks.filter((p) => wpByLabel.has(p.label) && !existing.some((e) => e.label === p.label))].sort((a, b) => a.along - b.along);
+    const used = all.slice(0, MAX_WAYPOINTS), over = all.slice(MAX_WAYPOINTS);
+    $("wps").replaceChildren();
+    for (const w of used) addWaypointRow(w.label, w.stayMin);
+    renumberWaypoints();
+    $("form").requestSubmit();
+    return { used, over };
   }
 
   // 二本目: 運転が長い区間(前の休憩から目安の間隔を超える区間)だけ、ルート沿いのSA・PA・道の駅から休憩場所を選ぶ

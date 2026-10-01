@@ -80,6 +80,21 @@
   footer p { margin: 3px 0; }
   .hidden { display: none; }
   #map { height: 320px; border: 1px solid var(--line); border-radius: 10px; margin: 8px 0; }
+  #map-filters { margin: 8px 0; }
+  .picks { list-style: none; margin: 0; padding: 0; }
+  .picks li { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; padding: 8px 4px; border-top: 1px solid var(--line); border-radius: 8px; }
+  .picks li.active { background: var(--accent-soft); }
+  .picks .pk-no { font-weight: 700; color: var(--accent); min-width: 1.4em; }
+  .picks .pk-name { flex: 1 1 200px; min-width: 0; overflow-wrap: anywhere; cursor: pointer; }
+  .picks select { width: auto; }
+  .picks button.sub { min-height: 36px; padding: 4px 10px; }
+  .gm-pop { font: 14px/1.5 system-ui, sans-serif; color: #2b2622; max-width: 260px; }
+  .gm-pop .gm-note { color: #6f665d; font-size: .85rem; }
+  .gm-pop .badge { background: #f1ebe2; color: #2b2622; }
+  .gm-pop .badge.b-run { background: #e3f2e8; color: #2e7d4f; }
+  .gm-act { display: flex; gap: 8px; align-items: center; margin-top: 8px; flex-wrap: wrap; }
+  .gm-act select { width: auto; padding: 4px 6px; }
+  .gm-btn { font: inherit; background: #c0612b; color: #fff; border: 0; border-radius: 8px; padding: 6px 10px; cursor: pointer; }
   @media (min-width: 720px) { #map { height: 440px; } }
   /* Editorial labels and warm, high-contrast selection surfaces. */
   #form { border-radius: 24px; border-color: #e8e0d4; padding: 20px; box-shadow: 0 18px 42px #49382412; }
@@ -310,11 +325,28 @@
     </div>
 
     <div class="card hidden" id="map-card">
-      <h2>地図で見る</h2>
+      <h2>地図で見る・中継地を選ぶ</h2>
       <p class="note" id="map-note">出発地・立ち寄り先・休憩・行き先と、選んだ出発時刻の経路を表示します。</p>
       <button type="button" class="sub" id="map-show">地図を表示する</button>
+      <div class="chips hidden" id="map-filters" aria-label="候補の種類">
+        <label><input type="checkbox" value="run" checked> ドッグラン</label>
+        <label><input type="checkbox" value="cafe" checked> カフェ・食事</label>
+        <label><input type="checkbox" value="park" checked> 公園・観光</label>
+        <label><input type="checkbox" value="animal" checked> 動物・牧場</label>
+        <label><input type="checkbox" value="shopping" checked> 買い物</label>
+        <label><input type="checkbox" value="rest" checked> SA・PA・道の駅</label>
+        <label><input type="checkbox" value="other" checked> その他</label>
+      </div>
+      <p class="note hidden" id="map-cand-note"></p>
       <div id="map" class="hidden" aria-label="経路の地図"></div>
-      <p class="note">印: 出発地(緑・発)・立ち寄り(番号)・休憩(休)・行き先(赤・着)。帰りのプランは計算後に青の点線で出ます。地図を動かしても経路の再計算(通信)はしません。地図: Google マップ。</p>
+      <div id="map-picks-wrap" class="hidden">
+        <h3>地図で選んだ中継地候補 <span class="note" id="map-picks-count"></span></h3>
+        <p class="note">印をタップして「この場所を選ぶ」で、ここに行が増えます(複数可)。行の名前をタップすると地図でその場所を示します。「立ち寄りに入れて再計算」で、経路に沿った順に立ち寄り先(最大3か所)へ入れて予想時間を計算し直します。</p>
+        <ol class="picks" id="map-picks"></ol>
+        <div class="actions"><button type="button" class="primary" id="map-apply" disabled>立ち寄りに入れて再計算</button> <button type="button" class="sub" id="map-clear">選択を全部外す</button></div>
+        <p class="note" id="map-pick-note"></p>
+      </div>
+      <p class="note">印: 出発地(緑・発)・立ち寄り(番号)・休憩(休)・行き先(赤・着)。小さな印は中継地の候補(ラ=ドッグラン・カ=カフェ・園=公園・観光・牧=動物・買=買い物・休=SA・PA・道の駅)、選んだ候補は黒の✓。帰りのプランは計算後に青の点線で出ます。地図を動かしたり候補を選んだりしても経路の再計算(通信)はしません。候補は経路から直線で近い順の目安で、営業日・時間・犬の条件は施設情報で確認してください。地図: Google マップ。</p>
     </div>
 
     <div class="card" id="rest-card">
@@ -376,8 +408,8 @@
 </div>
 <!-- 更新したら ?v= の値を変える(ブラウザに古いファイルが残って新しい動作にならないのを防ぐ) -->
 <script src="config.js?v=2026100101"></script>
-<script src="route-map.js?v=2026100101"></script>
-<script src="planner.js?v=2026100101-map"></script>
+<script src="route-map.js?v=2026100102"></script>
+<script src="planner.js?v=2026100102-map3"></script>
 <script src="trip-check.js?v=2026092602"></script>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "2847001768a143df87fa4e78edba9c7e"}'></script><!-- End Cloudflare Web Analytics -->
 
