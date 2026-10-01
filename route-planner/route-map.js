@@ -27,6 +27,25 @@
   let info = null;
   let layers = [];         // 今描いているマーカー・経路(描き直すときに消す)
   let candMarkers = new Map(); // 候補 id → マーカー
+  let clusterer = null;        // MarkerClusterer(密集した候補をまとめる)。読み込めなければ null のまま
+  let clusterLib = null;       // 読み込みの Promise
+  const CLUSTER_SRC = "https://unpkg.com/@googlemaps/markerclusterer@2.5.3/dist/index.min.js";
+  function loadClusterer() {
+    if (clusterLib) return clusterLib;
+    clusterLib = new Promise((resolve) => {
+      if (window.markerClusterer?.MarkerClusterer) return resolve(true);
+      const sc = document.createElement("script"); sc.src = CLUSTER_SRC; sc.async = true;
+      sc.onload = () => resolve(Boolean(window.markerClusterer?.MarkerClusterer)); sc.onerror = () => resolve(false);
+      document.head.appendChild(sc);
+    });
+    return clusterLib;
+  }
+  // クラスタの印: 件数つきの丸(候補と同じ見た目の系統)。タップでその範囲へズーム(ライブラリ既定)
+  const clusterRenderer = { render: ({ count, position }) => {
+    const el = document.createElement("div"); el.className = "mk mk-dot mk-cluster";
+    el.innerHTML = `<div class="mk-i"><b>${count}</b><small>件</small></div>`;
+    return new google.maps.marker.AdvancedMarkerElement({ position, content: el, zIndex: 2, title: `候補 ${count}件(タップで拡大)` });
+  } };
   let pending = null;      // 最新の表示データ(地図がまだ無いときに取っておく)
   let shown = false;
   let failed = false;
@@ -91,8 +110,8 @@
     return wrap;
   }
 
-  function marker(p, { color, glyph, scale = 1, zIndex = 1, html, content, label, el }) {
-    const m = new google.maps.marker.AdvancedMarkerElement({ map, position: { lat: Number(p.lat), lng: Number(p.lon) }, title: p.name || "", content: el || pinEl({ color, glyph, scale, label }), zIndex });
+  function marker(p, { color, glyph, scale = 1, zIndex = 1, html, content, label, el, noMap }) {
+    const m = new google.maps.marker.AdvancedMarkerElement({ map: noMap ? null : map, position: { lat: Number(p.lat), lng: Number(p.lon) }, title: p.name || "", content: el || pinEl({ color, glyph, scale, label }), zIndex });
     if (html || content) m.addListener("click", () => openInfo(m, html, content));
     layers.push(m);
     return m;
@@ -142,7 +161,7 @@
     const cat = CAT[c.cat] || CAT.other;
     const picked = picks.has(c.id);
     const icon = candIcon(c);
-    const m = marker(c, { zIndex: picked ? 3 : 1, el: dotEl({ color: picked ? COLOR.picked : cat.color, icon: picked ? "✓" : icon, picked, label: picked ? shortName(c.name) : "", small: c.cat === "rest" && icon.length > 2 }) });
+    const m = marker(c, { zIndex: picked ? 3 : 1, noMap: Boolean(clusterer) && !picked, el: dotEl({ color: picked ? COLOR.picked : cat.color, icon: picked ? "✓" : icon, picked, label: picked ? shortName(c.name) : "", small: c.cat === "rest" && icon.length > 2 }) });
     m.addListener("click", () => { setActive(c.id, false); openInfo(m, null, candPopup(c)); });
     candMarkers.set(c.id, m);
     return m;
@@ -150,16 +169,20 @@
 
   function drawCandidates() {
     for (const m of candMarkers.values()) { m.map = null; layers = layers.filter((l) => l !== m); }
+    if (clusterer) clusterer.clearMarkers(true);
     candMarkers = new Map();
     const cands = pending?.candidates || [];
     const f = filters();
     let shownCount = 0;
     const counts = {};
+    const clustered = [];
     for (const c of cands) {
       counts[c.cat] = (counts[c.cat] || 0) + 1;
       if (!f.has(c.cat) && !picks.has(c.id)) continue;  // 絞り込みで隠しても、選択済みは残す
-      candMarker(c); shownCount++;
+      const m = candMarker(c); shownCount++;
+      if (clusterer && !picks.has(c.id)) clustered.push(m);  // 選択済みはまとめず常に見える
     }
+    if (clusterer && clustered.length) clusterer.addMarkers(clustered);
     const cn = $("map-cand-note");
     if (cn) {
       cn.classList.toggle("hidden", !cands.length && !pending);
@@ -251,6 +274,9 @@
     note("地図を読み込んでいます…");
     try {
       await ensureMap();
+      if (await loadClusterer()) {
+        try { clusterer = new markerClusterer.MarkerClusterer({ map, markers: [], renderer: clusterRenderer }); } catch (e) { clusterer = null; }
+      }
       draw(pending);
       note(pending?.summary || "");
     } catch (e) {

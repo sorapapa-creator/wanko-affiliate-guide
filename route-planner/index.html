@@ -98,6 +98,8 @@
   .mk-l { position: absolute; top: 100%; left: 50%; transform: translateX(-50%); margin-top: 2px; white-space: nowrap; max-width: 170px; overflow: hidden; text-overflow: ellipsis;
     background: rgba(255,255,255,.94); color: #2b2622; font: 700 11px/1.3 system-ui, sans-serif; padding: 2px 6px; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,.35); pointer-events: none; }
   .mk-pin .mk-l { margin-top: -2px; }
+  .mk-cluster .mk-i { width: 36px; height: 36px; background: #fff; color: #c0612b; border: 3px solid #c0612b; flex-direction: column; font-size: 14px; }
+  .mk-cluster .mk-i small { font-size: 9px; font-weight: 400; color: #6f665d; }
   .mk-inline { display: inline-flex; width: 22px; height: 22px; font-size: 13px; vertical-align: middle; margin-right: 4px; border-width: 1.5px; }
   .map-legend { display: flex; flex-wrap: wrap; gap: 6px 14px; margin: 8px 0 4px; font-size: .85rem; color: var(--muted); align-items: center; }
   .map-legend span { display: inline-flex; align-items: center; gap: 4px; }
@@ -374,6 +376,7 @@
         <span><i class="lg-line lg-back"></i>帰りの経路(計算後)</span>
         <span><i class="mk-i mk-inline" style="background:#2e7d4f">🐕</i>などの丸い印 = 中継地の候補(種類は上のチップと同じ)</span>
         <span><i class="mk-i mk-inline" style="background:#1b1b1b;outline:2px solid #1b1b1b;outline-offset:1px">✓</i>選んだ候補(名前つき)</span>
+        <span><i class="mk-i mk-inline" style="background:#fff;color:#c0612b;border:2px solid #c0612b;font-size:11px">9</i>候補が密集(タップで拡大)</span>
       </div>
       <p class="note">印をタップすると名前・条件・施設情報のリンクが出ます。地図を動かしたり候補を選んだりしても経路の再計算(通信)はしません。候補は経路から直線で近い順の目安で、営業日・時間・犬の条件は施設情報で確認してください。地図: Google マップ。</p>
     </div>
@@ -437,7 +440,7 @@
 </div>
 <!-- 更新したら ?v= の値を変える(ブラウザに古いファイルが残って新しい動作にならないのを防ぐ) -->
 <script src="config.js?v=2026100101"></script>
-<script src="route-map.js?v=2026100104"></script>
+<script src="route-map.js?v=2026100105"></script>
 <script src="planner.js?v=2026100104-map4"></script>
 <script src="trip-check.js?v=2026092602"></script>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "2847001768a143df87fa4e78edba9c7e"}'></script><!-- End Cloudflare Web Analytics -->
