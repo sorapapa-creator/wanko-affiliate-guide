@@ -15,7 +15,7 @@ if(stays.length){
   const details=document.createElement('details');details.className='stay-details';
   const summary=document.createElement('summary');
   summary.innerHTML='<span class="stay-toggle-copy"><strong class="stay-toggle-label">宿の設備・宿泊条件を見る</strong><small>添い寝・ケージ・犬用アメニティなど</small></span><span class="stay-toggle-symbol" aria-hidden="true">＋</span>';
-  details.append(summary);let anchor=head;if(anchor.nextElementSibling&&anchor.nextElementSibling.classList.contains('stay-photo'))anchor=anchor.nextElementSibling;if(anchor.nextElementSibling&&anchor.nextElementSibling.classList.contains('stay-times'))anchor=anchor.nextElementSibling;while(anchor.nextSibling)details.append(anchor.nextSibling);card.append(details);
+  details.append(summary);let anchor=head;const keep=['stay-photo','facility-photos','facility-voice','stay-times'];while(anchor.nextElementSibling&&keep.some(c=>anchor.nextElementSibling.classList.contains(c)))anchor=anchor.nextElementSibling;while(anchor.nextSibling)details.append(anchor.nextSibling);card.append(details);
   details.addEventListener('toggle',()=>{
    summary.querySelector('.stay-toggle-label').textContent=details.open?'宿の詳細を閉じる':'宿の設備・宿泊条件を見る';
    summary.querySelector('.stay-toggle-symbol').textContent=details.open?'−':'＋';
