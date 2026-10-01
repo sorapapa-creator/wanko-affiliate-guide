@@ -361,13 +361,13 @@
       const n = f.note || "";
       const m = n.match(/(\d{1,2})\/(\d{1,2})\s*[～〜~\-－]\s*(\d{1,2})\/(\d{1,2})[^。]*閉鎖/);
       if (m) {
-        const md = (date.getMonth() + 1) * 100 + date.getDate();
+        const md = jst(date).mo * 100 + jst(date).d;
         const from = +m[1] * 100 + +m[2], to = +m[3] * 100 + +m[4];
         const inRange = from <= to ? md >= from && md <= to : md >= from || md <= to;
         if (inRange) return `ドッグラン閉鎖期間(${m[1]}/${m[2]}〜${m[3]}/${m[4]})`;
       }
       if (/冬季/.test(n) && /閉鎖/.test(n)) {
-        const mo = date.getMonth() + 1;
+        const mo = jst(date).mo;
         if (mo === 12 || mo <= 4) return "冬季はドッグラン閉鎖の可能性";
       }
     }
@@ -411,7 +411,7 @@
       reasons.push(profile.age === "puppy" ? "子犬" : "シニア");
     }
     if (profile.carsick) { minutes = Math.min(minutes, 60); reasons.push("車酔い"); }
-    const mo = date.getMonth() + 1;
+    const mo = jst(date).mo;
     if (profile.heat && mo >= 6 && mo <= 9) { minutes = Math.min(minutes, 90); reasons.push(profile.brachy ? "短頭種(夏季)" : "暑さに弱い(夏季)"); }
     if (profile.toilet && profile.toilet < minutes) { minutes = profile.toilet; reasons.push("トイレの間隔"); }
     return { minutes, reasons };
@@ -423,7 +423,14 @@
     const m = Math.round(sec / 60);
     return m >= 60 ? `${Math.floor(m / 60)}時間${String(m % 60).padStart(2, "0")}分` : `${m}分`;
   };
-  const fmtClock = (d) => `${d.getHours()}:${String(d.getMinutes()).padStart(2, "0")}`;
+  // 時刻・日付は日本時間(JST)に固定する。ブラウザのタイムゾーンに依存させない
+  // (海外やクラウドの端末で 08:00 出発が 16:00 と表示され、復路の日付もずれていた不具合の対策)
+  const JST_MS = 9 * 3600 * 1000;
+  const jst = (d) => { const t = new Date(d.getTime() + JST_MS); return { y: t.getUTCFullYear(), mo: t.getUTCMonth() + 1, d: t.getUTCDate(), h: t.getUTCHours(), mi: t.getUTCMinutes(), wd: t.getUTCDay() }; };
+  const jstMidnight = (d) => { const j = jst(d); return new Date(Date.UTC(j.y, j.mo - 1, j.d) - JST_MS); };
+  const jstYmd = (d) => { const j = jst(d); return `${j.y}-${String(j.mo).padStart(2, "0")}-${String(j.d).padStart(2, "0")}`; };
+  const jstMd = (d) => { const j = jst(d); return `${j.mo}/${j.d}(${"日月火水木金土"[j.wd]})`; };
+  const fmtClock = (d) => { const j = jst(d); return `${j.h}:${String(j.mi).padStart(2, "0")}`; };
   const addSec = (d, s) => new Date(d.getTime() + s * 1000);
 
   function showError(msg) {
@@ -537,7 +544,7 @@
       warns.push(`${l.from.name} → ${l.to.name} は、位置が地区や市区町村の中心までしか分からないため、この区間の移動時間は正しく計算できていません。実際の位置と移動時間を地図で確認してください。`);
     }
     const last = legs[legs.length - 1];
-    const h = last.arrive.getHours();
+    const h = jst(last.arrive).h;
     if (state.place.type === "lodging" && (h >= 20 || h < 5)) warns.push(`宿への到着が${fmtClock(last.arrive)}になります。チェックインの受付時間を宿に確認してください。`);
     if (restCount) warns.push("休憩を入れた分だけ後ろの時刻をずらしています。ずれた後の渋滞の変化は計算し直していません。");
     $("plan-warn").innerHTML = warns.map((w) => `<div class="warnbox">${esc(w)}</div>`).join("");
@@ -582,6 +589,33 @@
     if (via.length) nav.searchParams.set("waypoints", via.join("|"));
     const label = [multi ? "立ち寄り先" : "", restCount ? "休憩地点" : ""].filter(Boolean).join("・");
     $("plan-actions").innerHTML = `<a href="${esc(nav.toString())}" target="_blank" rel="noopener">${label ? label + "つきで" : ""}Googleマップを開く</a>`;
+    renderMap(state);
+  }
+
+  // 地図(route-map.js)に渡す表示データ。往路は選択中の出発時刻の各区間の経路、帰りは計算済みなら点線で
+  function renderMap(state) {
+    if (!window.RouteMap) return;
+    const o = state.options[state.current];
+    if (!o || o.error) { window.RouteMap.hide(); return; }
+    const legs = withChosenRests(state, o);
+    const rs = returnState && returnState.place && returnState.place.id === state.place.id ? returnState : null;
+    const stopPt = (r) => ({ lat: r.stop.lat, lon: r.stop.lon, name: r.stop.name, kind: r.stop.kind, note: r.dogRun ? "・ドッグランあり" : "" });
+    const wpPt = (w) => ({ lat: w.lat, lon: w.lon, name: w.name, kind: w.kind, stayMin: w.stayMin, url: w.place?.page_url });
+    const data = {
+      origin: state.origin.isCurrentLocation ? { ...state.origin, name: "現在地(約100m単位)" } : state.origin,
+      destination: { lat: state.place.geocode.lat, lon: state.place.geocode.lon, name: state.place.name, url: state.place.page_url },
+      waypoints: state.waypoints.map(wpPt),
+      rests: legs.flatMap((l) => l.rests.map(stopPt)),
+      legs: legs.map((l) => ({ points: l.points, back: false })),
+    };
+    if (rs) {
+      const rl = returnLegsWithRests(rs);
+      data.returnWaypoints = rs.waypoints.map(wpPt);
+      data.returnRests = rl.flatMap((l) => l.rests.map(stopPt));
+      data.legs.push(...rl.map((l) => ({ points: l.points, back: true })));
+    }
+    data.summary = `${fmtClock(o.dep)}出発の経路${state.waypoints.length ? `(立ち寄り${state.waypoints.length}か所)` : ""}${rs ? "・帰りは点線" : ""}。印をタップすると名前と詳細リンクが出ます。`;
+    window.RouteMap.render(data);
   }
 
   // 二本目: 運転が長い区間(前の休憩から目安の間隔を超える区間)だけ、ルート沿いのSA・PA・道の駅から休憩場所を選ぶ
@@ -732,7 +766,10 @@
       return p ? { p, stay, day } : null;
     }).filter(Boolean);
   }
-  const clockOf = (d, hhmm) => { const [h, m] = hhmm.split(":").map(Number); const x = new Date(d); x.setHours(h, m, 0, 0); return x; };
+  // d と同じ日本時間の日付で hh:mm の時刻を作る
+  const clockOf = (d, hhmm) => { const [h, m] = hhmm.split(":").map(Number); return new Date(jstMidnight(d).getTime() + (h * 60 + m) * 60000); };
+  // 出発日を 1 日目として i 日目の実日付(例: 10/5(日))
+  const dayDate = (state, i) => jstMd(new Date(jstMidnight(state.options[state.current].dep).getTime() + (i - 1) * 86400000));
   function renderItinerary(state) {
     const o = state.options[state.current]; if (!o || o.error) return;
     const profile = state.profile || {};
@@ -779,7 +816,7 @@
       const rl = returnLegsWithRests(rs); const d = rs.day;
       if (d >= 2 || !rs.via) {  // 到着日の近くの場所は到着後に回る(日帰りで経由 ON のときは全部を帰り道に回すので省く)
         const end1 = visit(1, t, day1, isLodging);
-        if (isLodging && day1.length && end1.getHours() >= 19) warns.push(`到着日の予定は${fmtClock(end1)}に宿へ戻る計算です。宿の夕食・門限を確認してください。`);
+        if (isLodging && day1.length && jst(end1).h >= 19) warns.push(`到着日の予定は${fmtClock(end1)}に宿へ戻る計算です。宿の夕食・門限を確認してください。`);
       }
       add(d, rs.dep, "stop", `<span class="badge b-go">${isLodging && d >= 2 ? "チェックアウト・出発" : "出発(帰路)"}</span> <b>${esc(state.place.name)}</b>`);
       rl.forEach((l, k) => {
@@ -788,16 +825,16 @@
       });
       const home = rl[rl.length - 1].arrive; const hd = tripDayIndex(state, home); const nRest = rl.reduce((s, l) => s + l.rests.length, 0);
       add(d, home, "stop", `<span class="badge b-go">帰宅</span> <b>${esc(state.origin.name)}</b> <span class="note">(${hd !== d ? dayLabel(hd) + fmtClock(home) + "・" : ""}実ルート${nRest ? `・休憩${nRest}回込み` : ""})</span>`);
-      if (home.getHours() >= 21 || hd > d) warns.push(`帰宅が${dayLabel(hd)}${fmtClock(home)}になる計算です。出発を早めるか、経由する場所や滞在時間を減らしてください。`);
+      if (jst(home).h >= 21 || hd > d) warns.push(`帰宅が${dayLabel(hd)}${fmtClock(home)}になる計算です。出発を早めるか、経由する場所や滞在時間を減らしてください。`);
       if (d === 1 && day2.length && rs.via) warns.push("帰る日が到着日のため、「帰る日」に選んだ場所も到着日の帰り道に回しています。");
       lastDay = Math.max(d, hd);
     } else {
       let end1 = visit(1, t, day1, isLodging);
-      if (isLodging && day1.length && (end1.getHours() >= 19)) warns.push(`到着日の予定は${fmtClock(end1)}に宿へ戻る計算です。宿の夕食・門限を確認してください。`);
+      if (isLodging && day1.length && (jst(end1).h >= 19)) warns.push(`到着日の予定は${fmtClock(end1)}に宿へ戻る計算です。宿の夕食・門限を確認してください。`);
       if (!isLodging) {  // 日帰り(帰りが未計算): 最後の場所からそのまま帰路(往路と同じ運転時間の目安)
         const home = addSec(end1, o.totals.driveSec);
         add(1, home, "stop", `<span class="badge b-go">帰宅(目安)</span> <b>${esc(state.origin.name)}</b> <span class="note">(往路と同じ運転${fmtDur(o.totals.driveSec)}の目安。休憩は別途。「帰りのプラン」で実ルート計算できます)</span>`);
-        if (home.getHours() >= 21 || home.getDate() !== o.dep.getDate()) warns.push(`帰宅が${fmtClock(home)}になる計算です。滞在を短くするか、早めの出発を検討してください。`);
+        if (jst(home).h >= 21 || jstYmd(home) !== jstYmd(o.dep)) warns.push(`帰宅が${fmtClock(home)}になる計算です。滞在を短くするか、早めの出発を検討してください。`);
       }
       if (isLodging) {  // 翌日: 宿を出て近くの掲載先→帰路(往路と同じ運転時間の目安)
         const checkout = clockOf(addSec(last.arrive, 24 * 3600), "10:00");
@@ -806,7 +843,7 @@
         const driveBack = o.totals.driveSec;
         const home = addSec(day2.length ? end2 : checkout, driveBack);
         add(2, home, "stop", `<span class="badge b-go">帰宅(目安)</span> <b>${esc(state.origin.name)}</b> <span class="note">(${day2.length ? "最後の場所から" : "宿から"}往路と同じ運転${fmtDur(driveBack)}の目安。休憩は別途。「帰りのプラン」で実ルート計算できます)</span>`);
-        if (home.getHours() >= 21) warns.push(`帰宅が${fmtClock(home)}になる計算です。翌日の予定を減らすか、早めの出発を検討してください。`);
+        if (jst(home).h >= 21) warns.push(`帰宅が${fmtClock(home)}になる計算です。翌日の予定を減らすか、早めの出発を検討してください。`);
       } else if (day2.length) {
         warns.push("行き先が宿ではないため、「帰る日」に選んだ場所は到着日の続きとして扱いました。「帰りのプラン」で帰る日を選ぶと、その日の帰り道に回せます。");
         visit(1, end1, day2);
@@ -827,7 +864,7 @@
     if (profile.dogs && Number(profile.dogs) > 1) check.push(`犬${profile.dogs}頭: 宿の1室あたりの頭数上限を確認`);
     if (profile.dogKg) check.push(`体重${profile.dogKg}kg: 宿の体重・大きさの上限を確認`);
     check.push("リード・マナーベルト・ペットシーツ・水と器・普段のフード・ケージ(持参が条件の宿)");
-    const render = (day) => `<h3>${dayLabel(day)}</h3><ol class="timeline">${dayItems[day].sort((a, b) => a.time - b.time).map((x) => x.html).join("")}</ol>`;
+    const render = (day) => `<h3>${dayLabel(day)} <span class="note">${dayDate(state, day)}</span></h3><ol class="timeline">${dayItems[day].sort((a, b) => a.time - b.time).map((x) => x.html).join("")}</ol>`;
     const homeAt = rs ? returnHome(rs) : null;
     $("itinerary-title").textContent = `最終行程表(${fmtClock(o.dep)}出発・${state.origin.name} → ${state.place.name}${homeAt ? `・帰宅 ${dayLabel(tripDayIndex(state, homeAt))}${fmtClock(homeAt)}` : ""})`;
     $("itinerary-warn").innerHTML = warns.map((w) => `<div class="warnbox">${esc(w)}</div>`).join("");
@@ -846,12 +883,11 @@
 
   let returnState = null;
   let returnSeq = 0;  // 通信の世代。条件が変わったら増やし、古い応答は捨てる
-  const hhmm = (d) => `${String(d.getHours()).padStart(2, "0")}:${String(d.getMinutes()).padStart(2, "0")}`;
+  const hhmm = (d) => { const j = jst(d); return `${String(j.h).padStart(2, "0")}:${String(j.mi).padStart(2, "0")}`; };
   const dayLabel = (i) => (i <= 1 ? "到着日" : i === 2 ? "翌日" : i === 3 ? "翌々日" : `${i - 1}日後`);
   function tripDayIndex(state, d) {  // 出発日を1日目として、その日付が何日目か(1=到着日/出発日)
-    const o = state.options[state.current]; const s = new Date(o.dep); s.setHours(0, 0, 0, 0);
-    const x = new Date(d); x.setHours(0, 0, 0, 0);
-    return Math.round((x - s) / 86400000) + 1;
+    const o = state.options[state.current];
+    return Math.round((jstMidnight(d) - jstMidnight(o.dep)) / 86400000) + 1;
   }
 
   function invalidateReturn(msg) {
@@ -861,6 +897,7 @@
     $("ret-status").textContent = msg || "";
     const btn = $("ret-go"); btn.disabled = false; btn.textContent = "帰りの時間を計算";
     if (lastState && !$("itinerary-card").classList.contains("hidden")) renderItinerary(lastState);
+    if (lastState) renderMap(lastState);
   }
 
   function estimateVisitEnd(state, start, items) {  // 到着後に近くの場所を回って(宿なら)戻るまでの目安(renderItinerary の visit と同じ式)
@@ -917,7 +954,7 @@
         const sinceRestAtEnd = sinceRest + r.durationSec;
         const recommended = planRests(cands, r.durationSec, state.interval.minutes, sinceRest, avoid);
         legs.push({ from: points[k], to: points[k + 1], dep: cursor, arrive: addSec(cursor, r.durationSec), cands, recommended, sinceRestAtStart: sinceRest, sinceRestAtEnd,
-          needsRest: sinceRestAtEnd > (state.interval.minutes + REST_SLACK_MIN) * 60, durationSec: r.durationSec, staticDurationSec: r.staticDurationSec });
+          needsRest: sinceRestAtEnd > (state.interval.minutes + REST_SLACK_MIN) * 60, durationSec: r.durationSec, staticDurationSec: r.staticDurationSec, points: pts });
         cursor = addSec(cursor, r.durationSec + recommended.length * CFG.restMinutes * 60);  // 次の区間はおすすめ休憩込みの出発時刻で問い合わせる
         sinceRest = recommended.length ? 0 : sinceRestAtEnd;
         if (k < wps.length) { const stay = wps[k].stayMin; if (stay >= REST_RESET_MIN) sinceRest = 0; cursor = addSec(cursor, stay * 60); }
@@ -950,7 +987,7 @@
     const legs = returnLegsWithRests(rs); const home = legs[legs.length - 1].arrive; const restCount = legs.reduce((s, l) => s + l.rests.length, 0);
     const hd = tripDayIndex(state, home); const dl = dayLabel(rs.day);
     const warns = [];
-    if (home.getHours() >= 21 || hd > rs.day) warns.push(`帰宅が${dayLabel(hd)}${fmtClock(home)}になる計算です。出発を早めるか、経由する場所や滞在時間を減らしてください。`);
+    if (jst(home).h >= 21 || hd > rs.day) warns.push(`帰宅が${dayLabel(hd)}${fmtClock(home)}になる計算です。出発を早めるか、経由する場所や滞在時間を減らしてください。`);
     legs.forEach((l) => { if (l.needsRest && !l.rests.length) warns.push(`${l.from.name} → ${l.to.name} は前の休憩から約${fmtDur(l.sinceRestAtEnd)}運転します。下で休憩を選んでください。`); });
     $("ret-warn").innerHTML = warns.map((w) => `<div class="warnbox">${esc(w)}</div>`).join("");
     const items = [`<li class="stop"><span class="time">${fmtClock(rs.dep)}</span><span><span class="badge b-go">出発</span> <b>${esc(rs.place.name)}</b> <span class="note">(${dl})</span></span></li>`];
@@ -961,7 +998,7 @@
     });
     items.push(`<li class="stop"><span class="time">${fmtClock(home)}</span><span><span class="badge b-go">帰宅</span> <b>${esc(rs.origin.name)}</b>${hd !== rs.day ? ` <span class="note">(${dayLabel(hd)})</span>` : ""}${restCount ? ` <span class="note">(休憩${restCount}回込み)</span>` : ""}</span></li>`);
     $("ret-plan").innerHTML = items.join("");
-    $("ret-status").innerHTML = `<b>帰宅 ${dayLabel(hd)} ${fmtClock(home)}</b>(${dl}${fmtClock(rs.dep)}発・運転${fmtDur(legs.reduce((s, l) => s + l.durationSec, 0))}${restCount ? `・休憩${restCount}回` : ""}${rs.via ? "" : "・近くの場所は経由しない"})`;
+    $("ret-status").innerHTML = `<b>帰宅 ${dayLabel(hd)} ${dayDate(state, hd)} ${fmtClock(home)}</b>(${dl} ${dayDate(state, rs.day)} ${fmtClock(rs.dep)}発・運転${fmtDur(legs.reduce((s, l) => s + l.durationSec, 0))}${restCount ? `・休憩${restCount}回` : ""}${rs.via ? "" : "・近くの場所は経由しない"})`;
     // 休憩の選択(45分以上の区間)
     const long = legs.map((l, k) => [l, k]).filter(([l]) => l.needsRest || l.durationSec >= 45 * 60);
     $("ret-rest-title").classList.toggle("hidden", !long.length);
@@ -972,6 +1009,7 @@
         return `<label class="rest-opt"><input type="checkbox" data-leg="${k}" value="${esc(key)}"${rs.selected[k]?.has(key) ? " checked" : ""}><span><b>${esc(c.stop.name)}</b> ${restBadges(c)}${rec.has(key) ? '<span class="badge b-rec">おすすめ</span>' : ""}${rs.avoid && rs.avoid.has(key) ? '<span class="badge">行きで休憩</span>' : ""}<br><span class="note">この区間の運転${fmtDur(c.tSec)}の地点${fac?.road ? ` / ${esc(fac.road)}` : ""}</span></span></label>`; }).join("");
       return `<div class="rest-leg"><h3>${esc(l.from.name)} → ${esc(l.to.name)}${l.needsRest ? ' <span class="badge b-rec">目安を超える区間</span>' : ' <span class="badge">任意</span>'}</h3><p class="note">運転${fmtDur(l.durationSec)}</p>${rows ? `<div class="rest-list">${rows}</div>` : '<p class="note">ルート沿いに休憩できるSA・PA・道の駅が見つかりませんでした。</p>'}</div>`;
     }).join("");
+    renderMap(state);
     $("ret-rest-pick").querySelectorAll('input[type="checkbox"]').forEach((cb) => cb.addEventListener("change", () => {
       if (returnState !== rs) return;
       const k = Number(cb.dataset.leg); const set = rs.selected[k] || (rs.selected[k] = new Set());
@@ -986,6 +1024,7 @@
     const o = state.options[state.current]; const legs = withChosenRests(state, o); const last = legs[legs.length - 1];
     const isLodging = state.place.type === "lodging";
     $("ret-day").value = isLodging ? "2" : "1";
+    for (const opt of $("ret-day").options) opt.textContent = opt.textContent.replace(/\s*\d+\/\d+\(.\)$/, "") + " " + dayDate(state, Number(opt.value));
     const defaultStart = () => ($("ret-day").value === "1" ? hhmm(addSec(last.arrive, 2 * 3600)) : "10:00");
     $("ret-start").value = defaultStart();
     const changed = () => invalidateReturn("条件を変えたので「帰りの時間を計算」を押してください。");
@@ -1204,8 +1243,10 @@
     return out;
   }
 
+  let planSeq = 0;  // 往路の計算の世代。条件を変えて再計算したら増やし、古い応答は結果に使わない
   async function onSubmit(ev) {
     ev.preventDefault();
+    const seq = ++planSeq;
     $("error").classList.add("hidden");
     const place = byId.get($("dest-q").value);
     if (!place) return showError("掲載先をプルダウンから選んでください。");
@@ -1231,9 +1272,10 @@
     $("go").textContent = "計算中…";
     try {
       const origin = await getOrigin();
+      if (seq !== planSeq) return;
       const waypoints = await readWaypoints();
       const dest = { lat: Number(place.geocode.lat), lon: Number(place.geocode.lon), name: place.name,
-        approx: place.geocode.precision !== "facility" };
+        approx: place.geocode.precision !== "facility", page_url: place.page_url };
       const points = [origin, ...waypoints, dest];
       // 市町村中心などが重なる区間をゼロ分として合計に含めない。
       for (let k = 0; k < points.length - 1; k++) {
@@ -1253,6 +1295,7 @@
         const active = options.filter((o) => !o.error);
         if (!active.length) break;
         const data = await routeLeg(points[k], points[k + 1], active.map((o) => isoJST(o.cursor)));
+        if (seq !== planSeq) return;  // 新しい計算が始まっている: この応答は捨てる
         mock = mock || Boolean(data.mock);
         data.results.forEach((r, j) => {
           const o = active[j];
@@ -1267,6 +1310,7 @@
             cands, recommended: planRests(cands, r.durationSec, interval.minutes, sinceRestAtStart),
             sinceRestAtStart, sinceRestAtEnd, needsRest: sinceRestAtEnd > (interval.minutes + REST_SLACK_MIN) * 60,
             durationSec: r.durationSec, staticDurationSec: r.staticDurationSec,
+            points: pts,  // 地図に描く経路(段階2)。立ち寄り先を通る実際の経路を区間ごとに持つ
           });
           const arrive = o.legs[o.legs.length - 1].arrive;
           o.sinceRest = sinceRestAtEnd;
@@ -1306,18 +1350,16 @@
       $("results").classList.remove("hidden");
       $("results").scrollIntoView({ behavior: "smooth", block: "start" });
     } catch (e) {
-      showError(e.message || "エラーが発生しました。");
+      if (seq === planSeq) showError(e.message || "エラーが発生しました。");
     } finally {
-      $("go").disabled = false;
-      $("go").textContent = "予想時間を出す";
+      if (seq === planSeq) { $("go").disabled = false; $("go").textContent = "予想時間を出す"; }
     }
   }
 
   const today = new Date();
   const tomorrow = new Date(today.getTime() + 86400000);
-  const ymd = (d) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
-  $("date").min = ymd(today);
-  $("date").value = ymd(tomorrow);
+  $("date").min = jstYmd(today);
+  $("date").value = jstYmd(tomorrow);
   $("dest-q").addEventListener("change", updateDestinationLink);
   $("form").addEventListener("submit", onSubmit);
   // ルート沿いの候補がまだなら、行を足すときに探す(候補はルートから30km以内に固定)
