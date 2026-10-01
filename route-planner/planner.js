@@ -132,6 +132,7 @@
             sleep: article.dataset.sleep || existing.sleep || "",
             cage: article.dataset.cage || existing.cage || "",
             reserve: reserveLinks(article),
+            photo: article.querySelector(".stay-photo img")?.getAttribute("src") || existing.photo || "",
           });
         }
       } catch (error) {
@@ -786,6 +787,7 @@
     const official = (place.links || []).filter((l) => !l.affiliate).slice(0, 2);
     const aff = (place.links || []).filter((l) => l.affiliate).slice(0, 1);
     $("dest-card").innerHTML = `
+      ${place.photo ? `<img class="dest-photo" src="${esc(place.photo)}" alt="${esc(place.name)}の写真(楽天トラベル提供)" loading="lazy">` : ""}
       <h2>${esc(place.name)} <span class="badge">${esc(TYPE_LABEL[place.type])}</span></h2>
       <p class="note">${esc(place.area)}${place.theme ? " / " + esc(place.theme) : ""}${place.co_sleep ? " / " + esc(place.co_sleep) : ""}</p>
       ${hotelTimes(place) ? `<p class="note"><b>チェックイン:</b> ${esc(hotelTimes(place).checkin || "—")}${hotelTimes(place).last_checkin ? `〜${esc(hotelTimes(place).last_checkin)}` : ""} ／ <b>チェックアウト:</b> ${esc(hotelTimes(place).checkout || "—")} <span class="note">(楽天トラベル掲載情報・${esc((hotelTimes(place).fetched_at || "").slice(0, 10))}時点。プランによって異なる場合があります)</span></p>` : ""}
@@ -797,7 +799,7 @@
         ${aff.map((l) => `<a href="${esc(l.url)}" target="_blank" rel="noopener sponsored">${esc(l.label || "予約サイトで空室を見る")}<span class="ad">広告</span></a>`).join("")}
       </div>
       <div id="dest-booking"></div>
-      ${place.checked_at ? `<p class="note">掲載情報の確認日: ${esc(place.checked_at)}</p>` : ""}`;
+      ${place.checked_at ? `<p class="note photo-note">掲載情報の確認日: ${esc(place.checked_at)}${place.photo ? "・写真は楽天トラベル提供" : ""}</p>` : ""}`;
   }
 
   function renderNearby(place) {
@@ -1179,6 +1181,47 @@
     items.push({ ok: true, text: `ごはん・薬の時刻: ${p.mealTime || p.medTime ? [p.mealTime ? `ごはん ${p.mealTime}` : "", p.medTime ? `薬 ${p.medTime}` : ""].filter(Boolean).join("・") : "入力なし(任意)"}`, fix: "" });
     list.innerHTML = items.map((it) => `<li class="${it.ok ? "ok" : "todo"}"><span class="mark">${it.ok ? "✓" : "！"}</span><span>${it.text}</span>${it.fix ? `<span class="fix">${it.fix}</span>` : ""}</li>`).join("");
     card.classList.remove("hidden");
+    renderSteps(state, { picks, goRests, over, rs, pend });
+    renderSummary(state, legs, rs);
+  }
+
+  // 進み具合バー(結果の先頭)。済 / 任意 / 未 を状態から決める。押すとその場所へ
+  function renderSteps(state, x) {
+    const nav = $("steps"); if (!nav) return;
+    const itin = !$("itinerary-card").classList.contains("hidden");
+    const steps = [
+      { href: "#compare-card", label: "出発時刻", cls: "done", note: fmtClock(state.options[state.current].dep) + "発" },
+      { href: "#map-card", label: "寄り道", cls: state.waypoints.length ? "done" : x.pend.length ? "todo" : "opt", note: state.waypoints.length ? `${state.waypoints.length}か所` : x.pend.length ? "未適用あり" : "任意" },
+      { href: "#rest-card", label: "休憩", cls: x.over ? "todo" : x.goRests ? "done" : "opt", note: x.over ? "長い区間あり" : x.goRests ? `${x.goRests}回` : "任意" },
+      { href: "#nearby-card", label: "近くの場所", cls: x.picks.length ? "done" : "opt", note: x.picks.length ? `${x.picks.length}件` : "任意" },
+      { href: "#return-card", label: "帰り", cls: x.rs ? "done" : "opt", note: x.rs ? `${fmtClock(returnHome(x.rs))}帰宅` : "未計算" },
+      { href: itin ? "#itinerary-card" : "#check-card", label: "行程表・予約", cls: itin ? "done" : "todo", note: itin ? "作成済み" : "最後に作る" },
+    ];
+    nav.innerHTML = steps.map((s, i) => `<a class="${s.cls}" href="${s.href}"><span class="n">${i + 1}</span>${esc(s.label)}<small>${esc(s.note)}</small></a>`).join("");
+  }
+
+  // 「この旅のイメージ」: 数字の表を読む前に、一日の流れを一段落で
+  function renderSummary(state, legs, rs) {
+    const box = $("plan-summary"); if (!box) return;
+    const o = state.options[state.current]; if (!o || o.error || !legs.length) { box.innerHTML = ""; return; }
+    const last = legs[legs.length - 1]; const restCount = legs.reduce((s, l) => s + l.rests.length, 0);
+    const isLodging = state.place.type === "lodging";
+    const ht = isLodging ? hotelTimes(state.place) : null;
+    const picks = pickedNearby(); const day1 = picks.filter((p) => p.day === 1);
+    const parts = [];
+    parts.push(`${jstMd(o.dep)} の ${fmtClock(o.dep)} に${state.origin.name}を出発。`);
+    if (state.waypoints.length) parts.push(`途中で${state.waypoints.map((w) => w.name).join("と")}に寄って、`);
+    parts.push(`${restCount ? `休憩を${restCount}回はさみ、` : ""}${fmtClock(last.arrive)} ごろ${state.place.name}に着きます。`);
+    if (ht && minutesOf(ht.checkin) != null) {
+      const diff = minutesOf(ht.checkin) - jstMinutes(last.arrive);
+      if (diff > 0) parts.push(`チェックインは ${ht.checkin} からなので、${day1.length ? `${day1.map((p) => p.p.name).join("・")}で過ごしてから宿へ。` : `近くで${fmtDur(diff * 60)}ほど遊んでから宿へ(下の「近くで犬と行ける場所」から選べます)。`}`);
+      else if (minutesOf(ht.last_checkin) != null && jstMinutes(last.arrive) > minutesOf(ht.last_checkin)) parts.push(`最終チェックイン ${ht.last_checkin} を過ぎるので、出発を早めるか宿に連絡を。`);
+      else parts.push(`チェックイン(${ht.checkin}〜)に間に合います。`);
+    } else if (day1.length) parts.push(`着いたら${day1.map((p) => p.p.name).join("・")}へ。`);
+    if (rs) { const home = returnHome(rs); parts.push(`帰りは${dayLabel(rs.day)}の ${fmtClock(rs.dep)} に出て、${fmtClock(home)} ごろ帰宅の予定です。`); }
+    else if (isLodging) parts.push(`帰りは${ht && ht.checkout ? `チェックアウト(${ht.checkout})のあと` : "翌日"}、下の「帰りのプラン」で帰宅時刻まで出せます。`);
+    else parts.push(`帰りは下の「帰りのプラン」で帰宅時刻まで出せます。`);
+    box.innerHTML = `<div class="summary-box"><b>この旅のイメージ</b><p>${esc(parts.join(""))}</p></div>`;
   }
 
   // ---------------------------------------------------------------- 行程表の「予約する・準備する」

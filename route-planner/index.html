@@ -105,6 +105,24 @@
   .map-legend span { display: inline-flex; align-items: center; gap: 4px; }
   .lg-pin { display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; border-radius: 50% 50% 50% 0; transform: rotate(-45deg); color: #fff; font-style: normal; font-weight: 700; font-size: 12px; border: 1.5px solid #fff; box-shadow: 0 1px 3px rgba(0,0,0,.4); margin: 0 4px 4px 0; }
   .lg-pin b { display: inline-block; transform: rotate(45deg); }
+  .guide { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin: 0 0 14px; }
+  .guide-title { margin: 0 0 8px; font-weight: 700; }
+  .guide-steps { margin: 0; padding: 0; list-style: none; display: grid; gap: 8px; counter-reset: g; }
+  .guide-steps li { display: grid; grid-template-columns: 28px 1fr; gap: 4px 10px; align-items: start; counter-increment: g; }
+  .guide-steps li::before { content: counter(g); width: 26px; height: 26px; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 700; display: grid; place-items: center; grid-row: span 2; }
+  .guide-steps b { font-size: .98rem; }
+  .guide-steps span { grid-column: 2; color: var(--muted); font-size: .86rem; line-height: 1.5; }
+  @media (min-width: 720px) { .guide-steps { grid-template-columns: 1fr 1fr; } }
+  .steps { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 12px; }
+  .steps a { display: inline-flex; align-items: center; gap: 6px; padding: 5px 10px; border-radius: 999px; border: 1px solid var(--line); background: var(--panel); color: var(--text); text-decoration: none; font-size: .84rem; font-weight: 700; }
+  .steps a .n { width: 20px; height: 20px; border-radius: 50%; display: grid; place-items: center; font-size: .75rem; background: var(--chip); color: var(--muted); }
+  .steps a.done .n { background: var(--good); color: #fff; }
+  .steps a.todo .n { background: var(--warn); color: #fff; }
+  .steps a small { font-weight: 400; color: var(--muted); }
+  .summary-box { border-left: 4px solid var(--accent); background: var(--accent-soft); border-radius: 6px; padding: 8px 12px; margin: 8px 0; }
+  .summary-box p { margin: 4px 0 0; line-height: 1.7; }
+  .vc-photo, .dest-photo { float: right; width: 120px; height: 86px; object-fit: cover; border-radius: 8px; margin: 0 0 6px 10px; }
+  .photo-note { clear: both; }
   .checklist { list-style: none; margin: 0 0 8px; padding: 0; }
   .checklist li { display: flex; gap: 8px; align-items: flex-start; padding: 7px 0; border-top: 1px solid var(--line); font-size: .93rem; }
   .checklist li:first-child { border-top: 0; }
@@ -192,7 +210,15 @@
 <div class="wrap">
   <h1>わんこ旅行プラン</h1><p style="margin:4px 0 12px;font-size:14px"><a href="../dog-lodging-guide.html">犬と泊まれる宿</a>　<a href="../east-japan-dog-trips.html">犬とおでかけ</a>　<a href="../rest-stops.html">犬と休めるSA・PA・道の駅</a>　<a href="../travel-gear.html">旅行の持ち物（犬用品）</a>　<a href="../goods.html">毎日の犬用品</a>　<a href="../wear.html">犬服・ウェア</a>　<a href="../food.html">主食</a></p>
 <div class="ad" style="font-size:12px;color:#76786f;padding:8px 16px"><strong>広告</strong> このページにはアフィリエイト広告リンクが含まれる場合があります。リンク先で購入・予約されると運営者に紹介料が入る場合があります。バリューコマースの LinkSwitch により、提携先(Yahoo!ショッピング・Yahoo!トラベルなど)へのリンクが自動的に広告リンクとして扱われる場合があります。</div>
-  <p class="lead">① 出発地・立ち寄り先(滞在時間つき)・行き先を選んで、出発時刻ごとの予想時間を出します。② そのあと、運転が長い区間だけ休憩場所(SA・PA・道の駅)を選ぶと、プランの時刻に休憩を足します。</p>
+  <div class="guide" id="guide">
+    <p class="guide-title">はじめてでも 3 分で、犬と行く旅の一日が見えます。</p>
+    <ol class="guide-steps">
+      <li><b>いつ・どこへ</b><span>出発日と出発地を入れて行き先を選ぶ。宿が決まっていなければ、すぐ上の「泊まれる日から宿を探す」で空室のある宿から選べます</span></li>
+      <li><b>出発時刻を決める</b><span>渋滞込みの到着時刻を見比べて、おすすめか好きな時刻をタップ</span></li>
+      <li><b>寄り道と休憩</b><span>地図の印から遊べる場所やカフェを選び、運転が長い区間は SA・PA で犬の休憩</span></li>
+      <li><b>行程表と予約</b><span>出発からチェックイン、帰宅までを一枚の表に。空室があればその日付のまま予約へ</span></li>
+    </ol>
+  </div>
   <div class="mock" id="mock">テスト用の仮データで表示しています(渋滞は実データではありません)。</div>
 
   <div class="card" id="vacancy-card">
@@ -214,7 +240,7 @@
     <div class="actions"><button type="button" class="primary" id="vc-go">空室のある宿を探す</button></div>
     <p class="note" id="vc-status"></p>
     <div id="vc-results"></div>
-    <p class="note hidden" id="vc-credit">空室・料金・予約リンクは楽天ウェブサービス(楽天トラベル空室検索)から取得した情報です。予約時に楽天トラベルで最新の空室・料金・犬の受け入れ条件をご確認ください。「一般プラン」はその客室が犬対応かどうか未確認です。<a href="https://developers.rakuten.com/" target="_blank" rel="noopener">Supported by Rakuten Developers</a></p>
+    <p class="note hidden" id="vc-credit">空室・料金・予約リンクは楽天ウェブサービス(楽天トラベル空室検索)から取得した情報です。予約時に楽天トラベルで最新の空室・料金・犬の受け入れ条件をご確認ください。「一般プラン」はその客室が犬対応かどうか未確認です。宿の写真は楽天トラベル提供です。<a href="https://developers.rakuten.com/" target="_blank" rel="noopener">Supported by Rakuten Developers</a></p>
   </div>
 
   <form id="form" autocomplete="off">
@@ -368,14 +394,16 @@
   <div id="error" class="card hidden" role="alert"></div>
 
   <section id="results" class="hidden">
-    <div class="card">
+    <nav class="steps" id="steps" aria-label="プラン作りの進み具合"></nav>
+    <div class="card" id="compare-card">
       <h2 id="compare-title">出発時刻ごとの予想時間</h2>
       <table><thead><tr id="compare-head"><th>出発</th><th>運転時間</th><th>到着</th><th>渋滞の影響</th></tr></thead><tbody id="compare"></tbody></table>
       <p class="note" id="compare-note"></p>
     </div>
 
-    <div class="card">
+    <div class="card" id="plan-card">
       <h2 id="plan-title">わんこ旅行プラン</h2>
+      <div id="plan-summary"></div>
       <div id="plan-warn"></div>
       <div id="plan-diff"></div>
       <ol class="timeline" id="plan"></ol>
@@ -484,8 +512,8 @@
 <!-- 更新したら ?v= の値を変える(ブラウザに古いファイルが残って新しい動作にならないのを防ぐ) -->
 <script src="config.js?v=2026100101"></script>
 <script src="route-map.js?v=2026100108"></script>
-<script src="vacancy.js?v=2026100108"></script>
-<script src="planner.js?v=2026100110-times"></script>
+<script src="vacancy.js?v=2026100111"></script>
+<script src="planner.js?v=2026100111-guide"></script>
 <script src="trip-check.js?v=2026100108"></script>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "2847001768a143df87fa4e78edba9c7e"}'></script><!-- End Cloudflare Web Analytics -->
 

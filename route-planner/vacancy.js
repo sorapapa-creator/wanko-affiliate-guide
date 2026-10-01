@@ -71,6 +71,7 @@
         <span class="note">${esc(p.plan || "")}${p.room ? ` ／ ${esc(p.room)}` : ""}${p.dinner ? "・夕食付" : ""}${p.breakfast ? "・朝食付" : ""}</span><br>
         ${p.url ? `<a href="${esc(p.url)}" target="_blank" rel="noopener sponsored">楽天トラベルでこのプランを見る(${esc(jstMd(meta.checkin))}・${meta.adults || 2}名)<span class="ad">広告</span></a>` : ""}</li>`).join("");
       return `<article class="card vc-card${check.ng ? " vc-ng" : ""}">
+        ${place.photo ? `<img class="vc-photo" src="${esc(place.photo)}" alt="${esc(place.name)}の写真(楽天トラベル提供)" loading="lazy">` : ""}
         <h3>${i + 1}. ${esc(place.name)} <span class="badge">${esc(place.area || "")}</span>${h.pet ? ' <span class="badge b-rec">犬対応プランに空室</span>' : ' <span class="badge">一般客室の空室のみ</span>'}</h3>
         <p class="note">${drive ? `${esc(origin.name)}から車で約${fmtDur(drive[0])}(${drive[1]}km・渋滞なしの目安)` : "出発地からの所要時間は未計算"} ・ 添い寝: ${esc(place.sleep || place.co_sleep || "予約前確認")}${place.cage ? ` ・ ケージ: ${esc(place.cage.slice(0, 40))}${place.cage.length > 40 ? "…" : ""}` : ""}</p>
         ${check.notes.length ? `<div class="${check.ng ? "warnbox" : "note"}">${esc(check.notes.join("・"))}</div>` : ""}
@@ -87,8 +88,8 @@
       const dest = $("dest-q"); dest.value = b.dataset.id; dest.dispatchEvent(new Event("change", { bubbles: true }));
       $("date").value = b.dataset.ci; $("date").dispatchEvent(new Event("change", { bubbles: true }));
       if (window.PlannerData?.originForHub) window.PlannerData.originForHub($("vc-origin").value);
-      $("form").scrollIntoView({ behavior: "smooth", block: "start" });
-      $("vc-status").textContent = `行き先を「${$("dest-q").selectedOptions[0]?.textContent || ""}」、出発日を ${jstMd(b.dataset.ci)} にしました。下の条件を確認して「予想時間を出す」を押してください。`;
+      $("vc-status").textContent = `行き先を「${$("dest-q").selectedOptions[0]?.textContent || ""}」、出発日を ${jstMd(b.dataset.ci)} にして、予想時間を計算しています…(条件は下のフォームで変えられます)`;
+      $("form").requestSubmit();
     }));
   }
 
