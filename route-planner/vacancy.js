@@ -20,11 +20,26 @@
     index = await r.json();
     return index;
   }
-  async function loadDate(ci) {
-    if (cache.has(ci)) return cache.get(ci);
-    const r = await fetch(`${BASE}${ci}.json`, { cache: "no-cache" });
-    if (!r.ok) throw new Error("date");
-    const d = await r.json(); cache.set(ci, d); return d;
+  // 人数は 2 名(基本)と 4 名(家族)。4 名は <日付>-a4.json
+  const adultsSel = () => Number($("vc-adults")?.value) || 2;
+  async function loadDate(ci, adults) {
+    const key = `${ci}${adults === 2 ? "" : `-a${adults}`}`;
+    if (cache.has(key)) return cache.get(key);
+    const r = await fetch(`${BASE}${key}.json`, { cache: "no-cache" });
+    if (!r.ok) throw new Error(adults === 2 ? "この日の空室データを読み込めませんでした。" : `${adults}名のデータはこの日はまだありません(2名で検索してください)。`);
+    const d = await r.json(); cache.set(key, d); return d;
+  }
+  function fillDates() {
+    if (!index) return;
+    const adults = adultsSel(); const sel = $("vc-date"); const cur = sel.value;
+    const dates = Object.keys(index.dates || {}).sort();
+    const isSat = (ci) => /\(土\)/.test(jstMd(ci));
+    sel.replaceChildren(...dates.map((ci) => {
+      const e = index.dates[ci]; const s = adults === 2 ? e : e[`a${adults}`];
+      const counts = s ? `空室 ${s.available}宿・犬対応プラン ${s.pet}宿` : `${adults}名のデータなし`;
+      return new Option(`${jstMd(ci)} 〜 ${jstMd(e.checkout)}${isSat(ci) ? "" : "・祝前日"}(${counts})`, ci);
+    }));
+    if (cur && dates.includes(cur)) sel.value = cur;
   }
 
   // 犬の条件の判定(掲載情報の抽出結果 dog_hints と facts、カードの data-sleep / data-cage を使う。未記載は「要確認」で減点しない)
@@ -52,9 +67,9 @@
     const box = $("vc-results");
     if (!list.length) { box.innerHTML = `<p class="note">この条件に合う空室のある宿が見つかりませんでした。条件(犬の大きさ・添い寝・予算)を緩めるか、別の日を選んでください。</p>`; return; }
     const card = ({ place, h, drive, check }, i) => {
-      const plans = (h.plans || []).map((p) => `<li class="vc-plan${p.pet ? " vc-pet" : ""}">${p.pet ? '<span class="badge b-run">犬対応プラン</span>' : '<span class="badge">一般プラン(犬の受け入れは要確認)</span>'} <b>${yen(p.total)}</b><span class="note">(2名1泊・楽天表示)</span><br>
+      const plans = (h.plans || []).map((p) => `<li class="vc-plan${p.pet ? " vc-pet" : ""}">${p.pet ? '<span class="badge b-run">犬対応プラン</span>' : '<span class="badge">一般プラン(犬の受け入れは要確認)</span>'} <b>${yen(p.total)}</b><span class="note">(${meta.adults || 2}名1泊・楽天表示)</span><br>
         <span class="note">${esc(p.plan || "")}${p.room ? ` ／ ${esc(p.room)}` : ""}${p.dinner ? "・夕食付" : ""}${p.breakfast ? "・朝食付" : ""}</span><br>
-        ${p.url ? `<a href="${esc(p.url)}" target="_blank" rel="noopener sponsored">楽天トラベルでこのプランを見る(${esc(jstMd(meta.checkin))}・2名)<span class="ad">広告</span></a>` : ""}</li>`).join("");
+        ${p.url ? `<a href="${esc(p.url)}" target="_blank" rel="noopener sponsored">楽天トラベルでこのプランを見る(${esc(jstMd(meta.checkin))}・${meta.adults || 2}名)<span class="ad">広告</span></a>` : ""}</li>`).join("");
       return `<article class="card vc-card${check.ng ? " vc-ng" : ""}">
         <h3>${i + 1}. ${esc(place.name)} <span class="badge">${esc(place.area || "")}</span>${h.pet ? ' <span class="badge b-rec">犬対応プランに空室</span>' : ' <span class="badge">一般客室の空室のみ</span>'}</h3>
         <p class="note">${drive ? `${esc(origin.name)}から車で約${fmtDur(drive[0])}(${drive[1]}km・渋滞なしの目安)` : "出発地からの所要時間は未計算"} ・ 添い寝: ${esc(place.sleep || place.co_sleep || "予約前確認")}${place.cage ? ` ・ ケージ: ${esc(place.cage.slice(0, 40))}${place.cage.length > 40 ? "…" : ""}` : ""}</p>
@@ -82,7 +97,8 @@
     btn.disabled = true; status.textContent = "空室データを読み込んでいます…";
     try {
       const ci = $("vc-date").value; if (!ci) throw new Error("日付を選んでください。");
-      const data = await loadDate(ci);
+      const adults = adultsSel();
+      const data = await loadDate(ci, adults);
       const PD = window.PlannerData; if (!PD) throw new Error("宿データの読み込み待ちです。少し待ってからもう一度押してください。");
       const size = $("vc-size").value, dogs = Number($("vc-dogs").value) || 1, wantSleep = $("vc-sleep").checked, petOnly = $("vc-petonly").checked, budget = Number($("vc-budget").value) || 0;
       const hub = $("vc-origin").value; const drive = PD.drive(); const origin = { name: $("vc-origin").selectedOptions[0]?.textContent || "出発地" };
@@ -102,7 +118,7 @@
       rows.sort((a, b) => (b.h.pet ? 1 : 0) - (a.h.pet ? 1 : 0) || (a.check.ng ? 1 : 0) - (b.check.ng ? 1 : 0) || ((a.drive ? a.drive[0] : 9e9) - (b.drive ? b.drive[0] : 9e9)) || ((a.price || 9e9) - (b.price || 9e9)));
       const limited = rows.slice(0, 40);
       render(limited, data, origin);
-      const parts = [`${jstMd(ci)} チェックイン(1泊・2名)で空室のある掲載宿 ${Object.keys(data.hotels).length}件のうち、条件に合う ${rows.length}件${rows.length > 40 ? "(近い順に40件まで表示)" : ""}。`];
+      const parts = [`${jstMd(ci)} チェックイン(1泊・${adults}名)で空室のある掲載宿 ${Object.keys(data.hotels).length}件のうち、条件に合う ${rows.length}件${rows.length > 40 ? "(近い順に40件まで表示)" : ""}。`];
       if (hiddenPet) parts.push(`犬対応プランの空室が確認できない ${hiddenPet}件は非表示(チェックを外すと一般客室の空室も出ます)。`);
       if (hiddenBudget) parts.push(`予算超過 ${hiddenBudget}件を除外。`);
       if (hiddenNg) parts.push(`犬の条件に合わない記載のある ${hiddenNg}件を除外。`);
@@ -119,11 +135,10 @@
     try {
       const idx = await loadIndex();
       const dates = Object.keys(idx.dates || {}).sort();
-      const sel = $("vc-date");
-      const isSat = (ci) => /\(土\)/.test(jstMd(ci));
-      sel.replaceChildren(...dates.map((ci) => new Option(`${jstMd(ci)} 〜 ${jstMd(idx.dates[ci].checkout)}${isSat(ci) ? "" : "・祝前日"}(空室 ${idx.dates[ci].available}宿・犬対応プラン ${idx.dates[ci].pet}宿)`, ci)));
+      fillDates();
+      $("vc-adults")?.addEventListener("change", fillDates);
       if (!dates.length) { $("vc-status").textContent = "空室データの準備中です(毎晩更新)。"; $("vc-go").disabled = true; return; }
-      $("vc-status").textContent = `空室データ: ${dates.length}日分(次の週末。毎晩更新、取得時刻は結果に表示)。`;
+      $("vc-status").textContent = `空室データ: ${dates.length}日分(次の週末と祝前日。毎晩更新、取得時刻は結果に表示)。`;
     } catch (e) {
       $("vc-status").textContent = "空室データの準備中です(毎晩更新)。"; $("vc-go").disabled = true;
     }
