@@ -22,9 +22,25 @@
   }
   // 人数は 2 名(基本)と 4 名(家族)。4 名は <日付>-a4.json
   const adultsSel = () => Number($("vc-adults")?.value) || 2;
+  // 犬可否: pet(犬対応プラン) / no(ペット不可の記載) / unknown(一般客室、同伴可否は未確認)。planner.js と共用
+  const PET_NEG = /(ペット|愛犬|わんこ|ワンちゃん|わんちゃん|犬)[^。]{0,8}(不可|NG|ＮＧ|禁止|お断り|ご遠慮|なし)|(不可|NG|ＮＧ)[^。]{0,4}(ペット|犬)/;
+  const petClass = (p) => (p.pet ? "pet" : PET_NEG.test(`${p.plan || ""} ${p.room || ""}`) ? "no" : "unknown");
+  // 空室データの検証: 条件(日付・人数・1 泊)の一致と取得後 24 時間以内(楽天の利用条件)。問題があれば理由の文字列、なければ ""
+  const validate = (data, cond) => {
+    if (!data || !data.hotels) return "空室データがありません";
+    if (cond && cond.checkin && data.checkin !== cond.checkin) return "空室データの日付が条件と一致しません";
+    if (cond && cond.adults && Number(data.adults || 2) !== Number(cond.adults)) return "空室データの人数が条件と一致しません";
+    const nights = Math.round((Date.parse(data.checkout) - Date.parse(data.checkin)) / 86400000);
+    if (nights !== 1) return "空室データは 1 泊の条件のみです";
+    const t = Date.parse(String(data.scanned_at) + "+09:00");
+    if (!Number.isFinite(t)) return "空室データの取得時刻が不明です";
+    if (Date.now() - t > 24 * 3600 * 1000) return "空室データが取得から 24 時間を超えたため表示しません";
+    if (t > Date.now() + 3600 * 1000) return "空室データの取得時刻が不正です";
+    return "";
+  };
   async function loadDate(ci, adults) {
     const key = `${ci}${adults === 2 ? "" : `-a${adults}`}`;
-    if (cache.has(key)) return cache.get(key);
+    if (cache.has(key)) { const c = cache.get(key); if (!validate(c, null)) return c; cache.delete(key); }
     const r = await fetch(`${BASE}${key}.json`, { cache: "no-cache" });
     if (!r.ok) throw new Error(adults === 2 ? "この日の空室データを読み込めませんでした。" : `${adults}名のデータはこの日はまだありません(2名で検索してください)。`);
     const d = await r.json(); cache.set(key, d); return d;
@@ -67,7 +83,7 @@
     const box = $("vc-results");
     if (!list.length) { box.innerHTML = `<p class="note">この条件に合う空室のある宿が見つかりませんでした。条件(犬の大きさ・添い寝・予算)を緩めるか、別の日を選んでください。</p>`; return; }
     const card = ({ place, h, drive, check }, i) => {
-      const plans = (h.plans || []).map((p) => `<li class="vc-plan${p.pet ? " vc-pet" : ""}">${p.pet ? '<span class="badge b-run">犬対応プラン</span>' : '<span class="badge">一般プラン(犬の受け入れは要確認)</span>'} <b>${yen(p.total)}</b><span class="note">(${meta.adults || 2}名1泊・楽天表示)</span><br>
+      const plans = (h.plans || []).filter((p) => petClass(p) !== "no").map((p) => `<li class="vc-plan${p.pet ? " vc-pet" : ""}">${p.pet ? '<span class="badge b-run">犬対応プラン</span>' : '<span class="badge">一般客室(犬同伴の可否は未確認)</span>'} <b>${yen(p.total)}</b><span class="note">(${meta.adults || 2}名1泊・楽天表示・${esc(fmtWhen(meta.scanned_at))} 取得)</span><br>
         <span class="note">${esc(p.plan || "")}${p.room ? ` ／ ${esc(p.room)}` : ""}${p.dinner ? "・夕食付" : ""}${p.breakfast ? "・朝食付" : ""}</span><br>
         ${p.url ? `<a href="${esc(p.url)}" target="_blank" rel="noopener sponsored">楽天トラベルでこのプランを見る(${esc(jstMd(meta.checkin))}・${meta.adults || 2}名)<span class="ad">広告</span></a>` : ""}</li>`).join("");
       return `<article class="card vc-card${check.ng ? " vc-ng" : ""}">
@@ -93,26 +109,30 @@
     }));
   }
 
+  let searchSeq = 0;
   async function search() {
-    const status = $("vc-status"); const btn = $("vc-go");
-    btn.disabled = true; status.textContent = "空室データを読み込んでいます…";
+    const status = $("vc-status"); const btn = $("vc-go"); const seq = ++searchSeq;
+    btn.disabled = true; status.textContent = "空室データを読み込んでいます…"; $("vc-results").innerHTML = "";
     try {
       const ci = $("vc-date").value; if (!ci) throw new Error("日付を選んでください。");
       const adults = adultsSel();
+      const snap = { size: $("vc-size").value, dogs: Number($("vc-dogs").value) || 1, wantSleep: $("vc-sleep").checked, petOnly: $("vc-petonly").checked, budget: Number($("vc-budget").value) || 0, hub: $("vc-origin").value, originName: $("vc-origin").selectedOptions[0]?.textContent || "出発地", strict: $("vc-strict").checked };
       const data = await loadDate(ci, adults);
+      if (seq !== searchSeq) return;
+      const bad = validate(data, { checkin: ci, adults }); if (bad) throw new Error(bad + "。別の日を選ぶか、しばらくしてからお試しください。");
       const PD = window.PlannerData; if (!PD) throw new Error("宿データの読み込み待ちです。少し待ってからもう一度押してください。");
-      const size = $("vc-size").value, dogs = Number($("vc-dogs").value) || 1, wantSleep = $("vc-sleep").checked, petOnly = $("vc-petonly").checked, budget = Number($("vc-budget").value) || 0;
-      const hub = $("vc-origin").value; const drive = PD.drive(); const origin = { name: $("vc-origin").selectedOptions[0]?.textContent || "出発地" };
+      const { size, dogs, wantSleep, petOnly, budget, hub } = snap; const drive = PD.drive(); const origin = { name: snap.originName };
       const rows = [];
       let hiddenPet = 0, hiddenBudget = 0, hiddenNg = 0;
       for (const [id, h] of Object.entries(data.hotels)) {
         const place = PD.byId(id); if (!place) continue;
         if (petOnly && !h.pet) { hiddenPet++; continue; }
-        const minPet = h.plans.filter((p) => p.pet).map((p) => p.total).filter(Boolean);
-        const price = petOnly ? (minPet.length ? Math.min(...minPet) : h.min) : h.min;
+        const shown = (h.plans || []).filter((p) => petClass(p) !== "no"); if (!shown.length) { hiddenPet++; continue; }
+        const minPet = shown.filter((p) => p.pet).map((p) => p.total).filter(Boolean); const minAny = shown.map((p) => p.total).filter(Boolean);
+        const price = petOnly ? (minPet.length ? Math.min(...minPet) : null) : (minAny.length ? Math.min(...minAny) : null);
         if (budget && price && price > budget) { hiddenBudget++; continue; }
         const check = dogCheck(place, size, dogs, wantSleep);
-        if (check.ng && $("vc-strict").checked) { hiddenNg++; continue; }
+        if (check.ng && snap.strict) { hiddenNg++; continue; }
         const dr = drive && drive.places[id] && drive.places[id].from && drive.places[id].from[hub];
         rows.push({ place, h, drive: dr || null, check, price });
       }
@@ -127,12 +147,12 @@
       status.textContent = parts.join("");
       $("vc-credit").classList.remove("hidden");
     } catch (e) {
-      status.textContent = e.message || "空室データを読み込めませんでした。";
-    } finally { btn.disabled = false; }
+      if (seq === searchSeq) { status.textContent = e.message || "空室データを読み込めませんでした。"; $("vc-results").innerHTML = ""; }
+    } finally { if (seq === searchSeq) btn.disabled = false; }
   }
 
   // 行程表の「予約する」(planner.js)と共有する空室データの読み込み
-  window.VacancyData = { loadIndex, loadDate };
+  window.VacancyData = { loadIndex, loadDate, validate, petClass };
 
   async function init() {
     const card = $("vacancy-card"); if (!card) return;

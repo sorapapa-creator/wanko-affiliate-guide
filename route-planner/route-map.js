@@ -182,7 +182,7 @@
       const m = candMarker(c); shownCount++;
       if (clusterer && !picks.has(c.id)) clustered.push(m);  // 選択済みはまとめず常に見える
     }
-    if (clusterer && clustered.length) clusterer.addMarkers(clustered);
+    if (clusterer) { if (clustered.length) clusterer.addMarkers(clustered); else clusterer.render(); }
     const cn = $("map-cand-note");
     if (cn) {
       cn.classList.toggle("hidden", !cands.length && !pending);
@@ -305,7 +305,9 @@
       }
       renderPicks();
     },
-    hide() { pending = null; $("map-card")?.classList.add("hidden"); if (map && !failed) clearLayers(); },
+    hide() { pending = null; $("map-card")?.classList.add("hidden"); if (map && !failed) { clearLayers(); if (clusterer) clusterer.clearMarkers(); if (info) info.close(); } },
+    // 前回の結果を表示中(条件変更・再計算中)は、候補の適用ボタンを止める
+    setStale(on) { const b = $("map-apply"); if (b) b.disabled = on || !picks.size; const n = $("map-pick-note"); if (n && on) n.textContent = "条件を変えたか再計算中のため、適用は新しい結果が出てから行えます。"; },
     // まだ立ち寄りに入れていない選択(確認カードの表示用)
     pendingPicks() { return [...picks.values()].map((p) => p.cand.name); },
   };
