@@ -33,3 +33,4 @@ We also encourage you to join our Placemaker community where you can contribute 
 ## 国土数値情報 鉄道データ(N02-24)(2026-10-03 から利用)
 - 用途: 出発地の「駅名で探す」(route-planner/data/stations.json)。国土交通省 国土数値情報ダウンロードサイトの鉄道データ(N02-24)から、掲載範囲 14 都県の駅を抜き出し、同じ駅名で近いものをまとめ、都道府県を国土地理院の逆ジオコーダで判定して作成(tools/build_stations.py)
 - 表記: 「国土数値情報(鉄道データ N02-24、国土交通省)を加工して作成」(画面の脚注に記載)。利用規約: https://nlftp.mlit.go.jp/ksj/other/agreement.html
+- 駅名の読み: Wikidata の「名前の仮名」(P1814、CC0 1.0)を名前と位置で照合して付与(2,934 駅)。無い駅は pykakasi(GPL-3.0 のライブラリ。生成した読みのみを同梱)で機械的に付与(230 駅)。tools/add_station_kana.py

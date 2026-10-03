@@ -1370,19 +1370,21 @@
   // 出発地「駅名で探す」: data/stations.json(国土数値情報 N02 の駅を掲載範囲 14 都県分に絞ったもの)を初回入力時に読み、
   // この画面の中だけで前方一致→部分一致で絞る(外部へは送らない)。選ぶと #origin に「検索した駅」の選択肢を足して選択状態にする。
   let STATIONS = null, stationsLoading = null, sugIndex = -1;
-  const normSt = (s) => String(s || "").normalize("NFKC").replace(/\s+/g, "").replace(/駅$/, "").toLowerCase();
+  const toHira = (s) => s.replace(/[ァ-ヶ]/g, (c) => String.fromCharCode(c.charCodeAt(0) - 0x60));
+  const normSt = (s) => toHira(String(s || "").normalize("NFKC")).replace(/\s+/g, "").replace(/(駅|えき)$/, "").toLowerCase();
   function loadStations() {
     if (STATIONS) return Promise.resolve(STATIONS);
     if (!stationsLoading) stationsLoading = fetch(`${CFG.dataBase}stations.json`).then((r) => (r.ok ? r.json() : null)).then((d) => {
-      STATIONS = (d && d.stations || []).map((r) => ({ name: r[0], pref: r[1], lat: r[2], lon: r[3], lines: r[4] || [], key: normSt(r[0]) }));
+      STATIONS = (d && d.stations || []).map((r) => ({ name: r[0], pref: r[1], lat: r[2], lon: r[3], lines: r[4] || [], key: normSt(r[0]), kana: normSt(r[6] || "") }));
       return STATIONS;
     }).catch(() => (STATIONS = []));
     return stationsLoading;
   }
-  function searchStations(q) {
+  function searchStations(q) {  // 漢字でも読み(ひらがな・カタカナ)でも探せる。前方一致を先に、2 文字以上なら部分一致も
     const k = normSt(q); if (!k || !STATIONS) return [];
-    const starts = STATIONS.filter((s) => s.key.startsWith(k));
-    const inside = k.length >= 2 ? STATIONS.filter((s) => !s.key.startsWith(k) && s.key.includes(k)) : [];
+    const hit = (s, f) => f(s.key) || (s.kana && f(s.kana));
+    const starts = STATIONS.filter((s) => hit(s, (x) => x.startsWith(k)));
+    const inside = k.length >= 2 ? STATIONS.filter((s) => !hit(s, (x) => x.startsWith(k)) && hit(s, (x) => x.includes(k))) : [];
     return [...starts, ...inside].slice(0, 8);
   }
   function pickStation(s) {
