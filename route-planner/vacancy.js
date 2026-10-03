@@ -99,7 +99,21 @@
           ${h.info ? `<a href="${esc(h.info)}" target="_blank" rel="noopener sponsored">楽天トラベルの施設ページ<span class="ad">広告</span></a>` : ""}</div>
       </article>`;
     };
-    box.innerHTML = list.map(card).join("");
+    // 地方ごとにまとめる(近い宿がある地方から。各地方は近い順、12 件を超える分は「もっと見る」)
+    const PREF_REGION = [[/^(東京都|神奈川県|千葉県|埼玉県|茨城県|栃木県|群馬県)/, "関東"], [/^静岡県/, "伊豆・静岡"], [/^(山梨県|長野県|新潟県)/, "甲信越"], [/^(福島県|宮城県|山形県)/, "東北"]];
+    const prefOf = (p) => ((p.area || "").match(/^(東京都|北海道|(?:京都|大阪)府|[^\s・（(]{2,3}県)/) || [])[1] || "";
+    const regionOf = (p) => { const a = p.area || ""; for (const [re, name] of PREF_REGION) if (re.test(a)) return name; return "その他"; };
+    const groups = new Map();
+    list.forEach((row) => { const r = regionOf(row.place); if (!groups.has(r)) groups.set(r, []); groups.get(r).push(row); });
+    const SHOW = 12;
+    box.innerHTML = [...groups.entries()].map(([region, rows], gi) => {
+      const prefs = new Map(); rows.forEach((r) => { const pf = prefOf(r.place).replace(/[都府県]$/, ""); if (pf) prefs.set(pf, (prefs.get(pf) || 0) + 1); });
+      const sub = [...prefs.entries()].sort((a, b) => b[1] - a[1]).map(([k, v]) => `${k} ${v}`).join("・");
+      const cards = rows.map((row, i) => card(row, i).replace('<article class="card vc-card', `<article class="card vc-card${i >= SHOW ? " vc-hidden hidden" : ""}`)).join("");
+      const more = rows.length > SHOW ? `<button type="button" class="sub vc-more" data-g="${gi}">この地方の残り ${rows.length - SHOW} 件も見る</button>` : "";
+      return `<section class="vc-group" data-g="${gi}"><h3 class="vc-group-head">${esc(region)} <span class="note">${rows.length}件${sub ? `(${esc(sub)})` : ""}</span></h3>${cards}${more}</section>`;
+    }).join("");
+    box.querySelectorAll(".vc-more").forEach((b) => b.addEventListener("click", () => { const g = b.closest(".vc-group"); g.querySelectorAll(".vc-hidden").forEach((c) => c.classList.remove("hidden", "vc-hidden")); b.remove(); }));
     box.querySelectorAll(".vc-make").forEach((b) => b.addEventListener("click", () => {
       const dest = $("dest-q"); dest.value = b.dataset.id; dest.dispatchEvent(new Event("change", { bubbles: true }));
       $("date").value = b.dataset.ci; $("date").dispatchEvent(new Event("change", { bubbles: true }));
@@ -142,9 +156,8 @@
         rows.push({ place, h, drive: dr || null, check, price });
       }
       rows.sort((a, b) => (b.h.pet ? 1 : 0) - (a.h.pet ? 1 : 0) || (a.check.ng ? 1 : 0) - (b.check.ng ? 1 : 0) || ((a.drive ? a.drive[0] : 9e9) - (b.drive ? b.drive[0] : 9e9)) || ((a.price || 9e9) - (b.price || 9e9)));
-      const limited = rows.slice(0, 40);
-      render(limited, data, origin);
-      const parts = [`${jstMd(ci)} チェックイン(1泊・${adults}名)で空室のある掲載宿 ${Object.keys(data.hotels).length}件のうち、条件に合う ${rows.length}件${rows.length > 40 ? "(近い順に40件まで表示)" : ""}。`];
+      render(rows, data, origin);
+      const parts = [`${jstMd(ci)} チェックイン(1泊・${adults}名)で空室のある掲載宿 ${Object.keys(data.hotels).length}件のうち、条件に合う ${rows.length}件(地方ごと・出発地から近い順。各地方 12 件を超える分は「残りも見る」で表示)。`];
       if (hiddenPet) parts.push(`犬対応プランの空室が確認できない ${hiddenPet}件は非表示(チェックを外すと一般客室の空室も出ます)。`);
       if (hiddenBudget) parts.push(`予算超過 ${hiddenBudget}件を除外。`);
       if (hiddenNg) parts.push(`犬の条件に合わない記載のある ${hiddenNg}件を除外。`);
