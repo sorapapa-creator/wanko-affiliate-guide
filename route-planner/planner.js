@@ -213,7 +213,11 @@
       byId: (id) => byId.get(id),
       drive: () => DRIVE,
       // 主要駅(drive_times の hub)の id から出発地プルダウンを合わせる(駅名で一致)
-      originForHub: (hubId) => { const hub = DRIVE && DRIVE.hubs.find((h) => h.id === hubId); const opt = hub && [...$("origin").options].find((o) => o.textContent.trim() === hub.name); if (opt) { $("origin").value = opt.value; $("origin").dispatchEvent(new Event("change", { bubbles: true })); } },
+      originForHub: (hubId) => {
+        const m = /^st:([\d.\-]+),([\d.\-]+)\|(.*)$/.exec(hubId || "");  // 空室逆算で駅名から選んだ出発地 → 行程の出発地にも同じ駅を入れる
+        if (m) { pickStation({ name: m[3].replace(/駅\(.*$/, ""), pref: (m[3].match(/\((.*)\)$/) || [])[1] || "", lat: Number(m[1]), lon: Number(m[2]), lines: [] }); return; }
+        const hub = DRIVE && DRIVE.hubs.find((h) => h.id === hubId); const opt = hub && [...$("origin").options].find((o) => o.textContent.trim() === hub.name); if (opt) { $("origin").value = opt.value; $("origin").dispatchEvent(new Event("change", { bubbles: true })); } },
+      stations: { load: () => loadStations(), search: (q) => searchStations(q) },
     };
     document.dispatchEvent(new CustomEvent("planner:data"));
   }

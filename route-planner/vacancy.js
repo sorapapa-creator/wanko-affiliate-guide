@@ -89,7 +89,7 @@
       return `<article class="card vc-card${check.ng ? " vc-ng" : ""}">
         ${place.photo ? `<img class="vc-photo" src="${esc(place.photo)}" alt="${esc(place.name)}の写真(楽天トラベル提供)" loading="lazy">` : ""}
         <h3>${i + 1}. ${esc(place.name)} <span class="badge">${esc(place.area || "")}</span>${h.pet ? ' <span class="badge b-rec">犬対応プランに空室</span>' : ' <span class="badge">一般客室の空室のみ</span>'}</h3>
-        <p class="note">${drive ? `${esc(origin.name)}から車で約${fmtDur(drive[0])}(${drive[1]}km・渋滞なしの目安)` : "出発地からの所要時間は未計算"} ・ 添い寝: ${esc(place.sleep || place.co_sleep || "予約前確認")}${place.cage ? ` ・ ケージ: ${esc(place.cage.slice(0, 40))}${place.cage.length > 40 ? "…" : ""}` : ""}</p>
+        <p class="note">${drive ? `${esc(origin.name)}から車で約${fmtDur(drive[0])}(${drive[1]}km・${drive[2] === "est" ? "直線距離からの目安" : "渋滞なしの目安"})` : "出発地からの所要時間は未計算"} ・ 添い寝: ${esc(place.sleep || place.co_sleep || "予約前確認")}${place.cage ? ` ・ ケージ: ${esc(place.cage.slice(0, 40))}${place.cage.length > 40 ? "…" : ""}` : ""}</p>
         ${check.notes.length ? `<div class="${check.ng ? "warnbox" : "note"}">${esc(check.notes.join("・"))}</div>` : ""}
         ${factLine(place, /対象犬|頭数|大きさ|サイズ/) ? `<p class="note"><b>対象犬・頭数:</b> ${esc(factLine(place, /対象犬|頭数|大きさ|サイズ/))}</p>` : ""}
         ${factLine(place, /料金/) ? `<p class="note"><b>犬の宿泊料金:</b> ${esc(factLine(place, /料金/))}</p>` : ""}
@@ -122,6 +122,7 @@
       const bad = validate(data, { checkin: ci, adults }); if (bad) throw new Error(bad + "。別の日を選ぶか、しばらくしてからお試しください。");
       const PD = window.PlannerData; if (!PD) throw new Error("宿データの読み込み待ちです。少し待ってからもう一度押してください。");
       const { size, dogs, wantSleep, petOnly, budget, hub } = snap; const drive = PD.drive(); const origin = { name: snap.originName };
+      const stOrigin = parseStationValue(hub);
       const rows = [];
       let hiddenPet = 0, hiddenBudget = 0, hiddenNg = 0;
       for (const [id, h] of Object.entries(data.hotels)) {
@@ -133,7 +134,11 @@
         if (budget && price && price > budget) { hiddenBudget++; continue; }
         const check = dogCheck(place, size, dogs, wantSleep);
         if (check.ng && snap.strict) { hiddenNg++; continue; }
-        const dr = drive && drive.places[id] && drive.places[id].from && drive.places[id].from[hub];
+        let dr = drive && drive.places[id] && drive.places[id].from && drive.places[id].from[hub];
+        if (!dr && stOrigin) {  // 駅名で探した出発地: 直線距離からの目安(主要駅の実測から 1 直線 km ≒ 1.16 分・道路 1.32 倍)
+          const g = place.geocode || {}; const la = Number(g.lat), lo = Number(g.lon);
+          if (isFinite(la) && isFinite(lo)) { const s = kmBetween(stOrigin.lat, stOrigin.lon, la, lo); dr = [Math.round(s * 1.16), Math.round(s * 1.32 * 10) / 10, "est"]; }
+        }
         rows.push({ place, h, drive: dr || null, check, price });
       }
       rows.sort((a, b) => (b.h.pet ? 1 : 0) - (a.h.pet ? 1 : 0) || (a.check.ng ? 1 : 0) - (b.check.ng ? 1 : 0) || ((a.drive ? a.drive[0] : 9e9) - (b.drive ? b.drive[0] : 9e9)) || ((a.price || 9e9) - (b.price || 9e9)));
@@ -170,6 +175,46 @@
     const fill = () => { const PD = window.PlannerData; const d = PD && PD.drive(); if (!d) return false; const sel = $("vc-origin"); sel.replaceChildren(...d.hubs.map((h) => new Option(h.name, h.id))); return true; };
     if (!fill()) document.addEventListener("planner:data", fill, { once: true });
     $("vc-go").addEventListener("click", search);
+    wireStationSearch();
+  }
+
+  // 出発地「駅名で探す」(planner.js の駅一覧を借りる)。選ぶと #vc-origin に "st:lat,lon|駅名(県)" の選択肢を足して選ぶ
+  function parseStationValue(v) {
+    const m = /^st:([\d.\-]+),([\d.\-]+)\|(.*)$/.exec(v || ""); return m ? { lat: Number(m[1]), lon: Number(m[2]), name: m[3] } : null;
+  }
+  function kmBetween(a1, o1, a2, o2) {
+    const R = 6371, d2r = Math.PI / 180, dLat = (a2 - a1) * d2r, dLon = (o2 - o1) * d2r;
+    const h = Math.sin(dLat / 2) ** 2 + Math.cos(a1 * d2r) * Math.cos(a2 * d2r) * Math.sin(dLon / 2) ** 2;
+    return 2 * R * Math.asin(Math.sqrt(h));
+  }
+  function wireStationSearch() {
+    const q = $("vc-origin-q"), box = $("vc-origin-sug"); if (!q || !box) return;
+    let timer = null, list = [], idx = -1;
+    const hide = () => { box.classList.add("hidden"); box.innerHTML = ""; q.setAttribute("aria-expanded", "false"); idx = -1; };
+    const pick = (s) => {
+      const sel = $("vc-origin"); const label = `${s.name}駅(${s.pref})`; const val = `st:${s.lat},${s.lon}|${label}`;
+      let opt = [...sel.options].find((o) => o.value === val);
+      if (!opt) { opt = new Option(label, val); sel.insertBefore(opt, sel.firstChild); }
+      sel.value = val; q.value = `${s.name}駅`; hide();
+      $("vc-status").textContent = `出発地を ${label} にしました(所要時間は直線距離からの目安になります)`;
+    };
+    const show = (l) => {
+      list = l; idx = -1;
+      box.innerHTML = l.length ? l.map((s) => `<button type="button" role="option"><b>${esc(s.name)}駅</b> <span class="note">${esc(s.pref)}</span><span class="sub">${esc((s.lines || []).slice(0, 3).join("・"))}</span></button>`).join("")
+        : `<button type="button" disabled>見つかりません(掲載範囲の駅だけ検索できます)</button>`;
+      [...box.querySelectorAll("button:not([disabled])")].forEach((b, i) => b.addEventListener("mousedown", (e) => { e.preventDefault(); pick(l[i]); }));
+      box.classList.remove("hidden"); q.setAttribute("aria-expanded", "true");
+    };
+    const st = () => window.PlannerData && window.PlannerData.stations;
+    q.addEventListener("focus", () => st() && st().load());
+    q.addEventListener("input", () => { clearTimeout(timer); timer = setTimeout(() => { const s = st(); if (!s) return; s.load().then(() => { if (q.value.trim()) show(s.search(q.value)); else hide(); }); }, 120); });
+    q.addEventListener("keydown", (e) => {
+      const btns = [...box.querySelectorAll("button:not([disabled])")];
+      if (e.key === "ArrowDown" || e.key === "ArrowUp") { if (!btns.length) return; e.preventDefault(); idx = (idx + (e.key === "ArrowDown" ? 1 : -1) + btns.length) % btns.length; btns.forEach((b, i) => b.classList.toggle("active", i === idx)); }
+      else if (e.key === "Enter") { if (btns.length) { e.preventDefault(); pick(list[idx >= 0 ? idx : 0]); } }
+      else if (e.key === "Escape") hide();
+    });
+    q.addEventListener("blur", () => setTimeout(hide, 150));
   }
   init();
 })();

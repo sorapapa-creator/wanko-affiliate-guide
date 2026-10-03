@@ -240,7 +240,7 @@
     <p class="hint">次の週末にどこなら泊まれるか、から決めたいときに。掲載宿(犬の条件を確認済み)のうち楽天トラベルに空室がある宿を、犬の条件と出発地からの所要時間で並べます。見つかったら「この宿で旅行プランを作る」で、そのまま往復の行程を作れます。</p>
     <div class="row four">
       <div><label class="t planner-field-label" for="vc-date"><span>チェックイン日</span><small>CHECK-IN</small></label><select id="vc-date"><option value="">読み込み中…</option></select></div>
-      <div><label class="t planner-field-label" for="vc-origin"><span>出発地(主要駅)</span><small>FROM</small></label><select id="vc-origin"><option value="tokyo">東京駅</option></select></div>
+      <div><label class="t planner-field-label" for="vc-origin"><span>出発地(主要駅)</span><small>FROM</small></label><select id="vc-origin"><option value="tokyo">東京駅</option></select><div class="origin-search"><input type="search" id="vc-origin-q" placeholder="一覧にない駅は駅名で探す(読みでも可)" autocomplete="off" aria-label="駅名で出発地を探す" aria-controls="vc-origin-sug" aria-expanded="false"><div id="vc-origin-sug" class="sug hidden" role="listbox"></div></div></div>
       <div><label class="t planner-field-label" for="vc-adults"><span>人数(大人)</span><small>ADULTS</small></label><select id="vc-adults"><option value="2" selected>2名(夫婦・カップル)</option><option value="4">4名(家族)</option></select></div>
       <div><label class="t planner-field-label" for="vc-budget"><span>予算(1泊・上限)</span><small>BUDGET</small></label>
         <select id="vc-budget"><option value="0">指定なし</option><option value="20000">2万円まで</option><option value="30000">3万円まで</option><option value="40000">4万円まで</option><option value="60000">6万円まで</option><option value="80000">8万円まで</option></select></div>
@@ -528,8 +528,8 @@
 <!-- 更新したら ?v= の値を変える(ブラウザに古いファイルが残って新しい動作にならないのを防ぐ) -->
 <script src="config.js?v=2026100101"></script>
 <script src="route-map.js?v=2026100301"></script>
-<script src="vacancy.js?v=2026100301"></script>
-<script src="planner.js?v=2026100305-kana"></script>
+<script src="vacancy.js?v=2026100306"></script>
+<script src="planner.js?v=2026100306-vcst"></script>
 <script src="trip-check.js?v=2026100108"></script>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "2847001768a143df87fa4e78edba9c7e"}'></script><!-- End Cloudflare Web Analytics -->
 
