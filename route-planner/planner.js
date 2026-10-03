@@ -1236,7 +1236,7 @@
 
   // ---------------------------------------------------------------- 行程表の「予約する・準備する」
   let bookingGen = 0;
-  const PET_NEG_JS = /(ペット|愛犬|わんこ|ワンちゃん|わんちゃん|犬)[^。]{0,8}(不可|NG|ＮＧ|禁止|お断り|ご遠慮|なし)|(不可|NG|ＮＧ)[^。]{0,4}(ペット|犬)/;
+  // 犬可否の判定(pet / no / unknown)と 3 段階の表示文は vacancy-rules.js(window.VacancyRules)に一本化。ここで正規表現を持たない
   const yen = (n) => (n == null ? "—" : `${Number(n).toLocaleString("ja-JP")}円`);
   // 楽天トラベルの取得時点の空室(計算済み行程の出発日 = チェックイン・1 泊・人数)。行程表と行き先カードで共用。空室情報が無ければ短い注記を返す
   async function rakutenVacancy(place, o, booking) {
@@ -1244,9 +1244,10 @@
     const bk = booking || {}; const adultsRaw = bk.adultsRaw || ""; const adults = adultsRaw === "4" ? 4 : 2;
     const mismatch = adultsRaw && !["2", "4"].includes(adultsRaw);
     const nights = bk.nights || 1;
-    let rak = ""; let hasPlans = false;
+    let rak = ""; let hasPlans = false; let petReady = false;
     try {
-      if (!window.VacancyData) throw new Error("no-module");
+      if (!window.VacancyData || !window.VacancyRules) throw new Error("no-module");
+      const R = window.VacancyRules;
       const data = await window.VacancyData.loadDate(ci, adults);
       {
         const h = data && data.hotels && data.hotels[place.id];
@@ -1257,11 +1258,14 @@
         else if (stale) rak = `<p class="note">${esc(bad)}。予約サイトで最新の空室をご確認ください。</p>`;
         else if (!h) rak = `<p class="note">${esc(cond)}の条件では、取得時点(${esc(fmtWhen(data.scanned_at))})の楽天トラベルにこの宿の空室が見つかりませんでした(満室とは限りません)。</p>`;
         else {
-          const petPlans = h.plans.filter((p) => window.VacancyData.petClass(p) === "pet");
-          const unknown = h.plans.filter((p) => window.VacancyData.petClass(p) === "unknown");
+          // 3 段階を混ぜない: 施設は犬同伴可(掲載条件を確認済み)、客室・プランは pet / unknown(no は出さない)、空室は取得時点
+          const pc = R.planCounts(h.plans); const petPlans = pc.petPlans; const unknown = pc.unknownPlans;
+          const status3 = `<ul class="vc-status3">${R.statusLines(pc, data.scanned_at).map((l) => `<li${l.warn ? ' class="warn"' : ""}><b>${esc(l.label)}:</b> ${esc(l.text)}</li>`).join("")}</ul>`;
           const row = (p, kind) => `<li class="vc-plan${kind === "pet" ? " vc-pet" : ""}">${kind === "pet" ? '<span class="badge b-run">犬対応プラン</span>' : '<span class="badge">一般客室(犬同伴の可否は未確認)</span>'} <b>${yen(p.total)}</b><span class="note">(${adults}名1泊・楽天表示)</span><br><span class="note">${esc(p.plan || "")}${p.room ? ` ／ ${esc(p.room)}` : ""}</span><br>${p.url ? `<a href="${esc(p.url)}" target="_blank" rel="noopener sponsored">楽天トラベルでこのプランを予約する(${esc(cond)})<span class="ad">広告</span></a>` : ""}</li>`;
-          hasPlans = petPlans.length > 0 || unknown.length > 0;
+          hasPlans = petPlans.length > 0 || unknown.length > 0; petReady = petPlans.length > 0;
           rak = `<p class="note">楽天トラベルの取得時点(${esc(fmtWhen(data.scanned_at))} 日本時間)の空室情報(${esc(cond)}${mismatch ? `。入力の人数 ${esc(adultsRaw)}名とは条件が違います` : ""})。現在は変わっている場合があります。表示している料金は取得時点の楽天表示額です。</p>
+            ${status3}
+            ${pc.onlyUnknown ? `<div class="warnbox"><b>${esc(R.ONLY_UNKNOWN_WARN)}</b></div>` : ""}
             <ul class="vc-plans">${petPlans.map((p) => row(p, "pet")).join("")}${!petPlans.length ? unknown.slice(0, 2).map((p) => row(p, "unknown")).join("") : ""}</ul>
             ${!petPlans.length && !unknown.length ? '<p class="note">取得時点の空室はペット不可の客室だけでした。</p>' : ""}`;
         }
@@ -1270,7 +1274,7 @@
       rak = e && e.message === "no-module" ? "" : `<p class="note">この条件(${esc(jstMd(o.dep))}・${adults}名)の空室は未確認です(満室とは限りません)。予約サイトでご確認ください。</p>`;
     }
     const credit = `<p class="rakuten-credit note"><a href="https://developers.rakuten.com/" target="_blank">Supported by Rakuten Developers</a></p>`;
-    return { html: rak ? rak + credit : "", hasPlans };
+    return { html: rak ? rak + credit : "", hasPlans, petReady };  // petReady: 犬対応プランの空室あり(一般客室だけなら false。犬対応とは呼ばない)
   }
   // 行き先カード(行程表を作らない人向け): 同じ空室判定で日付入りの予約ボタンを出す
   let destBookingGen = 0;
@@ -1280,7 +1284,7 @@
     box.innerHTML = `<p class="note">この日の空室(楽天トラベル・取得時点)を確認しています…</p>`;
     const r = await rakutenVacancy(state.place, state.options[state.current], state.booking);
     if (gen !== destBookingGen) return;
-    box.innerHTML = r.html ? `<div class="book-src"><h4>${r.hasPlans ? "この日に予約できる客室(楽天トラベル・取得時点)" : "この日の空室(楽天トラベル・取得時点)"}</h4>${r.html}</div>` : "";
+    box.innerHTML = r.html ? `<div class="book-src"><h4>${r.petReady ? "この日に予約できる犬対応プラン(楽天トラベル・取得時点)" : r.hasPlans ? "この日の空室(犬同伴の可否は未確認・楽天トラベル・取得時点)" : "この日の空室(楽天トラベル・取得時点)"}</h4>${r.html}</div>` : "";
   }
   // もしものときの近くの施設(動物病院・薬局)。OpenPOI API(無料・キー不要・CORS 可。2026-10-03 公開)を補助枠として使う。
   // 犬同伴条件は分からないので「犬と行ける場所」の候補には混ぜない。取れなければ枠ごと出さない(無くても壊れない)。24 時間はブラウザに記憶。

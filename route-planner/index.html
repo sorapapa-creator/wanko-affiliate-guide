@@ -152,6 +152,9 @@
   .vc-group { margin: 14px 0 6px; }
   .vc-group-head { margin: 14px 0 2px; padding: 6px 10px; border-left: 4px solid var(--accent); background: var(--accent-soft); border-radius: 6px; font-size: 1.05rem; }
   .vc-more { margin: 6px 0 10px; }
+  /* 犬同伴の 3 段階(施設 / 客室・プラン / 空室)を 1 行ずつ。混ぜない */
+  .vc-status3 { list-style: none; margin: 6px 0 8px; padding: 6px 10px; border: 1px dashed var(--line); border-radius: 8px; font-size: .85rem; display: grid; gap: 2px; }
+  .vc-status3 li.warn { color: var(--warn); font-weight: 700; }
   .vc-plans { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 6px; }
   .vc-plan { border: 1px solid var(--line); border-radius: 10px; padding: 8px 10px; }
   .vc-plan.vc-pet { border-color: var(--good); background: var(--accent-soft); }
@@ -540,8 +543,9 @@
 <!-- 更新したら ?v= の値を変える(ブラウザに古いファイルが残って新しい動作にならないのを防ぐ) -->
 <script src="config.js?v=2026100101"></script>
 <script src="route-map.js?v=2026100301"></script>
-<script src="vacancy.js?v=2026100310-handoff"></script>
-<script src="planner.js?v=2026100309-night"></script>
+<script src="vacancy-rules.js?v=2026100311"></script>
+<script src="vacancy.js?v=2026100311-3level"></script>
+<script src="planner.js?v=2026100311-3level"></script>
 <script src="trip-check.js?v=2026100108"></script>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "2847001768a143df87fa4e78edba9c7e"}'></script><!-- End Cloudflare Web Analytics -->
 
