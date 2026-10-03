@@ -1367,6 +1367,56 @@
 
   // ---------------------------------------------------------------- 実行
 
+  // 出発地「駅名で探す」: data/stations.json(国土数値情報 N02 の駅を掲載範囲 14 都県分に絞ったもの)を初回入力時に読み、
+  // この画面の中だけで前方一致→部分一致で絞る(外部へは送らない)。選ぶと #origin に「検索した駅」の選択肢を足して選択状態にする。
+  let STATIONS = null, stationsLoading = null, sugIndex = -1;
+  const normSt = (s) => String(s || "").normalize("NFKC").replace(/\s+/g, "").replace(/駅$/, "").toLowerCase();
+  function loadStations() {
+    if (STATIONS) return Promise.resolve(STATIONS);
+    if (!stationsLoading) stationsLoading = fetch(`${CFG.dataBase}stations.json`).then((r) => (r.ok ? r.json() : null)).then((d) => {
+      STATIONS = (d && d.stations || []).map((r) => ({ name: r[0], pref: r[1], lat: r[2], lon: r[3], lines: r[4] || [], key: normSt(r[0]) }));
+      return STATIONS;
+    }).catch(() => (STATIONS = []));
+    return stationsLoading;
+  }
+  function searchStations(q) {
+    const k = normSt(q); if (!k || !STATIONS) return [];
+    const starts = STATIONS.filter((s) => s.key.startsWith(k));
+    const inside = k.length >= 2 ? STATIONS.filter((s) => !s.key.startsWith(k) && s.key.includes(k)) : [];
+    return [...starts, ...inside].slice(0, 8);
+  }
+  function pickStation(s) {
+    const sel = $("origin"); const val = `${s.lat},${s.lon}`;
+    let grp = sel.querySelector('optgroup[data-searched]');
+    if (!grp) { grp = document.createElement("optgroup"); grp.label = "検索した駅"; grp.dataset.searched = "1"; sel.insertBefore(grp, sel.firstElementChild); }
+    let opt = [...grp.querySelectorAll("option")].find((o) => o.value === val);
+    if (!opt) { opt = document.createElement("option"); opt.value = val; opt.textContent = `${s.name}駅(${s.pref})`; grp.appendChild(opt); }
+    sel.value = val; sel.dispatchEvent(new Event("change", { bubbles: true }));
+    $("origin-q").value = `${s.name}駅`; hideSug();
+    $("origin-hint").textContent = `出発地を ${s.name}駅(${s.pref}${s.lines.length ? "・" + s.lines.slice(0, 3).join("・") : ""})にしました`;
+  }
+  function hideSug() { const b = $("origin-sug"); if (b) { b.classList.add("hidden"); b.innerHTML = ""; } $("origin-q")?.setAttribute("aria-expanded", "false"); sugIndex = -1; }
+  function showSug(list) {
+    const b = $("origin-sug"); if (!b) return;
+    if (!list.length) { b.innerHTML = `<button type="button" disabled>見つかりません(掲載範囲の駅だけ検索できます)</button>`; b.classList.remove("hidden"); return; }
+    b.innerHTML = list.map((s, i) => `<button type="button" role="option" data-i="${i}"><b>${esc(s.name)}駅</b> <span class="note">${esc(s.pref)}</span><span class="sub">${esc(s.lines.slice(0, 3).join("・"))}</span></button>`).join("");
+    [...b.querySelectorAll("button")].forEach((btn, i) => btn.addEventListener("mousedown", (e) => { e.preventDefault(); pickStation(list[i]); }));
+    b.classList.remove("hidden"); $("origin-q").setAttribute("aria-expanded", "true"); sugIndex = -1; b._list = list;
+  }
+  (function wireStationSearch() {
+    const q = $("origin-q"); if (!q) return;
+    let timer = null;
+    q.addEventListener("focus", () => loadStations());
+    q.addEventListener("input", () => { clearTimeout(timer); timer = setTimeout(() => loadStations().then(() => { if (q.value.trim()) showSug(searchStations(q.value)); else hideSug(); }), 120); });
+    q.addEventListener("keydown", (e) => {
+      const b = $("origin-sug"); const btns = b ? [...b.querySelectorAll("button:not([disabled])")] : [];
+      if (e.key === "ArrowDown" || e.key === "ArrowUp") { if (!btns.length) return; e.preventDefault(); sugIndex = (sugIndex + (e.key === "ArrowDown" ? 1 : -1) + btns.length) % btns.length; btns.forEach((x, i) => x.classList.toggle("active", i === sugIndex)); }
+      else if (e.key === "Enter") { if (btns.length) { e.preventDefault(); pickStation(b._list[sugIndex >= 0 ? sugIndex : 0]); } }
+      else if (e.key === "Escape") hideSug();
+    });
+    q.addEventListener("blur", () => setTimeout(hideSug, 150));
+  })();
+
   function getOrigin() {
     const v = $("origin").value;
     const name = $("origin").selectedOptions[0]?.textContent || "出発地";
