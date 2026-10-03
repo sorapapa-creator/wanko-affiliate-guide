@@ -445,19 +445,10 @@
 
   // ---------------------------------------------------------------- 表示
 
-  const fmtDur = (sec) => {
-    const m = Math.round(sec / 60);
-    return m >= 60 ? `${Math.floor(m / 60)}時間${String(m % 60).padStart(2, "0")}分` : `${m}分`;
-  };
   // 時刻・日付は日本時間(JST)に固定する。ブラウザのタイムゾーンに依存させない
   // (海外やクラウドの端末で 08:00 出発が 16:00 と表示され、復路の日付もずれていた不具合の対策)
-  const JST_MS = 9 * 3600 * 1000;
-  const jst = (d) => { const t = new Date(d.getTime() + JST_MS); return { y: t.getUTCFullYear(), mo: t.getUTCMonth() + 1, d: t.getUTCDate(), h: t.getUTCHours(), mi: t.getUTCMinutes(), wd: t.getUTCDay() }; };
-  const jstMidnight = (d) => { const j = jst(d); return new Date(Date.UTC(j.y, j.mo - 1, j.d) - JST_MS); };
-  const jstYmd = (d) => { const j = jst(d); return `${j.y}-${String(j.mo).padStart(2, "0")}-${String(j.d).padStart(2, "0")}`; };
-  const jstMd = (d) => { const j = jst(d); return `${j.mo}/${j.d}(${"日月火水木金土"[j.wd]})`; };
-  const fmtClock = (d) => { const j = jst(d); return `${j.h}:${String(j.mi).padStart(2, "0")}`; };
-  const addSec = (d, s) => new Date(d.getTime() + s * 1000);
+  // 純粋関数は planner-dates.js(window.PlannerDates)に一本化し、tests/planner-logic.test.js と共用する
+  const { jst, jstMidnight, jstYmd, jstMd, fmtClock, hhmm, jstMinutes, addSec, fmtDur, isoJST, minutesOf, clockOf, dayLabel, tripDayDate, nightsOf, returnDayChoices } = window.PlannerDates;
 
   function showError(msg) {
     $("error").textContent = msg;
@@ -848,8 +839,6 @@
   let DRIVE = null; // drive_times.json
   let TIMES = {};   // lodging_times.json: 宿ごとのチェックイン・最終チェックイン・チェックアウト(楽天トラベル掲載情報)
   const hotelTimes = (place) => (place && TIMES[place.id] && (TIMES[place.id].checkin || TIMES[place.id].checkout)) ? TIMES[place.id] : null;
-  const minutesOf = (hhmm) => { const m = /^(\d{1,2}):(\d{2})/.exec(hhmm || ""); return m ? +m[1] * 60 + +m[2] : null; };
-  const jstMinutes = (d) => { const j = jst(d); return j.h * 60 + j.mi; };
   function setDriveTimes(d) { DRIVE = d && d.places ? d : null; }
   function renderDriveFrom(place) {
     const box = $("dest-card");
@@ -888,10 +877,8 @@
       return p ? { p, stay, day } : null;
     }).filter(Boolean);
   }
-  // d と同じ日本時間の日付で hh:mm の時刻を作る
-  const clockOf = (d, hhmm) => { const [h, m] = hhmm.split(":").map(Number); return new Date(jstMidnight(d).getTime() + (h * 60 + m) * 60000); };
   // 出発日を 1 日目として i 日目の実日付(例: 10/5(日))
-  const dayDate = (state, i) => jstMd(new Date(jstMidnight(state.options[state.current].dep).getTime() + (i - 1) * 86400000));
+  const dayDate = (state, i) => jstMd(tripDayDate(state.options[state.current].dep, i));
   function renderItinerary(state) {
     const o = state.options[state.current]; if (!o || o.error) return;
     const profile = state.profile || {};
@@ -1016,11 +1003,8 @@
   let returnBusy = false;  // 帰りの計算中(未計算と区別する)
   let returnStatusKind = "none";  // none / busy / done / failed / invalid(条件変更で無効)
   let returnSeq = 0;  // 通信の世代。条件が変わったら増やし、古い応答は捨てる
-  const hhmm = (d) => { const j = jst(d); return `${String(j.h).padStart(2, "0")}:${String(j.mi).padStart(2, "0")}`; };
-  const dayLabel = (i) => (i <= 1 ? "到着日" : i === 2 ? "翌日" : i === 3 ? "翌々日" : `${i - 1}日後`);
   function tripDayIndex(state, d) {  // 出発日を1日目として、その日付が何日目か(1=到着日/出発日)
-    const o = state.options[state.current];
-    return Math.round((jstMidnight(d) - jstMidnight(o.dep)) / 86400000) + 1;
+    return window.PlannerDates.tripDayIndex(state.options[state.current].dep, d);
   }
 
   function invalidateReturn(msg) {
@@ -1359,10 +1343,10 @@
     const o = state.options[state.current]; const legs = withChosenRests(state, o); const last = legs[legs.length - 1];
     const isLodging = state.place.type === "lodging";
     // 帰る日はチェックアウト日(泊数)に連動。3 泊以上でも実日付で選べるように選択肢を作り直す(Codex 指摘 2026-10-03)
-    const nightsSel = Math.max(1, Number((state.booking || {}).nights) || 1);
-    const retSel = $("ret-day"); const maxDay = Math.max(4, nightsSel + 2);
-    retSel.replaceChildren(...Array.from({ length: maxDay }, (_, k) => k + 1).map((d) => new Option(`${dayLabel(d)}${d === 1 ? "(日帰り)" : ""} ${dayDate(state, d)}`, String(d))));
-    retSel.value = isLodging ? String(nightsSel + 1) : "1";
+    const choices = returnDayChoices(o.dep, (state.booking || {}).nights, isLodging);
+    const retSel = $("ret-day");
+    retSel.replaceChildren(...choices.days.map((c) => new Option(c.label, c.value)));
+    retSel.value = choices.selected;
     const defaultStart = () => ($("ret-day").value === "1" ? hhmm(addSec(last.arrive, 2 * 3600)) : ((hotelTimes(state.place) || {}).checkout || "10:00"));
     $("ret-start").value = defaultStart();
     const changed = () => invalidateReturn("条件を変えたので「帰りの時間を計算」を押してください。");
@@ -1603,9 +1587,6 @@
     return out;
   }
 
-  // Worker には日本時間(+09:00)の形で送る
-  const isoJST = (d) => new Date(d.getTime() + 9 * 3600 * 1000).toISOString().slice(0, 19) + "+09:00";
-
   async function routeLeg(from, to, departures) {
     const res = await fetch(`${CFG.apiBase}/routes`, {
       method: "POST",
@@ -1739,7 +1720,7 @@
 
       // selected[区間番号] = 選んだ休憩場所(施設名の上下線を除いた名前)。出発時刻を切り替えても引き継ぐ
       // 予約条件は計算時点で固定(Codex 指摘 3)。空室データは 1 泊固定なので泊数も記録する
-      const checkoutVal = $("checkout")?.value || ""; const nights = checkoutVal ? Math.round((Date.parse(checkoutVal) - Date.parse($("date").value)) / 86400000) : 1;
+      const nights = nightsOf($("date").value, $("checkout")?.value || "");
       const booking = { checkin: $("date").value, adultsRaw: $("adults") ? $("adults").value : "", nights };
       lastState = { options, bestIndex, interval, place, origin, waypoints, reduced, selected: [], current: bestIndex, booking, stale: false };
       const n0 = $("plan-stale"); if (n0) { n0.textContent = ""; n0.classList.add("hidden"); }
