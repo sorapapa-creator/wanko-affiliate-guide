@@ -487,7 +487,7 @@
       return `<tr data-i="${i}" class="${i === state.bestIndex ? "best" : ""}" style="cursor:pointer">
         <td class="num">${fmtClock(o.dep)}${i === state.bestIndex ? " おすすめ" : ""}</td>
         <td class="num">${fmtDur(t.driveSec)}</td>
-        <td class="num">${fmtClock(o.finalArrive)}</td>
+        <td class="num">${fmtClock(o.finalArrive)}${isDemoted(o.hours) ? ` <span class="badge b-closed">${esc(o.hours.reason)}</span>` : ""}</td>
         <td class="num">${delayText(t.driveSec - t.staticSec)}</td></tr>`;
     }).join("");
     $("compare").innerHTML = rows;
@@ -498,6 +498,7 @@
       "この表の到着は休憩なしの時刻です。下の「休憩場所を選ぶ」で選んだ休憩(1回" + CFG.restMinutes + "分)は、下のプランの時刻に足します。",
       multi ? "立ち寄り先を出る時刻の混み具合で、次の区間を計算し直しています。" : "",
       state.reduced ? `立ち寄り先が多いため、比べる出発時刻を${state.options.length}つに減らしました。` : "",
+      placeHours(state.place) ? `行き先の営業時間(${window.WankoHours.describe(placeHours(state.place))}・掲載情報の記載)の外に着く出発時刻は「おすすめ」にしません。` : "",
       "行をタップするとその出発時刻のプランを表示します。",
     ];
     $("compare-note").textContent = notes.filter(Boolean).join("");
@@ -581,6 +582,11 @@
       else if (lc != null && am > lc) warns.push(`宿への到着が${fmtClock(last.arrive)}で、最終チェックイン(${ht.last_checkin})を過ぎる計算です。出発を早めるか、遅れる旨を宿に連絡してください。`);
       else if (h >= 20 || h < 5) warns.push(`宿への到着が${fmtClock(last.arrive)}になります。チェックインの受付時間を宿に確認してください。`);
     } else if (state.place.type === "lodging" && (h >= 20 || h < 5)) warns.push(`宿への到着が${fmtClock(last.arrive)}になります。チェックインの受付時間を宿に確認してください。`);
+    const destHours = hoursAt(state.place, last.arrive);
+    if (isDemoted(destHours)) warns.push(`${closedSentence(state.place.name, last.arrive, destHours)}${state.hoursAllClosed ? "比べた出発時刻はどれも営業時間外に着くため、一番早い出発を残しています。" : ""}${closedFix(destHours)}${HOURS_SOURCE_NOTE}`);
+    else if (destHours && destHours.reason === "開店前") warns.push(`${closedSentence(state.place.name, last.arrive, destHours)}開くまで近くで時間を調整してください。`);
+    const wpClosed = legs.map((l, k) => (k < state.waypoints.length && state.waypoints[k].place ? visitClosed(state.waypoints[k].place, l.arrive, state.waypoints[k].stayMin) : null));
+    wpClosed.forEach((st, k) => { if (st) warns.push(`${closedSentence(state.waypoints[k].name, legs[k].arrive, st)}立ち寄りから外すか、出発時刻・順番を見直してください(宿泊なら帰る日に回す方法もあります)。${HOURS_SOURCE_NOTE}`); });
     if (restCount) warns.push("休憩を入れた分だけ後ろの時刻をずらしています。ずれた後の渋滞の変化は計算し直していません。");
     $("plan-warn").innerHTML = warns.map((w) => `<div class="warnbox">${esc(w)}</div>`).join("");
 
@@ -598,13 +604,13 @@
         const w = state.waypoints[k];
         const leave = addSec(l.arrive, w.stayMin * 60);
         items.push(`<li class="stop"><span class="time">${fmtClock(l.arrive)}</span><span>
-          <span class="badge b-via">立ち寄り${k + 1}</span> <b>${esc(w.name)}</b> <span class="badge">${esc(w.kind || "地点")}</span><br>
+          <span class="badge b-via">立ち寄り${k + 1}</span> <b>${esc(w.name)}</b> <span class="badge">${esc(w.kind || "地点")}</span>${closedBadge(wpClosed[k])}<br>
           <span class="note">滞在${fmtStay(w.stayMin)} → ${fmtClock(leave)}発${w.stayMin >= REST_RESET_MIN ? "(ここで休憩した扱い)" : ""}</span>
           ${w.place?.page_url ? `<br><a href="${esc(w.place.page_url)}">施設情報を開く</a>` : ""}
         </span></li>`);
       }
     });
-    items.push(`<li class="stop"><span class="time">${fmtClock(last.arrive)}</span><span><span class="badge b-go">到着</span> <b>${esc(state.place.name)}</b></span></li>`);
+    items.push(`<li class="stop"><span class="time">${fmtClock(last.arrive)}</span><span><span class="badge b-go">到着</span> <b>${esc(state.place.name)}</b>${closedBadge(isDemoted(destHours) ? destHours : null)}</span></li>`);
     $("plan").innerHTML = items.join("");
 
     // Googleマップ: 立ち寄り先は必ず入れ、選んだ休憩地点は入りきる分だけ(経由地は9か所まで)
@@ -850,6 +856,38 @@
   const hotelTimes = (place) => (place && TIMES[place.id] && (TIMES[place.id].checkin || TIMES[place.id].checkout)) ? TIMES[place.id] : null;
   const minutesOf = (hhmm) => { const m = /^(\d{1,2}):(\d{2})/.exec(hhmm || ""); return m ? +m[1] * 60 + +m[2] : null; };
   const jstMinutes = (d) => { const j = jst(d); return j.h * 60 + j.mi; };
+  // おでかけ先の営業時間(hours.js が facts から読んだもの)。明確に読めたもの(confidence: high)だけ使い、不明なら何も足さない
+  const HOURS_CACHE = new Map();
+  function placeHours(place) {
+    if (!window.WankoHours || !place || place.type !== "spot") return null;
+    if (!HOURS_CACHE.has(place.id)) {
+      let h = null;
+      try { h = window.WankoHours.fromFacts(place.facts); } catch { h = null; }
+      HOURS_CACHE.set(place.id, h && h.confidence === "high" ? h : null);
+    }
+    return HOURS_CACHE.get(place.id);
+  }
+  // その時刻に着いたときの営業判定 { ok, reason, text }。判定できなければ null
+  const hoursAt = (place, d) => { const h = placeHours(place); return h ? window.WankoHours.status(h, jst(d)) : null; };
+  // 閉店後・最終受付後・定休日・季節外(開店前は着いてから待てるので含めない)
+  const isDemoted = (st) => Boolean(st && !st.ok && window.WankoHours.DEMOTE_REASONS.includes(st.reason));
+  // 滞在する場所(立ち寄り・近くの場所)が営業時間外か: 着いた時点で閉店後・定休日など、または滞在中ずっと開店前
+  function visitClosed(place, arrive, stayMin) {
+    const st = hoursAt(place, arrive);
+    if (!st || st.ok) return null;
+    if (isDemoted(st)) return st;
+    const end = st.reason === "開店前" ? hoursAt(place, addSec(arrive, Math.max(0, stayMin - 1) * 60)) : null;
+    return end && end.reason === "開店前" ? st : null;
+  }
+  const closedBadge = (st) => (st ? ` <span class="badge b-closed">営業時間外(${esc(st.text)})</span>` : "");
+  function closedSentence(name, at, st) {
+    if (st.reason === "定休日") return `${name}への到着日 ${jstMd(at)}は定休日(${st.text})の計算です。`;
+    if (st.reason === "季節外") return `${name}への到着日 ${jstMd(at)}は${st.text}の外の計算です。`;
+    if (st.reason === "開店前") return `${name}への到着(${fmtClock(at)})が開店前(営業時間 ${st.text})の計算です。`;
+    return `${name}への到着(${fmtClock(at)})が営業時間(${st.text})を過ぎる計算です。`;
+  }
+  const HOURS_SOURCE_NOTE = "営業時間は掲載情報の記載です(当日の営業は公式で確認)。";
+  const closedFix = (st) => (st.reason === "定休日" || st.reason === "季節外" ? "日付を変えてください。" : "出発を早めるか、日付を変えてください。");
   function setDriveTimes(d) { DRIVE = d && d.places ? d : null; }
   function renderDriveFrom(place) {
     const box = $("dest-card");
@@ -906,13 +944,19 @@
     legs.forEach((l, k) => {
       let restAcc = 0;
       for (const r of l.rests) { const t = addSec(l.dep, r.tSec + restAcc); add(1, t, "stop", `<span class="badge">休憩</span> ${esc(r.stop.name)} ${restBadges(r)}<br><span class="note">${CFG.restMinutes}分</span>`); restAcc += CFG.restMinutes * 60; }
-      if (k < state.waypoints.length) { const w = state.waypoints[k]; add(1, l.arrive, "stop", `<span class="badge b-via">立ち寄り</span> <b>${esc(w.name)}</b><br><span class="note">滞在${fmtStay(w.stayMin)}</span>`); }
+      if (k < state.waypoints.length) {
+        const w = state.waypoints[k]; const st = w.place ? visitClosed(w.place, l.arrive, w.stayMin) : null;
+        if (st) warns.push(`${closedSentence(w.name, l.arrive, st)}立ち寄りから外すか、出発時刻・順番を見直してください(宿泊なら帰る日に回す方法もあります)。${HOURS_SOURCE_NOTE}`);
+        add(1, l.arrive, "stop", `<span class="badge b-via">立ち寄り</span> <b>${esc(w.name)}</b>${closedBadge(st)}<br><span class="note">滞在${fmtStay(w.stayMin)}</span>`);
+      }
       cursor = l.arrive;
     });
     const last = legs[legs.length - 1];
     const htA = state.place.type === "lodging" ? hotelTimes(state.place) : null;
     const earlyNote = htA && minutesOf(htA.checkin) != null && jstMinutes(last.arrive) < minutesOf(htA.checkin) ? ` <span class="note">(チェックイン開始 ${esc(htA.checkin)} より前)</span>` : "";
-    add(1, last.arrive, "stop", `<span class="badge b-go">到着</span> <b>${esc(state.place.name)}</b>${earlyNote}`);
+    const destHours = hoursAt(state.place, last.arrive);
+    if (isDemoted(destHours)) warns.push(`${closedSentence(state.place.name, last.arrive, destHours)}${closedFix(destHours)}${HOURS_SOURCE_NOTE}`);
+    add(1, last.arrive, "stop", `<span class="badge b-go">到着</span> <b>${esc(state.place.name)}</b>${earlyNote}${closedBadge(isDemoted(destHours) ? destHours : null)}`);
     // 到着日の近くの掲載先(到着後に順番に回り、宿へ戻る)
     let t = last.arrive; let here = { lat: state.place.geocode.lat, lon: state.place.geocode.lon };
     const visit = (day, startTime, items, backToLodging = true) => {
@@ -921,7 +965,9 @@
         const straight = km([prev.lat, prev.lon], [Number(p.geocode.lat), Number(p.geocode.lon)]);
         const mv = (prev === state.place.geocode || (prev.lat === Number(state.place.geocode.lat) && prev.lon === Number(state.place.geocode.lon))) ? nearbyMinutes(state.place.id, p, straight) : { min: Math.max(5, Math.round(straight * 1.3 / 35 * 60)), km: Math.round(straight * 13) / 10, exact: false };
         tt = addSec(tt, mv.min * 60);
-        add(day, tt, "stop", `<span class="badge b-via">${esc(TYPE_LABEL[p.type])}</span> <b>${esc(p.name)}</b> <span class="note">(車で約${mv.min}分${mv.exact ? "" : "・目安"})</span><br><span class="note">滞在${fmtStay(stay)} → ${fmtClock(addSec(tt, stay * 60))}発${p.page_url ? ` ・ <a href="${esc(p.page_url)}">施設情報</a>` : ""}</span>`);
+        const st = visitClosed(p, tt, stay);
+        if (st) warns.push(`${closedSentence(p.name, tt, st)}${day === 1 && isLodging ? "「帰る日」に移すか、行程から外してください。" : "行程から外すか、順番・滞在時間を見直してください。"}${HOURS_SOURCE_NOTE}`);
+        add(day, tt, "stop", `<span class="badge b-via">${esc(TYPE_LABEL[p.type])}</span> <b>${esc(p.name)}</b>${closedBadge(st)} <span class="note">(車で約${mv.min}分${mv.exact ? "" : "・目安"})</span><br><span class="note">滞在${fmtStay(stay)} → ${fmtClock(addSec(tt, stay * 60))}発${p.page_url ? ` ・ <a href="${esc(p.page_url)}">施設情報</a>` : ""}</span>`);
         tt = addSec(tt, stay * 60); prev = { lat: Number(p.geocode.lat), lon: Number(p.geocode.lon) };
       }
       if (items.length && day === 1 && backToLodging) {  // 到着日は最後に宿へ戻る(宿泊のとき)。翌日は最後の場所からそのまま帰路へ
@@ -950,7 +996,9 @@
       add(d, rs.dep, "stop", `<span class="badge b-go">${isLodging && d >= 2 ? "チェックアウト・出発" : "出発(帰路)"}</span> <b>${esc(state.place.name)}</b>`);
       rl.forEach((l, k) => {
         let acc = 0; for (const r of l.rests) { add(d, addSec(l.dep, r.tSec + acc), "stop", `<span class="badge">休憩</span> ${esc(r.stop.name)} ${restBadges(r)}<br><span class="note">${CFG.restMinutes}分</span>`); acc += CFG.restMinutes * 60; }
-        if (k < rs.waypoints.length) { const w = rs.waypoints[k]; add(d, l.arrive, "stop", `<span class="badge b-via">${esc(w.kind)}</span> <b>${esc(w.name)}</b><br><span class="note">滞在${fmtStay(w.stayMin)} → ${fmtClock(addSec(l.arrive, w.stayMin * 60))}発${w.place?.page_url ? ` ・ <a href="${esc(w.place.page_url)}">施設情報</a>` : ""}</span>`); }
+        if (k < rs.waypoints.length) { const w = rs.waypoints[k]; const st = w.place ? visitClosed(w.place, l.arrive, w.stayMin) : null;
+          if (st) warns.push(`${closedSentence(w.name, l.arrive, st)}帰り道の経由から外すか、帰りの出発時刻を見直してください。${HOURS_SOURCE_NOTE}`);
+          add(d, l.arrive, "stop", `<span class="badge b-via">${esc(w.kind)}</span> <b>${esc(w.name)}</b>${closedBadge(st)}<br><span class="note">滞在${fmtStay(w.stayMin)} → ${fmtClock(addSec(l.arrive, w.stayMin * 60))}発${w.place?.page_url ? ` ・ <a href="${esc(w.place.page_url)}">施設情報</a>` : ""}</span>`); }
       });
       const home = rl[rl.length - 1].arrive; const hd = tripDayIndex(state, home); const nRest = rl.reduce((s, l) => s + l.rests.length, 0);
       add(d, home, "stop", `<span class="badge b-go">帰宅</span> <b>${esc(state.origin.name)}</b> <span class="note">(${hd !== d ? dayLabel(hd) + fmtClock(home) + "・" : ""}実ルート${nRest ? `・休憩${nRest}回込み` : ""})</span>`);
@@ -1125,12 +1173,14 @@
     const warns = [];
     if (jst(home).h >= 21 || hd > rs.day) warns.push(`帰宅が${dayLabel(hd)}${fmtClock(home)}になる計算です。出発を早めるか、経由する場所や滞在時間を減らしてください。`);
     legs.forEach((l) => { if (l.needsRest && !l.rests.length) warns.push(`${l.from.name} → ${l.to.name} は前の休憩から約${fmtDur(l.sinceRestAtEnd)}運転します。下で休憩を選んでください。`); });
+    const wpClosed = rs.waypoints.map((w, k) => (w.place ? visitClosed(w.place, legs[k].arrive, w.stayMin) : null));
+    wpClosed.forEach((st, k) => { if (st) warns.push(`${closedSentence(rs.waypoints[k].name, legs[k].arrive, st)}経由から外すか、帰りの出発時刻を見直してください。${HOURS_SOURCE_NOTE}`); });
     $("ret-warn").innerHTML = warns.map((w) => `<div class="warnbox">${esc(w)}</div>`).join("");
     const items = [`<li class="stop"><span class="time">${fmtClock(rs.dep)}</span><span><span class="badge b-go">出発</span> <b>${esc(rs.place.name)}</b> <span class="note">(${dl})</span></span></li>`];
     legs.forEach((l, k) => {
       items.push(`<li class="leg"><span class="time"></span><span class="note">運転${fmtDur(l.durationSec)}(渋滞の影響 ${delayText(l.durationSec - l.staticDurationSec)})</span></li>`);
       let acc = 0; for (const r of l.rests) { items.push(restItem(r, addSec(l.dep, r.tSec + acc))); acc += CFG.restMinutes * 60; }
-      if (k < rs.waypoints.length) { const w = rs.waypoints[k]; items.push(`<li class="stop"><span class="time">${fmtClock(l.arrive)}</span><span><span class="badge b-via">立ち寄り</span> <b>${esc(w.name)}</b> <span class="badge">${esc(w.kind)}</span><br><span class="note">滞在${fmtStay(w.stayMin)} → ${fmtClock(addSec(l.arrive, w.stayMin * 60))}発${w.stayMin >= REST_RESET_MIN ? "(ここで休憩した扱い)" : ""}</span>${w.place?.page_url ? `<br><a href="${esc(w.place.page_url)}">施設情報を開く</a>` : ""}</span></li>`); }
+      if (k < rs.waypoints.length) { const w = rs.waypoints[k]; items.push(`<li class="stop"><span class="time">${fmtClock(l.arrive)}</span><span><span class="badge b-via">立ち寄り</span> <b>${esc(w.name)}</b> <span class="badge">${esc(w.kind)}</span>${closedBadge(wpClosed[k])}<br><span class="note">滞在${fmtStay(w.stayMin)} → ${fmtClock(addSec(l.arrive, w.stayMin * 60))}発${w.stayMin >= REST_RESET_MIN ? "(ここで休憩した扱い)" : ""}</span>${w.place?.page_url ? `<br><a href="${esc(w.place.page_url)}">施設情報を開く</a>` : ""}</span></li>`); }
     });
     items.push(`<li class="stop"><span class="time">${fmtClock(home)}</span><span><span class="badge b-go">帰宅</span> <b>${esc(rs.origin.name)}</b>${hd !== rs.day ? ` <span class="note">(${dayLabel(hd)})</span>` : ""}${restCount ? ` <span class="note">(休憩${restCount}回込み)</span>` : ""}</span></li>`);
     $("ret-plan").innerHTML = items.join("");
@@ -1734,14 +1784,20 @@
       }
       const valid = options.map((o, i) => [o, i]).filter(([o]) => !o.error);
       if (!valid.length) throw new Error("ルートが見つかりませんでした。");
-      // おすすめ = 運転時間(合計)が一番短い出発時刻。立ち寄り先の滞在時間は同じなので比べない
-      const bestIndex = valid.reduce((b, cur) => (cur[0].totals.driveSec < b[0].totals.driveSec ? cur : b))[1];
+      // おすすめ = 運転時間(合計)が一番短い出発時刻。立ち寄り先の滞在時間は同じなので比べない。
+      // 行き先がおでかけ先で営業時間が分かるときは、閉店後・最終受付後・定休日・季節外に着く出発時刻をおすすめにしない(全部そうなら一番早い出発)
+      for (const [o] of valid) o.hours = hoursAt(place, o.finalArrive);
+      const inHours = valid.filter(([o]) => !isDemoted(o.hours));
+      const hoursAllClosed = !inHours.length;
+      const bestIndex = hoursAllClosed
+        ? valid.reduce((b, cur) => (cur[0].dep < b[0].dep ? cur : b))[1]
+        : inHours.reduce((b, cur) => (cur[0].totals.driveSec < b[0].totals.driveSec ? cur : b))[1];
 
       // selected[区間番号] = 選んだ休憩場所(施設名の上下線を除いた名前)。出発時刻を切り替えても引き継ぐ
       // 予約条件は計算時点で固定(Codex 指摘 3)。空室データは 1 泊固定なので泊数も記録する
       const checkoutVal = $("checkout")?.value || ""; const nights = checkoutVal ? Math.round((Date.parse(checkoutVal) - Date.parse($("date").value)) / 86400000) : 1;
       const booking = { checkin: $("date").value, adultsRaw: $("adults") ? $("adults").value : "", nights };
-      lastState = { options, bestIndex, interval, place, origin, waypoints, reduced, selected: [], current: bestIndex, booking, stale: false };
+      lastState = { options, bestIndex, interval, place, origin, waypoints, reduced, selected: [], current: bestIndex, booking, stale: false, hoursAllClosed };
       const n0 = $("plan-stale"); if (n0) { n0.textContent = ""; n0.classList.add("hidden"); }
       if (window.RouteMap && window.RouteMap.setStale) window.RouteMap.setStale(false);
       renderCompare(lastState);
