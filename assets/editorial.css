@@ -66,3 +66,141 @@ header.guide-hero{max-width:1320px;margin:auto;background:transparent;color:var(
 .stay-photo{margin:14px 0 6px;border-radius:8px;overflow:hidden;background:#eef0e8}.stay-photo-frame{position:relative}.stay-photo img{display:block;width:100%;height:240px;object-fit:cover}.stay-photo .photo-credit{position:absolute;left:0;bottom:0;padding:3px 8px;font-size:10px;line-height:1.4;color:#fff;background:rgba(40,52,38,.72);border-radius:0 6px 0 0}.stay-photo figcaption{padding:8px 10px;font-size:11px;background:#f7f8f3;border-top:1px solid var(--line)}.stay-photo figcaption a{font-weight:500}@media(max-width:640px){.stay-photo img{height:180px}}
 
 /* layout-20261003 */.ad{font-size:12px;color:#4b5147;line-height:1.6}.ad strong{font-size:11px}.product-name{font-size:12px;color:#5a6052;margin:2px 0 6px;line-height:1.4}.hub-intents{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:0 0 12px}.hub-intents a{display:block;padding:16px 18px;border:1px solid var(--green);border-radius:12px;background:var(--mint);color:var(--deep);text-decoration:none}.hub-intents a strong{display:block;font-size:17px;margin-bottom:4px}.hub-intents a span{font-size:12px;color:#4d5a4b}.hub-intents a:hover{background:var(--green);color:#fff}.hub-intents a:hover span{color:#e8efe4}.stay-links-note{font-size:12px;color:#5a6052;margin:8px 0 0}@media(max-width:640px){header.editorial-hero h1{white-space:normal;overflow-wrap:anywhere}.hub-quick,.hub-intents{grid-template-columns:1fr}.ad{font-size:12px;padding:10px 0}.buy{font-size:13px;min-height:44px;display:flex;align-items:center;justify-content:center}button[data-problem],.filters button{min-height:40px}}@media(max-width:360px){.card{grid-template-columns:1fr}.photo{padding-top:9px}}
+
+/* design-20261004 */
+:root{--muted:#59625a;--surface:#fff;--sand:#f3f1ea;--radius:12px;--hairline:#e6e8e0;--shadow-soft:0 10px 30px rgba(40,45,39,.06);--photo-ph:linear-gradient(135deg,#eef0e8 0%,#e2e8db 55%,#f3f1ea 100%)}
+.vh{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}
+/* 文字の最小サイズとコントラスト(薄いグレーの 8〜11px をやめる) */
+@media(min-width:961px){.nav-links{font-size:14px}}
+.kicker{margin-bottom:20px}
+header.editorial-hero h1{font-size:clamp(28px,2.9vw,44px);line-height:1.55}
+.hero-description{font-size:15px;line-height:1.9;color:var(--muted);margin-bottom:20px}
+.hero-footnote{font-size:12px;margin-top:20px}
+.hero-visual figcaption{font-size:10px}
+.pathways h2{font-size:16px}
+.pathways p{font-size:12.5px;color:var(--muted);line-height:1.6}
+.pathways .path-number{font-size:10px}
+.intro>p{font-size:13.5px;color:var(--muted);max-width:420px}
+.intro .eyebrow{font-size:11px}
+.wanko-editorial-v1 .intro .eyebrow{color:#5f7255}
+.wanko-editorial-v1 footer{font-size:12.5px}
+header.guide-hero p{font-size:15px;line-height:1.9;color:var(--muted)}
+.guide-photo span{font-size:11px;color:var(--muted)}
+.guide-page .back{font-size:13px;display:inline-flex;align-items:center;min-height:44px}
+.decision div{font-size:13px}
+.decision b{font-size:14px}
+
+/* トップ: 日付から宿を探す */
+.hero-search{max-width:560px;margin:2px 0 18px;padding:18px 18px 16px;background:var(--surface);border:1px solid var(--hairline);border-radius:var(--radius);box-shadow:var(--shadow-soft)}
+.hero-search-title{margin:0 0 12px;font-size:15px;font-weight:700;letter-spacing:.03em;color:var(--ink)}
+.hs-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 12px}
+.hs-field{min-width:0}
+.hs-field label{display:block;margin-bottom:4px;font-size:12.5px;font-weight:600;color:var(--muted)}
+.hs-field input,.hs-field select{display:block;width:100%;min-height:46px;padding:8px 12px;border:1px solid #cdd3c6;border-radius:8px;background:#fbfbf8;color:var(--ink);font:inherit;font-size:15px}
+.hs-field input:focus-visible,.hs-field select:focus-visible{outline:3px solid #b27048;outline-offset:2px}
+.hero-search .hs-submit{display:block;width:100%;min-height:52px;margin-top:14px;padding:12px 16px;border:0;border-radius:8px;background:var(--green);color:#fff;font:inherit;font-size:16px;font-weight:700;letter-spacing:.06em;cursor:pointer;white-space:normal;transition:background .2s}
+.hero-search .hs-submit:hover{background:var(--deep)}
+.hs-note{margin:8px 0 0;font-size:12px;line-height:1.6;color:var(--muted)}
+.hero-copy .hero-sub-link{gap:10px;padding:8px 0;min-height:44px;background:none;color:var(--green);border-bottom:1px solid currentColor;border-radius:0;font-size:14px}
+.hero-copy .hero-sub-link:hover{background:none;color:var(--deep)}
+.hero-copy .hero-sub-link span{font-size:15px}
+
+/* 写真: 比率をそろえ、読み込み前は淡いグラデーション */
+.stay-photo{border-radius:10px;background:var(--photo-ph)}
+.stay-card .stay-photo img{height:auto;aspect-ratio:3/2;object-fit:cover;object-position:center;background:var(--photo-ph)}
+.stay-photo figcaption{font-size:12px;line-height:1.6}
+.stay-photo .photo-credit{font-size:11px}
+header.guide-hero:has(img[src="assets/stay-dog.webp"]){grid-template-columns:1.3fr 1fr;align-items:center}
+.guide-photo img[src="assets/stay-dog.webp"]{aspect-ratio:5/4;height:auto;max-height:420px;object-fit:cover;object-position:50% 62%!important;border-radius:12px;background:var(--photo-ph)}
+.guide-photo .travel-photo-frame{height:380px;border-radius:12px;background:var(--photo-ph)}
+.guide-photo img{background:var(--photo-ph)}
+
+/* 宿カード: 写真を左、犬の条件を右(広い画面) */
+.stay-card{border-radius:var(--radius);padding:28px 30px;border-color:var(--hairline)}
+.stay-head p{font-size:13px;color:var(--muted)}
+.stay-head h2{font-size:22px;line-height:1.5;letter-spacing:.02em}
+.sleep{font-size:12.5px}
+.answer-grid section{font-size:13.5px;line-height:1.75}
+.answer-grid b{font-size:13px}
+.amenity,.room-note{font-size:13px}
+.links a{font-size:13px;min-height:44px;display:inline-flex;align-items:center}
+@media(min-width:960px){
+.stay-card:has(>.stay-photo){display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);column-gap:32px;row-gap:0;align-items:start}
+.stay-card:has(>.stay-photo)>*{grid-column:2;min-width:0}
+.stay-card:has(>.stay-photo)>.stay-photo{grid-column:1;grid-row:1/span 30;position:sticky;top:170px;margin:4px 0 0}
+.stay-card:has(>.stay-photo) .answer-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+
+/* 宿: 検索・条件チップ・件数・並び順 */
+.guide-page .stay-search{display:block;margin:28px 0 8px;padding:16px 18px;background:rgba(255,255,255,.96);border:1px solid var(--hairline);border-radius:var(--radius)}
+.stay-search-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.guide-page .stay-search-row>label{font-size:14px;font-weight:600;white-space:nowrap;width:auto}
+.guide-page .stay-search-row input{flex:1 1 220px;min-width:0;min-height:46px;padding:8px 14px;border:1px solid #cdd3c6;border-radius:8px;background:#fbfbf8;font-size:15px}
+.guide-page #stay-count{font-size:15px;font-weight:700;color:var(--green);white-space:nowrap;font-variant-numeric:tabular-nums}
+.stay-sort{display:inline-flex;align-items:center;gap:8px}
+.guide-page .stay-sort label{width:auto;font-size:13px;color:var(--muted)}
+.stay-sort select{min-height:44px;padding:6px 10px;border:1px solid #cdd3c6;border-radius:8px;background:#fff;color:var(--ink);font:inherit;font-size:14px}
+.stay-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.stay-chip{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:8px 16px;border:1px solid #cdd3c6;border-radius:999px;background:#fff;color:var(--ink);font:inherit;font-size:14px;font-weight:500;cursor:pointer;transition:background .15s,border-color .15s,color .15s}
+.stay-chip:hover{border-color:var(--green)}
+.stay-chip .chip-n{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.stay-chip[aria-pressed="true"]{background:var(--green);border-color:var(--green);color:#fff}
+.stay-chip[aria-pressed="true"]::before{content:'\2713';font-size:12px}
+.stay-chip[aria-pressed="true"] .chip-n{color:#e3ecdf}
+.stay-reset{min-height:44px;padding:0 8px;border:0;background:none;color:var(--green);font:inherit;font-size:13px;text-decoration:underline;cursor:pointer}
+.stay-chip-note{margin:0 0 18px;font-size:12px;color:var(--muted)}
+.stay-empty{margin:12px 0 24px;padding:28px;text-align:center;background:#fff;border:1px dashed #cdd3c6;border-radius:var(--radius);font-size:14px}
+@media(min-width:1024px) and (min-height:760px){
+.guide-page .stay-search{position:sticky;top:0;z-index:30;box-shadow:0 8px 24px rgba(40,45,39,.07);backdrop-filter:blur(6px)}
+html:has(.stay-search){scroll-padding-top:180px}
+}
+@media(max-width:640px){
+.guide-page .stay-search{padding:14px}
+.guide-page .stay-search-row>label{width:100%}
+.guide-page .stay-search-row input{flex-basis:100%;font-size:16px}
+.stay-sort{margin-left:auto}
+.stay-chips{gap:6px}
+.stay-chip{padding:8px 12px;font-size:13.5px}
+.stay-card{padding:20px 18px}
+.guide-photo img[src="assets/stay-dog.webp"]{aspect-ratio:4/3;max-height:300px}
+.guide-photo .travel-photo-frame{height:300px}
+}
+
+/* お出かけ: 地域ボタンを上に固定(広い画面)・地図で見る */
+.trip{font-size:13.5px;border-radius:var(--radius);border-color:var(--hairline)}
+.trip h2{font-size:19px;line-height:1.5}
+.trip .facts{font-size:13.5px}
+.trip .facts dt{font-size:13px}
+.region{font-size:12px}
+.trip a{font-size:13px}
+main:has(#tripGrid)>.filters button{font-size:13.5px;min-height:44px;padding:8px 16px}
+@media(min-width:900px){
+main:has(#tripGrid)>.filters{position:sticky;top:0;z-index:30;margin:0 -12px;padding:12px;background:rgba(250,249,246,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--hairline)}
+html:has(#tripGrid){scroll-padding-top:96px}
+}
+.outing-search .map-toggle{display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:8px 18px;border:1px solid var(--green);border-radius:999px;background:#fff;color:var(--green);font-weight:600;cursor:pointer}
+.outing-search .map-toggle.active{background:var(--green);color:#fff}
+.map-panel{margin:-14px 0 28px;padding:0 20px 18px;max-height:min(70vh,640px);overflow:auto;overscroll-behavior:contain;background:#fff;border:1px solid var(--hairline);border-radius:var(--radius);box-shadow:var(--shadow-soft)}
+.map-head{position:sticky;top:0;z-index:1;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 0 10px;background:#fff;border-bottom:1px solid var(--hairline)}
+.map-head p{margin:0;font-size:13.5px}
+.map-head b{color:var(--green);font-size:15px}
+.map-panel h3{margin:16px 0 4px;font-size:14px;color:var(--green)}
+.map-panel h3 span{font-size:12px;font-weight:400;color:var(--muted)}
+.map-panel ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:28px}
+.map-panel li{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:8px 0;border-bottom:1px solid #eef0ea}
+.map-panel li>div{min-width:0}
+.map-card{font-size:14px;font-weight:600;color:var(--ink);text-decoration:none}
+.map-card:hover{text-decoration:underline}
+.map-panel li small{display:block;font-size:12px;color:var(--muted);overflow-wrap:anywhere}
+.map-open{flex:none;display:inline-flex;align-items:center;min-height:44px;padding:0 14px;border:1px solid #cdd3c6;border-radius:999px;color:var(--green);font-size:13px;text-decoration:none;white-space:nowrap}
+.map-open:hover{border-color:var(--green)}
+.map-close,.map-more{min-height:44px;padding:0 16px;border:1px solid #cdd3c6;border-radius:999px;background:#fff;color:var(--ink);font:inherit;font-size:13px;cursor:pointer}
+.map-more{display:block;margin:16px auto 0}
+.map-none{padding:16px 0;margin:0}
+@media(max-width:700px){.map-panel ul{grid-template-columns:1fr}.map-panel{padding:0 14px 14px}.outing-search .map-toggle{justify-content:center}}
+
+/* 動き: 控えめに。reduced-motion では既存ルールで止まる */
+@media(prefers-reduced-motion:no-preference){
+.stay-card,.trip{transition:box-shadow .25s ease,border-color .25s ease}
+.stay-card:hover,.trip:hover{box-shadow:0 12px 32px rgba(40,45,39,.06);border-color:#d7dccf}
+}

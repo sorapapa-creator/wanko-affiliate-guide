@@ -5,11 +5,37 @@ document.querySelectorAll('button[data-problem]').forEach(button=>{
 });
 const stays=[...document.querySelectorAll('.stay-card')];
 if(stays.length){
- const bar=document.createElement('div');bar.className='stay-search';
- bar.innerHTML='<label for="stay-query">宿・地域・条件で探す</label><input id="stay-query" type="search" placeholder="例：千葉、クレート、ドッグラン"><output aria-live="polite"></output>';
- stays[0].before(bar);const input=bar.querySelector('input'),count=bar.querySelector('output');
- const filter=()=>{let n=0;stays.forEach(card=>{card.hidden=!card.textContent.toLowerCase().includes(input.value.trim().toLowerCase());if(!card.hidden)n++});count.textContent=n+'宿を表示'};
- input.addEventListener('input',filter);filter();
+ /* design-20261004: 文字検索+犬の条件チップ+並べ替え。判定はカード内の文章(answer-grid)と data-sleep / data-cage だけを使う */
+ const secText=(card,re)=>[...card.querySelectorAll('.answer-grid section')].filter(s=>re.test((s.querySelector('b')||{}).textContent||'')).map(s=>(s.querySelector('p')||{}).textContent||'').join(' ');
+ const CHIPS=[
+  ['large','大型犬OK',c=>{const t=secText(c,/対象犬|頭数/);return /大型|(大きさ|サイズ|犬種|体重)[^。]{0,10}(制限なし|制限はありません|問わ|不問)/.test(t)&&!/大型犬?[^。]{0,10}(不可|できません|NG|お断り|ご遠慮|除く)|小型犬のみ|小型犬に限|中型犬まで|中型犬以下|小型・中型犬まで/.test(t)}],
+  ['multi','多頭OK',c=>{const t=secText(c,/対象犬|頭数|料金/);return /(^|[^0-9０-９,，.])([2-9２-９]|[1-9][0-9])\s*(頭|匹)|複数頭|多頭|頭数[^。]{0,8}(制限なし|無制限|問わ)/.test(t)}],
+  ['sleep','添い寝可',c=>{const s=c.dataset.sleep||'';return /^(可|条件付き)/.test(s)||/は可/.test(s)}],
+  ['cage','ケージ貸出',c=>{const t=((c.dataset.cage||'')+' '+secText(c,/ケージ/)).trim();if(/用意なし|ご?用意(は|が)?(ございません|ありません|していません)|貸(し)?出(し)?(は)?(なし|ありません|していません)|ケージ(の)?(貸出|用意)?なし|^なし|^持参|(ケージ|クレート|サークル|ゲージ)[^。]{0,10}の有無/.test(t))return false;return /(ケージ|クレート|サークル|ゲージ)[^。]{0,25}(あり|貸出|貸し出|用意|備付|備え付|常備|常設|完備|設置)|(貸出|貸し出し|用意|備え付け|常備)[^。]{0,10}(ケージ|クレート|サークル)|^あり|客室に(ケージ|クレート|サークル)|^(フロント)?(貸出|貸し出し|用意|備え?付け?|常備|常設)(あり|可)|^備え?付け?/.test(t)}],
+  ['run','ドッグラン',c=>{const t=secText(c,/ドッグラン/).trim();if(t)return !/^[(（]?(予約前確認|なし|無し|不明|公式に記載なし|記載なし|未確認)|ではございません|ではありません|近隣|周辺の|近くの/.test(t)&&!(/有無/.test(t)&&!/あり/.test(t));return /(ドッグラン|ラン)(あり|付|併設|完備)|専用ドッグラン|プライベートドッグラン/.test(secText(c,/./))}],
+  ['meal','食事同伴',c=>{const t=secText(c,/食事/).trim();if(!t||/^[(（]?(予約前確認|未確認|不可|なし|×)/.test(t))return false;return /一緒|同伴(可|OK|でき(る|ます))|同席|客室食|部屋食|個室|テラス|ダイニング[^。]{0,8}(可|一緒|同伴)|^可|^条件付き|レストラン[^。]{0,12}(同伴可|一緒|OK)/.test(t)}],
+  ['free','犬料金無料',c=>{const t=secText(c,/料金/).replace(/(ドッグラン|ラン|駐車場|アメニティ|貸出|ケージ|足洗い)[^。、]{0,6}無料|(介護|介助|盲導|補助)犬[^。、）)]{0,8}無料|含まれず|含まれません|(ドッグ)?ラン(利用)?料金込み/g,'');return /無料|(^|[^0-9,])0円|追加料金(は)?(なし|ございません|ありません|不要)|料金に含|に含まれ|かかりません|(料金|代金|パッケージ|プラン)(に)?(含む|込み)/.test(t)&&!/無料ではありません/.test(t)}]
+ ];
+ const PREFS=['東京都','神奈川県','千葉県','埼玉県','茨城県','栃木県','群馬県','山梨県','長野県','新潟県','静岡県','福島県','宮城県','山形県'];
+ const info=stays.map((card,i)=>{const area=((card.querySelector('.stay-head p')||{}).textContent||'').trim();const pref=(area.match(/^(東京都|北海道|(?:京都|大阪)府|[^\s・（(]{2,3}?県)/)||[])[1]||'';const f={};CHIPS.forEach(([k,,fn])=>{try{f[k]=fn(card)}catch(e){f[k]=false}});return{card,i,text:card.textContent.toLowerCase(),pref,rank:PREFS.indexOf(pref)<0?99:PREFS.indexOf(pref),f}});
+ const bar=document.createElement('div');bar.className='stay-search';bar.setAttribute('role','search');bar.setAttribute('aria-label','宿を探す');
+ bar.innerHTML='<div class="stay-search-row"><label for="stay-query">宿・地域で探す</label><input id="stay-query" type="search" placeholder="例：那須、伊豆、温泉" autocomplete="off"><output id="stay-count" aria-live="polite"></output><span class="stay-sort"><label for="stay-sort">並び順</label><select id="stay-sort"><option value="rec">おすすめ順</option><option value="pref">地域順</option></select></span></div>'
+  +'<div class="stay-chips" role="group" aria-label="犬の条件で絞り込む">'+CHIPS.map(([k,l])=>'<button type="button" class="stay-chip" data-chip="'+k+'" aria-pressed="false">'+l+'<span class="chip-n" aria-hidden="true"></span></button>').join('')+'<button type="button" class="stay-reset" hidden>条件をクリア</button></div>';
+ const note=document.createElement('p');note.className='stay-chip-note';note.textContent='条件は各宿の掲載内容から判定しています。予約前に宿の案内も確認してください。';
+ const marker=document.createComment('stay-list');stays[0].before(marker);marker.before(bar,note);
+ const empty=document.createElement('p');empty.className='stay-empty';empty.hidden=true;empty.textContent='条件に合う宿がありません。条件を減らしてください。';marker.before(empty);
+ const input=bar.querySelector('#stay-query'),count=bar.querySelector('#stay-count'),sort=bar.querySelector('#stay-sort'),reset=bar.querySelector('.stay-reset'),chipBtns=[...bar.querySelectorAll('.stay-chip')];
+ const active=new Set();
+ const filter=()=>{const q=input.value.trim().toLowerCase();const ok=(x,skip)=>(!q||x.text.includes(q))&&[...active].every(k=>k===skip||x.f[k]);let n=0;
+  info.forEach(x=>{const show=ok(x);x.card.hidden=!show;if(show)n++});
+  chipBtns.forEach(b=>{const k=b.dataset.chip;const m=info.reduce((a,x)=>a+(ok(x,k)&&x.f[k]?1:0),0);b.querySelector('.chip-n').textContent=m;b.setAttribute('aria-label',b.firstChild.textContent+' '+m+'宿');});
+  count.textContent=(q||active.size)?n+'宿 / 全'+stays.length+'宿':'全'+stays.length+'宿';empty.hidden=n>0;reset.hidden=!(q||active.size)};
+ const order=()=>{const list=sort.value==='pref'?[...info].sort((a,b)=>a.rank-b.rank||a.pref.localeCompare(b.pref,'ja')||a.i-b.i):info;const frag=document.createDocumentFragment();list.forEach(x=>frag.append(x.card));marker.after(frag)};
+ chipBtns.forEach(b=>b.addEventListener('click',()=>{const k=b.dataset.chip;active.has(k)?active.delete(k):active.add(k);b.setAttribute('aria-pressed',String(active.has(k)));filter()}));
+ let t;input.addEventListener('input',()=>{clearTimeout(t);t=setTimeout(filter,120)});
+ sort.addEventListener('change',order);
+ reset.addEventListener('click',()=>{active.clear();chipBtns.forEach(b=>b.setAttribute('aria-pressed','false'));input.value='';filter();input.focus()});
+ filter();
  stays.forEach(card=>{
   const head=card.querySelector('.stay-head');if(!head)return;
   const details=document.createElement('details');details.className='stay-details';
