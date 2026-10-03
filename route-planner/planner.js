@@ -140,14 +140,8 @@
       }
     }
 
-    const articleIds = new Set(published.map((place) => place.id));
-    // 既存の市町村単位のモデルコースも残す。県単位の代表点はルートが不正確なため含めない。
-    for (const place of p.places) {
-      if (place.type !== "trip_plan" || articleIds.has(place.id)) continue;
-      if (!place.page_url) continue;
-      published.push(place);
-    }
-    DESTINATIONS = published;
+    // モデルコース(trip_plan)は 2026-10-03 にオーナー指示で廃止(分かりにくい)。places.json にも入れない
+    DESTINATIONS = published.filter((place) => place.type !== "trip_plan");
     byId.clear();
     for (const place of DESTINATIONS) byId.set(place.id, place);
     PLACES = DESTINATIONS.filter((place) =>
@@ -157,7 +151,6 @@
     const groups = [
       ["lodging", "宿泊先｜犬と泊まる場所"],
       ["spot", "おでかけ先｜日帰り・立ち寄り"],
-      ["trip_plan", "モデルコース｜市区町村ごとの回り方"],
     ];
     for (const [type, label] of groups) {
       const options = DESTINATIONS.filter((place) => place.type === type).sort(compareDestinations);
