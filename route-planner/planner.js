@@ -575,7 +575,9 @@
     const ht = state.place.type === "lodging" ? hotelTimes(state.place) : null;
     if (ht) {
       const am = jstMinutes(last.arrive), ci = minutesOf(ht.checkin), lc = minutesOf(ht.last_checkin);
-      if (ci != null && am < ci) warns.push(`宿への到着が${fmtClock(last.arrive)}で、チェックイン開始(${ht.checkin})より${fmtDur((ci - am) * 60)}早い計算です。荷物を預けられるか宿に確認するか、立ち寄り先や近くの場所で時間を調整してください。`);
+      const overnight = jstYmd(last.arrive) !== jstYmd(o.dep);  // 日付をまたいで深夜に着く(翌日の 2 時など)は「早い」ではなく「受付終了後」(dot 指摘 2026-10-03)
+      if (overnight) warns.push(`宿への到着が翌日 ${fmtClock(last.arrive)} の深夜になる計算です。チェックイン受付${ht.last_checkin ? `(〜${ht.last_checkin})` : ""}を過ぎるので、出発時刻か日程を見直すか、宿に深夜到着の可否を確認してください。`);
+      else if (ci != null && am < ci) warns.push(`宿への到着が${fmtClock(last.arrive)}で、チェックイン開始(${ht.checkin})より${fmtDur((ci - am) * 60)}早い計算です。荷物を預けられるか宿に確認するか、立ち寄り先や近くの場所で時間を調整してください。`);
       else if (lc != null && am > lc) warns.push(`宿への到着が${fmtClock(last.arrive)}で、最終チェックイン(${ht.last_checkin})を過ぎる計算です。出発を早めるか、遅れる旨を宿に連絡してください。`);
       else if (h >= 20 || h < 5) warns.push(`宿への到着が${fmtClock(last.arrive)}になります。チェックインの受付時間を宿に確認してください。`);
     } else if (state.place.type === "lodging" && (h >= 20 || h < 5)) warns.push(`宿への到着が${fmtClock(last.arrive)}になります。チェックインの受付時間を宿に確認してください。`);
@@ -1218,9 +1220,11 @@
     parts.push(`${jstMd(o.dep)} の ${fmtClock(o.dep)} に${state.origin.name}を出発。`);
     if (state.waypoints.length) parts.push(`途中で${state.waypoints.map((w) => w.name).join("と")}に寄って、`);
     parts.push(`${restCount ? `休憩を${restCount}回はさみ、` : ""}${fmtClock(last.arrive)} ごろ${state.place.name}に着きます。`);
-    if (ht && minutesOf(ht.checkin) != null) {
+    if (ht && minutesOf(ht.checkin) != null && jstYmd(last.arrive) !== jstYmd(o.dep)) parts.push(`到着が翌日 ${fmtClock(last.arrive)} の深夜になるので、チェックイン受付${ht.last_checkin ? `(〜${ht.last_checkin})` : ""}を過ぎます。出発時刻か日程の見直しを。`);
+    else if (ht && minutesOf(ht.checkin) != null) {
       const diff = minutesOf(ht.checkin) - jstMinutes(last.arrive);
-      if (diff > 0) parts.push(`チェックインは ${ht.checkin} からなので、${day1.length ? `${day1.map((p) => p.p.name).join("・")}で過ごしてから宿へ。` : `近くで${fmtDur(diff * 60)}ほど遊んでから宿へ(下の「近くで犬と行ける場所」から選べます)。`}`);
+      if (diff > 0 && diff < 15) parts.push(`チェックイン開始(${ht.checkin})ごろの到着です。`);
+      else if (diff > 0) parts.push(`チェックインは ${ht.checkin} からなので、${day1.length ? `${day1.map((p) => p.p.name).join("・")}で過ごしてから宿へ。` : `近くで${fmtDur(diff * 60)}ほど遊んでから宿へ(下の「近くで犬と行ける場所」から選べます)。`}`);
       else if (minutesOf(ht.last_checkin) != null && jstMinutes(last.arrive) > minutesOf(ht.last_checkin)) parts.push(`最終チェックイン ${ht.last_checkin} を過ぎるので、出発を早めるか宿に連絡を。`);
       else parts.push(`チェックイン(${ht.checkin}〜)に間に合います。`);
     } else if (day1.length) parts.push(`着いたら${day1.map((p) => p.p.name).join("・")}へ。`);
@@ -1332,7 +1336,7 @@
       const OTA = /rakuten\.co\.jp|travel\.yahoo\.co\.jp|ikyu\.com|jalan\.net|valuecommerce\.com|a8\.net|jtb\.co\.jp/;
       const official = [...new Map((place.links || []).filter((l) => !l.affiliate && /^https?:/.test(l.url || "") && !OTA.test(l.url)).map((l) => [l.url, l])).values()].slice(0, 2);
       sections.push(`<div class="book-src"><h4>他の予約サイト・公式で確認</h4><div class="actions">
-        ${rakutenPage ? `<a href="${esc(rakutenPage.url)}" target="_blank" rel="noopener sponsored">楽天トラベルの施設ページ<span class="ad">広告</span></a>` : ""}
+        ${rakutenPage ? `<a href="${esc(rakutenPage.url)}" target="_blank" rel="noopener sponsored">楽天トラベルの施設ページ(日付・人数は予約先で指定)<span class="ad">広告</span></a>` : ""}
         ${others.map((l) => `<a href="${esc(l.url)}" target="_blank" rel="noopener sponsored">${esc(l.label)}で宿泊プランを確認<span class="ad">広告</span></a>`).join("")}
         ${official.map((l) => `<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label || "公式サイト")}</a>`).join("")}
         ${place.page_url ? `<a href="${esc(place.page_url)}" target="_blank" rel="noopener">掲載情報(犬の条件)</a>` : ""}
