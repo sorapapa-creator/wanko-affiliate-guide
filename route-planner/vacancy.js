@@ -171,9 +171,10 @@
 
   async function init() {
     const card = $("vacancy-card"); if (!card) return;
+    let dates = [];
     try {
       const idx = await loadIndex();
-      const dates = Object.keys(idx.dates || {}).sort();
+      dates = Object.keys(idx.dates || {}).sort();
       fillDates();
       $("vc-adults")?.addEventListener("change", fillDates);
       if (!dates.length) { $("vc-status").textContent = "空室データの準備中です(毎晩更新)。"; $("vc-go").disabled = true; return; }
@@ -183,9 +184,36 @@
     }
     // 出発地(主要駅)は drive_times.json の hub を使う。planner.js の読み込み後に埋める
     const fill = () => { const PD = window.PlannerData; const d = PD && PD.drive(); if (!d) return false; const sel = $("vc-origin"); sel.replaceChildren(...d.hubs.map((h) => new Option(h.name, h.id))); return true; };
-    if (!fill()) document.addEventListener("planner:data", fill, { once: true });
     $("vc-go").addEventListener("click", search);
     wireStationSearch();
+    // トップの検索(?checkin=&from=&size=&dogs=)から来たら、出発地の選択肢がそろってから条件を入れて探す(design-20261004)
+    if (fill()) applyQuery(dates); else document.addEventListener("planner:data", () => { fill(); applyQuery(dates); }, { once: true });
+  }
+
+  // ?checkin=YYYY-MM-DD(いちばん近い掲載日に合わせる)・from=駅名(主要駅)・size=small|medium|large・dogs=1〜3
+  function applyQuery(dates) {
+    const q = new URLSearchParams(location.search);
+    const ci = (q.get("checkin") || "").trim(), from = (q.get("from") || "").trim(), size = (q.get("size") || "").trim(), dogs = (q.get("dogs") || "").trim();
+    if (!ci && !from && !size && !dogs) return;
+    const notes = [];
+    if (/^\d{4}-\d{2}-\d{2}$/.test(ci) && dates.length) {
+      const t = Date.parse(ci);
+      const best = dates.reduce((a, d) => { const da = Math.abs(Date.parse(a) - t), dd = Math.abs(Date.parse(d) - t); return dd < da || (dd === da && d > a) ? d : a; }, dates[0]);
+      $("vc-date").value = best;
+      if (best !== ci) notes.push(`${jstMd(ci)} は空室データがないため、近い ${jstMd(best)} で探しました`);
+    }
+    const SIZE = { small: "small", medium: "medium", large: "large", "小型": "small", "中型": "medium", "大型": "large" };
+    if (SIZE[size]) $("vc-size").value = SIZE[size];
+    const n = parseInt(dogs, 10); if (n >= 1) $("vc-dogs").value = String(Math.min(n, 3));
+    if (from) {
+      const sel = $("vc-origin"); const name = from.replace(/駅$/, "");
+      const opt = [...sel.options].find((o) => o.value === from || o.textContent.trim().replace(/駅$/, "") === name);
+      if (opt) sel.value = opt.value; else notes.push(`出発地「${from}」は主要駅にないため、駅名で探してください`);
+    }
+    const card = $("vacancy-card");
+    if (card) card.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" });
+    const note = () => { if (notes.length) $("vc-status").textContent = `${notes.join("。")}。${$("vc-status").textContent}`; };
+    if (ci && $("vc-date").value) search().then(note); else note();
   }
 
   // 出発地「駅名で探す」(planner.js の駅一覧を借りる)。選ぶと #vc-origin に "st:lat,lon|駅名(県)" の選択肢を足して選ぶ
