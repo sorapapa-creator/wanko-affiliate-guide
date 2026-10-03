@@ -23,8 +23,8 @@
   // 人数は 2 名(基本)と 4 名(家族)。4 名は <日付>-a4.json
   const adultsSel = () => Number($("vc-adults")?.value) || 2;
   // 犬可否: pet(犬対応プラン) / no(ペット不可の記載) / unknown(一般客室、同伴可否は未確認)。planner.js と共用
-  const PET_NEG = /(ペット|愛犬|わんこ|ワンちゃん|わんちゃん|犬)[^。]{0,8}(不可|NG|ＮＧ|禁止|お断り|ご遠慮|なし)|(不可|NG|ＮＧ)[^。]{0,4}(ペット|犬)/;
-  const petClass = (p) => (p.pet ? "pet" : PET_NEG.test(`${p.plan || ""} ${p.room || ""}`) ? "no" : "unknown");
+  const PET_NEG = /(ペット|愛犬|わんこ|ワンちゃん|わんちゃん|犬)[^。]{0,8}(不可|NG|ＮＧ|禁止|お断り|ご遠慮|なし|無し|無(?!料)|以外)|(不可|NG|ＮＧ)[^。]{0,4}(ペット|犬)/;
+  const petClass = (p) => (PET_NEG.test(`${p.plan || ""} ${p.room || ""}`) ? "no" : p.pet ? "pet" : "unknown");  // 否定語があれば API の pet フラグより優先(「ペット同伴無し」対策 2026-10-03)
   // 空室データの検証: 条件(日付・人数・1 泊)の一致と取得後 24 時間以内(楽天の利用条件)。問題があれば理由の文字列、なければ ""
   const validate = (data, cond) => {
     if (!data || !data.hotels) return "空室データがありません";
@@ -142,7 +142,7 @@
       for (const [id, h] of Object.entries(data.hotels)) {
         const place = PD.byId(id); if (!place) continue;
         if (petOnly && !h.pet) { hiddenPet++; continue; }
-        const shown = (h.plans || []).filter((p) => petClass(p) !== "no"); if (!shown.length) { hiddenPet++; continue; }
+        const shown = (h.plans || []).filter((p) => petClass(p) !== "no"); h.pet = shown.filter((p) => petClass(p) === "pet").length; if (!shown.length || (petOnly && !h.pet)) { hiddenPet++; continue; }
         const minPet = shown.filter((p) => p.pet).map((p) => p.total).filter(Boolean); const minAny = shown.map((p) => p.total).filter(Boolean);
         const price = petOnly ? (minPet.length ? Math.min(...minPet) : null) : (minAny.length ? Math.min(...minAny) : null);
         if (budget && price && price > budget) { hiddenBudget++; continue; }
