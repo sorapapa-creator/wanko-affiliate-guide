@@ -997,8 +997,9 @@
     const homeAt = rs ? returnHome(rs) : null;
     $("itinerary-title").textContent = `最終行程表(${fmtClock(o.dep)}出発・${state.origin.name} → ${state.place.name}${homeAt ? `・帰宅 ${dayLabel(tripDayIndex(state, homeAt))}${fmtClock(homeAt)}` : ""})`;
     $("itinerary-warn").innerHTML = warns.map((w) => `<div class="warnbox">${esc(w)}</div>`).join("");
-    $("itinerary").innerHTML = Object.keys(dayItems).map(Number).sort((x, y) => x - y).map(render).join("") + `<div id="itin-booking"></div><h3>持ち物・確認</h3><ul>${check.map((c) => `<li>${esc(c)}</li>`).join("")}</ul>`;
+    $("itinerary").innerHTML = Object.keys(dayItems).map(Number).sort((x, y) => x - y).map(render).join("") + `<div id="itin-booking"></div><div id="itin-help"></div><h3>持ち物・確認</h3><ul>${check.map((c) => `<li>${esc(c)}</li>`).join("")}</ul>`;
     renderBooking(state);
+    renderNearbyHelp(state);
     $("itinerary-actions").innerHTML = `<button type="button" class="sub" id="itin-copy">行程表をコピー</button> <button type="button" class="sub" onclick="window.print()">印刷する</button>`;
     $("itin-copy").addEventListener("click", () => {
       const text = $("itinerary").innerText;
@@ -1279,6 +1280,46 @@
     if (gen !== destBookingGen) return;
     box.innerHTML = r.html ? `<div class="book-src"><h4>${r.hasPlans ? "この日に予約できる客室(楽天トラベル・取得時点)" : "この日の空室(楽天トラベル・取得時点)"}</h4>${r.html}</div>` : "";
   }
+  // もしものときの近くの施設(動物病院・薬局)。OpenPOI API(無料・キー不要・CORS 可。2026-10-03 公開)を補助枠として使う。
+  // 犬同伴条件は分からないので「犬と行ける場所」の候補には混ぜない。取れなければ枠ごと出さない(無くても壊れない)。24 時間はブラウザに記憶。
+  const POI_API = "https://api.openpoiapi.com/v1/search";
+  let helpGen = 0;
+  async function poiSearch(q, lat, lon, radius, limit) {
+    const key = `wanko_poi:${q}:${lat.toFixed(3)},${lon.toFixed(3)}:${radius}`;
+    try { const c = JSON.parse(localStorage.getItem(key) || "null"); if (c && Date.now() - c.t < 24 * 3600 * 1000) return c.r; } catch (e) {}
+    const ctl = new AbortController(); const timer = setTimeout(() => ctl.abort(), 6000);
+    try {
+      const res = await fetch(`${POI_API}?q=${encodeURIComponent(q)}&center=${lon},${lat}&radius=${radius}&limit=${limit}`, { signal: ctl.signal });
+      if (!res.ok) return [];
+      const d = await res.json(); const r = Array.isArray(d.results) ? d.results : [];
+      try { localStorage.setItem(key, JSON.stringify({ t: Date.now(), r })); } catch (e) {}
+      return r;
+    } catch (e) { return []; } finally { clearTimeout(timer); }
+  }
+  function kmBetween(a1, o1, a2, o2) {
+    const R = 6371, d2r = Math.PI / 180, dLat = (a2 - a1) * d2r, dLon = (o2 - o1) * d2r;
+    const h = Math.sin(dLat / 2) ** 2 + Math.cos(a1 * d2r) * Math.cos(a2 * d2r) * Math.sin(dLon / 2) ** 2;
+    return 2 * R * Math.asin(Math.sqrt(h));
+  }
+  async function renderNearbyHelp(state) {
+    const box = $("itin-help"); if (!box) return;
+    const gen = ++helpGen; const place = state.place;
+    const g = place.geocode || {}; const lat = Number(g.lat ?? place.lat), lon = Number(g.lon ?? place.lon);
+    if (!isFinite(lat) || !isFinite(lon)) { box.innerHTML = ""; return; }
+    const [vets, drugs] = await Promise.all([poiSearch("動物病院", lat, lon, 10000, 10), poiSearch("薬局", lat, lon, 5000, 10)]);
+    if (gen !== helpGen) return;
+    const pick = (rows, re, n) => rows.filter((r) => re.test(r.name || "") && isFinite(r.lat) && isFinite(r.lng))
+      .map((r) => ({ ...r, km: kmBetween(lat, lon, r.lat, r.lng) })).sort((a, b) => a.km - b.km)
+      .filter((r, i, arr) => arr.findIndex((x) => x.name === r.name) === i).slice(0, n);
+    const v = pick(vets, /動物|ペット|獣医|アニマル/, 4), d = pick(drugs, /薬局|薬房|ドラッグ|薬店/, 4);
+    if (!v.length && !d.length) { box.innerHTML = ""; return; }
+    const li = (r) => `<li><a href="https://www.google.com/maps/search/?api=1&query=${r.lat},${r.lng}" target="_blank" rel="noopener">${esc(r.name)}</a> <span class="note">直線 約${r.km < 10 ? r.km.toFixed(1) : Math.round(r.km)}km${r.city ? `・${esc(r.city)}` : ""}</span></li>`;
+    box.innerHTML = `<div class="book-src"><h4>もしものときの近くの施設(${esc(place.name)}の周辺)</h4>
+      ${v.length ? `<p class="note">動物病院(10km 以内)</p><ul>${v.map(li).join("")}</ul>` : ""}
+      ${d.length ? `<p class="note">薬局・ドラッグストア(5km 以内)</p><ul>${d.map(li).join("")}</ul>` : ""}
+      <p class="note">診療時間・休診日・犬の受け入れは各施設にご確認ください(閉業していることもあります)。出典: <a href="https://openpoiapi.com/attribution.html" target="_blank" rel="noopener">OpenPOI API</a>(Overture Maps Foundation, overturemaps.org / Japan Food Facilities: 各自治体・厚生労働省のオープンデータを加工して作成)</p></div>`;
+  }
+
   async function renderBooking(state) {
     const box = $("itin-booking"); if (!box) return;
     const gen = ++bookingGen; const place = state.place; const o = state.options[state.current];
