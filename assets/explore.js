@@ -37,27 +37,34 @@
   panel.id = "outing-map"; panel.className = "map-panel"; panel.hidden = true; panel.setAttribute("aria-label", "地図で見る(絞り込み中の行き先)");
   search.after(panel);
 
+  // design-pass-2: パネル = 見出し + 地図(Leaflet、開いたときだけ読み込む) + 地図アプリで開ける一覧
+  panel.innerHTML = '<div class="map-head"><p class="map-summary"></p><button type="button" class="map-close">閉じる</button></div><div class="wmap" id="outing-leaflet" role="region" aria-label="行き先の地図"></div><div class="map-list"></div>';
+  const summary = panel.querySelector(".map-summary"), list = panel.querySelector(".map-list"), host = panel.querySelector(".wmap");
+  panel.querySelector(".map-close").addEventListener("click", () => toggle(false));
+  let mapCtl = null;
+
   const STEP = 60; let limit = STEP;
   function render() {
     if (panel.hidden) return;
     const shown = cards.filter((c) => !c.hidden);
     const groups = new Map();
     shown.slice(0, limit).forEach((c) => { const g = info(c); const pref = ((g.addr + " ").match(/^(東京都|北海道|(?:京都|大阪)府|[^\s・]{2,3}?県)/) || g.area.match(/^(東京都|北海道|(?:京都|大阪)府|[^\s・]{2,3}?県)/) || [, "その他"])[1]; if (!groups.has(pref)) groups.set(pref, []); groups.get(pref).push(g); });
-    panel.innerHTML = `<div class="map-head"><p><b>${shown.length}件</b>を地図アプリで開けます。行き先の名前と住所で検索します。</p><button type="button" class="map-close">閉じる</button></div>`
-      + (shown.length ? [...groups].map(([pref, list]) => `<h3>${esc(pref)} <span>${list.length}</span></h3><ul>${list.map((g) => `<li><div><a class="map-card" href="#${esc(g.id)}">${esc(g.name)}</a><small>${esc(g.addr || g.area)}</small></div><a class="map-open" href="${esc(g.url)}" target="_blank" rel="noopener noreferrer">地図で開く<span class="vh">(${esc(g.name)}・新しいタブ)</span> ↗</a></li>`).join("")}</ul>`).join("") : '<p class="map-none">該当する行き先がありません。</p>')
+    summary.innerHTML = `<b>${shown.length}件</b>を地図に表示。ピンを押すと名前とカードへのリンクが出ます。下の一覧からは地図アプリで開けます。`;
+    list.innerHTML = (shown.length ? [...groups].map(([pref, items]) => `<h3>${esc(pref)} <span>${items.length}</span></h3><ul>${items.map((g) => `<li><div><a class="map-card" href="#${esc(g.id)}">${esc(g.name)}</a><small>${esc(g.addr || g.area)}</small></div><a class="map-open" href="${esc(g.url)}" target="_blank" rel="noopener noreferrer">地図で開く<span class="vh">(${esc(g.name)}・新しいタブ)</span> ↗</a></li>`).join("")}</ul>`).join("") : '<p class="map-none">該当する行き先がありません。</p>')
       + (shown.length > limit ? `<button type="button" class="map-more">さらに ${Math.min(STEP, shown.length - limit)}件を表示(残り ${shown.length - limit}件)</button>` : "");
-    panel.querySelector(".map-close").addEventListener("click", () => toggle(false));
-    const more = panel.querySelector(".map-more"); if (more) more.addEventListener("click", () => { limit += STEP; render(); });
+    const more = list.querySelector(".map-more"); if (more) more.addEventListener("click", () => { limit += STEP; render(); });
   }
   function toggle(open) {
     panel.hidden = !open; btn.setAttribute("aria-expanded", String(open)); btn.classList.toggle("active", open);
-    btn.lastChild.textContent = open ? " 地図の一覧を閉じる" : " 地図で見る";
-    if (open) { limit = STEP; render(); } else btn.focus();
+    btn.lastChild.textContent = open ? " 地図を閉じる" : " 地図で見る";
+    if (open) {
+      limit = STEP; render();
+      if (!mapCtl && window.WankoPlaceMap) mapCtl = window.WankoPlaceMap.mount(host, { cards, idOf: (c) => c.id, nameOf: (c) => info(c).name, areaOf: (c) => info(c).addr || info(c).area, unit: "件" });
+      else if (mapCtl) mapCtl.refresh();
+      if (window.matchMedia("(max-width:700px)").matches) host.scrollIntoView({ block: "center", behavior: "instant" });
+    } else btn.focus();
   }
   btn.addEventListener("click", () => toggle(panel.hidden));
-  // 絞り込み(outing-filters.js)のあとに一覧を作り直す
-  const later = () => setTimeout(() => { limit = STEP; render(); }, 0);
-  document.querySelectorAll("[data-filter]").forEach((b) => b.addEventListener("click", later));
-  ["outing-query", "outing-kind"].forEach((id) => { const el = document.getElementById(id); if (el) el.addEventListener(id === "outing-query" ? "input" : "change", later); });
-  const reset = document.getElementById("outing-reset"); if (reset) reset.addEventListener("click", later);
+  // 絞り込み(outing-filters.js が wanko:filtered を出す)のあとに一覧を作り直す
+  document.addEventListener("wanko:filtered", () => { limit = STEP; render(); });
 })();

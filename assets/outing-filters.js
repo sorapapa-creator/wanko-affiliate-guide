@@ -15,6 +15,7 @@
     });
     buttons.forEach(b => {b.classList.toggle('active', b.dataset.filter === region); b.setAttribute('aria-pressed', String(b.dataset.filter === region));});
     document.querySelector('#outing-count').textContent = count ? `${count}件の行き先` : '該当する行き先がありません。条件を減らしてお試しください。';
+    document.dispatchEvent(new CustomEvent('wanko:filtered', {detail: {shown: count}}));
   }
   buttons.forEach(b => b.addEventListener('click', () => {region = b.dataset.filter; update();}));
   query.addEventListener('input', update);
