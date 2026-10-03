@@ -223,6 +223,44 @@
   .timeline li.stop { background: var(--accent-soft); border-radius: 8px; padding-left: 6px; padding-right: 6px; }
   .timeline li.leg { padding: 2px 0; border-top: 0; }
 </style>
+<style id="site-tokens-20261004">
+  /* design-pass-2 (2026-10-04): サイト本体(assets/editorial.css)の色・文字にそろえる。
+     ボタンの橙(アクセント)は残し、白文字とのコントラスト 5:1 以上(#a9572b)。ダークモードの値は上の定義のまま */
+  :root {
+    --bg: #faf9f6; --panel: #ffffff; --text: #282d27; --muted: #59625a; --line: #e1e3db;
+    --accent: #a9572b; --accent-soft: #eef3ec; --good: #3e5846; --warn: #9a6200; --chip: #eaf0e8;
+    --site-green: #3e5846; --site-deep: #293f31; --site-mint: #eaf0e8; --site-field: #cdd3c6;
+  }
+  body { font-family: "Yu Gothic", "YuGothic", "Hiragino Sans", Meiryo, system-ui, sans-serif; line-height: 1.75; }
+  h1 { font-size: clamp(1.45rem, 3.2vw, 1.9rem); font-weight: 600; letter-spacing: .04em; color: var(--text); }
+  h2 { letter-spacing: .02em; }
+  a { color: var(--site-green); }
+  .wrap > p a { display: inline-flex; align-items: center; min-height: 32px; }
+  .entry2 a.main, button.primary, .vc-plan a.vc-book, .gm-btn { background: var(--accent); }
+  button.primary:hover, .entry2 a.main:hover { background: #8f4822; }
+  .actions a { border-color: var(--site-green); color: var(--site-green); }
+  .actions a.main { color: #fff; border-color: var(--accent); }
+  button.sub { border-color: var(--site-green); color: var(--site-green); }
+  .checklist .fix a, .sub-link, .wp-details { color: var(--site-green); }
+  .sug button:hover, .sug button.active { background: var(--site-mint); }
+  .guide, form, .card { border-color: var(--line); }
+  #form { border-radius: 14px; border-color: var(--line); box-shadow: 0 10px 30px rgba(40,45,39,.06); }
+  #form fieldset { background: #fff; border-color: var(--line); border-radius: 12px; }
+  #form .planner-field-label { color: var(--muted); }
+  .planner-field-label small { color: #6b7466; }
+  #form input:not([type="checkbox"]):not([type="radio"]), #form select, #nearby-select { border-color: var(--site-field); background: #fbfbf8; color: var(--text); border-radius: 8px; }
+  #form select:focus-visible, #form input:focus-visible, #nearby-select:focus-visible { outline-color: #b27048; border-color: var(--site-green); }
+  #dest-q, .wp-q { background: #fbfbf8; border-color: var(--site-field); color: var(--text); }
+  #dest-q optgroup { color: var(--site-green); }
+  .destination-choice-guide > div { background: #f6f7f2; border-color: var(--line); }
+  .destination-choice-guide strong { color: var(--site-green); }
+  .destination-choice-guide span, .destination-instruction { color: var(--muted); }
+  .rest-leg, .rest-opt { border-color: var(--line); }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) a { color: #9cc3a6; }
+    :root:not([data-theme="light"]) .actions a:not(.main), :root:not([data-theme="light"]) button.sub { color: #9cc3a6; border-color: #9cc3a6; }
+  }
+</style>
 <meta property="og:site_name" content="わんことのじかん">
 <meta property="og:title" content="わんこ旅行プラン｜わんことのじかん">
 <meta property="og:description" content="出発地・立ち寄り先・行き先から出発時刻ごとの予想時間を出し、運転が長い区間だけ休憩場所(SA・PA・道の駅)を選べます。">
