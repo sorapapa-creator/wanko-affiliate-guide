@@ -221,6 +221,15 @@
   .b-go { background: var(--text); color: var(--bg); } .b-via { background: var(--accent); color: #fff; }
   .timeline li.stop { background: var(--accent-soft); border-radius: 8px; padding-left: 6px; padding-right: 6px; }
   .timeline li.leg { padding: 2px 0; border-top: 0; }
+  /* mobile-20261003 */
+  @media (max-width: 640px) {
+    .steps a, .actions a, .chips label, label.chips { min-height: 44px; }
+    .actions a, .chips label { display: inline-flex; align-items: center; }
+    label.chips { align-items: center; }
+    .wrap > h1 + p a, footer .footer-links a, .checklist .fix a { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; min-width: 44px; }
+    details.trip-extra summary { padding: 10px 0; }
+    .planner-field-label small { font-size: 11px; letter-spacing: .1em; }
+  }
 </style>
 <meta property="og:site_name" content="わんことのじかん">
 <meta property="og:title" content="わんこ旅行プラン｜わんことのじかん">
