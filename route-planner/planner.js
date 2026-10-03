@@ -966,7 +966,8 @@
       }
       if (isLodging) {  // 翌日: 宿を出て近くの掲載先→帰路(往路と同じ運転時間の目安)
         const ht2 = hotelTimes(state.place); const coTime = (ht2 && ht2.checkout) || "10:00";
-        const checkout = clockOf(addSec(last.arrive, 24 * 3600), coTime);
+        const nightsN = Math.max(1, Number((state.booking || {}).nights) || 1);  // 復路未計算のときも泊数ぶんのチェックアウト日にする
+        const checkout = clockOf(addSec(last.arrive, nightsN * 24 * 3600), coTime);
         add(2, checkout, "stop", `<span class="badge b-go">チェックアウト(${ht2 && ht2.checkout ? esc(coTime) : "目安10:00"})</span> <b>${esc(state.place.name)}</b>`);
         const end2 = visit(2, checkout, day2);
         const driveBack = o.totals.driveSec;
@@ -1349,8 +1350,11 @@
     invalidateReturn("");
     const o = state.options[state.current]; const legs = withChosenRests(state, o); const last = legs[legs.length - 1];
     const isLodging = state.place.type === "lodging";
-    $("ret-day").value = isLodging ? "2" : "1";
-    for (const opt of $("ret-day").options) opt.textContent = opt.textContent.replace(/\s*\d+\/\d+\(.\)$/, "") + " " + dayDate(state, Number(opt.value));
+    // 帰る日はチェックアウト日(泊数)に連動。3 泊以上でも実日付で選べるように選択肢を作り直す(Codex 指摘 2026-10-03)
+    const nightsSel = Math.max(1, Number((state.booking || {}).nights) || 1);
+    const retSel = $("ret-day"); const maxDay = Math.max(4, nightsSel + 2);
+    retSel.replaceChildren(...Array.from({ length: maxDay }, (_, k) => k + 1).map((d) => new Option(`${dayLabel(d)}${d === 1 ? "(日帰り)" : ""} ${dayDate(state, d)}`, String(d))));
+    retSel.value = isLodging ? String(nightsSel + 1) : "1";
     const defaultStart = () => ($("ret-day").value === "1" ? hhmm(addSec(last.arrive, 2 * 3600)) : ((hotelTimes(state.place) || {}).checkout || "10:00"));
     $("ret-start").value = defaultStart();
     const changed = () => invalidateReturn("条件を変えたので「帰りの時間を計算」を押してください。");

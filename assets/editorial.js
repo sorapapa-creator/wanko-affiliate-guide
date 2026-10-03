@@ -15,7 +15,7 @@ if(stays.length){
   const details=document.createElement('details');details.className='stay-details';
   const summary=document.createElement('summary');
   summary.innerHTML='<span class="stay-toggle-copy"><strong class="stay-toggle-label">宿の設備・宿泊条件を見る</strong><small>添い寝・ケージ・犬用アメニティなど</small></span><span class="stay-toggle-symbol" aria-hidden="true">＋</span>';
-  details.append(summary);let anchor=head;const keep=['stay-photo','facility-photos','facility-voice','stay-times'];while(anchor.nextElementSibling&&keep.some(c=>anchor.nextElementSibling.classList.contains(c)))anchor=anchor.nextElementSibling;while(anchor.nextSibling)details.append(anchor.nextSibling);card.append(details);
+  details.append(summary);const fold=['amenity','room-note','card-meta','source-date'];/* Yahoo!トラベルの予約枠(secondary-offers)は外に残す */const kids=[...card.children].filter(el=>el!==head&&fold.some(c=>el.classList.contains(c)));if(!kids.length)return;kids[0].before(details);kids.forEach(el=>details.append(el));/* 2026-10-03: 犬条件の答え(answer-grid)・予約リンク(links)・行程ボタン(route-plan-cta)は折り畳まない(Codex 指摘) */
   details.addEventListener('toggle',()=>{
    summary.querySelector('.stay-toggle-label').textContent=details.open?'宿の詳細を閉じる':'宿の設備・宿泊条件を見る';
    summary.querySelector('.stay-toggle-symbol').textContent=details.open?'−':'＋';

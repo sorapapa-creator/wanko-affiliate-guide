@@ -118,12 +118,17 @@
       const dest = $("dest-q"); dest.value = b.dataset.id; dest.dispatchEvent(new Event("change", { bubbles: true }));
       $("date").value = b.dataset.ci; $("date").dispatchEvent(new Event("change", { bubbles: true }));
       if (window.PlannerData?.originForHub) window.PlannerData.originForHub($("vc-origin").value);
-      $("vc-status").textContent = `行き先を「${$("dest-q").selectedOptions[0]?.textContent || ""}」、出発日を ${jstMd(b.dataset.ci)} にして、予想時間を計算しています…(条件は下のフォームで変えられます)`;
+      // 検索したときの条件(人数・犬の頭数・大きさ・チェックアウト日)を行程側にも引き継ぐ(Codex 指摘 2026-10-03)
+      const snap = lastSnap || {}; const co = meta.checkout || "";
+      const setVal = (id, v) => { const el = $(id); if (!el || v === undefined || v === null || v === "") return; el.value = String(v); el.dispatchEvent(new Event("change", { bubbles: true })); };
+      setVal("adults", meta.adults || 2); setVal("dogs", snap.dogs); setVal("size", snap.size); if (co) setVal("checkout", co);
+      const sizeLabel = { small: "小型", medium: "中型", large: "大型" }[snap.size] || "";
+      $("vc-status").textContent = `宿「${$("dest-q").selectedOptions[0]?.textContent || ""}」・${jstMd(b.dataset.ci)}${co ? `〜${jstMd(co)}` : ""}・大人${meta.adults || 2}名・犬${snap.dogs || 1}頭${sizeLabel ? `(${sizeLabel})` : ""}で行程を作ります。客室・宿泊プランの確定は予約先で行います(条件は下のフォームで変えられます)`;
       $("form").requestSubmit();
     }));
   }
 
-  let searchSeq = 0;
+  let searchSeq = 0; let lastSnap = null;  // 直近の検索条件(「この宿で旅行プランを作る」で行程側へ引き継ぐ)
   async function search() {
     const status = $("vc-status"); const btn = $("vc-go"); const seq = ++searchSeq;
     btn.disabled = true; status.textContent = "空室データを読み込んでいます…"; $("vc-results").innerHTML = "";
@@ -133,6 +138,7 @@
       const snap = { size: $("vc-size").value, dogs: Number($("vc-dogs").value) || 1, wantSleep: $("vc-sleep").checked, petOnly: $("vc-petonly").checked, budget: Number($("vc-budget").value) || 0, hub: $("vc-origin").value, originName: $("vc-origin").selectedOptions[0]?.textContent || "出発地", strict: $("vc-strict").checked };
       const data = await loadDate(ci, adults);
       if (seq !== searchSeq) return;
+      lastSnap = snap;
       const bad = validate(data, { checkin: ci, adults }); if (bad) throw new Error(bad + "。別の日を選ぶか、しばらくしてからお試しください。");
       const PD = window.PlannerData; if (!PD) throw new Error("宿データの読み込み待ちです。少し待ってからもう一度押してください。");
       const { size, dogs, wantSleep, petOnly, budget, hub } = snap; const drive = PD.drive(); const origin = { name: snap.originName };

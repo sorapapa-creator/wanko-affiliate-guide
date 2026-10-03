@@ -44,6 +44,8 @@
     font: inherit; font-weight: 700; cursor: pointer; width: 100%; }
   button.primary:disabled { opacity: .6; cursor: wait; }
   .hint { color: var(--muted); font-size: .84rem; margin-top: 4px; }
+  .entry2 { margin: 0 0 12px; }
+  .entry2 a.main { background: var(--accent); color: #fff; border-color: var(--accent); font-size: 1rem; padding: 11px 18px; }
   .origin-search { position: relative; margin-top: 6px; }
   .origin-search input { width: 100%; box-sizing: border-box; }
   .sug { position: absolute; left: 0; right: 0; top: 100%; z-index: 30; background: #fff; border: 1px solid var(--line); border-radius: 8px; box-shadow: 0 6px 18px rgba(0,0,0,.12); max-height: 280px; overflow: auto; margin-top: 2px; }
@@ -232,11 +234,12 @@
 <body>
 <div class="wrap">
   <h1>わんこ旅行プラン</h1><p style="margin:4px 0 12px;font-size:14px"><a href="../dog-lodging-guide.html">犬と泊まれる宿</a>　<a href="../east-japan-dog-trips.html">犬とおでかけ</a>　<a href="../rest-stops.html">犬と休めるSA・PA・道の駅</a>　<a href="../travel-gear.html">旅行の持ち物（犬用品）</a>　<a href="../goods.html">毎日の犬用品</a>　<a href="../wear.html">犬服・ウェア</a>　<a href="../food.html">主食</a></p>
-<div class="ad" style="font-size:12px;color:#76786f;padding:8px 16px"><strong>広告</strong> このページにはアフィリエイト広告リンクが含まれる場合があります。リンク先で購入・予約されると運営者に紹介料が入る場合があります。バリューコマースの LinkSwitch により、提携先(Yahoo!ショッピング・Yahoo!トラベルなど)へのリンクが自動的に広告リンクとして扱われる場合があります。</div>
+<div class="ad" style="font-size:12px;color:#76786f;padding:8px 16px"><strong>広告</strong> 予約・購入のリンクを利用すると、運営者に紹介料が入る場合があります(バリューコマースの LinkSwitch により、提携先へのリンクが広告リンクとして扱われることがあります)。掲載順や比較内容は報酬の有無で変えていません。</div>
   <div class="guide" id="guide">
-    <p class="guide-title">はじめてでも 3 分で、犬と行く旅の一日が見えます。</p>
+    <div class="actions entry2"><a class="main" href="#vacancy-card">日付から宿を探す</a><a href="#form">決まった宿への行程を作る</a></div>
+    <p class="guide-title">順番に選ぶだけで、宿から帰宅までの一日が見えます。</p>
     <ol class="guide-steps">
-      <li><b>いつ・どこへ</b><span>出発日と出発地を入れて行き先を選ぶ。宿が決まっていなければ、すぐ上の「泊まれる日から宿を探す」で空室のある宿から選べます</span></li>
+      <li><b>いつ・どこへ</b><span>出発日と出発地を入れて行き先を選ぶ。宿が決まっていなければ、この下の「泊まれる日から宿を探す」で空室のある宿から選べます</span></li>
       <li><b>出発時刻を決める</b><span>渋滞込みの到着時刻を見比べて、おすすめか好きな時刻をタップ</span></li>
       <li><b>寄り道と休憩</b><span>地図の印から遊べる場所やカフェを選び、運転が長い区間は SA・PA で犬の休憩</span></li>
       <li><b>行程表と予約</b><span>出発からチェックイン、帰宅までを一枚の表に。空室があればその日付のまま予約へ</span></li>
@@ -246,6 +249,7 @@
 
   <div class="card" id="vacancy-card">
     <h2>泊まれる日から宿を探す(空室から逆算)</h2>
+    <p class="note">空室検索は、掲載日程(次の 8 週末と祝前日)の 1 泊・大人 2 名または 4 名に対応しています。ほかの日程・人数・子ども連れは、宿を選んだあと予約先でご確認ください。</p>
     <p class="hint">次の週末にどこなら泊まれるか、から決めたいときに。掲載宿(犬の条件を確認済み)のうち楽天トラベルに空室がある宿を、犬の条件と出発地からの所要時間で並べます。見つかったら「この宿で旅行プランを作る」で、そのまま往復の行程を作れます。</p>
     <div class="row four">
       <div><label class="t planner-field-label" for="vc-date"><span>チェックイン日</span><small>CHECK-IN</small></label><select id="vc-date"><option value="">読み込み中…</option></select></div>
@@ -536,8 +540,8 @@
 <!-- 更新したら ?v= の値を変える(ブラウザに古いファイルが残って新しい動作にならないのを防ぐ) -->
 <script src="config.js?v=2026100101"></script>
 <script src="route-map.js?v=2026100301"></script>
-<script src="vacancy.js?v=2026100309-petneg"></script>
-<script src="planner.js?v=2026100307-nocourse"></script>
+<script src="vacancy.js?v=2026100310-handoff"></script>
+<script src="planner.js?v=2026100308-layout"></script>
 <script src="trip-check.js?v=2026100108"></script>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "2847001768a143df87fa4e78edba9c7e"}'></script><!-- End Cloudflare Web Analytics -->
 
