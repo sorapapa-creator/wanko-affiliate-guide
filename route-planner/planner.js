@@ -799,7 +799,7 @@
         ${official.map((l) => `<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label || "公式サイト")}</a>`).join("")}
         ${aff.map((l) => `<a href="${esc(l.url)}" target="_blank" rel="noopener sponsored">${esc(l.label || "予約サイトで空室を見る")}<span class="ad">広告</span></a>`).join("")}
       </div>
-      <div id="dest-booking"></div>
+      <div id="dest-booking"></div><div id="dest-help"></div>
       ${place.checked_at ? `<p class="note photo-note">掲載情報の確認日: ${esc(place.checked_at)}${place.photo ? "・写真は楽天トラベル提供" : ""}</p>` : ""}`;
   }
 
@@ -1318,13 +1318,14 @@
     const h = Math.sin(dLat / 2) ** 2 + Math.cos(a1 * d2r) * Math.cos(a2 * d2r) * Math.sin(dLon / 2) ** 2;
     return 2 * R * Math.asin(Math.sqrt(h));
   }
-  async function renderNearbyHelp(state) {
-    const box = $("itin-help"); if (!box) return;
-    const gen = ++helpGen; const place = state.place;
+  const helpGens = {};
+  async function renderNearbyHelp(state, boxId = "itin-help") {  // 行程表と行き先カードの両方に出す(2026-10-04)
+    const box = $(boxId); if (!box) return;
+    const gen = helpGens[boxId] = (helpGens[boxId] || 0) + 1; const place = state.place;
     const g = place.geocode || {}; const lat = Number(g.lat ?? place.lat), lon = Number(g.lon ?? place.lon);
     if (!isFinite(lat) || !isFinite(lon)) { box.innerHTML = ""; return; }
     const [vets, drugs] = await Promise.all([poiSearch("動物病院", lat, lon, 10000, 10), poiSearch("薬局", lat, lon, 5000, 10)]);
-    if (gen !== helpGen) return;
+    if (gen !== helpGens[boxId]) return;
     const pick = (rows, re, n) => rows.filter((r) => re.test(r.name || "") && isFinite(r.lat) && isFinite(r.lng))
       .map((r) => ({ ...r, km: kmBetween(lat, lon, r.lat, r.lng) })).sort((a, b) => a.km - b.km)
       .filter((r, i, arr) => arr.findIndex((x) => x.name === r.name) === i).slice(0, n);
@@ -1758,7 +1759,7 @@
       renderCompare(lastState);
       showOption(lastState, bestIndex);
       renderDestination(place, profile);
-      renderDestBooking(lastState);
+      renderDestBooking(lastState); renderNearbyHelp(lastState, "dest-help");
       renderNearby(place);
       lastState.profile = profile;
       renderDriveFrom(place);
