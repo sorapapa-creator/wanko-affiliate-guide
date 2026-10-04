@@ -27,7 +27,9 @@
       let prev = 0;
       for (const m of sent.matchAll(/([1-9一二三四五六])\s*(?:頭|匹)(?!目|あたり|につき|以上)(?!\s*まで無料)/g)) {
         const n = KN[m[1]] || Number(m[1]); const back = sent.slice(prev, m.index); prev = m.index + m[0].length;
-        if (/(料金|円|無料)/.test(sent.slice(m.index, m.index + 8))) continue;
+        // 料金の区切り(「、」まで)の中の数は上限ではない(「4匹目から1匹+2,000円」「3匹までは料金無料」。dot 指摘 2026-10-04)
+        const cs = Math.max(sent.lastIndexOf("、", m.index), sent.lastIndexOf("，", m.index)) + 1; let ce = sent.slice(m.index).search(/[、，]/);  // 半角カンマは金額(2,000)にも使うので区切りにしない ce = ce < 0 ? sent.length : m.index + ce;
+        if (/(料金|円|無料|追加)/.test(sent.slice(cs, ce))) continue;
         const sz = []; if (/小型|小[・〜~～]/.test(back)) sz.push("small"); if (/中型|中[・〜~～]|[〜~～]中/.test(back)) sz.push("medium"); if (/大型/.test(back) && !/超大型/.test(back.replace(/大型/, ""))) sz.push("large");
         if (/小[・〜~～][^。]{0,4}大型|小型[〜~～]超大型|合計/.test(back)) { out.any = Math.max(out.any || 0, n); continue; }
         if (!sz.length) { out.any = Math.max(out.any || 0, n); continue; }
@@ -43,7 +45,7 @@
     const t = Z2H(key ? f[key] : "");
     const out = { dogsBySize: null, maxSize: null, maxKg: null, largeRoomOnly: false, mediumAsk: false };
     out.dogsBySize = countLimits(t);
-    const largeNg = /大型犬[^。]{0,6}(不可|NG|対象外|お断り|ご遠慮)/.test(t);
+    const largeNg = /(?<!超)大型犬[^。]{0,6}(不可|NG|対象外|お断り|ご遠慮)/.test(t);  // 「超大型犬は不可」は大型犬不可ではない
     const largeOk = !largeNg && (/大型犬[^。]{0,4}(歓迎|可|OK|対応|まで|も)/.test(t) || /(大きさ|サイズ|犬種)[^。]{0,12}制限(なし|無し|はありません)|超大型犬?[^。]{0,4}(まで|可|OK)/.test(t));
     out.largeRoomOnly = !largeNg && /大型犬は[^。]{0,24}(のみ|限定)/.test(t);
     if (largeOk || out.largeRoomOnly) out.maxSize = "large";

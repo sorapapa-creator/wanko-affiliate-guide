@@ -160,5 +160,11 @@ test("dog を渡さない planCounts は従来どおり", () => {
   assert.equal(R.planCounts([{ room: "小型犬のみ", pet: true }]).pet, 1);
 });
 
+test("料金の文「4匹目から1匹+2,000円」と「超大型犬は不可」を上限にしない(おもちゃばこ)", () => {
+  const p = lod("室内犬なら大型犬も可(超大型犬・外飼い犬は不可)。ペット3匹までは料金無料、4匹目から1匹+2,000円(税別)。");
+  assert.equal(R.dogFit(p, "small", 3).ng, false);
+  assert.equal(R.dogFit(p, "large", 1).ng, false);
+});
+
 console.log(`\n${n - failed}/${n} passed`);
 if (failed) process.exit(1);
