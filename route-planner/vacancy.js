@@ -183,7 +183,17 @@
       $("vc-status").textContent = "空室データの準備中です(毎晩更新)。"; $("vc-go").disabled = true;
     }
     // 出発地(主要駅)は drive_times.json の hub を使う。planner.js の読み込み後に埋める
-    const fill = () => { const PD = window.PlannerData; const d = PD && PD.drive(); if (!d) return false; const sel = $("vc-origin"); sel.replaceChildren(...d.hubs.map((h) => new Option(h.name, h.id))); return true; };
+    const fill = () => { const PD = window.PlannerData; const d = PD && PD.drive(); if (!d) return false; const sel = $("vc-origin");
+      // 旅行プランの出発地(約110駅・地域別)と同じ一覧にする。主要駅は実測の所要時間(hub id)、それ以外は直線距離からの目安(st:)(2026-10-04)
+      const hubByName = new Map(d.hubs.map((h) => [h.name.replace(/駅$/, ""), h.id])); const src = $("origin"); const groups = [];
+      if (src) for (const g of src.querySelectorAll("optgroup")) { const og = document.createElement("optgroup"); og.label = g.label;
+        for (const o of g.querySelectorAll("option")) { const nm = o.textContent.trim(); if (!/^[\d.\-]+,[\d.\-]+$/.test(o.value)) continue; const hid = hubByName.get(nm.replace(/駅$/, "")); og.appendChild(new Option(nm, hid || `st:${o.value}|${nm}`)); }
+        if (og.children.length) groups.push(og); }
+      if (src) { const og = document.createElement("optgroup"); og.label = "そのほかの駅";
+        for (const o of src.querySelectorAll(":scope > option")) { const nm = o.textContent.trim(); if (!/^[\d.\-]+,[\d.\-]+$/.test(o.value)) continue; const hid = hubByName.get(nm.replace(/駅$/, "")); og.appendChild(new Option(nm, hid || `st:${o.value}|${nm}`)); }
+        if (og.children.length) groups.push(og); }
+      if (groups.length) sel.replaceChildren(...groups); else sel.replaceChildren(...d.hubs.map((h) => new Option(h.name, h.id)));
+      if ([...sel.options].some((o) => o.value === "tokyo")) sel.value = "tokyo"; return true; };
     $("vc-go").addEventListener("click", search);
     wireStationSearch();
     // トップの検索(?checkin=&from=&size=&dogs=)から来たら、出発地の選択肢がそろってから条件を入れて探す(design-20261004)
@@ -208,7 +218,9 @@
     if (from) {
       const sel = $("vc-origin"); const name = from.replace(/駅$/, "");
       const opt = [...sel.options].find((o) => o.value === from || o.textContent.trim().replace(/駅$/, "") === name);
-      if (opt) sel.value = opt.value; else notes.push(`出発地「${from}」は主要駅にないため、駅名で探してください`);
+      if (opt) sel.value = opt.value;
+      else { const st = window.PlannerData && window.PlannerData.stations; if (st) st.load().then(() => { const hit = st.search(name).find((x) => x.name === name) || st.search(name)[0];
+          if (hit) { const label = `${hit.name}駅(${hit.pref})`; const o = new Option(label, `st:${hit.lat},${hit.lon}|${label}`); sel.insertBefore(o, sel.firstChild); sel.value = o.value; } else notes.push(`出発地「${from}」が見つからないため、駅名で探してください`); }); }
     }
     const card = $("vacancy-card");
     if (card) card.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" });
