@@ -72,7 +72,7 @@
         if (!a) return;
         map.closePopup();
         const card = document.getElementById(a.getAttribute("href").slice(1));
-        if (card) { e.preventDefault(); card.scrollIntoView({ block: "start", behavior: "instant" }); history.replaceState(null, "", a.getAttribute("href")); card.setAttribute("tabindex", "-1"); card.focus({ preventScroll: true }); }
+        if (card) { e.preventDefault(); (window.wankoScrollToCard ? window.wankoScrollToCard(card) : card.scrollIntoView({ block: "start", behavior: "instant" })); history.replaceState(null, "", a.getAttribute("href")); card.setAttribute("tabindex", "-1"); card.focus({ preventScroll: true }); }
       });
       update(true);
       let t; document.addEventListener("wanko:filtered", () => { clearTimeout(t); t = setTimeout(() => update(true), 60); });
