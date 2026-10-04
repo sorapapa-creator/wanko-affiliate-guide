@@ -121,5 +121,44 @@ test("vacancy-rules.js はブラウザでは window.VacancyRules になる", () 
   assert.equal(win.VacancyRules.petClass({ plan: "ペット不可", pet: true }), "no");
 });
 
+// ---- 犬の大きさ・頭数(2026-10-04 dot・Codex の実地テストで見つかった除外漏れ)
+const lod = (t) => ({ type: "lodging", facts: { "対象犬・頭数": t } });
+test("「1部屋2頭まで」は 3 頭で NG", () => {
+  assert.equal(R.dogFit(lod("体重10kg以下の小型犬のみ。1部屋2頭まで(2頭の合計体重10kgまで)。"), "small", 3).ng, true);
+  assert.equal(R.dogFit(lod("体重10kg以下の小型犬のみ。1部屋2頭まで(2頭の合計体重10kgまで)。"), "small", 2).ng, false);
+});
+test("「小型犬(または猫)2匹まで」は 3 頭・中型で NG", () => {
+  assert.equal(R.dogFit(lod("小型犬(または猫)2匹まで。中型犬以上は電話で問い合わせ。"), "small", 3).ng, true);
+  assert.equal(R.dogFit(lod("小型犬(または猫)2匹まで。中型犬以上は電話で問い合わせ。"), "medium", 1).ng, true);
+});
+test("大きさ別の頭数: 「小型犬3頭、中型・大型犬2頭まで」", () => {
+  const p = lod("小型犬3頭、中型・大型犬2頭までが公式案内の目安。");
+  assert.equal(R.dogFit(p, "small", 3).ng, false);
+  assert.equal(R.dogFit(p, "large", 3).ng, true);
+  assert.equal(R.dogFit(p, "large", 2).ng, false);
+});
+test("「大型犬・対象外犬種不可」は大型で NG", () => {
+  assert.equal(R.dogFit(lod("小型・中型犬対象、大型犬・対象外犬種不可。"), "large", 1).ng, true);
+  assert.equal(R.dogFit(lod("小型・中型犬対象、大型犬・対象外犬種不可。"), "medium", 1).ng, false);
+});
+test("「大型犬歓迎。小型犬のみは事前相談」は大型で OK(自動抽出の目印より本文を優先)", () => {
+  const p = { ...lod("大型犬歓迎。小型犬のみは事前相談（繁忙期は不可）。頭数：一律頭数制限なし"), dog_hints: { small_dog_only_mention: true } };
+  assert.equal(R.dogFit(p, "large", 3).ng, false);
+});
+test("料金の「2頭まで無料」「1頭目」は頭数の上限にしない", () => {
+  assert.equal(R.dogFit(lod("小型〜中型犬6頭／室、大型犬3頭／室。公式予約は2頭まで無料、3頭目以降1頭あたり2,200円。"), "small", 3).ng, false);
+});
+test("体重: 「中型犬(10kgまで)」は大型で NG", () => {
+  assert.equal(R.dogFit(lod("小型犬(5kgまで)・中型犬(10kgまで)。1棟2頭まで。"), "large", 1).ng, true);
+});
+test("客室名「小型〜中型のわんちゃんと」は大型犬のとき misfit", () => {
+  const c = R.planCounts([{ plan: "素泊まり", room: "小型〜中型のわんちゃんと一緒に", pet: true }, { plan: "ドッグラン付き客室", pet: true }], { size: "large", dogs: 1 });
+  assert.equal(c.misfit, 1); assert.equal(c.pet, 1);
+  assert.equal(R.planCounts([{ room: "小型〜中型のわんちゃんと一緒に", pet: true }], { size: "small", dogs: 1 }).misfit, 0);
+});
+test("dog を渡さない planCounts は従来どおり", () => {
+  assert.equal(R.planCounts([{ room: "小型犬のみ", pet: true }]).pet, 1);
+});
+
 console.log(`\n${n - failed}/${n} passed`);
 if (failed) process.exit(1);
