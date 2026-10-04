@@ -166,6 +166,16 @@
   .vc-plan.vc-pet { border-color: var(--good); background: var(--accent-soft); }
   .vc-plan a.vc-book { display: inline-block; margin-top: 8px; background: var(--accent); color: #fff; border-radius: 10px; padding: 10px 14px; font-weight: 700; text-decoration: none; font-size: .95rem; box-shadow: 0 2px 6px rgba(0,0,0,.12); }
   .vc-plan a.vc-book:hover { filter: brightness(1.08); }
+  /* 行程表・行き先カードの予約ボタン(2026-10-04 オーナー「もっと目立たせて」) */
+  a.book-main { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; width: 100%; box-sizing: border-box; margin: 10px 0 4px; min-height: 56px; padding: 12px 44px 12px 18px; border-radius: 12px; background: var(--accent); color: #fff !important; text-decoration: none; font-weight: 800; font-size: 1.08rem; letter-spacing: .02em; box-shadow: 0 4px 14px rgba(169, 87, 43, .35); border: 0; transition: transform .15s ease, box-shadow .15s ease; }
+  a.book-main::after { content: "→"; position: absolute; right: 18px; font-size: 1.2rem; }
+  a.book-main { position: relative; }
+  a.book-main:hover { transform: translateY(-1px); box-shadow: 0 6px 18px rgba(169, 87, 43, .45); }
+  a.book-main:focus-visible { outline: 3px solid #1f3a26; outline-offset: 3px; }
+  a.book-main .book-main-cond { font-size: .82rem; font-weight: 600; opacity: .92; }
+  a.book-main .ad { color: #fff; border-color: rgba(255,255,255,.75); }
+  .vc-plan.vc-pet a.book-main { background: #2e7d4f; box-shadow: 0 4px 14px rgba(46, 125, 79, .35); }
+  @media (prefers-reduced-motion: reduce) { a.book-main { transition: none; } a.book-main:hover { transform: none; } }
   .vc-plan a.vc-book .ad { color: #fff; border-color: rgba(255,255,255,.7); }
   .vc-actions { margin-top: 12px; }
   .vc-actions button.vc-make { width: 100%; font-size: 1.05rem; padding: 14px 18px; margin-bottom: 8px; box-shadow: 0 2px 8px rgba(0,0,0,.15); }
@@ -525,7 +535,7 @@
 <script src="route-map.js?v=2026100301"></script>
 <script src="vacancy-rules.js?v=2026100311"></script>
 <script src="vacancy.js?v=20261004-regions2"></script>
-<script src="planner.js?v=20261004-planadd"></script>
+<script src="planner.js?v=20261004-bookbtn"></script>
 <script src="trip-check.js?v=2026100108"></script>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "2847001768a143df87fa4e78edba9c7e"}'></script><!-- End Cloudflare Web Analytics -->
 
