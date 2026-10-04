@@ -100,10 +100,30 @@
     box.innerHTML = [...groups.entries()].map(([region, rows], gi) => {
       const prefs = new Map(); rows.forEach((r) => { const pf = prefOf(r.place).replace(/[都府県]$/, ""); if (pf) prefs.set(pf, (prefs.get(pf) || 0) + 1); });
       const sub = [...prefs.entries()].sort((a, b) => b[1] - a[1]).map(([k, v]) => `${k} ${v}`).join("・");
-      const cards = rows.map((row, i) => card(row, i).replace('<article class="card vc-card', `<article class="card vc-card${i >= SHOW ? " vc-hidden hidden" : ""}`)).join("");
+      const cards = rows.map((row, i) => card(row, i).replace('<article class="card vc-card', `<article data-pref="${esc(prefOf(row.place).replace(/[都府県]$/, ""))}" class="card vc-card${i >= SHOW ? " vc-hidden hidden" : ""}`)).join("");
       const more = rows.length > SHOW ? `<button type="button" class="sub vc-more" data-g="${gi}">この地方の残り ${rows.length - SHOW} 件も見る</button>` : "";
-      return `<section class="vc-group" data-g="${gi}"><h3 class="vc-group-head">${esc(region)} <span class="note">${rows.length}件${sub ? `(${esc(sub)})` : ""}</span></h3>${cards}${more}</section>`;
+      const prefBtns = prefs.size > 1 ? `<div class="vc-prefs" role="group" aria-label="${esc(region)}の県で絞る"><button type="button" class="vc-chip active" data-pref="">すべて</button>${[...prefs.entries()].sort((a, b) => b[1] - a[1]).map(([k, v]) => `<button type="button" class="vc-chip" data-pref="${esc(k)}">${esc(k)} ${v}</button>`).join("")}</div>` : "";
+      return `<section class="vc-group" data-g="${gi}" data-region="${esc(region)}"><h3 class="vc-group-head">${esc(region)} <span class="note">${rows.length}件${sub ? `(${esc(sub)})` : ""}</span></h3>${prefBtns}${cards}${more}</section>`;
     }).join("");
+    // 地方を選ぶボタン(結果の上)と、地方の中の県ボタン(2026-10-04 オーナー「地方を選んでからそこの宿を選べるように」)
+    if (groups.size > 1) {
+      const nav = document.createElement("div"); nav.className = "vc-regions"; nav.setAttribute("role", "group"); nav.setAttribute("aria-label", "地方を選ぶ");
+      nav.innerHTML = `<span class="vc-regions-label">地方を選ぶ</span><button type="button" class="vc-chip active" data-region="">すべて ${list.length}</button>` + [...groups.entries()].map(([r, rows]) => `<button type="button" class="vc-chip" data-region="${esc(r)}">${esc(r)} ${rows.length}</button>`).join("");
+      box.prepend(nav);
+      nav.addEventListener("click", (e) => {
+        const b = e.target.closest("button[data-region]"); if (!b) return;
+        nav.querySelectorAll("button").forEach((x) => { x.classList.toggle("active", x === b); x.setAttribute("aria-pressed", String(x === b)); });
+        box.querySelectorAll(".vc-group").forEach((g) => { g.hidden = !!b.dataset.region && g.dataset.region !== b.dataset.region; });
+        if (b.dataset.region) { const g = box.querySelector(`.vc-group[data-region="${CSS.escape(b.dataset.region)}"]`); if (g) { g.querySelectorAll(".vc-hidden").forEach((c) => c.classList.remove("hidden", "vc-hidden")); g.querySelector(".vc-more")?.remove(); } }
+        box.scrollIntoView({ block: "start" });
+      });
+    }
+    box.querySelectorAll(".vc-prefs").forEach((pn) => pn.addEventListener("click", (e) => {
+      const b = e.target.closest("button[data-pref]"); if (!b) return; const g = pn.closest(".vc-group");
+      pn.querySelectorAll("button").forEach((x) => { x.classList.toggle("active", x === b); x.setAttribute("aria-pressed", String(x === b)); });
+      g.querySelectorAll(".vc-hidden").forEach((c) => c.classList.remove("hidden", "vc-hidden")); g.querySelector(".vc-more")?.remove();
+      g.querySelectorAll(".vc-card").forEach((c) => { c.hidden = !!b.dataset.pref && c.dataset.pref !== b.dataset.pref; });
+    }));
     box.querySelectorAll(".vc-more").forEach((b) => b.addEventListener("click", () => { const g = b.closest(".vc-group"); g.querySelectorAll(".vc-hidden").forEach((c) => c.classList.remove("hidden", "vc-hidden")); b.remove(); }));
     box.querySelectorAll(".vc-make").forEach((b) => b.addEventListener("click", () => {
       const dest = $("dest-q"); dest.value = b.dataset.id; dest.dispatchEvent(new Event("change", { bubbles: true }));
