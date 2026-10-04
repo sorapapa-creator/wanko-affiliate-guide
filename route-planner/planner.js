@@ -821,7 +821,7 @@
       })
       .filter(Boolean);
     const select = $("nearby-select");
-    select.replaceChildren(new Option("掲載先を選ぶと施設情報へ移動します", ""));
+    select.replaceChildren(new Option("掲載先を選ぶと、ここに詳細が出ます", ""));
     for (const type of ["spot"]) {
       const group = document.createElement("optgroup");
       group.label = `${TYPE_LABEL[type]}（50音順）`;
@@ -831,8 +831,21 @@
       if (group.children.length) select.appendChild(group);
     }
     $("nearby-select-hint").textContent = (certHidden ? `証明書が必要な${certHidden}件は非表示(「証明書を持っていく」にチェックすると出ます)。` : "") + `行き先から直線${CFG.nearbyKm}km以内のおでかけ先を50音順で表示（宿は除く。読み未登録の英字名は末尾）。地域の代表点を含む目安です。選ぶと施設情報を開きます。`;
-    select.onchange = () => {  // 旅行プランを残したまま別タブで開き、施設ページから「旅行プランに入れる」で戻せるようにする(2026-10-04)
-      if (select.value) { window.open(planHref(select.value), "_blank"); select.value = ""; }
+    // 選んだ掲載先の詳細をその場に出す(別タブはプルダウンからだとブラウザに止められるため、2026-10-04)
+    const byHref = new Map(list.map((x) => [x.href, x]));
+    select.onchange = () => {
+      const box = $("nearby-detail"); if (!box) return;
+      const x = byHref.get(select.value); if (!x) { box.innerHTML = ""; return; }
+      const { p, d, href } = x; const t = nearbyMinutes(place.id, p, d);
+      const facts = Object.entries(p.facts || {}).filter(([k]) => /犬の条件|同伴|料金|営業|雨の日|持ち物|出発前/.test(k)).slice(0, 5);
+      const inList = document.querySelector(`.nb-pick[value="${CSS.escape(p.id)}"]`);
+      box.innerHTML = `<div class="nearby-detail-card"><h4>${esc(p.name)} <span class="badge">${esc((p.kinds || []).map((k) => ({ run: "ドッグラン", cafe: "カフェ", park: "公園", travel: "観光" }[k] || k)).join("・") || TYPE_LABEL[p.type])}</span></h4>
+        <p class="note">${esc(p.area || "")} ・ 車で約${t.min}分(${t.km}km${t.exact ? "" : "・直線からの目安"})${p.checked_at ? ` ・ 公式確認 ${esc(p.checked_at)}` : ""}</p>
+        ${p.theme ? `<p>${esc(p.theme)}</p>` : ""}
+        ${facts.length ? `<dl class="nearby-facts">${facts.map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join("")}</dl>` : ""}
+        <div class="actions"><button type="button" class="primary nearby-add" data-id="${esc(p.id)}">${inList && inList.checked ? "行程に入っています" : "この場所を行程に入れる"}</button><a href="${esc(planHref(href))}" target="_blank" rel="noopener">施設ページで詳しく見る ↗</a></div></div>`;
+      const add = box.querySelector(".nearby-add");
+      if (add) add.onclick = () => { if (!document.querySelector(`.nb-pick[value="${CSS.escape(p.id)}"]`)) { forcedNearby.add(p.id); renderNearbyPicker(place, list); } const cb = document.querySelector(`.nb-pick[value="${CSS.escape(p.id)}"]`); if (cb && !cb.checked) { cb.checked = true; cb.dispatchEvent(new Event("change", { bubbles: true })); } add.textContent = "行程に入れました(到着日・1時間)"; add.disabled = true; };
     };
     $("nearby-card").classList.toggle("hidden", !list.length);
     renderNearbyPicker(place, list);
@@ -866,6 +879,7 @@
     return { min: Math.max(5, Math.round(straightKm * 1.3 / 35 * 60)), km: Math.round(straightKm * 1.3 * 10) / 10, exact: false };
   }
   const NEARBY_STAY = [30, 60, 90, 120, 180];
+  const forcedNearby = new Set();  // プルダウンの詳細から「行程に入れる」で足した場所
   // 施設ページを「旅行プランから来た」印(plan=1)つきで開く。施設ページの「旅行プランに入れる」が localStorage で知らせてくる
   function planHref(href) { try { const u = new URL(href, location.href); u.searchParams.set("plan", "1"); return u.href; } catch (e) { return href; } }
   window.addEventListener("storage", (e) => {
@@ -880,15 +894,20 @@
   function renderNearbyPicker(place, list) {
     const box = $("nearby-pick");
     if (!list.length) { box.innerHTML = ""; $("nearby-actions").innerHTML = ""; refreshChecklist(); return; }
-    const rows = list.slice().sort((a, b) => a.d - b.d).slice(0, 20).map(({ p, d }) => {
+    // 前の選択(チェック・滞在時間・日)を残して作り直す。プルダウンから足した場所(forcedNearby)は 20 か所の外でも出す
+    const prev = {}; document.querySelectorAll(".nb-pick").forEach((cb) => { prev[cb.value] = { on: cb.checked, stay: document.querySelector(`.nb-stay[data-id="${CSS.escape(cb.value)}"]`)?.value, day: document.querySelector(`.nb-day[data-id="${CSS.escape(cb.value)}"]`)?.value }; });
+    const sorted = list.slice().sort((a, b) => a.d - b.d); const top = sorted.slice(0, 20);
+    for (const x of sorted.slice(20)) if (forcedNearby.has(x.p.id)) top.push(x);
+    const rows = top.map(({ p, d }) => {
       const t = nearbyMinutes(place.id, p, d);
       return `<label class="rest-opt"><input type="checkbox" class="nb-pick" value="${esc(p.id)}"><span><b>${esc(p.name)}</b> <span class="badge">${esc((p.kinds || []).join("・") || TYPE_LABEL[p.type])}</span>${p.page_url ? ` <a class="nb-more" href="${esc(planHref(p.page_url))}" target="_blank">詳しく見る ↗</a>` : ""}<br>
         <span class="note">${esc(p.area)} ・ 車で約${t.min}分(${t.km}km${t.exact ? "" : "・直線からの目安"})</span></span>
         <select class="nb-stay" data-id="${esc(p.id)}" style="margin-left:auto">${NEARBY_STAY.map((m) => `<option value="${m}"${m === 60 ? " selected" : ""}>${fmtStay(m)}</option>`).join("")}</select>
         <select class="nb-day" data-id="${esc(p.id)}"><option value="1">到着日(着いたあと)</option><option value="2">帰る日(帰り道に経由)</option></select></label>`;
     }).join("");
-    box.innerHTML = `<p class="note">行程に入れる場所にチェックし、滞在時間と「到着日/帰る日」を選びます(近い順・最大20か所)。最終行程表は、ページ下部の「最終行程表を作る前に確認」から作ります。</p><div class="rest-list">${rows}</div>`;
+    box.innerHTML = `<p class="note">行程に入れる場所にチェックし、滞在時間と「到着日/帰る日」を選びます(近い順・最大20か所。下の「近くの掲載先」から選んで足すこともできます)。最終行程表は、ページ下部の「最終行程表を作る前に確認」から作ります。</p><div class="rest-list">${rows}</div>`;
     $("nearby-actions").innerHTML = `<a href="#check-card" class="sub-link">↓ 確認して最終行程表を作る</a>`;
+    for (const [id, v] of Object.entries(prev)) { const cb = box.querySelector(`.nb-pick[value="${CSS.escape(id)}"]`); if (!cb) continue; cb.checked = v.on; const st = box.querySelector(`.nb-stay[data-id="${CSS.escape(id)}"]`); if (st && v.stay) st.value = v.stay; const dy = box.querySelector(`.nb-day[data-id="${CSS.escape(id)}"]`); if (dy && v.day) dy.value = v.day; }
     refreshChecklist();
   }
   function pickedNearby() {

@@ -153,6 +153,11 @@
   .vc-group { margin: 14px 0 6px; }
   .vc-group-head { margin: 14px 0 2px; padding: 6px 10px; border-left: 4px solid var(--accent); background: var(--accent-soft); border-radius: 6px; font-size: 1.05rem; }
   .vc-more { margin: 6px 0 10px; }
+  .nearby-detail-card { margin: 10px 0; padding: 12px 14px; border: 1px solid var(--line); border-radius: 10px; background: #fbfaf6; }
+  .nearby-detail-card h4 { margin: 0 0 4px; font-size: 1rem; }
+  .nearby-facts { margin: 8px 0; display: grid; gap: 4px; }
+  .nearby-facts dt { font-weight: 700; font-size: .85rem; }
+  .nearby-facts dd { margin: 0 0 4px; font-size: .88rem; }
   .vc-regions { position: sticky; top: 0; z-index: 5; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; padding: 8px 0; background: var(--bg, #faf9f6); }
   .vc-regions-label { font-size: .85rem; color: var(--muted); margin-right: 4px; }
   .vc-prefs { display: flex; flex-wrap: wrap; gap: 6px; margin: 6px 0 4px; }
@@ -480,7 +485,7 @@
     <div class="card hidden" id="nearby-card">
       <h2>行き先の近くで犬と行ける場所</h2>
       <label class="t planner-field-label" for="nearby-select"><span>近くの掲載先</span><small>NEARBY</small></label>
-      <select id="nearby-select"><option value="">掲載先を選ぶと施設情報へ移動します</option></select>
+      <select id="nearby-select"><option value="">掲載先を選ぶと、ここに詳細が出ます</option></select><div id="nearby-detail" aria-live="polite"></div>
       <p class="hint" id="nearby-select-hint">候補の選択後、施設情報の該当位置を開きます。</p>
       <p class="hint">下の一覧でチェックした場所は、<b>到着日</b>なら行き先に着いたあとに順番に回る予定として、<b>帰る日</b>なら「帰りのプラン」で帰り道に経由する予定として、最終行程表に時刻つきで入ります(日帰りで経由をONにすると、チェックした場所は全部帰り道に回ります)。</p>
       <div class="nearby" id="nearby"></div>
@@ -535,7 +540,7 @@
 <script src="route-map.js?v=2026100301"></script>
 <script src="vacancy-rules.js?v=2026100311"></script>
 <script src="vacancy.js?v=20261004-regions2"></script>
-<script src="planner.js?v=20261004-desthelp"></script>
+<script src="planner.js?v=20261004-nbdetail"></script>
 <script src="trip-check.js?v=2026100108"></script>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "2847001768a143df87fa4e78edba9c7e"}'></script><!-- End Cloudflare Web Analytics -->
 
