@@ -831,13 +831,13 @@
       if (group.children.length) select.appendChild(group);
     }
     $("nearby-select-hint").textContent = (certHidden ? `証明書が必要な${certHidden}件は非表示(「証明書を持っていく」にチェックすると出ます)。` : "") + `行き先から直線${CFG.nearbyKm}km以内のおでかけ先を50音順で表示（宿は除く。読み未登録の英字名は末尾）。地域の代表点を含む目安です。選ぶと施設情報を開きます。`;
-    select.onchange = () => {
-      if (select.value) window.location.assign(select.value);
+    select.onchange = () => {  // 旅行プランを残したまま別タブで開き、施設ページから「旅行プランに入れる」で戻せるようにする(2026-10-04)
+      if (select.value) { window.open(planHref(select.value), "_blank"); select.value = ""; }
     };
     $("nearby-card").classList.toggle("hidden", !list.length);
     renderNearbyPicker(place, list);
     $("nearby").innerHTML = list.slice().sort((a, b) => a.d - b.d).slice(0, 6).map(({ p, d, href }) => `
-      <a href="${esc(href)}">
+      <a href="${esc(planHref(href))}" target="_blank">
         <span class="badge">${esc(TYPE_LABEL[p.type])}</span> <b>${esc(p.name)}</b>
         <small>${esc(p.area)} ・ 直線 約${Math.round(d)}km（地域の目安）${p.theme ? " ・ " + esc(p.theme) : ""} ・ 施設情報を開く</small></a>`).join("");
   }
@@ -866,12 +866,23 @@
     return { min: Math.max(5, Math.round(straightKm * 1.3 / 35 * 60)), km: Math.round(straightKm * 1.3 * 10) / 10, exact: false };
   }
   const NEARBY_STAY = [30, 60, 90, 120, 180];
+  // 施設ページを「旅行プランから来た」印(plan=1)つきで開く。施設ページの「旅行プランに入れる」が localStorage で知らせてくる
+  function planHref(href) { try { const u = new URL(href, location.href); u.searchParams.set("plan", "1"); return u.href; } catch (e) { return href; } }
+  window.addEventListener("storage", (e) => {
+    if (e.key !== "wanko:plan-add" || !e.newValue) return;
+    let msg; try { msg = JSON.parse(e.newValue); } catch (err) { return; }
+    const cb = msg && msg.id && document.querySelector(`.nb-pick[value="${CSS.escape(msg.id)}"]`);
+    const out = $("nearby-actions");
+    if (!cb) { if (out) out.insertAdjacentHTML("afterbegin", `<p class="warnbox">「${esc(msg.name || "")}」は今の行き先の近くの候補に入っていないため、行程に入れられませんでした。立ち寄り先として追加してください。</p>`); return; }
+    if (!cb.checked) { cb.checked = true; cb.dispatchEvent(new Event("change", { bubbles: true })); }
+    if (out) out.insertAdjacentHTML("afterbegin", `<p class="note">「${esc(msg.name || "")}」を行程に入れました(到着日・1時間)。滞在時間と日は上の一覧で変えられます。</p>`);
+  });
   function renderNearbyPicker(place, list) {
     const box = $("nearby-pick");
     if (!list.length) { box.innerHTML = ""; $("nearby-actions").innerHTML = ""; refreshChecklist(); return; }
     const rows = list.slice().sort((a, b) => a.d - b.d).slice(0, 20).map(({ p, d }) => {
       const t = nearbyMinutes(place.id, p, d);
-      return `<label class="rest-opt"><input type="checkbox" class="nb-pick" value="${esc(p.id)}"><span><b>${esc(p.name)}</b> <span class="badge">${esc((p.kinds || []).join("・") || TYPE_LABEL[p.type])}</span><br>
+      return `<label class="rest-opt"><input type="checkbox" class="nb-pick" value="${esc(p.id)}"><span><b>${esc(p.name)}</b> <span class="badge">${esc((p.kinds || []).join("・") || TYPE_LABEL[p.type])}</span>${p.page_url ? ` <a class="nb-more" href="${esc(planHref(p.page_url))}" target="_blank">詳しく見る ↗</a>` : ""}<br>
         <span class="note">${esc(p.area)} ・ 車で約${t.min}分(${t.km}km${t.exact ? "" : "・直線からの目安"})</span></span>
         <select class="nb-stay" data-id="${esc(p.id)}" style="margin-left:auto">${NEARBY_STAY.map((m) => `<option value="${m}"${m === 60 ? " selected" : ""}>${fmtStay(m)}</option>`).join("")}</select>
         <select class="nb-day" data-id="${esc(p.id)}"><option value="1">到着日(着いたあと)</option><option value="2">帰る日(帰り道に経由)</option></select></label>`;
