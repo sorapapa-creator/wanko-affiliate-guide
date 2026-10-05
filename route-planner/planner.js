@@ -85,14 +85,16 @@
   }
 
   async function loadData() {
-    const [p, s, dt, lt] = await Promise.all([
+    const [p, s, dt, lt, oh] = await Promise.all([
       fetch(`${CFG.dataBase}places.json`).then((r) => r.json()),
       fetch(`${CFG.dataBase}rest_stops.json`).then((r) => r.json()),
       fetch(`${CFG.dataBase}drive_times.json`).then((r) => (r.ok ? r.json() : null)).catch(() => null),
       fetch(`${CFG.dataBase}lodging_times.json`).then((r) => (r.ok ? r.json() : null)).catch(() => null),
+      fetch(`${CFG.dataBase}outing_hours.json`).then((r) => (r.ok ? r.json() : null)).catch(() => null),  // 公式で確認した営業時間(2026-10-05〜。無くても動く)
     ]);
     STOPS = s.stops;
     TIMES = lt && typeof lt === "object" ? lt : {};
+    HOURS = oh && oh.places && typeof oh.places === "object" ? oh.places : {};
     setDriveTimes(dt);
 
     // 掲載ページのarticle[id]を読み取り、施設カードの増減を選択肢へ自動反映する。
@@ -866,6 +868,7 @@
   // ---------------------------------------------------------------- 主要駅からの走行時間(OSRM 前計算)・近くの掲載先の行程
 
   let DRIVE = null; // drive_times.json
+  let HOURS = {};   // outing_hours.json: おでかけ先の営業時間 {id: {open, close, closed_days, season, url}}(公式で確認したもの)
   let TIMES = {};   // lodging_times.json: 宿ごとのチェックイン・最終チェックイン・チェックアウト(楽天トラベル掲載情報)
   const hotelTimes = (place) => (place && TIMES[place.id] && (TIMES[place.id].checkin || TIMES[place.id].checkout)) ? TIMES[place.id] : null;
   const minutesOf = (hhmm) => { const m = /^(\d{1,2}):(\d{2})/.exec(hhmm || ""); return m ? +m[1] * 60 + +m[2] : null; };
@@ -874,6 +877,11 @@
   const HOURS_RE = /(?:営業時間|営業|開園|開館|利用時間)[^\d。]{0,8}(\d{1,2})[:：](\d{2})\s*[〜~～\-－ー]\s*(\d{1,2})[:：](\d{2})/;
   const placeHours = (p) => {
     if (!p || p.type === "lodging") return null;
+    const hd = HOURS[p.id];  // 公式で確認した営業時間を優先(掲載情報の文より新しい)
+    if (hd && /^\d{1,2}:\d{2}$/.test(hd.open || "") && /^\d{1,2}:\d{2}$/.test(hd.close || "")) {
+      const [oh2, om] = hd.open.split(":").map(Number), [ch, cm] = hd.close.split(":").map(Number);
+      return { open: oh2 * 60 + om, close: ch * 60 + cm, text: `営業時間 ${hd.open}〜${hd.close}${hd.closed_days ? `・定休 ${hd.closed_days}` : ""}`, src: "公式情報" };
+    }
     const m = HOURS_RE.exec(Object.values(p.facts || {}).join(" "));
     return m ? { open: +m[1] * 60 + +m[2], close: +m[3] * 60 + +m[4], text: `営業時間 ${m[1]}:${m[2]}〜${m[3]}:${m[4]}` } : null;
   };
@@ -881,8 +889,8 @@
   const hoursWarn = (p, arrive, leave) => {
     const h = placeHours(p); if (!h || h.close <= h.open) return "";
     const a = jstMinutes(arrive), l = jstMinutes(leave);
-    if (a < h.open) return `${p.name}に${fmtClock(arrive)}に着く計算ですが、${h.text}(掲載情報)より前です。時刻をずらすか、別の場所を選んでください。`;
-    if (a >= h.close || (jstYmd(leave) === jstYmd(arrive) && l > h.close)) return `${p.name}の滞在(${fmtClock(arrive)}〜${fmtClock(leave)})が${h.text}(掲載情報)を過ぎます。滞在を短くするか、時刻をずらしてください。`;
+    if (a < h.open) return `${p.name}に${fmtClock(arrive)}に着く計算ですが、${h.text}(${h.src || "掲載情報"})より前です。時刻をずらすか、別の場所を選んでください。`;
+    if (a >= h.close || (jstYmd(leave) === jstYmd(arrive) && l > h.close)) return `${p.name}の滞在(${fmtClock(arrive)}〜${fmtClock(leave)})が${h.text}(${h.src || "掲載情報"})を過ぎます。滞在を短くするか、時刻をずらしてください。`;
     return "";
   };
   function setDriveTimes(d) { DRIVE = d && d.places ? d : null; }
