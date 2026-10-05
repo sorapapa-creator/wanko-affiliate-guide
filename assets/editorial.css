@@ -314,3 +314,10 @@ header.editorial-hero>.hub-intents a{padding:12px 14px}
 /* user-voice-20261004: 犬連れの利用者の声(dot の要約) */
 .user-voice{margin:10px 0 6px;padding:10px 12px;border-left:3px solid #8aa37b;background:#f6f8f2;border-radius:0 8px 8px 0}.user-voice-title{margin:0 0 4px!important;font-size:12px;font-weight:700}.user-voice ul{margin:0;padding-left:1.2em;font-size:13px;line-height:1.7}.user-voice-note{margin:4px 0 0!important;font-size:11px;opacity:.8}
 .user-voice-text{margin:0!important;font-size:14px;line-height:1.8}
+/* vc-pixel-20261005: バリューコマースの計測用 1px 画像が写真枠の img 指定で 160px の白い四角になり、商品写真を押し出していた(dot 指摘)。見えない大きさに戻す */
+img[src*="valuecommerce.com/servlet/gifbanner"]{position:absolute!important;width:1px!important;height:1px!important;min-width:0!important;min-height:0!important;max-width:1px!important;opacity:0!important;pointer-events:none!important;margin:0!important;padding:0!important;border:0!important}
+/* 広告写真(Yahoo!・楽天の商品写真)も写真枠(高さ固定)の中に収める。犬服ページで枠からはみ出してタイトルに重なっていた(dot 指摘 2026-10-04) */
+.photo-ad a{display:flex;align-items:center;justify-content:center;height:100%;width:100%}
+.photo-ad a img:not([src*="gifbanner"]){width:auto!important;height:auto!important;max-width:100%!important;max-height:100%!important;aspect-ratio:auto!important;object-fit:contain}
+.photo-ad{grid-template-rows:minmax(0,1fr)}.photo-ad a{min-height:0}
+/* 購入ボタン直後の注記がボタンに 4px 隠れていた */ .buy + .review-guide{margin-top:8px!important}
