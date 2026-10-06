@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <title>わんことのじかん｜犬との旅行の持ち物チェックリスト（季節別・印刷できる）</title>
+  <style>
+    :root{--ink:#20352f;--green:#0d5c4f;--mint:#e8f4ef;--cream:#fffaf0;--line:#d9e5df;--orange:#ef8d32}
+    *{box-sizing:border-box}body{margin:0;color:var(--ink);font-family:"Yu Gothic UI","Hiragino Kaku Gothic ProN",sans-serif;background:linear-gradient(180deg,#f4fbf7 0,#fff 38%);line-height:1.75}
+    main,footer div{max-width:1120px;margin:auto}.eyebrow{font-weight:800;letter-spacing:.12em;margin:0 0 8px}
+    .back{display:inline-block;color:var(--green);font-weight:800;text-decoration:none;margin:0 0 20px}.notice{background:var(--cream);border:1px solid #f2d8b2;border-radius:18px;padding:18px 20px;margin-bottom:24px}
+    footer{background:#173d34;color:#eef8f4;padding:28px 20px}footer p{margin:4px 0}
+  </style>
+  <link rel="stylesheet" href="assets/editorial.css?v=20261004nh"><script src="assets/editorial.js?v=20261004b" defer></script>
+  <style>
+    /* 季節別の持ち物チェックリスト(2026-10-06 作成)。このページだけで使うクラスは ck- で始める */
+    .ck-wrap{max-width:1112px;margin:0 auto;padding:0 16px;overflow-wrap:anywhere}
+    .ck-wrap a{color:var(--green)}
+    .ck-plan-links{margin:8px 0 0;font-size:13px;line-height:2}
+    .ck-plan-links a{display:inline-block;margin-right:14px}
+    .ck-tools{position:sticky;top:0;z-index:20;display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center;justify-content:space-between;margin:8px 0 18px;padding:12px 14px;background:rgba(255,255,255,.97);border:1px solid var(--hairline,#e6e8e0);border-radius:12px;box-shadow:0 8px 24px rgba(40,45,39,.06)}
+    .ck-season{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:0;padding:0;border:0}
+    .ck-season legend{float:left;font-size:13px;font-weight:600;margin-right:4px;padding:0}
+    .ck-season button,.ck-actions button{min-height:40px;padding:6px 14px;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--ink);font:inherit;font-size:13px;font-weight:600;cursor:pointer}
+    .ck-season button[aria-pressed="true"]{background:var(--green);border-color:var(--green);color:#fff}
+    .ck-actions{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+    .ck-actions .ck-print{background:var(--deep,#293f31);border-color:var(--deep,#293f31);color:#fff}
+    .ck-progress{font-size:14px;font-weight:700;color:var(--green);font-variant-numeric:tabular-nums;margin:0}
+    .ck-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:14px;align-items:start}
+    .ck-group-title{font-size:clamp(19px,2.4vw,24px);font-weight:600;letter-spacing:.03em;margin:34px 0 10px;line-height:1.5}
+    .ck-group-title small{display:block;font-size:11px;letter-spacing:.14em;color:#738266;font-weight:600}
+    .ck-sec{background:#fff;border:1px solid var(--hairline,#e6e8e0);border-radius:12px;padding:14px 16px;min-width:0;scroll-margin-top:90px}
+    .ck-sec h3{display:flex;justify-content:space-between;gap:8px;align-items:baseline;font-size:16px;margin:0 0 6px;line-height:1.5}
+    .ck-sec h3 .ck-count{font-size:12px;font-weight:600;color:var(--muted,#59625a);white-space:nowrap;font-variant-numeric:tabular-nums}
+    .ck-sec.season-ss{border-top:4px solid #e3a24f}
+    .ck-sec.season-aw{border-top:4px solid #6b8fb5}
+    .ck-list{list-style:none;margin:0;padding:0}
+    .ck-list li{border-top:1px solid #f0f1ec;padding:6px 0}
+    .ck-list li:first-child{border-top:0}
+    .ck-list label{display:flex;gap:10px;align-items:flex-start;min-height:36px;cursor:pointer;line-height:1.6}
+    .ck-list input[type=checkbox]{flex:0 0 auto;width:20px;height:20px;margin:2px 0 0;accent-color:var(--green);cursor:pointer}
+    .ck-list input:checked+span{color:#7b847a;text-decoration:line-through;text-decoration-color:#a9b2a6}
+    .ck-note{display:block;font-size:12px;color:var(--muted,#59625a);margin:2px 0 0 30px;line-height:1.6}
+    .ck-gear{display:inline-block;font-size:12px;margin:2px 0 0 30px}
+    .ck-hint{margin:14px 0 0;padding:12px 14px;border-left:4px solid #b7791f;background:#fff8e6;border-radius:8px;font-size:13px}
+    .ck-saved{font-size:12px;color:var(--muted,#59625a);margin:6px 0 0}
+    .ck-print-only{display:none}
+    .ck-next{margin:30px 0 0;padding:18px 20px;border-radius:12px;background:var(--deep,#293f31);color:#fff;display:flex;flex-wrap:wrap;gap:12px 18px;align-items:center;justify-content:space-between}
+    .ck-next p{margin:0;max-width:620px}
+    .ck-next a{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:10px 20px;border-radius:999px;background:#fff;color:var(--deep,#293f31)!important;font-weight:700;text-decoration:none}
+    @media(max-width:600px){.ck-wrap{padding:0}.ck-tools{position:static}.ck-actions{width:100%}.ck-actions button{flex:1 1 auto}.ck-next a{width:100%}}
+    @media print{
+      @page{margin:12mm}
+      body{background:#fff!important;font-size:10.5pt;line-height:1.5;color:#000}
+      .site-nav,.skip,.guide-photo,.ck-plan-links,.back,.ck-tools,.ck-gear,.ck-next,.ck-saved,footer{display:none!important}
+      .guide-hero{display:block!important;padding:0!important;margin:0 0 6pt!important}
+      .guide-hero h1{font-size:17pt!important;line-height:1.3!important;margin:0 0 4pt!important}
+      .guide-hero p{font-size:9.5pt!important;color:#333!important;margin:0!important}
+      .guide-hero .eyebrow{display:none}
+      .ck-wrap{max-width:none;padding:0}
+      .notice{border:1px solid #999!important;border-radius:4px!important;padding:6pt 8pt!important;margin:0 0 8pt!important;font-size:9pt!important;background:#fff!important}
+      .ck-print-only{display:block}
+      .ck-memo{display:grid;grid-template-columns:1fr 1fr;gap:4pt 14pt;margin:0 0 6pt;font-size:9.5pt}
+      .ck-memo span{display:block;border-bottom:1px solid #777;padding:8pt 0 2pt}
+      .ck-group-title{font-size:12.5pt;margin:10pt 0 4pt;break-after:avoid;page-break-after:avoid}
+      .ck-group-title small{display:none}
+      .ck-grid{display:block}
+      .ck-sec{border:1px solid #bbb!important;border-radius:4px;padding:6pt 8pt;margin:0 0 6pt;break-inside:avoid;page-break-inside:avoid}
+      .ck-sec[hidden]{display:none!important}
+      .ck-sec h3{font-size:11pt;margin:0 0 2pt;break-after:avoid;page-break-after:avoid}
+      .ck-list{columns:2;column-gap:14pt}
+      .ck-list li{break-inside:avoid;page-break-inside:avoid;padding:2pt 0;border-top:0}
+      .ck-list label{min-height:0}
+      .ck-list input[type=checkbox]{width:12pt;height:12pt;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+      .ck-list input:checked+span{color:#000;text-decoration:none}
+      .ck-note{font-size:8.5pt;margin-left:20pt;color:#333}
+      .ck-hint{font-size:9pt;border-left:3px solid #999;background:#fff!important;padding:4pt 8pt}
+      a{color:inherit!important;text-decoration:none!important}
+    }
+  </style>
+<!-- wanko-search:start -->
+<meta name="description" content="犬との旅行の持ち物を、共通の持ち物と季節別（春夏の暑さ対策・秋冬の防寒と雪・乾燥）、宿に着いてからの確認に分けたチェックリスト。印をつけて保存でき、印刷して使えます。">
+<link rel="canonical" href="https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-trip-checklist.html">
+<meta name="robots" content="index,follow">
+<meta property="og:site_name" content="わんことのじかん">
+<meta property="og:title" content="犬との旅行の持ち物チェックリスト（季節別）｜わんことのじかん">
+<meta property="og:description" content="犬との旅行の持ち物を、共通の持ち物と季節別（春夏の暑さ対策・秋冬の防寒と雪・乾燥）、宿に着いてからの確認に分けたチェックリスト。印をつけて保存でき、印刷して使えます。">
+<meta property="og:url" content="https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-trip-checklist.html">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://sorapapa-creator.github.io/wanko-affiliate-guide/assets/og/og-top.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="ボーダーの服を着て見上げるダックスフンド">
+<meta name="twitter:card" content="summary_large_image">
+<!-- wanko-search:end -->
+</head>
+<body class="wanko-editorial-v1 guide-page"><a class="skip" href="#content">本文へ</a><nav class="site-nav" aria-label="メインナビゲーション"><a class="brand" href="index.html"><img class="ui-icon" src="assets/icons/paw-print.svg" alt="" width="22" height="22"><span>わんことのじかん<small>LIFE WITH OUR DOGS</small></span></a><div class="nav-links"><a href="route-planner/">旅行プラン</a><a href="dog-lodging-guide.html">泊まる</a><a href="east-japan-dog-trips.html">お出かけ</a><a href="travel-gear.html">旅行用品</a><a href="goods.html">犬用品</a><a href="wear.html">犬服</a><a href="food.html">主食</a></div></nav>
+<header class="guide-hero"><div><p class="eyebrow">PACKING CHECKLIST</p><h1>犬との旅行の<br>持ち物チェックリスト</h1><p>いつもの持ち物に、季節の持ち物と、宿に着いてからの確認を足しました。印をつけながら準備して、そのまま印刷もできます。</p></div><div class="guide-photo"><img src="assets/moment-rest.webp" alt="ボーダーの服を着て、飼い主のそばでくつろぐダックスフンド" width="810" height="1080" fetchpriority="high" style="object-position:center 40%"><span>忘れ物なく、いっしょに出発。</span></div></header>
+<main id="content">
+<div class="ck-wrap">
+  <p class="ck-plan-links"><a href="route-planner/">旅行プランを立てる →</a><a href="autumn-winter-dog-trips.html">秋冬の犬連れ旅行特集 →</a><a href="travel-gear.html">旅行の犬用品を見る →</a></p>
+  <a class="back" href="index.html">← わんことのじかん トップへ</a>
+  <aside class="notice"><strong>使い方</strong><br>「表示」で季節を選ぶと、その季節の持ち物だけを表示・印刷できます。印はこの端末のブラウザに保存され、ほかの人や端末には送られません。宿や施設が求める持ち物（証明書の種類、マナーベルトなど）は予約先の案内を、薬や体調のことはかかりつけの獣医師の指示を優先してください。</aside>
+
+  <div class="ck-print-only ck-memo" aria-hidden="true"><span>行き先：</span><span>日付：</span><span>宿：</span><span>旅先の夜間・休日の動物病院：</span></div>
+
+  <div class="ck-tools" role="group" aria-label="チェックリストの操作">
+    <fieldset class="ck-season"><legend>表示</legend>
+      <button type="button" data-season="all" aria-pressed="true">すべて</button>
+      <button type="button" data-season="ss" aria-pressed="false">春夏</button>
+      <button type="button" data-season="aw" aria-pressed="false">秋冬</button>
+    </fieldset>
+    <p class="ck-progress" id="ck-progress" aria-live="polite">チェック済み 0 / 0</p>
+    <div class="ck-actions">
+      <button type="button" class="ck-print" id="ck-print">印刷する</button>
+      <button type="button" id="ck-clear">印をすべて外す</button>
+    </div>
+  </div>
+
+  <p class="ck-hint">飼い主向けの調査では、旅行で「準備が足りなかった」ものとして、トイレ用品といつものフードが上位に挙がっていました。迷ったら、この2つは多めに持っていきましょう。</p>
+
+  <h2 class="ck-group-title"><small>FOR EVERY TRIP</small>いつも持っていくもの</h2>
+  <div class="ck-grid">
+    <section class="ck-sec" id="common-docs" aria-labelledby="h-docs">
+      <h3 id="h-docs">書類・迷子対策 <span class="ck-count"></span></h3>
+      <ul class="ck-list">
+        <li><label><input type="checkbox" data-key="docs-cert"><span>狂犬病予防注射・混合ワクチンの証明書</span></label><small class="ck-note">「1年以内の接種」の証明を求める宿や施設が多い。原本・写し・スマホの写真のどれでよいかは予約先に確認</small></li>
+        <li><label><input type="checkbox" data-key="docs-tag"><span>鑑札と注射済票（首輪などに付ける）</span></label></li>
+        <li><label><input type="checkbox" data-key="docs-idtag"><span>迷子札（飼い主の連絡先入り）</span></label><a class="ck-gear" href="travel-gear.html?pick=dog-tag">迷子対策の用品を見る</a></li>
+        <li><label><input type="checkbox" data-key="docs-chip"><span>マイクロチップの登録情報が今の連絡先になっているか</span></label></li>
+        <li><label><input type="checkbox" data-key="docs-insurance"><span>ペット保険の保険証（入っている場合）</span></label></li>
+        <li><label><input type="checkbox" data-key="docs-vet"><span>かかりつけ動物病院の連絡先と、旅先の夜間・休日の動物病院の控え</span></label><small class="ck-note"><a href="route-planner/">旅行プラン</a>では行き先の「もしものときの近くの施設」も見られます</small></li>
+        <li><label><input type="checkbox" data-key="docs-photo"><span>最近の犬の写真（迷子のときに見せられるように）</span></label></li>
+      </ul>
+    </section>
+
+    <section class="ck-sec" id="common-move" aria-labelledby="h-move">
+      <h3 id="h-move">散歩・車での移動 <span class="ck-count"></span></h3>
+      <ul class="ck-list">
+        <li><label><input type="checkbox" data-key="move-leash"><span>リードと首輪・ハーネス（予備のリードも1本）</span></label></li>
+        <li><label><input type="checkbox" data-key="move-crate"><span>クレート・キャリー（車内と宿での居場所）</span></label><a class="ck-gear" href="travel-gear.html?pick=travel-crate">クレートを見る</a></li>
+        <li><label><input type="checkbox" data-key="move-belt"><span>車内の飛び出し対策（犬用シートベルト・車用ハーネス）</span></label><a class="ck-gear" href="travel-gear.html?pick=seat-belt">シートベルトを見る</a></li>
+        <li><label><input type="checkbox" data-key="move-seat"><span>ドライブシート（座席の汚れ・抜け毛対策）</span></label><a class="ck-gear" href="travel-gear.html?pick=car-cover">ドライブシートを見る</a></li>
+        <li><label><input type="checkbox" data-key="move-carsick"><span>車酔い対策</span></label><small class="ck-note">酔い止めは前もって獣医師に相談。出発前の食事は早めに軽く。吐いたとき用のタオルと袋を手の届く所に</small><a class="ck-gear" href="travel-gear.html?pick=drive-bed">車内で姿勢を安定させる用品を見る</a></li>
+        <li><label><input type="checkbox" data-key="move-bags"><span>汚れ物を入れる袋・ビニール袋</span></label></li>
+      </ul>
+    </section>
+
+    <section class="ck-sec" id="common-manner" aria-labelledby="h-manner">
+      <h3 id="h-manner">トイレ・マナー <span class="ck-count"></span></h3>
+      <ul class="ck-list">
+        <li><label><input type="checkbox" data-key="manner-sheet"><span>トイレシート（多めに）</span></label><a class="ck-gear" href="travel-gear.html?pick=pet-sheet">トイレシートを見る</a></li>
+        <li><label><input type="checkbox" data-key="manner-tray"><span>持ち運べるトイレトレー（宿・車内）</span></label><a class="ck-gear" href="travel-gear.html?pick=portable-toilet">携帯トイレを見る</a></li>
+        <li><label><input type="checkbox" data-key="manner-poop"><span>うんち袋・においが漏れにくい袋</span></label><a class="ck-gear" href="travel-gear.html?pick=goods-ys-merland-merland-4560224462191-4">処理袋を見る</a></li>
+        <li><label><input type="checkbox" data-key="manner-belt"><span>マナーベルト・マナーパンツ</span></label><small class="ck-note">館内やレストランで着用を求める宿が多い</small><a class="ck-gear" href="travel-gear.html?pick=c5-petio-4903588745805">マナーパンツを見る</a></li>
+        <li><label><input type="checkbox" data-key="manner-spray"><span>消臭スプレー</span></label><a class="ck-gear" href="travel-gear.html?pick=c5-petio-4903588262180">消臭スプレーを見る</a></li>
+        <li><label><input type="checkbox" data-key="manner-wipe"><span>ウェットティッシュ・ティッシュ</span></label></li>
+        <li><label><input type="checkbox" data-key="manner-roller"><span>粘着ローラー（チェックアウト前の抜け毛取り）</span></label></li>
+      </ul>
+    </section>
+
+    <section class="ck-sec" id="common-food" aria-labelledby="h-food">
+      <h3 id="h-food">食事・水 <span class="ck-count"></span></h3>
+      <ul class="ck-list">
+        <li><label><input type="checkbox" data-key="food-food"><span>いつものフード（泊数分＋1〜2日分の予備）</span></label><small class="ck-note">旅先で急に変えると、おなかをこわすことがある</small></li>
+        <li><label><input type="checkbox" data-key="food-bowl"><span>食器・水入れ</span></label><a class="ck-gear" href="travel-gear.html?pick=portable-bowl">持ち運べる食器を見る</a></li>
+        <li><label><input type="checkbox" data-key="food-water"><span>飲み水と給水ボトル</span></label><a class="ck-gear" href="travel-gear.html?pick=water-bottle">給水ボトルを見る</a></li>
+        <li><label><input type="checkbox" data-key="food-treat"><span>おやつ（ごほうび・落ち着かせる用）</span></label></li>
+      </ul>
+    </section>
+
+    <section class="ck-sec" id="common-health" aria-labelledby="h-health">
+      <h3 id="h-health">健康・お手入れ <span class="ck-count"></span></h3>
+      <ul class="ck-list">
+        <li><label><input type="checkbox" data-key="health-med"><span>常備薬・持病の薬（日数より多めに）</span></label></li>
+        <li><label><input type="checkbox" data-key="health-kit"><span>救急用品・ダニ取り</span></label><a class="ck-gear" href="travel-gear.html?pick=dog-firstaid-kit">ダニ取りを見る</a></li>
+        <li><label><input type="checkbox" data-key="health-flea"><span>ノミ・マダニの予防（予定の日に忘れずに）</span></label></li>
+        <li><label><input type="checkbox" data-key="health-brush"><span>ブラシ・爪切り</span></label></li>
+      </ul>
+    </section>
+
+    <section class="ck-sec" id="common-stay" aria-labelledby="h-stay">
+      <h3 id="h-stay">宿で過ごすために <span class="ck-count"></span></h3>
+      <ul class="ck-list">
+        <li><label><input type="checkbox" data-key="stay-bed"><span>ベッド・マット（いつもの寝床に近いもの）</span></label><a class="ck-gear" href="travel-gear.html?pick=portable-bed">携帯できるベッドを見る</a></li>
+        <li><label><input type="checkbox" data-key="stay-blanket"><span>いつもの毛布・タオル・おもちゃ（においで落ち着く）</span></label></li>
+        <li><label><input type="checkbox" data-key="stay-cage"><span>折りたためるケージ・サークル（宿で貸し出していない場合）</span></label><a class="ck-gear" href="travel-gear.html?pick=iris-soft-cage">折りたたみケージを見る</a></li>
+        <li><label><input type="checkbox" data-key="stay-towel"><span>足拭きタオル</span></label><a class="ck-gear" href="travel-gear.html?pick=pet-towel">吸水タオルを見る</a></li>
+        <li><label><input type="checkbox" data-key="stay-calm"><span>落ち着いて過ごすためのリックマット・知育おもちゃ</span></label><a class="ck-gear" href="travel-gear.html?pick=lick-mat">リックマットを見る</a></li>
+      </ul>
+    </section>
+  </div>
+
+  <h2 class="ck-group-title"><small>BY SEASON</small>季節で足すもの</h2>
+  <div class="ck-grid">
+    <section class="ck-sec season-ss" id="season-spring-summer" data-season="ss" aria-labelledby="h-ss">
+      <h3 id="h-ss">春夏｜暑さ対策 <span class="ck-count"></span></h3>
+      <ul class="ck-list">
+        <li><label><input type="checkbox" data-key="ss-cool"><span>保冷剤・クールネック</span></label><a class="ck-gear" href="travel-gear.html?pick=goods-ys-lunasea123-lunasea123-jwb-5207">クールネックを見る</a></li>
+        <li><label><input type="checkbox" data-key="ss-mat"><span>冷感マット（車内・宿の休憩場所に）</span></label><a class="ck-gear" href="travel-gear.html?pick=cooling-mat">冷感マットを見る</a></li>
+        <li><label><input type="checkbox" data-key="ss-water"><span>水を多めに（休憩のたびに飲ませる）</span></label></li>
+        <li><label><input type="checkbox" data-key="ss-thermo"><span>車内用の温度計（犬のいる場所に置く）</span></label></li>
+        <li><label><input type="checkbox" data-key="ss-time"><span>散歩や遊びは朝夕の涼しい時間に</span></label><small class="ck-note">日中のアスファルトは熱く、肉球をやけどすることがある。犬だけを車に残さない</small></li>
+        <li><label><input type="checkbox" data-key="ss-bug"><span>虫よけ・マダニ対策</span></label><small class="ck-note">虫よけスプレーは予防薬の代わりにはならない。予防薬はかかりつけの獣医師と相談</small><a class="ck-gear" href="travel-gear.html?pick=apdc-outdoor-spray">屋外用スプレーを見る</a></li>
+        <li><label><input type="checkbox" data-key="ss-life"><span>ライフジャケット（川や海で遊ぶとき）</span></label><a class="ck-gear" href="travel-gear.html?pick=goods-ys-chic-chic-r140624-o495n">浮力補助具を見る</a></li>
+        <li><label><input type="checkbox" data-key="ss-rain"><span>雨具（梅雨・夕立）</span></label><a class="ck-gear" href="travel-gear.html?pick=c5-doggyman-4976555642087">雨コートを見る</a></li>
+      </ul>
+    </section>
+
+    <section class="ck-sec season-aw" id="season-autumn-winter" data-season="aw" aria-labelledby="h-aw">
+      <h3 id="h-aw">秋冬｜防寒・雪・乾燥 <span class="ck-count"></span></h3>
+      <ul class="ck-list">
+        <li><label><input type="checkbox" data-key="aw-wear"><span>防寒の服（朝晩や高原で）</span></label><a class="ck-gear" href="wear.html?purpose=cold#shop">朝晩の冷えに合う犬服を見る</a></li>
+        <li><label><input type="checkbox" data-key="aw-blanket"><span>ブランケット（車内・宿で）</span></label><a class="ck-gear" href="travel-gear.html?pick=c5-petio-4903588280436">ブランケットを見る</a></li>
+        <li><label><input type="checkbox" data-key="aw-shoes"><span>犬用シューズ（雪道・凍った道）</span></label><a class="ck-gear" href="travel-gear.html?pick=add60-gear-1134357">ドッグシューズを見る</a></li>
+        <li><label><input type="checkbox" data-key="aw-paw"><span>肉球の保湿クリーム（乾燥・ひび割れ対策）</span></label></li>
+        <li><label><input type="checkbox" data-key="aw-dry"><span>雪や雨のあとにすぐ乾かせるタオル（宿のドライヤーも確認）</span></label><small class="ck-note">凍結防止剤がまかれた道を歩いたら、足をよく洗って拭く</small></li>
+        <li><label><input type="checkbox" data-key="aw-light"><span>光るライト・反射材（日が短いので夕方の散歩に）</span></label><a class="ck-gear" href="travel-gear.html?pick=petio-led-light">散歩用ライトを見る</a></li>
+        <li><label><input type="checkbox" data-key="aw-drink"><span>水をこまめに（暖房で乾燥し、冬は飲む量が減りがち）</span></label></li>
+        <li><label><input type="checkbox" data-key="aw-tick"><span>秋もマダニ予防を続ける（落ち葉の下にもいる）</span></label></li>
+        <li><label><input type="checkbox" data-key="aw-car"><span>冬用タイヤ・チェーン（車の準備）</span></label></li>
+      </ul>
+    </section>
+  </div>
+
+  <h2 class="ck-group-title"><small>AT THE LODGING</small>宿に着いてから確認すること</h2>
+  <div class="ck-grid">
+    <section class="ck-sec" id="at-lodging" aria-labelledby="h-in">
+      <h3 id="h-in">チェックインのときに <span class="ck-count"></span></h3>
+      <ul class="ck-list">
+        <li><label><input type="checkbox" data-key="in-area"><span>犬と入れる場所・入れない場所（大浴場、レストラン、ロビーなど）</span></label></li>
+        <li><label><input type="checkbox" data-key="in-meal"><span>犬と一緒に食事できる場所と、そのときの決まり（リード・カート・マナーベルトなど）</span></label></li>
+        <li><label><input type="checkbox" data-key="in-room"><span>部屋の決まり（ベッドやソファに上げてよいか、ケージに入れる時間）</span></label></li>
+        <li><label><input type="checkbox" data-key="in-alone"><span>犬だけを部屋に残してよいか、そのときの条件</span></label></li>
+        <li><label><input type="checkbox" data-key="in-toilet"><span>トイレの場所と、使ったシート・うんちの捨て方</span></label></li>
+        <li><label><input type="checkbox" data-key="in-run"><span>ドッグラン・足洗い場の場所と、使える時間・条件</span></label></li>
+      </ul>
+    </section>
+    <section class="ck-sec" id="at-room" aria-labelledby="h-room">
+      <h3 id="h-room">部屋に入ったら <span class="ck-count"></span></h3>
+      <ul class="ck-list">
+        <li><label><input type="checkbox" data-key="in-danger"><span>危ない物を片づける（電気コード、低い所の小物、落ちると危ない段差、滑りやすい床）</span></label></li>
+        <li><label><input type="checkbox" data-key="in-temp"><span>室温と乾燥（冬は暖房の効きすぎ、夏は冷房の当たりすぎ）</span></label></li>
+        <li><label><input type="checkbox" data-key="in-exit"><span>非常口と避難経路（犬を連れて逃げる道）</span></label></li>
+        <li><label><input type="checkbox" data-key="in-vet"><span>近くの動物病院と、夜間に連絡できる先（フロントに聞くのも手）</span></label></li>
+        <li><label><input type="checkbox" data-key="in-checkout"><span>チェックアウトのときの決まり（抜け毛の掃除、シートの処理）</span></label></li>
+      </ul>
+    </section>
+  </div>
+  <p class="ck-saved" id="ck-saved"></p>
+
+  <div class="ck-next"><p><b>持ち物がそろったら、行き先までのプランを。</b><br>出発地と行き先から、休憩できる場所や犬と泊まれる宿を確認できます。</p><a href="route-planner/">旅行プランを立てる →</a></div>
+  <p class="ck-print-only" style="font-size:8.5pt;margin-top:8pt">わんことのじかん｜犬との旅行の持ち物チェックリスト https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-trip-checklist.html</p>
+</div>
+</main>
+<footer><div><strong>わんことのじかん</strong><p>このチェックリストは一般的な目安です。宿・施設が求める持ち物は予約先の案内を、薬や体調のことはかかりつけの獣医師の指示を優先してください。用品のリンクは、このサイトの「旅行の犬用品」ページの該当カードへ移動します。</p><p><a href="index.html">トップ</a> ・ <a href="dog-lodging-guide.html">泊まる</a> ・ <a href="east-japan-dog-trips.html">お出かけ</a> ・ <a href="travel-gear.html">旅行の犬用品</a> ・ <a href="autumn-winter-dog-trips.html">秋冬の犬連れ旅行特集</a> ・ <a href="contact.html">お問い合わせ</a></p><p class="analytics-note">このサイトは、ページの閲覧数やどのページが見られたかを知るため Cloudflare Web Analytics を使っています。Cookie は使わず、個人を特定する情報は集めません。</p></div></footer>
+<script>
+/* 印の状態と「表示」の季節を、この端末のブラウザ(localStorage)にだけ保存する。使えない環境でも一覧と印刷はそのまま動く */
+(function () {
+  "use strict";
+  var KEY = "wanko-trip-checklist-v1";
+  var state = { checks: {}, season: "all" };
+  try {
+    var raw = window.localStorage.getItem(KEY);
+    if (raw) {
+      var saved = JSON.parse(raw);
+      if (saved && typeof saved === "object") {
+        if (saved.checks && typeof saved.checks === "object") state.checks = saved.checks;
+        if (saved.season === "ss" || saved.season === "aw" || saved.season === "all") state.season = saved.season;
+      }
+    }
+  } catch (e) { /* 保存できない環境では、ページを開いているあいだだけ印を保つ */ }
+  var storable = true;
+  function save() {
+    try { window.localStorage.setItem(KEY, JSON.stringify(state)); storable = true; }
+    catch (e) { storable = false; }
+    var note = document.getElementById("ck-saved");
+    if (note) note.textContent = storable ? "印はこの端末のブラウザに保存されています。" : "このブラウザでは印を保存できません（ページを閉じると消えます）。";
+  }
+  var boxes = Array.prototype.slice.call(document.querySelectorAll(".ck-list input[type=checkbox][data-key]"));
+  var sections = Array.prototype.slice.call(document.querySelectorAll(".ck-sec"));
+  var seasonButtons = Array.prototype.slice.call(document.querySelectorAll(".ck-season button[data-season]"));
+  var progress = document.getElementById("ck-progress");
+
+  function count() {
+    var total = 0, done = 0;
+    sections.forEach(function (sec) {
+      var list = sec.querySelectorAll("input[type=checkbox][data-key]");
+      var d = 0;
+      for (var i = 0; i < list.length; i++) if (list[i].checked) d++;
+      var c = sec.querySelector(".ck-count");
+      if (c) c.textContent = d + " / " + list.length;
+      if (!sec.hidden) { total += list.length; done += d; }
+    });
+    if (progress) progress.textContent = "チェック済み " + done + " / " + total;
+  }
+  function applySeason() {
+    sections.forEach(function (sec) {
+      var s = sec.getAttribute("data-season");
+      sec.hidden = !!(s && state.season !== "all" && s !== state.season);
+    });
+    seasonButtons.forEach(function (b) { b.setAttribute("aria-pressed", String(b.getAttribute("data-season") === state.season)); });
+    count();
+  }
+
+  boxes.forEach(function (box) {
+    box.checked = !!state.checks[box.getAttribute("data-key")];
+    box.addEventListener("change", function () {
+      var k = box.getAttribute("data-key");
+      if (box.checked) state.checks[k] = 1; else delete state.checks[k];
+      save(); count();
+    });
+  });
+  seasonButtons.forEach(function (b) {
+    b.addEventListener("click", function () { state.season = b.getAttribute("data-season"); applySeason(); save(); });
+  });
+  var printBtn = document.getElementById("ck-print");
+  if (printBtn) printBtn.addEventListener("click", function () { window.print(); });
+  var clearBtn = document.getElementById("ck-clear");
+  if (clearBtn) clearBtn.addEventListener("click", function () {
+    if (!window.confirm("すべての印を外しますか？")) return;
+    state.checks = {};
+    boxes.forEach(function (box) { box.checked = false; });
+    save(); count();
+  });
+
+  /* #season-autumn-winter などで来たとき、その季節が非表示なら表示に切り替える */
+  function showHashTarget() {
+    var id = (location.hash || "").slice(1);
+    if (!id) return;
+    var target = document.getElementById(id);
+    if (target && target.hidden && target.classList.contains("ck-sec")) {
+      state.season = target.getAttribute("data-season") || "all";
+      applySeason();
+      target.scrollIntoView({ block: "start" });
+    }
+  }
+  applySeason();
+  showHashTarget();
+  window.addEventListener("hashchange", showHashTarget);
+  var note = document.getElementById("ck-saved");
+  if (note) {
+    try { var t = "__ck_test__"; window.localStorage.setItem(t, "1"); window.localStorage.removeItem(t); note.textContent = "印はこの端末のブラウザに保存されます。"; }
+    catch (e) { note.textContent = "このブラウザでは印を保存できません（ページを閉じると消えます）。"; }
+  }
+})();
+</script>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "2847001768a143df87fa4e78edba9c7e"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
