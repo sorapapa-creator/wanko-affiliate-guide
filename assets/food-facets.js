@@ -22588,5 +22588,784 @@ window.WANKO_FOOD_FACTS = {
     "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
     "additives": [],
     "additive_evidence": {}
+  },
+  "foodys-ニュートロ-ニュートロ-ナチュラルチョイス-避妊-去勢犬用-超小型犬-小型犬用--274761": {
+    "id": "foodys-ニュートロ-ニュートロ-ナチュラルチョイス-避妊-去勢犬用-超小型犬-小型犬用--274761",
+    "label": "ニュートロ ナチュラルチョイス 避妊・去勢犬用 超小型犬〜小型犬用 エイジングケア チキン&玄米",
+    "ingredients": [
+      "鶏",
+      "米"
+    ],
+    "ingredient_text": "チキン(肉), チキンミール*2, 玄米*3, 粗挽き米, 米糠",
+    "target": "避妊・去勢犬用 超小型犬~小型犬用 エイジングケア",
+    "age": [
+      "シニア"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [
+      "避妊・去勢後"
+    ],
+    "price": 10252,
+    "price_date": "2026-10-07",
+    "source": "https://nutro.jp/products/nc_d_senior_toy_neuterd_chicken_br",
+    "checked": "2026-10-07",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "foodys-ビタワン君-ビタワン君のwソフト-11歳以上-ビーフ味-やわらかささみ添え": {
+    "id": "foodys-ビタワン君-ビタワン君のwソフト-11歳以上-ビーフ味-やわらかささみ添え",
+    "label": "ビタワン君のWソフト 11歳以上 ビーフ味・やわらかささみ添え",
+    "ingredients": [
+      "鶏",
+      "牛",
+      "小麦",
+      "大豆"
+    ],
+    "ingredient_text": "肉類(国産鶏肉、国産鶏ササミ、牛肉)、穀類(小麦粉、小麦グルテン)、大豆タンパク、糖類(グラニュー糖、オリゴ糖)、馬鈴薯でん粉",
+    "target": "成犬用(11歳以上) / 超小型〜中型犬",
+    "age": [
+      "成犬",
+      "シニア"
+    ],
+    "age_range": [
+      132.0,
+      null
+    ],
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ソフトドライ",
+    "texture": [
+      "ソフト・半生"
+    ],
+    "grain": "",
+    "concern": [],
+    "price": 528,
+    "price_date": "2026-10-07",
+    "source": "https://www.npf.co.jp/dog-products/dog-detail/vwb11",
+    "checked": "2026-10-07",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "foodys-ビタワン君-ビタワン君のwソフト-成犬用-ビーフ味-やわらかささみ添え": {
+    "id": "foodys-ビタワン君-ビタワン君のwソフト-成犬用-ビーフ味-やわらかささみ添え",
+    "label": "ビタワン君のWソフト 成犬用 ビーフ味・やわらかささみ添え",
+    "ingredients": [
+      "鶏",
+      "牛",
+      "小麦",
+      "大豆"
+    ],
+    "ingredient_text": "肉類(国産鶏肉、国産鶏ササミ、牛肉)、穀類(小麦粉、小麦グルテン)、大豆タンパク、糖類(グラニュー糖、オリゴ糖)、馬鈴薯でん粉",
+    "target": "成犬用(1歳以上)（メーカー公式の表示） / 超小型〜中型犬",
+    "age": [
+      "成犬"
+    ],
+    "age_range": [
+      12.0,
+      null
+    ],
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ソフトドライ",
+    "texture": [
+      "ソフト・半生"
+    ],
+    "grain": "",
+    "concern": [],
+    "price": 528,
+    "price_date": "2026-10-07",
+    "source": "https://www.npf.co.jp/dog-products/dog-detail/vwbc",
+    "checked": "2026-10-07",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "foodys-ビタワン君-ビタワン君のwソフト-低脂肪-チキン味-やわらかささみ添え": {
+    "id": "foodys-ビタワン君-ビタワン君のwソフト-低脂肪-チキン味-やわらかささみ添え",
+    "label": "ビタワン君のWソフト 低脂肪 チキン味・やわらかささみ添え",
+    "ingredients": [
+      "鶏",
+      "牛",
+      "小麦",
+      "大豆"
+    ],
+    "ingredient_text": "肉類(国産鶏ササミ、国産鶏肉、牛肉)、穀類(小麦粉、小麦グルテン)、大豆タンパク、馬鈴薯でん粉、糖類(グラニュー糖、オリゴ糖)",
+    "target": "成犬 / 成犬用(1歳以上)",
+    "age": [
+      "成犬"
+    ],
+    "age_range": [
+      12.0,
+      null
+    ],
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ソフトドライ",
+    "texture": [
+      "ソフト・半生"
+    ],
+    "grain": "",
+    "concern": [
+      "低脂肪の表示"
+    ],
+    "price": 528,
+    "price_date": "2026-10-07",
+    "source": "https://www.npf.co.jp/dog-products/dog-detail/vwcl",
+    "checked": "2026-10-07",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "foodys-ビタワン-ビタワン-子犬の離乳食": {
+    "id": "foodys-ビタワン-ビタワン-子犬の離乳食",
+    "label": "ビタワン 子犬の離乳食",
+    "ingredients": [
+      "鶏",
+      "小麦"
+    ],
+    "ingredient_text": "穀類(小麦粉、小麦グルテン)、きな粉、チキンミール、油脂類(植物性油脂、動物性油脂、γ-リノレン酸(オメガ-6脂肪酸源))、脱脂粉乳",
+    "target": "子犬(生後20~60日頃まで)（メーカー公式の表示） / 生後20日からの子犬に最適。 / 子犬(生後20~60日頃まで)",
+    "age": [
+      "子犬"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ソフトドライ",
+    "texture": [
+      "ソフト・半生"
+    ],
+    "grain": "",
+    "concern": [],
+    "price": 1398,
+    "price_date": "2026-10-07",
+    "source": "https://www.npf.co.jp/dog-products/dog-detail/vgf",
+    "checked": "2026-10-07",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "foodys-ビタワン君-ビタワン君のwソフト-成犬用-ビーフ-チーズ味-やわらかささみ添え": {
+    "id": "foodys-ビタワン君-ビタワン君のwソフト-成犬用-ビーフ-チーズ味-やわらかささみ添え",
+    "label": "ビタワン君のWソフト 成犬用 ビーフ・チーズ味・やわらかささみ添え",
+    "ingredients": [
+      "鶏",
+      "牛",
+      "小麦",
+      "大豆"
+    ],
+    "ingredient_text": "肉類(国産鶏肉、国産鶏ササミ、牛肉)、穀類(小麦粉、小麦グルテン)、大豆タンパク、糖類(グラニュー糖、オリゴ糖)、馬鈴薯でん粉",
+    "target": "成犬用(1歳以上)（メーカー公式の表示）",
+    "age": [
+      "成犬"
+    ],
+    "age_range": [
+      12.0,
+      null
+    ],
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ソフトドライ",
+    "texture": [
+      "ソフト・半生"
+    ],
+    "grain": "",
+    "concern": [],
+    "price": 528,
+    "price_date": "2026-10-07",
+    "source": "https://www.npf.co.jp/dog-products/dog-detail/vwbzc",
+    "checked": "2026-10-07",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "foodys-ビタワン-ビタワン-7歳以上": {
+    "id": "foodys-ビタワン-ビタワン-7歳以上",
+    "label": "ビタワン 7歳以上",
+    "ingredients": [
+      "鶏",
+      "牛",
+      "豚",
+      "米",
+      "小麦",
+      "とうもろこし"
+    ],
+    "ingredient_text": "穀類(トウモロコシ、小麦ふすま、小麦粉、脱脂米糠、コーングルテンフィード、コーンフラワー)、肉類(チキンミール、牛肉粉、豚肉粉、チキンレバーパウダー)、油脂類(動物性油脂、植物性油脂(オメガ-6脂肪酸含む))、おから粉末、ビール酵母(β-グルカン源)",
+    "target": "成犬用(7歳以上)",
+    "age": [
+      "成犬",
+      "シニア"
+    ],
+    "age_range": [
+      84.0,
+      null
+    ],
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 2780,
+    "price_date": "2026-10-07",
+    "source": "https://www.npf.co.jp/dog-products/dog-detail/vsi",
+    "checked": "2026-10-07",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "foodys-愛犬元気-愛犬元気-柴犬用-ビーフ-緑黄色野菜-小魚入り": {
+    "id": "foodys-愛犬元気-愛犬元気-柴犬用-ビーフ-緑黄色野菜-小魚入り",
+    "label": "愛犬元気 柴犬用 ビーフ・緑黄色野菜・小魚入り",
+    "ingredients": [
+      "鶏",
+      "牛",
+      "豚",
+      "魚",
+      "小麦",
+      "とうもろこし",
+      "大豆"
+    ],
+    "ingredient_text": "穀類(トウモロコシ、小麦粉、コーングルテンミール、パン粉、コーングルテンフィード、フスマ)、肉類(チキンミール、ビーフミール、ポークミール、チキンエキス、ビーフパウダー)、動物性油脂、魚介類(フィッシュミール、フィッシュエキス、小魚パウダー)、豆類(脱脂大豆、大豆エキス)",
+    "target": "成犬(1歳~)・柴犬（メーカー公式の表示）",
+    "age": [
+      "成犬"
+    ],
+    "age_range": [
+      12.0,
+      null
+    ],
+    "breed": [
+      "柴犬"
+    ],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 1492,
+    "price_date": "2026-10-07",
+    "source": "https://jp.unicharmpet.com/ja/products/dog/food-aikengenki-4520699693032.html",
+    "checked": "2026-10-07",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "foodys-愛犬元気-愛犬元気-パックン-鶏ささみ入り-成犬用": {
+    "id": "foodys-愛犬元気-愛犬元気-パックン-鶏ささみ入り-成犬用",
+    "label": "愛犬元気 パックン 鶏ささみ入り 成犬用",
+    "ingredients": [
+      "鶏",
+      "小麦",
+      "大豆"
+    ],
+    "ingredient_text": "穀類(パン粉、小麦粉、トウモロコシ)、肉類(チキンミール、チキンエキス、ササミパウダー)、糖類(ブドウ糖果糖液糖、オリゴ糖)、豆類(脱脂大豆、おからパウダー)、動物性油脂",
+    "target": "成犬(1歳~)（メーカー公式の表示）",
+    "age": [
+      "成犬"
+    ],
+    "age_range": [
+      12.0,
+      null
+    ],
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ソフトドライ",
+    "texture": [
+      "ソフト・半生"
+    ],
+    "grain": "",
+    "concern": [],
+    "price": 1600,
+    "price_date": "2026-10-07",
+    "source": "https://jp.unicharmpet.com/ja/products/dog/food-aikengenki-4520699619803.html",
+    "checked": "2026-10-07",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "foodys-ビタワン君-ビタワン君のwソフト-15歳以上-ビーフ味-やわらかささみ添え": {
+    "id": "foodys-ビタワン君-ビタワン君のwソフト-15歳以上-ビーフ味-やわらかささみ添え",
+    "label": "ビタワン君のWソフト 15歳以上 ビーフ味・やわらかささみ添え",
+    "ingredients": [
+      "鶏",
+      "牛",
+      "小麦",
+      "大豆"
+    ],
+    "ingredient_text": "肉類(国産鶏肉、国産鶏ササミ、牛肉)、穀類(小麦粉、小麦グルテン)、大豆タンパク、糖類(グラニュー糖、オリゴ糖)、馬鈴薯でん粉",
+    "target": "成犬用(15歳以上)",
+    "age": [
+      "成犬",
+      "シニア"
+    ],
+    "age_range": [
+      180.0,
+      null
+    ],
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ソフトドライ",
+    "texture": [
+      "ソフト・半生"
+    ],
+    "grain": "",
+    "concern": [],
+    "price": 532,
+    "price_date": "2026-10-07",
+    "source": "https://www.npf.co.jp/dog-products/dog-detail/vwb15",
+    "checked": "2026-10-07",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "foodys-愛犬元気-愛犬元気-10歳以上の中-大型犬用-ささみ-ビーフ-緑黄色野菜-小魚入": {
+    "id": "foodys-愛犬元気-愛犬元気-10歳以上の中-大型犬用-ささみ-ビーフ-緑黄色野菜-小魚入",
+    "label": "愛犬元気 10歳以上の中・大型犬用 ささみ・ビーフ・緑黄色野菜・小魚入り",
+    "ingredients": [
+      "鶏",
+      "牛",
+      "小麦",
+      "とうもろこし",
+      "大豆"
+    ],
+    "ingredient_text": "穀類(トウモロコシ、小麦粉、フスマ、パン粉、コーングルテンミール)、肉類(チキンミール、ビーフミール、チキンエキス、ササミパウダー、ビーフパウダー)、動物性油脂、野菜類(ビートパルプ、ニンジンパウダー、カボチャパウダー、ホウレンソウパウダー)、豆類(脱脂大豆、大豆エキス)",
+    "target": "10歳以上の中・大型犬用",
+    "age": [
+      "シニア"
+    ],
+    "age_range": [
+      120.0,
+      null
+    ],
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 2844,
+    "price_date": "2026-10-07",
+    "source": "https://jp.unicharmpet.com/ja/products/dog/food-aikengenki-4520699656914.html",
+    "checked": "2026-10-07",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "foodys-ビタワン-ビタワン-国産チキンのレシピ-成犬用": {
+    "id": "foodys-ビタワン-ビタワン-国産チキンのレシピ-成犬用",
+    "label": "ビタワン 国産チキンのレシピ 成犬用",
+    "ingredients": [
+      "鶏",
+      "牛",
+      "豚",
+      "米",
+      "小麦",
+      "とうもろこし",
+      "大豆"
+    ],
+    "ingredient_text": "穀類(トウモロコシ、小麦ブラン、ライスブラン、コーングルテンフィード)、肉類(チキンミール、牛肉粉、豚肉粉、チキンレバーパウダー、ビーフエキスパウダー)、豆類(脱脂大豆、おから粉末)、油脂類(ビーフオイル、パームオイル、オリーブオイル(オメガ-6脂肪酸源))、セレン酵母",
+    "target": "成犬用(1歳以上)（メーカー公式の表示）",
+    "age": [
+      "成犬"
+    ],
+    "age_range": [
+      12.0,
+      null
+    ],
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 1750,
+    "price_date": "2026-10-07",
+    "source": "https://www.npf.co.jp/dog-products/dog-detail/vkc",
+    "checked": "2026-10-07",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用",
+      "香料不使用",
+      "保存料不使用"
+    ],
+    "additive_evidence": {
+      "source": "https://www.npf.co.jp/dog-products/dog-detail/vkc",
+      "checked": "2026-10-07",
+      "note": "不使用表示は公式商品ページの記載(着色料不使用 香料不使用 保存料不使用)"
+    }
+  },
+  "foodys-ビタワン-ビタワン-国産チキンのレシピ-10歳以上": {
+    "id": "foodys-ビタワン-ビタワン-国産チキンのレシピ-10歳以上",
+    "label": "ビタワン 国産チキンのレシピ 10歳以上",
+    "ingredients": [
+      "鶏",
+      "牛",
+      "豚",
+      "米",
+      "小麦",
+      "大麦",
+      "とうもろこし",
+      "大豆"
+    ],
+    "ingredient_text": "穀類(トウモロコシ、小麦ブラン、ライスブラン、コーンフラワー、コーングルテンフィード)、肉類(チキンミール、牛肉粉、豚肉粉、チキンレバーパウダー、ビーフエキスパウダー)、豆類(脱脂大豆、おから粉末)、油脂類(ビーフオイル、パームオイル、オリーブオイル(オメガ-6脂肪酸源))、野菜類(キャベツパウダー、大麦若葉パウダー、カボチャパウダー、トマトパウダー(リコピン源)、ニンジンパウダー、ブロッコリーパウダー、ホウレンソウパウダー、モロヘイヤパウダー)",
+    "target": "成犬用(10歳以上)",
+    "age": [
+      "成犬",
+      "シニア"
+    ],
+    "age_range": [
+      120.0,
+      null
+    ],
+    "breed": [
+      "プードル",
+      "チワワ"
+    ],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 1917,
+    "price_date": "2026-10-07",
+    "source": "https://www.npf.co.jp/dog-products/dog-detail/vkc10",
+    "checked": "2026-10-07",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "foodys-ビタワン-ビタワン-食物アレルゲンに配慮-成犬用": {
+    "id": "foodys-ビタワン-ビタワン-食物アレルゲンに配慮-成犬用",
+    "label": "ビタワン 食物アレルゲンに配慮 成犬用",
+    "ingredients": [
+      "牛",
+      "魚",
+      "米",
+      "とうもろこし",
+      "大豆"
+    ],
+    "ingredient_text": "穀類(トウモロコシ、ライスブラン、米、コーングルテンミール、コーングルテンフィード)、魚介類(白身魚粉、白身魚エキスパウダー、マグロエキス、イワシパウダー、カツオエキス、シラスパウダー)、油脂類(ビーフオイル、パームオイル、オリーブオイル(オメガ-6脂肪酸源))、脱脂大豆、ビール酵母",
+    "target": "成犬用(1歳以上)（メーカー公式の表示）",
+    "age": [
+      "成犬"
+    ],
+    "age_range": [
+      12.0,
+      null
+    ],
+    "breed": [
+      "プードル",
+      "チワワ"
+    ],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 1917,
+    "price_date": "2026-10-07",
+    "source": "https://www.npf.co.jp/dog-products/dog-detail/vka",
+    "checked": "2026-10-07",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "foodys-愛犬元気-愛犬元気-柴犬用-7歳以上用-ビーフ-緑黄色野菜-小魚入り": {
+    "id": "foodys-愛犬元気-愛犬元気-柴犬用-7歳以上用-ビーフ-緑黄色野菜-小魚入り",
+    "label": "愛犬元気 柴犬用 7歳以上用 ビーフ・緑黄色野菜・小魚入り",
+    "ingredients": [
+      "鶏",
+      "牛",
+      "豚",
+      "魚",
+      "小麦",
+      "とうもろこし",
+      "大豆"
+    ],
+    "ingredient_text": "穀類(トウモロコシ、小麦粉、コーングルテンミール、パン粉、コーングルテンフィード、フスマ)、肉類(チキンミール、ビーフミール、ポークミール、チキンエキス、ビーフパウダー)、動物性油脂、魚介類(フィッシュミール、フィッシュエキス、小魚パウダー)、豆類(脱脂大豆、大豆エキス)",
+    "target": "柴犬用 7歳以上用",
+    "age": [
+      "シニア"
+    ],
+    "age_range": [
+      84.0,
+      null
+    ],
+    "breed": [
+      "柴犬"
+    ],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 1492,
+    "price_date": "2026-10-07",
+    "source": "https://jp.unicharmpet.com/ja/products/dog/food-aikengenki-4520699693193.html",
+    "checked": "2026-10-07",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "foodys-ビューティープロ-ビューティープロ-ドッグ-パウダフル-低脂肪-チキン味-サツマ": {
+    "id": "foodys-ビューティープロ-ビューティープロ-ドッグ-パウダフル-低脂肪-チキン味-サツマ",
+    "label": "ビューティープロ ドッグ パウダフル 低脂肪 チキン味・サツマイモ味パウダー付き",
+    "ingredients": [
+      "鶏",
+      "魚",
+      "米",
+      "小麦",
+      "とうもろこし"
+    ],
+    "ingredient_text": "穀類(トウモロコシ、コーングルテンミール、小麦ブラン、小麦粉、ライスブラン)、肉類(チキンミール、チキンレバーパウダー)、油脂類(動物性油脂、植物性油脂(オメガ-6脂肪酸含む))、魚介類(フィッシュエキスパウダー、マリンコラーゲン、小魚粉末(DHA、EPA/オメガ-3脂肪酸源))、ビール酵母(β-グルカン源)",
+    "target": "成犬用 / 成犬用(1歳以上)",
+    "age": [
+      "成犬"
+    ],
+    "age_range": [
+      12.0,
+      null
+    ],
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [
+      "低脂肪の表示"
+    ],
+    "price": 2728,
+    "price_date": "2026-10-07",
+    "source": "https://www.npf.co.jp/dog-products/dog-detail/bdlpc",
+    "checked": "2026-10-07",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用",
+      "香料不使用",
+      "保存料不使用"
+    ],
+    "additive_evidence": {
+      "source": "https://www.npf.co.jp/dog-products/dog-detail/bdlpc",
+      "checked": "2026-10-07",
+      "note": "不使用表示は公式商品ページの記載(香料・着色料・保存料 無添加。(ドライフードですので保存料は使用しておりません。))"
+    }
+  },
+  "foodys-ビューティープロ-ビューティープロ-ドッグ-パウダフル-成犬用-チキン味-サツマ": {
+    "id": "foodys-ビューティープロ-ビューティープロ-ドッグ-パウダフル-成犬用-チキン味-サツマ",
+    "label": "ビューティープロ ドッグ パウダフル 成犬用 チキン味・サツマイモ味パウダー付き",
+    "ingredients": [
+      "鶏",
+      "魚",
+      "米",
+      "小麦",
+      "とうもろこし"
+    ],
+    "ingredient_text": "穀類(トウモロコシ、コーングルテンミール、小麦ブラン、小麦粉、ライスブラン)、肉類(チキンミール、チキンレバーパウダー)、油脂類(動物性油脂、植物性油脂(オメガ-6脂肪酸含む))、魚介類(フィッシュエキスパウダー、マリンコラーゲン、小魚粉末(DHA、EPA/オメガ-3脂肪酸源))、ビール酵母(β-グルカン源)",
+    "target": "成犬用(1歳以上)",
+    "age": [
+      "成犬"
+    ],
+    "age_range": [
+      12.0,
+      null
+    ],
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 2728,
+    "price_date": "2026-10-07",
+    "source": "https://www.npf.co.jp/dog-products/dog-detail/bdmpc",
+    "checked": "2026-10-07",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用",
+      "香料不使用",
+      "保存料不使用"
+    ],
+    "additive_evidence": {
+      "source": "https://www.npf.co.jp/dog-products/dog-detail/bdmpc",
+      "checked": "2026-10-07",
+      "note": "不使用表示は公式商品ページの記載(香料・着色料・保存料 無添加。(ドライフードですので保存料は使用しておりません。))"
+    }
+  },
+  "foodys-ビューティープロ-ビューティープロ-ドッグ-パウダフル-10歳以上-チキン味-サ": {
+    "id": "foodys-ビューティープロ-ビューティープロ-ドッグ-パウダフル-10歳以上-チキン味-サ",
+    "label": "ビューティープロ ドッグ パウダフル 10歳以上 チキン味・サツマイモ味パウダー付き",
+    "ingredients": [
+      "鶏",
+      "魚",
+      "米",
+      "小麦",
+      "とうもろこし"
+    ],
+    "ingredient_text": "穀類(小麦粉、トウモロコシ、コーンフラワー、小麦ブラン、コーングルテンミール、ライスブラン)、肉類(チキンミール、チキンレバーパウダー)、油脂類(動物性油脂、植物性油脂(オメガ-6脂肪酸含む))、魚介類(フィッシュエキスパウダー、マリンコラーゲン、小魚粉末(DHA、EPA/オメガ-3脂肪酸源))、ビール酵母(β-グルカン源)",
+    "target": "成犬用(10歳以上)",
+    "age": [
+      "成犬",
+      "シニア"
+    ],
+    "age_range": [
+      120.0,
+      null
+    ],
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 2728,
+    "price_date": "2026-10-07",
+    "source": "https://www.npf.co.jp/dog-products/dog-detail/bd10pc",
+    "checked": "2026-10-07",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用",
+      "香料不使用",
+      "保存料不使用"
+    ],
+    "additive_evidence": {
+      "source": "https://www.npf.co.jp/dog-products/dog-detail/bd10pc",
+      "checked": "2026-10-07",
+      "note": "不使用表示は公式商品ページの記載(香料・着色料・保存料 無添加。(ドライフードですので保存料は使用しておりません。))"
+    }
+  },
+  "foodys-愛犬元気-愛犬元気-成犬用-ビーフ-緑黄色野菜-小魚入り": {
+    "id": "foodys-愛犬元気-愛犬元気-成犬用-ビーフ-緑黄色野菜-小魚入り",
+    "label": "愛犬元気 成犬用 ビーフ・緑黄色野菜・小魚入り",
+    "ingredients": [
+      "鶏",
+      "牛",
+      "小麦",
+      "とうもろこし",
+      "大豆"
+    ],
+    "ingredient_text": "穀類(トウモロコシ、小麦粉、コーングルテンミール、フスマ、パン粉、コーングルテンフィード)、肉類(チキンミール、チキンエキス、ビーフパウダー)、豆類(脱脂大豆、大豆エキス)、動物性油脂、野菜類(ビートパルプ、ニンジンパウダー、カボチャパウダー、ホウレンソウパウダー)",
+    "target": "成犬(1歳~)（メーカー公式の表示）",
+    "age": [
+      "成犬"
+    ],
+    "age_range": [
+      12.0,
+      null
+    ],
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 1600,
+    "price_date": "2026-10-07",
+    "source": "https://jp.unicharmpet.com/ja/products/dog/food-aikengenki-4520699682890.html",
+    "checked": "2026-10-07",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "foodys-愛犬元気-愛犬元気-7歳以上用-ビーフ-緑黄色野菜-小魚入り": {
+    "id": "foodys-愛犬元気-愛犬元気-7歳以上用-ビーフ-緑黄色野菜-小魚入り",
+    "label": "愛犬元気 7歳以上用 ビーフ・緑黄色野菜・小魚入り",
+    "ingredients": [
+      "鶏",
+      "牛",
+      "豚",
+      "小麦",
+      "とうもろこし",
+      "大豆"
+    ],
+    "ingredient_text": "穀類(トウモロコシ、小麦粉、コーングルテンミール、パン粉、コーングルテンフィード、フスマ)、肉類(チキンミール、ビーフミール、ポークミール、チキンエキス、ビーフパウダー)、動物性油脂、豆類(脱脂大豆、大豆エキス)、野菜類(ビートパルプ、ニンジンパウダー、カボチャパウダー、ホウレンソウパウダー)",
+    "target": "7歳以上（メーカー公式の表示）",
+    "age": [
+      "シニア"
+    ],
+    "age_range": [
+      84.0,
+      null
+    ],
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 1600,
+    "price_date": "2026-10-07",
+    "source": "https://jp.unicharmpet.com/ja/products/dog/food-aikengenki-4520699686874.html",
+    "checked": "2026-10-07",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
   }
 };
