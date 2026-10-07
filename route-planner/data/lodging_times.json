@@ -5,7 +5,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "17:00",
-  "fetched_at": "2026-10-01T22:33"
+  "fetched_at": "2026-10-07T13:01"
  },
  "izu-ishinoie": {
   "hotelNo": "14737",
@@ -13,7 +13,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "17:30",
-  "fetched_at": "2026-10-01T22:33"
+  "fetched_at": "2026-10-07T13:01"
  },
  "atagawa-ocean": {
   "hotelNo": "183827",
@@ -21,7 +21,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": null,
-  "fetched_at": "2026-10-01T22:33"
+  "fetched_at": "2026-10-07T13:01"
  },
  "wellness-nasu": {
   "hotelNo": "28693",
@@ -29,7 +29,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "19:00",
-  "fetched_at": "2026-10-01T22:33"
+  "fetched_at": "2026-10-07T13:01"
  },
  "forest-hills-nasu": {
   "hotelNo": "935",
@@ -37,7 +37,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:33"
+  "fetched_at": "2026-10-07T13:01"
  },
  "risonare-nasu": {
   "hotelNo": "177663",
@@ -45,7 +45,7 @@
   "checkin": "15:00",
   "checkout": "12:00",
   "last_checkin": "22:00",
-  "fetched_at": "2026-10-01T22:33"
+  "fetched_at": "2026-10-07T13:01"
  },
  "hiramatsu-miyota": {
   "hotelNo": "181982",
@@ -53,7 +53,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "20:00",
-  "fetched_at": "2026-10-01T22:33"
+  "fetched_at": "2026-10-07T13:01"
  },
  "karuizawa-house-villa": {
   "hotelNo": "170017",
@@ -61,7 +61,7 @@
   "checkin": "16:00",
   "checkout": "11:00",
   "last_checkin": "19:00",
-  "fetched_at": "2026-10-01T22:33"
+  "fetched_at": "2026-10-07T13:01"
  },
  "refresh-essential-karuizawa": {
   "hotelNo": "135384",
@@ -69,7 +69,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:33"
+  "fetched_at": "2026-10-07T13:01"
  },
  "solana-karuizawa": {
   "hotelNo": "192282",
@@ -77,7 +77,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "24:00",
-  "fetched_at": "2026-10-01T22:33"
+  "fetched_at": "2026-10-07T13:02"
  },
  "p-6db4c7e0a1": {
   "hotelNo": "148998",
@@ -85,7 +85,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "22:00",
-  "fetched_at": "2026-10-01T22:33"
+  "fetched_at": "2026-10-07T13:02"
  },
  "p-0530643bff": {
   "hotelNo": "167940",
@@ -93,7 +93,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:33"
+  "fetched_at": "2026-10-07T13:02"
  },
  "p-3ce4269772": {
   "hotelNo": "192049",
@@ -101,7 +101,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:33"
+  "fetched_at": "2026-10-07T13:02"
  },
  "tsukubasan": {
   "hotelNo": "38574",
@@ -109,7 +109,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:33"
+  "fetched_at": "2026-10-07T13:02"
  },
  "shiobara": {
   "hotelNo": "104699",
@@ -117,7 +117,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": null,
-  "fetched_at": "2026-10-01T22:33"
+  "fetched_at": "2026-10-07T13:02"
  },
  "kitsuregawa": {
   "hotelNo": "104555",
@@ -125,7 +125,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": null,
-  "fetched_at": "2026-10-01T22:33"
+  "fetched_at": "2026-10-07T13:02"
  },
  "epinard": {
   "hotelNo": "7335",
@@ -133,7 +133,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "24:00",
-  "fetched_at": "2026-10-01T22:33"
+  "fetched_at": "2026-10-07T13:02"
  },
  "daitokan": {
   "hotelNo": "129576",
@@ -141,7 +141,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:33"
+  "fetched_at": "2026-10-07T13:02"
  },
  "kujukuri": {
   "hotelNo": "104529",
@@ -149,7 +149,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "22:00",
-  "fetched_at": "2026-10-01T22:33"
+  "fetched_at": "2026-10-07T13:02"
  },
  "karuizawa-prince": {
   "hotelNo": "29249",
@@ -157,7 +157,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "24:00",
-  "fetched_at": "2026-10-01T22:33"
+  "fetched_at": "2026-10-07T13:02"
  },
  "onehotel": {
   "hotelNo": "192973",
@@ -165,7 +165,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:33"
+  "fetched_at": "2026-10-07T13:02"
  },
  "regina-sengokuhara": {
   "hotelNo": "173084",
@@ -173,7 +173,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:33"
+  "fetched_at": "2026-10-07T13:02"
  },
  "regina-mikage": {
   "hotelNo": "165025",
@@ -181,7 +181,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:33"
+  "fetched_at": "2026-10-07T13:02"
  },
  "regina-murin": {
   "hotelNo": "188854",
@@ -189,23 +189,23 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:33"
+  "fetched_at": "2026-10-07T13:02"
  },
  "wanpara-yamanakako": {
   "hotelNo": "167008",
-  "name": "わんわんパラダイス　プレミア　山中湖（旧：Ｗａｎ’ｓ　Ｒｅｓｏｒｔ　山中湖）",
+  "name": "わんわんパラダイス　プレミア　山中湖",
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "21:00",
-  "fetched_at": "2026-10-01T22:33"
+  "fetched_at": "2026-10-07T13:02"
  },
  "wanpara-yatsugatake": {
   "hotelNo": "16564",
-  "name": "わんわんパラダイス　八ヶ岳（旧：八ヶ岳わんわんパラダイス　コテージ）",
+  "name": "わんわんパラダイス　八ヶ岳",
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "20:00",
-  "fetched_at": "2026-10-01T22:33"
+  "fetched_at": "2026-10-07T13:02"
  },
  "tateshina-tokyu-pet": {
   "hotelNo": "521",
@@ -213,7 +213,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "24:00",
-  "fetched_at": "2026-10-01T22:33"
+  "fetched_at": "2026-10-07T13:02"
  },
  "regina-kyukaruizawa": {
   "hotelNo": "167941",
@@ -221,7 +221,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:33"
+  "fetched_at": "2026-10-07T13:02"
  },
  "yutorelo-tateshina": {
   "hotelNo": "179468",
@@ -229,7 +229,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "22:00",
-  "fetched_at": "2026-10-01T22:33"
+  "fetched_at": "2026-10-07T13:02"
  },
  "lechien-kyukaruizawa": {
   "hotelNo": "164648",
@@ -237,7 +237,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "19:00",
-  "fetched_at": "2026-10-01T22:33"
+  "fetched_at": "2026-10-07T13:02"
  },
  "dogcottage-uminone": {
   "hotelNo": "167620",
@@ -245,7 +245,7 @@
   "checkin": "14:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:33"
+  "fetched_at": "2026-10-07T13:02"
  },
  "rakuten-villa-nikko": {
   "hotelNo": "186671",
@@ -253,7 +253,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "22:00",
-  "fetched_at": "2026-10-01T22:33"
+  "fetched_at": "2026-10-07T13:02"
  },
  "rakuten-nikko-hoden": {
   "hotelNo": "170762",
@@ -261,7 +261,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "24:00",
-  "fetched_at": "2026-10-01T22:33"
+  "fetched_at": "2026-10-07T13:02"
  },
  "rakuten-motel-nikko-kinugawa": {
   "hotelNo": "178516",
@@ -269,7 +269,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "24:00",
-  "fetched_at": "2026-10-01T22:33"
+  "fetched_at": "2026-10-07T13:02"
  },
  "rakuten-villa-kinugawa": {
   "hotelNo": "189831",
@@ -277,7 +277,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "22:00",
-  "fetched_at": "2026-10-01T22:34"
+  "fetched_at": "2026-10-07T13:02"
  },
  "rakuten-villa-nasu": {
   "hotelNo": "185326",
@@ -285,7 +285,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "22:00",
-  "fetched_at": "2026-10-01T22:34"
+  "fetched_at": "2026-10-07T13:02"
  },
  "rakuten-villa-kusatsu": {
   "hotelNo": "195645",
@@ -293,7 +293,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "22:00",
-  "fetched_at": "2026-10-01T22:34"
+  "fetched_at": "2026-10-07T13:02"
  },
  "rakuten-villa-hakone-gora": {
   "hotelNo": "195644",
@@ -301,7 +301,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "22:00",
-  "fetched_at": "2026-10-01T22:34"
+  "fetched_at": "2026-10-07T13:02"
  },
  "rakuten-hakone-susuki": {
   "hotelNo": "193942",
@@ -309,7 +309,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "22:00",
-  "fetched_at": "2026-10-01T22:34"
+  "fetched_at": "2026-10-07T13:02"
  },
  "rakuten-hakone-togendai": {
   "hotelNo": "193943",
@@ -317,7 +317,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "22:00",
-  "fetched_at": "2026-10-01T22:34"
+  "fetched_at": "2026-10-07T13:02"
  },
  "rakuten-terrace-hakone-kowakudani": {
   "hotelNo": "190540",
@@ -325,7 +325,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "22:00",
-  "fetched_at": "2026-10-01T22:34"
+  "fetched_at": "2026-10-07T13:02"
  },
  "rakuten-fujimi-hakone": {
   "hotelNo": "189383",
@@ -333,7 +333,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "22:00",
-  "fetched_at": "2026-10-01T22:34"
+  "fetched_at": "2026-10-07T13:02"
  },
  "rakuten-villa-yatsugatake": {
   "hotelNo": "185824",
@@ -341,7 +341,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "22:00",
-  "fetched_at": "2026-10-01T22:34"
+  "fetched_at": "2026-10-07T13:02"
  },
  "rakuten-villa-kamogawa": {
   "hotelNo": "185451",
@@ -349,7 +349,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "22:00",
-  "fetched_at": "2026-10-01T22:34"
+  "fetched_at": "2026-10-07T13:02"
  },
  "rakuten-villa-fujikawaguchiko": {
   "hotelNo": "171239",
@@ -357,7 +357,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "22:00",
-  "fetched_at": "2026-10-01T22:34"
+  "fetched_at": "2026-10-07T13:02"
  },
  "rakuten-villa-fujiyamanakako": {
   "hotelNo": "180530",
@@ -365,7 +365,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "22:00",
-  "fetched_at": "2026-10-01T22:34"
+  "fetched_at": "2026-10-07T13:02"
  },
  "add60-ubud": {
   "hotelNo": "147196",
@@ -373,7 +373,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "19:00",
-  "fetched_at": "2026-10-01T22:34"
+  "fetched_at": "2026-10-07T13:02"
  },
  "add60-aikenoyado": {
   "hotelNo": "143277",
@@ -381,7 +381,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "19:00",
-  "fetched_at": "2026-10-01T22:34"
+  "fetched_at": "2026-10-07T13:02"
  },
  "add60-shikinokura": {
   "hotelNo": "30048",
@@ -389,7 +389,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "24:00",
-  "fetched_at": "2026-10-01T22:34"
+  "fetched_at": "2026-10-07T13:02"
  },
  "add60-regina-yamanakako": {
   "hotelNo": "201722",
@@ -397,7 +397,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:34"
+  "fetched_at": "2026-10-07T13:02"
  },
  "add60-azumino": {
   "hotelNo": "166560",
@@ -405,7 +405,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "22:00",
-  "fetched_at": "2026-10-01T22:34"
+  "fetched_at": "2026-10-07T13:02"
  },
  "add60-tateshina": {
   "hotelNo": "7444",
@@ -413,7 +413,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "24:00",
-  "fetched_at": "2026-10-01T22:34"
+  "fetched_at": "2026-10-07T13:02"
  },
  "n0924-shikinoyakata-nasu": {
   "hotelNo": "167732",
@@ -421,7 +421,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:34"
+  "fetched_at": "2026-10-07T13:02"
  },
  "n0924-shimoda-prince": {
   "hotelNo": "56802",
@@ -429,7 +429,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "24:00",
-  "fetched_at": "2026-10-01T22:34"
+  "fetched_at": "2026-10-07T13:02"
  },
  "n0924-yururi-hakone": {
   "hotelNo": "192229",
@@ -437,15 +437,15 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "22:00",
-  "fetched_at": "2026-10-01T22:34"
+  "fetched_at": "2026-10-07T13:02"
  },
  "n0924-retona-hakone": {
   "hotelNo": "196312",
-  "name": "ＲＥＴＯＮＡ　ＨＡＫＯＮＥ　／　リトナ箱根（２０２５年１２月１５日ＯＰＥＮ）",
+  "name": "ＲＥＴＯＮＡ　ＨＡＫＯＮＥ　／　リトナ箱根",
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "19:00",
-  "fetched_at": "2026-10-01T22:34"
+  "fetched_at": "2026-10-07T13:02"
  },
  "n0924-perro-ikaho": {
   "hotelNo": "188003",
@@ -453,7 +453,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:34"
+  "fetched_at": "2026-10-07T13:03"
  },
  "n0924-ana-hi-karuizawa": {
   "hotelNo": "15307",
@@ -461,7 +461,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "23:00",
-  "fetched_at": "2026-10-01T22:34"
+  "fetched_at": "2026-10-07T13:03"
  },
  "n0924-karuizawa-marriott": {
   "hotelNo": "153419",
@@ -469,7 +469,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "24:00",
-  "fetched_at": "2026-10-01T22:34"
+  "fetched_at": "2026-10-07T13:03"
  },
  "n0924-hanayuran-zao": {
   "hotelNo": "149097",
@@ -477,7 +477,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "17:30",
-  "fetched_at": "2026-10-01T22:34"
+  "fetched_at": "2026-10-07T13:03"
  },
  "n0924-furuhata-hakuba": {
   "hotelNo": "2393",
@@ -485,7 +485,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "21:00",
-  "fetched_at": "2026-10-01T22:34"
+  "fetched_at": "2026-10-07T13:03"
  },
  "n0924-grandmare-oarai": {
   "hotelNo": "184796",
@@ -493,7 +493,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:34"
+  "fetched_at": "2026-10-07T13:03"
  },
  "n0924-yururi-okunikko": {
   "hotelNo": "195988",
@@ -501,7 +501,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "22:00",
-  "fetched_at": "2026-10-01T22:34"
+  "fetched_at": "2026-10-07T13:03"
  },
  "n0924-dogdept-karuizawa": {
   "hotelNo": "167647",
@@ -509,7 +509,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:34"
+  "fetched_at": "2026-10-07T13:03"
  },
  "c-tabist-kiyosato": {
   "hotelNo": "5159",
@@ -517,15 +517,15 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "24:00",
-  "fetched_at": "2026-10-01T22:34"
+  "fetched_at": "2026-10-07T13:03"
  },
  "c-wanpara-izukogen-cottage": {
   "hotelNo": "7440",
-  "name": "わんわんパラダイス　伊豆高原（旧：伊豆高原わんわんパラダイス　ホテル＆コテージ）",
+  "name": "わんわんパラダイス　伊豆高原",
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "20:00",
-  "fetched_at": "2026-10-01T22:34"
+  "fetched_at": "2026-10-07T13:03"
  },
  "c-ikaho-ginsui": {
   "hotelNo": "7517",
@@ -533,7 +533,7 @@
   "checkin": "15:00",
   "checkout": "10:30",
   "last_checkin": "23:00",
-  "fetched_at": "2026-10-01T22:34"
+  "fetched_at": "2026-10-07T13:03"
  },
  "c-zenshichinoyu": {
   "hotelNo": "8084",
@@ -541,7 +541,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "21:00",
-  "fetched_at": "2026-10-01T22:34"
+  "fetched_at": "2026-10-07T13:03"
  },
  "c-yutorelo-kitakaruizawa": {
   "hotelNo": "182063",
@@ -549,7 +549,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "21:00",
-  "fetched_at": "2026-10-01T22:34"
+  "fetched_at": "2026-10-07T13:03"
  },
  "c-soyokaze-karuizawa": {
   "hotelNo": "5158",
@@ -557,7 +557,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "20:00",
-  "fetched_at": "2026-10-01T22:34"
+  "fetched_at": "2026-10-07T13:03"
  },
  "c-glasshouse-hakuba": {
   "hotelNo": "67357",
@@ -565,7 +565,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:34"
+  "fetched_at": "2026-10-07T13:03"
  },
  "c-courtyard-hakuba": {
   "hotelNo": "68530",
@@ -573,7 +573,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "24:00",
-  "fetched_at": "2026-10-01T22:34"
+  "fetched_at": "2026-10-07T13:03"
  },
  "c-moritosora-hakone": {
   "hotelNo": "192238",
@@ -581,7 +581,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:34"
+  "fetched_at": "2026-10-07T13:03"
  },
  "c-koyomi-nasu": {
   "hotelNo": "191940",
@@ -589,7 +589,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "17:00",
-  "fetched_at": "2026-10-01T22:34"
+  "fetched_at": "2026-10-07T13:03"
  },
  "c-livemax-nasu": {
   "hotelNo": "197628",
@@ -597,7 +597,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "22:00",
-  "fetched_at": "2026-10-01T22:34"
+  "fetched_at": "2026-10-07T13:03"
  },
  "c2-angel-forest-nasu": {
   "hotelNo": "187548",
@@ -605,7 +605,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:34"
+  "fetched_at": "2026-10-07T13:03"
  },
  "c2-kizuna-kinugawa": {
   "hotelNo": "183929",
@@ -613,7 +613,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "17:00",
-  "fetched_at": "2026-10-01T22:34"
+  "fetched_at": "2026-10-07T13:03"
  },
  "c2-fuji-marriott-yamanakako": {
   "hotelNo": "160833",
@@ -621,7 +621,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "19:30",
-  "fetched_at": "2026-10-01T22:34"
+  "fetched_at": "2026-10-07T13:03"
  },
  "c2-sugarbeach-oarai": {
   "hotelNo": "191726",
@@ -629,7 +629,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:34"
+  "fetched_at": "2026-10-07T13:03"
  },
  "c2-dogvillage-daigamori": {
   "hotelNo": "193420",
@@ -637,7 +637,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "21:00",
-  "fetched_at": "2026-10-01T22:34"
+  "fetched_at": "2026-10-07T13:03"
  },
  "c2-kieto-chichibu": {
   "hotelNo": "193371",
@@ -645,7 +645,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "22:00",
-  "fetched_at": "2026-10-01T22:34"
+  "fetched_at": "2026-10-07T13:03"
  },
  "c2-pica-chichibu-doggy": {
   "hotelNo": "149179",
@@ -653,7 +653,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "19:00",
-  "fetched_at": "2026-10-01T22:34"
+  "fetched_at": "2026-10-07T13:03"
  },
  "c2-gassan-polepole": {
   "hotelNo": "38064",
@@ -661,7 +661,7 @@
   "checkin": "14:00",
   "checkout": "10:00",
   "last_checkin": "22:00",
-  "fetched_at": "2026-10-01T22:34"
+  "fetched_at": "2026-10-07T13:03"
  },
  "c2-country-cottage-ban": {
   "hotelNo": "72689",
@@ -669,7 +669,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "22:00",
-  "fetched_at": "2026-10-01T22:35"
+  "fetched_at": "2026-10-07T13:03"
  },
  "c2-yururi-atami": {
   "hotelNo": "193293",
@@ -677,7 +677,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "21:00",
-  "fetched_at": "2026-10-01T22:35"
+  "fetched_at": "2026-10-07T13:03"
  },
  "c2-angelforest-atami": {
   "hotelNo": "176941",
@@ -685,7 +685,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:35"
+  "fetched_at": "2026-10-07T13:03"
  },
  "c2-east-winds-village": {
   "hotelNo": "184727",
@@ -693,7 +693,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:35"
+  "fetched_at": "2026-10-07T13:03"
  },
  "c2-hotel-new-akao": {
   "hotelNo": "5417",
@@ -701,7 +701,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "24:00",
-  "fetched_at": "2026-10-01T22:35"
+  "fetched_at": "2026-10-07T13:03"
  },
  "c2-amamu-takahagi": {
   "hotelNo": "142930",
@@ -709,7 +709,7 @@
   "checkin": "14:00",
   "checkout": "10:00",
   "last_checkin": "17:00",
-  "fetched_at": "2026-10-01T22:35"
+  "fetched_at": "2026-10-07T13:03"
  },
  "c2-angelforest-nakaizu": {
   "hotelNo": "188078",
@@ -717,7 +717,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:35"
+  "fetched_at": "2026-10-07T13:03"
  },
  "c-angel-forest-shirakawa": {
   "hotelNo": "17713",
@@ -725,7 +725,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:35"
+  "fetched_at": "2026-10-07T13:03"
  },
  "c3-kojyokan": {
   "hotelNo": "16820",
@@ -733,7 +733,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "18:30",
-  "fetched_at": "2026-10-01T22:35"
+  "fetched_at": "2026-10-07T13:03"
  },
  "c3-joshuen": {
   "hotelNo": "1979",
@@ -741,7 +741,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:35"
+  "fetched_at": "2026-10-07T13:03"
  },
  "c3-ajisai-cottage": {
   "hotelNo": "192991",
@@ -749,7 +749,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:35"
+  "fetched_at": "2026-10-07T13:03"
  },
  "c3-kagetsu-highland": {
   "hotelNo": "64792",
@@ -757,7 +757,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:35"
+  "fetched_at": "2026-10-07T13:03"
  },
  "c3-okina-ryokan": {
   "hotelNo": "20567",
@@ -765,7 +765,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:35"
+  "fetched_at": "2026-10-07T13:03"
  },
  "c3-akabeko-cottage": {
   "hotelNo": "29389",
@@ -773,7 +773,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "17:00",
-  "fetched_at": "2026-10-01T22:35"
+  "fetched_at": "2026-10-07T13:03"
  },
  "c3-azumaen": {
   "hotelNo": "75394",
@@ -781,7 +781,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:35"
+  "fetched_at": "2026-10-07T13:03"
  },
  "c3-sangoro": {
   "hotelNo": "141316",
@@ -789,7 +789,7 @@
   "checkin": "13:00",
   "checkout": "10:00",
   "last_checkin": "21:00",
-  "fetched_at": "2026-10-01T22:35"
+  "fetched_at": "2026-10-07T13:03"
  },
  "c3-schonesheim": {
   "hotelNo": "4925",
@@ -797,7 +797,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "20:00",
-  "fetched_at": "2026-10-01T22:35"
+  "fetched_at": "2026-10-07T13:04"
  },
  "c3-tansen-hotel": {
   "hotelNo": "11034",
@@ -805,7 +805,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "24:00",
-  "fetched_at": "2026-10-01T22:35"
+  "fetched_at": "2026-10-07T13:04"
  },
  "c3-matsushima-century": {
   "hotelNo": "4964",
@@ -813,7 +813,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "19:00",
-  "fetched_at": "2026-10-01T22:35"
+  "fetched_at": "2026-10-07T13:04"
  },
  "c3-shima-izumiya": {
   "hotelNo": "32150",
@@ -821,7 +821,7 @@
   "checkin": "14:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:35"
+  "fetched_at": "2026-10-07T13:04"
  },
  "c3-kuzanbo": {
   "hotelNo": "200703",
@@ -829,7 +829,7 @@
   "checkin": "15:00",
   "checkout": "12:00",
   "last_checkin": "22:00",
-  "fetched_at": "2026-10-01T22:35"
+  "fetched_at": "2026-10-07T13:04"
  },
  "c3-tsumagoi-prince": {
   "hotelNo": "30803",
@@ -837,7 +837,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "24:00",
-  "fetched_at": "2026-10-01T22:35"
+  "fetched_at": "2026-10-07T13:04"
  },
  "c3-inumo-shibakoen": {
   "hotelNo": "183714",
@@ -845,7 +845,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": null,
-  "fetched_at": "2026-10-01T22:35"
+  "fetched_at": "2026-10-07T13:04"
  },
  "c3-kamenoi-ome": {
   "hotelNo": "50573",
@@ -853,7 +853,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "20:00",
-  "fetched_at": "2026-10-01T22:35"
+  "fetched_at": "2026-10-07T13:04"
  },
  "c3-okunikko-kougen": {
   "hotelNo": "8337",
@@ -861,7 +861,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:35"
+  "fetched_at": "2026-10-07T13:04"
  },
  "c3-momonoki-sanwaso": {
   "hotelNo": "160703",
@@ -869,7 +869,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "17:00",
-  "fetched_at": "2026-10-01T22:35"
+  "fetched_at": "2026-10-07T13:04"
  },
  "c3-kimpton-shinjuku": {
   "hotelNo": "178884",
@@ -877,7 +877,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": null,
-  "fetched_at": "2026-10-01T22:35"
+  "fetched_at": "2026-10-07T13:04"
  },
  "c3-karen-hamanako": {
   "hotelNo": "184143",
@@ -885,7 +885,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:35"
+  "fetched_at": "2026-10-07T13:04"
  },
  "c5-jennie-miyota": {
   "hotelNo": "162641",
@@ -893,7 +893,7 @@
   "checkin": "15:30",
   "checkout": "11:00",
   "last_checkin": "20:00",
-  "fetched_at": "2026-10-01T22:35"
+  "fetched_at": "2026-10-07T13:04"
  },
  "c5-design-hotel-folon": {
   "hotelNo": "84553",
@@ -901,7 +901,7 @@
   "checkin": "16:00",
   "checkout": "11:00",
   "last_checkin": "21:00",
-  "fetched_at": "2026-10-01T22:35"
+  "fetched_at": "2026-10-07T13:04"
  },
  "c5-hotel-chinzanso-tokyo": {
   "hotelNo": "28448",
@@ -909,7 +909,7 @@
   "checkin": "15:00",
   "checkout": "12:00",
   "last_checkin": "24:00",
-  "fetched_at": "2026-10-01T22:35"
+  "fetched_at": "2026-10-07T13:04"
  },
  "c5-towa-pure-cottages": {
   "hotelNo": "15255",
@@ -917,7 +917,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "20:00",
-  "fetched_at": "2026-10-01T22:35"
+  "fetched_at": "2026-10-07T13:04"
  },
  "c5-nasu-hamiru-no-mori": {
   "hotelNo": "181751",
@@ -925,7 +925,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:35"
+  "fetched_at": "2026-10-07T13:04"
  },
  "c5-grand-mercure-minamiboso": {
   "hotelNo": "9216",
@@ -933,7 +933,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "24:00",
-  "fetched_at": "2026-10-01T22:35"
+  "fetched_at": "2026-10-07T13:04"
  },
  "c5-ducale-garden-hotel": {
   "hotelNo": "164799",
@@ -941,7 +941,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "22:00",
-  "fetched_at": "2026-10-01T22:35"
+  "fetched_at": "2026-10-07T13:04"
  },
  "c5-godere-hotel-yamanakako": {
   "hotelNo": "197307",
@@ -949,7 +949,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "21:00",
-  "fetched_at": "2026-10-01T22:35"
+  "fetched_at": "2026-10-07T13:04"
  },
  "c5-pension-cottontail": {
   "hotelNo": "8777",
@@ -957,7 +957,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "23:00",
-  "fetched_at": "2026-10-01T22:35"
+  "fetched_at": "2026-10-07T13:04"
  },
  "c5-mercure-urabandai": {
   "hotelNo": "16676",
@@ -965,7 +965,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "25:00",
-  "fetched_at": "2026-10-01T22:35"
+  "fetched_at": "2026-10-07T13:04"
  },
  "c5-tabino-teitaku-woodstay-yamamoto": {
   "hotelNo": "199287",
@@ -973,7 +973,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "24:00",
-  "fetched_at": "2026-10-01T22:35"
+  "fetched_at": "2026-10-07T13:04"
  },
  "c5-pension-corisu": {
   "hotelNo": "49379",
@@ -981,7 +981,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "24:00",
-  "fetched_at": "2026-10-01T22:35"
+  "fetched_at": "2026-10-07T13:04"
  },
  "c5-pension-felice": {
   "hotelNo": "56823",
@@ -989,7 +989,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "20:00",
-  "fetched_at": "2026-10-01T22:35"
+  "fetched_at": "2026-10-07T13:04"
  },
  "c5-ashinomaki-prince-hotel": {
   "hotelNo": "70198",
@@ -997,7 +997,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:35"
+  "fetched_at": "2026-10-07T13:04"
  },
  "c5-lodge-scole-zao": {
   "hotelNo": "5102",
@@ -1005,7 +1005,7 @@
   "checkin": "14:00",
   "checkout": "10:00",
   "last_checkin": "17:00",
-  "fetched_at": "2026-10-01T22:35"
+  "fetched_at": "2026-10-07T13:04"
  },
  "c5-newougiya-tsuchiyu": {
   "hotelNo": "74615",
@@ -1013,7 +1013,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:35"
+  "fetched_at": "2026-10-07T13:04"
  },
  "c5-kami-yuland-cottage": {
   "hotelNo": "183985",
@@ -1021,7 +1021,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:35"
+  "fetched_at": "2026-10-07T13:04"
  },
  "c5-morino-cottage-kesennuma": {
   "hotelNo": "188915",
@@ -1029,7 +1029,7 @@
   "checkin": "16:00",
   "checkout": "10:00",
   "last_checkin": "22:00",
-  "fetched_at": "2026-10-01T22:35"
+  "fetched_at": "2026-10-07T13:04"
  },
  "c5-hanabusa-doglamping-aone": {
   "hotelNo": "181792",
@@ -1037,7 +1037,7 @@
   "checkin": "14:00",
   "checkout": "10:00",
   "last_checkin": "17:00",
-  "fetched_at": "2026-10-01T22:35"
+  "fetched_at": "2026-10-07T13:04"
  },
  "c5-kibotcha-higashimatsushima": {
   "hotelNo": "167954",
@@ -1045,7 +1045,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "21:00",
-  "fetched_at": "2026-10-01T22:35"
+  "fetched_at": "2026-10-07T13:04"
  },
  "c5-pension-omochabako-yonezawa": {
   "hotelNo": "44398",
@@ -1053,7 +1053,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "20:00",
-  "fetched_at": "2026-10-01T22:36"
+  "fetched_at": "2026-10-07T13:04"
  },
  "c5-sakatanto-camps-pet-room": {
   "hotelNo": "193122",
@@ -1061,7 +1061,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "29:00",
-  "fetched_at": "2026-10-01T22:36"
+  "fetched_at": "2026-10-07T13:04"
  },
  "c5-kinugawa-kokusai-hotel": {
   "hotelNo": "8147",
@@ -1069,7 +1069,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "19:00",
-  "fetched_at": "2026-10-01T22:36"
+  "fetched_at": "2026-10-07T13:04"
  },
  "c5-kunel-nasu": {
   "hotelNo": "196547",
@@ -1077,7 +1077,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "22:00",
-  "fetched_at": "2026-10-01T22:36"
+  "fetched_at": "2026-10-07T13:04"
  },
  "c5-fukuraku-no-yakata-nasu": {
   "hotelNo": "164840",
@@ -1085,7 +1085,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:36"
+  "fetched_at": "2026-10-07T13:04"
  },
  "c5-akagi-futokoro": {
   "hotelNo": "196541",
@@ -1093,7 +1093,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "18:30",
-  "fetched_at": "2026-10-01T22:36"
+  "fetched_at": "2026-10-07T13:04"
  },
  "c5-flatlet-kusatsu": {
   "hotelNo": "25817",
@@ -1101,7 +1101,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "21:00",
-  "fetched_at": "2026-10-01T22:36"
+  "fetched_at": "2026-10-07T13:04"
  },
  "c5-animal-goten-nikko": {
   "hotelNo": "178730",
@@ -1109,7 +1109,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "17:30",
-  "fetched_at": "2026-10-01T22:36"
+  "fetched_at": "2026-10-07T13:04"
  },
  "c5-shimeikan-minakami": {
   "hotelNo": "129700",
@@ -1117,7 +1117,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:36"
+  "fetched_at": "2026-10-07T13:05"
  },
  "c5-hotel-higashinihon-utsunomiya": {
   "hotelNo": "15147",
@@ -1125,7 +1125,7 @@
   "checkin": "14:00",
   "checkout": "11:00",
   "last_checkin": "27:00",
-  "fetched_at": "2026-10-01T22:36"
+  "fetched_at": "2026-10-07T13:05"
  },
  "c5-hotel-morinokaze-nasu": {
   "hotelNo": "167733",
@@ -1133,7 +1133,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:36"
+  "fetched_at": "2026-10-07T13:05"
  },
  "c5-earthboat-minakami-fujiwara": {
   "hotelNo": "193176",
@@ -1141,7 +1141,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:36"
+  "fetched_at": "2026-10-07T13:05"
  },
  "c5-earthboat-minakami-hodaigi": {
   "hotelNo": "193443",
@@ -1149,7 +1149,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "24:00",
-  "fetched_at": "2026-10-01T22:36"
+  "fetched_at": "2026-10-07T13:05"
  },
  "c5-earthboat-nasu": {
   "hotelNo": "198001",
@@ -1157,7 +1157,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "24:00",
-  "fetched_at": "2026-10-01T22:36"
+  "fetched_at": "2026-10-07T13:05"
  },
  "c5-dwarven-village-nasu": {
   "hotelNo": "201839",
@@ -1165,7 +1165,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "21:00",
-  "fetched_at": "2026-10-01T22:36"
+  "fetched_at": "2026-10-07T13:05"
  },
  "c5-onga-kusatsu": {
   "hotelNo": "109164",
@@ -1173,7 +1173,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:36"
+  "fetched_at": "2026-10-07T13:05"
  },
  "c5-asama-kogen-hotel": {
   "hotelNo": "147133",
@@ -1181,7 +1181,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "24:00",
-  "fetched_at": "2026-10-01T22:36"
+  "fetched_at": "2026-10-07T13:05"
  },
  "c5-earthboat-kitakaruizawa": {
   "hotelNo": "202437",
@@ -1189,7 +1189,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "23:00",
-  "fetched_at": "2026-10-01T22:36"
+  "fetched_at": "2026-10-07T13:05"
  },
  "c5-la-piste-nasu": {
   "hotelNo": "136195",
@@ -1197,7 +1197,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "17:00",
-  "fetched_at": "2026-10-01T22:36"
+  "fetched_at": "2026-10-07T13:05"
  },
  "c5-sorano-hotel-tachikawa": {
   "hotelNo": "196035",
@@ -1205,7 +1205,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "23:00",
-  "fetched_at": "2026-10-01T22:36"
+  "fetched_at": "2026-10-07T13:05"
  },
  "c5-imperial-hotel-tokyo-dog-suite": {
   "hotelNo": "28576",
@@ -1213,7 +1213,7 @@
   "checkin": "14:00",
   "checkout": "12:00",
   "last_checkin": "24:00",
-  "fetched_at": "2026-10-01T22:36"
+  "fetched_at": "2026-10-07T13:05"
  },
  "c5-itsukiri-isumi-dog-suite": {
   "hotelNo": "188952",
@@ -1221,7 +1221,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "19:00",
-  "fetched_at": "2026-10-01T22:36"
+  "fetched_at": "2026-10-07T13:05"
  },
  "c5-dog-cottage-surfside-kujukuri": {
   "hotelNo": "193463",
@@ -1229,7 +1229,7 @@
   "checkin": "14:30",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:36"
+  "fetched_at": "2026-10-07T13:05"
  },
  "c5-marunomori-glamping-ichihara": {
   "hotelNo": "188322",
@@ -1237,7 +1237,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:36"
+  "fetched_at": "2026-10-07T13:05"
  },
  "c5-villa-pour-moi-sammu": {
   "hotelNo": "197152",
@@ -1245,7 +1245,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "19:00",
-  "fetched_at": "2026-10-01T22:36"
+  "fetched_at": "2026-10-07T13:05"
  },
  "c5-wan-fort-tateyama": {
   "hotelNo": "188367",
@@ -1253,7 +1253,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "19:00",
-  "fetched_at": "2026-10-01T22:36"
+  "fetched_at": "2026-10-07T13:05"
  },
  "c5-seaglass-shirahama": {
   "hotelNo": "172616",
@@ -1261,7 +1261,7 @@
   "checkin": "14:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:36"
+  "fetched_at": "2026-10-07T13:05"
  },
  "c5-goyutei-kamogawa": {
   "hotelNo": "149290",
@@ -1269,7 +1269,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "20:00",
-  "fetched_at": "2026-10-01T22:36"
+  "fetched_at": "2026-10-07T13:05"
  },
  "c5-on-the-wave-tateyama": {
   "hotelNo": "196443",
@@ -1277,7 +1277,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "22:00",
-  "fetched_at": "2026-10-01T22:36"
+  "fetched_at": "2026-10-07T13:05"
  },
  "c5-cotomaru-wanship-kanaya": {
   "hotelNo": "167121",
@@ -1285,7 +1285,7 @@
   "checkin": "14:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:36"
+  "fetched_at": "2026-10-07T13:05"
  },
  "c5-solana-chiba-shirahama": {
   "hotelNo": "192281",
@@ -1293,7 +1293,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "24:00",
-  "fetched_at": "2026-10-01T22:36"
+  "fetched_at": "2026-10-07T13:05"
  },
  "c5-all-season-resort-no5-kura": {
   "hotelNo": "183513",
@@ -1301,7 +1301,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "20:00",
-  "fetched_at": "2026-10-01T22:36"
+  "fetched_at": "2026-10-07T13:05"
  },
  "c5-bayside-kanaya": {
   "hotelNo": "183577",
@@ -1309,7 +1309,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "20:00",
-  "fetched_at": "2026-10-01T22:36"
+  "fetched_at": "2026-10-07T13:05"
  },
  "c5-solana-kamogawa": {
   "hotelNo": "189025",
@@ -1317,7 +1317,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "24:00",
-  "fetched_at": "2026-10-01T22:36"
+  "fetched_at": "2026-10-07T13:05"
  },
  "c5-takatakiko-glamping-ichihara": {
   "hotelNo": "182061",
@@ -1325,7 +1325,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:36"
+  "fetched_at": "2026-10-07T13:05"
  },
  "c5-bird-hotel-kamakura": {
   "hotelNo": "184025",
@@ -1333,7 +1333,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "21:00",
-  "fetched_at": "2026-10-01T22:36"
+  "fetched_at": "2026-10-07T13:05"
  },
  "c5-yururi-nishiizu": {
   "hotelNo": "176840",
@@ -1341,7 +1341,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "22:00",
-  "fetched_at": "2026-10-01T22:36"
+  "fetched_at": "2026-10-07T13:05"
  },
  "c5-shikinoyakata-hakone-ashinoko": {
   "hotelNo": "183100",
@@ -1349,7 +1349,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:36"
+  "fetched_at": "2026-10-07T13:05"
  },
  "c5-hotel-morinokaze-hakone-sengokuhara": {
   "hotelNo": "184193",
@@ -1357,7 +1357,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:36"
+  "fetched_at": "2026-10-07T13:05"
  },
  "c5-sunny-no-ashiato-izukogen": {
   "hotelNo": "188908",
@@ -1365,7 +1365,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "20:30",
-  "fetched_at": "2026-10-01T22:36"
+  "fetched_at": "2026-10-07T13:05"
  },
  "c5-tokyu-vacations-izukogen": {
   "hotelNo": "104686",
@@ -1373,7 +1373,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "22:00",
-  "fetched_at": "2026-10-01T22:36"
+  "fetched_at": "2026-10-07T13:05"
  },
  "c5-laforet-hakone-gora-yunosumika": {
   "hotelNo": "68545",
@@ -1381,7 +1381,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "24:00",
-  "fetched_at": "2026-10-01T22:36"
+  "fetched_at": "2026-10-07T13:05"
  },
  "c5-ufufu-village-amagi": {
   "hotelNo": "168621",
@@ -1389,7 +1389,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:36"
+  "fetched_at": "2026-10-07T13:06"
  },
  "c5-appleseed-ito": {
   "hotelNo": "74799",
@@ -1397,7 +1397,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:36"
+  "fetched_at": "2026-10-07T13:06"
  },
  "c5-piccola-rouge-ito": {
   "hotelNo": "139801",
@@ -1405,7 +1405,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "17:00",
-  "fetched_at": "2026-10-01T22:36"
+  "fetched_at": "2026-10-07T13:06"
  },
  "c5-lux-hakone-yumoto": {
   "hotelNo": "188109",
@@ -1413,7 +1413,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:36"
+  "fetched_at": "2026-10-07T13:06"
  },
  "c5-hoozue-no-toki-toi": {
   "hotelNo": "137970",
@@ -1421,7 +1421,7 @@
   "checkin": "15:00",
   "checkout": "12:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:36"
+  "fetched_at": "2026-10-07T13:06"
  },
  "c5-hilton-odawara-dog-friendly": {
   "hotelNo": "25162",
@@ -1429,7 +1429,7 @@
   "checkin": "15:00",
   "checkout": "12:00",
   "last_checkin": "24:00",
-  "fetched_at": "2026-10-01T22:36"
+  "fetched_at": "2026-10-07T13:06"
  },
  "c5-farm-garden-hotel-numazu": {
   "hotelNo": "105983",
@@ -1437,7 +1437,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "20:00",
-  "fetched_at": "2026-10-01T22:37"
+  "fetched_at": "2026-10-07T13:06"
  },
  "c5-il-azzurri-dogashima": {
   "hotelNo": "182620",
@@ -1445,7 +1445,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "22:00",
-  "fetched_at": "2026-10-01T22:37"
+  "fetched_at": "2026-10-07T13:06"
  },
  "c5-kanadenomori-forest-glamping": {
   "hotelNo": "189199",
@@ -1453,7 +1453,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:30",
-  "fetched_at": "2026-10-01T22:37"
+  "fetched_at": "2026-10-07T13:06"
  },
  "c5-pension-asama-mansard": {
   "hotelNo": "38427",
@@ -1461,7 +1461,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:37"
+  "fetched_at": "2026-10-07T13:06"
  },
  "c5-villa-saison-fuji-kawaguchiko": {
   "hotelNo": "187413",
@@ -1469,7 +1469,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:37"
+  "fetched_at": "2026-10-07T13:06"
  },
  "c5-resort-hotel-tateshina-dog-room": {
   "hotelNo": "7174",
@@ -1477,7 +1477,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "20:00",
-  "fetched_at": "2026-10-01T22:37"
+  "fetched_at": "2026-10-07T13:06"
  },
  "c5-art-hotel-dogleg-karuizawa": {
   "hotelNo": "67962",
@@ -1485,7 +1485,7 @@
   "checkin": "16:00",
   "checkout": "11:00",
   "last_checkin": "20:30",
-  "fetched_at": "2026-10-01T22:37"
+  "fetched_at": "2026-10-07T13:06"
  },
  "c5-achi-yamaboshi": {
   "hotelNo": "183937",
@@ -1493,7 +1493,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:37"
+  "fetched_at": "2026-10-07T13:06"
  },
  "c5-ichi-en-fuji": {
   "hotelNo": "197907",
@@ -1501,7 +1501,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:37"
+  "fetched_at": "2026-10-07T13:06"
  },
  "c5-solana-fuji-yamanakako": {
   "hotelNo": "189023",
@@ -1509,7 +1509,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "24:00",
-  "fetched_at": "2026-10-01T22:37"
+  "fetched_at": "2026-10-07T13:06"
  },
  "c5-loof-okanoie-yamanashi": {
   "hotelNo": "182443",
@@ -1517,7 +1517,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "20:00",
-  "fetched_at": "2026-10-01T22:37"
+  "fetched_at": "2026-10-07T13:06"
  },
  "c5-loof-shonoie-yamanashi": {
   "hotelNo": "181764",
@@ -1525,7 +1525,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "20:00",
-  "fetched_at": "2026-10-01T22:37"
+  "fetched_at": "2026-10-07T13:06"
  },
  "c5-tateshina-park-hotel-cottage": {
   "hotelNo": "16099",
@@ -1533,7 +1533,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:37"
+  "fetched_at": "2026-10-07T13:06"
  },
  "c5-osawakan-echigoyuzawa": {
   "hotelNo": "128386",
@@ -1541,7 +1541,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "21:00",
-  "fetched_at": "2026-10-01T22:37"
+  "fetched_at": "2026-10-07T13:06"
  },
  "c5-fuyo-no-yado-fujigoko": {
   "hotelNo": "167579",
@@ -1549,7 +1549,7 @@
   "checkin": "15:30",
   "checkout": "10:00",
   "last_checkin": "22:00",
-  "fetched_at": "2026-10-01T22:37"
+  "fetched_at": "2026-10-07T13:06"
  },
  "c5-yutorelo-karuizawa": {
   "hotelNo": "19304",
@@ -1557,7 +1557,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "24:00",
-  "fetched_at": "2026-10-01T22:37"
+  "fetched_at": "2026-10-07T13:06"
  },
  "c5-yutorelo-echigoyuzawa": {
   "hotelNo": "197773",
@@ -1565,7 +1565,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "22:00",
-  "fetched_at": "2026-10-01T22:37"
+  "fetched_at": "2026-10-07T13:06"
  },
  "c5-forest-garden-karuizawa-la-topiary": {
   "hotelNo": "160714",
@@ -1573,7 +1573,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "19:00",
-  "fetched_at": "2026-10-01T22:37"
+  "fetched_at": "2026-10-07T13:06"
  },
  "c5-umiyado-taiyoubito-minamiizu": {
   "hotelNo": "104733",
@@ -1581,7 +1581,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:37"
+  "fetched_at": "2026-10-07T13:06"
  },
  "c5-aone-onsen-hitomune-hoshitare": {
   "hotelNo": "167575",
@@ -1589,7 +1589,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "21:00",
-  "fetched_at": "2026-10-01T22:37"
+  "fetched_at": "2026-10-07T13:06"
  },
  "c5-conifer-iwabitsu-agatsuma": {
   "hotelNo": "147842",
@@ -1597,7 +1597,7 @@
   "checkin": "14:00",
   "checkout": "10:00",
   "last_checkin": "19:00",
-  "fetched_at": "2026-10-01T22:37"
+  "fetched_at": "2026-10-07T13:06"
  },
  "c5-bub-resort-tsukuba": {
   "hotelNo": "197422",
@@ -1605,7 +1605,7 @@
   "checkin": "12:00",
   "checkout": "10:00",
   "last_checkin": null,
-  "fetched_at": "2026-10-01T22:37"
+  "fetched_at": "2026-10-07T13:06"
  },
  "c5-pension-cosmos-katashina": {
   "hotelNo": "2377",
@@ -1613,7 +1613,7 @@
   "checkin": "15:30",
   "checkout": "10:00",
   "last_checkin": "25:00",
-  "fetched_at": "2026-10-01T22:37"
+  "fetched_at": "2026-10-07T13:06"
  },
  "c5-earthboat-saitama-kawajima": {
   "hotelNo": "198833",
@@ -1621,7 +1621,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "24:00",
-  "fetched_at": "2026-10-01T22:37"
+  "fetched_at": "2026-10-07T13:06"
  },
  "c5-opark-ogose": {
   "hotelNo": "167663",
@@ -1629,7 +1629,7 @@
   "checkin": "16:00",
   "checkout": "10:00",
   "last_checkin": "20:00",
-  "fetched_at": "2026-10-01T22:37"
+  "fetched_at": "2026-10-07T13:06"
  },
  "c5-yamagata-glam": {
   "hotelNo": "183564",
@@ -1637,7 +1637,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:37"
+  "fetched_at": "2026-10-07T13:06"
  },
  "c5-tabinoteitaku-chokaizan-view": {
   "hotelNo": "197967",
@@ -1645,7 +1645,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "24:00",
-  "fetched_at": "2026-10-01T22:37"
+  "fetched_at": "2026-10-07T13:06"
  },
  "c5-lodge-bw-maiko": {
   "hotelNo": "104826",
@@ -1653,7 +1653,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "22:00",
-  "fetched_at": "2026-10-01T22:37"
+  "fetched_at": "2026-10-07T13:06"
  },
  "c5-humming-no-yado-tsukioka": {
   "hotelNo": "167512",
@@ -1661,7 +1661,7 @@
   "checkin": "16:00",
   "checkout": "09:00",
   "last_checkin": "23:00",
-  "fetched_at": "2026-10-01T22:37"
+  "fetched_at": "2026-10-07T13:06"
  },
  "c5-hotel-chyo-naeba": {
   "hotelNo": "128579",
@@ -1669,7 +1669,7 @@
   "checkin": "14:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:37"
+  "fetched_at": "2026-10-07T13:06"
  },
  "c5-lodge-kokuha-myoko": {
   "hotelNo": "38857",
@@ -1677,7 +1677,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "24:00",
-  "fetched_at": "2026-10-01T22:37"
+  "fetched_at": "2026-10-07T13:06"
  },
  "c5-auberge-mizuakari": {
   "hotelNo": "188726",
@@ -1685,7 +1685,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "22:00",
-  "fetched_at": "2026-10-01T22:37"
+  "fetched_at": "2026-10-07T13:06"
  },
  "c5-canvas-hayama-park": {
   "hotelNo": "183772",
@@ -1693,7 +1693,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "17:00",
-  "fetched_at": "2026-10-01T22:37"
+  "fetched_at": "2026-10-07T13:06"
  },
  "c5-andsun-terracehouse-hayama": {
   "hotelNo": "164515",
@@ -1701,7 +1701,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:37"
+  "fetched_at": "2026-10-07T13:06"
  },
  "c5-andsun-penthouse-hayama": {
   "hotelNo": "164698",
@@ -1709,7 +1709,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:37"
+  "fetched_at": "2026-10-07T13:06"
  },
  "c5-morito-funny-house": {
   "hotelNo": "188881",
@@ -1717,7 +1717,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:37"
+  "fetched_at": "2026-10-07T13:06"
  },
  "c5-andmoon-noa-hayama": {
   "hotelNo": "188883",
@@ -1725,7 +1725,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:37"
+  "fetched_at": "2026-10-07T13:06"
  },
  "c6-00918694": {
   "hotelNo": "20567",
@@ -1733,7 +1733,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:37"
+  "fetched_at": "2026-10-07T13:06"
  },
  "c6-00923052": {
   "hotelNo": "195789",
@@ -1741,7 +1741,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:37"
+  "fetched_at": "2026-10-07T13:06"
  },
  "c6-00923585": {
   "hotelNo": "196524",
@@ -1749,7 +1749,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "22:00",
-  "fetched_at": "2026-10-01T22:37"
+  "fetched_at": "2026-10-07T13:07"
  },
  "c6-00908161": {
   "hotelNo": "107863",
@@ -1757,7 +1757,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:37"
+  "fetched_at": "2026-10-07T13:07"
  },
  "c6-00918025": {
   "hotelNo": "41734",
@@ -1765,7 +1765,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:37"
+  "fetched_at": "2026-10-07T13:07"
  },
  "c6-00913846": {
   "hotelNo": "171521",
@@ -1773,7 +1773,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:37"
+  "fetched_at": "2026-10-07T13:07"
  },
  "c6-00913910": {
   "hotelNo": "198906",
@@ -1781,7 +1781,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "17:00",
-  "fetched_at": "2026-10-01T22:37"
+  "fetched_at": "2026-10-07T13:07"
  },
  "c6-00916337": {
   "hotelNo": "67825",
@@ -1789,7 +1789,7 @@
   "checkin": "14:00",
   "checkout": "11:00",
   "last_checkin": "19:00",
-  "fetched_at": "2026-10-01T22:37"
+  "fetched_at": "2026-10-07T13:07"
  },
  "c6-00918505": {
   "hotelNo": "192347",
@@ -1797,7 +1797,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:37"
+  "fetched_at": "2026-10-07T13:07"
  },
  "c6-00918871": {
   "hotelNo": "191737",
@@ -1805,7 +1805,7 @@
   "checkin": "09:00",
   "checkout": "11:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:37"
+  "fetched_at": "2026-10-07T13:07"
  },
  "c6-00920856": {
   "hotelNo": "54564",
@@ -1813,7 +1813,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "20:00",
-  "fetched_at": "2026-10-01T22:37"
+  "fetched_at": "2026-10-07T13:07"
  },
  "c6-00920921": {
   "hotelNo": "184691",
@@ -1821,7 +1821,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "20:00",
-  "fetched_at": "2026-10-01T22:38"
+  "fetched_at": "2026-10-07T13:07"
  },
  "c6-00922839": {
   "hotelNo": "197742",
@@ -1829,7 +1829,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "21:00",
-  "fetched_at": "2026-10-01T22:38"
+  "fetched_at": "2026-10-07T13:07"
  },
  "c6-00922844": {
   "hotelNo": "198318",
@@ -1837,7 +1837,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "20:00",
-  "fetched_at": "2026-10-01T22:38"
+  "fetched_at": "2026-10-07T13:07"
  },
  "c6-00924270": {
   "hotelNo": "3083",
@@ -1845,7 +1845,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "17:30",
-  "fetched_at": "2026-10-01T22:38"
+  "fetched_at": "2026-10-07T13:07"
  },
  "c6-00905508": {
   "hotelNo": "10985",
@@ -1853,7 +1853,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "20:00",
-  "fetched_at": "2026-10-01T22:38"
+  "fetched_at": "2026-10-07T13:07"
  },
  "c6-00919194": {
   "hotelNo": "140714",
@@ -1861,7 +1861,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "21:00",
-  "fetched_at": "2026-10-01T22:38"
+  "fetched_at": "2026-10-07T13:07"
  },
  "c6-00913046": {
   "hotelNo": "196482",
@@ -1869,7 +1869,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "21:00",
-  "fetched_at": "2026-10-01T22:38"
+  "fetched_at": "2026-10-07T13:07"
  },
  "c6-00913232": {
   "hotelNo": "183551",
@@ -1877,7 +1877,7 @@
   "checkin": "15:00",
   "checkout": "12:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:38"
+  "fetched_at": "2026-10-07T13:07"
  },
  "c6-00913372": {
   "hotelNo": "187342",
@@ -1885,7 +1885,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "19:00",
-  "fetched_at": "2026-10-01T22:38"
+  "fetched_at": "2026-10-07T13:07"
  },
  "c6-00914671": {
   "hotelNo": "189179",
@@ -1893,7 +1893,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:38"
+  "fetched_at": "2026-10-07T13:07"
  },
  "c6-00914930": {
   "hotelNo": "165066",
@@ -1901,7 +1901,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "21:00",
-  "fetched_at": "2026-10-01T22:38"
+  "fetched_at": "2026-10-07T13:07"
  },
  "c6-00915179": {
   "hotelNo": "189024",
@@ -1909,7 +1909,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "24:00",
-  "fetched_at": "2026-10-01T22:38"
+  "fetched_at": "2026-10-07T13:07"
  },
  "c6-00916650": {
   "hotelNo": "128499",
@@ -1917,7 +1917,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:38"
+  "fetched_at": "2026-10-07T13:07"
  },
  "c6-00919170": {
   "hotelNo": "184489",
@@ -1925,7 +1925,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:38"
+  "fetched_at": "2026-10-07T13:07"
  },
  "c6-00920155": {
   "hotelNo": "193295",
@@ -1933,7 +1933,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:38"
+  "fetched_at": "2026-10-07T13:07"
  },
  "c7-00923193": {
   "hotelNo": "11186",
@@ -1941,7 +1941,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:38"
+  "fetched_at": "2026-10-07T13:07"
  },
  "c7-00924096": {
   "hotelNo": "189097",
@@ -1949,7 +1949,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "19:00",
-  "fetched_at": "2026-10-01T22:38"
+  "fetched_at": "2026-10-07T13:07"
  },
  "c7-00051411": {
   "hotelNo": "189434",
@@ -1957,7 +1957,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:38"
+  "fetched_at": "2026-10-07T13:07"
  },
  "c7-00051544": {
   "hotelNo": "186388",
@@ -1965,7 +1965,7 @@
   "checkin": "14:00",
   "checkout": "11:00",
   "last_checkin": "20:00",
-  "fetched_at": "2026-10-01T22:38"
+  "fetched_at": "2026-10-07T13:07"
  },
  "c7-00914781": {
   "hotelNo": "191826",
@@ -1973,7 +1973,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "24:00",
-  "fetched_at": "2026-10-01T22:38"
+  "fetched_at": "2026-10-07T13:07"
  },
  "c7-00917891": {
   "hotelNo": "195265",
@@ -1981,7 +1981,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "23:00",
-  "fetched_at": "2026-10-01T22:38"
+  "fetched_at": "2026-10-07T13:07"
  },
  "c7-00921313": {
   "hotelNo": "180112",
@@ -1989,7 +1989,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "24:00",
-  "fetched_at": "2026-10-01T22:38"
+  "fetched_at": "2026-10-07T13:07"
  },
  "c7-00921319": {
   "hotelNo": "195999",
@@ -1997,7 +1997,7 @@
   "checkin": "16:00",
   "checkout": "10:00",
   "last_checkin": "20:00",
-  "fetched_at": "2026-10-01T22:38"
+  "fetched_at": "2026-10-07T13:07"
  },
  "c7-00923103": {
   "hotelNo": "166903",
@@ -2005,7 +2005,7 @@
   "checkin": "14:00",
   "checkout": "10:00",
   "last_checkin": "19:00",
-  "fetched_at": "2026-10-01T22:38"
+  "fetched_at": "2026-10-07T13:07"
  },
  "c7-00000433": {
   "hotelNo": "15762",
@@ -2013,7 +2013,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "22:00",
-  "fetched_at": "2026-10-01T22:38"
+  "fetched_at": "2026-10-07T13:07"
  },
  "c7-00051149": {
   "hotelNo": "104685",
@@ -2021,7 +2021,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "22:00",
-  "fetched_at": "2026-10-01T22:38"
+  "fetched_at": "2026-10-07T13:07"
  },
  "c7-00914670": {
   "hotelNo": "187452",
@@ -2029,7 +2029,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "20:00",
-  "fetched_at": "2026-10-01T22:38"
+  "fetched_at": "2026-10-07T13:07"
  },
  "c7-00918014": {
   "hotelNo": "188987",
@@ -2037,7 +2037,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:38"
+  "fetched_at": "2026-10-07T13:07"
  },
  "c7-00922831": {
   "hotelNo": "188805",
@@ -2045,7 +2045,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "22:00",
-  "fetched_at": "2026-10-01T22:38"
+  "fetched_at": "2026-10-07T13:07"
  },
  "c7-00923026": {
   "hotelNo": "192889",
@@ -2053,7 +2053,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:38"
+  "fetched_at": "2026-10-07T13:07"
  },
  "c7-00923940": {
   "hotelNo": "80580",
@@ -2061,7 +2061,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "22:00",
-  "fetched_at": "2026-10-01T22:38"
+  "fetched_at": "2026-10-07T13:07"
  },
  "c7-00051147": {
   "hotelNo": "191756",
@@ -2069,7 +2069,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:38"
+  "fetched_at": "2026-10-07T13:07"
  },
  "c7-00051816": {
   "hotelNo": "191462",
@@ -2077,7 +2077,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "24:00",
-  "fetched_at": "2026-10-01T22:38"
+  "fetched_at": "2026-10-07T13:07"
  },
  "c7-00052312": {
   "hotelNo": "197601",
@@ -2085,7 +2085,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "23:00",
-  "fetched_at": "2026-10-01T22:38"
+  "fetched_at": "2026-10-07T13:07"
  },
  "c7-00052552": {
   "hotelNo": "195494",
@@ -2093,7 +2093,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "23:00",
-  "fetched_at": "2026-10-01T22:38"
+  "fetched_at": "2026-10-07T13:07"
  },
  "c7-00900581": {
   "hotelNo": "39460",
@@ -2101,7 +2101,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": null,
-  "fetched_at": "2026-10-01T22:38"
+  "fetched_at": "2026-10-07T13:07"
  },
  "c7-00904655": {
   "hotelNo": "166192",
@@ -2109,7 +2109,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "19:30",
-  "fetched_at": "2026-10-01T22:38"
+  "fetched_at": "2026-10-07T13:07"
  },
  "c7-00905812": {
   "hotelNo": "44327",
@@ -2117,7 +2117,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "19:30",
-  "fetched_at": "2026-10-01T22:38"
+  "fetched_at": "2026-10-07T13:07"
  },
  "c7-00916420": {
   "hotelNo": "149177",
@@ -2125,7 +2125,7 @@
   "checkin": "14:00",
   "checkout": "11:00",
   "last_checkin": "19:00",
-  "fetched_at": "2026-10-01T22:38"
+  "fetched_at": "2026-10-07T13:07"
  },
  "c7-00916426": {
   "hotelNo": "167507",
@@ -2133,7 +2133,7 @@
   "checkin": "14:00",
   "checkout": "11:00",
   "last_checkin": "19:00",
-  "fetched_at": "2026-10-01T22:38"
+  "fetched_at": "2026-10-07T13:08"
  },
  "c7-00917863": {
   "hotelNo": "192166",
@@ -2141,7 +2141,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "22:00",
-  "fetched_at": "2026-10-01T22:38"
+  "fetched_at": "2026-10-07T13:08"
  },
  "c7-00925085": {
   "hotelNo": "202230",
@@ -2149,7 +2149,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:38"
+  "fetched_at": "2026-10-07T13:08"
  },
  "c7-00000247": {
   "hotelNo": "7554",
@@ -2157,7 +2157,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:38"
+  "fetched_at": "2026-10-07T13:08"
  },
  "c7-00030239": {
   "hotelNo": "137759",
@@ -2165,7 +2165,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:38"
+  "fetched_at": "2026-10-07T13:08"
  },
  "c7-00051604": {
   "hotelNo": "187204",
@@ -2173,7 +2173,7 @@
   "checkin": "16:00",
   "checkout": "10:00",
   "last_checkin": "22:00",
-  "fetched_at": "2026-10-01T22:38"
+  "fetched_at": "2026-10-07T13:08"
  },
  "c7-00052327": {
   "hotelNo": "200179",
@@ -2181,7 +2181,7 @@
   "checkin": "16:00",
   "checkout": "11:00",
   "last_checkin": "23:00",
-  "fetched_at": "2026-10-01T22:38"
+  "fetched_at": "2026-10-07T13:08"
  },
  "c7-00080640": {
   "hotelNo": "28426",
@@ -2189,7 +2189,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "26:00",
-  "fetched_at": "2026-10-01T22:38"
+  "fetched_at": "2026-10-07T13:08"
  },
  "c7-00906942": {
   "hotelNo": "39761",
@@ -2197,7 +2197,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "17:30",
-  "fetched_at": "2026-10-01T22:38"
+  "fetched_at": "2026-10-07T13:08"
  },
  "c7-00911603": {
   "hotelNo": "184898",
@@ -2205,7 +2205,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "21:00",
-  "fetched_at": "2026-10-01T22:38"
+  "fetched_at": "2026-10-07T13:08"
  },
  "c7-00914094": {
   "hotelNo": "184404",
@@ -2213,7 +2213,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:39"
+  "fetched_at": "2026-10-07T13:08"
  },
  "c7-00915013": {
   "hotelNo": "187549",
@@ -2221,7 +2221,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "17:30",
-  "fetched_at": "2026-10-01T22:39"
+  "fetched_at": "2026-10-07T13:08"
  },
  "c7-00916284": {
   "hotelNo": "183570",
@@ -2229,7 +2229,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:39"
+  "fetched_at": "2026-10-07T13:08"
  },
  "c8-00916432": {
   "hotelNo": "149179",
@@ -2237,7 +2237,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "19:00",
-  "fetched_at": "2026-10-01T22:39"
+  "fetched_at": "2026-10-07T13:08"
  },
  "c8-00908620": {
   "hotelNo": "8084",
@@ -2245,7 +2245,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "21:00",
-  "fetched_at": "2026-10-01T22:39"
+  "fetched_at": "2026-10-07T13:08"
  },
  "c8-00918575": {
   "hotelNo": "168785",
@@ -2253,7 +2253,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:39"
+  "fetched_at": "2026-10-07T13:08"
  },
  "c8-00917009": {
   "hotelNo": "191726",
@@ -2261,7 +2261,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:39"
+  "fetched_at": "2026-10-07T13:08"
  },
  "c8-00903583": {
   "hotelNo": "64792",
@@ -2269,7 +2269,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:39"
+  "fetched_at": "2026-10-07T13:08"
  },
  "c8-00915943": {
   "hotelNo": "192991",
@@ -2277,7 +2277,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:39"
+  "fetched_at": "2026-10-07T13:08"
  },
  "c8-00908118": {
   "hotelNo": "172893",
@@ -2285,7 +2285,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "29:30",
-  "fetched_at": "2026-10-01T22:39"
+  "fetched_at": "2026-10-07T13:08"
  },
  "c8-00030794": {
   "hotelNo": "20574",
@@ -2293,7 +2293,7 @@
   "checkin": "14:30",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:39"
+  "fetched_at": "2026-10-07T13:08"
  },
  "c8-00901562": {
   "hotelNo": "128558",
@@ -2301,7 +2301,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "29:00",
-  "fetched_at": "2026-10-01T22:39"
+  "fetched_at": "2026-10-07T13:08"
  },
  "c8-00030229": {
   "hotelNo": "129417",
@@ -2309,7 +2309,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:39"
+  "fetched_at": "2026-10-07T13:08"
  },
  "c8-00050478": {
   "hotelNo": "164640",
@@ -2317,7 +2317,7 @@
   "checkin": "14:30",
   "checkout": "10:00",
   "last_checkin": "22:00",
-  "fetched_at": "2026-10-01T22:39"
+  "fetched_at": "2026-10-07T13:08"
  },
  "c8-00052670": {
   "hotelNo": "196721",
@@ -2325,7 +2325,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:39"
+  "fetched_at": "2026-10-07T13:08"
  },
  "c8-00902647": {
   "hotelNo": "68186",
@@ -2333,7 +2333,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "23:00",
-  "fetched_at": "2026-10-01T22:39"
+  "fetched_at": "2026-10-07T13:08"
  },
  "c8-00907829": {
   "hotelNo": "166021",
@@ -2341,7 +2341,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "21:00",
-  "fetched_at": "2026-10-01T22:39"
+  "fetched_at": "2026-10-07T13:08"
  },
  "c8-00909880": {
   "hotelNo": "30765",
@@ -2349,7 +2349,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "20:00",
-  "fetched_at": "2026-10-01T22:39"
+  "fetched_at": "2026-10-07T13:08"
  },
  "c8-00914651": {
   "hotelNo": "167502",
@@ -2357,7 +2357,7 @@
   "checkin": "16:00",
   "checkout": "10:30",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:39"
+  "fetched_at": "2026-10-07T13:08"
  },
  "c8-00915759": {
   "hotelNo": "191624",
@@ -2365,7 +2365,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "24:00",
-  "fetched_at": "2026-10-01T22:39"
+  "fetched_at": "2026-10-07T13:08"
  },
  "c8-00916703": {
   "hotelNo": "179239",
@@ -2373,7 +2373,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "21:00",
-  "fetched_at": "2026-10-01T22:39"
+  "fetched_at": "2026-10-07T13:08"
  },
  "c8-00900857": {
   "hotelNo": "161012",
@@ -2381,7 +2381,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "28:00",
-  "fetched_at": "2026-10-01T22:39"
+  "fetched_at": "2026-10-07T13:08"
  },
  "c8-00919402": {
   "hotelNo": "137751",
@@ -2389,7 +2389,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "24:00",
-  "fetched_at": "2026-10-01T22:39"
+  "fetched_at": "2026-10-07T13:08"
  },
  "c8-00919452": {
   "hotelNo": "168587",
@@ -2397,7 +2397,7 @@
   "checkin": "16:00",
   "checkout": "10:00",
   "last_checkin": "23:00",
-  "fetched_at": "2026-10-01T22:39"
+  "fetched_at": "2026-10-07T13:08"
  },
  "c8-00921227": {
   "hotelNo": "176914",
@@ -2405,7 +2405,7 @@
   "checkin": "15:30",
   "checkout": "10:00",
   "last_checkin": "23:00",
-  "fetched_at": "2026-10-01T22:39"
+  "fetched_at": "2026-10-07T13:08"
  },
  "c8-00921405": {
   "hotelNo": "197755",
@@ -2413,7 +2413,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "24:00",
-  "fetched_at": "2026-10-01T22:39"
+  "fetched_at": "2026-10-07T13:08"
  },
  "c8-00922543": {
   "hotelNo": "197338",
@@ -2421,7 +2421,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "19:00",
-  "fetched_at": "2026-10-01T22:39"
+  "fetched_at": "2026-10-07T13:08"
  },
  "c8-00922680": {
   "hotelNo": "197379",
@@ -2429,7 +2429,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:39"
+  "fetched_at": "2026-10-07T13:08"
  },
  "c8-00922793": {
   "hotelNo": "187583",
@@ -2437,7 +2437,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "17:00",
-  "fetched_at": "2026-10-01T22:39"
+  "fetched_at": "2026-10-07T13:08"
  },
  "c8-00923686": {
   "hotelNo": "189078",
@@ -2445,7 +2445,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:39"
+  "fetched_at": "2026-10-07T13:08"
  },
  "c8-00920387": {
   "hotelNo": "172162",
@@ -2453,7 +2453,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:39"
+  "fetched_at": "2026-10-07T13:08"
  },
  "c8-00920389": {
   "hotelNo": "176590",
@@ -2461,7 +2461,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:39"
+  "fetched_at": "2026-10-07T13:08"
  },
  "c8-00050680": {
   "hotelNo": "172475",
@@ -2469,7 +2469,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "19:00",
-  "fetched_at": "2026-10-01T22:39"
+  "fetched_at": "2026-10-07T13:08"
  },
  "c8-00051830": {
   "hotelNo": "192209",
@@ -2477,7 +2477,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "20:00",
-  "fetched_at": "2026-10-01T22:39"
+  "fetched_at": "2026-10-07T13:08"
  },
  "c8-00902145": {
   "hotelNo": "2106",
@@ -2485,7 +2485,7 @@
   "checkin": "16:00",
   "checkout": "10:00",
   "last_checkin": "21:00",
-  "fetched_at": "2026-10-01T22:39"
+  "fetched_at": "2026-10-07T13:08"
  },
  "c8-00913795": {
   "hotelNo": "20404",
@@ -2493,7 +2493,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "17:30",
-  "fetched_at": "2026-10-01T22:39"
+  "fetched_at": "2026-10-07T13:09"
  },
  "c8-00916897": {
   "hotelNo": "179790",
@@ -2501,7 +2501,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "22:00",
-  "fetched_at": "2026-10-01T22:39"
+  "fetched_at": "2026-10-07T13:09"
  },
  "c8-00917364": {
   "hotelNo": "176832",
@@ -2509,7 +2509,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:39"
+  "fetched_at": "2026-10-07T13:09"
  },
  "c8-00919201": {
   "hotelNo": "193256",
@@ -2517,7 +2517,7 @@
   "checkin": "16:00",
   "checkout": "10:00",
   "last_checkin": "23:00",
-  "fetched_at": "2026-10-01T22:39"
+  "fetched_at": "2026-10-07T13:09"
  },
  "c8-00919406": {
   "hotelNo": "8710",
@@ -2525,7 +2525,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "23:00",
-  "fetched_at": "2026-10-01T22:39"
+  "fetched_at": "2026-10-07T13:09"
  },
  "c8-00920421": {
   "hotelNo": "191512",
@@ -2533,7 +2533,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:39"
+  "fetched_at": "2026-10-07T13:09"
  },
  "c8-00920602": {
   "hotelNo": "202142",
@@ -2541,7 +2541,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "22:00",
-  "fetched_at": "2026-10-01T22:39"
+  "fetched_at": "2026-10-07T13:09"
  },
  "c8-00920821": {
   "hotelNo": "38513",
@@ -2549,7 +2549,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:39"
+  "fetched_at": "2026-10-07T13:09"
  },
  "c8-00921768": {
   "hotelNo": "184094",
@@ -2557,7 +2557,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "17:00",
-  "fetched_at": "2026-10-01T22:39"
+  "fetched_at": "2026-10-07T13:09"
  },
  "c8-00922016": {
   "hotelNo": "173162",
@@ -2565,7 +2565,7 @@
   "checkin": "16:00",
   "checkout": "11:00",
   "last_checkin": "20:00",
-  "fetched_at": "2026-10-01T22:39"
+  "fetched_at": "2026-10-07T13:09"
  },
  "c8-00922284": {
   "hotelNo": "149199",
@@ -2573,7 +2573,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "20:00",
-  "fetched_at": "2026-10-01T22:39"
+  "fetched_at": "2026-10-07T13:09"
  },
  "c8-00923046": {
   "hotelNo": "199488",
@@ -2581,7 +2581,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:39"
+  "fetched_at": "2026-10-07T13:09"
  },
  "c8-00924089": {
   "hotelNo": "43824",
@@ -2589,7 +2589,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "24:00",
-  "fetched_at": "2026-10-01T22:39"
+  "fetched_at": "2026-10-07T13:09"
  },
  "c8-00924714": {
   "hotelNo": "201805",
@@ -2597,7 +2597,7 @@
   "checkin": "16:00",
   "checkout": "10:00",
   "last_checkin": "20:00",
-  "fetched_at": "2026-10-01T22:40"
+  "fetched_at": "2026-10-07T13:09"
  },
  "c8-00925112": {
   "hotelNo": "200945",
@@ -2605,7 +2605,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:40"
+  "fetched_at": "2026-10-07T13:09"
  },
  "c8-00050751": {
   "hotelNo": "168385",
@@ -2613,7 +2613,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "20:00",
-  "fetched_at": "2026-10-01T22:40"
+  "fetched_at": "2026-10-07T13:09"
  },
  "c8-00051395": {
   "hotelNo": "188480",
@@ -2621,7 +2621,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "24:00",
-  "fetched_at": "2026-10-01T22:40"
+  "fetched_at": "2026-10-07T13:09"
  },
  "c8-00051432": {
   "hotelNo": "183255",
@@ -2629,7 +2629,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "19:00",
-  "fetched_at": "2026-10-01T22:40"
+  "fetched_at": "2026-10-07T13:09"
  },
  "c8-00051447": {
   "hotelNo": "183504",
@@ -2637,7 +2637,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:40"
+  "fetched_at": "2026-10-07T13:09"
  },
  "c8-00051508": {
   "hotelNo": "188884",
@@ -2645,7 +2645,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:40"
+  "fetched_at": "2026-10-07T13:09"
  },
  "c8-00051610": {
   "hotelNo": "187561",
@@ -2653,7 +2653,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "20:00",
-  "fetched_at": "2026-10-01T22:40"
+  "fetched_at": "2026-10-07T13:09"
  },
  "c8-00051613": {
   "hotelNo": "183522",
@@ -2661,7 +2661,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "20:00",
-  "fetched_at": "2026-10-01T22:40"
+  "fetched_at": "2026-10-07T13:09"
  },
  "c8-00051644": {
   "hotelNo": "194643",
@@ -2669,7 +2669,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "23:00",
-  "fetched_at": "2026-10-01T22:40"
+  "fetched_at": "2026-10-07T13:09"
  },
  "c8-00051881": {
   "hotelNo": "191674",
@@ -2677,7 +2677,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "22:00",
-  "fetched_at": "2026-10-01T22:40"
+  "fetched_at": "2026-10-07T13:09"
  },
  "c8-00051942": {
   "hotelNo": "192245",
@@ -2685,7 +2685,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "21:00",
-  "fetched_at": "2026-10-01T22:40"
+  "fetched_at": "2026-10-07T13:09"
  },
  "c8-00051959": {
   "hotelNo": "190825",
@@ -2693,7 +2693,7 @@
   "checkin": "14:00",
   "checkout": "10:00",
   "last_checkin": "21:00",
-  "fetched_at": "2026-10-01T22:40"
+  "fetched_at": "2026-10-07T13:09"
  },
  "c8-00052014": {
   "hotelNo": "196620",
@@ -2701,7 +2701,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "23:00",
-  "fetched_at": "2026-10-01T22:40"
+  "fetched_at": "2026-10-07T13:09"
  },
  "c8-00052069": {
   "hotelNo": "191183",
@@ -2709,7 +2709,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "23:00",
-  "fetched_at": "2026-10-01T22:40"
+  "fetched_at": "2026-10-07T13:09"
  },
  "c8-00052288": {
   "hotelNo": "197308",
@@ -2717,7 +2717,7 @@
   "checkin": "16:00",
   "checkout": "10:00",
   "last_checkin": "24:00",
-  "fetched_at": "2026-10-01T22:40"
+  "fetched_at": "2026-10-07T13:09"
  },
  "c8-00082225": {
   "hotelNo": "182486",
@@ -2725,7 +2725,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": null,
-  "fetched_at": "2026-10-01T22:40"
+  "fetched_at": "2026-10-07T13:09"
  },
  "c8-00902815": {
   "hotelNo": "167375",
@@ -2733,7 +2733,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "20:00",
-  "fetched_at": "2026-10-01T22:40"
+  "fetched_at": "2026-10-07T13:09"
  },
  "c8-00904717": {
   "hotelNo": "168359",
@@ -2741,7 +2741,7 @@
   "checkin": "14:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:40"
+  "fetched_at": "2026-10-07T13:09"
  },
  "c8-00912197": {
   "hotelNo": "169602",
@@ -2749,7 +2749,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "20:00",
-  "fetched_at": "2026-10-01T22:40"
+  "fetched_at": "2026-10-07T13:09"
  },
  "c8-00912516": {
   "hotelNo": "189120",
@@ -2757,7 +2757,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "17:00",
-  "fetched_at": "2026-10-01T22:40"
+  "fetched_at": "2026-10-07T13:09"
  },
  "c8-00913326": {
   "hotelNo": "170768",
@@ -2765,7 +2765,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:40"
+  "fetched_at": "2026-10-07T13:09"
  },
  "c8-00914406": {
   "hotelNo": "187112",
@@ -2773,7 +2773,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:40"
+  "fetched_at": "2026-10-07T13:09"
  },
  "c8-00914533": {
   "hotelNo": "187377",
@@ -2781,7 +2781,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:40"
+  "fetched_at": "2026-10-07T13:09"
  },
  "c8-00914987": {
   "hotelNo": "188813",
@@ -2789,7 +2789,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "23:00",
-  "fetched_at": "2026-10-01T22:40"
+  "fetched_at": "2026-10-07T13:09"
  },
  "c8-00915794": {
   "hotelNo": "187326",
@@ -2797,7 +2797,7 @@
   "checkin": "18:00",
   "checkout": "13:00",
   "last_checkin": "20:00",
-  "fetched_at": "2026-10-01T22:40"
+  "fetched_at": "2026-10-07T13:09"
  },
  "c8-00916046": {
   "hotelNo": "5800",
@@ -2805,7 +2805,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:40"
+  "fetched_at": "2026-10-07T13:09"
  },
  "c8-00917003": {
   "hotelNo": "107607",
@@ -2813,7 +2813,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:30",
-  "fetched_at": "2026-10-01T22:40"
+  "fetched_at": "2026-10-07T13:09"
  },
  "c8-00917023": {
   "hotelNo": "177065",
@@ -2821,7 +2821,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "20:00",
-  "fetched_at": "2026-10-01T22:40"
+  "fetched_at": "2026-10-07T13:09"
  },
  "c8-00917707": {
   "hotelNo": "196055",
@@ -2829,7 +2829,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "19:00",
-  "fetched_at": "2026-10-01T22:40"
+  "fetched_at": "2026-10-07T13:09"
  },
  "c8-00917912": {
   "hotelNo": "151506",
@@ -2837,7 +2837,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "20:00",
-  "fetched_at": "2026-10-01T22:40"
+  "fetched_at": "2026-10-07T13:09"
  },
  "c8-00918017": {
   "hotelNo": "67202",
@@ -2845,7 +2845,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "22:00",
-  "fetched_at": "2026-10-01T22:40"
+  "fetched_at": "2026-10-07T13:09"
  },
  "c8-00918856": {
   "hotelNo": "189902",
@@ -2853,7 +2853,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "23:00",
-  "fetched_at": "2026-10-01T22:40"
+  "fetched_at": "2026-10-07T13:09"
  },
  "c8-00918916": {
   "hotelNo": "193352",
@@ -2861,7 +2861,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "24:00",
-  "fetched_at": "2026-10-01T22:40"
+  "fetched_at": "2026-10-07T13:09"
  },
  "c8-00920330": {
   "hotelNo": "191903",
@@ -2869,7 +2869,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "19:00",
-  "fetched_at": "2026-10-01T22:40"
+  "fetched_at": "2026-10-07T13:09"
  },
  "regina-fuji": {
   "hotelNo": "144546",
@@ -2877,7 +2877,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:40"
+  "fetched_at": "2026-10-07T13:10"
  },
  "cerulean-dogfriendly": {
   "hotelNo": "11275",
@@ -2885,7 +2885,7 @@
   "checkin": "15:00",
   "checkout": "12:00",
   "last_checkin": "25:00",
-  "fetched_at": "2026-10-01T22:40"
+  "fetched_at": "2026-10-07T13:10"
  },
  "c-tabinotei-zao": {
   "hotelNo": "199339",
@@ -2893,7 +2893,7 @@
   "checkin": "16:00",
   "checkout": "11:00",
   "last_checkin": "24:00",
-  "fetched_at": "2026-10-01T22:40"
+  "fetched_at": "2026-10-07T13:10"
  },
  "c2-corredor-yugawara": {
   "hotelNo": "166983",
@@ -2901,7 +2901,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:40"
+  "fetched_at": "2026-10-07T13:10"
  },
  "c2-greenplaza-karuizawa": {
   "hotelNo": "11009",
@@ -2909,7 +2909,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "24:00",
-  "fetched_at": "2026-10-01T22:40"
+  "fetched_at": "2026-10-07T13:10"
  },
  "c3-peninsula-tokyo": {
   "hotelNo": "184598",
@@ -2917,7 +2917,7 @@
   "checkin": "15:00",
   "checkout": "12:00",
   "last_checkin": null,
-  "fetched_at": "2026-10-01T22:40"
+  "fetched_at": "2026-10-07T13:10"
  },
  "c3-nipponia-sawara": {
   "hotelNo": "166043",
@@ -2925,7 +2925,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "20:00",
-  "fetched_at": "2026-10-01T22:40"
+  "fetched_at": "2026-10-07T13:10"
  },
  "c5-blueberry-hill-katsuura-pet": {
   "hotelNo": "67441",
@@ -2933,7 +2933,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "20:00",
-  "fetched_at": "2026-10-01T22:40"
+  "fetched_at": "2026-10-07T13:10"
  },
  "c5-gluck-izukogen": {
   "hotelNo": "193346",
@@ -2941,7 +2941,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "20:00",
-  "fetched_at": "2026-10-01T22:40"
+  "fetched_at": "2026-10-07T13:10"
  },
  "c7-00052118": {
   "hotelNo": "191908",
@@ -2949,7 +2949,7 @@
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:40"
+  "fetched_at": "2026-10-07T13:10"
  },
  "c7-00913381": {
   "hotelNo": "183305",
@@ -2957,7 +2957,7 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:40"
+  "fetched_at": "2026-10-07T13:10"
  },
  "c7-00052017": {
   "hotelNo": "189659",
@@ -2965,7 +2965,7 @@
   "checkin": "16:00",
   "checkout": "10:00",
   "last_checkin": "22:00",
-  "fetched_at": "2026-10-01T22:40"
+  "fetched_at": "2026-10-07T13:10"
  },
  "c8-00915462": {
   "hotelNo": "183861",
@@ -2973,6 +2973,1646 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-01T22:40"
+  "fetched_at": "2026-10-07T13:11"
+ },
+ "n0924-d-minakami": {
+  "hotelNo": "28258",
+  "name": "坐山　みなかみ（旧：水上館）",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "18:00",
+  "fetched_at": "2026-10-07T13:02"
+ },
+ "n0924-r-with-dog": {
+  "hotelNo": "191775",
+  "name": "Ｒ　ｗｉｔｈ　Ｄｏｇ",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "21:00",
+  "fetched_at": "2026-10-07T13:03"
+ },
+ "n0924-naspa-newotani": {
+  "hotelNo": "6011",
+  "name": "越後湯沢温泉　ＮＡＳＰＡニューオータニ",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "27:00",
+  "fetched_at": "2026-10-07T13:03"
+ },
+ "n0924-oarai-parkhotel-villa": {
+  "hotelNo": "6274",
+  "name": "大洗パークホテル（２０２６年３月１日リニューアルオープン）",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "22:00",
+  "fetched_at": "2026-10-07T13:03"
+ },
+ "c2-sora-karuizawa": {
+  "hotelNo": "178462",
+  "name": "ＳＯＲＡ　ＨＯＴＥＬ　ＫＡＲＵＩＺＡＷＡ　ＯＵＴＬＥＴ",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "21:00",
+  "fetched_at": "2026-10-07T13:03"
+ },
+ "c2-sunvalley-nasu": {
+  "hotelNo": "20574",
+  "name": "那須温泉　ホテルサンバレー那須",
+  "checkin": "14:30",
+  "checkout": "10:00",
+  "last_checkin": "18:00",
+  "fetched_at": "2026-10-07T13:03"
+ },
+ "c3-umito-kamakura": {
+  "hotelNo": "196394",
+  "name": "ＵＭＩＴＯ　ＶＩＬＬＡ　ＫＡＭＡＫＵＲＡ　ＺＡＩＭＯＫＵＺＡ",
+  "checkin": "15:00",
+  "checkout": "11:00",
+  "last_checkin": "22:00",
+  "fetched_at": "2026-10-07T13:04"
+ },
+ "c5-bettei-yamabuki": {
+  "hotelNo": "56924",
+  "name": "遠刈田温泉　別邸　山風木",
+  "checkin": "15:00",
+  "checkout": "11:00",
+  "last_checkin": "17:30",
+  "fetched_at": "2026-10-07T13:04"
+ },
+ "c5-marumine-kanko-hotel": {
+  "hotelNo": "20623",
+  "name": "会津芦ノ牧温泉　丸峰観光ホテル",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "24:00",
+  "fetched_at": "2026-10-07T13:04"
+ },
+ "c5-makirogi-zao": {
+  "hotelNo": "199301",
+  "name": "隠れ家Ｖｉｌｌａｇｅ　薪のくつろぎ蔵王",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "18:00",
+  "fetched_at": "2026-10-07T13:04"
+ },
+ "c5-spa-hotel-sumirekan": {
+  "hotelNo": "11290",
+  "name": "いわき湯本温泉　スパホテル　スミレ館",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "22:00",
+  "fetched_at": "2026-10-07T13:04"
+ },
+ "c5-shintomitei-onikobe": {
+  "hotelNo": "27976",
+  "name": "日本三景　松島　花ごころの湯　新富亭",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "22:00",
+  "fetched_at": "2026-10-07T13:04"
+ },
+ "c5-pension-pellmell": {
+  "hotelNo": "29515",
+  "name": "ペンション　ペルメル",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "24:00",
+  "fetched_at": "2026-10-07T13:04"
+ },
+ "c5-hotel-resta-nasu": {
+  "hotelNo": "158691",
+  "name": "Ｈｏｔｅｌ　Ｒｅｓｔａ（ホテル　レスタ）",
+  "checkin": "16:00",
+  "checkout": "10:00",
+  "last_checkin": "22:00",
+  "fetched_at": "2026-10-07T13:04"
+ },
+ "c5-villa-kagura-shiobara": {
+  "hotelNo": "198660",
+  "name": "塩原温泉　ヴィラ楓倉（かぐら）",
+  "checkin": "15:00",
+  "checkout": "11:00",
+  "last_checkin": "21:00",
+  "fetched_at": "2026-10-07T13:05"
+ },
+ "c5-akasawa-onsen-ryokan": {
+  "hotelNo": "149003",
+  "name": "塩原温泉　赤沢温泉旅館",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "24:00",
+  "fetched_at": "2026-10-07T13:05"
+ },
+ "c5-sumisunoie-izu-oshima": {
+  "hotelNo": "184564",
+  "name": "スミスのいえ伊豆大島＜大島＞",
+  "checkin": "14:00",
+  "checkout": "10:00",
+  "last_checkin": "24:00",
+  "fetched_at": "2026-10-07T13:05"
+ },
+ "c5-dog-cottage-d99-kujukuri": {
+  "hotelNo": "191833",
+  "name": "ドッグコテージＤー９９",
+  "checkin": "14:00",
+  "checkout": "10:00",
+  "last_checkin": "18:00",
+  "fetched_at": "2026-10-07T13:05"
+ },
+ "c5-camel-hotel-resort-minamiboso": {
+  "hotelNo": "128423",
+  "name": "キャメルホテル＆グランピングリゾート",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "21:00",
+  "fetched_at": "2026-10-07T13:05"
+ },
+ "c5-shirahama-ocean-resort": {
+  "hotelNo": "9662",
+  "name": "南房総白浜温泉　白浜オーシャンリゾート",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "20:00",
+  "fetched_at": "2026-10-07T13:05"
+ },
+ "c5-hotel-r9-kujukuri": {
+  "hotelNo": "164953",
+  "name": "ＨＯＴＥＬ　Ｒ９　九十九里（旧Ｃａｓｕａｌ　Ｒｅｓｏｒｔ　ＣＯＦＦ　Ｉｃｈｉｎｏｍｉｙａ）",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "24:00",
+  "fetched_at": "2026-10-07T13:05"
+ },
+ "c5-lectore-hanyu-terrace": {
+  "hotelNo": "192916",
+  "name": "レクトーレ羽生ＴＥＲＲＡＣＥ（ＴＫＰ　Ｈｏｔｅｌｓ　＆　Ｒｅｓｏｒｔｓ）",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "22:00",
+  "fetched_at": "2026-10-07T13:05"
+ },
+ "c5-komatsuya-hachinobo-izu": {
+  "hotelNo": "9682",
+  "name": "伊豆長岡温泉　小松家八の坊",
+  "checkin": "14:30",
+  "checkout": "10:30",
+  "last_checkin": "18:00",
+  "fetched_at": "2026-10-07T13:05"
+ },
+ "c5-fukuritei-ogawaya-izu": {
+  "hotelNo": "18696",
+  "name": "伊豆長岡温泉　福狸亭　小川家",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "19:00",
+  "fetched_at": "2026-10-07T13:05"
+ },
+ "c5-new-tomiyoshi-atami": {
+  "hotelNo": "7616",
+  "name": "熱海温泉　味と湯の宿　ニューとみよし",
+  "checkin": "14:00",
+  "checkout": "10:00",
+  "last_checkin": "19:00",
+  "fetched_at": "2026-10-07T13:05"
+ },
+ "c5-seagull-nishiizu": {
+  "hotelNo": "17974",
+  "name": "きがるな・・・宿　シーガル（ペット可）",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "18:00",
+  "fetched_at": "2026-10-07T13:05"
+ },
+ "c5-amis-droles-kawazu": {
+  "hotelNo": "179217",
+  "name": "Ａｍｉｓ　Ｄｒｏｌｅｓ　アミ・ドローラ＜ＬＩＢＥＲＴＹ　ＲＥＳＯＲＴ＞",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "20:00",
+  "fetched_at": "2026-10-07T13:05"
+ },
+ "c5-kurofune-hotel-shimoda": {
+  "hotelNo": "1307",
+  "name": "下田温泉　黒船ホテル",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "22:00",
+  "fetched_at": "2026-10-07T13:05"
+ },
+ "c5-laboland-kurohime": {
+  "hotelNo": "2185",
+  "name": "ラボランド　くろひめ（貸別荘コテージ）",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "22:00",
+  "fetched_at": "2026-10-07T13:06"
+ },
+ "c5-bousenkaku-sakihana": {
+  "hotelNo": "15952",
+  "name": "咲花温泉　阿賀のめぐみ望川閣",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "19:00",
+  "fetched_at": "2026-10-07T13:06"
+ },
+ "c5-ikarashitei-agano": {
+  "hotelNo": "178243",
+  "name": "スワンレイク五十嵐邸ガーデン　新潟阿賀野リゾート（スノーピークグランピング）",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "18:30",
+  "fetched_at": "2026-10-07T13:06"
+ },
+ "c6-00917555": {
+  "hotelNo": "196027",
+  "name": "プライベートグランピング｜ＮＡＧＯＭＩ　ＣＡＭＰ那須",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "17:00",
+  "fetched_at": "2026-10-07T13:07"
+ },
+ "c7-00918771": {
+  "hotelNo": "193116",
+  "name": "ｆａｉｒｙ　ｆｏｒｅｓｔ",
+  "checkin": "14:00",
+  "checkout": "11:00",
+  "last_checkin": "20:00",
+  "fetched_at": "2026-10-07T13:08"
+ },
+ "c7-00030739": {
+  "hotelNo": "7397",
+  "name": "伊東温泉　伊東小涌園",
+  "checkin": "14:00",
+  "checkout": "10:00",
+  "last_checkin": "19:00",
+  "fetched_at": "2026-10-07T13:08"
+ },
+ "c7-00916711": {
+  "hotelNo": "68514",
+  "name": "ココデメール",
+  "checkin": "16:00",
+  "checkout": "11:00",
+  "last_checkin": "22:00",
+  "fetched_at": "2026-10-07T13:08"
+ },
+ "c8-00917439": {
+  "hotelNo": "935",
+  "name": "那須温泉　ホテルフォレストヒルズ那須　ｗｉｔｈ　ＤＯＧＳ",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "18:00",
+  "fetched_at": "2026-10-07T13:08"
+ },
+ "kinugawa-keisui": {
+  "hotelNo": "184068",
+  "name": "鬼怒川渓翠",
+  "checkin": "15:00",
+  "checkout": "11:00",
+  "last_checkin": "24:00",
+  "fetched_at": "2026-10-07T13:10"
+ },
+ "andwan-kujukuri": {
+  "hotelNo": "163040",
+  "name": "＆ＷＡＮ　九十九里",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "18:00",
+  "fetched_at": "2026-10-07T13:10"
+ },
+ "n0924-doggys-coast-oarai": {
+  "hotelNo": "196336",
+  "name": "Ｄｏｇｇｙ’ｓ　Ｃｏａｓｔ　Ｏａｒａｉ",
+  "checkin": "15:00",
+  "checkout": "11:00",
+  "last_checkin": "18:00",
+  "fetched_at": "2026-10-07T13:10"
+ },
+ "n0924-belnatio-carneria": {
+  "hotelNo": "13487",
+  "name": "あてま温泉　当間高原リゾート　ベルナティオ",
+  "checkin": "15:00",
+  "checkout": "11:00",
+  "last_checkin": "18:00",
+  "fetched_at": "2026-10-07T13:10"
+ },
+ "n0924-mercure-zao": {
+  "hotelNo": "8998",
+  "name": "メルキュール宮城蔵王リゾート＆スパ",
+  "checkin": "15:00",
+  "checkout": "11:00",
+  "last_checkin": "23:00",
+  "fetched_at": "2026-10-07T13:10"
+ },
+ "c-ellspark-nagatoro": {
+  "hotelNo": "196475",
+  "name": "Ｅｌｌ＇ｓ　Ｐａｒｋ　長瀞",
+  "checkin": "14:00",
+  "checkout": "10:00",
+  "last_checkin": "17:00",
+  "fetched_at": "2026-10-07T13:10"
+ },
+ "c2-hotel1130": {
+  "hotelNo": "15256",
+  "name": "軽井沢倶楽部　ホテル軽井沢１１３０／ヒューイットリゾート",
+  "checkin": "15:00",
+  "checkout": "11:00",
+  "last_checkin": "24:00",
+  "fetched_at": "2026-10-07T13:10"
+ },
+ "c2-dogs-rest-place": {
+  "hotelNo": "129468",
+  "name": "二の平温泉　ペットと泊まる宿　Ｄｏｇ’ｓ　Ｒｅｓｔ　Ｐｌａｃｅ",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "18:00",
+  "fetched_at": "2026-10-07T13:10"
+ },
+ "c2-nijinouta-urabandai": {
+  "hotelNo": "160989",
+  "name": "愛犬の宿　虹の詩",
+  "checkin": "15:00",
+  "checkout": "09:00",
+  "last_checkin": "17:30",
+  "fetched_at": "2026-10-07T13:10"
+ },
+ "c-apa-joetsu-myoko": {
+  "hotelNo": "11307",
+  "name": "アパホテル＆リゾート〈上越妙高〉",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "29:00",
+  "fetched_at": "2026-10-07T13:10"
+ },
+ "c3-hotel-village-kusatsu": {
+  "hotelNo": "5270",
+  "name": "草津温泉　ホテルヴィレッジ",
+  "checkin": "15:00",
+  "checkout": "11:00",
+  "last_checkin": "24:00",
+  "fetched_at": "2026-10-07T13:10"
+ },
+ "c3-monday-haneda": {
+  "hotelNo": "164775",
+  "name": "ｈｏｔｅｌ　ＭＯＮｄａｙ　羽田空港",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "26:00",
+  "fetched_at": "2026-10-07T13:10"
+ },
+ "c3-risonare-atami": {
+  "hotelNo": "136112",
+  "name": "リゾナーレ熱海",
+  "checkin": "15:00",
+  "checkout": "12:00",
+  "last_checkin": "23:00",
+  "fetched_at": "2026-10-07T13:10"
+ },
+ "c5-ici-hotel-asakusabashi": {
+  "hotelNo": "168315",
+  "name": "イチホテル浅草橋",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "26:00",
+  "fetched_at": "2026-10-07T13:10"
+ },
+ "c5-heartfield-inn-nasu": {
+  "hotelNo": "18978",
+  "name": "那須温泉　愛犬と泊まれる美味しいプチホテル　ザ・ハートフィールド・イン",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "17:30",
+  "fetched_at": "2026-10-07T13:10"
+ },
+ "c5-cotomaru-wanpaina-futtsu": {
+  "hotelNo": "182764",
+  "name": "わんｐａｉｎａ",
+  "checkin": "14:00",
+  "checkout": "10:00",
+  "last_checkin": "18:00",
+  "fetched_at": "2026-10-07T13:10"
+ },
+ "c5-tenkuu-terrace-numazu-with-pets": {
+  "hotelNo": "163042",
+  "name": "天空テラス",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "18:00",
+  "fetched_at": "2026-10-07T13:10"
+ },
+ "c5-lenessa-akazawa-ito": {
+  "hotelNo": "30829",
+  "name": "ルネッサ赤沢",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "20:00",
+  "fetched_at": "2026-10-07T13:10"
+ },
+ "c5-mercure-nagano-matsushiro-dog-friendly": {
+  "hotelNo": "9224",
+  "name": "メルキュール長野松代リゾート＆スパ",
+  "checkin": "15:00",
+  "checkout": "11:00",
+  "last_checkin": "24:00",
+  "fetched_at": "2026-10-07T13:10"
+ },
+ "c6-00921981": {
+  "hotelNo": "192333",
+  "name": "追波湾テラス〜考える葦〜",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "18:00",
+  "fetched_at": "2026-10-07T13:10"
+ },
+ "c6-00917633": {
+  "hotelNo": "182033",
+  "name": "ルアカハ",
+  "checkin": "14:00",
+  "checkout": "10:00",
+  "last_checkin": "19:00",
+  "fetched_at": "2026-10-07T13:10"
+ },
+ "c6-00918226": {
+  "hotelNo": "172800",
+  "name": "那須温泉　ｄｏｇ’ｓ　ｐｅｎｓｉｏｎ　しゃのんち",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "18:00",
+  "fetched_at": "2026-10-07T13:10"
+ },
+ "c7-00920357": {
+  "hotelNo": "186676",
+  "name": "Ｏｃｅａｎｆｒｏｎｔ　Ｖｉｌｌａ　Ｈａｌｅ　Ｋａｈａｋａｉ　＾",
+  "checkin": "16:00",
+  "checkout": "11:00",
+  "last_checkin": "21:00",
+  "fetched_at": "2026-10-07T13:10"
+ },
+ "c7-00917328": {
+  "hotelNo": "196438",
+  "name": "ＢＡＲＯＳＳＡ　ＨＯＵＳＥ",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": null,
+  "fetched_at": "2026-10-07T13:10"
+ },
+ "c7-00922774": {
+  "hotelNo": "177901",
+  "name": "ｅｎｉｃｏ．Ｍｔ．Ｆｕｊｉ　ｎａｇｏｍｉ和",
+  "checkin": "16:00",
+  "checkout": "10:00",
+  "last_checkin": null,
+  "fetched_at": "2026-10-07T13:10"
+ },
+ "c8-00003172": {
+  "hotelNo": "8998",
+  "name": "メルキュール宮城蔵王リゾート＆スパ",
+  "checkin": "15:00",
+  "checkout": "11:00",
+  "last_checkin": "23:00",
+  "fetched_at": "2026-10-07T13:10"
+ },
+ "c8-00001415": {
+  "hotelNo": "13487",
+  "name": "あてま温泉　当間高原リゾート　ベルナティオ",
+  "checkin": "15:00",
+  "checkout": "11:00",
+  "last_checkin": "18:00",
+  "fetched_at": "2026-10-07T13:10"
+ },
+ "c8-00920584": {
+  "hotelNo": "187903",
+  "name": "伊豆Ｃｏｃｏグランピングリゾート",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "17:00",
+  "fetched_at": "2026-10-07T13:10"
+ },
+ "c8-00050855": {
+  "hotelNo": "172066",
+  "name": "ＭＯＲＩＨＡＫＵ",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "18:00",
+  "fetched_at": "2026-10-07T13:10"
+ },
+ "c8-00914120": {
+  "hotelNo": "186421",
+  "name": "オーシャンリゾート館山　プールハウス　＾",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "23:00",
+  "fetched_at": "2026-10-07T13:11"
+ },
+ "c8-00920205": {
+  "hotelNo": "195953",
+  "name": "古民家サウナ＆ＢＢＱ　ＴＫ亭",
+  "checkin": "15:00",
+  "checkout": "11:00",
+  "last_checkin": "22:00",
+  "fetched_at": "2026-10-07T13:11"
+ },
+ "c9-rk80777": {
+  "hotelNo": "80777",
+  "name": "ダイワロイネットホテル横浜公園",
+  "checkin": "14:00",
+  "checkout": "11:00",
+  "last_checkin": "29:30",
+  "fetched_at": "2026-10-07T13:11"
+ },
+ "c9-rk143252": {
+  "hotelNo": "143252",
+  "name": "温泉旅館　水月",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "18:00",
+  "fetched_at": "2026-10-07T13:11"
+ },
+ "c9-rk142874": {
+  "hotelNo": "142874",
+  "name": "箱根強羅グアムドッグ本店",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "17:00",
+  "fetched_at": "2026-10-07T13:11"
+ },
+ "c9-rk170212": {
+  "hotelNo": "170212",
+  "name": "Ｒａｋｕｔｅｎ　ＳＴＡＹ　ＶＩＬＬＡ　箱根仙石原",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "22:00",
+  "fetched_at": "2026-10-07T13:11"
+ },
+ "c9-rk202407": {
+  "hotelNo": "202407",
+  "name": "Ｄｏｋｉ　Ｄｏｇｇｉｅ油壷ｇｌｏｂｅ",
+  "checkin": "15:00",
+  "checkout": "11:00",
+  "last_checkin": "18:00",
+  "fetched_at": "2026-10-07T13:11"
+ },
+ "c9-rk172919": {
+  "hotelNo": "172919",
+  "name": "ハイアット　リージェンシー　東京ベイ",
+  "checkin": "15:00",
+  "checkout": "12:00",
+  "last_checkin": "25:00",
+  "fetched_at": "2026-10-07T13:11"
+ },
+ "c9-rk178739": {
+  "hotelNo": "178739",
+  "name": "ホテル・トリフィート柏の葉",
+  "checkin": "15:00",
+  "checkout": "11:00",
+  "last_checkin": "24:00",
+  "fetched_at": "2026-10-07T13:11"
+ },
+ "c9-rk179602": {
+  "hotelNo": "179602",
+  "name": "コテージおゆみ野",
+  "checkin": "15:00",
+  "checkout": "11:00",
+  "last_checkin": "18:00",
+  "fetched_at": "2026-10-07T13:11"
+ },
+ "c9-rk198349": {
+  "hotelNo": "198349",
+  "name": "ＴＡＵＴＡＵ　Ｔｅｒｒａｃｅ　Ｔａｔｅｙａｍａ",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "19:00",
+  "fetched_at": "2026-10-07T13:11"
+ },
+ "c9-rk67407": {
+  "hotelNo": "67407",
+  "name": "四季の湯温泉　ホテルヘリテイジ（森林公園・熊谷）",
+  "checkin": "15:00",
+  "checkout": "11:00",
+  "last_checkin": "24:00",
+  "fetched_at": "2026-10-07T13:11"
+ },
+ "c9-rk137853": {
+  "hotelNo": "137853",
+  "name": "ファミリーロッジ旅籠屋・秩父店",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "22:30",
+  "fetched_at": "2026-10-07T13:11"
+ },
+ "c9-rk4830": {
+  "hotelNo": "4830",
+  "name": "ＫＯＫＯ　ＳＴＡＹ　日立",
+  "checkin": "15:00",
+  "checkout": "11:00",
+  "last_checkin": "24:00",
+  "fetched_at": "2026-10-07T13:11"
+ },
+ "c9-rk70684": {
+  "hotelNo": "70684",
+  "name": "ホテルレイクサイドつくば",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "22:00",
+  "fetched_at": "2026-10-07T13:11"
+ },
+ "c9-rk16213": {
+  "hotelNo": "16213",
+  "name": "ファミリーロッジ旅籠屋・水戸大洗店",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "23:00",
+  "fetched_at": "2026-10-07T13:11"
+ },
+ "c9-rk158593": {
+  "hotelNo": "158593",
+  "name": "ファミリーロッジ旅籠屋・神栖店",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "22:30",
+  "fetched_at": "2026-10-07T13:11"
+ },
+ "c9-rk16211": {
+  "hotelNo": "16211",
+  "name": "ファミリーロッジ旅籠屋・那須店",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "22:30",
+  "fetched_at": "2026-10-07T13:11"
+ },
+ "c9-rk16212": {
+  "hotelNo": "16212",
+  "name": "ファミリーロッジ旅籠屋・日光鬼怒川店",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "22:30",
+  "fetched_at": "2026-10-07T13:11"
+ },
+ "c9-rk54302": {
+  "hotelNo": "54302",
+  "name": "ペンション　アニマーレ",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "17:30",
+  "fetched_at": "2026-10-07T13:11"
+ },
+ "c9-rk54303": {
+  "hotelNo": "54303",
+  "name": "ペンションアニマーレ　アネックス",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "17:30",
+  "fetched_at": "2026-10-07T13:11"
+ },
+ "c9-rk79376": {
+  "hotelNo": "79376",
+  "name": "アニマーレ　プレミアム　ｉｎ　那須",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "19:00",
+  "fetched_at": "2026-10-07T13:11"
+ },
+ "c9-rk149225": {
+  "hotelNo": "149225",
+  "name": "尾瀬　わんこも泊まれるペンション　シェルティ",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "21:00",
+  "fetched_at": "2026-10-07T13:11"
+ },
+ "c9-rk197125": {
+  "hotelNo": "197125",
+  "name": "ペンション　Ｌｉｂｒｅ（リーブル）",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "22:00",
+  "fetched_at": "2026-10-07T13:11"
+ },
+ "c9-rk7714": {
+  "hotelNo": "7714",
+  "name": "プチホテル　リージェントハウス　(丸沼高原)",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "18:30",
+  "fetched_at": "2026-10-07T13:11"
+ },
+ "c9-rk20221": {
+  "hotelNo": "20221",
+  "name": "ペンション　いちばん星＜群馬県＞",
+  "checkin": "16:00",
+  "checkout": "10:00",
+  "last_checkin": "18:00",
+  "fetched_at": "2026-10-07T13:11"
+ },
+ "c9-rk20181": {
+  "hotelNo": "20181",
+  "name": "越後湯沢温泉　ＫＫＲ湯沢ゆきぐに（国家公務員共済組合連合会湯沢保養所）",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "22:00",
+  "fetched_at": "2026-10-07T13:11"
+ },
+ "c9-rk40226": {
+  "hotelNo": "40226",
+  "name": "ペットと泊まれる宿　ヒルサイド　イン　センタークラブ",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "22:00",
+  "fetched_at": "2026-10-07T13:11"
+ },
+ "c9-rk2783": {
+  "hotelNo": "2783",
+  "name": "ウッディハウス　風見鶏",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "20:00",
+  "fetched_at": "2026-10-07T13:11"
+ },
+ "c9-rk29686": {
+  "hotelNo": "29686",
+  "name": "越後平野と弥彦連山一望の宿　穂々　―ｈｏｈｏ―",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "23:00",
+  "fetched_at": "2026-10-07T13:11"
+ },
+ "c9-rk43933": {
+  "hotelNo": "43933",
+  "name": "コテージ＆ペンション　ラブ　サーティ",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "21:00",
+  "fetched_at": "2026-10-07T13:11"
+ },
+ "c9-rk128304": {
+  "hotelNo": "128304",
+  "name": "ペンション　シルバーファーン",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "18:00",
+  "fetched_at": "2026-10-07T13:11"
+ },
+ "c9-rk18349": {
+  "hotelNo": "18349",
+  "name": "ぷれじーる",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "24:00",
+  "fetched_at": "2026-10-07T13:11"
+ },
+ "c9-rk135418": {
+  "hotelNo": "135418",
+  "name": "ラ・フォンテーヌ・アルジャンテ",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "18:00",
+  "fetched_at": "2026-10-07T13:11"
+ },
+ "c9-rk6219": {
+  "hotelNo": "6219",
+  "name": "プチペンション　アルファ",
+  "checkin": "15:30",
+  "checkout": "10:00",
+  "last_checkin": "20:00",
+  "fetched_at": "2026-10-07T13:11"
+ },
+ "c9-rk130654": {
+  "hotelNo": "130654",
+  "name": "ペットと泊まれる宿　清里ペンション　マッキントッシュ",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "18:30",
+  "fetched_at": "2026-10-07T13:11"
+ },
+ "c9-rk37895": {
+  "hotelNo": "37895",
+  "name": "ペンション　おれんじはうす",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "21:00",
+  "fetched_at": "2026-10-07T13:11"
+ },
+ "c9-rk188731": {
+  "hotelNo": "188731",
+  "name": "ペンション　モーニングミスト",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "20:00",
+  "fetched_at": "2026-10-07T13:11"
+ },
+ "c9-rk73977": {
+  "hotelNo": "73977",
+  "name": "ロッジ・アトリエ",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "22:00",
+  "fetched_at": "2026-10-07T13:11"
+ },
+ "c9-rk147787": {
+  "hotelNo": "147787",
+  "name": "おおきなわんこのプチホテル　ノーティカオン",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "22:00",
+  "fetched_at": "2026-10-07T13:11"
+ },
+ "c9-rk167125": {
+  "hotelNo": "167125",
+  "name": "クイール　〜ペットと一緒に過ごす宿〜",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "17:30",
+  "fetched_at": "2026-10-07T13:11"
+ },
+ "c9-rk109079": {
+  "hotelNo": "109079",
+  "name": "愛犬と過ごす海辺の温泉宿　ムーンリバージュ９６３ステージ",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "18:00",
+  "fetched_at": "2026-10-07T13:11"
+ },
+ "c9-rk28272": {
+  "hotelNo": "28272",
+  "name": "飯坂温泉　展望露天風呂の宿　湯乃家",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "19:00",
+  "fetched_at": "2026-10-07T13:11"
+ },
+ "c9-rk40787": {
+  "hotelNo": "40787",
+  "name": "花きりん",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "18:00",
+  "fetched_at": "2026-10-07T13:11"
+ },
+ "c9-rk19832": {
+  "hotelNo": "19832",
+  "name": "磐梯山温泉ホテル　ｂｙ　星野リゾート",
+  "checkin": "15:00",
+  "checkout": "11:00",
+  "last_checkin": "24:00",
+  "fetched_at": "2026-10-07T13:11"
+ },
+ "c9-rk27831": {
+  "hotelNo": "27831",
+  "name": "フクロウのいる宿　オーベルジュ渓翠館",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "18:00",
+  "fetched_at": "2026-10-07T13:11"
+ },
+ "c9-rk5091": {
+  "hotelNo": "5091",
+  "name": "ペットと泊まれる宿　ニュー泊﨑荘",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "23:00",
+  "fetched_at": "2026-10-07T13:11"
+ },
+ "c9-rk6288": {
+  "hotelNo": "6288",
+  "name": "遠刈田温泉　旅館　源兵衛",
+  "checkin": "15:00",
+  "checkout": "11:00",
+  "last_checkin": "20:00",
+  "fetched_at": "2026-10-07T13:12"
+ },
+ "c9-rk27932": {
+  "hotelNo": "27932",
+  "name": "ファミリーロッジ旅籠屋・仙台亘理店",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "22:30",
+  "fetched_at": "2026-10-07T13:12"
+ },
+ "c9-rk188836": {
+  "hotelNo": "188836",
+  "name": "まむろ川温泉　梅里苑",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "19:00",
+  "fetched_at": "2026-10-07T13:12"
+ },
+ "c9-rk80663": {
+  "hotelNo": "80663",
+  "name": "ファミリーロッジ旅籠屋・寒河江店",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "22:30",
+  "fetched_at": "2026-10-07T13:12"
+ },
+ "c9-rk182490": {
+  "hotelNo": "182490",
+  "name": "ファミリーロッジ旅籠屋・庄内店",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "22:30",
+  "fetched_at": "2026-10-07T13:12"
+ },
+ "c9-rk72727": {
+  "hotelNo": "72727",
+  "name": "羽根沢温泉　加登屋旅館",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "20:00",
+  "fetched_at": "2026-10-07T13:12"
+ },
+ "c9-rk49336": {
+  "hotelNo": "49336",
+  "name": "ファミリーロッジ旅籠屋・東京新木場店",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "22:30",
+  "fetched_at": "2026-10-07T13:12"
+ },
+ "c9-rk108080": {
+  "hotelNo": "108080",
+  "name": "ザ・キャピトルホテル東急",
+  "checkin": "15:00",
+  "checkout": "12:00",
+  "last_checkin": "24:00",
+  "fetched_at": "2026-10-07T13:12"
+ },
+ "c9-rk184151": {
+  "hotelNo": "184151",
+  "name": "ホテルリブマックス蒲田駅前",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "22:30",
+  "fetched_at": "2026-10-07T13:12"
+ },
+ "c9-rk31912": {
+  "hotelNo": "31912",
+  "name": "七沢温泉　宇宙と地中から元気をもらう宿　七沢荘",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "18:00",
+  "fetched_at": "2026-10-07T13:12"
+ },
+ "c9-rk168152": {
+  "hotelNo": "168152",
+  "name": "サンダンス・リゾート箱根宮城野",
+  "checkin": "15:00",
+  "checkout": "11:00",
+  "last_checkin": "18:00",
+  "fetched_at": "2026-10-07T13:12"
+ },
+ "c9-rk149166": {
+  "hotelNo": "149166",
+  "name": "サンダンス・リゾート箱根強羅",
+  "checkin": "15:00",
+  "checkout": "11:00",
+  "last_checkin": "24:00",
+  "fetched_at": "2026-10-07T13:12"
+ },
+ "c9-rk53175": {
+  "hotelNo": "53175",
+  "name": "箱根宮城野温泉　ドッグパレスリゾート箱根",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "17:30",
+  "fetched_at": "2026-10-07T13:12"
+ },
+ "c9-rk176946": {
+  "hotelNo": "176946",
+  "name": "ファミリーロッジ旅籠屋・木更津港店",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "22:30",
+  "fetched_at": "2026-10-07T13:12"
+ },
+ "c9-rk67050": {
+  "hotelNo": "67050",
+  "name": "ファミリーロッジ旅籠屋・千葉勝浦店",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "22:30",
+  "fetched_at": "2026-10-07T13:12"
+ },
+ "c9-rk176922": {
+  "hotelNo": "176922",
+  "name": "正丸峠ガーデンハウス",
+  "checkin": "14:00",
+  "checkout": "10:00",
+  "last_checkin": "20:00",
+  "fetched_at": "2026-10-07T13:12"
+ },
+ "c9-rk189854": {
+  "hotelNo": "189854",
+  "name": "長瀞キャンプヴィレッジ　＾",
+  "checkin": "14:00",
+  "checkout": "11:00",
+  "last_checkin": "17:00",
+  "fetched_at": "2026-10-07T13:12"
+ },
+ "c9-rk16031": {
+  "hotelNo": "16031",
+  "name": "ホテル　クリスタルパレス",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "24:00",
+  "fetched_at": "2026-10-07T13:12"
+ },
+ "c9-rk67860": {
+  "hotelNo": "67860",
+  "name": "一組だけのお宿　すいへいせん",
+  "checkin": "14:00",
+  "checkout": "10:00",
+  "last_checkin": "20:00",
+  "fetched_at": "2026-10-07T13:12"
+ },
+ "c9-rk179777": {
+  "hotelNo": "179777",
+  "name": "Ｗａｔｅｒ　Ｇａｒｄｅｎ　Ｒｅｓｏｒｔ　キャンプ＆マリーナ",
+  "checkin": "14:00",
+  "checkout": "10:00",
+  "last_checkin": "17:00",
+  "fetched_at": "2026-10-07T13:12"
+ },
+ "c9-rk68250": {
+  "hotelNo": "68250",
+  "name": "ホテルラフォーレ那須",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "23:00",
+  "fetched_at": "2026-10-07T13:12"
+ },
+ "c9-rk73998": {
+  "hotelNo": "73998",
+  "name": "那須温泉　ホテルハーヴェスト那須",
+  "checkin": "15:00",
+  "checkout": "11:00",
+  "last_checkin": "24:00",
+  "fetched_at": "2026-10-07T13:12"
+ },
+ "c9-rk53422": {
+  "hotelNo": "53422",
+  "name": "ホテルウェリィスミヨシ",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "24:00",
+  "fetched_at": "2026-10-07T13:12"
+ },
+ "c9-rk192389": {
+  "hotelNo": "192389",
+  "name": "ドゥカーレリゾートホテル那須　甘露の湯",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "21:00",
+  "fetched_at": "2026-10-07T13:12"
+ },
+ "c9-rk29835": {
+  "hotelNo": "29835",
+  "name": "妙義温泉　妙義グリーンホテル＆テラス",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "21:00",
+  "fetched_at": "2026-10-07T13:12"
+ },
+ "c9-rk128522": {
+  "hotelNo": "128522",
+  "name": "ゲスト・イン八城の杜",
+  "checkin": "14:00",
+  "checkout": "10:00",
+  "last_checkin": "19:00",
+  "fetched_at": "2026-10-07T13:12"
+ },
+ "c9-rk2343": {
+  "hotelNo": "2343",
+  "name": "北軽井沢　ペンション　エデン",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "23:00",
+  "fetched_at": "2026-10-07T13:12"
+ },
+ "c9-rk20177": {
+  "hotelNo": "20177",
+  "name": "ニュー・グリーンピア津南",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "20:00",
+  "fetched_at": "2026-10-07T13:12"
+ },
+ "c9-rk15620": {
+  "hotelNo": "15620",
+  "name": "ＴＨＥ　ＳＥＡＳＩＤＥ　ＶＩＬＬＡ　佐渡島　（佐渡シーサイドヴィラ）",
+  "checkin": "14:00",
+  "checkout": "09:30",
+  "last_checkin": "20:00",
+  "fetched_at": "2026-10-07T13:12"
+ },
+ "c9-rk178902": {
+  "hotelNo": "178902",
+  "name": "パーパスリゾート　越後湯沢「蔵」",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "24:00",
+  "fetched_at": "2026-10-07T13:12"
+ },
+ "c9-rk50708": {
+  "hotelNo": "50708",
+  "name": "ゑびすや旅館（関川村）",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "21:00",
+  "fetched_at": "2026-10-07T13:12"
+ },
+ "c9-rk128535": {
+  "hotelNo": "128535",
+  "name": "広田温泉　奥の湯　湯元館",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "19:00",
+  "fetched_at": "2026-10-07T13:12"
+ },
+ "c9-rk198690": {
+  "hotelNo": "198690",
+  "name": "ｂｌｕｅ　ｑｕａｄ　ｈｏｔｅｌ　諏訪",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "29:00",
+  "fetched_at": "2026-10-07T13:12"
+ },
+ "c9-rk44294": {
+  "hotelNo": "44294",
+  "name": "オーベルジュ・ド・プリマヴェーラ",
+  "checkin": "15:00",
+  "checkout": "11:00",
+  "last_checkin": "20:00",
+  "fetched_at": "2026-10-07T13:12"
+ },
+ "c9-rk8402": {
+  "hotelNo": "8402",
+  "name": "奥志賀高原ホテル",
+  "checkin": "15:00",
+  "checkout": "11:00",
+  "last_checkin": "24:00",
+  "fetched_at": "2026-10-07T13:12"
+ },
+ "c9-rk1614": {
+  "hotelNo": "1614",
+  "name": "ホテルタングラム　斑尾東急リゾート",
+  "checkin": "15:00",
+  "checkout": "11:00",
+  "last_checkin": "24:00",
+  "fetched_at": "2026-10-07T13:12"
+ },
+ "c9-rk108086": {
+  "hotelNo": "108086",
+  "name": "ぽかぽかランド美麻",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "21:00",
+  "fetched_at": "2026-10-07T13:12"
+ },
+ "c9-rk11147": {
+  "hotelNo": "11147",
+  "name": "山中湖の貸切コテージ　ビレッジ花月園",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "19:00",
+  "fetched_at": "2026-10-07T13:12"
+ },
+ "c9-rk187950": {
+  "hotelNo": "187950",
+  "name": "富士の星空　エフジェイフォレスト",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "20:00",
+  "fetched_at": "2026-10-07T13:12"
+ },
+ "c9-rk188118": {
+  "hotelNo": "188118",
+  "name": "Ｇｒａｍｅｒｃｙ　Ｖｉｌｌａｇｅ　山中湖　Ｇｌａｍｐｉｎｇ＆Ｓａｕｎａ",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "18:00",
+  "fetched_at": "2026-10-07T13:12"
+ },
+ "c9-rk38982": {
+  "hotelNo": "38982",
+  "name": "プチホテル　ガレリア",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "21:00",
+  "fetched_at": "2026-10-07T13:12"
+ },
+ "c9-rk8303": {
+  "hotelNo": "8303",
+  "name": "フォレストイン　チップマンク　湖畔の森の小さなお宿",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "21:30",
+  "fetched_at": "2026-10-07T13:12"
+ },
+ "c9-rk129403": {
+  "hotelNo": "129403",
+  "name": "静かな湖畔の愛犬同伴専門宿「ペロはまなこ」",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "22:00",
+  "fetched_at": "2026-10-07T13:12"
+ },
+ "c9-rk14887": {
+  "hotelNo": "14887",
+  "name": "ペンションひだまり",
+  "checkin": "15:30",
+  "checkout": "10:00",
+  "last_checkin": "23:00",
+  "fetched_at": "2026-10-07T13:12"
+ },
+ "c9-rk177106": {
+  "hotelNo": "177106",
+  "name": "かざみどり〜ワンコにも休日を〜",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "17:00",
+  "fetched_at": "2026-10-07T13:12"
+ },
+ "c9-rk109508": {
+  "hotelNo": "109508",
+  "name": "ペンションいっぺき湖",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "18:00",
+  "fetched_at": "2026-10-07T13:12"
+ },
+ "c9-rk182013": {
+  "hotelNo": "182013",
+  "name": "ペットと泊まれる温泉宿バロン",
+  "checkin": "15:30",
+  "checkout": "10:00",
+  "last_checkin": "17:00",
+  "fetched_at": "2026-10-07T13:12"
+ },
+ "c9-rk39942": {
+  "hotelNo": "39942",
+  "name": "おやど風来坊",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "18:00",
+  "fetched_at": "2026-10-07T13:12"
+ },
+ "c9-rk40119": {
+  "hotelNo": "40119",
+  "name": "ペンション＆コテージ　アルバート",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "21:00",
+  "fetched_at": "2026-10-07T13:13"
+ },
+ "c9-rk176796": {
+  "hotelNo": "176796",
+  "name": "シーサイドハウス　きゅういち",
+  "checkin": "17:00",
+  "checkout": "10:00",
+  "last_checkin": "22:30",
+  "fetched_at": "2026-10-07T13:13"
+ },
+ "c9-rk27875": {
+  "hotelNo": "27875",
+  "name": "裏磐梯　ペンション見鳥（みどり）",
+  "checkin": "16:00",
+  "checkout": "10:00",
+  "last_checkin": "19:00",
+  "fetched_at": "2026-10-07T13:13"
+ },
+ "c9-rk193253": {
+  "hotelNo": "193253",
+  "name": "ｉｗａｋｉｋｉ　ｖａｃａｔｉｏｎ　ｈｏｍｅｓ",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "18:00",
+  "fetched_at": "2026-10-07T13:13"
+ },
+ "c9-rajiumugannban-lovepop-jp-details1": {
+  "hotelNo": "128419",
+  "name": "岩盤浴すみかわ",
+  "checkin": "15:00",
+  "checkout": "10:30",
+  "last_checkin": "21:00",
+  "fetched_at": "2026-10-07T13:13"
+ },
+ "c9-rk197945": {
+  "hotelNo": "197945",
+  "name": "日本料理　瑞幸",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "20:00",
+  "fetched_at": "2026-10-07T13:13"
+ },
+ "c9-rk149204": {
+  "hotelNo": "149204",
+  "name": "湯宿　飛鳥",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "20:00",
+  "fetched_at": "2026-10-07T13:13"
+ },
+ "c9-rk194198": {
+  "hotelNo": "194198",
+  "name": "陽光　－　ペットと泊まれる温泉付き貸別荘　－　蔵王山水苑・ガイアリゾート　＾",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "20:00",
+  "fetched_at": "2026-10-07T13:13"
+ },
+ "c9-rk197593": {
+  "hotelNo": "197593",
+  "name": "ＬＥＭＯ　ｂｙ　ｍａｔｓｕｓｈｉｍａ",
+  "checkin": "15:00",
+  "checkout": "11:00",
+  "last_checkin": "22:00",
+  "fetched_at": "2026-10-07T13:13"
+ },
+ "c9-rk196554": {
+  "hotelNo": "196554",
+  "name": "蔵王温泉　吉田屋",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "18:00",
+  "fetched_at": "2026-10-07T13:13"
+ },
+ "c9-rk79497": {
+  "hotelNo": "79497",
+  "name": "湯田川温泉　つかさや旅館",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "18:30",
+  "fetched_at": "2026-10-07T13:13"
+ },
+ "c9-rk140981": {
+  "hotelNo": "140981",
+  "name": "癒しの源泉かけ流しの宿温海荘",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "18:00",
+  "fetched_at": "2026-10-07T13:13"
+ },
+ "c9-rk5841": {
+  "hotelNo": "5841",
+  "name": "赤湯温泉　升形屋旅館",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "20:00",
+  "fetched_at": "2026-10-07T13:13"
+ },
+ "c9-rk10956": {
+  "hotelNo": "10956",
+  "name": "箱根芦ノ湖温泉　源泉100％の宿　ＨＯＴＥＬ　Ｒａ　Ｋｕｕｎ　(ホテルラクーン）",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "21:00",
+  "fetched_at": "2026-10-07T13:13"
+ },
+ "c9-rk17939": {
+  "hotelNo": "17939",
+  "name": "観泉荘　こまや",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "19:30",
+  "fetched_at": "2026-10-07T13:13"
+ },
+ "c9-rk14153": {
+  "hotelNo": "14153",
+  "name": "やまいち旅館",
+  "checkin": "14:00",
+  "checkout": "10:00",
+  "last_checkin": "22:00",
+  "fetched_at": "2026-10-07T13:13"
+ },
+ "c9-rk191922": {
+  "hotelNo": "191922",
+  "name": "Ｆａｉｒｙｔａｌｅ",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "20:00",
+  "fetched_at": "2026-10-07T13:13"
+ },
+ "c9-rk2133": {
+  "hotelNo": "2133",
+  "name": "ペンション　キャッチボール",
+  "checkin": "14:00",
+  "checkout": "10:00",
+  "last_checkin": "21:00",
+  "fetched_at": "2026-10-07T13:13"
+ },
+ "c9-rk187938": {
+  "hotelNo": "187938",
+  "name": "ＰＦリゾート・シエル",
+  "checkin": "14:30",
+  "checkout": "10:00",
+  "last_checkin": "20:00",
+  "fetched_at": "2026-10-07T13:13"
+ },
+ "c9-rk187939": {
+  "hotelNo": "187939",
+  "name": "ＰＦリゾート・ポルト",
+  "checkin": "14:30",
+  "checkout": "10:00",
+  "last_checkin": "20:00",
+  "fetched_at": "2026-10-07T13:13"
+ },
+ "c9-rk193464": {
+  "hotelNo": "193464",
+  "name": "ほりのみせ",
+  "checkin": "15:00",
+  "checkout": "11:00",
+  "last_checkin": "18:00",
+  "fetched_at": "2026-10-07T13:13"
+ },
+ "c9-rk134811": {
+  "hotelNo": "134811",
+  "name": "フォレスト",
+  "checkin": "16:00",
+  "checkout": "10:00",
+  "last_checkin": "24:00",
+  "fetched_at": "2026-10-07T13:13"
+ },
+ "c9-rk38648": {
+  "hotelNo": "38648",
+  "name": "那須温泉　ヴィラージュ那須高原",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "24:00",
+  "fetched_at": "2026-10-07T13:13"
+ },
+ "c9-rk8170": {
+  "hotelNo": "8170",
+  "name": "プティホテル　セボン",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "23:00",
+  "fetched_at": "2026-10-07T13:13"
+ },
+ "c9-rk28280": {
+  "hotelNo": "28280",
+  "name": "ペンション　高原の小枝",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "18:00",
+  "fetched_at": "2026-10-07T13:13"
+ },
+ "c9-rk196672": {
+  "hotelNo": "196672",
+  "name": "ペットコテージ　Ｗａｎｓｅｍｂｌｅ",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "22:00",
+  "fetched_at": "2026-10-07T13:13"
+ },
+ "c9-rk193372": {
+  "hotelNo": "193372",
+  "name": "ペンションアルマ",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "22:00",
+  "fetched_at": "2026-10-07T13:13"
+ },
+ "c9-rk16215": {
+  "hotelNo": "16215",
+  "name": "ファミリーロッジ旅籠屋・沼田店",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "22:30",
+  "fetched_at": "2026-10-07T13:13"
+ },
+ "c9-rk195936": {
+  "hotelNo": "195936",
+  "name": "ｇｒｅｅｎｂｅｌｌ",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": null,
+  "fetched_at": "2026-10-07T13:13"
+ },
+ "c9-rk129566": {
+  "hotelNo": "129566",
+  "name": "三川温泉　新かい荘",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "18:00",
+  "fetched_at": "2026-10-07T13:13"
+ },
+ "c9-rk31553": {
+  "hotelNo": "31553",
+  "name": "ペンション　ＮＯＡＨ（ノア）",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "21:00",
+  "fetched_at": "2026-10-07T13:13"
+ },
+ "c9-rk178905": {
+  "hotelNo": "178905",
+  "name": "東横ＩＮＮ上越妙高駅西口",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "29:00",
+  "fetched_at": "2026-10-07T13:13"
+ },
+ "c9-rk5121": {
+  "hotelNo": "5121",
+  "name": "ホテルアルペンブリック",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "21:00",
+  "fetched_at": "2026-10-07T13:13"
+ },
+ "c9-rk2562": {
+  "hotelNo": "2562",
+  "name": "ペンション　フォーシーズン＜長野県＞",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "23:00",
+  "fetched_at": "2026-10-07T13:13"
+ },
+ "c9-rk67273": {
+  "hotelNo": "67273",
+  "name": "東横ＩＮＮ松本駅前本町",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "29:00",
+  "fetched_at": "2026-10-07T13:13"
+ },
+ "c9-rk140775": {
+  "hotelNo": "140775",
+  "name": "一の倉荘別邸　白馬（シロウマ）",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "20:00",
+  "fetched_at": "2026-10-07T13:13"
+ },
+ "c9-umito-life-top-mikkabi": {
+  "hotelNo": "201229",
+  "name": "ＵＭＩ＆ｍｉｋｋａｂｉ／民泊",
+  "checkin": "15:00",
+  "checkout": "11:00",
+  "last_checkin": "23:00",
+  "fetched_at": "2026-10-07T13:13"
+ },
+ "c9-rk55460": {
+  "hotelNo": "55460",
+  "name": "ドッグ　イン　ペンション　バーニーズ",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "18:00",
+  "fetched_at": "2026-10-07T13:13"
+ },
+ "c9-rk109442": {
+  "hotelNo": "109442",
+  "name": "プチペンション　ランバージャック",
+  "checkin": "16:00",
+  "checkout": "10:00",
+  "last_checkin": "18:30",
+  "fetched_at": "2026-10-07T13:13"
+ },
+ "c9-rk14068": {
+  "hotelNo": "14068",
+  "name": "富士山健康開運温泉　猫と犬の宿ペンションブルーポピー",
+  "checkin": "16:00",
+  "checkout": "10:00",
+  "last_checkin": "18:00",
+  "fetched_at": "2026-10-07T13:13"
+ },
+ "c9-rk183891": {
+  "hotelNo": "183891",
+  "name": "東横ＩＮＮ富士山大月駅",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "29:00",
+  "fetched_at": "2026-10-07T13:13"
+ },
+ "c9-rk135420": {
+  "hotelNo": "135420",
+  "name": "山梨ワインと家庭料理　ホテルベル鐘山",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "29:30",
+  "fetched_at": "2026-10-07T13:13"
+ },
+ "c9-gensenkan-shiobara": {
+  "hotelNo": "5144",
+  "name": "塩原元湯温泉　秘湯の宿　元泉館",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "19:00",
+  "fetched_at": "2026-10-07T13:13"
+ },
+ "c9-ilio-hale-ichinomiya": {
+  "hotelNo": "197441",
+  "name": "イーリオ　ハレ",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "17:00",
+  "fetched_at": "2026-10-07T13:13"
+ },
+ "c9-oshinaya-wan-cottage": {
+  "hotelNo": "168337",
+  "name": "おしなや　ワンわんコテージ",
+  "checkin": "15:00",
+  "checkout": "10:00",
+  "last_checkin": "19:30",
+  "fetched_at": "2026-10-07T13:13"
  }
 }
