@@ -91,7 +91,7 @@ if(stays.length){
   dlg.innerHTML='<div class="compare-head"><h2 id="compare-title">宿を並べて比べる</h2><button type="button" class="compare-close">閉じる</button></div><p class="compare-note">各宿の掲載内容を並べています。料金・空室・条件は予約前に宿の案内で確認してください。</p><div class="compare-scroll"><table class="compare-table"><thead><tr><th scope="col">項目</th>'+xs.map(x=>'<th scope="col"><a href="#'+esc(x.card.id)+'" data-goto>'+esc(nameOf(x))+'</a><small>'+esc(x.area)+'</small></th>').join('')+'</tr></thead><tbody>'
    +'<tr><th scope="row">条件の判定</th>'+xs.map(x=>'<td><ul class="stay-conds">'+CHIPS.map(([k,,short])=>'<li class="st-'+x.st[k]+'">'+short+' <b>'+stateText(k,x.st[k])+'</b></li>').join('')+'</ul></td>').join('')+'</tr>'
    +ROWS.map(([label,fn])=>'<tr><th scope="row">'+label+'</th>'+xs.map(x=>'<td>'+(esc((fn(x)||'').trim())||'<span class="muted">記載なし</span>')+'</td>').join('')+'</tr>').join('')
-   +'<tr><th scope="row">カード</th>'+xs.map(x=>'<td><a href="#'+esc(x.card.id)+'" data-goto>この宿の条件・予約先を見る</a></td>').join('')+'</tr></tbody></table></div>';
+   +'<tr><th scope="row">カード</th>'+xs.map(x=>'<td><a href="#'+esc(x.card.id)+'" data-goto>この宿の条件を見る</a>'+(function(b){return b?'<br><a class="compare-book" href="'+b.getAttribute('href')+'" target="_blank" rel="sponsored noopener">'+esc(b.textContent)+'</a>':'<br><span class="compare-book-none">予約条件は公式情報で確認</span>';})(x.card.querySelector('.stay-book-btn'))+'</td>').join('')+'</tr></tbody></table></div>';
   dlg.querySelector('.compare-close').addEventListener('click',()=>dlg.close());
   dlg.querySelectorAll('a[data-goto]').forEach(a=>a.addEventListener('click',()=>dlg.close()));
   if(dlg.showModal)dlg.showModal();else dlg.setAttribute('open','');dlg.querySelector('.compare-close').focus()});

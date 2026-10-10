@@ -18,6 +18,9 @@
     return Math.min(h, window.innerHeight * 0.4) + 12;
   }
   function measureAbove(target) {
+    var card = target.closest ? target.closest(CARD) : null;  // review-r2b-20261011: カード外(検索欄など)への移動では描画抑制を解除しない
+    if (!card) return;
+    target = card;
     var cards = document.querySelectorAll(CARD);
     for (var i = 0; i < cards.length; i++) {
       var c = cards[i];
