@@ -35,7 +35,7 @@
     measureAbove(target);
     var tries = 0, last = null;
     function step() {
-      var off = stickyOffset();
+      var off = stickyOffset() + (target.matches('#stay-query,#outing-query') ? (parseFloat(getComputedStyle(target).scrollMarginTop) || 0) : 0);
       var top = target.getBoundingClientRect().top;
       if (Math.abs(top - off) > 3) window.scrollTo({ top: window.scrollY + top - off, left: 0, behavior: "instant" });
       var now = Math.round(target.getBoundingClientRect().top);

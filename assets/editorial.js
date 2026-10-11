@@ -1,3 +1,19 @@
+// cta-sweep: 実際のリンク先から予約サイト名を決める（通信なし）。
+function wankoStayCta(url) {
+  let u = new URL(url, location.href);
+  for (let i = 0; i < 4; i++) {
+    const inner = ["vc_url", "pc", "url", "a8ejpredirect"].map(k => u.searchParams.get(k)).find(Boolean);
+    if (!inner) break;
+    try { u = new URL(inner); } catch { break; }
+  }
+  const h = u.hostname.toLowerCase();
+  const is = domain => h === domain || h.endsWith('.' + domain);
+  const site = is('rakuten.co.jp') ? '楽天トラベル'
+    : is('travel.yahoo.co.jp') ? 'Yahoo!トラベル'
+    : is('ikyu.com') ? '一休.com' : is('jalan.net') ? 'じゃらん'
+    : is('jtb.co.jp') || is('rurubu.travel') ? 'JTB' : h;
+  return '広告｜' + site + 'で空室・条件を確認';
+}
 // Presentation enhancements; existing product filtering and affiliate URLs stay intact.
 document.querySelectorAll('button[data-problem]').forEach(button=>{
  const update=()=>document.querySelectorAll('button[data-problem]').forEach(b=>b.setAttribute('aria-pressed',String(b.classList.contains('active'))));
@@ -91,7 +107,7 @@ if(stays.length){
   dlg.innerHTML='<div class="compare-head"><h2 id="compare-title">宿を並べて比べる</h2><button type="button" class="compare-close">閉じる</button></div><p class="compare-note">各宿の掲載内容を並べています。料金・空室・条件は予約前に宿の案内で確認してください。</p><p class="compare-hint">横に動かすと、ほかの宿と比べられます。</p><div class="compare-scroll"><table class="compare-table"><thead><tr><th scope="col">項目</th>'+xs.map(x=>'<th scope="col"><a href="#'+esc(x.card.id)+'" data-goto>'+esc(nameOf(x))+'</a><small>'+esc(x.area)+'</small></th>').join('')+'</tr></thead><tbody>'
    +'<tr><th scope="row">条件の判定</th>'+xs.map(x=>'<td><ul class="stay-conds">'+CHIPS.map(([k,,short])=>'<li class="st-'+x.st[k]+'">'+short+' <b>'+stateText(k,x.st[k])+'</b></li>').join('')+'</ul></td>').join('')+'</tr>'
    +ROWS.map(([label,fn])=>'<tr><th scope="row">'+label+'</th>'+xs.map(x=>'<td>'+(esc((fn(x)||'').trim())||'<span class="muted">記載なし</span>')+'</td>').join('')+'</tr>').join('')
-   +'<tr><th scope="row">条件の確認・予約先</th>'+xs.map(x=>'<td><a href="#'+esc(x.card.id)+'" data-goto>この宿の条件を見る</a>'+(function(b){return b?'<br><a class="compare-book" href="'+b.getAttribute('href')+'" target="_blank" rel="sponsored noopener">'+esc(b.textContent)+'</a>':(function(o){return o?'<br><a class="compare-book" href="'+o.getAttribute('href')+'" target="_blank" rel="noopener">公式サイトで予約条件を確認</a>':'<br><span class="compare-book-none">予約条件は公式情報で確認</span>';})(x.card.querySelector('.links a[href^=http]'));})(x.card.querySelector('.stay-book-btn'))+'</td>').join('')+'</tr></tbody></table></div>';
+   +'<tr><th scope="row">条件の確認・予約先</th>'+xs.map(x=>'<td><a href="#'+esc(x.card.id)+'" data-goto>この宿の条件を見る</a>'+(function(b){return b?'<br><a class="compare-book" href="'+b.getAttribute('href')+'" target="_blank" rel="sponsored noopener">'+esc(wankoStayCta(b.getAttribute('href')))+'</a>':(function(o){return o?'<br><a class="compare-book" href="'+o.getAttribute('href')+'" target="_blank" rel="noopener">公式サイトで予約条件を確認</a>':'<br><span class="compare-book-none">予約条件は公式情報で確認</span>';})(x.card.querySelector('.links a[href^=http]'));})(x.card.querySelector('.stay-book-btn'))+'</td>').join('')+'</tr></tbody></table></div>';
   dlg.querySelector('.compare-close').addEventListener('click',()=>dlg.close());
   dlg.querySelectorAll('a[data-goto]').forEach(a=>a.addEventListener('click',()=>dlg.close()));
   if(dlg.showModal)dlg.showModal();else dlg.setAttribute('open','');dlg.querySelector('.compare-close').focus()});

@@ -129,10 +129,10 @@
     return [
       { label: "施設", text: "犬同伴可(掲載条件を確認済み)", warn: false },
       { label: "客室・プラン", text: room, warn: c.onlyUnknown },
-      { label: "空室", text: `楽天トラベル取得 ${fmtWhen(scannedAt)}(24 時間以内)`, warn: false },
+      { label: "空室", text: `楽天トラベル取得 ${fmtWhen(scannedAt)}・取得時点の情報。現在は予約先で確認`, warn: false },
     ];
   };
-  const ONLY_UNKNOWN_WARN = "この条件で空いているのは犬同伴の可否が未確認の客室だけです。予約前に宿へ確認してください";
+  const ONLY_UNKNOWN_WARN = "取得時点では犬同伴の可否が未確認の客室のみです。現在の空室と犬同伴の可否は予約先で確認してください";
 
   return { VALID_MS, PET_NEG, petClass, dogLimits, dogFit, planFits, planCounts, validate, fmtWhen, statusLines, ONLY_UNKNOWN_WARN };
 });

@@ -71,7 +71,7 @@ function wankoFoodAfterRender(cards,shown,active){
   const status=document.querySelector('#ff-status');
   const has=wankoFoodHasFilters(wankoFoodState);
   status.textContent=active==='毎日の主食'||has
-    ? (shown?`${shown}件が見つかりました。対象年齢・容量・原材料も商品欄で比べてください。`:'一致する商品がありません。条件を1つずつ外すか、リセットして探し直せます。')
+    ? (shown?`${shown}品が見つかりました（掲載カード数。容量・販売元違いを含む）。対象年齢・容量・原材料も商品欄で比べてください。`:'一致する商品がありません。条件を1つずつ外すか、リセットして探し直せます。')
     : '条件を選ぶと、毎日の主食に切り替わります。';
   const chips=document.querySelector('#ff-selected');chips.replaceChildren();
   wankoFoodControls.forEach(el=>{
@@ -123,8 +123,8 @@ function wankoFoodInit(onChange,onReset){
   // Catalogue-wide counts make sparse/unknown traits visible before choosing them.
   wankoFoodControls.filter(el=>el.tagName==='SELECT').forEach(el=>{
     [...el.options].filter(o=>o.value).forEach(o=>{
-      const total=Object.values(wankoFoodFacts).filter(p=>wankoFoodMatches(p,{[el.dataset.foodFilter]:o.value})).length;
-      o.textContent+=`（${total}件）`;o.disabled=total===0;
+      const total=[...document.querySelectorAll('.grid article.card')].filter(c=>(c.dataset.problems||'').split('|').includes('毎日の主食')&&wankoFoodMatches(wankoFoodRecord(c),{[el.dataset.foodFilter]:o.value})).length;
+      o.textContent+=`（主食候補・単独条件 ${total}品）`;o.disabled=total===0;
     });
   });
   const update=()=>{

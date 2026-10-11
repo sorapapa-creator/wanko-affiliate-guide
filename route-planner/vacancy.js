@@ -69,10 +69,10 @@
       const status3 = `<ul class="vc-status3">${statusLines(pc, meta.scanned_at).map((l) => `<li${l.warn ? ' class="warn"' : ""}><b>${esc(l.label)}:</b> ${esc(l.text)}</li>`).join("")}</ul>`;
       const plans = pc.shown.map((p) => `<li class="vc-plan${petClass(p) === "pet" ? " vc-pet" : ""}">${petClass(p) === "pet" ? '<span class="badge b-run">犬対応プラン</span>' : '<span class="badge">一般客室(犬同伴の可否は未確認)</span>'} <b>${yen(p.total)}</b><span class="note">(${meta.adults || 2}名1泊・楽天表示・${esc(fmtWhen(meta.scanned_at))} 取得)</span><br>
         <span class="note">${esc(p.plan || "")}${p.room ? ` ／ ${esc(p.room)}` : ""}${p.dinner ? "・夕食付" : ""}${p.breakfast ? "・朝食付" : ""}</span><br>
-        ${p.url ? `<a class="vc-book" href="${esc(p.url)}" target="_blank" rel="noopener sponsored">楽天トラベルでこのプランを見る(${esc(jstMd(meta.checkin))}・${meta.adults || 2}名)<span class="ad">広告</span></a>` : ""}</li>`).join("");
+        ${p.url ? `<a class="vc-book" href="${esc(p.url)}" target="_blank" rel="noopener sponsored">広告｜楽天トラベルで空室・条件を確認</a><span class="note">(${esc(jstMd(meta.checkin))}・${meta.adults || 2}名)</span>` : ""}</li>`).join("");
       return `<article class="card vc-card${check.ng ? " vc-ng" : ""}">
         ${place.photo ? `<img class="vc-photo" src="${esc(place.photo)}" alt="${esc(place.name)}の写真(楽天トラベル提供)" loading="lazy">` : ""}
-        <h3>${i + 1}. ${esc(place.name)} <span class="badge">${esc(place.area || "")}</span>${pc.pet ? ' <span class="badge b-rec">犬対応プランに空室</span>' : ' <span class="badge">一般客室の空室のみ</span>'}${h.new ? ' <span class="badge b-new" title="前の晩の確認では空室がなかった宿です(キャンセルなどで空いた可能性)">新しく空室</span>' : ""}</h3>
+        <h3>${i + 1}. ${esc(place.name)} <span class="badge">${esc(place.area || "")}</span>${pc.pet ? ' <span class="badge b-rec">取得時点の犬対応プランあり</span>' : ' <span class="badge">取得時点は一般客室のみ（犬同伴可否は未確認）</span>'}${h.new ? ' <span class="badge b-new" title="前の晩の確認では空室がなかった宿です(キャンセルなどで空いた可能性)">新しく空室</span>' : ""}</h3>
         ${status3}
         <p class="note">${drive ? `${esc(origin.name)}から車で約${fmtDur(drive[0])}(${drive[1]}km・${drive[2] === "est" ? "直線距離からの目安" : "渋滞なしの目安"})` : "出発地からの所要時間は未計算"} ・ 添い寝: ${esc(place.sleep || place.co_sleep || "予約前確認")}${place.cage ? ` ・ ケージ: ${esc(place.cage.slice(0, 40))}${place.cage.length > 40 ? "…" : ""}` : ""}</p>
         ${check.notes.length ? `<div class="${check.ng ? "warnbox" : "note"}">${esc(check.notes.join("・"))}</div>` : ""}
@@ -82,7 +82,7 @@
         <ul class="vc-plans">${plans}</ul>
         <div class="actions vc-actions"><button type="button" class="primary vc-make" data-id="${esc(place.id)}" data-ci="${esc(meta.checkin)}" data-drive="${drive ? drive[0] : ""}" data-name="${esc(place.name)}" data-ou="${pc.onlyUnknown ? "1" : ""}">この宿で旅行プランを作る →</button>
           ${place.page_url ? `<a href="${esc(place.page_url)}" target="_blank" rel="noopener">掲載情報(犬の条件)を見る</a>` : ""}
-          ${h.info ? `<a href="${esc(h.info)}" target="_blank" rel="noopener sponsored">楽天トラベルの施設ページ<span class="ad">広告</span></a>` : ""}</div>
+          ${h.info ? `<a href="${esc(h.info)}" target="_blank" rel="noopener sponsored">広告｜楽天トラベルで空室・条件を確認</a>` : ""}</div>
       </article>`;
     };
     // 地方ごとにまとめる(近い宿がある地方から。各地方は近い順、12 件を超える分は「もっと見る」)
@@ -186,14 +186,14 @@
       }
       rows.sort((a, b) => (b.h.new ? 1 : 0) - (a.h.new ? 1 : 0) || (b.h.pet ? 1 : 0) - (a.h.pet ? 1 : 0) || (a.check.ng ? 1 : 0) - (b.check.ng ? 1 : 0) || ((a.drive ? a.drive[0] : 9e9) - (b.drive ? b.drive[0] : 9e9)) || ((a.price || 9e9) - (b.price || 9e9)));
       render(rows, data, origin);
-      const parts = [`${jstMd(ci)} チェックイン(1泊・${adults}名)で空室のある掲載宿 ${Object.keys(data.hotels).length}件のうち、条件に合う ${rows.length}件(地方ごと・出発地から近い順。各地方 12 件を超える分は「残りも見る」で表示)。`];
+      const parts = [`${jstMd(ci)} チェックイン(1泊・${adults}名)で取得時点で空室のあった掲載宿 ${Object.keys(data.hotels).length}件のうち、条件に合う ${rows.length}件(地方ごと・出発地から近い順。各地方 12 件を超える分は「残りも見る」で表示)。`];
       const nNew = rows.filter((r) => r.h.new).length;
       if (nNew) parts.push(`前の晩の確認では空室がなかった宿 ${nNew}件に「新しく空室」の印(キャンセルなどで空いた可能性。各地方の先頭に表示)。`);
       if (hiddenPet) parts.push(`犬対応プランの空室が確認できない ${hiddenPet}件は非表示(チェックを外すと一般客室の空室も出ます)。`);
       if (hiddenBudget) parts.push(`予算超過 ${hiddenBudget}件を除外。`);
       if (hiddenNg) parts.push(`犬の大きさ・頭数・添い寝の条件に合わない記載のある ${hiddenNg}件を除外。`);
       if (hiddenMisfit) parts.push(`空いている客室が犬の大きさ・頭数に合わない ${hiddenMisfit}件を除外。`);
-      parts.push(`空室・料金は楽天トラベルから ${fmtWhen(data.scanned_at)} に取得した情報で、現在は変わっている場合があります。`);
+      parts.push(`空室・料金は楽天トラベルから ${fmtWhen(data.scanned_at)} に取得した情報で、現在の空室・料金は予約先で確認してください。`);
       if (status.dataset.regionNote) { parts.unshift(status.dataset.regionNote); delete status.dataset.regionNote; }
       status.textContent = parts.join(""); status.classList.remove("warn-text");
       $("vc-credit").classList.remove("hidden");

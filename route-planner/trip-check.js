@@ -1,6 +1,6 @@
 // 段階0: 日付・人数・犬の条件で確認する(任意の入力。Codex と合意 cx-20260925-1)
 // - 任意の欄が空なら何も表示しない(これまでの出力と同じ)
-// - 空室は取得しない。「空室未確認」と表示し、公式サイトで確かめる導線だけを出す
+// - 空室は取得しない。「現在の空室は予約先で確認」と表示し、公式サイトで確かめる導線だけを出す
 // - 犬の条件は data/dog_rules.json(公式の一律の上限)だけで判定。無ければ「要確認」。dog_hints は使わない
 // - 天気は取得しない。気象庁の予報ページへの導線と、カードに屋内の記載がある近くの候補だけ
 // - イベントは data/events.json(公式で確認した開催回)。時刻未確認の回は日付の紹介だけ
@@ -94,7 +94,7 @@
   }
 
   function dogVerdict(rule, x) {
-    if (!rule) return { cls: "check", label: "要確認", why: "この宿は、公式の一律の上限(頭数・体重)をまだ登録していません。宿の条件で確認してください。" };
+    if (!rule || rule.mode === "manual" || rule.mode === "unknown") return { cls: "check", label: "要確認", why: "この条件は自動照合できません。上の掲載条件を確認してください" };
     const reasons = [];
     const dogs = Number(x.dogs), kg = Number(x.kg);
     if (x.dogs && rule.max_dogs && dogs > rule.max_dogs) reasons.push(`頭数(${dogs}頭)が1室の上限${rule.max_dogs}頭を超えます`);
@@ -112,7 +112,7 @@
     }
     const missing = [!x.dogs && rule.max_dogs && "頭数", !x.kg && rule.max_kg && "体重"].filter(Boolean);
     if (missing.length) return { cls: "check", label: "要確認", why: `${missing.join("・")}を入れると、公式の上限と照らし合わせます。` };
-    return { cls: "ok", label: "公式の上限内", why: "入力した頭数・体重・体格は、公式に書かれた一律の上限の範囲内です。客室ごと・犬種ごとの条件、証明書などは予約前に確認してください。" };
+    return { cls: "ok", label: "照合できた項目は上限内", why: "入力した頭数・体重・体格は、公式に書かれた一律の上限の範囲内です。客室ごと・犬種ごとの条件、証明書などは予約前に確認してください。" };
   }
 
   function stayBlock(place, x, rule) {
@@ -122,7 +122,7 @@
     const v = dogVerdict(rule, x);
     return `
       <h3>宿の空室と犬の条件</h3>
-      <p><span class="badge">空室未確認</span> この条件確認では空室を調べていません(最終行程表の「予約する」に、楽天トラベルの取得時点の空室を出します)。${x.checkout ? `${esc(x.checkin)} から ${nights}泊` : `${esc(x.checkin)} チェックイン`}${who ? `(${esc(who)})` : ""}で、宿の公式サイトや予約サイトで確かめてください。</p>
+      <p><span class="badge">現在の空室は予約先で確認</span> この条件確認では空室を調べていません(最終行程表の「予約する」に、楽天トラベルの取得時点の空室を出します)。${x.checkout ? `${esc(x.checkin)} から ${nights}泊` : `${esc(x.checkin)} チェックイン`}${who ? `(${esc(who)})` : ""}で、宿の公式サイトや予約サイトで確かめてください。</p>
       <div class="actions">${official.map((l, i) => `<a href="${esc(l.url)}" target="_blank" rel="noopener">${i ? "宿の公式ページ(2) ↗" : "宿の公式ページ ↗"}</a>`).join("")}
         <a href="${esc(place.page_url)}" target="_blank" rel="noopener">わんことのじかんで条件を見る</a></div>
       <p><span class="badge dog-${v.cls}">${esc(v.label)}</span> ${esc(v.why)}</p>

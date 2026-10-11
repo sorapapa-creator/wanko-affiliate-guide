@@ -1,3 +1,19 @@
+// cta-sweep: 実際のリンク先から予約サイト名を決める（通信なし）。
+function wankoStayCta(url) {
+  let u = new URL(url, location.href);
+  for (let i = 0; i < 4; i++) {
+    const inner = ["vc_url", "pc", "url", "a8ejpredirect"].map(k => u.searchParams.get(k)).find(Boolean);
+    if (!inner) break;
+    try { u = new URL(inner); } catch { break; }
+  }
+  const h = u.hostname.toLowerCase();
+  const is = domain => h === domain || h.endsWith('.' + domain);
+  const site = is('rakuten.co.jp') ? '楽天トラベル'
+    : is('travel.yahoo.co.jp') ? 'Yahoo!トラベル'
+    : is('ikyu.com') ? '一休.com' : is('jalan.net') ? 'じゃらん'
+    : is('jtb.co.jp') || is('rurubu.travel') ? 'JTB' : h;
+  return '広告｜' + site + 'で空室・条件を確認';
+}
 (() => {
   const CFG = window.PLANNER_CONFIG;
   const $ = (id) => document.getElementById(id);
@@ -784,7 +800,7 @@
   }
 
   function renderDestination(place, profile) {
-    const facts = Object.entries(place.facts || {}).slice(0, 3)
+    const facts = Object.entries(place.facts || {})
       .map(([k, v]) => `<p style="margin:4px 0"><b>${esc(k)}:</b> ${esc(v)}</p>`).join("");
     const warns = [];
     const h = place.dog_hints || {};
@@ -793,7 +809,7 @@
     }
     if (profile.heatCycle) warns.push("ヒート中(発情期)は受け入れない宿・ドッグランが多いです。予約前に施設へ確認してください。");
     if (h.cert_required) warns.push(profile.vaccine ? "ワクチン・狂犬病の証明書の提示・持参が条件です(公式の条件文を確認)。忘れずに持っていきましょう。" : "ワクチン・狂犬病の証明書の提示・持参が条件の行き先です。証明書がないと利用できません。");
-    else if (h.vaccine_required) warns.push("ワクチン接種済みが条件です(証明書の要否は公式で確認)。");
+    else if (h.vaccine_required) warns.push("ワクチン接種済みが掲載条件です。証明書について：この条件は自動照合できません。上の掲載条件を確認してください");
     const official = (place.links || []).filter((l) => !l.affiliate).slice(0, 2);
     const aff = (place.links || []).filter((l) => l.affiliate).slice(0, 1);
     $("dest-card").innerHTML = `
@@ -806,7 +822,7 @@
       <div class="actions">
         <a href="${esc(place.page_url)}" target="_blank" rel="noopener">わんことのじかんで条件を見る</a>
         ${official.map((l) => `<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label || "公式サイト")}</a>`).join("")}
-        ${aff.map((l) => `<a href="${esc(l.url)}" target="_blank" rel="noopener sponsored">${esc(l.label || "予約サイトで空室を見る")}<span class="ad">広告</span></a>`).join("")}
+        ${aff.map((l) => `<a href="${esc(l.url)}" target="_blank" rel="noopener sponsored">${esc(wankoStayCta(l.url))}</a>`).join("")}
       </div>
       <div id="dest-booking"></div><div id="dest-help"></div>
       ${place.checked_at ? `<p class="note photo-note">掲載情報の確認日: ${esc(place.checked_at)}${place.photo ? "・写真は楽天トラベル提供" : ""}</p>` : ""}`;
@@ -1340,9 +1356,9 @@
           // 3 段階を混ぜない: 施設は犬同伴可(掲載条件を確認済み)、客室・プランは pet / unknown(no は出さない)、空室は取得時点
           const pc = R.planCounts(h.plans, bk.dog); const petPlans = pc.petPlans; const unknown = pc.unknownPlans;  // 犬の大きさ・頭数が合わないプランは出さない
           const status3 = `<ul class="vc-status3">${R.statusLines(pc, data.scanned_at).map((l) => `<li${l.warn ? ' class="warn"' : ""}><b>${esc(l.label)}:</b> ${esc(l.text)}</li>`).join("")}</ul>`;
-          const row = (p, kind) => `<li class="vc-plan${kind === "pet" ? " vc-pet" : ""}">${kind === "pet" ? '<span class="badge b-run">犬対応プラン</span>' : '<span class="badge">一般客室(犬同伴の可否は未確認)</span>'} <b>${yen(p.total)}</b><span class="note">(${adults}名1泊・楽天表示)</span><br><span class="note">${esc(p.plan || "")}${p.room ? ` ／ ${esc(p.room)}` : ""}</span><br>${p.url ? `<a class="book-main" href="${esc(p.url)}" target="_blank" rel="noopener sponsored"><span class="book-main-label">${kind === "pet" ? "楽天トラベルでこのプランを予約する" : "犬同伴できるか確認してから予約する(楽天トラベル)"}</span><span class="book-main-cond">${esc(cond)}</span><span class="ad">広告</span></a>` : ""}</li>`;
+          const row = (p, kind) => `<li class="vc-plan${kind === "pet" ? " vc-pet" : ""}">${kind === "pet" ? '<span class="badge b-run">犬対応プラン</span>' : '<span class="badge">一般客室(犬同伴の可否は未確認)</span>'} <b>${yen(p.total)}</b><span class="note">(${adults}名1泊・楽天表示)</span><br><span class="note">${esc(p.plan || "")}${p.room ? ` ／ ${esc(p.room)}` : ""}</span><br>${p.url ? `<a class="book-main" href="${esc(p.url)}" target="_blank" rel="noopener sponsored"><span class="book-main-label">広告｜楽天トラベルで空室・条件を確認</span><span class="book-main-cond">${esc(cond)}</span></a>` : ""}</li>`;
           hasPlans = petPlans.length > 0 || unknown.length > 0; petReady = petPlans.length > 0;
-          rak = `<p class="note">楽天トラベルの取得時点(${esc(fmtWhen(data.scanned_at))} 日本時間)の空室情報(${esc(cond)}${mismatch ? `。入力の人数 ${esc(adultsRaw)}名とは条件が違います` : ""})。現在は変わっている場合があります。表示している料金は取得時点の楽天表示額です。</p>
+          rak = `<p class="note">楽天トラベルの取得時点(${esc(fmtWhen(data.scanned_at))} 日本時間)の空室情報(${esc(cond)}${mismatch ? `。入力の人数 ${esc(adultsRaw)}名とは条件が違います` : ""})。現在の空室・料金は予約先で確認してください。表示している料金は取得時点の楽天表示額です。</p>
             ${status3}
             ${pc.onlyUnknown ? `<div class="warnbox"><b>${esc(R.ONLY_UNKNOWN_WARN)}</b></div>` : ""}
             <ul class="vc-plans">${petPlans.map((p) => row(p, "pet")).join("")}${!petPlans.length ? unknown.slice(0, 2).map((p) => row(p, "unknown")).join("") : ""}</ul>
@@ -1363,7 +1379,7 @@
     box.innerHTML = `<p class="note">この日の空室(楽天トラベル・取得時点)を確認しています…</p>`;
     const r = await rakutenVacancy(state.place, state.options[state.current], state.booking);
     if (gen !== destBookingGen) return;
-    box.innerHTML = r.html ? `<div class="book-src"><h4>${r.petReady ? "この日に予約できる犬対応プラン(楽天トラベル・取得時点)" : r.hasPlans ? "この日の空室(犬同伴の可否は未確認・楽天トラベル・取得時点)" : "この日の空室(楽天トラベル・取得時点)"}</h4>${r.html}</div>` : "";
+    box.innerHTML = r.html ? `<div class="book-src"><h4>${r.petReady ? "取得時点の犬対応プランあり／現在は予約先で確認" : r.hasPlans ? "この日の空室(犬同伴の可否は未確認・楽天トラベル・取得時点)" : "この日の空室(楽天トラベル・取得時点)"}</h4>${r.html}</div>` : "";
   }
   // もしものときの近くの施設(動物病院・薬局)。OpenPOI API(無料・キー不要・CORS 可。2026-10-03 公開)を補助枠として使う。
   // 犬同伴条件は分からないので「犬と行ける場所」の候補には混ぜない。取れなければ枠ごと出さない(無くても壊れない)。24 時間はブラウザに記憶。
@@ -1420,8 +1436,8 @@
       const OTA = /rakuten\.co\.jp|travel\.yahoo\.co\.jp|ikyu\.com|jalan\.net|valuecommerce\.com|a8\.net|jtb\.co\.jp/;
       const official = [...new Map((place.links || []).filter((l) => !l.affiliate && /^https?:/.test(l.url || "") && !OTA.test(l.url)).map((l) => [l.url, l])).values()].slice(0, 2);
       sections.push(`<div class="book-src"><h4>他の予約サイト・公式で確認</h4><div class="actions">
-        ${rakutenPage ? `<a href="${esc(rakutenPage.url)}" target="_blank" rel="noopener sponsored">楽天トラベルの施設ページ(日付・人数は予約先で指定)<span class="ad">広告</span></a>` : ""}
-        ${others.map((l) => `<a href="${esc(l.url)}" target="_blank" rel="noopener sponsored">${esc(l.label)}で宿泊プランを確認<span class="ad">広告</span></a>`).join("")}
+        ${rakutenPage ? `<a href="${esc(rakutenPage.url)}" target="_blank" rel="noopener sponsored">広告｜楽天トラベルで空室・条件を確認</a><span class="note">(日付・人数は予約先で指定)</span>` : ""}
+        ${others.map((l) => `<a href="${esc(l.url)}" target="_blank" rel="noopener sponsored">${esc(wankoStayCta(l.url))}</a>`).join("")}
         ${official.map((l) => `<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label || "公式サイト")}</a>`).join("")}
         ${place.page_url ? `<a href="${esc(place.page_url)}" target="_blank" rel="noopener">掲載情報(犬の条件)</a>` : ""}
       </div><p class="note">予約前に、頭数・体重・証明書・添い寝など犬の条件を宿に確認してください。他の予約サイトの空室はこのページでは調べていません。</p></div>`);
