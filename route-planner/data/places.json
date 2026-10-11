@@ -9972,7 +9972,7 @@
         "cert_required": false,
         "vaccine_required": true,
         "small_dog_only_mention": false,
-        "large_dog_ok_mention": false,
+        "large_dog_ok_mention": true,
         "weight_limit_kg_mentions": []
       },
       "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
@@ -10035,7 +10035,7 @@
         "cert_required": false,
         "vaccine_required": false,
         "small_dog_only_mention": false,
-        "large_dog_ok_mention": false,
+        "large_dog_ok_mention": true,
         "weight_limit_kg_mentions": []
       },
       "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
@@ -13284,7 +13284,7 @@
         "cert_required": false,
         "vaccine_required": false,
         "small_dog_only_mention": false,
-        "large_dog_ok_mention": false,
+        "large_dog_ok_mention": true,
         "weight_limit_kg_mentions": []
       },
       "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
@@ -13891,7 +13891,9 @@
         "vaccine_required": false,
         "small_dog_only_mention": false,
         "large_dog_ok_mention": false,
-        "weight_limit_kg_mentions": []
+        "weight_limit_kg_mentions": [
+          10.0
+        ]
       },
       "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
       "geocode": {
@@ -15441,7 +15443,7 @@
         "cert_required": false,
         "vaccine_required": false,
         "small_dog_only_mention": false,
-        "large_dog_ok_mention": false,
+        "large_dog_ok_mention": true,
         "weight_limit_kg_mentions": []
       },
       "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
@@ -18559,7 +18561,7 @@
         "cert_required": false,
         "vaccine_required": false,
         "small_dog_only_mention": false,
-        "large_dog_ok_mention": false,
+        "large_dog_ok_mention": true,
         "weight_limit_kg_mentions": []
       },
       "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
@@ -22302,7 +22304,7 @@
         "cert_required": false,
         "vaccine_required": true,
         "small_dog_only_mention": false,
-        "large_dog_ok_mention": false,
+        "large_dog_ok_mention": true,
         "weight_limit_kg_mentions": []
       },
       "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
@@ -23181,7 +23183,7 @@
         "cert_required": true,
         "vaccine_required": true,
         "small_dog_only_mention": false,
-        "large_dog_ok_mention": false,
+        "large_dog_ok_mention": true,
         "weight_limit_kg_mentions": []
       },
       "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
@@ -23753,7 +23755,9 @@
         "vaccine_required": true,
         "small_dog_only_mention": false,
         "large_dog_ok_mention": false,
-        "weight_limit_kg_mentions": []
+        "weight_limit_kg_mentions": [
+          10.0
+        ]
       },
       "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
       "geocode": {
@@ -26995,7 +26999,7 @@
         "cert_required": true,
         "vaccine_required": true,
         "small_dog_only_mention": false,
-        "large_dog_ok_mention": false,
+        "large_dog_ok_mention": true,
         "weight_limit_kg_mentions": []
       },
       "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
@@ -27182,7 +27186,7 @@
         "cert_required": true,
         "vaccine_required": true,
         "small_dog_only_mention": false,
-        "large_dog_ok_mention": false,
+        "large_dog_ok_mention": true,
         "weight_limit_kg_mentions": []
       },
       "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
@@ -27906,7 +27910,7 @@
         "cert_required": true,
         "vaccine_required": true,
         "small_dog_only_mention": false,
-        "large_dog_ok_mention": false,
+        "large_dog_ok_mention": true,
         "weight_limit_kg_mentions": []
       },
       "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
@@ -28041,9 +28045,11 @@
       "dog_hints": {
         "cert_required": true,
         "vaccine_required": true,
-        "small_dog_only_mention": false,
+        "small_dog_only_mention": true,
         "large_dog_ok_mention": false,
-        "weight_limit_kg_mentions": []
+        "weight_limit_kg_mentions": [
+          8.0
+        ]
       },
       "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
       "geocode": {
@@ -28489,7 +28495,9 @@
         "vaccine_required": true,
         "small_dog_only_mention": false,
         "large_dog_ok_mention": false,
-        "weight_limit_kg_mentions": []
+        "weight_limit_kg_mentions": [
+          20.0
+        ]
       },
       "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
       "geocode": {
@@ -30628,7 +30636,7 @@
         "cert_required": false,
         "vaccine_required": true,
         "small_dog_only_mention": false,
-        "large_dog_ok_mention": false,
+        "large_dog_ok_mention": true,
         "weight_limit_kg_mentions": []
       },
       "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
@@ -30815,7 +30823,7 @@
       "dog_hints": {
         "cert_required": false,
         "vaccine_required": true,
-        "small_dog_only_mention": false,
+        "small_dog_only_mention": true,
         "large_dog_ok_mention": false,
         "weight_limit_kg_mentions": []
       },
@@ -31201,7 +31209,7 @@
       "dog_hints": {
         "cert_required": false,
         "vaccine_required": true,
-        "small_dog_only_mention": false,
+        "small_dog_only_mention": true,
         "large_dog_ok_mention": false,
         "weight_limit_kg_mentions": []
       },
@@ -31445,7 +31453,9 @@
         "vaccine_required": true,
         "small_dog_only_mention": false,
         "large_dog_ok_mention": false,
-        "weight_limit_kg_mentions": []
+        "weight_limit_kg_mentions": [
+          10.0
+        ]
       },
       "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
       "geocode": {
@@ -33337,7 +33347,7 @@
         "cert_required": false,
         "vaccine_required": false,
         "small_dog_only_mention": false,
-        "large_dog_ok_mention": false,
+        "large_dog_ok_mention": true,
         "weight_limit_kg_mentions": []
       },
       "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
@@ -33550,9 +33560,11 @@
       "dog_hints": {
         "cert_required": false,
         "vaccine_required": false,
-        "small_dog_only_mention": false,
+        "small_dog_only_mention": true,
         "large_dog_ok_mention": false,
-        "weight_limit_kg_mentions": []
+        "weight_limit_kg_mentions": [
+          10.0
+        ]
       },
       "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
       "geocode": {
@@ -36126,9 +36138,11 @@
       "dog_hints": {
         "cert_required": false,
         "vaccine_required": false,
-        "small_dog_only_mention": false,
+        "small_dog_only_mention": true,
         "large_dog_ok_mention": false,
-        "weight_limit_kg_mentions": []
+        "weight_limit_kg_mentions": [
+          10.0
+        ]
       },
       "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
       "geocode": {
@@ -37203,7 +37217,9 @@
         "vaccine_required": false,
         "small_dog_only_mention": false,
         "large_dog_ok_mention": false,
-        "weight_limit_kg_mentions": []
+        "weight_limit_kg_mentions": [
+          12.0
+        ]
       },
       "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
       "geocode": {
@@ -38109,7 +38125,7 @@
         "cert_required": false,
         "vaccine_required": false,
         "small_dog_only_mention": false,
-        "large_dog_ok_mention": false,
+        "large_dog_ok_mention": true,
         "weight_limit_kg_mentions": []
       },
       "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
@@ -39192,9 +39208,11 @@
       "dog_hints": {
         "cert_required": false,
         "vaccine_required": false,
-        "small_dog_only_mention": false,
+        "small_dog_only_mention": true,
         "large_dog_ok_mention": false,
-        "weight_limit_kg_mentions": []
+        "weight_limit_kg_mentions": [
+          10.0
+        ]
       },
       "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
       "geocode": {
@@ -39246,7 +39264,7 @@
         "cert_required": false,
         "vaccine_required": false,
         "small_dog_only_mention": false,
-        "large_dog_ok_mention": false,
+        "large_dog_ok_mention": true,
         "weight_limit_kg_mentions": []
       },
       "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
@@ -39458,7 +39476,7 @@
         "cert_required": false,
         "vaccine_required": false,
         "small_dog_only_mention": false,
-        "large_dog_ok_mention": false,
+        "large_dog_ok_mention": true,
         "weight_limit_kg_mentions": []
       },
       "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
@@ -40662,9 +40680,11 @@
       "dog_hints": {
         "cert_required": false,
         "vaccine_required": false,
-        "small_dog_only_mention": false,
+        "small_dog_only_mention": true,
         "large_dog_ok_mention": false,
-        "weight_limit_kg_mentions": []
+        "weight_limit_kg_mentions": [
+          5.0
+        ]
       },
       "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
       "geocode": {
@@ -78595,8 +78615,8 @@
     }
   ],
   "dog_conditions_pipeline": {
-    "version": 1,
-    "html_sha256": "6b4085f6b34123897689a6ccbe9489b49d07b4719bb43b0446babad5d3dc75ed",
+    "version": 2,
+    "html_sha256": "80afac8921e788158406ad5c5e2bd83f3f775cf9ee4ec81c31f0ebf89508bf12",
     "cards": 704
   }
 }
