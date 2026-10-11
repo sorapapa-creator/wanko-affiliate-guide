@@ -336,3 +336,5 @@ header.editorial-hero:not(:has(>.hub-intents))>.hero-copy{grid-area:auto}header.
 /* review-r3-20261011 */@media(max-width:640px){.travel-photo-frame{height:160px!important;border-radius:16px}.travel-photo-frame img{height:160px!important;transform:none!important;object-fit:cover}}
 
 /* review-r3b-20261011 */.compare-hint{margin:0 0 6px;font-size:12px;color:#6b6f66}@media(min-width:900px){.compare-hint{display:none}}
+
+/* streetview-20261011 */.stay-streetview .stay-photo-frame img{object-fit:cover}.stay-streetview figcaption small{color:#6b6f66}
