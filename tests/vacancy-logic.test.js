@@ -60,7 +60,7 @@ test("statusLines: 3 行で、施設・客室・プラン・空室が別々", ()
   assert.equal(lines[0].label, "施設"); assert.equal(lines[0].text, "犬同伴可(掲載条件を確認済み)");
   assert.equal(lines[1].label, "客室・プラン"); assert.match(lines[1].text, /^犬対応プラン 1 件 \/ 一般客室 2 件\(犬同伴の可否は未確認\)/);
   assert.match(lines[1].text, /ペット不可の記載 1 件は非表示/);
-  assert.equal(lines[2].label, "空室"); assert.equal(lines[2].text, "楽天トラベル取得 2026-10-02 02:30(24 時間以内)");
+  assert.equal(lines[2].label, "空室"); assert.equal(lines[2].text, "楽天トラベル取得 2026-10-02 02:30・取得時点の情報。現在は予約先で確認");
   assert.equal(lines[1].warn, false);
 });
 test("statusLines: 一般客室だけのときは客室・プラン行が警告", () => {
@@ -70,7 +70,7 @@ test("statusLines: 一般客室だけのときは客室・プラン行が警告"
   assert.equal(lines[0].text, "犬同伴可(掲載条件を確認済み)");  // 施設は変わらない
 });
 test("ONLY_UNKNOWN_WARN の文言", () => {
-  assert.equal(R.ONLY_UNKNOWN_WARN, "この条件で空いているのは犬同伴の可否が未確認の客室だけです。予約前に宿へ確認してください");
+  assert.equal(R.ONLY_UNKNOWN_WARN, "取得時点では犬同伴の可否が未確認の客室のみです。現在の空室と犬同伴の可否は予約先で確認してください");
 });
 
 // ---- 3) 空室: 24 時間の境界

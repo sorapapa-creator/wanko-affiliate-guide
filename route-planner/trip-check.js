@@ -112,18 +112,39 @@
     }
     const missing = [!x.dogs && rule.max_dogs && "頭数", !x.kg && rule.max_kg && "体重"].filter(Boolean);
     if (missing.length) return { cls: "check", label: "要確認", why: `${missing.join("・")}を入れると、公式の上限と照らし合わせます。` };
-    return { cls: "ok", label: "照合できた項目は上限内", why: "入力した頭数・体重・体格は、公式に書かれた一律の上限の範囲内です。客室ごと・犬種ごとの条件、証明書などは予約前に確認してください。" };
+    // 2026-10-12 Codex r4: 入力したのに公式に一律の上限が書かれていない項目は「上限内」と言わず、未確認として分けて出す
+    const unlimited = rule.unlimited || [];
+    const items = [
+      x.dogs && ["頭数", rule.max_dogs ? "ok" : unlimited.includes("max_dogs") ? "free" : "unverified"],
+      x.kg && ["体重", rule.max_kg ? "ok" : unlimited.includes("max_kg") ? "free" : "unverified"],
+      x.size && ["体格", rule.sizes ? "ok" : unlimited.includes("sizes") ? "free" : "unverified"],
+    ].filter(Boolean);
+    const ok = items.filter(([, s]) => s === "ok").map(([k]) => k);
+    const free = items.filter(([, s]) => s === "free").map(([k]) => k);
+    const unverified = items.filter(([, s]) => s === "unverified").map(([k]) => k);
+    const tail = "客室ごと・犬種ごとの条件、証明書などは予約前に確認してください。";
+    const okText = ok.length ? `入力した${ok.join("・")}は、公式に書かれた一律の上限の範囲内です。` : "";
+    const freeText = free.length ? `${free.join("・")}は公式に「制限なし」と書かれています。` : "";
+    if (unverified.length) {
+      return { cls: "check", label: "一部のみ照合", why: `${okText}${freeText}${unverified.join("・")}は公式に一律の上限が書かれていないため照合できていません。予約前に宿へ確認してください。${tail}` };
+    }
+    if (!ok.length && !free.length) return { cls: "check", label: "要確認", why: `頭数・体重・体格を入れると、公式の上限と照らし合わせます。${tail}` };
+    return { cls: "ok", label: "照合できた項目は上限内", why: `${okText}${freeText}${tail}` };
   }
 
   function stayBlock(place, x, rule) {
     const nights = x.checkout && x.checkin ? Math.round((new Date(x.checkout) - new Date(x.checkin)) / 86400000) : 0;
     const who = [x.adults && `大人${x.adults}名`, x.dogs && `犬${x.dogs}頭`].filter(Boolean).join("・");
-    const official = [...new Map((place.links || []).filter((l) => !l.affiliate && /^https?:/.test(l.url || "")).map((l) => [l.url, l])).values()].slice(0, 2);
+    // 2026-10-12 dot r3: 非アフィリエイトでも予約サイト(Yahoo!トラベル等)は「宿の公式ページ」と呼ばず、実際の行き先名で出す
+    const BOOKING = /travel\.yahoo\.co\.jp|travel\.rakuten\.co\.jp|jalan\.net|ikyu\.com|booking\.com|expedia\.|agoda\.|relux\.jp|yoyaku\.|reserve\./;
+    const nonAff = [...new Map((place.links || []).filter((l) => !l.affiliate && /^https?:/.test(l.url || "")).map((l) => [l.url, l])).values()];
+    const official = nonAff.filter((l) => !BOOKING.test(l.url)).slice(0, 2);
+    const booking = nonAff.filter((l) => BOOKING.test(l.url)).slice(0, 1);
     const v = dogVerdict(rule, x);
     return `
       <h3>宿の空室と犬の条件</h3>
       <p><span class="badge">現在の空室は予約先で確認</span> この条件確認では空室を調べていません(最終行程表の「予約する」に、楽天トラベルの取得時点の空室を出します)。${x.checkout ? `${esc(x.checkin)} から ${nights}泊` : `${esc(x.checkin)} チェックイン`}${who ? `(${esc(who)})` : ""}で、宿の公式サイトや予約サイトで確かめてください。</p>
-      <div class="actions">${official.map((l, i) => `<a href="${esc(l.url)}" target="_blank" rel="noopener">${i ? "宿の公式ページ(2) ↗" : "宿の公式ページ ↗"}</a>`).join("")}
+      <div class="actions">${official.map((l, i) => `<a href="${esc(l.url)}" target="_blank" rel="noopener">${i ? "宿の公式ページ(2) ↗" : "宿の公式ページ ↗"}</a>`).join("")}${booking.map((l) => `<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label || "予約サイトで条件を確認")} ↗</a>`).join("")}
         <a href="${esc(place.page_url)}" target="_blank" rel="noopener">わんことのじかんで条件を見る</a></div>
       <p><span class="badge dog-${v.cls}">${esc(v.label)}</span> ${esc(v.why)}</p>
       ${rule ? `<p class="note">公式の条件(カードより): ${esc(rule.text)} <a href="${esc(rule.source_url)}" target="_blank" rel="noopener">根拠 ↗</a>${rule.checked_at ? ` 確認日 ${esc(rule.checked_at)}` : ""}</p>` : ""}`;
