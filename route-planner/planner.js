@@ -1896,5 +1896,36 @@ function wankoStayCta(url) {
     if (!$("itinerary-card").classList.contains("hidden")) renderItinerary(lastState);
   });
   renumberWaypoints();
+  const initialOriginHint = $("origin-hint").textContent;
+  window.WankoPlannerContext = {
+    state: () => ({ hasResult: !!lastState, stale: !!lastState?.stale }),
+    reset() {
+      invalidatePlan(""); // planSeq/bookingGen/destBookingGen/returnSeqを更新
+      lastState = null; planBaseline = null; singleDeparture = null;
+      returnState = null; returnBusy = false; returnStatusKind = "none";
+      for (const key of Object.keys(helpGens)) helpGens[key]++;
+      $("form").reset();
+      // 検索した駅は先頭に追加されるため、削除してから既定の出発地に戻す。
+      $("origin").querySelectorAll("optgroup[data-searched]").forEach(g => g.remove());
+      $("origin-hint").textContent = initialOriginHint;
+      $("origin").selectedIndex = 0; $("dest-q").value = "";
+      $("date").value = jstYmd(new Date(Date.now() + 86400000));
+      $("origin-q").value = ""; hideSug();
+      document.querySelectorAll("#wps .wp-del").forEach(b => b.click());
+      forcedNearby.clear(); $("nearby-pick").replaceChildren();
+      $("map-clear")?.click(); window.RouteMap?.hide();
+      applyCertFilter(); updateDestinationLink(); invalidateWaypointRoute();
+      $("results").classList.add("hidden"); $("error").classList.add("hidden");
+      $("go").disabled = false; $("go").textContent = "予想時間を出す";
+      // 日付の独自検証も更新し、解除前の customValidity / min を残さない。
+      $("date").dispatchEvent(new Event("input", { bubbles: true }));
+      // trip-check.js の既存 clear() も change 経由で呼ぶ。
+      $("dest-q").dispatchEvent(new Event("change", { bubbles: true }));
+      // 再読込で解除前の目的地を復元しない。他のパラメータは保持。
+      const url = new URL(location.href); url.searchParams.delete("dest");
+      history.replaceState(null, "", url);
+      document.dispatchEvent(new Event("planner:context-reset"));
+    }
+  };
   loadData().catch(() => showError("行き先データを読み込めませんでした。"));
 })();
