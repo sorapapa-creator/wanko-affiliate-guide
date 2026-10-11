@@ -340,3 +340,17 @@ header.editorial-hero:not(:has(>.hub-intents))>.hero-copy{grid-area:auto}header.
 /* streetview-20261011 */.stay-streetview .stay-photo-frame img{object-fit:cover}.stay-streetview figcaption small{color:#6b6f66}
 
 /* dedupe-20261011 */.alias-anchor{display:block;height:0;scroll-margin-top:110px}
+
+/* food-flow-20261011 */
+body:has(#food-entry) .finder{position:static;min-width:0}
+.food-flow-fold{margin:12px 0;padding:0;border:1px solid var(--line);border-radius:10px;background:#fff}
+.food-flow-fold>summary{min-height:48px;padding:12px 16px;font-size:15px}
+.food-flow-fold>:not(summary){margin:12px}.food-flow-fold:focus-within{border-color:var(--green)}
+#food-flow-selected{margin-top:20px;padding:14px;border:1px solid var(--line);border-radius:10px;background:#fff}
+.food-flow-bar{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+#food-flow-label{margin:0;font-size:16px}#food-flow-context{margin:8px 0;overflow-wrap:anywhere}
+#food-flow-selected .ff-selected{margin-top:8px}#food-flow-selected button{white-space:normal;overflow-wrap:anywhere;max-width:100%;min-height:44px}
+#food-results{font-size:20px;font-weight:700;margin:16px 0 8px;scroll-margin-top:16px}#food-results:focus{outline:3px solid var(--orange);outline-offset:4px}
+body:has(#food-entry) #shop,body:has(#food-entry) #food-finder{scroll-margin-top:16px}
+@media(max-width:520px){body:has(#food-entry) .finder{padding:12px}#food-finder{padding:12px;margin:12px 0}#food-finder .ff-heading{display:block}#food-finder .ff-mark{display:none}#food-finder .ff-toolbar label{display:block;width:100%;min-width:0}#food-finder #ff-sort{width:100%;max-width:100%}#food-entry .entry-links a{min-width:0;overflow-wrap:anywhere}.food-flow-fold .cg-actions button,.food-flow-fold .cg-choices button{white-space:normal;max-width:100%}}
+
