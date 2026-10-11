@@ -1,0 +1,4 @@
+.howto-choose { box-sizing: border-box; margin: 0 0 12px; padding: 10px 12px; border: 1px solid #d8ded4; border-radius: 8px; background: #f5f7f2; color: #354330; font-size: 14px; line-height: 1.5; white-space: normal; overflow-wrap: anywhere; }
+.howto-choose[hidden] { display: none; }
+.howto-choose > strong, .howto-choose > span { display: block; margin: 0; font-size: inherit; line-height: inherit; }
+.howto-choose + .result-count { margin-top: 0; }

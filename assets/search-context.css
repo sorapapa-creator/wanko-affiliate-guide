@@ -1,0 +1,25 @@
+.search-context {
+  position: static; box-sizing: border-box; width: 100%; min-width: 0;
+  margin: 16px 0 10px; padding: 12px; border: 1px solid #c9d7cd;
+  border-radius: 12px; background: #f5f8f4; color: #243b2d;
+  display: grid; gap: 8px; font-size: 14px; line-height: 1.6;
+}
+.search-context p { margin: 0; overflow-wrap: anywhere; }
+.search-context .sc-summary { font-weight: 700; }
+.search-context .sc-status { font-size: 13px; }
+.search-context [hidden] { display: none !important; }
+.search-context details { min-width: 0; }
+.search-context summary { cursor: pointer; padding: 8px 0; }
+.search-context .sc-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.search-context .sc-actions :is(a, button) {
+  box-sizing: border-box; min-height: 44px; flex: 1 1 120px;
+  display: inline-flex; justify-content: center; align-items: center;
+  padding: 8px 12px; border: 1px solid #587660; border-radius: 8px;
+  background: #fff; color: #244f32; font: inherit; cursor: pointer;
+}
+.search-context :is(a, button, summary):focus-visible { outline: 3px solid #246443; outline-offset: 3px; }
+.search-context-heading { margin: 0 0 12px; font-size: 20px; }
+@media (min-width: 700px) {
+  .search-context .sc-actions { justify-content: flex-end; }
+  .search-context .sc-actions :is(a, button) { flex: 0 0 auto; }
+}
