@@ -357,3 +357,18 @@ body:has(#food-entry) #shop,body:has(#food-entry) #food-finder{scroll-margin-top
 /* mobile-390-20261011 */body.wanko-editorial-v1 :is(.review-guide,.stay-review-note,.stay-review-note small,.user-voice-note,.contact-note,.entry-more,.card details,.card details p,.card .caution,.stay-card p small),body.wanko-editorial-v1 figcaption p{font-size:12px;line-height:1.7}body.wanko-editorial-v1 .strength{font-size:14px;line-height:1.8}body.wanko-editorial-v1 .filters button{min-height:44px;font-size:14px}.compare-picked button{min-width:44px;min-height:44px}@media(max-width:640px){#stay-query,#outing-query{scroll-margin-top:56px}}
 
 /* photo-ad-label-20261011 */body.wanko-editorial-v1 .photo.photo-ad{display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;height:auto;min-width:0;padding:12px;gap:8px;align-self:start}body.wanko-editorial-v1 .photo-ad a{display:flex;flex-direction:column;justify-content:flex-start;gap:8px;height:auto;min-width:0;max-width:100%}body.wanko-editorial-v1 .photo-ad a img:not([src*="gifbanner"]){width:100%!important;height:160px!important;max-height:160px!important;min-width:0;object-fit:contain}body.wanko-editorial-v1 .photo-ad .cta-ad-label{display:block;width:100%;font-size:12px;line-height:1.6;white-space:normal;overflow-wrap:anywhere}body.wanko-editorial-v1 .photo-ad-tag{position:static;font-size:12px;line-height:1.6;overflow-wrap:anywhere}@media(max-width:640px){body.wanko-editorial-v1 .card:has(.photo-ad){grid-template-columns:minmax(0,1fr)}}
+
+/* motion-20261012: UI 演出の基準(handoff/research/ui-motion-takayu.md 第 6 節)。反応は 140ms、出現は 260ms ease-out、退出は短く、点滅なし */
+@media (prefers-reduced-motion: no-preference){
+  .stay-chip,.stay-reset,.stay-book-btn,.compare-book,button[data-problem],.food-chip,.buy-ad{transition:transform .14s cubic-bezier(.2,.8,.2,1),background-color .14s ease,border-color .14s ease,box-shadow .14s ease}
+  .stay-chip:active,.stay-reset:active,.stay-book-btn:active,.compare-book:active,button[data-problem]:active,.food-chip:active,.buy-ad:active{transform:scale(.97)}
+  .stay-book-btn:hover,.compare-book:hover{box-shadow:0 4px 14px rgba(7,89,78,.25)}
+  .stay-card.reveal{animation:cardReveal .26s cubic-bezier(.2,.8,.2,1) both;animation-delay:calc(var(--i,0) * 35ms)}
+  @keyframes cardReveal{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+  .anchor-hit{animation:anchorHit .6s ease-out 1}
+  @keyframes anchorHit{from{box-shadow:0 0 0 4px rgba(7,89,78,.35)}to{box-shadow:0 0 0 4px rgba(7,89,78,0)}}
+}
+@media (prefers-reduced-motion: reduce){
+  .stay-card.reveal{animation:cardFade .2s ease-out both}
+  @keyframes cardFade{from{opacity:0}to{opacity:1}}
+}

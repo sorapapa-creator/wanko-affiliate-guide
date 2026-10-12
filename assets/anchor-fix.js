@@ -33,6 +33,8 @@
     if (!target) return;
     if (target.hidden) target.hidden = false;
     measureAbove(target);
+    var hit = target.closest ? (target.closest(CARD) || target) : target;  // motion-20261012: 到着先を 1 回だけ薄く縁取り(点滅しない)
+    hit.classList.remove('anchor-hit'); void hit.offsetWidth; hit.classList.add('anchor-hit');
     var tries = 0, last = null;
     function step() {
       var off = stickyOffset() + (target.matches('#stay-query,#outing-query') ? (parseFloat(getComputedStyle(target).scrollMarginTop) || 0) : 0);

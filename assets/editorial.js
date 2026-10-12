@@ -71,7 +71,7 @@ if(stays.length){
  const input=bar.querySelector('#stay-query'),count=bar.querySelector('#stay-count'),sort=bar.querySelector('#stay-sort'),reset=bar.querySelector('.stay-reset'),chipBtns=[...bar.querySelectorAll('.stay-chip')];
  const active=new Set();const hit=(x,k)=>x.st[k]==='yes'||x.st[k]==='cond';
  const filter=()=>{const q=input.value.trim().toLowerCase();const ok=(x,skip)=>(!q||x.text.includes(q))&&[...active].every(k=>k===skip||hit(x,k));let n=0;
-  info.forEach(x=>{const show=ok(x);if(x.card.hidden===show)x.card.hidden=!show;if(show)n++});
+  let r=0;info.forEach(x=>{const show=ok(x);const was=!x.card.hidden;if(x.card.hidden===show)x.card.hidden=!show;if(show){n++;if(!was&&r<12){x.card.style.setProperty('--i',r);x.card.classList.remove('reveal');void x.card.offsetWidth;x.card.classList.add('reveal');r++}}});/* motion-20261012: 新たに表示されたカードだけ段階表示 */
   chipBtns.forEach(b=>{const k=b.dataset.chip;const m=info.reduce((a,x)=>a+(ok(x,k)&&hit(x,k)?1:0),0);b.querySelector('.chip-n').textContent=m;b.setAttribute('aria-label',b.firstChild.textContent+' '+m+'宿');});
   CHIPS.forEach(([k])=>main.classList.toggle('stays-f-'+k,active.has(k)));
   count.textContent=(q||active.size)?n+'宿 / 全'+stays.length+'宿':'全'+stays.length+'宿';empty.hidden=n>0;reset.hidden=!(q||active.size);
