@@ -42,40 +42,53 @@
       const counts = s ? `空室 ${s.available}宿・犬対応プラン ${s.pet}宿${s.new ? `・新しく空室 ${s.new}宿` : ""}` : `${adults}名のデータなし`;
       return new Option(`${jstMd(ci)} 〜 ${jstMd(e.checkout)}${isSat(ci) ? "" : "・祝前日"}(${counts})`, ci);
     }));
-    if (cur && dates.includes(cur)) sel.value = cur;
+    // 希望日にデータがないあいだは「選んでください」を選択したままにし、勝手に先頭(や直前)の日にしない
+    if (sel.dataset.wish) { sel.prepend(new Option(`${jstMd(sel.dataset.wish)} は空室データなし — 日付を選んでください`, "")); sel.value = ""; }
+    else if (cur && dates.includes(cur)) sel.value = cur;
   }
 
-  // 犬の条件の判定: 大きさ・体重・頭数は vacancy-rules.js の dogFit(掲載情報の「対象犬・頭数」を読む。未記載は「要確認」で減点しない)
-  function dogCheck(place, size, dogs, wantSleep) {
-    const r = RULES.dogFit(place, size, dogs); const notes = [...r.notes]; let ng = r.ng;
+  // 犬の条件の判定: 大きさ・体重・頭数は vacancy-rules.js の dogVerdict(data/dog_rules.json の公式の一律の上限)。
+  // fit / check(要確認) / ng(条件外の記載あり)を、検索の振り分け・カードの本文・バッジで共用する(cx-20261013-1)
+  let dogRulesP = null;
+  const loadDogRules = () => (dogRulesP ||= fetch(`${CFG.dataBase || "./data/"}dog_rules.json`, { cache: "no-cache" }).then((r) => (r.ok ? r.json() : null)).catch(() => null));
+  function dogCheck(place, rule, dog, wantSleep, pc) {
+    const v = RULES.dogVerdict(rule, place, dog); const reasons = [...v.reasons]; let status = v.status;
     if (wantSleep) {
       const s = place.sleep || place.co_sleep || "";
-      if (/不可|NG|禁止/.test(s)) { notes.push("添い寝は不可"); ng = true; }
-      else if (!/可/.test(s)) notes.push("添い寝は予約前確認");
+      if (/不可|NG|禁止/.test(s)) { if (status !== "ng") reasons.length = 0; reasons.push("添い寝は不可の記載"); status = "ng"; }
+      else if (!/可/.test(s) && status !== "ng") { if (status === "fit") reasons.length = 0; reasons.push("添い寝できるかは予約前確認"); status = "check"; }
     }
-    if ((place.dog_hints || {}).cert_required) notes.push("証明書の提示が条件");
-    return { ng, notes };
+    // 宿の条件に合っても、空いているのが犬同伴の可否未確認の一般客室だけなら適合とは言えない(施設全体の空室で推測しない)
+    if (status === "fit" && pc && !pc.pet) { reasons.length = 0; reasons.push("空いているのは犬同伴の可否が未確認の一般客室だけ"); status = "check"; }
+    const extra = (place.dog_hints || {}).cert_required ? ["証明書の提示が条件"] : [];
+    return { status, ng: status === "ng", reasons, ok: v.ok, src: v.src, extra };
   }
+  const VERDICT_BADGE = { fit: "b-fit", check: "b-check", ng: "b-ng" };
+  const verdictBox = (check) => `<div class="vc-dogfit vc-dogfit-${check.status}"><b>犬の条件(公式の一律の上限で照合): ${esc(RULES.VERDICT_LABEL[check.status])}</b>
+      ${check.reasons.length ? `<ul>${check.reasons.map((s) => `<li>${esc(s)}</li>`).join("")}</ul>` : ""}
+      ${check.ok.length ? `<p class="note">確認できた項目: ${esc(check.ok.join("・"))}</p>` : ""}
+      ${check.extra.length ? `<p class="note">${esc(check.extra.join("・"))}</p>` : ""}
+      <p class="note">${check.src.url ? `根拠: <a href="${esc(check.src.url)}" target="_blank" rel="noopener">公式の案内</a>` : "根拠: 公式の案内は未登録"}${check.src.date ? `(確認日 ${esc(check.src.date)})` : ""}。客室・プランごとの条件は予約先で確認してください。</p></div>`;
 
   function factLine(place, keyRe) {
     const k = Object.keys(place.facts || {}).find((x) => keyRe.test(x));
     return k ? place.facts[k] : "";
   }
 
-  function render(list, meta, origin) {
+  // list = 公式の条件の範囲内(fit)の宿。extras = 要確認・条件外の宿を、適合とは別の欄に分けて出す(厳密な一覧には混ぜない)
+  function render(list, meta, origin, extras = []) {
     const box = $("vc-results");
-    if (!list.length) { box.innerHTML = `<p class="note">この条件に合う空室のある宿が見つかりませんでした。条件(犬の大きさ・添い寝・予算)を緩めるか、別の日を選んでください。</p>`; return; }
     const card = ({ place, h, drive, check, pc }, i) => {  // 客室・プラン段階の集計(施設の犬同伴可とは別)
       const status3 = `<ul class="vc-status3">${statusLines(pc, meta.scanned_at).map((l) => `<li${l.warn ? ' class="warn"' : ""}><b>${esc(l.label)}:</b> ${esc(l.text)}</li>`).join("")}</ul>`;
       const plans = pc.shown.map((p) => `<li class="vc-plan${petClass(p) === "pet" ? " vc-pet" : ""}">${petClass(p) === "pet" ? '<span class="badge b-run">犬対応プラン</span>' : '<span class="badge">一般客室(犬同伴の可否は未確認)</span>'} <b>${yen(p.total)}</b><span class="note">(${meta.adults || 2}名1泊・楽天表示・${esc(fmtWhen(meta.scanned_at))} 取得)</span><br>
         <span class="note">${esc(p.plan || "")}${p.room ? ` ／ ${esc(p.room)}` : ""}${p.dinner ? "・夕食付" : ""}${p.breakfast ? "・朝食付" : ""}</span><br>
         ${p.url ? `<a class="vc-book" href="${esc(p.url)}" target="_blank" rel="noopener sponsored">広告｜楽天トラベルで空室・条件を確認</a><span class="note">(${esc(jstMd(meta.checkin))}・${meta.adults || 2}名)</span>` : ""}</li>`).join("");
-      return `<article class="card vc-card${check.ng ? " vc-ng" : ""}">
+      return `<article class="card vc-card${check.ng ? " vc-ng" : ""}" data-dogfit="${esc(check.status)}">
         ${place.photo ? `<img class="vc-photo" src="${esc(place.photo)}" alt="${esc(place.name)}の写真(楽天トラベル提供)" loading="lazy">` : ""}
-        <h3>${i + 1}. ${esc(place.name)} <span class="badge">${esc(place.area || "")}</span>${pc.pet ? ' <span class="badge b-rec">取得時点の犬対応プランあり</span>' : ' <span class="badge">取得時点は一般客室のみ（犬同伴可否は未確認）</span>'}${h.new ? ' <span class="badge b-new" title="前の晩の確認では空室がなかった宿です(キャンセルなどで空いた可能性)">新しく空室</span>' : ""}</h3>
+        <h3>${i + 1}. ${esc(place.name)} <span class="badge">${esc(place.area || "")}</span> <span class="badge ${VERDICT_BADGE[check.status]}">犬の条件: ${esc(RULES.VERDICT_LABEL[check.status])}</span>${pc.pet ? ' <span class="badge b-rec">取得時点の犬対応プランあり</span>' : ' <span class="badge">取得時点は一般客室のみ（犬同伴可否は未確認）</span>'}${h.new ? ' <span class="badge b-new" title="前の晩の確認では空室がなかった宿です(キャンセルなどで空いた可能性)">新しく空室</span>' : ""}</h3>
         ${status3}
         <p class="note">${drive ? `${esc(origin.name)}から車で約${fmtDur(drive[0])}(${drive[1]}km・${drive[2] === "est" ? "直線距離からの目安" : "渋滞なしの目安"})` : "出発地からの所要時間は未計算"} ・ 添い寝: ${esc(place.sleep || place.co_sleep || "予約前確認")}${place.cage ? ` ・ ケージ: ${esc(place.cage.slice(0, 40))}${place.cage.length > 40 ? "…" : ""}` : ""}</p>
-        ${check.notes.length ? `<div class="${check.ng ? "warnbox" : "note"}">${esc(check.notes.join("・"))}</div>` : ""}
+        ${verdictBox(check)}
         ${factLine(place, /対象犬|頭数|大きさ|サイズ/) ? `<p class="note"><b>対象犬・頭数:</b> ${esc(factLine(place, /対象犬|頭数|大きさ|サイズ/))}</p>` : ""}
         ${factLine(place, /料金/) ? `<p class="note"><b>犬の宿泊料金:</b> ${esc(factLine(place, /料金/))}</p>` : ""}
         ${pc.onlyUnknown ? `<div class="warnbox">${esc(RULES.ONLY_UNKNOWN_WARN)}</div>` : ""}
@@ -99,7 +112,13 @@
       const more = rows.length > SHOW ? `<button type="button" class="sub vc-more" data-g="${gi}">この地方の残り ${rows.length - SHOW} 件も見る</button>` : "";
       const prefBtns = prefs.size > 1 ? `<div class="vc-prefs" role="group" aria-label="${esc(region)}の県で絞る"><button type="button" class="vc-chip active" data-pref="">すべて</button>${[...prefs.entries()].sort((a, b) => b[1] - a[1]).map(([k, v]) => `<button type="button" class="vc-chip" data-pref="${esc(k)}">${esc(k)} ${v}</button>`).join("")}</div>` : "";
       return `<section class="vc-group" data-g="${gi}" data-region="${esc(region)}"><h3 class="vc-group-head">${esc(region)} <span class="note">${rows.length}件${sub ? `(${esc(sub)})` : ""}</span></h3>${prefBtns}${cards}${more}</section>`;
-    }).join("");
+    }).join("") + (list.length ? "" : `<p class="note vc-nofit">公式に書かれた一律の条件で、今回の犬(大きさ・体重・頭数${$("vc-sleep")?.checked ? "・添い寝" : ""})に合うと照合できた空室のある宿は見つかりませんでした。${extras.some((x) => x.rows.length) ? "下の「要確認」の宿は、予約前に宿へ条件を確認してください。" : "条件を緩めるか、別の日を選んでください。"}</p>`)
+      + extras.filter((x) => x.rows.length).map((x) => `<section class="vc-extra vc-extra-${esc(x.kind)}" data-kind="${esc(x.kind)}"><h3 class="vc-group-head">${esc(x.title)} <span class="note">${x.rows.length}件</span></h3><p class="note">${esc(x.note)}</p>
+        <button type="button" class="sub vc-extra-toggle" aria-expanded="false" data-label="${esc(`${x.button}(${x.rows.length}件)`)}">${esc(`${x.button}(${x.rows.length}件)`)}</button><div class="vc-extra-body hidden">${x.rows.map((row, i) => card(row, i)).join("")}</div></section>`).join("");
+    box.querySelectorAll(".vc-extra-toggle").forEach((b) => b.addEventListener("click", () => {
+      const open = !b.nextElementSibling.classList.toggle("hidden");
+      b.setAttribute("aria-expanded", String(open)); b.textContent = open ? "閉じる" : b.dataset.label;
+    }));
     // 地方を選ぶボタン(結果の上)と、地方の中の県ボタン(2026-10-04 オーナー「地方を選んでからそこの宿を選べるように」)
     if (groups.size > 1) {
       const nav = document.createElement("div"); nav.className = "vc-regions"; nav.setAttribute("role", "group"); nav.setAttribute("aria-label", "地方を選ぶ");
@@ -131,7 +150,7 @@
       // 検索したときの条件(人数・犬の頭数・大きさ・チェックアウト日)を行程側にも引き継ぐ(Codex 指摘 2026-10-03)
       const snap = lastSnap || {}; const co = meta.checkout || "";
       const setVal = (id, v) => { const el = $(id); if (!el || v === undefined || v === null || v === "") return; el.value = String(v); el.dispatchEvent(new Event("change", { bubbles: true })); };
-      setVal("adults", meta.adults || 2); setVal("dogs", snap.dogs); setVal("size", snap.size); if (co) setVal("checkout", co);
+      setVal("adults", meta.adults || 2); setVal("dogs", snap.dogs); setVal("size", snap.size); setVal("dog-kg", snap.kg || ""); if (co) setVal("checkout", co);
       // 出発時刻: チェックインの約 3 時間前に着く時刻から(近くで遊んでから宿へ)。早朝 5 時着で宿に入れない、を避ける(Codex 実地テスト 2026-10-04)
       const ht = window.PlannerData?.hotelTimes?.(window.PlannerData.byId(b.dataset.id)); const dmin = Number(b.dataset.drive);
       const ciMin = ht && /^\d{1,2}:\d{2}$/.test(ht.checkin || "") ? Number(ht.checkin.split(":")[0]) * 60 + Number(ht.checkin.split(":")[1]) : 15 * 60;
@@ -156,8 +175,10 @@
     try {
       const ci = $("vc-date").value; if (!ci) throw new Error("日付を選んでください。");
       const adults = adultsSel();
-      const snap = { size: $("vc-size").value, dogs: Number($("vc-dogs").value) || 1, wantSleep: $("vc-sleep").checked, petOnly: $("vc-petonly").checked, budget: Number($("vc-budget").value) || 0, hub: $("vc-origin").value, originName: $("vc-origin").selectedOptions[0]?.textContent || "出発地", strict: $("vc-strict").checked };
-      const data = await loadDate(ci, adults);
+      const kgIn = Number($("vc-kg")?.value) || 0;
+      const snap = { size: $("vc-size").value, dogs: Number($("vc-dogs").value) || 1, kg: kgIn > 0 && kgIn <= 120 ? kgIn : 0, wantSleep: $("vc-sleep").checked, petOnly: $("vc-petonly").checked, budget: Number($("vc-budget").value) || 0, hub: $("vc-origin").value, originName: $("vc-origin").selectedOptions[0]?.textContent || "出発地", strict: $("vc-strict").checked };
+      const [data, dogRules] = await Promise.all([loadDate(ci, adults), loadDogRules()]);
+      const ruleOf = (id) => (dogRules && dogRules.rules ? dogRules.rules[id] : undefined);
       if (seq !== searchSeq) return;
       lastSnap = snap;
       const bad = validate(data, { checkin: ci, adults }); if (bad) throw new Error(bad + "。別の日を選ぶか、しばらくしてからお試しください。");
@@ -175,7 +196,7 @@
         const minPet = pc.petPlans.map((p) => p.total).filter(Boolean); const minAny = shown.map((p) => p.total).filter(Boolean);
         const price = petOnly ? (minPet.length ? Math.min(...minPet) : null) : (minAny.length ? Math.min(...minAny) : null);
         if (budget && price && price > budget) { hiddenBudget++; continue; }
-        const check = dogCheck(place, size, dogs, wantSleep);
+        const check = dogCheck(place, ruleOf(id), { size, dogs, kg: snap.kg }, wantSleep, pc);
         if (check.ng && snap.strict) { hiddenNg++; continue; }
         let dr = drive && drive.places[id] && drive.places[id].from && drive.places[id].from[hub];
         if (!dr && stOrigin) {  // 駅名で探した出発地: 直線距離からの目安(主要駅の実測から 1 直線 km ≒ 1.16 分・道路 1.32 倍)
@@ -184,14 +205,25 @@
         }
         rows.push({ place, h, drive: dr || null, check, price, pc });
       }
-      rows.sort((a, b) => (b.h.new ? 1 : 0) - (a.h.new ? 1 : 0) || (b.h.pet ? 1 : 0) - (a.h.pet ? 1 : 0) || (a.check.ng ? 1 : 0) - (b.check.ng ? 1 : 0) || ((a.drive ? a.drive[0] : 9e9) - (b.drive ? b.drive[0] : 9e9)) || ((a.price || 9e9) - (b.price || 9e9)));
-      render(rows, data, origin);
-      const parts = [`${jstMd(ci)} チェックイン(1泊・${adults}名)で取得時点で空室のあった掲載宿 ${Object.keys(data.hotels).length}件のうち、条件に合う ${rows.length}件(地方ごと・出発地から近い順。各地方 12 件を超える分は「残りも見る」で表示)。`];
-      const nNew = rows.filter((r) => r.h.new).length;
+      rows.sort((a, b) => (b.h.new ? 1 : 0) - (a.h.new ? 1 : 0) || (b.h.pet ? 1 : 0) - (a.h.pet ? 1 : 0) || ((a.drive ? a.drive[0] : 9e9) - (b.drive ? b.drive[0] : 9e9)) || ((a.price || 9e9) - (b.price || 9e9)));
+      // 公式の条件の範囲内(fit)だけを一覧にし、要確認・条件外は別の欄へ(cx-20261013-1: 要確認を適合に混ぜない)
+      const fit = rows.filter((r) => r.check.status === "fit"), unsure = rows.filter((r) => r.check.status === "check"), ngRows = rows.filter((r) => r.check.status === "ng");
+      if (!dogRules) unsure.forEach((r) => r.check.reasons.unshift("犬の条件のデータを読み込めなかったため照合していません"));
+      render(fit, data, origin, [
+        { kind: "check", title: "要確認の宿(犬の条件を照合できなかった宿)", button: "要確認の宿を見る", rows: unsure,
+          note: "公式に一律の上限が書かれていない・目安の書き方・客室や棟で条件が分かれるなどで、今回の犬が泊まれるかを照合できなかった宿です。上の一覧(公式の条件の範囲内)には含めていません。予約前に宿へ確認してください。" },
+        { kind: "ng", title: "条件外の記載がある宿", button: "条件外の記載がある宿を見る", rows: ngRows,
+          note: "掲載情報や公式の案内に、今回の犬の大きさ・体重・頭数・添い寝に合わない記載がある宿です。" },
+      ]);
+      const sizeJa = { small: "小型", medium: "中型", large: "大型" }[size] || "";
+      const parts = [`${jstMd(ci)} チェックイン(1泊・${adults}名)で取得時点で空室のあった掲載宿 ${Object.keys(data.hotels).length}件のうち、犬(${sizeJa}${snap.kg ? `・${snap.kg}kg` : ""}・${dogs}頭)が公式の条件の範囲内と照合できた ${fit.length}件(地方ごと・出発地から近い順。各地方 12 件を超える分は「残りも見る」で表示)。`];
+      if (unsure.length) parts.push(`犬の条件が要確認の ${unsure.length}件は、一覧の下に分けて表示(照合できた一覧には含めていません)。`);
+      if (ngRows.length) parts.push(`条件外の記載がある ${ngRows.length}件も一覧の下に分けて表示。`);
+      const nNew = fit.filter((r) => r.h.new).length;
       if (nNew) parts.push(`前の晩の確認では空室がなかった宿 ${nNew}件に「新しく空室」の印(キャンセルなどで空いた可能性。各地方の先頭に表示)。`);
       if (hiddenPet) parts.push(`犬対応プランの空室が確認できない ${hiddenPet}件は非表示(チェックを外すと一般客室の空室も出ます)。`);
       if (hiddenBudget) parts.push(`予算超過 ${hiddenBudget}件を除外。`);
-      if (hiddenNg) parts.push(`犬の大きさ・頭数・添い寝の条件に合わない記載のある ${hiddenNg}件を除外。`);
+      if (hiddenNg) parts.push(`犬の大きさ・体重・頭数・添い寝の条件に合わない記載のある ${hiddenNg}件を除外。`);
       if (hiddenMisfit) parts.push(`空いている客室が犬の大きさ・頭数に合わない ${hiddenMisfit}件を除外。`);
       parts.push(`空室・料金は楽天トラベルから ${fmtWhen(data.scanned_at)} に取得した情報で、現在の空室・料金は予約先で確認してください。`);
       if (status.dataset.regionNote) { parts.unshift(status.dataset.regionNote); delete status.dataset.regionNote; }
@@ -205,8 +237,28 @@
   // 行程表の「予約する」(planner.js)と共有する空室データの読み込み
   window.VacancyData = { loadIndex, loadDate, validate, petClass, planCounts, statusLines };
 
+  // 犬の条件の照合表示(cx-20261013-1)の見た目と、任意の体重欄。index.html は地図の作業と重なるため、ここで差し込む
+  function mountDogFitUi() {
+    if (!$("vc-dogfit-style")) {
+      const st = document.createElement("style"); st.id = "vc-dogfit-style";
+      st.textContent = `.b-fit{background:#2e7d4f;color:#fff}.b-check{background:#fff4d6;color:#7a4b00;border:1px solid #e0b44c}.b-ng{background:#f3e3e0;color:#8a2a1c;border:1px solid #d9a29a}
+.vc-dogfit{margin:8px 0;padding:8px 10px;border-radius:8px;font-size:.9rem;border-left:4px solid #2e7d4f;background:#f1f8f3}.vc-dogfit ul{margin:4px 0 4px 1.2em;padding:0}.vc-dogfit p{margin:4px 0}
+.vc-dogfit-check{border-left-color:#e0b44c;background:#fffaf0}.vc-dogfit-ng{border-left-color:#c0392b;background:#fdf3f1}
+.vc-extra{margin-top:18px}.vc-extra .vc-group-head{border-left-color:#e0b44c}.vc-extra-ng .vc-group-head{border-left-color:#c0392b}.vc-extra-toggle{margin:6px 0}
+.vc-datenote .actions{margin:6px 0}.vc-kg{margin-top:6px}.vc-kg input{width:100%}`;
+      document.head.appendChild(st);
+    }
+    const size = $("vc-size");
+    if (size && !$("vc-kg")) {
+      const w = document.createElement("div"); w.className = "vc-kg";
+      w.innerHTML = `<input type="number" id="vc-kg" min="0.5" max="90" step="0.1" inputmode="decimal" placeholder="体重 kg(任意)" aria-label="いちばん重い子の体重(kg・任意)。入れると公式の体重上限と照合します">`;
+      size.after(w);
+    }
+  }
+
   async function init() {
     const card = $("vacancy-card"); if (!card) return;
+    mountDogFitUi();
     let dates = [];
     try {
       const idx = await loadIndex();
@@ -242,11 +294,12 @@
     const ci = (q.get("checkin") || "").trim(), from = (q.get("from") || "").trim(), size = (q.get("size") || "").trim(), dogs = (q.get("dogs") || "").trim();
     if (!ci && !from && !size && !dogs) return;
     const notes = [];
-    if (/^\d{4}-\d{2}-\d{2}$/.test(ci) && dates.length) {
-      const t = Date.parse(ci);
-      const best = dates.reduce((a, d) => { const da = Math.abs(Date.parse(a) - t), dd = Math.abs(Date.parse(d) - t); return dd < da || (dd === da && d > a) ? d : a; }, dates[0]);
-      $("vc-date").value = best;
-      if (best !== ci) notes.push(`${jstMd(ci)} は空室データがないため、近い ${jstMd(best)} で探しました`);
+    let canSearch = Boolean(ci);
+    if (/^\d{4}-\d{2}-\d{2}$/.test(ci) && Number.isFinite(Date.parse(ci))) {
+      // 希望日は行程のフォーム(出発日)にも残す(選べる範囲のときだけ)
+      const pd = $("date"); if (pd && (!pd.min || ci >= pd.min)) { pd.value = ci; pd.dispatchEvent(new Event("change", { bubbles: true })); }
+      if (dates.includes(ci)) $("vc-date").value = ci;
+      else { canSearch = false; showDateWish(ci, dates); }  // 黙って近い日に置き換えない(cx-20261013-1)。理由と候補を示して選んでもらう
     }
     const SIZE = { small: "small", medium: "medium", large: "large", "小型": "small", "中型": "medium", "大型": "large" };
     if (SIZE[size]) $("vc-size").value = SIZE[size];
@@ -261,8 +314,39 @@
     const card = $("vacancy-card");
     if (card) card.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" });
     const note = () => { if (notes.length) $("vc-status").textContent = `${notes.join("。")}。${$("vc-status").textContent}`; };
-    if (ci && $("vc-date").value) search().then(note); else note();
+    if (canSearch && $("vc-date").value) search().then(note); else note();
   }
+
+  // 希望日に空室データがないとき: 元の日付と理由を出し、前後の掲載日を利用者が選ぶ(選ぶまで検索しない)
+  function showDateWish(ci, dates) {
+    const sel = $("vc-date"); sel.dataset.wish = ci; fillDates();
+    const today = jstYmdNow();
+    const why = ci <= today ? "今日以前の日付のため、空室を探せません"
+      : !dates.length ? "空室データの準備中です"
+      : ci > dates[dates.length - 1] ? `空室データは ${jstMd(dates[dates.length - 1])} チェックイン分までです(毎晩、次の 8 週末と祝前日を更新)`
+      : "空室は週末・祝前日の 1 泊だけを毎晩調べているため、この日のデータはありません";
+    const before = [...dates].reverse().find((d) => d < ci), after = dates.find((d) => d > ci);
+    let box = $("vc-datenote");
+    if (!box) { box = document.createElement("div"); box.id = "vc-datenote"; box.className = "warnbox vc-datenote"; box.setAttribute("role", "status"); $("vc-status").before(box); }
+    const pd = $("date"); const kept = pd && pd.value === ci;
+    box.innerHTML = `<p><b>希望のチェックイン日: ${esc(jstMd(ci))}</b> — ${esc(why)}。別の日に置き換えずに止めています。</p>
+      ${before || after ? `<p>空室データのある近い日で探す場合は、選んでください:</p><div class="actions">${[before, after].filter(Boolean).map((d) => `<button type="button" class="sub vc-pickdate" data-ci="${esc(d)}">${esc(jstMd(d))} で探す</button>`).join("")}</div>` : ""}
+      <p class="note">${kept ? `${esc(jstMd(ci))} のまま行程を作る場合は、下の「決まった宿への行程を作る」で宿を選んでください(出発日に ${esc(jstMd(ci))} を入れてあります)。空室は予約先で確認してください。` : "行程だけを作る場合は、下の「決まった宿への行程を作る」で日付を入れてください。"}</p>`;
+    box.querySelectorAll(".vc-pickdate").forEach((b) => b.addEventListener("click", () => {
+      delete sel.dataset.wish; fillDates(); sel.value = b.dataset.ci;
+      box.innerHTML = `<p>希望日 ${esc(jstMd(ci))} ではなく、選んだ ${esc(jstMd(b.dataset.ci))} の空室を表示しています。</p>`;
+      search();
+    }));
+    const onPick = () => {
+      if (!sel.dataset.wish) { sel.removeEventListener("change", onPick); return; }
+      if (!sel.value) return;
+      sel.removeEventListener("change", onPick); delete sel.dataset.wish;
+      [...sel.options].filter((o) => !o.value).forEach((o) => o.remove());
+      box.innerHTML = `<p>希望日 ${esc(jstMd(ci))} ではなく、選んだ ${esc(jstMd(sel.value))} で探します。「空室のある宿を探す」を押してください。</p>`;
+    };
+    sel.addEventListener("change", onPick);
+  }
+  function jstYmdNow() { return new Date(Date.now() + 9 * 3600 * 1000).toISOString().slice(0, 10); }
 
   // 出発地「駅名で探す」(planner.js の駅一覧を借りる)。選ぶと #vc-origin に "st:lat,lon|駅名(県)" の選択肢を足して選ぶ
   function parseStationValue(v) {

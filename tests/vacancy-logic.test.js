@@ -166,5 +166,76 @@ test("料金の文「4匹目から1匹+2,000円」と「超大型犬は不可」
   assert.equal(R.dogFit(p, "large", 1).ng, false);
 });
 
+// ---- 本文の読み取り(cx-20261013-1 2026-10-13: 大型犬の厳密検索に出た 3 施設の書き方)
+test("「15kg程度まで」は体重上限(目安)として読み、大型で NG", () => {
+  const L = R.dogLimits(lod("室内飼育の愛犬15kg程度まで、1室2頭まで。愛犬1頭につき3,300円(税込)。"));
+  assert.equal(L.maxKg, 15); assert.equal(L.kgSoft, true);
+  assert.equal(R.dogFit(lod("室内飼育の愛犬15kg程度まで、1室2頭まで。"), "large", 1).ng, true);
+});
+test("「大型犬は対応外(姉妹施設…が大型犬対応)」は大型で NG(括弧の姉妹施設の案内は読まない)", () => {
+  const p = lod("小型犬・中型犬は3匹まで無料(3匹を超える場合は1匹につき追加料金)。大型犬は対応外(姉妹施設『わんpaina』のレフア棟などが大型犬対応)。");
+  assert.equal(R.dogFit(p, "large", 1).ng, true);
+  assert.equal(R.dogFit(p, "medium", 1).ng, false);
+});
+test("「小型犬。」「小型・中型犬。」だけの文は受け入れる大きさの列挙", () => {
+  assert.equal(R.dogFit(lod("小型犬。頭数は予約前確認。"), "medium", 1).ng, true);
+  assert.equal(R.dogFit(lod("小型・中型犬。頭数：2頭。"), "large", 1).ng, true);
+  assert.equal(R.dogFit(lod("小型・中型・大型犬（大型料金は15kg以上）。頭数は予約前確認。"), "large", 1).ng, false);
+});
+test("客室名「大型犬対応外」は大型犬のとき misfit", () => {
+  assert.equal(R.planFits({ plan: "わんこと泊まる", room: "大型犬は対応外のヴィラ" }, { size: "large", dogs: 1 }), false);
+});
+
+// ---- 構造化条件(dog_rules.json)からの 3 区分: fit / check(要確認) / ng
+const V = (rule, dog, place) => R.dogVerdict(rule, place || null, dog);
+test("体重の上限: 未満・ちょうど・超過・未入力(大型)", () => {
+  const rule = { mode: "uniform", max_kg: 25, kg_inclusive: true, source_url: "https://example.jp/", checked_at: "2026-10-01" };
+  assert.equal(V(rule, { size: "large", dogs: 1, kg: 24.9 }).status, "fit");
+  assert.equal(V(rule, { size: "large", dogs: 1, kg: 25 }).status, "fit");     // 「25kg以下」のちょうど
+  assert.equal(V(rule, { size: "large", dogs: 1, kg: 25.1 }).status, "ng");
+  assert.equal(V(rule, { size: "large", dogs: 1 }).status, "check");            // 大型(25kg〜)は体重しだい → 要確認
+  const lt = { ...rule, kg_inclusive: false };                                  // 「25kg未満」のちょうどは超過
+  assert.equal(V(lt, { size: "large", dogs: 1, kg: 25 }).status, "ng");
+  assert.equal(V(lt, { size: "large", dogs: 1 }).status, "ng");
+  assert.equal(V(rule, { size: "small", dogs: 1 }).status, "fit");              // 小型(〜10kg)は 25kg 以下に必ず収まる
+});
+test("目安の上限(soft)は超えても NG にせず要確認", () => {
+  const rule = { mode: "uniform", max_kg: 15, kg_inclusive: true, soft: true, max_dogs: 2 };
+  assert.equal(V(rule, { size: "large", dogs: 1 }).status, "check");
+  assert.equal(V(rule, { size: "medium", dogs: 1, kg: 15 }).status, "fit");
+  assert.equal(V(rule, { size: "medium", dogs: 1, kg: 18 }).status, "check");
+});
+test("頭数の上限: 未満・ちょうど・超過・記載なし", () => {
+  const rule = { mode: "uniform", max_dogs: 2, sizes: ["small", "medium", "large"] };
+  assert.equal(V(rule, { size: "large", dogs: 1 }).status, "fit");
+  assert.equal(V(rule, { size: "large", dogs: 2 }).status, "fit");
+  assert.equal(V(rule, { size: "large", dogs: 3 }).status, "ng");
+  assert.equal(V({ mode: "uniform", sizes: ["small"] }, { size: "small", dogs: 2 }).status, "check");
+  assert.equal(V({ mode: "uniform", sizes: ["small"], unlimited: ["max_dogs"] }, { size: "small", dogs: 3 }).status, "fit");
+});
+test("大きさの条件なし・manual・unknown・ルールなしは fit にしない", () => {
+  assert.equal(V({ mode: "uniform", max_dogs: 3 }, { size: "small", dogs: 1 }).status, "check");
+  assert.equal(V({ mode: "uniform", unlimited: ["max_kg"] }, { size: "large", dogs: 1 }).status, "fit");
+  assert.equal(V({ mode: "manual" }, { size: "small", dogs: 1 }, lod("大型犬歓迎。")).status, "check");
+  assert.equal(V({ mode: "unknown" }, { size: "small", dogs: 1 }).status, "check");
+  assert.equal(V(undefined, { size: "small", dogs: 1 }).status, "check");
+});
+test("保留中の人手見直し値(reviewed.proposed)は NG にだけ使う", () => {
+  const rule = { mode: "manual", reviewed: { proposed: { mode: "uniform", sizes: ["small", "medium"] } } };
+  assert.equal(V(rule, { size: "large", dogs: 1 }).status, "ng");
+  assert.equal(V(rule, { size: "small", dogs: 1 }).status, "check");
+});
+test("実データ: 別邸 山風木・コトマル。わんship・フォレスト(つくば)は大型犬で fit にならない", () => {
+  const rules = JSON.parse(fs.readFileSync(path.join(__dirname, "../route-planner/data/dog_rules.json"), "utf8")).rules;
+  const places = JSON.parse(fs.readFileSync(path.join(__dirname, "../route-planner/data/places.json"), "utf8")).places;
+  for (const id of ["c5-bettei-yamabuki", "c5-cotomaru-wanship-kanaya", "c9-rk134811"]) {
+    const v = R.dogVerdict(rules[id], places.find((p) => p.id === id), { size: "large", dogs: 1 });
+    assert.notEqual(v.status, "fit", id);
+  }
+  assert.equal(R.dogVerdict(rules["c5-cotomaru-wanship-kanaya"], places.find((p) => p.id === "c5-cotomaru-wanship-kanaya"), { size: "large", dogs: 1 }).status, "ng");
+  assert.equal(R.dogVerdict(rules["c9-rk134811"], null, { size: "large", dogs: 1 }).status, "ng");
+  assert.equal(R.dogVerdict(rules["c5-bettei-yamabuki"], null, { size: "medium", dogs: 1, kg: 12 }).status, "fit");
+});
+
 console.log(`\n${n - failed}/${n} passed`);
 if (failed) process.exit(1);

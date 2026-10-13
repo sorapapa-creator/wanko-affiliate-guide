@@ -12203,7 +12203,9 @@
         "vaccine_required": false,
         "small_dog_only_mention": false,
         "large_dog_ok_mention": false,
-        "weight_limit_kg_mentions": []
+        "weight_limit_kg_mentions": [
+          15.0
+        ]
       },
       "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
       "geocode": {

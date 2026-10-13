@@ -42,19 +42,25 @@
   const dogLimits = (place) => {
     const f = (place && place.facts) || {};
     const key = Object.keys(f).find((k) => /対象犬|頭数/.test(k));
-    const t = Z2H(key ? f[key] : "");
-    const out = { dogsBySize: null, maxSize: null, maxKg: null, largeRoomOnly: false, mediumAsk: false };
+    // 姉妹施設・系列の案内の括弧書き(「(姉妹施設『わんpaina』のレフア棟などが大型犬対応)」)はこの宿の条件ではないので読まない(cx-20261013-1)
+    const t = Z2H(key ? f[key] : "").replace(/[（(][^（）()]*(姉妹|系列|グループ|近隣|別施設)[^（）()]*[）)]/g, "");
+    const out = { dogsBySize: null, maxSize: null, maxKg: null, kgSoft: false, largeRoomOnly: false, mediumAsk: false };
     out.dogsBySize = countLimits(t);
-    const largeNg = /(?<!超)大型犬[^。]{0,6}(不可|NG|対象外|お断り|ご遠慮)/.test(t);  // 「超大型犬は不可」は大型犬不可ではない
-    const largeOk = !largeNg && (/大型犬[^。]{0,4}(歓迎|可|OK|対応|まで|も)/.test(t) || /(大きさ|サイズ|犬種)[^。]{0,12}制限(なし|無し|はありません)|超大型犬?[^。]{0,4}(まで|可|OK)/.test(t));
+    // 「大型犬は対応外」も否定(cx-20261013-1 でコトマル。わんship が大型犬の検索に出た)。「超大型犬は不可」は大型犬不可ではない
+    const largeNg = /(?<!超)大型犬[^。]{0,6}(不可|NG|対象外|対応外|お断り|ご遠慮|受け入れ(でき|て)(い)?ません)/.test(t);
+    const largeOk = !largeNg && (/大型犬[^。]{0,4}(歓迎|可|OK|対応(?!外|不可|して(い)?ません)|まで|も)/.test(t) || /(大きさ|サイズ|犬種)[^。]{0,12}制限(なし|無し|はありません)|超大型犬?[^。]{0,4}(まで|可|OK)/.test(t));
+    // 「小型犬。」「小型・中型犬。」のように、文が受け入れる大きさの列挙だけのとき(cx-20261013-1 でフォレスト(つくば)が大型犬の検索に出た)
+    const listed = t.split("。").map((s) => s.replace(/[（(][^）)]*[）)]/g, "").trim()).find((s) => /^(小型|中型|大型)犬?([・、と](小型|中型|大型)犬?)*$/.test(s));
     out.largeRoomOnly = !largeNg && /大型犬は[^。]{0,24}(のみ|限定)/.test(t);
-    if (largeOk || out.largeRoomOnly) out.maxSize = "large";
-    else if (largeNg || /中型犬?まで|小型・中型犬?(対象|のみ|まで|可)|小型犬・中型犬(対象|のみ|まで|可)|小型[〜~～]中型/.test(t)) out.maxSize = "medium";
-    else if (/小型犬(のみ|限定|専用)|小型犬[^。]{0,12}[1-9一二三]\s*(頭|匹)まで/.test(t) && !/中型犬[^。]{0,8}(可|OK|まで|対象|歓迎)/.test(t)) {
+    if (largeOk || out.largeRoomOnly || (listed && /大型/.test(listed))) out.maxSize = "large";
+    else if (largeNg || (listed && /中型/.test(listed)) || /中型犬?まで|小型・中型犬?(対象|のみ|まで|可)|小型犬・中型犬(対象|のみ|まで|可)|小型[〜~～]中型/.test(t)) out.maxSize = "medium";
+    else if (listed || (/小型犬(のみ|限定|専用)|小型犬[^。]{0,12}[1-9一二三]\s*(頭|匹)まで/.test(t) && !/中型犬[^。]{0,8}(可|OK|まで|対象|歓迎)/.test(t))) {
       out.maxSize = "small"; out.mediumAsk = /中型犬?以上[^。]{0,10}(問い合わせ|相談|確認)/.test(t);
     }
-    const kg = [...t.matchAll(/(\d+(?:\.\d+)?)\s*(?:kg|キロ)\s*(?:まで|以下|未満)/g)].map((m) => Number(m[1]));
-    if (kg.length) out.maxKg = Math.max(...kg);
+    // 「15kg程度まで」(目安)も体重上限として読む(cx-20261013-1 で別邸 山風木が大型犬の検索に出た)。目安の書き方は kgSoft
+    const kgm = [...t.matchAll(/(\d+(?:\.\d+)?)\s*(?:kg|キロ)\s*(程度|前後|くらい|ぐらい|位|目安)?\s*(?:まで|以下|未満)/g)];
+    const kg = kgm.map((m) => Number(m[1]));
+    if (kg.length) { out.maxKg = Math.max(...kg); out.kgSoft = kgm.some((m) => m[2] && Number(m[1]) === out.maxKg); }
     else if (!key) { const h = (place && place.dog_hints) || {}; if ((h.weight_limit_kg_mentions || []).length) out.maxKg = Math.min(...h.weight_limit_kg_mentions); }
     // 自動抽出の目印(dog_hints)は「対象犬・頭数」の記載が無いときだけ使う(「大型犬歓迎。小型犬のみは事前相談」を小型犬限定と読む誤りがあった)
     // 大きさ別の頭数が書いてあれば、その大きさは受け入れている(「大型犬は最大1頭」)
@@ -71,8 +77,9 @@
       ng = true; notes.push(L.maxSize === "small" ? `小型犬のみの記載あり${L.mediumAsk ? "(中型犬以上は宿へ問い合わせ)" : ""}` : `${SIZE_LABEL[L.maxSize]}までの記載あり`);
     }
     if (!ng && L.maxKg != null) {
-      if (size === "large" && L.maxKg < 25) { ng = true; notes.push(`体重${L.maxKg}kgまでの記載あり`); }
-      else if (size === "medium" && L.maxKg < 10) { ng = true; notes.push(`体重${L.maxKg}kgまでの記載あり`); }
+      const kgLabel = `体重${L.maxKg}kg${L.kgSoft ? "程度" : ""}までの記載あり`;
+      if (size === "large" && L.maxKg < 25) { ng = true; notes.push(kgLabel); }
+      else if (size === "medium" && L.maxKg < 10) { ng = true; notes.push(kgLabel); }
       else if (size === "medium" && L.maxKg <= 15) notes.push(`体重${L.maxKg}kgまで(体重を予約前に確認)`);
     }
     const lim = L.dogsBySize[size] != null ? L.dogsBySize[size] : L.dogsBySize.any;
@@ -84,11 +91,66 @@
   const planFits = (p, dog) => {
     if (!dog) return true;
     const t = Z2H(`${(p && p.plan) || ""} ${(p && p.room) || ""}`);
-    if (dog.size === "large" && /小型[〜~～・、]?中型|小型犬?・中型犬|小型犬(のみ|専用|限定|向け)|中型犬まで|大型犬[^。]{0,4}(不可|NG)/.test(t)) return false;
+    if (dog.size === "large" && /小型[〜~～・、]?中型|小型犬?・中型犬|小型犬(のみ|専用|限定|向け)|中型犬まで|大型犬[^。]{0,4}(不可|NG|対象外|対応外|お断り)/.test(t)) return false;
     if (dog.size === "medium" && /小型犬(のみ|専用|限定)|超小型/.test(t)) return false;
     const m = t.match(/([1-9一二三])\s*(?:頭|匹)\s*(?:まで|限定)/);
     if (m && dog.dogs && dog.dogs > (KN[m[1]] || Number(m[1]))) return false;
     return true;
+  };
+
+  // ---- 犬の条件の照合(cx-20261013-1 2026-10-13): 空室検索の判定・カードの本文・バッジを、すべてこの結果から作る。
+  // 根拠は data/dog_rules.json(宿カードの公式の一律の上限・根拠 URL・確認日。tools/build_dog_conditions.py が生成)。
+  //  fit   = 公式の一律の条件で照合でき、今回の犬が範囲内(厳密な検索の一覧に出すのはこれだけ)
+  //  check = 要確認(一律の上限が書かれていない・目安の書き方・客室/棟/料金区分で条件が分かれる・入力が足りない)
+  //  ng    = 条件外の記載あり
+  // 本文の読み取り(dogFit)と保留中の人手見直し値(reviewed.proposed)は、ng の判定と理由にだけ使い、fit にはしない(キーワードで適合を推測しない)
+  const SIZE_KG = { small: [0, 10], medium: [10, 25], large: [25, Infinity] };  // フォームの「小型(〜10kg)・中型(〜25kg)・大型(25kg〜)」
+  const VERDICT_LABEL = { fit: "公式の条件の範囲内", check: "要確認", ng: "条件外の記載あり" };
+  const ruleDate = (r) => [r.checked_at, ...(((r.reviewed || {}).note || "").match(/checked_at=\d{4}-\d{2}-\d{2}/g) || []).map((s) => s.slice(11))].filter(Boolean).sort().pop() || "";
+  const dogVerdict = (rule, place, dog) => {
+    const d = dog || {}; const size = SIZE_KG[d.size] ? d.size : ""; const dogs = Math.max(1, Number(d.dogs) || 1); const kg = Number(d.kg) > 0 ? Number(d.kg) : 0;
+    const r = rule || { mode: "unknown" }; const src = { url: r.source_url || "", date: ruleDate(r) };
+    const ng = [], check = [], ok = [];
+    const add = (list, s) => { if (s && !list.includes(s)) list.push(s); };
+    if (r.mode !== "uniform") {
+      const pr = r.reviewed && r.reviewed.proposed && r.reviewed.proposed.mode === "uniform" ? r.reviewed.proposed : null;
+      if (pr) { const v = dogVerdict(pr, null, d); if (v.status === "ng") v.reasons.forEach((s) => add(ng, s)); }
+      const t = place ? dogFit(place, size, dogs) : { ng: false, notes: [] };
+      if (t.ng) t.notes.forEach((s) => add(ng, `掲載情報に${s.replace(/の記載あり$/, "")}の記載`));
+      if (ng.length) return { status: "ng", reasons: ng, ok, src };
+      add(check, r.mode === "manual" ? "公式の犬の条件が客室・棟・料金区分などで分かれるため、一律の上限として照合できません" : "公式に犬の大きさ・体重・頭数の一律の条件が見つかっていません");
+      t.notes.forEach((s) => add(check, s));
+      return { status: "check", reasons: check, ok, src };
+    }
+    const unl = r.unlimited || [];
+    const over = (list, s) => add(r.soft ? check : list, r.soft ? `${s}(公式は「程度」など目安の書き方のため宿に相談)` : s);
+    if (r.sizes && size) {
+      if (r.sizes.includes(size)) add(ok, `${SIZE_LABEL[size]}は公式の対象`);
+      else add(ng, `公式の対象は${r.sizes.map((s) => SIZE_LABEL[s]).join("・")}で、${SIZE_LABEL[size]}は対象外`);
+    }
+    if (r.max_kg != null) {
+      const lim = `${r.max_kg}kg${r.soft ? "程度" : r.kg_inclusive ? "以下" : "未満"}`;
+      const exceeds = (w) => (r.kg_inclusive || r.soft ? w > r.max_kg : w >= r.max_kg);
+      if (kg) { if (exceeds(kg)) over(ng, `体重${kg}kgは公式の上限(${lim})を超えます`); else add(ok, `体重${kg}kgは公式の上限(${lim})以内`); }
+      else if (size) {
+        const [lo, hi] = SIZE_KG[size];
+        const allOver = size === "large" ? exceeds(lo) : r.max_kg <= lo;  // 中型は 10kg 超、大型は 25kg 以上
+        if (allOver) over(ng, `公式の体重の上限(${lim})を${SIZE_LABEL[size]}(${size === "large" ? "25kg〜" : `〜${hi}kg`})は超えます`);
+        else if (hi !== Infinity && !exceeds(hi)) add(ok, `${SIZE_LABEL[size]}(〜${hi}kg)は公式の体重の上限(${lim})以内`);
+        else add(check, `公式の体重の上限は${lim}。体重を入れると照合します`);
+      }
+    }
+    if (!r.sizes && r.max_kg == null) {
+      if (unl.includes("max_kg")) add(ok, "大きさ・体重の制限なしと公式に記載");
+      else add(check, "公式に大きさ・体重の一律の条件が書かれていません");
+    }
+    if (r.max_dogs != null) {
+      if (dogs > r.max_dogs) over(ng, `${dogs}頭は公式の上限(${r.max_dogs}頭まで)を超えます`); else add(ok, `${dogs}頭は公式の上限(${r.max_dogs}頭まで)以内`);
+    } else if (dogs > 1) {
+      if (unl.includes("max_dogs")) add(ok, "頭数の制限なしと公式に記載"); else add(check, `${dogs}頭で泊まれるか(頭数の上限)は公式に書かれていません`);
+    }
+    const status = ng.length ? "ng" : check.length ? "check" : "fit";
+    return { status, reasons: status === "ng" ? ng : check, ok, src };
   };
 
   // 客室・プラン段階の集計(宿単位)。pet / unknown / no の件数と、表示対象(no 以外)の配列。dog を渡すと大きさ・頭数が合わないプランを misfit として除く
@@ -134,5 +196,5 @@
   };
   const ONLY_UNKNOWN_WARN = "取得時点では犬同伴の可否が未確認の客室のみです。現在の空室と犬同伴の可否は予約先で確認してください";
 
-  return { VALID_MS, PET_NEG, petClass, dogLimits, dogFit, planFits, planCounts, validate, fmtWhen, statusLines, ONLY_UNKNOWN_WARN };
+  return { VALID_MS, PET_NEG, petClass, dogLimits, dogFit, dogVerdict, VERDICT_LABEL, SIZE_KG, planFits, planCounts, validate, fmtWhen, statusLines, ONLY_UNKNOWN_WARN };
 });

@@ -1837,7 +1837,25 @@
       "body_sha256": "4fdbb4c6e51029406df42f82a8d9cb35b78da81bc0d67ef4649035dca169522b"
     },
     "c5-bettei-yamabuki": {
-      "mode": "manual",
+      "mode": "uniform",
+      "max_dogs": 2,
+      "max_kg": 15.0,
+      "kg_inclusive": true,
+      "soft": true,
+      "reviewed": {
+        "by": "codex-review-20261011",
+        "evidence": "室内飼育の愛犬15kg程度まで、1室2頭まで。愛犬1頭につき3,300円(税込)。",
+        "note": "公式の客室ページ Type E(ペット棟)の料金欄に「室内飼育の愛犬15キロ程度、1室2頭まで」(ほかの客室に犬の記載なし)。15kgは目安の書き方のため soft=true(超えても条件外と断定せず要確認)。cx-20261013-1 で Claude が公式ページを再確認。source_url=https://www.bettei-yamabuki.com/rooms/; checked_at=2026-10-13",
+        "source": "dog-rules-review.csv",
+        "body_sha256": "aeeb54508d0033eb386999aaea64eec15b232863729043d4d94b001069bd4f26",
+        "proposed": {
+          "mode": "uniform",
+          "max_dogs": 2,
+          "max_kg": 15.0,
+          "kg_inclusive": true,
+          "soft": true
+        }
+      },
       "text": "室内飼育の愛犬15kg程度まで、1室2頭まで。愛犬1頭につき3,300円(税込)。",
       "source_url": "https://www.bettei-yamabuki.com/rooms/",
       "checked_at": "2026-09-27",
@@ -2450,6 +2468,20 @@
     },
     "c5-cotomaru-wanship-kanaya": {
       "mode": "manual",
+      "reviewed": {
+        "by": "codex-review-20261011",
+        "evidence": "小型犬・中型犬は3匹まで無料(3匹を超える場合は1匹につき追加料金)。大型犬は対応外(姉妹施設『わんpaina』のレフア棟などが大型犬対応)。",
+        "note": "公式ページに「小型犬・中型犬対応」。大型犬の記載なし(大型犬まで対応は姉妹施設わんpaina)。「3匹まで無料」は料金区分で頭数上限ではないため max_dogs は作らない。頭数上限は未確定（空欄を制限なしにしない）。cx-20261013-1 で Claude が公式ページを再確認。source_url=https://www.cotomaru.com/wanship/; checked_at=2026-10-13",
+        "source": "dog-rules-review.csv",
+        "body_sha256": "fdffada4012fbfd0f968c7d452c8e5cf5434d43394544961b68e1fb65548beff",
+        "proposed": {
+          "mode": "uniform",
+          "sizes": [
+            "small",
+            "medium"
+          ]
+        }
+      },
       "text": "小型犬・中型犬は3匹まで無料(3匹を超える場合は1匹につき追加料金)。大型犬は対応外(姉妹施設『わんpaina』のレフア棟などが大型犬対応)。",
       "source_url": "https://www.cotomaru.com/wanship/",
       "checked_at": null,
