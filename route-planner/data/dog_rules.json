@@ -4601,20 +4601,6 @@
       "checked_at": "2026-09-30",
       "body_sha256": "462553c4fc748f9f8099012bd8bc945e96f98a96a70b16f3e4035dc40a77211c"
     },
-    "c8-00923101": {
-      "mode": "uniform",
-      "max_dogs": 1,
-      "max_kg": 10,
-      "kg_inclusive": true,
-      "sizes": [
-        "small",
-        "medium"
-      ],
-      "text": "10kg以下の中型小型犬種で、1匹まで同伴可能です。狂犬病およびワクチンの予防接種済みであること、基本的なマナーが身に付いており決まった場所で排泄ができることが条件です。",
-      "source_url": "https://log-nagare.booking.chillnn.com/ja/magazine/?resourceType=plan&resourceID=19d98f85e4e92",
-      "checked_at": "2026-09-30",
-      "body_sha256": "f1b012a13602d499b7a8a3b75a1cfa38b41d96aa6f258feb7b06d43685e5430e"
-    },
     "c8-00923187": {
       "mode": "uniform",
       "unlimited": [
@@ -6516,13 +6502,6 @@
       "source_url": "https://www.horinomise.com/facility/",
       "checked_at": "2026-10-03",
       "body_sha256": "6be3f589651d1714b06afa2b8e00cd867e365cce1a6028221f1fcef331ad2d5c"
-    },
-    "c9-tobuzoo-glamping-com": {
-      "mode": "unknown",
-      "text": "予約前確認",
-      "source_url": null,
-      "checked_at": "2026-10-03",
-      "body_sha256": "c5277d30827095377311f9dda7a11ed428a979b68c945b527300504b85e0e27a"
     },
     "c9-glamping-lunluncompany-com": {
       "mode": "unknown",

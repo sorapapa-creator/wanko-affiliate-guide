@@ -30169,60 +30169,6 @@
       }
     },
     {
-      "id": "c8-00923101",
-      "type": "lodging",
-      "name": "一棟貸しLog「nagare」",
-      "area": "長野県中川村",
-      "co_sleep": "添い寝 不可",
-      "facts": {
-        "対象犬・頭数": "10kg以下の中型小型犬種で、1匹まで同伴可能です。狂犬病およびワクチンの予防接種済みであること、基本的なマナーが身に付いており決まった場所で排泄ができることが条件です。",
-        "犬の宿泊料金": "予約前確認",
-        "ケージ・持参判断": "あり。ゲージ、トイレ、お食事ケース等の基本的なグッズはご用意がございますが、不安な場合は普段お持ちのグッズをご持参くださいませ。",
-        "夜はどこで寝る？": "客室（寝室・浴室・2階を除くエリア） 寝室、浴室、及び2階へは入室できかねます。",
-        "食事同伴": "条件付き。自炊は可能ですが、室内は火気厳禁です。室外で食事をされる場合は、食べ残しやごみを放置せず室内のごみ箱にお入れください。",
-        "ドッグラン": "予約前確認(公式に記載なし)",
-        "予約前の重要確認": "愛犬同伴オプションの料金"
-      },
-      "links": [
-        {
-          "label": "公式の条件を確認",
-          "url": "https://log-nagare.booking.chillnn.com/ja/magazine/?resourceType=plan&resourceID=19d98f85e4e92",
-          "affiliate": false
-        },
-        {
-          "label": "Yahoo!トラベルで予約プランを見る",
-          "url": "https://travel.yahoo.co.jp/00923101/",
-          "affiliate": false
-        }
-      ],
-      "checked_at": "2026-09-30",
-      "dog_hints": {
-        "cert_required": false,
-        "vaccine_required": true,
-        "small_dog_only_mention": false,
-        "large_dog_ok_mention": false,
-        "weight_limit_kg_mentions": [
-          10
-        ]
-      },
-      "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
-      "geocode": {
-        "lat": 35.641712,
-        "lon": 137.968369,
-        "matched": "長野県中川村大草",
-        "precision": "town",
-        "source": "official-address(gsi)"
-      },
-      "dog_cert": {
-        "status": "unknown",
-        "text": "",
-        "evidence": [],
-        "source_url": "https://log-nagare.booking.chillnn.com/ja/magazine/?resourceType=plan&resourceID=19d98f85e4e92",
-        "checked_at": "2026-09-30",
-        "body_sha256": "f1b012a13602d499b7a8a3b75a1cfa38b41d96aa6f258feb7b06d43685e5430e"
-      }
-    },
-    {
       "id": "c8-00923187",
       "type": "lodging",
       "name": "FOREST BASE 安曇野",
@@ -39606,64 +39552,6 @@
         "source_url": "https://www.horinomise.com/facility/",
         "checked_at": "2026-10-03",
         "body_sha256": "6be3f589651d1714b06afa2b8e00cd867e365cce1a6028221f1fcef331ad2d5c"
-      }
-    },
-    {
-      "id": "c9-tobuzoo-glamping-com",
-      "type": "lodging",
-      "name": "グランフィルリゾーツ東武",
-      "area": "埼玉県白岡市",
-      "co_sleep": "添い寝 予約前確認",
-      "facts": {
-        "対象犬・頭数": "予約前確認",
-        "犬の宿泊料金": "予約前確認",
-        "ケージ・持参判断": "予約前確認",
-        "夜はどこで寝る？": "予約前確認",
-        "食事同伴": "予約前確認",
-        "ドッグラン": "予約前確認",
-        "予約前の重要確認": "犬の大きさ、頭数、犬の料金、ケージ、添い寝、食事の場への同伴、ドッグランは公式で確認できておらず予約前確認。"
-      },
-      "links": [
-        {
-          "label": "公式情報",
-          "url": "https://www.tobuzoo-glamping.com/",
-          "affiliate": false
-        },
-        {
-          "label": "公式の条件を確認",
-          "url": "https://www.tobuzoo-glamping.com/",
-          "affiliate": false
-        }
-      ],
-      "checked_at": "2026-10-03",
-      "dog_hints": {
-        "cert_required": false,
-        "vaccine_required": false,
-        "small_dog_only_mention": false,
-        "large_dog_ok_mention": false,
-        "weight_limit_kg_mentions": []
-      },
-      "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
-      "geocode": {
-        "lat": 36.02536,
-        "lon": 139.697647,
-        "precision": "facility",
-        "source": "official-address",
-        "matched": "埼玉県白岡市爪田ヶ谷４１４番地"
-      },
-      "area_geocode": {
-        "lat": 36.019089,
-        "lon": 139.67691,
-        "matched": "埼玉県白岡市",
-        "precision": "municipality"
-      },
-      "dog_cert": {
-        "status": "unknown",
-        "text": "",
-        "evidence": [],
-        "source_url": null,
-        "checked_at": "2026-10-03",
-        "body_sha256": "c5277d30827095377311f9dda7a11ed428a979b68c945b527300504b85e0e27a"
       }
     },
     {
