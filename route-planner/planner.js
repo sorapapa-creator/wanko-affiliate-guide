@@ -660,10 +660,13 @@ function wankoStayCta(url) {
     const legs = withChosenRests(state, o);
     const rs = returnState && returnState.place && returnState.place.id === state.place.id ? returnState : null;
     const stopPt = (r) => ({ lat: r.stop.lat, lon: r.stop.lon, name: r.stop.name, kind: r.stop.kind, note: r.dogRun ? "・ドッグランあり" : "" });
-    const wpPt = (w) => ({ lat: w.lat, lon: w.lon, name: w.name, kind: w.kind, stayMin: w.stayMin, url: w.place?.page_url });
+    // approx: 位置が市町村などの代表点(地図の印と詳細に「位置は地域の目安」と出す。座標は補わない)
+    const wpPt = (w) => ({ lat: w.lat, lon: w.lon, name: w.name, kind: w.kind, stayMin: w.stayMin, url: w.place?.page_url,
+      approx: Boolean(w.approx ?? (w.place && w.place.geocode.precision !== "facility")) });
     const data = {
       origin: state.origin.isCurrentLocation ? { ...state.origin, name: "現在地(約100m単位)" } : state.origin,
-      destination: { lat: state.place.geocode.lat, lon: state.place.geocode.lon, name: state.place.name, url: state.place.page_url },
+      destination: { lat: state.place.geocode.lat, lon: state.place.geocode.lon, name: state.place.name, url: state.place.page_url,
+        kind: TYPE_LABEL[state.place.type], approx: state.place.geocode.precision !== "facility" },
       waypoints: state.waypoints.map(wpPt),
       rests: legs.flatMap((l) => l.rests.map(stopPt)),
       legs: legs.map((l) => ({ points: l.points, back: false })),

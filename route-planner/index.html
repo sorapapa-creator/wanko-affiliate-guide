@@ -100,23 +100,78 @@
   .picks .pk-name { flex: 1 1 200px; min-width: 0; overflow-wrap: anywhere; cursor: pointer; }
   .picks select { width: auto; }
   .picks button.sub { min-height: 36px; padding: 4px 10px; }
-  /* 地図の印: 丸いアイコン(候補)と名前ラベル、凡例 */
-  .mk { position: relative; width: max-content; }
+  /* 地図の印(route-map.js の自作 SVG): しずく形のピン = 経路に入っている地点、丸形 = 候補、白い丸「候補 N件」= 候補のまとまり */
+  .mk { position: relative; width: max-content; font-family: system-ui, sans-serif; }
+  .mk .ic, .mk-inline .ic, .pk-chk .ic { display: block; width: 100%; height: 100%; }
   .mk-dot { transform: translateY(50%); }
   .mk-i { width: 30px; height: 30px; border-radius: 50%; border: 2px solid #fff; box-shadow: 0 1px 4px rgba(0,0,0,.45); display: flex; align-items: center; justify-content: center;
-    color: #fff; font-weight: 700; font-size: 17px; line-height: 1; box-sizing: border-box; font-family: system-ui, "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", sans-serif; }
-  .mk-i.mk-s { font-size: 10px; letter-spacing: -.02em; }
-  .mk-picked .mk-i { outline: 3px solid #1b1b1b; outline-offset: 1px; width: 32px; height: 32px; }
+    color: #fff; font-weight: 700; font-size: 14px; line-height: 1; box-sizing: border-box; padding: 4px; }
+  .mk-chk { position: absolute; top: -7px; right: -8px; width: 18px; height: 18px; border-radius: 50%; background: #1b1b1b; border: 2px solid #fff; padding: 2px; box-sizing: border-box; box-shadow: 0 1px 2px rgba(0,0,0,.4); }
+  .mk-picked .mk-i { outline: 3px solid #1b1b1b; outline-offset: 0; }
+  .mk-pin { width: 32px; height: 42px; }
+  .mk-pin.mk-big { width: 38px; height: 50px; }
+  .mk-shape { position: absolute; inset: 0; width: 100%; height: 100%; filter: drop-shadow(0 1px 2px rgba(0,0,0,.45)); }
+  .mk-g { position: absolute; left: 50%; top: 38%; width: 58%; aspect-ratio: 1; transform: translate(-50%, -50%); display: flex; align-items: center; justify-content: center; }
+  .mk-no { width: 100%; height: 100%; border-radius: 50%; background: #fff; display: flex; align-items: center; justify-content: center; font: 800 13px/1 system-ui, sans-serif; }
+  .mk-tag { position: absolute; top: -8px; left: 70%; background: #fff8e6; color: #6b4a00; border: 1.5px dashed #6b4a00; font: 700 10px/1.2 system-ui, sans-serif; padding: 1px 3px; border-radius: 4px; white-space: nowrap; }
   .mk-l { position: absolute; top: 100%; left: 50%; transform: translateX(-50%); margin-top: 2px; white-space: nowrap; max-width: 170px; overflow: hidden; text-overflow: ellipsis;
-    background: rgba(255,255,255,.94); color: #2b2622; font: 700 11px/1.3 system-ui, sans-serif; padding: 2px 6px; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,.35); pointer-events: none; }
-  .mk-pin .mk-l { margin-top: -2px; }
-  .mk-cluster .mk-i { width: 36px; height: 36px; background: #fff; color: #c0612b; border: 3px solid #c0612b; flex-direction: column; font-size: 14px; }
-  .mk-cluster .mk-i small { font-size: 9px; font-weight: 400; color: #6f665d; }
-  .mk-inline { display: inline-flex; width: 22px; height: 22px; font-size: 13px; vertical-align: middle; margin-right: 4px; border-width: 1.5px; }
-  .map-legend { display: flex; flex-wrap: wrap; gap: 6px 14px; margin: 8px 0 4px; font-size: .85rem; color: var(--muted); align-items: center; }
-  .map-legend span { display: inline-flex; align-items: center; gap: 4px; }
-  .lg-pin { display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; border-radius: 50% 50% 50% 0; transform: rotate(-45deg); color: #fff; font-style: normal; font-weight: 700; font-size: 12px; border: 1.5px solid #fff; box-shadow: 0 1px 3px rgba(0,0,0,.4); margin: 0 4px 4px 0; }
-  .lg-pin b { display: inline-block; transform: rotate(45deg); }
+    background: rgba(255,255,255,.95); color: #2b2622; font: 700 11px/1.3 system-ui, sans-serif; padding: 2px 6px; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,.35); pointer-events: none; }
+  .mk-pin .mk-l { margin-top: 1px; }
+  .mk-dot:not(.mk-picked) .mk-l { display: none; }
+  /* 押した印: 少し大きく・縁取りで強調し、その印の名前だけ出す(点滅はしない) */
+  .mk-pin, .mk-dot .mk-i { transition: transform 160ms cubic-bezier(.2,.8,.2,1); }
+  .mk-pin.is-active { transform: scale(1.12); transform-origin: 50% 100%; }
+  .mk-dot.is-active .mk-i { transform: scale(1.15); box-shadow: 0 0 0 3px #fff, 0 0 0 6px #c0612b; }
+  .mk.is-active .mk-l { display: block; max-width: 220px; }
+  .mk-cluster .mk-i { width: 40px; height: 40px; background: #fff; color: #c0612b; border: 3px solid #c0612b; flex-direction: column; padding: 0; }
+  .mk-cluster .mk-i small { font-size: 9px; font-weight: 700; color: #6f665d; line-height: 1.1; }
+  .mk-cluster .mk-i b { font-size: 12px; line-height: 1.1; letter-spacing: -.02em; }
+  .mk-inline { display: inline-flex; width: 22px; height: 22px; vertical-align: middle; margin-right: 4px; border-width: 1.5px; padding: 2.5px; box-shadow: 0 1px 2px rgba(0,0,0,.3); }
+  @media (max-width: 719px) {
+    .mk .mk-l { display: none; }
+    .mk.is-active .mk-l { display: block; }
+  }
+  @media (prefers-reduced-motion: reduce) { .mk-pin, .mk-dot .mk-i { transition: none; } }
+  /* 地図の見方(地図のすぐ上、開閉できる) */
+  .map-key { margin: 8px 0; border: 1px solid var(--line); border-radius: 10px; background: var(--bg); }
+  .map-key > summary { cursor: pointer; padding: 8px 12px; font-weight: 700; font-size: .92rem; min-height: 44px; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+  .map-key > summary .note { font-weight: 400; }
+  .map-key > summary { list-style: none; }
+  .map-key > summary::-webkit-details-marker { display: none; }
+  .map-key > summary::before { content: "▸"; color: var(--accent); }
+  .map-key[open] > summary::before { content: "▾"; }
+  .map-key-body { padding: 0 12px 10px; font-size: .85rem; }
+  .map-key-body .key-h { margin: 6px 0 4px; font-weight: 700; color: var(--muted); font-size: .8rem; }
+  .map-key-body ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr; gap: 6px 14px; }
+  @media (min-width: 720px) { .map-key-body ul { grid-template-columns: repeat(3, 1fr); } }
+  .map-key-body .key-foot { margin: 6px 0 0; color: var(--muted); font-size: .8rem; }
+  .map-key-body .key-approx .mk-key.mk-pin { margin-right: 30px; }
+  .key-bed { margin: 0 0 0 4px; }
+  .map-key-body li { display: flex; align-items: center; gap: 6px; min-height: 34px; line-height: 1.35; }
+  .map-key-body li > :first-child { flex: 0 0 auto; margin: 0 6px; }
+  .mk-key.mk-pin { width: 24px; height: 32px; margin: 0 16px 0 10px; }
+  .mk-key.mk-dot { transform: none; margin: 0 12px 0 8px; }
+  .mk-key .mk-i { width: 26px; height: 26px; }
+  .mk-key.mk-cluster { margin: 0 4px; }
+  .mk-key.mk-cluster .mk-i { width: 42px; height: 42px; }
+  .mk-key .mk-no { font-size: 10px; }
+  .mk-key .mk-tag { top: -6px; left: 60%; font-size: 9px; }
+  /* 地図の下の詳細欄(スマホで押した印の中身を大きく出す) */
+  .map-detail { border: 2px solid var(--accent); border-radius: 12px; padding: 10px 12px; margin: 4px 0 10px; background: var(--panel); position: relative; }
+  .map-detail .gm-pop { color: var(--text); max-width: none; font-size: 15px; }
+  .map-detail .gm-pop .gm-note { color: var(--muted); }
+  .map-detail .gm-pop .badge { background: var(--chip); color: var(--text); }
+  .map-detail .gm-name { font-size: 1.05rem; padding-right: 64px; display: inline-block; }
+  .map-detail .gm-btn { min-height: 44px; padding: 8px 16px; font-size: 1rem; }
+  .map-detail .gm-stay { min-height: 40px; }
+  .map-detail .md-close { position: absolute; top: 6px; right: 6px; min-height: 36px; padding: 4px 10px; }
+  .map-fit { margin: 10px; background: #fff; color: #2b2622; border: 0; border-radius: 6px; box-shadow: 0 1px 4px rgba(0,0,0,.3); font: 700 13px/1 system-ui, sans-serif; padding: 0 10px; height: 36px; cursor: pointer; }
+  .gm-detour { margin: 6px 0 2px; }
+  .gm-state { display: inline-block; margin-left: 6px; font-size: .8rem; font-weight: 700; background: #1b1b1b; color: #fff; border: 1px solid rgba(255,255,255,.55); border-radius: 6px; padding: 1px 6px; }
+  .gm-approx { display: inline-block; margin-top: 4px; color: #6b4a00; background: #fff8e6; border: 1.5px dashed #6b4a00; border-radius: 6px; padding: 2px 6px; font-size: .85rem; }
+  .gm-inn { display: inline-flex; align-items: center; margin-left: 6px; font-weight: 700; }
+  .gm-btn.gm-off { background: #fff; color: #2b2622; border: 1px solid #8a8079; }
+  .picks .pk-chk { flex: 0 0 22px; width: 22px; height: 22px; border-radius: 50%; background: #1b1b1b; padding: 3px; box-sizing: border-box; }
   .guide { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin: 0 0 14px; }
   .guide-title { margin: 0 0 8px; font-weight: 700; }
   .guide-steps { margin: 0; padding: 0; list-style: none; display: grid; gap: 8px; counter-reset: g; }
@@ -448,35 +503,30 @@
       <p class="note" id="map-note">出発地・立ち寄り先・休憩・行き先と、選んだ出発時刻の経路を表示します。</p>
       <button type="button" class="sub" id="map-show">地図を表示する</button>
       <div class="chips hidden" id="map-filters" aria-label="候補の種類">
-        <label><input type="checkbox" value="run" checked> <span class="mk-i mk-inline" style="background:#2e7d4f">🐕</span>ドッグラン</label>
-        <label><input type="checkbox" value="cafe" checked> <span class="mk-i mk-inline" style="background:#a8571f">☕</span>カフェ・食事</label>
-        <label><input type="checkbox" value="park" checked> <span class="mk-i mk-inline" style="background:#3b7ea1">🌳</span>公園・観光</label>
-        <label><input type="checkbox" value="animal" checked> <span class="mk-i mk-inline" style="background:#8a6d3b">🐄</span>動物・牧場</label>
-        <label><input type="checkbox" value="shopping" checked> <span class="mk-i mk-inline" style="background:#7b4fa3">🛍️</span>買い物</label>
-        <label><input type="checkbox" value="rest" checked> <span class="mk-i mk-inline mk-s" style="background:#6f665d">SA</span>SA・PA・道の駅</label>
-        <label><input type="checkbox" value="other" checked> <span class="mk-i mk-inline" style="background:#9a9087">📍</span>その他</label>
+        <!-- 絵柄は route-map.js が地図と同じ SVG を入れる -->
+        <label><input type="checkbox" value="run" checked> <span class="mk-i mk-inline" style="background:#2e7d4f"></span>ドッグラン</label>
+        <label><input type="checkbox" value="cafe" checked> <span class="mk-i mk-inline" style="background:#a8571f"></span>カフェ・食事</label>
+        <label><input type="checkbox" value="park" checked> <span class="mk-i mk-inline" style="background:#3b7ea1"></span>公園・観光</label>
+        <label><input type="checkbox" value="animal" checked> <span class="mk-i mk-inline" style="background:#8a6d3b"></span>動物・牧場</label>
+        <label><input type="checkbox" value="shopping" checked> <span class="mk-i mk-inline" style="background:#7b4fa3"></span>買い物</label>
+        <label><input type="checkbox" value="rest" checked> <span class="mk-i mk-inline" style="background:#6f665d"></span>SA・PA・道の駅</label>
+        <label><input type="checkbox" value="other" checked> <span class="mk-i mk-inline" style="background:#857a70"></span>その他</label>
       </div>
       <p class="note hidden" id="map-cand-note"></p>
+      <details class="map-key hidden" id="map-key">
+        <summary>地図の見方 <span class="note">ピン = 経路に入っている地点、丸 = 候補</span></summary>
+        <div class="map-key-body" id="map-key-body"></div>
+      </details>
       <div id="map" class="hidden" aria-label="経路の地図"></div>
+      <div id="map-detail" class="map-detail hidden" role="region" aria-label="押した印の詳細" aria-live="polite"></div>
       <div id="map-picks-wrap" class="hidden">
         <h3>地図で選んだ中継地候補 <span class="note" id="map-picks-count"></span></h3>
-        <p class="note">印をタップして「この場所を選ぶ」で、ここに行が増えます(複数可)。行の名前をタップすると地図でその場所を示します。「立ち寄りに入れて再計算」で、経路に沿った順に立ち寄り先(最大3か所)へ入れて予想時間を計算し直します。</p>
+        <p class="note">丸い候補の印を押して「この場所を選ぶ」で、ここに行が増えます(複数可。地図ではチェックの札が付きます)。行の名前を押すと地図でその場所を示します。「立ち寄りに入れて再計算」で、経路に沿った順に立ち寄り先(最大3か所)へ入れて予想時間を計算し直し、地図では番号のピン(①②③)に変わります。</p>
         <ol class="picks" id="map-picks"></ol>
         <div class="actions"><button type="button" class="primary" id="map-apply" disabled>立ち寄りに入れて再計算</button> <button type="button" class="sub" id="map-clear">選択を全部外す</button></div>
         <p class="note" id="map-pick-note"></p>
       </div>
-      <div class="map-legend" aria-label="印の見方">
-        <span><i class="lg-pin" style="background:#2e7d4f"><b>🚗</b></i>出発地</span>
-        <span><i class="lg-pin" style="background:#b3261e"><b>🏁</b></i>行き先</span>
-        <span><i class="lg-pin" style="background:#c0612b"><b>1</b></i>立ち寄り(番号順)</span>
-        <span><i class="lg-pin" style="background:#6f665d"><b>🅿️</b></i>休憩(SA・PA)</span>
-        <span><i class="lg-line"></i>行きの経路</span>
-        <span><i class="lg-line lg-back"></i>帰りの経路(計算後)</span>
-        <span><i class="mk-i mk-inline" style="background:#2e7d4f">🐕</i>などの丸い印 = 中継地の候補(種類は上のチップと同じ)</span>
-        <span><i class="mk-i mk-inline" style="background:#1b1b1b;outline:2px solid #1b1b1b;outline-offset:1px">✓</i>選んだ候補(名前つき)</span>
-        <span><i class="mk-i mk-inline" style="background:#fff;color:#c0612b;border:2px solid #c0612b;font-size:11px">9</i>候補が密集(タップで拡大)</span>
-      </div>
-      <p class="note">印をタップすると名前・条件・施設情報のリンクが出ます。地図を動かしたり候補を選んだりしても経路の再計算(通信)はしません。候補は経路から直線で近い順の目安で、営業日・時間・犬の条件は施設情報で確認してください。地図: Google マップ。</p>
+      <p class="note">印を押すと名前・条件・施設情報のリンクが出ます(スマホでは地図のすぐ下に出ます)。印の意味は地図の上の「地図の見方」にあります。地図を動かしたり候補を選んだりしても経路の再計算(通信)はしません。候補は経路から直線で近い順の目安で、営業日・時間・犬の条件は施設情報で確認してください。地図: Google マップ。</p>
     </div>
 
     <div class="card" id="rest-card">
@@ -544,7 +594,7 @@
 </div>
 <!-- 更新したら ?v= の値を変える(ブラウザに古いファイルが残って新しい動作にならないのを防ぐ) -->
 <script src="config.js?v=2026100101"></script>
-<script src="route-map.js?v=2026100301"></script>
+<script src="route-map.js?v=2026101301"></script>
 <script src="vacancy-rules.js?v=20261004-dogfit2"></script>
 <script src="vacancy.js?v=20261004-dogfit"></script>
 <script src="planner.js?v=20261011-context"></script>
