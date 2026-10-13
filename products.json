@@ -762,16 +762,16 @@
     {
       "id": "dt-food-chicken",
       "category": "無添加フード・おやつ",
-      "label": "ささみ主原料の毎日の主食候補",
+      "label": "ささみ主原料の国産無添加フード(一般食)",
       "query": "ドッグツリー ささみ 25種類 こだわり具材 ドッグフード",
       "terms": [
         "ささみ",
         "25"
       ],
       "strength": "生のささみを主原料に、天然食材から栄養を摂る設計の国産・無添加ドッグフード。",
-      "check": "主食として使う場合は総合栄養食表示、給与量、全原材料、鶏への適合を現品で確認。",
+      "check": "メーカー公式では犬用一般食(総合栄養食ではない)。これだけを毎日の主食にはせず、総合栄養食に足す場合は足した分を主食の給与量から差し引いて調整。",
       "problems": [
-        "毎日の主食",
+        "一般食・トッピング",
         "原材料で選ぶ"
       ],
       "name": "【お試しサイズ】ドッグツリー ささみと25種類のこだわり具材 50g / 馬肉と25種類のこだわり具材 / かつおと26種類のこだわり具材 50g | 無添加 国産 ドッグツリー ドッグフード ささみ 馬肉 かつお 生肉 グルテンフリー 緑イ貝 DOGTREE",
@@ -781,21 +781,22 @@
       "review_count": 6,
       "image_url": "https://thumbnail.image.rakuten.co.jp/@0_mall/shop-dogtree/cabinet/product02/dogfood/imgrc0102657432.jpg?_ex=128x128",
       "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00u8mwn.u92kl0a1.g00u8mwn.u92km7d9/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fshop-dogtree%2Fdogfood_trial%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fshop-dogtree%2Fi%2F10000454%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
-      "item_code": "shop-dogtree:10000454"
+      "item_code": "shop-dogtree:10000454",
+      "usage": "一般食"
     },
     {
       "id": "dt-food-horse",
       "category": "無添加フード・おやつ",
-      "label": "馬肉主原料の毎日の主食候補",
+      "label": "馬肉主原料の国産無添加フード(一般食)",
       "query": "ドッグツリー 馬肉 25種類 こだわり具材 ドッグフード",
       "terms": [
         "馬肉",
         "25"
       ],
       "strength": "生の馬肉を主原料にした国産・無添加ドッグフード。動物性原料を変えて比較したい時の候補。",
-      "check": "馬肉以外の原材料も含みます。避けたい原料、保証成分、給与量を確認。",
+      "check": "メーカー公式では犬用一般食(総合栄養食ではない)。これだけを毎日の主食にはせず、総合栄養食に足す場合は足した分を主食の給与量から差し引いて調整。",
       "problems": [
-        "毎日の主食",
+        "一般食・トッピング",
         "原材料で選ぶ"
       ],
       "name": "＼ マラソン期間ポイント10倍！ ／【 50g ／ 600g ／ 1.8kg(600g×3袋) 】馬肉と25種類のこだわり具材【 犬 おやつ 国産 無添加 ドッグツリー DOGTREE 高品質 健康サポート 厳選具材 バランス 】食材本来の旨みと栄養素が摂れるドッグフードです。",
@@ -805,21 +806,22 @@
       "review_count": 9,
       "image_url": "https://thumbnail.image.rakuten.co.jp/@0_gold/hinatabocco-shop/dog/dtreats/dogtree/gogtrre_food_baniku1.jpg?_ex=128x128",
       "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00sxbtn.u92kl34e.g00sxbtn.u92kma29/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhinatabocco-shop%2F4580657823819%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhinatabocco-shop%2Fi%2F10006764%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
-      "item_code": "hinatabocco-shop:10006764"
+      "item_code": "hinatabocco-shop:10006764",
+      "usage": "一般食"
     },
     {
       "id": "dt-food-bonito",
       "category": "無添加フード・おやつ",
-      "label": "魚主体の毎日の主食候補",
+      "label": "魚主体の国産無添加フード(一般食)",
       "query": "ドッグツリー かつお 26種類 600g ドッグフード",
       "terms": [
         "かつお",
         "600g"
       ],
       "strength": "かつおを主原料とする肉不使用の国産・無添加ドッグフード。魚主体の候補を比べたい時に。",
-      "check": "魚以外の全原材料、総合栄養食表示、保証成分を確認。療法食の代用にはしないでください。",
+      "check": "メーカー公式では犬用一般食(総合栄養食ではない)。これだけを毎日の主食にはせず、総合栄養食に足す場合は足した分を主食の給与量から差し引いて調整。",
       "problems": [
-        "毎日の主食",
+        "一般食・トッピング",
         "原材料で選ぶ"
       ],
       "name": "＼ マラソン期間ポイント10倍！ ／【 50g / 600g / 1.8kg(600g×3袋) 】カツオと26種類のこだわり具材 犬 ドッグフード 無添加 国産 ドッグツリー おやつ 犬エサ 犬のごはん 無添加ドッグフード カツオ 国産ドックフード 無添加犬ごはん DOGTREE 高品質",
@@ -829,7 +831,8 @@
       "review_count": 4,
       "image_url": "https://thumbnail.image.rakuten.co.jp/@0_gold/hinatabocco-shop/dog/dtreats/dogtree/gogtrre_food_katsuo1.jpg?_ex=128x128",
       "affiliate_url": "https://hb.afl.rakuten.co.jp/hgc/g00sxbtn.u92kl34e.g00sxbtn.u92kma29/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhinatabocco-shop%2F4580657824212%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhinatabocco-shop%2Fi%2F10006765%2F&rafcid=wsc_i_is_4b8ebde5-6b86-4454-a1c9-646ccc596c9d",
-      "item_code": "hinatabocco-shop:10006765"
+      "item_code": "hinatabocco-shop:10006765",
+      "usage": "一般食"
     },
     {
       "id": "dt-salmon-flake",
@@ -2828,7 +2831,7 @@
       "strength": "中・大型犬を中心に、粒の大きさと袋容量を選べる英国産フード。5kgと10kgは容量だけでなく対象犬・粒・成分も異なるため、体格と年齢から比較できます。",
       "check": "病気や下痢の改善を保証する商品ではありません。急な切替を避け、原材料、給与量、体調変化を確認してください。価格・キャンペーン・在庫は公式ページを優先します。",
       "problems": [
-        "毎日の主食",
+        "用途 要確認",
         "食べムラ・お腹",
         "原材料で選ぶ"
       ],
@@ -2868,7 +2871,8 @@
       "image_permission_status": "A8_registered_site_banner_verified",
       "ad_html": "<a href=\"https://px.a8.net/svt/ejp?a8mat=4BCGFN+ENI2R6+3J8+ZRIB5\" rel=\"nofollow\">\n<img border=\"0\" width=\"300\" height=\"250\" alt=\"\" src=\"https://www29.a8.net/svt/bgt?aid=260921651886&wid=001&eno=01&mid=s00000000458006007000&mc=1\"></a>\n<img border=\"0\" width=\"1\" height=\"1\" src=\"https://www13.a8.net/0.gif?a8mat=4BCGFN+ENI2R6+3J8+ZRIB5\" alt=\"\">",
       "image_checked_at": "2026-09-22",
-      "a8_creative_id": "007"
+      "a8_creative_id": "007",
+      "usage": "要確認"
     },
     {
       "id": "a8-onekosama",
@@ -2975,7 +2979,9 @@
       "image_permission_status": "A8_registered_site_banner_verified",
       "ad_html": "<a href=\"https://px.a8.net/svt/ejp?a8mat=4BCGFN+F467OY+46DW+I2I7L\" rel=\"nofollow\">\n<img border=\"0\" width=\"300\" height=\"250\" alt=\"\" src=\"https://www20.a8.net/svt/bgt?aid=260921651914&wid=001&eno=01&mid=s00000019490003035000&mc=1\"></a>\n<img border=\"0\" width=\"1\" height=\"1\" src=\"https://www19.a8.net/0.gif?a8mat=4BCGFN+F467OY+46DW+I2I7L\" alt=\"\">",
       "image_checked_at": "2026-09-22",
-      "a8_creative_id": "035"
+      "a8_creative_id": "035",
+      "usage": "公式サイトに「FEDIAF(欧州ペットフード工業会連合)の推奨する栄養基準を満たしている」と表示。日本の総合栄養食表示はパッケージで確認",
+      "usage_checked_at": "2026-10-13"
     },
     {
       "id": "food50-nutro-supremo_d_adult_wet",
@@ -8956,7 +8962,9 @@
       "availability": "retail_available",
       "shop": "華ちゃん犬猫すこやか本舗",
       "storage_source": "https://hana.inuneko-sukoyaka.jp/faq/",
-      "storage_checked_at": "2026-09-22"
+      "storage_checked_at": "2026-09-22",
+      "usage": "総合栄養食(販売元の公式通販の商品表示)",
+      "usage_checked_at": "2026-10-13"
     },
     {
       "id": "brandfood-inuneko-deer",
@@ -9031,7 +9039,9 @@
       "button_label": "楽天市場で価格・容量を確認する",
       "food_group": "daily",
       "availability": "retail_available",
-      "shop": "actonlineshop"
+      "shop": "actonlineshop",
+      "usage": "総合栄養食(ネスレ ピュリナ公式サイトの商品表示)",
+      "usage_checked_at": "2026-10-13"
     },
     {
       "id": "brandfood-purina-puppy",
@@ -9068,7 +9078,9 @@
       "button_label": "楽天市場で価格・容量を確認する",
       "food_group": "daily",
       "availability": "retail_available",
-      "shop": "actonlineshop"
+      "shop": "actonlineshop",
+      "usage": "総合栄養食(ネスレ ピュリナ公式サイトの商品表示)",
+      "usage_checked_at": "2026-10-13"
     },
     {
       "id": "brandfood-purina-senior",
@@ -9105,7 +9117,9 @@
       "button_label": "楽天市場で価格・容量を確認する",
       "food_group": "daily",
       "availability": "retail_available",
-      "shop": "actonlineshop"
+      "shop": "actonlineshop",
+      "usage": "総合栄養食(ネスレ ピュリナ公式サイトの商品表示)",
+      "usage_checked_at": "2026-10-13"
     },
     {
       "id": "brandfood-purina-diet",
@@ -9143,7 +9157,9 @@
       "button_label": "楽天市場で価格・容量を確認する",
       "food_group": "daily",
       "availability": "retail_available",
-      "shop": "actonlineshop"
+      "shop": "actonlineshop",
+      "usage": "総合栄養食(ネスレ ピュリナ公式サイトの商品表示)",
+      "usage_checked_at": "2026-10-13"
     },
     {
       "id": "brandfood-purina-sensitive",
@@ -9178,7 +9194,9 @@
       "item_code": "official:brandfood-purina-sensitive",
       "button_label": "公式の商品情報を見る",
       "food_group": "daily",
-      "availability": "not_checked"
+      "availability": "not_checked",
+      "usage": "総合栄養食(ネスレ ピュリナ公式サイトの商品表示)",
+      "usage_checked_at": "2026-10-13"
     },
     {
       "id": "brandfood-hills-adult-mini-chicken-dry",
@@ -9214,7 +9232,9 @@
       "button_label": "楽天市場で価格・容量を確認する",
       "food_group": "daily",
       "availability": "retail_available",
-      "shop": "スイートペット"
+      "shop": "スイートペット",
+      "usage": "総合栄養食(ヒルズ公式サイトの製品区分「サイエンス・ダイエット(総合栄養食)」)",
+      "usage_checked_at": "2026-10-13"
     },
     {
       "id": "brandfood-hills-adult-perfect-weight-mini-chicken-dry",
@@ -9251,7 +9271,9 @@
       "button_label": "楽天市場で価格・容量を確認する",
       "food_group": "daily",
       "availability": "retail_available",
-      "shop": "楽天24"
+      "shop": "楽天24",
+      "usage": "総合栄養食(ヒルズ公式サイトの製品区分「サイエンス・ダイエット(総合栄養食)」)",
+      "usage_checked_at": "2026-10-13"
     },
     {
       "id": "brandfood-hills-senior-small-toy-age-defying-dry",
@@ -9287,7 +9309,9 @@
       "button_label": "楽天市場で価格・容量を確認する",
       "food_group": "daily",
       "availability": "retail_available",
-      "shop": "ヒルズ ペットフード公式ショップ"
+      "shop": "ヒルズ ペットフード公式ショップ",
+      "usage": "総合栄養食(ヒルズ公式サイトの製品区分「サイエンス・ダイエット(総合栄養食)」)",
+      "usage_checked_at": "2026-10-13"
     },
     {
       "id": "brandfood-hills-puppy-mini-chicken-dry",
@@ -9323,7 +9347,9 @@
       "button_label": "楽天市場で価格・容量を確認する",
       "food_group": "daily",
       "availability": "retail_available",
-      "shop": "楽天24"
+      "shop": "楽天24",
+      "usage": "総合栄養食(ヒルズ公式サイトの製品区分「サイエンス・ダイエット(総合栄養食)」)",
+      "usage_checked_at": "2026-10-13"
     },
     {
       "id": "brandfood-hills-puppy-large-breed-chicken-dry",
@@ -9359,7 +9385,9 @@
       "button_label": "楽天市場で価格・容量を確認する",
       "food_group": "daily",
       "availability": "retail_available",
-      "shop": "charm 楽天市場店"
+      "shop": "charm 楽天市場店",
+      "usage": "総合栄養食(ヒルズ公式サイトの製品区分「サイエンス・ダイエット(総合栄養食)」)",
+      "usage_checked_at": "2026-10-13"
     },
     {
       "id": "brandfood-hills-adult-small-mini-chicken-canned",
@@ -9395,7 +9423,9 @@
       "button_label": "楽天市場で価格・容量を確認する",
       "food_group": "daily",
       "availability": "retail_available",
-      "shop": "charm 楽天市場店"
+      "shop": "charm 楽天市場店",
+      "usage": "総合栄養食(ヒルズ公式サイトの製品区分「サイエンス・ダイエット(総合栄養食)」)",
+      "usage_checked_at": "2026-10-13"
     },
     {
       "id": "brandfood-medi-U0120",
@@ -9435,7 +9465,9 @@
       "button_label": "楽天市場で価格・容量を確認する",
       "food_group": "daily",
       "availability": "retail_available",
-      "shop": "楽天24"
+      "shop": "楽天24",
+      "usage": "総合栄養食(ペットライン公式サイトに、ペットフード公正取引協議会の総合栄養食の基準を満たすと表示)",
+      "usage_checked_at": "2026-10-13"
     },
     {
       "id": "brandfood-medi-U0124",
@@ -9475,7 +9507,9 @@
       "button_label": "楽天市場で価格・容量を確認する",
       "food_group": "daily",
       "availability": "retail_available",
-      "shop": "楽天24"
+      "shop": "楽天24",
+      "usage": "総合栄養食(ペットライン公式サイトに、ペットフード公正取引協議会の総合栄養食の基準を満たすと表示)",
+      "usage_checked_at": "2026-10-13"
     },
     {
       "id": "brandfood-medi-U0127",
@@ -9516,7 +9550,9 @@
       "button_label": "楽天市場で価格・容量を確認する",
       "food_group": "daily",
       "availability": "retail_available",
-      "shop": "楽天24 ペット館"
+      "shop": "楽天24 ペット館",
+      "usage": "総合栄養食(ペットライン公式サイトに、ペットフード公正取引協議会の総合栄養食の基準を満たすと表示)",
+      "usage_checked_at": "2026-10-13"
     },
     {
       "id": "brandfood-medi-U0130",
@@ -9556,7 +9592,9 @@
       "button_label": "楽天市場で価格・容量を確認する",
       "food_group": "daily",
       "availability": "retail_available",
-      "shop": "アンディーマーブル"
+      "shop": "アンディーマーブル",
+      "usage": "総合栄養食(ペットライン公式サイトに、ペットフード公正取引協議会の総合栄養食の基準を満たすと表示)",
+      "usage_checked_at": "2026-10-13"
     },
     {
       "id": "brandfood-medi-U0135",
@@ -9596,7 +9634,9 @@
       "button_label": "楽天市場で価格・容量を確認する",
       "food_group": "daily",
       "availability": "retail_available",
-      "shop": "楽天24"
+      "shop": "楽天24",
+      "usage": "総合栄養食(ペットライン公式サイトに、ペットフード公正取引協議会の総合栄養食の基準を満たすと表示)",
+      "usage_checked_at": "2026-10-13"
     },
     {
       "id": "brandfood-medi-U0137",
@@ -9636,7 +9676,9 @@
       "button_label": "楽天市場で価格・容量を確認する",
       "food_group": "daily",
       "availability": "retail_available",
-      "shop": "総合通販PREMOA 楽天市場店"
+      "shop": "総合通販PREMOA 楽天市場店",
+      "usage": "総合栄養食(ペットライン公式サイトに、ペットフード公正取引協議会の総合栄養食の基準を満たすと表示)",
+      "usage_checked_at": "2026-10-13"
     },
     {
       "id": "brandfood-medi-U0311",
@@ -9676,7 +9718,9 @@
       "button_label": "楽天市場で価格・容量を確認する",
       "food_group": "daily",
       "availability": "retail_available",
-      "shop": "楽天24 ペット館"
+      "shop": "楽天24 ペット館",
+      "usage": "総合栄養食(ペットライン公式サイトに、ペットフード公正取引協議会の総合栄養食の基準を満たすと表示)",
+      "usage_checked_at": "2026-10-13"
     },
     {
       "id": "brandfood-medi-U0315",
@@ -9716,7 +9760,9 @@
       "button_label": "楽天市場で価格・容量を確認する",
       "food_group": "daily",
       "availability": "retail_available",
-      "shop": "楽天24"
+      "shop": "楽天24",
+      "usage": "総合栄養食(ペットライン公式サイトに、ペットフード公正取引協議会の総合栄養食の基準を満たすと表示)",
+      "usage_checked_at": "2026-10-13"
     },
     {
       "id": "brandfood-medi-U0506",
@@ -9756,7 +9802,9 @@
       "button_label": "楽天市場で価格・容量を確認する",
       "food_group": "daily",
       "availability": "retail_available",
-      "shop": "楽天24"
+      "shop": "楽天24",
+      "usage": "総合栄養食(ペットライン公式サイトに、ペットフード公正取引協議会の総合栄養食の基準を満たすと表示)",
+      "usage_checked_at": "2026-10-13"
     },
     {
       "id": "brandfood-medi-U0520",
@@ -9796,7 +9844,9 @@
       "button_label": "楽天市場で価格・容量を確認する",
       "food_group": "daily",
       "availability": "retail_available",
-      "shop": "楽天24"
+      "shop": "楽天24",
+      "usage": "総合栄養食(ペットライン公式サイトに、ペットフード公正取引協議会の総合栄養食の基準を満たすと表示)",
+      "usage_checked_at": "2026-10-13"
     },
     {
       "id": "brandfood-medi-U0525",
@@ -9836,7 +9886,9 @@
       "button_label": "楽天市場で価格・容量を確認する",
       "food_group": "daily",
       "availability": "retail_available",
-      "shop": "楽天24"
+      "shop": "楽天24",
+      "usage": "総合栄養食(ペットライン公式サイトに、ペットフード公正取引協議会の総合栄養食の基準を満たすと表示)",
+      "usage_checked_at": "2026-10-13"
     },
     {
       "id": "brandfood-medi-U0604",
@@ -9876,7 +9928,9 @@
       "button_label": "楽天市場で価格・容量を確認する",
       "food_group": "daily",
       "availability": "retail_available",
-      "shop": "楽天24"
+      "shop": "楽天24",
+      "usage": "総合栄養食(ペットライン公式サイトに、ペットフード公正取引協議会の総合栄養食の基準を満たすと表示)",
+      "usage_checked_at": "2026-10-13"
     },
     {
       "id": "brandfood-medi-U0606",
@@ -9916,7 +9970,9 @@
       "button_label": "楽天市場で価格・容量を確認する",
       "food_group": "daily",
       "availability": "retail_available",
-      "shop": "楽天24"
+      "shop": "楽天24",
+      "usage": "総合栄養食(ペットライン公式サイトに、ペットフード公正取引協議会の総合栄養食の基準を満たすと表示)",
+      "usage_checked_at": "2026-10-13"
     },
     {
       "id": "brandfood-medi-U0630",
@@ -9956,7 +10012,9 @@
       "button_label": "楽天市場で価格・容量を確認する",
       "food_group": "daily",
       "availability": "retail_available",
-      "shop": "アイリスオーヤマ公式 楽天市場店"
+      "shop": "アイリスオーヤマ公式 楽天市場店",
+      "usage": "総合栄養食(ペットライン公式サイトに、ペットフード公正取引協議会の総合栄養食の基準を満たすと表示)",
+      "usage_checked_at": "2026-10-13"
     },
     {
       "id": "rankfood-medi-manpuku-adult",
@@ -10001,7 +10059,9 @@
       "button_label": "公式の商品情報を見る",
       "food_group": "daily",
       "availability": "not_checked",
-      "ranking_source": "https://my-best.com/32339"
+      "ranking_source": "https://my-best.com/32339",
+      "usage": "総合栄養食(ペットライン公式サイトに、ペットフード公正取引協議会の総合栄養食の基準を満たすと表示)",
+      "usage_checked_at": "2026-10-13"
     },
     {
       "id": "rankfood-pochi-basic-salmon",
@@ -10054,7 +10114,7 @@
       "label": "アカナ ライト＆フィットレシピ",
       "name": "アカナ ライト＆フィットレシピ",
       "problems": [
-        "毎日の主食",
+        "用途 要確認",
         "原材料で選ぶ",
         "体重管理"
       ],
@@ -10090,7 +10150,8 @@
       "button_label": "公式の商品情報を見る",
       "food_group": "daily",
       "availability": "not_checked",
-      "ranking_source": "https://my-best.com/32339"
+      "ranking_source": "https://my-best.com/32339",
+      "usage": "要確認"
     },
     {
       "id": "rankfood-bestbalance-shiba",
@@ -10134,7 +10195,9 @@
       "button_label": "公式の商品情報を見る",
       "food_group": "daily",
       "availability": "not_checked",
-      "ranking_source": "https://my-best.com/32339"
+      "ranking_source": "https://my-best.com/32339",
+      "usage": "総合栄養食(販売店カインズの商品情報「名称(用途)」)",
+      "usage_checked_at": "2026-10-13"
     },
     {
       "id": "rankfood-bestbalance-poodle10",
@@ -10178,7 +10241,9 @@
       "button_label": "公式の商品情報を見る",
       "food_group": "daily",
       "availability": "not_checked",
-      "ranking_source": "https://lohaco.yahoo.co.jp/ranking/61481/61482/61486/61487/"
+      "ranking_source": "https://lohaco.yahoo.co.jp/ranking/61481/61482/61486/61487/",
+      "usage": "総合栄養食(販売店カインズの商品情報「名称(用途)」)",
+      "usage_checked_at": "2026-10-13"
     }
   ],
   "daily_food_added_at": "2026-09-21",

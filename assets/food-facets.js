@@ -1,7 +1,7 @@
 window.WANKO_FOOD_FACTS = {
   "dt-food-chicken": {
     "id": "dt-food-chicken",
-    "label": "ささみ主原料の毎日の主食候補",
+    "label": "ささみ主原料の国産無添加フード(一般食)",
     "ingredients": [],
     "ingredient_text": "",
     "target": "",
@@ -19,13 +19,13 @@ window.WANKO_FOOD_FACTS = {
     "source": "",
     "checked": "",
     "limited_puppy": false,
-    "caution": "主食として使う場合は総合栄養食表示、給与量、全原材料、鶏への適合を現品で確認。",
+    "caution": "メーカー公式では犬用一般食(総合栄養食ではない)。これだけを毎日の主食にはせず、総合栄養食に足す場合は足した分を主食の給与量から差し引いて調整。",
     "additives": [],
     "additive_evidence": {}
   },
   "dt-food-horse": {
     "id": "dt-food-horse",
-    "label": "馬肉主原料の毎日の主食候補",
+    "label": "馬肉主原料の国産無添加フード(一般食)",
     "ingredients": [],
     "ingredient_text": "",
     "target": "",
@@ -43,13 +43,13 @@ window.WANKO_FOOD_FACTS = {
     "source": "",
     "checked": "",
     "limited_puppy": false,
-    "caution": "馬肉以外の原材料も含みます。避けたい原料、保証成分、給与量を確認。",
+    "caution": "メーカー公式では犬用一般食(総合栄養食ではない)。これだけを毎日の主食にはせず、総合栄養食に足す場合は足した分を主食の給与量から差し引いて調整。",
     "additives": [],
     "additive_evidence": {}
   },
   "dt-food-bonito": {
     "id": "dt-food-bonito",
-    "label": "魚主体の毎日の主食候補",
+    "label": "魚主体の国産無添加フード(一般食)",
     "ingredients": [],
     "ingredient_text": "",
     "target": "",
@@ -67,7 +67,7 @@ window.WANKO_FOOD_FACTS = {
     "source": "",
     "checked": "",
     "limited_puppy": false,
-    "caution": "魚以外の全原材料、総合栄養食表示、保証成分を確認。療法食の代用にはしないでください。",
+    "caution": "メーカー公式では犬用一般食(総合栄養食ではない)。これだけを毎日の主食にはせず、総合栄養食に足す場合は足した分を主食の給与量から差し引いて調整。",
     "additives": [],
     "additive_evidence": {}
   },
