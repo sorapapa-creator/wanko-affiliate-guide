@@ -29335,58 +29335,6 @@
       }
     },
     {
-      "id": "c8-00912673",
-      "type": "lodging",
-      "name": "軽井沢 RENTAVILLA 森のコテージ",
-      "area": "長野県軽井沢町",
-      "co_sleep": "添い寝 不可",
-      "facts": {
-        "対象犬・頭数": "同伴可能なペットは最大3頭（コートハウス950は小型犬2頭）まで、室内飼育犬に限ります。基本的なしつけ（噛まないこと・無駄吠えしないこと・飛びつかないこと・排泄）がなされていること、狂犬病ワクチン予防接種を受けており、接種後1年未満であることが条件です。",
-        "犬の宿泊料金": "小型犬一泊3,000円・中大型犬1泊4,000円（コートハウス950は小型犬のみ一泊3,000円）",
-        "ケージ・持参判断": "あり（ケージ・トイレ・フードボウル 各1セット、ペットシーツ、消臭剤、足拭きタオルが備え付けられています）",
-        "夜はどこで寝る？": "客室（寝室以外） 寝室へのペット入室は厳禁です。",
-        "食事同伴": "条件付き可（テラスでの飲食・歓談はPM9:00まで、または夜21時以降は室外での飲食及び談話はご遠慮ください）",
-        "ドッグラン": "予約前確認(公式に記載なし)",
-        "予約前の重要確認": "食事の場での犬の同伴可否（室内での食事同伴可否が明記されていないため）、具体的な客室の限定（どのコテージがどの条件か）"
-      },
-      "links": [
-        {
-          "label": "公式の条件を確認",
-          "url": "https://renta-villa.com/userpolicy",
-          "affiliate": false
-        },
-        {
-          "label": "Yahoo!トラベルで予約プランを見る",
-          "url": "https://travel.yahoo.co.jp/00912673/",
-          "affiliate": false
-        }
-      ],
-      "checked_at": "2026-09-30",
-      "dog_hints": {
-        "cert_required": false,
-        "vaccine_required": true,
-        "small_dog_only_mention": false,
-        "large_dog_ok_mention": false,
-        "weight_limit_kg_mentions": []
-      },
-      "page_url": "https://sorapapa-creator.github.io/wanko-affiliate-guide/dog-lodging-guide.html",
-      "geocode": {
-        "lat": 36.302765,
-        "lon": 138.571304,
-        "matched": "長野県軽井沢町茂沢",
-        "precision": "town",
-        "source": "official-address(gsi)"
-      },
-      "dog_cert": {
-        "status": "unknown",
-        "text": "",
-        "evidence": [],
-        "source_url": "https://renta-villa.com/userpolicy",
-        "checked_at": "2026-09-30",
-        "body_sha256": "e53846ae5ebb8e72167c8f7081de4273135f6620e18cda83495404d4d1d42ca0"
-      }
-    },
-    {
       "id": "c8-00913795",
       "type": "lodging",
       "name": "野沢温泉 LODGEでんべえ",
