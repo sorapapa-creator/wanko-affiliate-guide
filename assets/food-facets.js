@@ -31177,5 +31177,320 @@ window.WANKO_FOOD_FACTS = {
     "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
     "additives": [],
     "additive_evidence": {}
+  },
+  "foodys-dhc-dhc-犬用-国産生肉使用の贅沢ごはん-やわらかタイプ-チキン-シニア": {
+    "id": "foodys-dhc-dhc-犬用-国産生肉使用の贅沢ごはん-やわらかタイプ-チキン-シニア",
+    "label": "DHC 犬用 国産生肉使用の贅沢ごはん やわらかタイプ(チキン/シニア)",
+    "ingredients": [
+      "鶏",
+      "魚",
+      "小麦",
+      "大麦",
+      "大豆"
+    ],
+    "ingredient_text": "肉類(鶏肉、鶏胸肉、鶏レバー)、大豆たんぱく、小麦粉、野菜類(キャベツ、大麦若葉、さつまいも、ケール、ほうれんそう、かぼちゃ)、DHA・EPA含有精製魚油",
+    "target": "成犬用(1歳〜6歳)/高齢期(7歳以上) / 維持期(1~6歳)用の「アダルト」タイプと、高齢期(7歳以上)用の「シニア」タイプ",
+    "age": [
+      "成犬",
+      "シニア"
+    ],
+    "age_range": [
+      12.0,
+      84.0
+    ],
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ソフトドライ",
+    "texture": [
+      "ソフト・半生"
+    ],
+    "grain": "",
+    "concern": [],
+    "price": 2805,
+    "price_date": "2026-10-17",
+    "source": "https://www.dhc.co.jp/goods/32646.html",
+    "checked": "2026-10-17",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用",
+      "香料不使用",
+      "保存料不使用"
+    ],
+    "additive_evidence": {
+      "source": "https://www.dhc.co.jp/goods/32646.html",
+      "checked": "2026-10-17",
+      "note": "不使用表示は公式商品ページの記載(食塩・砂糖は使用していません。着色料・香料・保存料 無添加)"
+    }
+  },
+  "foodys-dhc-dhc-犬用-国産生肉使用の贅沢ごはん-カリカリタイプ-チキン-アダルト": {
+    "id": "foodys-dhc-dhc-犬用-国産生肉使用の贅沢ごはん-カリカリタイプ-チキン-アダルト",
+    "label": "DHC 犬用 国産生肉使用の贅沢ごはん カリカリタイプ(チキン/アダルト)",
+    "ingredients": [
+      "鶏",
+      "米",
+      "大麦"
+    ],
+    "ingredient_text": "鶏肉, 大麦, 玄米, ビール酵母, 米ぬか",
+    "target": "成犬用(1歳〜6歳) / 維持期(1~6歳)",
+    "age": [
+      "成犬"
+    ],
+    "age_range": [
+      12.0,
+      84.0
+    ],
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 2431,
+    "price_date": "2026-10-17",
+    "source": "https://www.dhc.co.jp/goods/32901.html",
+    "checked": "2026-10-17",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用",
+      "香料不使用",
+      "保存料不使用"
+    ],
+    "additive_evidence": {
+      "source": "https://www.dhc.co.jp/goods/32901.html",
+      "checked": "2026-10-17",
+      "note": "不使用表示は公式商品ページの記載(食塩・砂糖は使用していません。着色料・香料・保存料 無添加)"
+    }
+  },
+  "foodys-ファルミナ-n-d-パンプキン-ラム-ブルーベリー入り-成犬用": {
+    "id": "foodys-ファルミナ-n-d-パンプキン-ラム-ブルーベリー入り-成犬用",
+    "label": "N&D パンプキン ラム（ブルーベリー入り）成犬用",
+    "ingredients": [
+      "鶏",
+      "羊"
+    ],
+    "ingredient_text": "ラム肉, 乾燥ラム, エンドウ豆デンプン, 鶏脂, 乾燥パンプキン",
+    "target": "成犬用",
+    "age": [
+      "成犬"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 5880,
+    "price_date": "2026-10-17",
+    "source": "https://www.farmina.com/jp/eshop/ドッグフード/n&dパンプキン【犬用-総合栄養食】/805-n&dパンプキン-ラム-成犬用.html",
+    "checked": "2026-10-17",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用",
+      "香料不使用",
+      "保存料不使用"
+    ],
+    "additive_evidence": {
+      "source": "https://www.farmina.com/jp/eshop/ドッグフード/n&dパンプキン【犬用-総合栄養食】/805-n&dパンプキン-ラム-成犬用.html",
+      "checked": "2026-10-17",
+      "note": "不使用表示は公式商品ページの記載(人工保存料・香料・着色料は不使用。)"
+    }
+  },
+  "foodys-n-d-n-d-キヌア-ダイジェスチョン-ラム-成犬用": {
+    "id": "foodys-n-d-n-d-キヌア-ダイジェスチョン-ラム-成犬用",
+    "label": "N&D キヌア ダイジェスチョン ラム 成犬用",
+    "ingredients": [
+      "鶏",
+      "羊",
+      "卵"
+    ],
+    "ingredient_text": "ラム肉,エンドウ豆デンプン,乾燥ラム肉,鶏脂,乾燥全卵",
+    "target": "成犬用",
+    "age": [
+      "成犬"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 5880,
+    "price_date": "2026-10-17",
+    "source": "https://www.farmina.com/jp/eshop/ドッグフード/n&dキヌア【犬用-総合栄養食】/810-n&dキヌア-ダイジェスチョン-ラム-成犬用.html",
+    "checked": "2026-10-17",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用",
+      "香料不使用",
+      "保存料不使用"
+    ],
+    "additive_evidence": {
+      "source": "https://www.farmina.com/jp/eshop/ドッグフード/n&dキヌア【犬用-総合栄養食】/810-n&dキヌア-ダイジェスチョン-ラム-成犬用.html",
+      "checked": "2026-10-17",
+      "note": "不使用表示は公式商品ページの記載(人工保存料・香料・着色料は不使用)"
+    }
+  },
+  "foodys-n-d-n-d-キヌア-スキン-コート-ニシン-ココナッツ-ウコン-成犬用": {
+    "id": "foodys-n-d-n-d-キヌア-スキン-コート-ニシン-ココナッツ-ウコン-成犬用",
+    "label": "N&D キヌア スキン&コート ニシン、ココナッツ&ウコン 成犬用",
+    "ingredients": [
+      "魚"
+    ],
+    "ingredient_text": "ニシン, エンドウ豆デンプン, ニシン油, キヌア, 亜麻仁",
+    "target": "成犬用",
+    "age": [
+      "成犬"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 5880,
+    "price_date": "2026-10-17",
+    "source": "https://www.farmina.com/jp/eshop/ドッグフード/n&dキヌア【犬用-総合栄養食】/821-n&dキヌア-スキン&コート-ニシン-成犬用.html",
+    "checked": "2026-10-17",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用",
+      "香料不使用",
+      "保存料不使用"
+    ],
+    "additive_evidence": {
+      "source": "https://www.farmina.com/jp/eshop/ドッグフード/n&dキヌア【犬用-総合栄養食】/821-n&dキヌア-スキン&コート-ニシン-成犬用.html",
+      "checked": "2026-10-17",
+      "note": "不使用表示は公式商品ページの記載(人工保存料・香料・着色料は不使用)"
+    }
+  },
+  "foodys-ファルミナ-n-d-キヌア-スキン-コート-ウズラ-成犬用": {
+    "id": "foodys-ファルミナ-n-d-キヌア-スキン-コート-ウズラ-成犬用",
+    "label": "N&D キヌア スキン&コート ウズラ 成犬用",
+    "ingredients": [
+      "魚"
+    ],
+    "ingredient_text": "ウズラ, 乾燥ウズラ, エンドウ豆デンプン, ニシン油, キヌア",
+    "target": "成犬用",
+    "age": [
+      "成犬"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 5880,
+    "price_date": "2026-10-17",
+    "source": "https://www.farmina.com/jp/eshop/ドッグフード/n&dキヌア【犬用-総合栄養食】/822-n&dキヌア-スキン&コート-ウズラ-成犬用.html",
+    "checked": "2026-10-17",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用",
+      "香料不使用",
+      "保存料不使用"
+    ],
+    "additive_evidence": {
+      "source": "https://www.farmina.com/jp/eshop/ドッグフード/n&dキヌア【犬用-総合栄養食】/822-n&dキヌア-スキン&コート-ウズラ-成犬用.html",
+      "checked": "2026-10-17",
+      "note": "不使用表示は公式商品ページの記載(人工保存料・香料・着色料は不使用)"
+    }
+  },
+  "foodys-n-d-n-d-キヌア-スキン-コート-ダック-ウェット-成犬用": {
+    "id": "foodys-n-d-n-d-キヌア-スキン-コート-ダック-ウェット-成犬用",
+    "label": "N&D キヌア スキン&コート ダック ウェット 成犬用",
+    "ingredients": [
+      "魚"
+    ],
+    "ingredient_text": "カモ肉, キヌア, 魚油, ココナッツ, フラクトオリゴ糖",
+    "target": "成犬用",
+    "age": [
+      "成犬"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ウェット",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 5880,
+    "price_date": "2026-10-17",
+    "source": "https://www.farmina.com/jp/eshop/ドッグフード/n&dキヌア【犬用-総合栄養食】/879-n&dキヌア-スキン&コート-ダック-ウェット-成犬用.html",
+    "checked": "2026-10-17",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用",
+      "香料不使用",
+      "保存料不使用"
+    ],
+    "additive_evidence": {
+      "source": "https://www.farmina.com/jp/eshop/ドッグフード/n&dキヌア【犬用-総合栄養食】/879-n&dキヌア-スキン&コート-ダック-ウェット-成犬用.html",
+      "checked": "2026-10-17",
+      "note": "不使用表示は公式商品ページの記載(人工保存料・増粘剤・香料・着色料は不使用)"
+    }
+  },
+  "foodys-n-d-n-d-キヌア-ダイジェスチョン-ラム-ウェット-成犬用": {
+    "id": "foodys-n-d-n-d-キヌア-ダイジェスチョン-ラム-ウェット-成犬用",
+    "label": "N&D キヌア ダイジェスチョン ラム ウェット 成犬用",
+    "ingredients": [
+      "羊",
+      "魚"
+    ],
+    "ingredient_text": "ラム肉, 魚肉加水分解物, キヌア, 魚油, アーティチョーク",
+    "target": "成犬用",
+    "age": [
+      "成犬"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ウェット",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 4580,
+    "price_date": "2026-10-17",
+    "source": "https://www.farmina.com/jp/eshop/ドッグフード/n&dキヌア【犬用-総合栄養食】/877-n&dキヌア-ダイジェスチョン-ラム-ウェット-成犬用.html",
+    "checked": "2026-10-17",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用",
+      "香料不使用",
+      "保存料不使用"
+    ],
+    "additive_evidence": {
+      "source": "https://www.farmina.com/jp/eshop/ドッグフード/n&dキヌア【犬用-総合栄養食】/877-n&dキヌア-ダイジェスチョン-ラム-ウェット-成犬用.html",
+      "checked": "2026-10-17",
+      "note": "不使用表示は公式商品ページの記載(人工保存料・増粘剤・香料・着色料は不使用)"
+    }
   }
 };
