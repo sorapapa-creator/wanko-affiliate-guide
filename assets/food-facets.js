@@ -32213,5 +32213,785 @@ window.WANKO_FOOD_FACTS = {
       "checked": "2026-10-17",
       "note": "不使用表示は公式商品ページの記載(人工保存料・香料・着色料は不使用)"
     }
+  },
+  "cx18-food-01": {
+    "id": "cx18-food-01",
+    "label": "ZEN プレミアムドッグ グレインフリー フィッシュ",
+    "ingredients": [
+      "魚"
+    ],
+    "ingredient_text": "生白身魚(タラ)、乾燥さつまいも、あずき、アルファ化でん粉、クリル（販売店の商品表示）",
+    "target": "子犬、成犬、シニア犬 / 超小型犬でも食べやすい直径約7mm程度の小粒タイプです。",
+    "age": [
+      "子犬",
+      "成犬",
+      "シニア"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 4551,
+    "price_date": "2026-10-18",
+    "source": "https://www.zenpetfoods.com/products/premium-dog-grainfree-fish/",
+    "checked": "2026-10-18",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用",
+      "香料不使用",
+      "保存料不使用"
+    ],
+    "additive_evidence": {
+      "source": "https://www.zenpetfoods.com/products/premium-dog-grainfree-fish/",
+      "checked": "2026-10-18",
+      "note": "不使用表示は公式商品ページの記載(着色料、合成保存料、合成酸化防止剤、発色剤、香料不使用。)"
+    }
+  },
+  "cx18-food-02": {
+    "id": "cx18-food-02",
+    "label": "ZEN プレミアムドッグ グレインフリー ワイルド ボア",
+    "ingredients": [],
+    "ingredient_text": "猪生肉、あずき、乾燥さつまいも、乾燥じゃがいも、アルファ化でん粉（販売店の商品表示）",
+    "target": "子犬、成犬、シニア犬 / 超小型犬でも食べやすい直径約7mm程度の小粒タイプです。",
+    "age": [
+      "子犬",
+      "成犬",
+      "シニア"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 4510,
+    "price_date": "2026-10-18",
+    "source": "https://www.zenpetfoods.com/products/premium-dog-grainfree-wild-boar/",
+    "checked": "2026-10-18",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用",
+      "香料不使用",
+      "保存料不使用"
+    ],
+    "additive_evidence": {
+      "source": "https://www.zenpetfoods.com/products/premium-dog-grainfree-wild-boar/",
+      "checked": "2026-10-18",
+      "note": "不使用表示は公式商品ページの記載(着色料、合成保存料、合成酸化防止剤、発色剤、香料不使用。)"
+    }
+  },
+  "cx18-food-03": {
+    "id": "cx18-food-03",
+    "label": "ZEN プレミアムドッグ グレインフリー ベニソン",
+    "ingredients": [
+      "鹿"
+    ],
+    "ingredient_text": "日本鹿生肉、あずき、乾燥さつまいも、乾燥じゃがいも、クリル（販売店の商品表示）",
+    "target": "子犬、成犬、シニア犬",
+    "age": [
+      "子犬",
+      "成犬",
+      "シニア"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 4687,
+    "price_date": "2026-10-18",
+    "source": "https://www.zenpetfoods.com/products/premium-dog-grainfree-venison/",
+    "checked": "2026-10-18",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用",
+      "香料不使用",
+      "保存料不使用"
+    ],
+    "additive_evidence": {
+      "source": "https://www.zenpetfoods.com/products/premium-dog-grainfree-venison/",
+      "checked": "2026-10-18",
+      "note": "不使用表示は公式商品ページの記載(着色料、合成保存料、合成酸化防止剤、発色剤、香料不使用。)"
+    }
+  },
+  "cx18-food-04": {
+    "id": "cx18-food-04",
+    "label": "ZEN プレミアムドッグ ワイルド ボア アダルト&シニア",
+    "ingredients": [
+      "米"
+    ],
+    "ingredient_text": "猪生肉、アルファ化米粉、あずき、えごま粉、クリル（販売店の商品表示）",
+    "target": "成犬、シニア犬",
+    "age": [
+      "成犬",
+      "シニア"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 3822,
+    "price_date": "2026-10-18",
+    "source": "https://www.zenpetfoods.com/products/premium-dog-wild-boar-adult-senior/",
+    "checked": "2026-10-18",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用",
+      "香料不使用",
+      "保存料不使用"
+    ],
+    "additive_evidence": {
+      "source": "https://www.zenpetfoods.com/products/premium-dog-wild-boar-adult-senior/",
+      "checked": "2026-10-18",
+      "note": "不使用表示は公式商品ページの記載(着色料、合成保存料、合成酸化防止剤、発色剤、香料不使用)"
+    }
+  },
+  "cx18-food-05": {
+    "id": "cx18-food-05",
+    "label": "ZEN プレミアムドッグ ベニソン アダルト&シニア",
+    "ingredients": [
+      "鹿",
+      "米"
+    ],
+    "ingredient_text": "日本鹿生肉、アルファ化米粉、あずき、えごま粉、クリル（販売店の商品表示）",
+    "target": "成犬、シニア犬",
+    "age": [
+      "成犬",
+      "シニア"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 4015,
+    "price_date": "2026-10-18",
+    "source": "https://www.zenpetfoods.com/products/premium-dog-venison-adult-senior/",
+    "checked": "2026-10-18",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用",
+      "香料不使用",
+      "保存料不使用"
+    ],
+    "additive_evidence": {
+      "source": "https://www.zenpetfoods.com/products/premium-dog-venison-adult-senior/",
+      "checked": "2026-10-18",
+      "note": "不使用表示は公式商品ページの記載(着色料、合成保存料、合成酸化防止剤、発色剤、香料不使用)"
+    }
+  },
+  "cx18-food-06": {
+    "id": "cx18-food-06",
+    "label": "ZEN プレミアムドッグ グレインフリー しらす アダルト&シニア",
+    "ingredients": [],
+    "ingredient_text": "生しらす、乾燥じゃがいも、あずき、アルファ化でん粉、クリル（販売店の商品表示）",
+    "target": "成犬、シニア犬",
+    "age": [
+      "成犬",
+      "シニア"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 3822,
+    "price_date": "2026-10-18",
+    "source": "https://www.zenpetfoods.com/products/premium-dog-grainfree-shirasu-adult-senior/",
+    "checked": "2026-10-18",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用",
+      "香料不使用",
+      "保存料不使用"
+    ],
+    "additive_evidence": {
+      "source": "https://www.zenpetfoods.com/products/premium-dog-grainfree-shirasu-adult-senior/",
+      "checked": "2026-10-18",
+      "note": "不使用表示は公式商品ページの記載(着色料、合成保存料、合成酸化防止剤、発色剤、香料不使用)"
+    }
+  },
+  "cx18-food-07": {
+    "id": "cx18-food-07",
+    "label": "ZEN プレミアムドッグ 赤鶏 パピー",
+    "ingredients": [
+      "鶏",
+      "米",
+      "大麦"
+    ],
+    "ingredient_text": "赤鶏生肉、アルファ化米粉、大麦粉、えごま粉、米糠（販売店の商品表示）",
+    "target": "成長期の子犬 / 離乳時〜4ヶ月 / 4ヶ月以上の子犬 / 〜1kg / 1〜2kg / 2〜4kg / 4〜7kg / 7〜10kg / 10〜20kg / 20〜30kg / 30kg〜",
+    "age": [
+      "子犬"
+    ],
+    "age_range": [
+      4.0,
+      null
+    ],
+    "breed": [],
+    "all_breeds": false,
+    "weight": [
+      [
+        1.0,
+        2.0
+      ],
+      [
+        2.0,
+        4.0
+      ],
+      [
+        4.0,
+        7.0
+      ],
+      [
+        7.0,
+        10.0
+      ],
+      [
+        10.0,
+        20.0
+      ],
+      [
+        20.0,
+        30.0
+      ]
+    ],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 3546,
+    "price_date": "2026-10-18",
+    "source": "https://www.zenpetfoods.com/products/premium-dog-akadori-puppy/",
+    "checked": "2026-10-18",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用",
+      "香料不使用",
+      "保存料不使用"
+    ],
+    "additive_evidence": {
+      "source": "https://www.zenpetfoods.com/products/premium-dog-akadori-puppy/",
+      "checked": "2026-10-18",
+      "note": "不使用表示は公式商品ページの記載(着色料、合成保存料、合成酸化防止剤、発色剤、香料不使用。)"
+    }
+  },
+  "cx18-food-08": {
+    "id": "cx18-food-08",
+    "label": "ZEN プレミアムドッグ 赤鶏 アダルト&シニア",
+    "ingredients": [
+      "鶏",
+      "米",
+      "大麦"
+    ],
+    "ingredient_text": "赤鶏生肉、アルファ化米粉、大麦粉、米糠、えごま粉（販売店の商品表示）",
+    "target": "成犬、シニア犬",
+    "age": [
+      "成犬",
+      "シニア"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 3546,
+    "price_date": "2026-10-18",
+    "source": "https://www.zenpetfoods.com/products/premium-dog-akadori-adult-senior/",
+    "checked": "2026-10-18",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用",
+      "香料不使用",
+      "保存料不使用"
+    ],
+    "additive_evidence": {
+      "source": "https://www.zenpetfoods.com/products/premium-dog-akadori-adult-senior/",
+      "checked": "2026-10-18",
+      "note": "不使用表示は公式商品ページの記載(着色料、合成保存料、合成酸化防止剤、発色剤、香料不使用)"
+    }
+  },
+  "cx18-food-09": {
+    "id": "cx18-food-09",
+    "label": "ZEN プレミアムドッグ グレインフリー ホース アダルト&シニア",
+    "ingredients": [],
+    "ingredient_text": "生馬肉、あずき、乾燥さつまいも、アルファ化でん粉、えごま粉（販売店の商品表示）",
+    "target": "成犬、シニア犬",
+    "age": [
+      "成犬",
+      "シニア"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 5775,
+    "price_date": "2026-10-18",
+    "source": "https://www.zenpetfoods.com/products/premium-dog-grainfree-horse-adult-senior/",
+    "checked": "2026-10-18",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用",
+      "香料不使用",
+      "保存料不使用"
+    ],
+    "additive_evidence": {
+      "source": "https://www.zenpetfoods.com/products/premium-dog-grainfree-horse-adult-senior/",
+      "checked": "2026-10-18",
+      "note": "不使用表示は公式商品ページの記載(着色料、合成保存料、合成酸化防止剤、発色剤、香料不使用)"
+    }
+  },
+  "cx18-food-20": {
+    "id": "cx18-food-20",
+    "label": "GO! SOLUTIONS カーニボア シニア",
+    "ingredients": [
+      "鶏",
+      "七面鳥",
+      "魚"
+    ],
+    "ingredient_text": "チキンミール,ターキーミール,サーモンミール,チキン生肉(骨抜き),ターキー生肉(骨抜き)",
+    "target": "成犬用",
+    "age": [
+      "成犬",
+      "シニア"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 1980,
+    "price_date": "2026-10-18",
+    "source": "https://www.gpn-inc.jp/dog/go/carnivore/senior/pm569.html",
+    "checked": "2026-10-18",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用",
+      "香料不使用",
+      "保存料不使用"
+    ],
+    "additive_evidence": {
+      "source": "https://www.gpn-inc.jp/dog/go/carnivore/senior/pm569.html",
+      "checked": "2026-10-18",
+      "note": "不使用表示は公式商品ページの記載(人工保存料、香料、着色料不使用)"
+    }
+  },
+  "cx18-food-21": {
+    "id": "cx18-food-21",
+    "label": "GO! SOLUTIONS 体重管理+関節ケア チキン",
+    "ingredients": [
+      "鶏"
+    ],
+    "ingredient_text": "チキン生肉(骨抜き),エンドウ豆,チキンミール,ポテト,ヒヨコ豆",
+    "target": "成犬用",
+    "age": [
+      "成犬"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [
+      "体重管理",
+      "関節の健康維持"
+    ],
+    "price": 2090,
+    "price_date": "2026-10-18",
+    "source": "https://www.gpn-inc.jp/dog/go/weight/pm573.html",
+    "checked": "2026-10-18",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用",
+      "香料不使用",
+      "保存料不使用"
+    ],
+    "additive_evidence": {
+      "source": "https://www.gpn-inc.jp/dog/go/weight/pm573.html",
+      "checked": "2026-10-18",
+      "note": "不使用表示は公式商品ページの記載(人工保存料、香料、着色料不使用)"
+    }
+  },
+  "cx18-food-22": {
+    "id": "cx18-food-22",
+    "label": "GO! SOLUTIONS 消化+腸の健康ケア サーモン",
+    "ingredients": [
+      "魚",
+      "オーツ麦"
+    ],
+    "ingredient_text": "サーモンミール, オートミール, ライ麦, 全粒オーツ麦, ミレット(キビ類)",
+    "target": "オールライフステージ",
+    "age": [
+      "子犬",
+      "成犬",
+      "シニア",
+      "全年齢"
+    ],
+    "age_range": [
+      0,
+      null
+    ],
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [
+      "お腹の健康維持"
+    ],
+    "price": 5170,
+    "price_date": "2026-10-18",
+    "source": "https://www.gpn-inc.jp/dog/go/digestion/pm581.html",
+    "checked": "2026-10-18",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用",
+      "香料不使用",
+      "保存料不使用"
+    ],
+    "additive_evidence": {
+      "source": "https://www.gpn-inc.jp/dog/go/digestion/pm581.html",
+      "checked": "2026-10-18",
+      "note": "不使用表示は公式商品ページの記載(副産物や人工保存料・香料・着色料不使用)"
+    }
+  },
+  "cx18-food-23": {
+    "id": "cx18-food-23",
+    "label": "OWNAT GRAIN FREE PRIME 小粒 チキン＆ターキー",
+    "ingredients": [
+      "鶏",
+      "七面鳥"
+    ],
+    "ingredient_text": "新鮮チキン*(25%以上), 新鮮ターキー*(25%以上), ディハイドレートチキン(14%), 全粒エンドウ豆*(9%), ポルトリー脂肪",
+    "target": "全年齢対応",
+    "age": [
+      "子犬",
+      "成犬",
+      "シニア",
+      "全年齢"
+    ],
+    "age_range": [
+      0,
+      null
+    ],
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "小粒",
+    "concern": [],
+    "price": 1375,
+    "price_date": "2026-10-18",
+    "source": "https://www.gpn-inc.jp/c1105-c2220-pm677.html",
+    "checked": "2026-10-18",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用",
+      "香料不使用"
+    ],
+    "additive_evidence": {
+      "source": "https://www.gpn-inc.jp/c1105-c2220-pm677.html",
+      "checked": "2026-10-18",
+      "note": "不使用表示は公式商品ページの記載(着色料・香料を使用していない)"
+    }
+  },
+  "cx18-food-24": {
+    "id": "cx18-food-24",
+    "label": "OWNAT GRAIN FREE PRIME 小粒 ラム",
+    "ingredients": [
+      "羊",
+      "豚"
+    ],
+    "ingredient_text": "新鮮ラム*(40%以上)、ディハイドレートポーク(22%)、ポルトリー脂肪、キャッサバ根*(7%)、全粒エンドウ豆*(7%)",
+    "target": "全年齢対応",
+    "age": [
+      "子犬",
+      "成犬",
+      "シニア",
+      "全年齢"
+    ],
+    "age_range": [
+      0,
+      null
+    ],
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "小粒",
+    "concern": [],
+    "price": 1375,
+    "price_date": "2026-10-18",
+    "source": "https://www.gpn-inc.jp/c1105-c2220-pm680.html",
+    "checked": "2026-10-18",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用",
+      "香料不使用"
+    ],
+    "additive_evidence": {
+      "source": "https://www.gpn-inc.jp/c1105-c2220-pm680.html",
+      "checked": "2026-10-18",
+      "note": "不使用表示は公式商品ページの記載(着色料・香料を使用していない)"
+    }
+  },
+  "cx18-food-26": {
+    "id": "cx18-food-26",
+    "label": "CUPURERAレティック チキンミックスエクストリーム・ドッグ 成犬用",
+    "ingredients": [
+      "鶏",
+      "鹿",
+      "オーツ麦"
+    ],
+    "ingredient_text": "鶏肉(北海道産),鶏レバー・鶏ハツ(鹿児島県・岩手県産),さつまいも(鹿児島県産),有機オートミール(フランス産),昆布(北海道産)",
+    "target": "成犬用",
+    "age": [
+      "成犬"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ウェット",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 429,
+    "price_date": "2026-10-18",
+    "source": "https://www.cupurera.jp/product/3018/",
+    "checked": "2026-10-18",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用",
+      "保存料不使用"
+    ],
+    "additive_evidence": {
+      "source": "https://www.cupurera.jp/product/3018/",
+      "checked": "2026-10-18",
+      "note": "不使用表示は公式商品ページの記載(この製品にグルテン、着色料、合成添加物、保存料は一切使用していません。)"
+    }
+  },
+  "cx18-food-27": {
+    "id": "cx18-food-27",
+    "label": "CUPURERAレティック チキンエクストリーム・ドッグ 成犬用",
+    "ingredients": [
+      "鶏",
+      "オーツ麦"
+    ],
+    "ingredient_text": "鶏肉(北海道産), タピオカ(タイ産), 有機オートミール(アメリカ産), 昆布(北海道・岩手産), とびうお(長崎県産)",
+    "target": "成犬用",
+    "age": [
+      "成犬"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ウェット",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 2574,
+    "price_date": "2026-10-18",
+    "source": "https://www.cupurera.jp/product/2749/",
+    "checked": "2026-10-18",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用",
+      "保存料不使用"
+    ],
+    "additive_evidence": {
+      "source": "https://www.cupurera.jp/product/2749/",
+      "checked": "2026-10-18",
+      "note": "不使用表示は公式商品ページの記載(この製品にグルテン、着色料、合成添加物、保存料は一切使用していません。)"
+    }
+  },
+  "cx18-food-28": {
+    "id": "cx18-food-28",
+    "label": "CUPURERAレティック ベニソンエクストリーム・ドッグ 成犬用",
+    "ingredients": [
+      "鹿",
+      "オーツ麦"
+    ],
+    "ingredient_text": "鹿肉(長野県産), タピオカ(タイ産), 有機オートミール(アメリカ産), 昆布(北海道・岩手県産), とびうお(長崎県産)",
+    "target": "成犬用",
+    "age": [
+      "成犬"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ウェット",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 3630,
+    "price_date": "2026-10-18",
+    "source": "https://www.cupurera.jp/product/2754/",
+    "checked": "2026-10-18",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用",
+      "保存料不使用"
+    ],
+    "additive_evidence": {
+      "source": "https://www.cupurera.jp/product/2754/",
+      "checked": "2026-10-18",
+      "note": "不使用表示は公式商品ページの記載(この製品にグルテン、着色料、合成添加物、保存料は一切使用していません。)"
+    }
+  },
+  "cx18-food-29": {
+    "id": "cx18-food-29",
+    "label": "CUPURERAレティックリミテッドベニソン&チキンレバー・ドッグ",
+    "ingredients": [
+      "鶏",
+      "鹿",
+      "オーツ麦"
+    ],
+    "ingredient_text": "鹿肉(長野県産), 鶏レバー・鶏ハツ(鹿児島県・岩手県産), さつまいも(鹿児島県産), 有機オートミール(フランス産), 昆布(北海道産)",
+    "target": "成犬用",
+    "age": [
+      "成犬"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ウェット",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 517,
+    "price_date": "2026-10-18",
+    "source": "https://www.cupurera.jp/product/2758/",
+    "checked": "2026-10-18",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用",
+      "保存料不使用"
+    ],
+    "additive_evidence": {
+      "source": "https://www.cupurera.jp/product/2758/",
+      "checked": "2026-10-18",
+      "note": "不使用表示は公式商品ページの記載(この製品にグルテン、着色料、合成添加物、保存料は一切使用していません。)"
+    }
+  },
+  "cx18-food-30": {
+    "id": "cx18-food-30",
+    "label": "GO! SOLUTIONS 皮膚+被毛ケア ダック",
+    "ingredients": [
+      "米",
+      "鴨",
+      "オーツ麦"
+    ],
+    "ingredient_text": "ダックミール, オートミール, 全粒玄米, 全粒オーツ麦, ダック生肉(骨抜き)",
+    "target": "オールライフステージ",
+    "age": [
+      "子犬",
+      "成犬",
+      "シニア",
+      "全年齢"
+    ],
+    "age_range": [
+      0,
+      null
+    ],
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [
+      "皮膚・被毛の健康維持"
+    ],
+    "price": 5170,
+    "price_date": "2026-10-18",
+    "source": "https://www.gpn-inc.jp/dog/go/skincoat/pm584.html",
+    "checked": "2026-10-18",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用",
+      "香料不使用",
+      "保存料不使用"
+    ],
+    "additive_evidence": {
+      "source": "https://www.gpn-inc.jp/dog/go/skincoat/pm584.html",
+      "checked": "2026-10-18",
+      "note": "不使用表示は公式商品ページの記載(副産物や人工保存料、香料、着色料不使用)"
+    }
   }
 };
