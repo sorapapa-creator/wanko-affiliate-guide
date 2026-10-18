@@ -32993,5 +32993,743 @@ window.WANKO_FOOD_FACTS = {
       "checked": "2026-10-18",
       "note": "不使用表示は公式商品ページの記載(副産物や人工保存料、香料、着色料不使用)"
     }
+  },
+  "b2-food-01": {
+    "id": "b2-food-01",
+    "label": "リガロ ラム 子犬・成犬用",
+    "ingredients": [
+      "羊",
+      "魚"
+    ],
+    "ingredient_text": "ラム生肉, 乾燥サーモン, エンドウ豆プロテイン, 乾燥ラム, 乾燥エンドウ豆",
+    "target": "子犬・成犬用",
+    "age": [
+      "子犬",
+      "成犬"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 5621,
+    "price_date": "2026-10-18",
+    "source": "https://www.rigalo.jp/lamb/",
+    "checked": "2026-10-18",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用",
+      "香料不使用"
+    ],
+    "additive_evidence": {
+      "source": "https://www.rigalo.jp/lamb/",
+      "checked": "2026-10-18",
+      "note": "不使用表示は公式商品ページの記載(合成調味料、着色料、着香料、防カビ剤などの合成添加物が含まれていますか? 一切使用していません。)"
+    }
+  },
+  "b2-food-02": {
+    "id": "b2-food-02",
+    "label": "リガロ ターキー 子犬・成犬用",
+    "ingredients": [
+      "七面鳥"
+    ],
+    "ingredient_text": "ターキー生肉, 乾燥ターキー, 赤レンズ豆, 乾燥ヒヨコ豆, エンドウ豆プロテイン",
+    "target": "子犬・成犬用",
+    "age": [
+      "子犬",
+      "成犬"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 5280,
+    "price_date": "2026-10-18",
+    "source": "https://www.rigalo.jp/turkey/",
+    "checked": "2026-10-18",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用",
+      "香料不使用"
+    ],
+    "additive_evidence": {
+      "source": "https://www.rigalo.jp/turkey/",
+      "checked": "2026-10-18",
+      "note": "不使用表示は公式商品ページの記載(合成調味料、着色料、着香料、防カビ剤などの合成添加物が含まれていますか? 一切使用していません。)"
+    }
+  },
+  "b2-food-03": {
+    "id": "b2-food-03",
+    "label": "リガロ フィッシュ 子犬・成犬用",
+    "ingredients": [
+      "魚"
+    ],
+    "ingredient_text": "ホワイトフィッシュ生肉, 乾燥ホワイトフィッシュ, 乾燥エンドウ豆, エンドウ豆プロテイン, ヒマワリ油",
+    "target": "子犬・成犬用",
+    "age": [
+      "子犬",
+      "成犬"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 5423,
+    "price_date": "2026-10-18",
+    "source": "https://www.rigalo.jp/fish/",
+    "checked": "2026-10-18",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用",
+      "香料不使用"
+    ],
+    "additive_evidence": {
+      "source": "https://www.rigalo.jp/fish/",
+      "checked": "2026-10-18",
+      "note": "不使用表示は公式商品ページの記載(合成調味料、着色料、着香料、防カビ剤などの合成添加物が含まれていますか? 一切使用していません。)"
+    }
+  },
+  "b2-food-04": {
+    "id": "b2-food-04",
+    "label": "リガロ ラム 7歳以上用",
+    "ingredients": [
+      "羊",
+      "魚"
+    ],
+    "ingredient_text": "ラム生肉, 乾燥サーモン, エンドウ豆プロテイン, 乾燥ラム, 赤レンズ豆",
+    "target": "7歳以上",
+    "age": [
+      "シニア"
+    ],
+    "age_range": [
+      84.0,
+      null
+    ],
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 5819,
+    "price_date": "2026-10-18",
+    "source": "https://www.rigalo.jp/lamb_senior/",
+    "checked": "2026-10-18",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用",
+      "香料不使用"
+    ],
+    "additive_evidence": {
+      "source": "https://www.rigalo.jp/lamb_senior/",
+      "checked": "2026-10-18",
+      "note": "不使用表示は公式商品ページの記載(合成調味料、着色料、着香料、防カビ剤などの合成添加物が含まれていますか? 一切使用していません。)"
+    }
+  },
+  "b2-food-05": {
+    "id": "b2-food-05",
+    "label": "リガロ ターキー 7歳以上用",
+    "ingredients": [
+      "七面鳥",
+      "魚"
+    ],
+    "ingredient_text": "ターキー生肉, 乾燥サーモン, 乾燥ターキー, 赤レンズ豆, 乾燥エンドウ豆",
+    "target": "7歳以上用",
+    "age": [
+      "シニア"
+    ],
+    "age_range": [
+      84.0,
+      null
+    ],
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 3014,
+    "price_date": "2026-10-18",
+    "source": "https://www.rigalo.jp/turkey_senior/",
+    "checked": "2026-10-18",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用",
+      "香料不使用"
+    ],
+    "additive_evidence": {
+      "source": "https://www.rigalo.jp/turkey_senior/",
+      "checked": "2026-10-18",
+      "note": "不使用表示は公式商品ページの記載(合成調味料、着色料、着香料、防カビ剤などの合成添加物が含まれていますか? 一切使用していません。)"
+    }
+  },
+  "b2-food-06": {
+    "id": "b2-food-06",
+    "label": "リガロ フィッシュ 7歳以上用",
+    "ingredients": [
+      "魚"
+    ],
+    "ingredient_text": "ホワイトフィッシュ生肉, 乾燥ホワイトフィッシュ, 乾燥エンドウ豆, エンドウ豆プロテイン, ヒマワリ油*",
+    "target": "7歳以上用",
+    "age": [
+      "シニア"
+    ],
+    "age_range": [
+      84.0,
+      null
+    ],
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 5621,
+    "price_date": "2026-10-18",
+    "source": "https://www.rigalo.jp/fish_senior/",
+    "checked": "2026-10-18",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用",
+      "香料不使用"
+    ],
+    "additive_evidence": {
+      "source": "https://www.rigalo.jp/fish_senior/",
+      "checked": "2026-10-18",
+      "note": "不使用表示は公式商品ページの記載(合成調味料、着色料、着香料、防カビ剤などの合成添加物が含まれていますか? 一切使用していません。)"
+    }
+  },
+  "b2-food-14": {
+    "id": "b2-food-14",
+    "label": "ブラバンソンヌ 大型犬・中型犬 子犬用 チキン",
+    "ingredients": [
+      "鶏",
+      "米"
+    ],
+    "ingredient_text": "チキン, 米, レンズマメ, 動物性油脂(チキン由来), 加水分解チキンタンパク質",
+    "target": "大型犬・中型犬/子犬",
+    "age": [
+      "子犬"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": null,
+    "price_date": "2026-10-18",
+    "source": "https://www.wepet.jp/c/bbc/dogfood/bbc13",
+    "checked": "2026-10-18",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "b2-food-15": {
+    "id": "b2-food-15",
+    "label": "ブラバンソンヌ 小型犬 子犬用 チキン",
+    "ingredients": [
+      "鶏",
+      "米"
+    ],
+    "ingredient_text": "チキン, 米, 動物性油脂(チキン由来), 乾燥ジャガイモフレーク, エンドウ豆",
+    "target": "公式の商品別給餌案内を参照 / 子犬 / 小型犬",
+    "age": [
+      "子犬"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": null,
+    "price_date": "2026-10-18",
+    "source": "https://www.wepet.jp/c/bbc/dogfood/bbc5",
+    "checked": "2026-10-18",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "b2-food-16": {
+    "id": "b2-food-16",
+    "label": "ブラバンソンヌ 小型犬・中型犬 成犬用 オーシャンフィッシュ",
+    "ingredients": [
+      "鶏",
+      "魚"
+    ],
+    "ingredient_text": "魚(サーモン、タラ、スケトウダラ、アカガレイ、ツノガレイ), サツマイモ, 動物性油脂(チキン由来), レンズ豆, エンドウ豆",
+    "target": "小型犬・中型犬/成犬",
+    "age": [
+      "成犬"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": null,
+    "price_date": "2026-10-18",
+    "source": "https://www.wepet.jp/c/bbc/dogfood/bbc4",
+    "checked": "2026-10-18",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "b2-food-17": {
+    "id": "b2-food-17",
+    "label": "ブラバンソンヌ 小型犬・中型犬 成犬用 チキン",
+    "ingredients": [
+      "鶏"
+    ],
+    "ingredient_text": "チキン, サツマイモ, レンズ豆, 動物性油脂(チキン由来), エンドウ豆",
+    "target": "小型犬・中型犬/成犬",
+    "age": [
+      "成犬"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": null,
+    "price_date": "2026-10-18",
+    "source": "https://www.wepet.jp/c/bbc/dogfood/bbc3",
+    "checked": "2026-10-18",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "b2-food-18": {
+    "id": "b2-food-18",
+    "label": "SUMMIT コースタルグリル 成犬用",
+    "ingredients": [
+      "鶏",
+      "大麦",
+      "オーツ麦"
+    ],
+    "ingredient_text": "チキンミール, オートミール, ライ麦, 大麦, 全粒オート麦",
+    "target": "成犬用",
+    "age": [
+      "成犬"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": null,
+    "price_date": "2026-10-18",
+    "source": "https://www.gpn-inc.jp/c1105-c2206-pm630.html",
+    "checked": "2026-10-18",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用",
+      "香料不使用"
+    ],
+    "additive_evidence": {
+      "source": "https://www.gpn-inc.jp/c1105-c2206-pm630.html",
+      "checked": "2026-10-18",
+      "note": "不使用表示は公式商品ページの記載(副産物や小麦、トウモロコシ、大豆、人工添加物(防腐剤・着色料・香料)不使用)"
+    }
+  },
+  "b2-food-19": {
+    "id": "b2-food-19",
+    "label": "SUMMIT レンジロティサリー 成犬用",
+    "ingredients": [
+      "鶏",
+      "大麦",
+      "オーツ麦"
+    ],
+    "ingredient_text": "チキンミール, オートミール, ライ麦, 大麦, 全粒オーツ麦",
+    "target": "成犬用",
+    "age": [
+      "成犬"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 4290,
+    "price_date": "2026-10-18",
+    "source": "https://www.gpn-inc.jp/c1105-c2206-pm628.html",
+    "checked": "2026-10-18",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用",
+      "香料不使用"
+    ],
+    "additive_evidence": {
+      "source": "https://www.gpn-inc.jp/c1105-c2206-pm628.html",
+      "checked": "2026-10-18",
+      "note": "不使用表示は公式商品ページの記載(副産物や小麦、トウモロコシ、大豆、人工添加物(防腐剤・着色料・香料)不使用)"
+    }
+  },
+  "b2-food-20": {
+    "id": "b2-food-20",
+    "label": "アブソルート エアドライ ドッグフード ビーフ&ホキ",
+    "ingredients": [
+      "牛",
+      "魚"
+    ],
+    "ingredient_text": "ビーフ生肉, ビーフレバー, ホキ, ビーフラング(肺), グリセリン(植物由来)",
+    "target": "全年齢対応",
+    "age": [
+      "子犬",
+      "成犬",
+      "シニア",
+      "全年齢"
+    ],
+    "age_range": [
+      0,
+      null
+    ],
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ソフトドライ",
+    "texture": [
+      "ソフト・半生"
+    ],
+    "grain": "",
+    "concern": [],
+    "price": 11550,
+    "price_date": "2026-10-18",
+    "source": "https://www.gpn-inc.jp/c1105-c2190-pm596.html",
+    "checked": "2026-10-18",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用",
+      "香料不使用",
+      "保存料不使用"
+    ],
+    "additive_evidence": {
+      "source": "https://www.gpn-inc.jp/c1105-c2190-pm596.html",
+      "checked": "2026-10-18",
+      "note": "不使用表示は公式商品ページの記載(人工添加物不使用(着色料・香料・化学的保存料))"
+    }
+  },
+  "b2-food-21": {
+    "id": "b2-food-21",
+    "label": "アブソルート エアドライ ドッグフード ラム&サーモン",
+    "ingredients": [
+      "羊",
+      "魚"
+    ],
+    "ingredient_text": "ラム生肉, サーモン, ラムラング(肺), ラムレバー, グリセリン(植物由来)",
+    "target": "全年齢対応",
+    "age": [
+      "子犬",
+      "成犬",
+      "シニア",
+      "全年齢"
+    ],
+    "age_range": [
+      0,
+      null
+    ],
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ソフトドライ",
+    "texture": [
+      "ソフト・半生"
+    ],
+    "grain": "",
+    "concern": [],
+    "price": 11550,
+    "price_date": "2026-10-18",
+    "source": "https://www.gpn-inc.jp/c1162-c2189-pm268.html",
+    "checked": "2026-10-18",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用",
+      "香料不使用",
+      "保存料不使用"
+    ],
+    "additive_evidence": {
+      "source": "https://www.gpn-inc.jp/c1162-c2189-pm268.html",
+      "checked": "2026-10-18",
+      "note": "不使用表示は公式商品ページの記載(人工添加物不使用(着色料・香料・化学的保存料))"
+    }
+  },
+  "b2-food-22": {
+    "id": "b2-food-22",
+    "label": "アブソルート エアドライ ドッグフード チキン&ホキ",
+    "ingredients": [
+      "鶏",
+      "魚"
+    ],
+    "ingredient_text": "チキン生肉, ホキ, チキンレバー, グリセリン(植物由来), 緑イ貝",
+    "target": "離乳後の全年齢",
+    "age": [
+      "子犬",
+      "成犬",
+      "シニア",
+      "全年齢"
+    ],
+    "age_range": [
+      0,
+      null
+    ],
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 11550,
+    "price_date": "2026-10-18",
+    "source": "https://www.gpn-inc.jp/c1105-c2190-pm269.html",
+    "checked": "2026-10-18",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用",
+      "香料不使用",
+      "保存料不使用"
+    ],
+    "additive_evidence": {
+      "source": "https://www.gpn-inc.jp/c1105-c2190-pm269.html",
+      "checked": "2026-10-18",
+      "note": "不使用表示は公式商品ページの記載(人工添加物不使用(着色料・香料・化学的保存料))"
+    }
+  },
+  "b2-food-23": {
+    "id": "b2-food-23",
+    "label": "アブソルート エアドライ ドッグフード ビーフ&ベニソン",
+    "ingredients": [
+      "牛"
+    ],
+    "ingredient_text": "ビーフ生肉, ビーフラング(肺), ビーフレバー, ベニソン生肉, グリセリン(植物由来)",
+    "target": "全年齢対応",
+    "age": [
+      "子犬",
+      "成犬",
+      "シニア",
+      "全年齢"
+    ],
+    "age_range": [
+      0,
+      null
+    ],
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ソフトドライ",
+    "texture": [
+      "ソフト・半生"
+    ],
+    "grain": "",
+    "concern": [],
+    "price": 11550,
+    "price_date": "2026-10-18",
+    "source": "https://www.gpn-inc.jp/c1105-c2190-pm266.html",
+    "checked": "2026-10-18",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用",
+      "香料不使用",
+      "保存料不使用"
+    ],
+    "additive_evidence": {
+      "source": "https://www.gpn-inc.jp/c1105-c2190-pm266.html",
+      "checked": "2026-10-18",
+      "note": "不使用表示は公式商品ページの記載(人工添加物不使用(着色料・香料・化学的保存料))"
+    }
+  },
+  "b2-food-24": {
+    "id": "b2-food-24",
+    "label": "CARNA4 オリジナル チキン 犬用総合栄養食",
+    "ingredients": [
+      "鶏",
+      "魚",
+      "大麦",
+      "卵"
+    ],
+    "ingredient_text": "チキン(Fresh chicken)、チキンレバー、鶏卵、有機大麦の発芽種子、サーモン",
+    "target": "全犬種 離乳後~老齢期(オールライフステージ)",
+    "age": [
+      "子犬",
+      "成犬",
+      "シニア",
+      "全年齢"
+    ],
+    "age_range": [
+      0,
+      null
+    ],
+    "breed": [],
+    "all_breeds": true,
+    "weight": [
+      [
+        0,
+        null
+      ]
+    ],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": null,
+    "price_date": "2026-10-18",
+    "source": "https://www.leschiens.co.jp/item/carna4-chiken-new/",
+    "checked": "2026-10-18",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "b2-food-25": {
+    "id": "b2-food-25",
+    "label": "CARNA4 グレインフリー ダック 全犬種用",
+    "ingredients": [
+      "鶏",
+      "豚",
+      "魚",
+      "大麦",
+      "鴨",
+      "卵"
+    ],
+    "ingredient_text": "ダック,豚レバー,鶏卵,有機大麦の発芽種子,ニシン",
+    "target": "全犬種 離乳後~老齢期(オールライフステージ)",
+    "age": [
+      "子犬",
+      "成犬",
+      "シニア",
+      "全年齢"
+    ],
+    "age_range": [
+      0,
+      null
+    ],
+    "breed": [],
+    "all_breeds": true,
+    "weight": [
+      [
+        0,
+        null
+      ]
+    ],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": null,
+    "price_date": "2026-10-18",
+    "source": "https://www.leschiens.co.jp/item/carna4-duck-new/",
+    "checked": "2026-10-18",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "b2-food-26": {
+    "id": "b2-food-26",
+    "label": "CARNA4 グレインフリー フィッシュ",
+    "ingredients": [
+      "鶏",
+      "魚",
+      "大麦",
+      "卵"
+    ],
+    "ingredient_text": "ニシン,スズキ,鶏卵,有機大麦の発芽種子,サーモン",
+    "target": "全犬種 離乳後~老齢期(オールライフステージ)",
+    "age": [
+      "子犬",
+      "成犬",
+      "シニア",
+      "全年齢"
+    ],
+    "age_range": [
+      0,
+      null
+    ],
+    "breed": [],
+    "all_breeds": true,
+    "weight": [
+      [
+        0,
+        null
+      ]
+    ],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": null,
+    "price_date": "2026-10-18",
+    "source": "https://www.leschiens.co.jp/item/carna4_fish/",
+    "checked": "2026-10-18",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
   }
 };
