@@ -33731,5 +33731,748 @@ window.WANKO_FOOD_FACTS = {
     "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
     "additives": [],
     "additive_evidence": {}
+  },
+  "b3-food-28": {
+    "id": "b3-food-28",
+    "label": "FORZA10 Special Care ミニヘルシースキンサポートフィッシュ ",
+    "ingredients": [
+      "魚"
+    ],
+    "ingredient_text": "カタクチイワシ、じゃがいも、じゃがいも澱粉、じゃがいもプロテイン、魚油(ミックストコフェロールで保存)",
+    "target": "個別公式の対象年齢を参照 / 成犬用",
+    "age": [
+      "成犬"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 4730,
+    "price_date": "2026-10-18",
+    "source": "https://www.forza10japan.com/dogfood/specialcare-skin/",
+    "checked": "2026-10-18",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用"
+    ],
+    "additive_evidence": {
+      "source": "https://www.forza10japan.com/dogfood/specialcare-skin/",
+      "checked": "2026-10-18",
+      "note": "不使用表示は公式商品ページの記載(着色料無添加)"
+    }
+  },
+  "b3-food-29": {
+    "id": "b3-food-29",
+    "label": "FORZA10 Special Care ヘルシーダイジェスチョンサポートフィッ",
+    "ingredients": [
+      "魚"
+    ],
+    "ingredient_text": "カタクチイワシ,じゃがいも,じゃがいも澱粉,じゃがいもプロテイン,魚油(ミックストコフェロールで保存)",
+    "target": "個別公式の対象年齢を参照 / 成犬用",
+    "age": [
+      "成犬"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 4350,
+    "price_date": "2026-10-18",
+    "source": "https://www.forza10japan.com/dogfood/specialcare-digestion/",
+    "checked": "2026-10-18",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用"
+    ],
+    "additive_evidence": {
+      "source": "https://www.forza10japan.com/dogfood/specialcare-digestion/",
+      "checked": "2026-10-18",
+      "note": "不使用表示は公式商品ページの記載(着色料無添加:この商品は天然の原材料を使用している為、収穫時期により色味やにおいに若干の差がある場合があります。)"
+    }
+  },
+  "b3-food-30": {
+    "id": "b3-food-30",
+    "label": "FORZA10 Special Care シャイニーホワイト 成犬用",
+    "ingredients": [
+      "魚",
+      "米"
+    ],
+    "ingredient_text": "精米,デハイドレイテッドフィッシュ(エアドライされて乾燥した魚肉)(17.5%),米ぬか,((魚型AFS 約7%):ポテトタンパク,炭酸カルシウム",
+    "target": "個別公式の対象年齢を参照 / 成犬用",
+    "age": [
+      "成犬"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": null,
+    "price_date": "2026-10-18",
+    "source": "https://www.forza10japan.com/dogfood/specialcare-shiny/",
+    "checked": "2026-10-18",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用"
+    ],
+    "additive_evidence": {
+      "source": "https://www.forza10japan.com/dogfood/specialcare-shiny/",
+      "checked": "2026-10-18",
+      "note": "不使用表示は公式商品ページの記載(着色料無添加)"
+    }
+  },
+  "b3-food-31": {
+    "id": "b3-food-31",
+    "label": "FORZA10 Special Care ジョイントケア 成犬用",
+    "ingredients": [
+      "魚",
+      "米"
+    ],
+    "ingredient_text": "精米,デハイドレイテッドフィッシュ(エアドライされて乾燥した魚肉)(14.0%),トウモロコシタンパク,サーモンオイル,米ぬか",
+    "target": "個別公式の対象年齢を参照 / 成犬用",
+    "age": [
+      "成犬"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": null,
+    "price_date": "2026-10-18",
+    "source": "https://www.forza10japan.com/dogfood/specialcare-jointcare/",
+    "checked": "2026-10-18",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用"
+    ],
+    "additive_evidence": {
+      "source": "https://www.forza10japan.com/dogfood/specialcare-jointcare/",
+      "checked": "2026-10-18",
+      "note": "不使用表示は公式商品ページの記載(着色料無添加)"
+    }
+  },
+  "b3-food-32": {
+    "id": "b3-food-32",
+    "label": "FORZA10 Daily Pro アダルトミニ / ミディアム フィッシュ",
+    "ingredients": [
+      "魚",
+      "米"
+    ],
+    "ingredient_text": "魚粉、精米、エンドウ豆澱粉、米ぬか、トウモロコシプロテイン",
+    "target": "個別公式の対象年齢を参照 / 成犬用 / 小粒サイズ:120g / 800g / 2.8kg 中粒サイズ:120g / 12kg",
+    "age": [
+      "成犬"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 25300,
+    "price_date": "2026-10-18",
+    "source": "https://www.forza10japan.com/dogfood/dailyforza-fish/",
+    "checked": "2026-10-18",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用"
+    ],
+    "additive_evidence": {
+      "source": "https://www.forza10japan.com/dogfood/dailyforza-fish/",
+      "checked": "2026-10-18",
+      "note": "不使用表示は公式商品ページの記載(着色料無添加:この商品は天然の原材料を使用している為、収穫時期により色味やにおいに若干の差がある場合があります。)"
+    }
+  },
+  "b3-food-33": {
+    "id": "b3-food-33",
+    "label": "FORZA10 Daily Pro アダルト ミニ / ミディアム ホース",
+    "ingredients": [
+      "米"
+    ],
+    "ingredient_text": "馬肉、きび、全エンドウ豆、精米、トウモロコシプロテイン",
+    "target": "個別公式の対象年齢を参照 / 成犬用 / ミニ / ミディアム",
+    "age": [
+      "成犬"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 25300,
+    "price_date": "2026-10-18",
+    "source": "https://www.forza10japan.com/dogfood/dailyforza-horse/",
+    "checked": "2026-10-18",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用"
+    ],
+    "additive_evidence": {
+      "source": "https://www.forza10japan.com/dogfood/dailyforza-horse/",
+      "checked": "2026-10-18",
+      "note": "不使用表示は公式商品ページの記載(着色料無添加)"
+    }
+  },
+  "b3-food-34": {
+    "id": "b3-food-34",
+    "label": "FORZA10 Daily Pro アダルトミニ / ミディアム ポーク",
+    "ingredients": [
+      "鶏",
+      "豚",
+      "米"
+    ],
+    "ingredient_text": "豚肉、きび、精米、精製鶏脂、ビートパルプ",
+    "target": "個別公式の対象年齢を参照 / 成犬用 / ミニ / ミディアム",
+    "age": [
+      "成犬"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 25300,
+    "price_date": "2026-10-18",
+    "source": "https://www.forza10japan.com/dogfood/dailyforza-pork/",
+    "checked": "2026-10-18",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用"
+    ],
+    "additive_evidence": {
+      "source": "https://www.forza10japan.com/dogfood/dailyforza-pork/",
+      "checked": "2026-10-18",
+      "note": "不使用表示は公式商品ページの記載(着色料無添加)"
+    }
+  },
+  "b3-food-35": {
+    "id": "b3-food-35",
+    "label": "FORZA10 Daily Pro アダルトミニ / ミディアム ベニソン",
+    "ingredients": [
+      "鹿",
+      "米"
+    ],
+    "ingredient_text": "鹿肉、精米、全エンドウ豆、トウモロコシプロテイン、じゃがいも",
+    "target": "個別公式の対象年齢を参照 / 成犬用 / ミニ / ミディアム",
+    "age": [
+      "成犬"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 4730,
+    "price_date": "2026-10-18",
+    "source": "https://www.forza10japan.com/dogfood/dailyforza-venison/",
+    "checked": "2026-10-18",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用"
+    ],
+    "additive_evidence": {
+      "source": "https://www.forza10japan.com/dogfood/dailyforza-venison/",
+      "checked": "2026-10-18",
+      "note": "不使用表示は公式商品ページの記載(着色料無添加)"
+    }
+  },
+  "b3-food-36": {
+    "id": "b3-food-36",
+    "label": "FORZA10 Daily Pro アダルトミニ / ミディアム ラム",
+    "ingredients": [
+      "羊",
+      "米"
+    ],
+    "ingredient_text": "ラム肉、全エンドウ豆、精米、きび、米ぬか",
+    "target": "個別公式の対象年齢を参照 / 成犬用 / ミニ / ミディアム",
+    "age": [
+      "成犬"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 4730,
+    "price_date": "2026-10-18",
+    "source": "https://www.forza10japan.com/dogfood/dailyforza-lamb/",
+    "checked": "2026-10-18",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [
+      "着色料不使用"
+    ],
+    "additive_evidence": {
+      "source": "https://www.forza10japan.com/dogfood/dailyforza-lamb/",
+      "checked": "2026-10-18",
+      "note": "不使用表示は公式商品ページの記載(着色料無添加)"
+    }
+  },
+  "b3-food-37": {
+    "id": "b3-food-37",
+    "label": "ネイチャーズプロテクション ホワイトドッグ グレインフリー ホワイトフィッシュ ",
+    "ingredients": [
+      "魚"
+    ],
+    "ingredient_text": "白身魚41%(乾燥して細かく挽いたもの), 乾燥ポテトパルプ, サツマイモ, エンドウ豆, ポートリー脂肪",
+    "target": "体重10kg以下の小型犬成犬用",
+    "age": [
+      "成犬"
+    ],
+    "age_range": null,
+    "breed": [
+      "マルチーズ"
+    ],
+    "all_breeds": false,
+    "weight": [
+      [
+        0,
+        10.0
+      ]
+    ],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 4950,
+    "price_date": "2026-10-18",
+    "source": "https://www.naturesprotection.jp/items29_wd-gffish-a",
+    "checked": "2026-10-18",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "b3-food-38": {
+    "id": "b3-food-38",
+    "label": "ネイチャーズプロテクション ホワイトドッグ グレインフリー サーモン アダルト",
+    "ingredients": [
+      "魚"
+    ],
+    "ingredient_text": "サーモン40%(乾燥して細かく挽いたもの)、乾燥ポテトパルプ、サツマイモ、ポートリー脂肪、エンドウ豆",
+    "target": "体重10kg以下の小型犬成犬",
+    "age": [
+      "成犬"
+    ],
+    "age_range": null,
+    "breed": [
+      "マルチーズ"
+    ],
+    "all_breeds": false,
+    "weight": [
+      [
+        0,
+        10.0
+      ]
+    ],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 4950,
+    "price_date": "2026-10-18",
+    "source": "https://www.naturesprotection.jp/items30_wd-gfsalmon-a",
+    "checked": "2026-10-18",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "b3-food-39": {
+    "id": "b3-food-39",
+    "label": "ネイチャーズプロテクション ホワイトドッグ グレインフリー ニシン アダルト",
+    "ingredients": [
+      "魚"
+    ],
+    "ingredient_text": "ニシン35%(乾燥および細かく粉砕), 乾燥ポテトパルプ, エンドウ豆, ポートリー脂肪, シュガービートパルプ",
+    "target": "体重10kg以下の小型、超小型白毛犬種を対象としたドッグフードです。 / 小型犬成犬用",
+    "age": [
+      "成犬"
+    ],
+    "age_range": null,
+    "breed": [
+      "マルチーズ"
+    ],
+    "all_breeds": false,
+    "weight": [
+      [
+        0,
+        10.0
+      ]
+    ],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 9900,
+    "price_date": "2026-10-18",
+    "source": "https://www.naturesprotection.jp/items34_wd-herring",
+    "checked": "2026-10-18",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "b3-food-41": {
+    "id": "b3-food-41",
+    "label": "ネイチャーズプロテクション ホワイトドッグ グレインフリー サーモン ジュニア",
+    "ingredients": [
+      "魚"
+    ],
+    "ingredient_text": "サーモン44%(乾燥して細かく挽いたもの), 乾燥ポテトパルプ, サツマイモ, ポートリー脂肪, エンドウ豆",
+    "target": "生後3~12ヶ月の小型犬仔犬(成犬時の体重10kg以下)",
+    "age": [],
+    "age_range": null,
+    "breed": [
+      "マルチーズ"
+    ],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": null,
+    "price_date": "2026-10-18",
+    "source": "https://www.naturesprotection.jp/items31_wd-gfsalmon-j",
+    "checked": "2026-10-18",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "b3-food-42": {
+    "id": "b3-food-42",
+    "label": "ネイチャーズプロテクション レッドコート 小粒成犬用",
+    "ingredients": [
+      "鶏",
+      "羊",
+      "七面鳥",
+      "米",
+      "大麦",
+      "鴨"
+    ],
+    "ingredient_text": "ポートリーミール(チキン、ターキー、ダックの肉を乾燥させて細かく挽いたもの)37%、米、大麦、ポートリー脂肪、ラムミール(ラム肉を乾燥させて細かく挽いたもの)",
+    "target": "個別公式の対象年齢を参照 / 成犬用",
+    "age": [
+      "成犬"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "小粒",
+    "concern": [],
+    "price": 4950,
+    "price_date": "2026-10-18",
+    "source": "https://www.naturesprotection.jp/cms/items15_red",
+    "checked": "2026-10-18",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "b3-food-43": {
+    "id": "b3-food-43",
+    "label": "ネイチャーズプロテクション ダークコート 黒い被毛の成犬用",
+    "ingredients": [
+      "鶏",
+      "七面鳥",
+      "魚",
+      "米",
+      "大麦",
+      "鴨"
+    ],
+    "ingredient_text": "ポートリーミール(チキン、ターキー、ダックの肉を乾燥させて細かく挽いたもの)36%、米、サツマイモ、サーモンミール、大麦",
+    "target": "黒い被毛の成犬用",
+    "age": [
+      "成犬"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [
+      "皮膚・被毛の健康維持"
+    ],
+    "price": null,
+    "price_date": "2026-10-18",
+    "source": "https://www.naturesprotection.jp/items23_black",
+    "checked": "2026-10-18",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "b3-food-44": {
+    "id": "b3-food-44",
+    "label": "ネイチャーズプロテクション ライフスタイル グレインフリー ポートリー 成犬用",
+    "ingredients": [
+      "鶏",
+      "七面鳥",
+      "鴨"
+    ],
+    "ingredient_text": "ポートリーミール40%(チキン、ダック、ターキー),ジャガイモフレーク,ジャガイモペレット,ポートリー脂肪,エンドウ豆",
+    "target": "全犬種成犬用",
+    "age": [
+      "成犬"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": true,
+    "weight": [
+      [
+        0,
+        null
+      ]
+    ],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": null,
+    "price_date": "2026-10-18",
+    "source": "https://www.naturesprotection.jp/dog/items24_lsportree",
+    "checked": "2026-10-18",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "b3-food-45": {
+    "id": "b3-food-45",
+    "label": "ネイチャーズプロテクション ライフスタイル グレインフリー ラム 成犬用",
+    "ingredients": [
+      "羊"
+    ],
+    "ingredient_text": "ラムミール38%、ジャガイモフレーク、ラム脂肪、エンドウ豆、ビートパルプ",
+    "target": "全犬種成犬用",
+    "age": [
+      "成犬"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": true,
+    "weight": [
+      [
+        0,
+        null
+      ]
+    ],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": null,
+    "price_date": "2026-10-18",
+    "source": "https://www.naturesprotection.jp/dog/items25_lslamb",
+    "checked": "2026-10-18",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "b3-food-46": {
+    "id": "b3-food-46",
+    "label": "ネイチャーズプロテクション ライフスタイル グレインフリー サーモン 成犬用",
+    "ingredients": [
+      "鶏",
+      "七面鳥",
+      "魚",
+      "鴨"
+    ],
+    "ingredient_text": "サーモンミール42%、ジャガイモフレーク、サツマイモ、エンドウ豆、ポートリー (チキン、ダック、 ターキー)脂肪",
+    "target": "全犬種成犬用",
+    "age": [
+      "成犬"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": true,
+    "weight": [
+      [
+        0,
+        null
+      ]
+    ],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": null,
+    "price_date": "2026-10-18",
+    "source": "https://www.naturesprotection.jp/dog/items26_lssalmon",
+    "checked": "2026-10-18",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "b3-food-47": {
+    "id": "b3-food-47",
+    "label": "ネイチャーズプロテクション ライフスタイル グレインフリー サーモン&クリル 小",
+    "ingredients": [
+      "鶏",
+      "七面鳥",
+      "魚",
+      "鴨"
+    ],
+    "ingredient_text": "サーモンミール44%、ポテトフレーク、エンドウ豆、ポートリー(チキン、ダック、ターキー)脂肪、サツマイモ",
+    "target": "小型犬種成犬用 / 体重1-10kg",
+    "age": [
+      "成犬"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [
+      [
+        1.0,
+        10.0
+      ]
+    ],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 4950,
+    "price_date": "2026-10-18",
+    "source": "https://www.naturesprotection.jp/dog/items28_lskrill",
+    "checked": "2026-10-18",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "b3-food-49": {
+    "id": "b3-food-49",
+    "label": "ネイチャーズプロテクション ミニアダルト",
+    "ingredients": [
+      "魚",
+      "とうもろこし"
+    ],
+    "ingredient_text": "家禽ミール、トウモロコシ、家禽脂肪、コーングルテン、フィッシュミール",
+    "target": "10kg以下の小型犬 / ミニアダルト",
+    "age": [
+      "成犬"
+    ],
+    "age_range": null,
+    "breed": [],
+    "all_breeds": false,
+    "weight": [
+      [
+        0,
+        10.0
+      ]
+    ],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": 4950,
+    "price_date": "2026-10-18",
+    "source": "https://www.naturesprotection.jp/cms/items10_madult",
+    "checked": "2026-10-18",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
+  },
+  "b3-food-50": {
+    "id": "b3-food-50",
+    "label": "ネイチャーズプロテクション ミニシニア",
+    "ingredients": [
+      "鶏",
+      "七面鳥",
+      "米",
+      "鴨"
+    ],
+    "ingredient_text": "ポートリーミール(チキン、ターキー、ダック肉を乾燥させて細かく挽いたもの)37%、ソルガム(モロコシ)、米、トウモロコシ、トウモロコシグルテン",
+    "target": "7歳以上の小型犬",
+    "age": [
+      "シニア"
+    ],
+    "age_range": [
+      84.0,
+      null
+    ],
+    "breed": [],
+    "all_breeds": false,
+    "weight": [],
+    "adult_weight": [],
+    "form": "ドライ",
+    "texture": [],
+    "grain": "",
+    "concern": [],
+    "price": null,
+    "price_date": "2026-10-18",
+    "source": "https://www.naturesprotection.jp/cms/items12_msenior",
+    "checked": "2026-10-18",
+    "limited_puppy": false,
+    "caution": "対象年齢・体格、全原材料表示、給与量と切替方法を確認してください。原材料名だけでアレルギーへの適合は判断できません。療法食の代用にはしないでください。",
+    "additives": [],
+    "additive_evidence": {}
   }
 };
