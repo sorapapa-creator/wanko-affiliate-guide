@@ -354,7 +354,7 @@
 <meta property="og:image:alt" content="黄色いおもちゃで遊ぶダックスフンド">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://sorapapa-creator.github.io/wanko-affiliate-guide/route-planner/">
-</head>
+<link rel="stylesheet" href="../assets/design-fixes.css?v=20261019"></head>
 <body><!-- wanko-pr-notice --><p class="pr-notice" role="note"><b>本ページはプロモーション(広告)を含みます。</b>紹介している宿・商品のリンクから予約・購入があると、運営者に紹介料が入ることがあります。</p>
 <div class="wrap">
   <h1>わんこ旅行プラン</h1><p style="margin:4px 0 12px;font-size:14px"><a href="../dog-lodging-guide.html">犬と泊まれる宿</a>　<a href="../east-japan-dog-trips.html">犬とおでかけ</a>　<a href="../rest-stops.html">犬と休めるSA・PA・道の駅</a>　<a href="../travel-gear.html">旅行の持ち物（犬用品）</a>　<a href="../goods.html">毎日の犬用品</a>　<a href="../wear.html">犬服・ウェア</a>　<a href="../food.html">主食</a></p>
@@ -376,16 +376,16 @@
     <p class="note">空室検索は、掲載日程(次の 8 週末と祝前日)の 1 泊・大人 2 名または 4 名に対応しています。ほかの日程・人数・子ども連れは、宿を選んだあと予約先でご確認ください。</p>
     <p class="hint">次の週末にどこなら泊まれるか、から決めたいときに。掲載宿(犬の条件を確認済み)のうち楽天トラベルに空室がある宿を、犬の条件と出発地からの所要時間で並べます。見つかったら「この宿で旅行プランを作る」で、そのまま往復の行程を作れます。</p>
     <div class="row four">
-      <div><label class="t planner-field-label" for="vc-date"><span>チェックイン日</span><small>CHECK-IN</small></label><select id="vc-date"><option value="">読み込み中…</option></select></div>
-      <div><label class="t planner-field-label" for="vc-origin"><span>出発地(主要駅)</span><small>FROM</small></label><select id="vc-origin"><option value="tokyo">東京駅</option></select><div class="origin-search"><input type="search" id="vc-origin-q" placeholder="一覧にない駅は駅名で探す(読みでも可)" autocomplete="off" aria-label="駅名で出発地を探す" aria-controls="vc-origin-sug" aria-expanded="false"><div id="vc-origin-sug" class="sug hidden" role="listbox"></div></div></div>
-      <div><label class="t planner-field-label" for="vc-adults"><span>人数(大人)</span><small>ADULTS</small></label><select id="vc-adults"><option value="2" selected>2名(夫婦・カップル)</option><option value="4">4名(家族)</option></select></div>
-      <div><label class="t planner-field-label" for="vc-budget"><span>予算(1泊・上限)</span><small>BUDGET</small></label>
+      <div><label class="t planner-field-label" for="vc-date"><span>チェックイン日</span></label><select id="vc-date"><option value="">読み込み中…</option></select></div>
+      <div><label class="t planner-field-label" for="vc-origin"><span>出発地(主要駅)</span></label><select id="vc-origin"><option value="tokyo">東京駅</option></select><div class="origin-search"><input type="search" id="vc-origin-q" placeholder="一覧にない駅は駅名で探す(読みでも可)" autocomplete="off" aria-label="駅名で出発地を探す" aria-controls="vc-origin-sug" aria-expanded="false"><div id="vc-origin-sug" class="sug hidden" role="listbox"></div></div></div>
+      <div><label class="t planner-field-label" for="vc-adults"><span>人数(大人)</span></label><select id="vc-adults"><option value="2" selected>2名(夫婦・カップル)</option><option value="4">4名(家族)</option></select></div>
+      <div><label class="t planner-field-label" for="vc-budget"><span>予算(1泊・上限)</span></label>
         <select id="vc-budget"><option value="0">指定なし</option><option value="20000">2万円まで</option><option value="30000">3万円まで</option><option value="40000">4万円まで</option><option value="60000">6万円まで</option><option value="80000">8万円まで</option></select></div>
     </div>
     <div class="row three">
-      <div><label class="t planner-field-label" for="vc-size"><span>犬の大きさ</span><small>SIZE</small></label><select id="vc-size"><option value="small">小型(〜10kg)</option><option value="medium">中型(〜25kg)</option><option value="large">大型(25kg〜)</option></select></div>
-      <div><label class="t planner-field-label" for="vc-dogs"><span>頭数</span><small>DOGS</small></label><select id="vc-dogs"><option value="1">1頭</option><option value="2">2頭</option><option value="3">3頭以上</option></select></div>
-      <div><label class="t planner-field-label"><span>条件</span><small>FILTER</small></label>
+      <div><label class="t planner-field-label" for="vc-size"><span>犬の大きさ</span></label><select id="vc-size"><option value="small">小型(〜10kg)</option><option value="medium">中型(〜25kg)</option><option value="large">大型(25kg〜)</option></select></div>
+      <div><label class="t planner-field-label" for="vc-dogs"><span>頭数</span></label><select id="vc-dogs"><option value="1">1頭</option><option value="2">2頭</option><option value="3">3頭以上</option></select></div>
+      <div><label class="t planner-field-label"><span>条件</span></label>
         <div class="chips"><label><input type="checkbox" id="vc-petonly" checked> 犬対応プランの空室がある宿だけ</label><label><input type="checkbox" id="vc-sleep"> 添い寝したい</label><label><input type="checkbox" id="vc-strict" checked> 条件に合わない記載のある宿は出さない</label></div></div>
     </div>
     <div class="actions"><button type="button" class="primary" id="vc-go">空室のある宿を探す</button></div>
@@ -397,7 +397,7 @@
   <form id="form" autocomplete="off">
     <div class="row two">
       <fieldset>
-        <label class="t planner-field-label" for="origin"><span>出発地</span><small>FROM</small></label>
+        <label class="t planner-field-label" for="origin"><span>出発地</span></label>
         <select id="origin">
           <optgroup label="東京・神奈川"><option value="35.6812,139.7671">東京駅</option><option value="35.6896,139.7006">新宿駅</option><option value="35.7138,139.7773">上野駅</option><option value="35.6982,139.4137">立川駅</option><option value="35.4658,139.6223">横浜駅</option><option value="35.5313,139.6969">川崎駅</option><option value="35.2564,139.1550">小田原駅</option><option value="35.5442,139.4463">町田駅</option><option value="35.6553,139.3389">八王子駅</option><option value="35.3386,139.4875">藤沢駅</option><option value="35.3192,139.5503">鎌倉駅</option><option value="35.4390,139.3640">本厚木駅</option><option value="35.5940,139.3420">橋本駅</option><option value="35.7312,139.7084">池袋駅</option><option value="35.6307,139.7374">品川駅</option><option value="35.6587,139.7001">渋谷駅</option><option value="35.5457,139.7761">羽田空港</option><option value="35.5815,139.3707">相模原駅</option><option value="35.3274,139.3492">平塚駅</option><option value="35.2797,139.6701">横須賀中央駅</option><option value="35.4522,139.3917">海老名駅</option></optgroup>
           <optgroup label="埼玉・千葉"><option value="35.9063,139.6240">大宮駅</option><option value="35.9067,139.4827">川越駅</option><option value="35.6130,140.1136">千葉駅</option><option value="35.7013,139.9856">船橋駅</option><option value="35.3812,139.9249">木更津駅</option><option value="35.6500,139.9130">新浦安駅</option><option value="35.8617,139.9706">柏駅</option><option value="35.7777,140.3140">成田駅</option><option value="34.9962,139.8616">館山駅</option><option value="35.1076,140.1037">安房鴨川駅</option><option value="35.1527,140.3197">勝浦駅</option><option value="35.4260,140.3030">茂原駅</option><option value="35.7350,140.8270">銚子駅</option><option value="35.5167,140.3100">大網駅</option><option value="35.8976,140.4950">佐原駅</option><option value="36.1390,139.3890">熊谷駅</option><option value="35.9900,139.0850">秩父駅</option><option value="35.7759,140.3933">成田空港</option><option value="35.7868,139.4733">所沢駅</option><option value="35.8883,139.7860">越谷駅</option><option value="35.9801,139.7521">春日部駅</option><option value="35.7845,139.9002">松戸駅</option><option value="35.7288,139.9082">市川駅</option><option value="35.8019,139.7175">川口駅</option></optgroup>
@@ -411,7 +411,7 @@
         <div class="hint">各駅の周辺を出発地点の目安として計算します。細かな住所ではないため、到着先も含めルートを確認してください。</div>
       </fieldset>
       <fieldset>
-        <label class="t planner-field-label" for="dest-q"><span>行き先の種類を選ぶ</span><small>DESTINATION</small></label>
+        <label class="t planner-field-label" for="dest-q"><span>行き先の種類を選ぶ</span></label>
         <div class="destination-choice-guide" aria-label="行き先の区分">
           <div><strong>宿泊先</strong><span>犬と泊まる場所</span></div>
           <div><strong>おでかけ先</strong><span>カフェ・ラン・観光</span></div>
@@ -423,7 +423,7 @@
       </fieldset>
     </div>
     <fieldset>
-      <label class="t planner-field-label" for="add-wp"><span>立ち寄り先(任意・3か所まで)</span><small>STOPS</small></label>
+      <label class="t planner-field-label" for="add-wp"><span>立ち寄り先(任意・3か所まで)</span></label>
       <button type="button" class="sub" id="find-wp-route">ルート沿いの候補を探す</button>
       <p class="hint" id="wp-route-status" role="status" aria-live="polite">出発地・行き先・出発日時を選んでから「ルート沿いの候補を探す」を押してください（「＋ 立ち寄り先を追加」でも探します）。</p>
       <div id="wps"></div>
@@ -431,19 +431,19 @@
       <div class="hint">候補は、立ち寄り前のルート(出発地→行き先)から直線30km以内のおでかけ先とSA・PA・道の駅です(宿は入れません)。区分ごとに50音順で選べます（読み未登録の英字名は末尾に表記順）。出発地 → 立ち寄り先（上から順）→ 行き先の順に回ります。距離は直線距離で、実際の走行距離・迂回距離とは異なります。「地域の目安」は市町村などの代表点による概算です。位置未登録の施設は含みません。15分以上の滞在は犬の休憩としても数えます。</div>
     </fieldset>
     <div class="row four">
-      <fieldset><label class="t planner-field-label" for="date"><span>出発日</span><small>DATE</small></label><input type="date" id="date" required></fieldset>
-      <fieldset><label class="t planner-field-label" for="start"><span>出発時刻</span><small>START TIME</small></label><input type="time" id="start" value="05:00" step="1800"></fieldset>
-      <fieldset><label class="t planner-field-label" for="step"><span>比較間隔</span><small>INTERVAL</small></label>
+      <fieldset><label class="t planner-field-label" for="date"><span>出発日</span></label><input type="date" id="date" required></fieldset>
+      <fieldset><label class="t planner-field-label" for="start"><span>出発時刻</span></label><input type="time" id="start" value="05:00" step="1800"></fieldset>
+      <fieldset><label class="t planner-field-label" for="step"><span>比較間隔</span></label>
         <select id="step"><option value="60">1時間ごと</option><option value="30">30分ごと</option></select></fieldset>
-      <fieldset><label class="t planner-field-label" for="count"><span>比較数</span><small>OPTIONS</small></label>
+      <fieldset><label class="t planner-field-label" for="count"><span>比較数</span></label>
         <select id="count"><option>4</option><option selected>6</option><option>8</option></select></fieldset>
     </div>
     <fieldset>
       <legend>うちの子について</legend>
       <div class="row two">
-        <div><label class="t planner-field-label" for="size"><span>体格</span><small>DOG SIZE</small></label>
+        <div><label class="t planner-field-label" for="size"><span>体格</span></label>
           <select id="size"><option value="small">小型犬</option><option value="medium">中型犬</option><option value="large">大型犬</option></select></div>
-        <div><label class="t planner-field-label" for="age"><span>年齢</span><small>AGE</small></label>
+        <div><label class="t planner-field-label" for="age"><span>年齢</span></label>
           <select id="age"><option value="adult">成犬</option><option value="puppy">子犬(1歳未満)</option><option value="senior">シニア(7歳以上)</option></select></div>
       </div>
       <div class="chips" style="margin-top:8px">
@@ -455,10 +455,10 @@
       </div>
       <p class="hint" id="cert-hint"></p>
       <div class="row three" style="margin-top:8px">
-        <div><label class="t planner-field-label" for="toilet"><span>トイレの間隔</span><small>TOILET</small></label>
+        <div><label class="t planner-field-label" for="toilet"><span>トイレの間隔</span></label>
           <select id="toilet"><option value="">気にしない(休憩の目安どおり)</option><option value="90">1時間30分ごと</option><option value="120">2時間ごと</option><option value="180">3時間ごと</option></select></div>
-        <div><label class="t planner-field-label" for="meal-time"><span>ごはんの時刻(任意)</span><small>MEAL</small></label><input type="time" id="meal-time" step="900"></div>
-        <div><label class="t planner-field-label" for="med-time"><span>薬の時刻(任意)</span><small>MEDICINE</small></label><input type="time" id="med-time" step="900"></div>
+        <div><label class="t planner-field-label" for="meal-time"><span>ごはんの時刻(任意)</span></label><input type="time" id="meal-time" step="900"></div>
+        <div><label class="t planner-field-label" for="med-time"><span>薬の時刻(任意)</span></label><input type="time" id="med-time" step="900"></div>
       </div>
       <div class="hint">休憩の間隔は、成犬は2時間、子犬・シニア・車酔いする子は1時間、暑さに弱い子・短頭種は夏季1.5時間、トイレの間隔を入れた場合はその間隔を目安にします。ヒート中は受け入れない宿・ドッグランが多いので、行程表で確認事項として出します。持病がある子は獣医さんの指示を優先してください。</div>
     </fieldset>
@@ -467,11 +467,11 @@
       <p class="hint">入れた場合だけ、結果の下に「宿の空室の確かめ方・犬の条件・天気・この日程の犬イベント」を出します。空欄のままなら、これまでと同じ結果です。ここで入れた内容は外部に送りません(このページの中だけで使います)。</p>
       <div class="row four">
         <fieldset><label class="t planner-field-label" for="checkout"><span>チェックアウト日</span><small>泊まる場合</small></label><input type="date" id="checkout"></fieldset>
-        <fieldset><label class="t planner-field-label" for="adults"><span>大人の人数</span><small>ADULTS</small></label>
+        <fieldset><label class="t planner-field-label" for="adults"><span>大人の人数</span></label>
           <select id="adults"><option value="">未選択</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></fieldset>
-        <fieldset><label class="t planner-field-label" for="dogs"><span>犬の頭数</span><small>DOGS</small></label>
+        <fieldset><label class="t planner-field-label" for="dogs"><span>犬の頭数</span></label>
           <select id="dogs"><option value="">未選択</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></fieldset>
-        <fieldset><label class="t planner-field-label" for="dog-kg"><span>いちばん重い子の体重</span><small>KG</small></label><input type="number" id="dog-kg" min="0.5" max="90" step="0.1" inputmode="decimal" placeholder="例 6.5"></fieldset>
+        <fieldset><label class="t planner-field-label" for="dog-kg"><span>いちばん重い子の体重(kg)</span></label><input type="number" id="dog-kg" min="0.5" max="90" step="0.1" inputmode="decimal" placeholder="例 6.5"></fieldset>
       </div>
       <p class="hint">チェックイン日は上の「出発日」です。犬の条件は、宿が公式に一律の上限(頭数・体重・大きさ)を書いている場合だけ照らし合わせ、それ以外は「要確認」と表示します。</p>
     </details>
@@ -541,7 +541,7 @@
 
     <div class="card hidden" id="nearby-card">
       <h2>行き先の近くで犬と行ける場所</h2>
-      <label class="t planner-field-label" for="nearby-select"><span>近くの掲載先</span><small>NEARBY</small></label>
+      <label class="t planner-field-label" for="nearby-select"><span>近くの掲載先</span></label>
       <select id="nearby-select"><option value="">掲載先を選ぶと、ここに詳細が出ます</option></select><div id="nearby-detail" aria-live="polite"></div>
       <p class="hint" id="nearby-select-hint">候補の選択後、施設情報の該当位置を開きます。</p>
       <p class="hint">下の一覧でチェックした場所は、<b>到着日</b>なら行き先に着いたあとに順番に回る予定として、<b>帰る日</b>なら「帰りのプラン」で帰り道に経由する予定として、最終行程表に時刻つきで入ります(日帰りで経由をONにすると、チェックした場所は全部帰り道に回ります)。</p>
@@ -555,10 +555,10 @@
       <h2>帰りのプラン（帰宅は何時？）</h2>
       <p class="hint">行き先(宿・おでかけ先)から出発地へ戻る時間を、出発日と同じ方法で計算します。「帰る日」に選んだ近くの場所は帰り道に経由でき(日帰りはチェックした場所を全部)、長い区間には休憩の候補を出します。往路の出発時刻・休憩や近くの場所の選択を変えたら、もう一度計算してください。</p>
       <div class="row three">
-        <div><label class="t planner-field-label" for="ret-day"><span>帰る日</span><small>RETURN DAY</small></label>
+        <div><label class="t planner-field-label" for="ret-day"><span>帰る日</span></label>
           <select id="ret-day"><option value="1">到着日(日帰り)</option><option value="2" selected>翌日</option><option value="3">翌々日</option></select></div>
-        <div><label class="t planner-field-label" for="ret-start"><span>出発時刻</span><small>DEPART</small></label><input type="time" id="ret-start" value="10:00" step="900"></div>
-        <div><label class="t planner-field-label" for="ret-via"><span>近くの場所を経由</span><small>VIA</small></label><label class="chips"><input type="checkbox" id="ret-via" checked> チェックした「近くの掲載先」を帰り道に回る</label></div>
+        <div><label class="t planner-field-label" for="ret-start"><span>出発時刻</span></label><input type="time" id="ret-start" value="10:00" step="900"></div>
+        <div><label class="t planner-field-label" for="ret-via"><span>近くの場所を経由</span></label><label class="chips"><input type="checkbox" id="ret-via" checked> チェックした「近くの掲載先」を帰り道に回る</label></div>
       </div>
       <div class="actions"><button type="button" class="primary" id="ret-go">帰りの時間を計算</button></div>
       <p class="note" id="ret-status"></p>
