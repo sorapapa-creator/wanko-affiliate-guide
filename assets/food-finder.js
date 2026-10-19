@@ -5,9 +5,14 @@ let wankoFoodGroups = [];
 let wankoFoodSort = 'default';
 let wankoFoodReady = false;
 const wankoFoodFacts = typeof window === 'undefined' ? {} : (window.WANKO_FOOD_FACTS || {});
+// perf-20261019: カードごとの商品データは最初の1回だけ探して覚える(絞り込みのたびに querySelector しない)。
+const wankoFoodRecordCache = new WeakMap();
 function wankoFoodRecord(card) {
+  if (wankoFoodRecordCache.has(card)) return wankoFoodRecordCache.get(card);
   const link=card.querySelector('a[data-product]');
-  return link ? wankoFoodFacts[link.dataset.product] : undefined;
+  const record = link ? wankoFoodFacts[link.dataset.product] : undefined;
+  wankoFoodRecordCache.set(card, record);
+  return record;
 }
 function wankoFoodValues(value) { return Array.isArray(value) ? value.filter(Boolean) : (value ? [value] : []); }
 function wankoFoodHasFilters(state) {
@@ -94,11 +99,18 @@ function wankoFoodAfterRender(cards,shown,active){
   const sorted=[...cards];
   if(active==='毎日の主食' && wankoFoodSort!=='default')sorted.sort((a,b)=>wankoFoodPriceCompare(wankoFoodRecord(a),wankoFoodRecord(b),wankoFoodSort==='price'?1:-1));
   // Move the actual nodes: keyboard and screen-reader order matches visual order.
+  // perf-20261019: すでに同じ並びなら動かさない(毎回 全カードを付け直すと、描画のやり直しが大きい)。
   const parent=cards[0] && cards[0].parentElement;
-  if(parent)sorted.forEach(c=>parent.append(c));
+  if(parent){
+    let tail=parent.lastElementChild,same=true;
+    for(let i=sorted.length-1;i>=0;i--){if(tail!==sorted[i]){same=false;break;}tail=tail.previousElementSibling;}
+    if(!same)parent.append(...sorted);
+  }
   cards.forEach(c=>{
     const p=wankoFoodRecord(c);if(!p)return;
     let info=c.querySelector('.ff-card-info');
+    // perf-20261019: メモは表示中のカードにだけ作る(隠れているカードは、表示されたときに作る)。
+    if(!info&&c.hidden)return;
     if(!info){info=document.createElement('div');info.className='ff-card-info';c.querySelector('.card-body').append(info);}
     info.hidden=active!=='毎日の主食'&&!has;
     if(info.childNodes.length)return;
@@ -121,9 +133,11 @@ function wankoFoodInit(onChange,onReset){
   wankoFoodControls=[...document.querySelectorAll('[data-food-filter]')];
   wankoFoodGroups=[...document.querySelectorAll('[data-food-group]')];
   // Catalogue-wide counts make sparse/unknown traits visible before choosing them.
+  // perf-20261019: 主食候補の一覧は1回だけ作り、選択肢ごとに全カードを探し直さない。
+  const staples=[...document.querySelectorAll('.grid article.card')].filter(c=>(c.dataset.problems||'').split('|').includes('毎日の主食')).map(wankoFoodRecord);
   wankoFoodControls.filter(el=>el.tagName==='SELECT').forEach(el=>{
     [...el.options].filter(o=>o.value).forEach(o=>{
-      const total=[...document.querySelectorAll('.grid article.card')].filter(c=>(c.dataset.problems||'').split('|').includes('毎日の主食')&&wankoFoodMatches(wankoFoodRecord(c),{[el.dataset.foodFilter]:o.value})).length;
+      const total=staples.filter(p=>wankoFoodMatches(p,{[el.dataset.foodFilter]:o.value})).length;
       o.textContent+=`（主食候補・単独条件 ${total}品）`;o.disabled=total===0;
     });
   });
@@ -149,4 +163,19 @@ function wankoFoodInit(onChange,onReset){
     const result=wankoFoodCost(...values),out=document.querySelector('#ff-cost-result');
     out.textContent=result?`1食あたり 約${result.meal.toLocaleString('ja-JP',{maximumFractionDigits:1})}円 ／ 1日 約${result.day.toLocaleString('ja-JP',{maximumFractionDigits:1})}円 ／ 月あたり（30日分）約${Math.round(result.month).toLocaleString()}円 ／ 約${result.days.toFixed(1)}日分`:'価格・内容量・1日量は0より大きい数値、食事回数は1〜12の整数を入力してください。';
   }));
+}
+// perf-20261019: 検索欄の手入力は打ち終わるまで少し待ってから1回だけ絞り込む。
+// ほかのスクリプトが送る input(isTrusted でない)はこれまでどおりすぐ反映し、待っている間にどこかが押されたら先に反映する。
+function wankoTypedInput(fn,ms=150){
+  let timer=0;
+  const flush=()=>{if(timer){clearTimeout(timer);timer=0;fn();}};
+  if(typeof document!=='undefined')document.addEventListener('click',flush,true);
+  return e=>{clearTimeout(timer);timer=0;if(e&&e.isTrusted)timer=setTimeout(()=>{timer=0;fn();},ms);else fn();};
+}
+// perf-20261019: カード本文(小文字)を最初に使うときに1回だけ作って覚える(検索のたびに textContent を作り直さない)。
+const wankoCardTextCache = new WeakMap();
+function wankoCardText(card){
+  let text=wankoCardTextCache.get(card);
+  if(text===undefined){text=card.textContent.toLowerCase();wankoCardTextCache.set(card,text);}
+  return text;
 }
