@@ -1,0 +1,76 @@
+/* design-fixes 2026-10-19: AI っぽさの点検(wanko-route-planner/handoff/site-review/ai-look-audit-20261019.md)の上位 5 件。
+   基準は design-system.md、避ける見た目は avoid-list.md。各ページの </head> 直前で読み込み、ページ内 <style> より後に効かせる。 */
+
+/* 1. 英字の小さなラベル(avoid-list 11): 宿カードの「CHECK」は生成ツールが 839 枚に書いているため、ここで隠す(新規カードは生成ツール側で出さない) */
+.amenity > div > span { display: none; }
+
+/* 2. ボタンのグラデーションと色つきの影(avoid-list 1・2)→ 主ボタンの基準(単色 --green・角 4px・太さ 700・影なし) */
+.stay-book-btn,
+.stay-book .stay-book-btn,
+.secondary-offer-code a.buy-ad,
+.amz-ad .buy-ad,
+.amz-ad a.buy-ad {
+  background: var(--green);
+  background-image: none;
+  box-shadow: none;
+  border-radius: 4px;
+  font-weight: 700;
+}
+.stay-book-btn:hover,
+.stay-book .stay-book-btn:hover,
+.secondary-offer-code a.buy-ad:hover,
+.amz-ad .buy-ad:hover,
+.amz-ad a.buy-ad:hover { background: var(--deep); box-shadow: none; }
+
+/* 3. 見出しを文節で折り返す(avoid-list 14) */
+h1, h2, h3, h4 { word-break: auto-phrase; text-wrap: balance; }
+.stay-times b { white-space: nowrap; }
+
+/* 4. 12px 未満の文字をなくす(avoid-list 18、design-system の最小 12px) */
+.facts span,
+.problem-tags span,
+.card-top .category,
+.card-top .verified,
+.stay-toggle-copy small,
+.stay-photo-frame .photo-credit,
+.stay-photo-frame figcaption small,
+.stay-review-latest-note,
+.path-number,
+.aw-tag,
+.ad strong,
+.a8-ad-label,
+.review-box strong,
+.review-box small,
+.review-box small a,
+.review-box li,
+.review-box b,
+.trust-box strong,
+.trust-box p,
+.daily-food-points p,
+.guide-fold summary,
+.guide-fold summary span,
+.k9-guide button,
+.entry-osharebancho small,
+.cg-choices button small,
+.entry-links a small,
+.review-columns b,
+.review-columns li,
+.daily-food-points li small,
+.daily-food-points p span,
+.inquiry-wrap label span,
+.guide-photo span,
+.moments-link,
+.moments-link span,
+.stay-card figcaption small,
+.eyebrow,
+.daily-food-kicker,
+.entry-osharebancho small,
+.entry-band small span,
+.inquiry-wrap label span,
+.planner-field-label small,
+.destination-choice-guide span,
+.contact-actions p { font-size: 12px !important; }
+/* 購入ボタンはパソコン幅で 11px になる(editorial.css の .buy)。予約ボタン(14px)は除く */
+@media (min-width: 681px) {
+  .buy:not(.stay-book-btn), .buy-ad:not(.stay-book-btn) { font-size: 12px; }
+}
