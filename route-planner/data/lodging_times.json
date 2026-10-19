@@ -31,14 +31,6 @@
   "last_checkin": "19:00",
   "fetched_at": "2026-10-14T13:01"
  },
- "forest-hills-nasu": {
-  "hotelNo": "935",
-  "name": "那須温泉　ホテルフォレストヒルズ那須　ｗｉｔｈ　ＤＯＧＳ",
-  "checkin": "15:00",
-  "checkout": "10:00",
-  "last_checkin": "18:00",
-  "fetched_at": "2026-10-14T13:01"
- },
  "risonare-nasu": {
   "hotelNo": "177663",
   "name": "リゾナーレ那須",
@@ -623,14 +615,6 @@
   "last_checkin": "19:30",
   "fetched_at": "2026-10-14T13:03"
  },
- "c2-sugarbeach-oarai": {
-  "hotelNo": "191726",
-  "name": "Ｓｕｇａｒ　Ｂｅａｃｈ　Ｏａｒａｉ（シュガービーチ大洗）",
-  "checkin": "15:00",
-  "checkout": "10:00",
-  "last_checkin": "18:00",
-  "fetched_at": "2026-10-14T13:03"
- },
  "c2-dogvillage-daigamori": {
   "hotelNo": "193420",
   "name": "台ヶ森温泉山野川旅館　ＤｏｇＶｉｌｌａｇｅ台ヶ森",
@@ -645,14 +629,6 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "22:00",
-  "fetched_at": "2026-10-14T13:03"
- },
- "c2-pica-chichibu-doggy": {
-  "hotelNo": "149179",
-  "name": "ＰＩＣＡ秩父",
-  "checkin": "15:00",
-  "checkout": "10:00",
-  "last_checkin": "19:00",
   "fetched_at": "2026-10-14T13:03"
  },
  "c2-gassan-polepole": {
@@ -738,14 +714,6 @@
  "c3-joshuen": {
   "hotelNo": "1979",
   "name": "わんこと泊まる宿　弥彦の奥湯　上州苑",
-  "checkin": "15:00",
-  "checkout": "10:00",
-  "last_checkin": "18:00",
-  "fetched_at": "2026-10-14T13:03"
- },
- "c3-ajisai-cottage": {
-  "hotelNo": "192991",
-  "name": "ＯＮＳＥＮ　ＣＯＴＴＡＧＥ　ＡＪＩＳＡＩ",
   "checkin": "15:00",
   "checkout": "10:00",
   "last_checkin": "18:00",
@@ -3285,22 +3253,6 @@
   "checkin": "15:00",
   "checkout": "11:00",
   "last_checkin": "18:00",
-  "fetched_at": "2026-10-14T13:10"
- },
- "n0924-belnatio-carneria": {
-  "hotelNo": "13487",
-  "name": "あてま温泉　当間高原リゾート　ベルナティオ",
-  "checkin": "15:00",
-  "checkout": "11:00",
-  "last_checkin": "18:00",
-  "fetched_at": "2026-10-14T13:10"
- },
- "n0924-mercure-zao": {
-  "hotelNo": "8998",
-  "name": "メルキュール宮城蔵王リゾート＆スパ",
-  "checkin": "15:00",
-  "checkout": "11:00",
-  "last_checkin": "23:00",
   "fetched_at": "2026-10-14T13:10"
  },
  "c-ellspark-nagatoro": {
