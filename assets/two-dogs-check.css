@@ -1,0 +1,55 @@
+/* 2頭と初めて泊まる 宿泊前チェック(2026-10-22)。from-sns.css の上に載せる。影なし・角 4〜16px・12px 未満なし */
+.tdc-intro{margin:0 0 20px;padding:12px 16px;background:var(--accent-soft);border-radius:12px;font-size:.9rem;color:var(--text)}
+.tdc-form{display:grid;gap:16px}
+.tdc-q{margin:0;padding:14px 16px 10px;background:var(--panel);border:1px solid var(--line);border-radius:16px}
+.tdc-q legend{font-weight:700;font-size:1rem;line-height:1.5;padding:0 4px;word-break:auto-phrase}
+.tdc-num{display:inline-block;min-width:1.6em;margin-right:6px;padding:0 6px;border-radius:999px;background:var(--accent);color:#fff;text-align:center;font-size:.85rem}
+.tdc-hint{margin:6px 0 10px;color:var(--muted);font-size:.82rem}
+.tdc-q label{display:flex;gap:10px;align-items:flex-start;padding:9px 8px;border-top:1px solid var(--line);font-size:.95rem;cursor:pointer}
+.tdc-q label:first-of-type{border-top:0}
+.tdc-q input{margin:4px 0 0;flex:none;width:18px;height:18px;accent-color:var(--accent)}
+.tdc-q.is-missing{border-color:var(--accent)}
+.tdc-actions{margin:8px 0 0}
+.tdc-btn{display:block;width:100%;padding:14px 16px;border:0;border-radius:12px;background:var(--accent);color:#fff;font:inherit;font-weight:700;font-size:1rem;cursor:pointer}
+.tdc-btn:hover{background:#9c4f22}
+.tdc-btn:focus-visible{outline:3px solid #d9a26f;outline-offset:2px}
+.tdc-skip{margin:6px 0 0;text-align:center;font-size:.85rem}
+.tdc-skip a{color:var(--accent)}
+/* 結果ページ */
+.tdr-summary{margin:0 0 18px;padding:14px 16px;background:var(--panel);border:1px solid var(--line);border-radius:16px}
+.tdr-summary h2{margin:0 0 8px;font-size:1rem;color:var(--text)}
+.tdr-list{margin:0;padding:0;list-style:none;display:grid;gap:8px}
+.tdr-list li{display:grid;grid-template-columns:auto 1fr;gap:8px;align-items:start;font-size:.92rem}
+.tdr-list .st{display:inline-block;min-width:4.5em;padding:2px 8px;border-radius:999px;font-size:.78rem;font-weight:700;text-align:center;background:#fff7d9;color:#5a4a1a}
+.tdr-list .st.ok{background:#e4f3ea;color:#1f4d33}
+.tdr-list .st.ng{background:#fbe6e0;color:#7a2d16}
+.tdr-ask textarea{width:100%;min-height:200px;padding:12px;border:1px solid var(--line);border-radius:12px;font:inherit;font-size:.92rem;line-height:1.7;background:#fff;color:var(--text)}
+.tdr-copy{margin:8px 0 0;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.tdr-copy button{padding:10px 14px;border:1px solid var(--accent);border-radius:12px;background:#fff;color:var(--accent);font:inherit;font-weight:700;cursor:pointer}
+.tdr-copy small{color:var(--muted);font-size:.8rem}
+.tdr-cand{margin:0;padding:0;list-style:none;display:grid;gap:10px}
+.tdr-cand li{padding:12px 16px;background:var(--panel);border:1px solid var(--line);border-radius:16px;font-size:.9rem}
+.tdr-cand b{display:block;font-size:1rem}
+.tdr-cand .meta{display:block;color:var(--muted);font-size:.8rem;margin-top:4px}
+.tdr-cand a{color:var(--accent)}
+.tdr-branch{margin:0;padding:0;list-style:none;display:grid;gap:10px}
+.tdr-survey{margin-top:8px;padding:14px 16px;background:var(--panel);border:1px solid var(--line);border-radius:16px}
+.tdr-survey h2{margin:0 0 4px;font-size:1rem;color:var(--text)}
+.tdr-survey p.lead{margin:0 0 10px;color:var(--muted);font-size:.82rem}
+.tdr-survey label.q{display:block;font-weight:700;font-size:.92rem;margin:10px 0 4px}
+.tdr-survey select{width:100%;padding:10px;border:1px solid var(--line);border-radius:12px;font:inherit;font-size:.95rem;background:#fff;color:var(--text)}
+.tdr-survey .tdc-btn{margin-top:12px;background:#fff;color:var(--accent);border:1px solid var(--accent)}
+.tdr-survey .tdc-btn:hover{background:var(--accent-soft)}
+.tdr-trap{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.tdr-thanks{display:none;margin:0 0 16px;padding:12px 16px;background:#e4f3ea;border-radius:12px;color:#1f4d33;font-size:.9rem}
+.tdr-thanks.show{display:block}
+/* 準備 5 項目 */
+.tp5{margin:0;padding:0;list-style:none;display:grid;gap:12px}
+.tp5 li{padding:14px 16px;background:var(--panel);border:1px solid var(--line);border-radius:16px}
+.tp5 h2{margin:0 0 6px;font-size:1.05rem;color:var(--text);letter-spacing:0}
+.tp5 p{margin:4px 0;font-size:.9rem}
+.tp5 .who{color:var(--muted);font-size:.82rem}
+.tp5 .links{margin:8px 0 0;display:flex;gap:8px;flex-wrap:wrap}
+.tp5 .links a{display:inline-block;padding:8px 12px;border:1px solid var(--accent);border-radius:12px;color:var(--accent);text-decoration:none;font-size:.88rem;font-weight:700}
+.tp5 .links a.main{background:var(--accent);color:#fff}
+.tp5 .own{display:inline-block;margin-left:6px;padding:1px 8px;border-radius:999px;background:#e4f3ea;color:#1f4d33;font-size:.75rem;font-weight:700}
