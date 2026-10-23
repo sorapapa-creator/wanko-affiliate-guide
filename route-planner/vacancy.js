@@ -12,11 +12,14 @@
   let index = null;
   const cache = new Map();
 
-  async function loadIndex() {
-    if (index) return index;
-    const r = await fetch(`${BASE}index.json`, { cache: "no-cache" });
-    if (!r.ok) throw new Error("index");
-    index = await r.json();
+  // 読み込みの失敗は code 付きで投げる(fetch_error = 通信・形式の失敗、missing_date = ファイルがない)。W01
+  const codeErr = (code, msg) => Object.assign(new Error(msg || code), { code });
+  async function loadIndex(force) {
+    if (index && !force) return index;
+    let r;
+    try { r = await fetch(`${BASE}index.json`, { cache: "no-cache" }); } catch (e) { throw codeErr("fetch_error", "空室データを読み込めませんでした。"); }
+    if (!r.ok) throw codeErr(r.status === 404 ? "missing_date" : "fetch_error", "空室データを読み込めませんでした。");
+    try { index = await r.json(); } catch (e) { throw codeErr("fetch_error", "空室データを読み込めませんでした。"); }
     return index;
   }
   // 人数は 2 名(基本)と 4 名(家族)。4 名は <日付>-a4.json
@@ -28,9 +31,12 @@
   async function loadDate(ci, adults) {
     const key = `${ci}${adults === 2 ? "" : `-a${adults}`}`;
     if (cache.has(key)) { const c = cache.get(key); if (!validate(c, null)) return c; cache.delete(key); }
-    const r = await fetch(`${BASE}${key}.json`, { cache: "no-cache" });
-    if (!r.ok) throw new Error(adults === 2 ? "この日の空室データを読み込めませんでした。" : `${adults}名のデータはこの日はまだありません(2名で検索してください)。`);
-    const d = await r.json(); cache.set(key, d); return d;
+    let r;
+    try { r = await fetch(`${BASE}${key}.json`, { cache: "no-cache" }); } catch (e) { throw codeErr("fetch_error", "この日の空室データを読み込めませんでした。"); }
+    if (!r.ok) throw codeErr(r.status === 404 ? "missing_date" : "fetch_error", adults === 2 ? "この日の空室データを読み込めませんでした。" : `${adults}名のデータはこの日はまだありません(2名で検索してください)。`);
+    let d;
+    try { d = await r.json(); } catch (e) { throw codeErr("fetch_error", "この日の空室データを読み込めませんでした。"); }
+    cache.set(key, d); return d;
   }
   function fillDates() {
     if (!index) return;
@@ -39,12 +45,19 @@
     const isSat = (ci) => /\(土\)/.test(jstMd(ci));
     sel.replaceChildren(...dates.map((ci) => {
       const e = index.dates[ci]; const s = adults === 2 ? e : e[`a${adults}`];
-      const counts = s ? `空室 ${s.available}宿・犬対応プラン ${s.pet}宿${s.new ? `・新しく空室 ${s.new}宿` : ""}` : `${adults}名のデータなし`;
+      // 取得から 24 時間を超えた日は、古い空室数を出さない(W01)
+      const fresh = s ? RULES.stateOf(RULES.freshness(s.scanned_at || e.scanned_at)) : "missing_date";
+      const counts = !s ? `${adults}名のデータなし` : fresh === "expired" ? "空室情報の更新待ち" : fresh === "unknown_timestamp" ? "取得時刻を確認できません"
+        : `空室 ${s.available}宿・犬対応プラン ${s.pet}宿${s.new ? `・新しく空室 ${s.new}宿` : ""}`;
       return new Option(`${jstMd(ci)} 〜 ${jstMd(e.checkout)}${isSat(ci) ? "" : "・祝前日"}(${counts})`, ci);
     }));
     // 希望日にデータがないあいだは「選んでください」を選択したままにし、勝手に先頭(や直前)の日にしない
     if (sel.dataset.wish) { sel.prepend(new Option(`${jstMd(sel.dataset.wish)} は空室データなし — 日付を選んでください`, "")); sel.value = ""; }
     else if (cur && dates.includes(cur)) sel.value = cur;
+    else if (!cur) {  // 最初の表示は、空室を確認できる(取得から 24 時間以内の)いちばん近い日を選んでおく。古い日は一覧に「更新待ち」と残す
+      const fresh = dates.find((ci) => { const e = index.dates[ci]; const s = adults === 2 ? e : e[`a${adults}`]; return s && RULES.freshness(s.scanned_at || e.scanned_at) === "ok"; });
+      if (fresh) sel.value = fresh;
+    }
   }
 
   // 犬の条件の判定: 大きさ・体重・頭数は vacancy-rules.js の dogVerdict(data/dog_rules.json の公式の一律の上限)。
@@ -112,7 +125,7 @@
       const more = rows.length > SHOW ? `<button type="button" class="sub vc-more" data-g="${gi}">この地方の残り ${rows.length - SHOW} 件も見る</button>` : "";
       const prefBtns = prefs.size > 1 ? `<div class="vc-prefs" role="group" aria-label="${esc(region)}の県で絞る"><button type="button" class="vc-chip active" data-pref="">すべて</button>${[...prefs.entries()].sort((a, b) => b[1] - a[1]).map(([k, v]) => `<button type="button" class="vc-chip" data-pref="${esc(k)}">${esc(k)} ${v}</button>`).join("")}</div>` : "";
       return `<section class="vc-group" data-g="${gi}" data-region="${esc(region)}"><h3 class="vc-group-head">${esc(region)} <span class="note">${rows.length}件${sub ? `(${esc(sub)})` : ""}</span></h3>${prefBtns}${cards}${more}</section>`;
-    }).join("") + (list.length ? "" : `<p class="note vc-nofit">公式に書かれた一律の条件で、今回の犬(大きさ・体重・頭数${$("vc-sleep")?.checked ? "・添い寝" : ""})に合うと照合できた空室のある宿は見つかりませんでした。${extras.some((x) => x.rows.length) ? "下の「要確認」の宿は、予約前に宿へ条件を確認してください。" : "条件を緩めるか、別の日を選んでください。"}</p>`)
+    }).join("") + (list.length ? "" : statePanel("no_match", { ...ctxNow(), meta }) + `<p class="note vc-nofit">公式に書かれた一律の条件で、今回の犬(大きさ・体重・頭数${$("vc-sleep")?.checked ? "・添い寝" : ""})に合うと照合できた空室のある宿は見つかりませんでした。${extras.some((x) => x.rows.length) ? "下の「要確認」の宿は、予約前に宿へ条件を確認してください。" : "条件を緩めるか、別の日を選んでください。"}</p>`)
       + extras.filter((x) => x.rows.length).map((x) => `<section class="vc-extra vc-extra-${esc(x.kind)}" data-kind="${esc(x.kind)}"><h3 class="vc-group-head">${esc(x.title)} <span class="note">${x.rows.length}件</span></h3><p class="note">${esc(x.note)}</p>
         <button type="button" class="sub vc-extra-toggle" aria-expanded="false" data-label="${esc(`${x.button}(${x.rows.length}件)`)}">${esc(`${x.button}(${x.rows.length}件)`)}</button><div class="vc-extra-body hidden">${x.rows.map((row, i) => card(row, i)).join("")}</div></section>`).join("");
     box.querySelectorAll(".vc-extra-toggle").forEach((b) => b.addEventListener("click", () => {
@@ -172,6 +185,7 @@
   async function search() {
     const status = $("vc-status"); const btn = $("vc-go"); const seq = ++searchSeq;
     btn.disabled = true; status.textContent = "空室データを読み込んでいます…"; $("vc-results").innerHTML = "";
+    const ctx = { ...ctxNow(), focus: true };
     try {
       const ci = $("vc-date").value; if (!ci) throw new Error("日付を選んでください。");
       const adults = adultsSel();
@@ -181,7 +195,8 @@
       const ruleOf = (id) => (dogRules && dogRules.rules ? dogRules.rules[id] : undefined);
       if (seq !== searchSeq) return;
       lastSnap = snap;
-      const bad = validate(data, { checkin: ci, adults }); if (bad) throw new Error(bad + "。別の日を選ぶか、しばらくしてからお試しください。");
+      const st = RULES.check(data, { checkin: ci, adults });
+      if (st.code !== "ok") { showState(st.code, { ...ctx, scannedAt: data && data.scanned_at }); return; }
       const PD = window.PlannerData; if (!PD) throw new Error("宿データの読み込み待ちです。少し待ってからもう一度押してください。");
       const { size, dogs, wantSleep, petOnly, budget, hub } = snap; const drive = PD.drive(); const origin = { name: snap.originName };
       const stOrigin = parseStationValue(hub);
@@ -230,8 +245,58 @@
       status.textContent = parts.join(""); status.classList.remove("warn-text");
       $("vc-credit").classList.remove("hidden");
     } catch (e) {
-      if (seq === searchSeq) { status.textContent = e.message || "空室データを読み込めませんでした。"; $("vc-results").innerHTML = ""; }
+      if (seq === searchSeq) {
+        if (e && e.code) showState(e.code, ctx);
+        else { status.textContent = e.message || "空室データを読み込めませんでした。"; $("vc-results").innerHTML = ""; }
+      }
     } finally { if (seq === searchSeq) btn.disabled = false; }
+  }
+
+  // ---------------------------------------------------------------- 空室を確認できないときの案内(W01・cx-20261024-2)
+  // expired / unknown_timestamp / missing_date / fetch_error / no_match を別々の文言で。どれも満室とは言わず、希望日は変えない。
+  // 主ボタンの宿一覧(dog-lodging-guide.html)は犬の条件を URL で受け取れないため「絞り込み済み」とは書かない
+  const SIZE_JA = { small: "小型犬", medium: "中型犬", large: "大型犬" };
+  function ctxNow() {
+    const sel = $("vc-date");
+    return { ci: (sel && (sel.value || sel.dataset.wish)) || "", adults: adultsSel(), originName: $("vc-origin")?.selectedOptions[0]?.textContent.trim() || "出発地",
+      size: $("vc-size")?.value || "", dogs: Number($("vc-dogs")?.value) || 1, kg: Number($("vc-kg")?.value) || 0 };
+  }
+  function statePanel(code, ctx) {
+    const T = RULES.STATE_TEXT[code] || RULES.STATE_TEXT.fetch_error;
+    const cond = [ctx.ci ? `希望日 ${jstMd(ctx.ci)} チェックイン(1泊)` : "希望日 未選択", `大人 ${ctx.adults}名`, `出発地 ${ctx.originName}`, `犬 ${SIZE_JA[ctx.size] || ""}・${ctx.dogs >= 3 ? "3頭以上" : `${ctx.dogs}頭`}${ctx.kg ? `・${ctx.kg}kg` : ""}`].join(" ／ ");
+    const list = (main) => `<a class="${main ? "vc-state-main" : "vc-state-sub"}" href="../dog-lodging-guide.html">宿一覧を見る(空室は未確認)</a>`;
+    const reload = (main) => `<button type="button" class="${main ? "primary" : "sub"} vc-reload">空室情報を再読み込み</button>`;
+    const acts = code === "no_match" ? "" : code === "fetch_error" ? reload(true) + list(false) : list(true) + reload(false);
+    const when = code === "no_match" && ctx.meta && ctx.meta.scanned_at ? `(楽天トラベル ${esc(fmtWhen(ctx.meta.scanned_at))} 取得)` : "";
+    return `<section class="vc-state vc-state-${esc(code)}" data-state="${esc(code)}" aria-labelledby="vc-state-title">
+      <h3 id="vc-state-title" tabindex="-1">${esc(T.title)}</h3>
+      <p>${esc(T.body)}${when}${ctx.extraNote ? ` ${esc(ctx.extraNote)}` : ""}</p>
+      <p class="vc-state-cond"><b>探した条件:</b> ${esc(cond)}</p>
+      ${acts ? `<div class="actions vc-state-actions">${acts}</div>` : ""}
+      ${acts && code !== "fetch_error" ? `<p class="note">宿一覧には、ここで選んだ犬の大きさ・頭数は引き継がれません。各宿の「対象犬・頭数」で確かめてください。下の「決まった宿への行程を作る」は、空室がわからなくても使えます。</p>` : ""}
+    </section>`;
+  }
+  function showState(code, ctx) {
+    const box = $("vc-results"); const status = $("vc-status");
+    box.classList.remove("vc-collapsed");
+    box.innerHTML = statePanel(code, ctx);
+    status.textContent = "";  // 見出しと同じ文を上に重ねて出さない
+    status.classList.remove("warn-text");
+    $("vc-credit")?.classList.add("hidden");
+    $("vc-go").disabled = !index;  // 日付の一覧が読めていないあいだは「再読み込み」だけを押せるようにする
+    box.querySelector(".vc-reload")?.addEventListener("click", (e) => reloadVacancy(e.currentTarget, ctx));
+    if (ctx.focus) box.querySelector("#vc-state-title")?.focus({ preventScroll: true });
+  }
+  async function reloadVacancy(btn, ctx) {
+    btn.disabled = true; btn.textContent = "再読み込み中…";
+    const sel = $("vc-date"); const want = sel.value || sel.dataset.wish || ctx.ci;
+    cache.clear();
+    try { await loadIndex(true); } catch (e) { showState(e.code || "fetch_error", { ...ctx, focus: true }); return; }
+    const dates = Object.keys(index.dates || {}).sort();
+    // 希望日を勝手に別の日にしない: 一覧から消えていたら「この日はデータなし」のまま止める
+    if (want && !dates.includes(want)) { sel.dataset.wish = want; fillDates(); showState("missing_date", { ...ctx, ci: want, focus: true }); return; }
+    fillDates(); if (want) sel.value = want;
+    search();
   }
 
   // 行程表の「予約する」(planner.js)と共有する空室データの読み込み
@@ -260,15 +325,16 @@
     const card = $("vacancy-card"); if (!card) return;
     mountDogFitUi();
     let dates = [];
+    $("vc-adults")?.addEventListener("change", fillDates);
     try {
       const idx = await loadIndex();
       dates = Object.keys(idx.dates || {}).sort();
       fillDates();
-      $("vc-adults")?.addEventListener("change", fillDates);
       if (!dates.length) { $("vc-status").textContent = "空室データの準備中です(毎晩更新)。"; $("vc-go").disabled = true; return; }
       $("vc-status").textContent = `空室データ: ${dates.length}日分(次の週末と祝前日。毎晩更新、取得時刻は結果に表示)。`;
     } catch (e) {
-      $("vc-status").textContent = "空室データの準備中です(毎晩更新)。"; $("vc-go").disabled = true;
+      // 読み込めなかった(通信)のか、まだ無いのかを分けて出す。「準備中」と言い切らない(W01)
+      $("vc-status").textContent = ""; showState(e.code || "fetch_error", { ...ctxNow(), ci: new URLSearchParams(location.search).get("checkin") || "" });
     }
     // 出発地(主要駅)は drive_times.json の hub を使う。planner.js の読み込み後に埋める
     const fill = () => { const PD = window.PlannerData; const d = PD && PD.drive(); if (!d) return false; const sel = $("vc-origin");
@@ -299,7 +365,7 @@
       // 希望日は行程のフォーム(出発日)にも残す(選べる範囲のときだけ)
       const pd = $("date"); if (pd && (!pd.min || ci >= pd.min)) { pd.value = ci; pd.dispatchEvent(new Event("change", { bubbles: true })); }
       if (dates.includes(ci)) $("vc-date").value = ci;
-      else { canSearch = false; showDateWish(ci, dates); }  // 黙って近い日に置き換えない(cx-20261013-1)。理由と候補を示して選んでもらう
+      else { canSearch = false; if (index) showDateWish(ci, dates); }  // 一覧を読めなかったとき(fetch_error)は「準備中」と言わない  // 黙って近い日に置き換えない(cx-20261013-1)。理由と候補を示して選んでもらう
     }
     const SIZE = { small: "small", medium: "medium", large: "large", "小型": "small", "中型": "medium", "大型": "large" };
     if (SIZE[size]) $("vc-size").value = SIZE[size];
@@ -311,6 +377,7 @@
       else { const st = window.PlannerData && window.PlannerData.stations; if (st) st.load().then(() => { const hit = st.search(name).find((x) => x.name === name) || st.search(name)[0];
           if (hit) { const label = `${hit.name}駅(${hit.pref})`; const o = new Option(label, `st:${hit.lat},${hit.lon}|${label}`); sel.insertBefore(o, sel.firstChild); sel.value = o.value; } else notes.push(`出発地「${from}」が見つからないため、駅名で探してください`); }); }
     }
+    if (!index) showState("fetch_error", { ...ctxNow(), ci });  // 一覧を読めなかったときも、入った条件で案内を出し直す
     const card = $("vacancy-card");
     if (card) card.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" });
     const note = () => { if (notes.length) $("vc-status").textContent = `${notes.join("。")}。${$("vc-status").textContent}`; };

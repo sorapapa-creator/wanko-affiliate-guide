@@ -49,7 +49,12 @@ function wankoStayCta(url) {
   ].sort((a, b) => b[0].length - a[0].length);
   const READING_PARTS = new Map(DESTINATION_READINGS);
   const READING_PATTERN = new RegExp(DESTINATION_READINGS.map(([part]) => part.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|"), "g");
+  const sortNameCache = new Map();
   const destinationSortName = (name) => {
+    if (sortNameCache.has(name)) return sortNameCache.get(name);
+    const key = destinationSortNameRaw(name); sortNameCache.set(name, key); return key;
+  };
+  const destinationSortNameRaw = (name) => {
     const source = name.normalize("NFKC").replace(READING_PATTERN, (part) => READING_PARTS.get(part)).replace(/\s+/g, "");
     return Array.from(source, (char) => {
       const code = char.charCodeAt(0);
@@ -123,6 +128,7 @@ function wankoStayCta(url) {
     const published = [];
     const pageErrors = [];
     for (const spec of pageSpecs) {
+      await new Promise((r) => setTimeout(r, 0));  // 2 ページの読み取りの間で一度手を離す(長いタスクを分ける)
       try {
         const pageUrl = new URL(`../${spec.file}`, location.href);
         const response = await fetch(pageUrl);
@@ -483,9 +489,33 @@ function wankoStayCta(url) {
   const fmtClock = (d) => { const j = jst(d); return `${j.h}:${String(j.mi).padStart(2, "0")}`; };
   const addSec = (d, s) => new Date(d.getTime() + s * 1000);
 
-  function showError(msg) {
-    $("error").textContent = msg;
-    $("error").classList.remove("hidden");
+  // 誤りの知らせ: ボタンのすぐ下に出し、直す欄(なければ知らせ自体)へフォーカスを移す
+  function showError(msg, fieldId) {
+    const box = $("error");
+    box.textContent = msg;
+    box.classList.remove("hidden");
+    setGoStatus("");
+    const field = fieldId && $(fieldId);
+    document.querySelectorAll("#form .field-error").forEach((e) => e.remove());
+    if (field) {
+      const fe = document.createElement("p"); fe.className = "field-error"; fe.id = `${fieldId}-error`; fe.textContent = msg;
+      field.after(fe); field.setAttribute("aria-errormessage", fe.id);
+      field.setAttribute("aria-invalid", "true"); field.focus({ preventScroll: true }); field.scrollIntoView({ block: "center" }); }
+    else { box.focus({ preventScroll: true }); box.scrollIntoView({ block: "nearest" }); }
+  }
+  // 「プランを作る」の下の待ち表示。何を・どれくらい待つかを書き、経過秒は読み上げない
+  let goTimer = null;
+  function setGoStatus(html, busy = false) {
+    clearInterval(goTimer); goTimer = null;
+    const el = $("go-status"); if (!el) return;
+    el.innerHTML = html;
+    if (!busy) return;
+    const t0 = Date.now();
+    goTimer = setInterval(() => {
+      const sec = Math.round((Date.now() - t0) / 1000);
+      const e = el.querySelector(".go-elapsed"); if (e) e.textContent = `(${sec} 秒)`;
+      if (sec >= 20) el.querySelector(".go-slow")?.classList.remove("hidden");
+    }, 1000);
   }
 
   // 位置が施設まで分かっていない地点を含み、しかも1km以内の区間(市区町村の中心どうしなど)は、移動時間が正しく出ない
@@ -519,10 +549,10 @@ function wankoStayCta(url) {
       tr.addEventListener("click", () => showOption(state, Number(tr.dataset.i))));
     const notes = [
       "渋滞の影響 = 過去の傾向を含む予測時間と、渋滞がない場合との差。",
-      "この表の到着は休憩なしの時刻です。下の「休憩場所を選ぶ」で選んだ休憩(1回" + CFG.restMinutes + "分)は、下のプランの時刻に足します。",
+      "この表の到着は休憩なしの時刻です。下の「休憩場所を選ぶ」で選んだ休憩(1回" + CFG.restMinutes + "分)は、上のプランの時刻に足します。",
       multi ? "立ち寄り先を出る時刻の混み具合で、次の区間を計算し直しています。" : "",
       state.reduced ? `立ち寄り先が多いため、比べる出発時刻を${state.options.length}つに減らしました。` : "",
-      "行をタップするとその出発時刻のプランを表示します。",
+      "行をタップすると、その出発時刻のプランを上に表示します。",
     ];
     $("compare-note").textContent = notes.filter(Boolean).join("");
   }
@@ -817,17 +847,18 @@ function wankoStayCta(url) {
     const aff = (place.links || []).filter((l) => l.affiliate).slice(0, 1);
     $("dest-card").innerHTML = `
       ${place.photo ? `<img class="dest-photo" src="${esc(place.photo)}" alt="${esc(place.name)}の写真(楽天トラベル提供)" loading="lazy">` : ""}
-      <h2>${esc(place.name)} <span class="badge">${esc(TYPE_LABEL[place.type])}</span></h2>
+      <h2 id="dest-title" tabindex="-1">${esc(place.name)} <span class="badge">${esc(TYPE_LABEL[place.type])}</span></h2>
       <p class="note">${esc(place.area)}${place.theme ? " / " + esc(place.theme) : ""}${place.co_sleep ? " / " + esc(place.co_sleep) : ""}</p>
       ${hotelTimes(place) ? `<p class="note"><b>チェックイン:</b> ${esc(hotelTimes(place).checkin || "—")}${hotelTimes(place).last_checkin ? `〜${esc(hotelTimes(place).last_checkin)}` : ""} ／ <b>チェックアウト:</b> ${esc(hotelTimes(place).checkout || "—")} <span class="note">(楽天トラベル掲載情報・${esc((hotelTimes(place).fetched_at || "").slice(0, 10))}時点。プランによって異なる場合があります)</span></p>` : ""}
+      ${place.type === "lodging" ? '<div id="dest-booking"></div>' : ""}
       ${warns.map((w) => `<div class="warnbox">${esc(w)}</div>`).join("")}
-      ${facts}
+      ${facts ? `<details class="dest-facts" open><summary>掲載している犬の条件・設備</summary>${facts}</details>` : ""}
       <div class="actions">
         <a href="${esc(place.page_url)}" target="_blank" rel="noopener">わんことのじかんで条件を見る</a>
         ${official.map((l) => `<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label || "公式サイト")}</a>`).join("")}
         ${aff.map((l) => `<a href="${esc(l.url)}" target="_blank" rel="noopener sponsored">${esc(wankoStayCta(l.url))}</a>`).join("")}
       </div>
-      <div id="dest-booking"></div><div id="dest-help"></div>
+      ${place.type === "lodging" ? "" : '<div id="dest-booking"></div>'}<div id="dest-help"></div>
       ${place.checked_at ? `<p class="note photo-note">掲載情報の確認日: ${esc(place.checked_at)}${place.photo ? "・写真は楽天トラベル提供" : ""}</p>` : ""}`;
   }
 
@@ -1330,6 +1361,15 @@ function wankoStayCta(url) {
     else if (isLodging) parts.push(`帰りは${ht && ht.checkout ? `チェックアウト(${ht.checkout})のあと` : "翌日"}、下の「帰りのプラン」で帰宅時刻まで出せます。`);
     else parts.push(`帰りは下の「帰りのプラン」で帰宅時刻まで出せます。`);
     box.innerHTML = `<div class="summary-box"><b>この旅のイメージ</b><p>${esc(parts.join(""))}</p></div>`;
+    renderNext(state, o, last);
+  }
+
+  // 結果の先頭: 何ができたかを 1 行で、次に押すボタンは 1 つだけ(宿なら空室と予約先、おでかけ先なら情報と条件)
+  function renderNext(state, o, last) {
+    const sum = $("next-summary"); if (!sum) return;
+    sum.textContent = `${jstMd(o.dep)} ${fmtClock(o.dep)} ${state.origin.name} 発 → ${fmtClock(last.arrive)}ごろ ${state.place.name} 着${state.current === state.bestIndex ? "(渋滞の少ない出発時刻)" : ""}`;
+    $("next-cta").textContent = state.place.type === "lodging" ? "宿の空室と予約先を見る" : "行き先の情報と犬の条件を見る";
+    if (state.place.type !== "lodging") $("next-note").textContent = "";
   }
 
   // ---------------------------------------------------------------- 行程表の「予約する・準備する」
@@ -1342,7 +1382,7 @@ function wankoStayCta(url) {
     const bk = booking || {}; const adultsRaw = bk.adultsRaw || ""; const adults = adultsRaw === "4" ? 4 : 2;
     const mismatch = adultsRaw && !["2", "4"].includes(adultsRaw);
     const nights = bk.nights || 1;
-    let rak = ""; let hasPlans = false; let petReady = false;
+    let rak = ""; let hasPlans = false; let petReady = false; let kind = "";
     try {
       if (!window.VacancyData || !window.VacancyRules) throw new Error("no-module");
       const R = window.VacancyRules;
@@ -1352,6 +1392,7 @@ function wankoStayCta(url) {
         const bad = window.VacancyData.validate(data, { checkin: ci, adults });
         const stale = Boolean(bad);
         const cond = `${jstMd(o.dep)}チェックイン・1泊・${adults}名`;
+        kind = nights !== 1 ? "nights" : stale ? "stale" : !h ? "none" : "plans";
         if (nights !== 1) rak = `<p class="note">空室データは 1 泊・${adults}名の条件です。${nights}泊の予約は楽天トラベルの施設ページで日程を指定してください。</p>`;
         else if (stale) rak = `<p class="note">${esc(bad)}。予約サイトで最新の空室をご確認ください。</p>`;
         else if (!h) rak = `<p class="note">${esc(cond)}の条件では、取得時点(${esc(fmtWhen(data.scanned_at))})の楽天トラベルにこの宿の空室が見つかりませんでした(満室とは限りません)。</p>`;
@@ -1359,20 +1400,23 @@ function wankoStayCta(url) {
           // 3 段階を混ぜない: 施設は犬同伴可(掲載条件を確認済み)、客室・プランは pet / unknown(no は出さない)、空室は取得時点
           const pc = R.planCounts(h.plans, bk.dog); const petPlans = pc.petPlans; const unknown = pc.unknownPlans;  // 犬の大きさ・頭数が合わないプランは出さない
           const status3 = `<ul class="vc-status3">${R.statusLines(pc, data.scanned_at).map((l) => `<li${l.warn ? ' class="warn"' : ""}><b>${esc(l.label)}:</b> ${esc(l.text)}</li>`).join("")}</ul>`;
-          const row = (p, kind) => `<li class="vc-plan${kind === "pet" ? " vc-pet" : ""}">${kind === "pet" ? '<span class="badge b-run">犬対応プラン</span>' : '<span class="badge">一般客室(犬同伴の可否は未確認)</span>'} <b>${yen(p.total)}</b><span class="note">(${adults}名1泊・楽天表示)</span><br><span class="note">${esc(p.plan || "")}${p.room ? ` ／ ${esc(p.room)}` : ""}</span><br>${p.url ? `<a class="book-main" href="${esc(p.url)}" target="_blank" rel="noopener sponsored"><span class="book-main-label">広告｜楽天トラベルで空室・条件を確認</span><span class="book-main-cond">${esc(cond)}</span></a>` : ""}</li>`;
+          const row = (p, kind, i) => `<li class="vc-plan${kind === "pet" ? " vc-pet" : ""}">${kind === "pet" ? '<span class="badge b-run">犬対応プラン</span>' : '<span class="badge">一般客室(犬同伴の可否は未確認)</span>'} <b>${yen(p.total)}</b><span class="note">(${adults}名1泊・楽天表示)</span><br><span class="note">${esc(p.plan || "")}${p.room ? ` ／ ${esc(p.room)}` : ""}</span><br>${p.url ? (i === 0
+            ? `<a class="book-main" href="${esc(p.url)}" target="_blank" rel="noopener sponsored"><span class="book-main-label">広告｜楽天トラベルで空室・条件を確認</span><span class="book-main-cond">${esc(cond)}</span></a>`
+            : `<a class="vc-book-alt" href="${esc(p.url)}" target="_blank" rel="noopener sponsored">広告｜このプランを楽天トラベルで確認</a>`) : ""}</li>`;  // 主ボタンは先頭のプランだけ(押す所を 1 つに)
           hasPlans = petPlans.length > 0 || unknown.length > 0; petReady = petPlans.length > 0;
           rak = `<p class="note">楽天トラベルの取得時点(${esc(fmtWhen(data.scanned_at))} 日本時間)の空室情報(${esc(cond)}${mismatch ? `。入力の人数 ${esc(adultsRaw)}名とは条件が違います` : ""})。現在の空室・料金は予約先で確認してください。表示している料金は取得時点の楽天表示額です。</p>
             ${status3}
             ${pc.onlyUnknown ? `<div class="warnbox"><b>${esc(R.ONLY_UNKNOWN_WARN)}</b></div>` : ""}
-            <ul class="vc-plans">${petPlans.map((p) => row(p, "pet")).join("")}${!petPlans.length ? unknown.slice(0, 2).map((p) => row(p, "unknown")).join("") : ""}</ul>
+            <ul class="vc-plans">${petPlans.map((p, i) => row(p, "pet", i)).join("")}${!petPlans.length ? unknown.slice(0, 2).map((p, i) => row(p, "unknown", i)).join("") : ""}</ul>
             ${!petPlans.length && !unknown.length ? '<p class="note">取得時点の空室はペット不可の客室だけでした。</p>' : ""}`;
         }
       }
     } catch (e) {
+      kind = "error";
       rak = e && e.message === "no-module" ? "" : `<p class="note">この条件(${esc(jstMd(o.dep))}・${adults}名)の空室は未確認です(満室とは限りません)。予約サイトでご確認ください。</p>`;
     }
     const credit = `<p class="rakuten-credit note"><a href="https://developers.rakuten.com/" target="_blank">Supported by Rakuten Developers</a></p>`;
-    return { html: rak ? rak + credit : "", hasPlans, petReady };  // petReady: 犬対応プランの空室あり(一般客室だけなら false。犬対応とは呼ばない)
+    return { html: rak ? rak + credit : "", hasPlans, petReady, kind };  // petReady: 犬対応プランの空室あり(一般客室だけなら false。犬対応とは呼ばない)
   }
   // 行き先カード(行程表を作らない人向け): 同じ空室判定で日付入りの予約ボタンを出す
   let destBookingGen = 0;
@@ -1382,6 +1426,11 @@ function wankoStayCta(url) {
     box.innerHTML = `<p class="note">この日の空室(楽天トラベル・取得時点)を確認しています…</p>`;
     const r = await rakutenVacancy(state.place, state.options[state.current], state.booking);
     if (gen !== destBookingGen) return;
+    const note = $("next-note");
+    if (note) note.textContent = r.petReady ? "楽天トラベルに、この日の犬対応プランの空室がありました(取得時点)。予約前に犬の条件を確かめてください。"
+      : r.hasPlans ? "この日の空室はありますが、犬同伴の可否が未確認の一般客室です。予約先で犬の条件を確かめてください。"
+      : r.kind === "none" ? "取得時点の楽天トラベルでは、この日の空室が見つかりませんでした(満室とは限りません)。ほかの予約サイトも見られます。"
+      : r.kind === "stale" || r.kind === "error" ? "空室情報を確認できないため、空室は予約先で確かめてください。" : "";
     box.innerHTML = r.html ? `<div class="book-src"><h4>${r.petReady ? "取得時点の犬対応プランあり／現在は予約先で確認" : r.hasPlans ? "この日の空室(犬同伴の可否は未確認・楽天トラベル・取得時点)" : "この日の空室(楽天トラベル・取得時点)"}</h4>${r.html}</div>` : "";
   }
   // もしものときの近くの施設(動物病院・薬局)。OpenPOI API(無料・キー不要・CORS 可。2026-10-03 公開)を補助枠として使う。
@@ -1607,8 +1656,9 @@ function wankoStayCta(url) {
 
   function invalidateWaypointRoute() {
     waypointRequest++;
+    const searched = Boolean(waypointRoute || waypointMessage);
     waypointRoute = null;
-    waypointMessage = "条件を変更しました。ルート沿いの候補をもう一度探してください。";
+    waypointMessage = searched ? "条件を変更しました。ルート沿いの候補をもう一度探してください。" : "";
     $("find-wp-route").disabled = false;
     $("find-wp-route").textContent = "ルート沿いの候補を探す";
     refreshWaypointChoices();
@@ -1639,9 +1689,7 @@ function wankoStayCta(url) {
       waypointRoute = { key, points };
       waypointMessage = "";
     } catch (error) {
-      if (request === waypointRequest) waypointMessage = error instanceof TypeError
-        ? "ルートを取得できませんでした。通信環境を確認して、もう一度お試しください。"
-        : error.message || "ルートを取得できませんでした。";
+      if (request === waypointRequest) waypointMessage = error.message || "ルートを取得できませんでした。";
     } finally {
       if (request === waypointRequest) {
         $("find-wp-route").disabled = false;
@@ -1706,18 +1754,28 @@ function wankoStayCta(url) {
   // Worker には日本時間(+09:00)の形で送る
   const isoJST = (d) => new Date(d.getTime() + 9 * 3600 * 1000).toISOString().slice(0, 19) + "+09:00";
 
+  // 失敗の種類ごとに、次に何をすればよいかまで書く(「Failed to fetch」などの英語をそのまま出さない)
+  const ROUTE_ERRORS = {
+    network: "通信できませんでした。電波の届く場所で、もう一度「プランを作る」を押してください(入力した内容はそのまま残っています)。",
+    400: "経路の計算が、この出発地・行き先・出発日時を受け付けませんでした。出発日を今日以降にして、もう一度お試しください。",
+    429: "経路の計算が一時的に混み合っています(1 日に計算できる回数に上限があります)。数分おいてから、もう一度「プランを作る」を押してください。",
+    server: "経路の計算サービスが応答しませんでした。少し時間をおいて、もう一度「プランを作る」を押してください。",
+  };
   async function routeLeg(from, to, departures) {
-    const res = await fetch(`${CFG.apiBase}/routes`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        origin: { lat: from.lat, lon: from.lon },
-        destination: { lat: to.lat, lon: to.lon },
-        departures,
-      }),
-    });
-    if (!res.ok) throw new Error(res.status === 400 ? "入力内容を確認してください。" : "所要時間を計算できませんでした。時間をおいて再度お試しください。");
-    return res.json();
+    let res;
+    try {
+      res = await fetch(`${CFG.apiBase}/routes`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          origin: { lat: from.lat, lon: from.lon },
+          destination: { lat: to.lat, lon: to.lon },
+          departures,
+        }),
+      });
+    } catch (e) { throw new Error(ROUTE_ERRORS.network); }
+    if (!res.ok) throw new Error(ROUTE_ERRORS[res.status] || ROUTE_ERRORS.server);
+    try { return await res.json(); } catch (e) { throw new Error(ROUTE_ERRORS.server); }
   }
 
   function buildDepartures() {
@@ -1751,7 +1809,7 @@ function wankoStayCta(url) {
     $("error").classList.add("hidden");
     $("check-card")?.classList.add("hidden");
     const place = byId.get($("dest-q").value);
-    if (!place) return showError("掲載先をプルダウンから選んでください。");
+    if (!place) return showError("行き先(宿・おでかけ先)がまだ選ばれていません。「1 行き先」のプルダウンから選んでください。", "dest-q");
     if (!hasRouteCoordinates(place)) {
       showError("この掲載先はルート計算用の位置データが未登録です。掲載情報を確認してください。");
       if (place.page_url) {
@@ -1763,7 +1821,7 @@ function wankoStayCta(url) {
       return;
     }
     let departures = singleDeparture ? [singleDeparture] : buildDepartures(); singleDeparture = null;
-    if (!departures.length) return showError("出発時刻がすべて過去になっています。日付か時刻を変えてください。");
+    if (!departures.length) return showError(`${jstMd(new Date(`${$("date").value}T12:00:00+09:00`))}の ${$("start").value.replace(/^0/, "")} から比べる出発時刻は、すべて過ぎています。出発日を明日以降にするか、「条件を細かく決める」で比べ始める出発時刻を遅くしてください。`, "date");
     const profile = { size: $("size").value, age: $("age").value, carsick: $("carsick").checked, heat: $("heat").checked || $("brachy").checked,
       brachy: $("brachy").checked, heatCycle: $("heat-cycle").checked, vaccine: $("vaccine").checked, toilet: Number($("toilet").value) || 0,
       mealTime: $("meal-time").value, medTime: $("med-time").value, dogs: $("dogs").value, dogKg: $("dog-kg").value };
@@ -1772,6 +1830,7 @@ function wankoStayCta(url) {
 
     $("go").disabled = true;
     $("go").textContent = "計算中…";
+    if ($("origin").value === "here") setGoStatus(`<span class="spin" aria-hidden="true"></span>現在地を確かめています…(ブラウザの確認が出たら「許可」を押してください)`, true);
     try {
       const origin = await getOrigin();
       if (seq !== planSeq) return;
@@ -1789,6 +1848,7 @@ function wankoStayCta(url) {
       const maxOptions = Math.max(1, Math.floor(MAX_ROUTE_CALLS / legCount));
       const reduced = departures.length > maxOptions;
       if (reduced) departures = departures.slice(0, maxOptions);
+      setGoStatus(`<span class="spin" aria-hidden="true"></span>経路を計算しています… 出発時刻 ${departures.length} 通り${legCount > 1 ? `・${legCount} 区間` : ""}の渋滞予測を Google で調べています。ふつう 5〜15 秒です。<span class="go-leg" aria-hidden="true"></span><span class="go-elapsed" aria-hidden="true"></span><span class="go-slow hidden"> 時間がかかっています。もう少しお待ちください(通信が切れたときはここでお知らせします)。</span>`, true);
 
       // 出発時刻ごとに、区間を順番に計算する。次の区間は「前の区間の到着+休憩+滞在」の時刻の混み具合で計算する
       const options = departures.map((iso) => ({ dep: new Date(iso), cursor: new Date(iso), sinceRest: 0, legs: [], error: null }));
@@ -1796,6 +1856,7 @@ function wankoStayCta(url) {
       for (let k = 0; k < legCount; k++) {
         const active = options.filter((o) => !o.error);
         if (!active.length) break;
+        const legNote = $("go-status")?.querySelector(".go-leg"); if (legNote && legCount > 1) legNote.textContent = ` 区間 ${k + 1}/${legCount}`;
         const data = await routeLeg(points[k], points[k + 1], active.map((o) => isoJST(o.cursor)));
         if (seq !== planSeq) return;  // 新しい計算が始まっている: この応答は捨てる
         mock = mock || Boolean(data.mock);
@@ -1833,7 +1894,7 @@ function wankoStayCta(url) {
         };
       }
       const valid = options.map((o, i) => [o, i]).filter(([o]) => !o.error);
-      if (!valid.length) throw new Error("ルートが見つかりませんでした。");
+      if (!valid.length) throw new Error("車で行けるルートが見つかりませんでした(フェリーの区間や通行止めの可能性があります)。出発地か行き先を変えて、もう一度お試しください。");
       // おすすめ = 運転時間(合計)が一番短い出発時刻。立ち寄り先の滞在時間は同じなので比べない
       // 宿のときは、その日のうちに受付終了(不明なら 20 時)までに着く出発時刻の中から選ぶ(深夜着をおすすめにしない)
       const htB = place.type === "lodging" ? hotelTimes(place) : null; const lastIn = (htB && minutesOf(htB.last_checkin)) || 20 * 60;
@@ -1862,12 +1923,14 @@ function wankoStayCta(url) {
       // 段階0(日付・人数・犬の条件の確認。trip-check.js)へ結果を渡す。任意の欄が空なら何も表示しない
       document.dispatchEvent(new CustomEvent("planner:rendered", { detail: { place, origin, date: $("date").value, places: PLACES } }));
       $("results").classList.remove("hidden");
-      $("results").scrollIntoView({ behavior: "smooth", block: "start" });
+      setGoStatus(place.type === "lodging" ? "計算が終わりました。下の「プランができました」から、宿の空室と予約先を見られます。" : "計算が終わりました。下に結果を出しています。");
+      $("next-card").scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" });
+      $("next-title").focus({ preventScroll: true });
     } catch (e) {
       planBaseline = null;
       if (seq === planSeq) { showError(e.message || "エラーが発生しました。"); const n1 = $("plan-stale"); if (n1 && lastState) { n1.textContent = "最新の条件では計算できませんでした。表示中は前回の結果です(行程表の作成はできません)。"; n1.classList.remove("hidden"); } }
     } finally {
-      if (seq === planSeq) { $("go").disabled = false; $("go").textContent = "予想時間を出す"; }
+      if (seq === planSeq) { $("go").disabled = false; $("go").textContent = "プランを作る"; if (goTimer) setGoStatus(""); }
     }
   }
 
@@ -1876,6 +1939,12 @@ function wankoStayCta(url) {
   $("date").min = jstYmd(today);
   $("date").value = jstYmd(tomorrow);
   $("dest-q").addEventListener("change", updateDestinationLink);
+  for (const id of ["dest-q", "date"]) $(id).addEventListener("change", () => { $(id).removeAttribute("aria-invalid"); $(`${id}-error`)?.remove(); if (!$("error").classList.contains("hidden") && $("go").disabled === false) $("error").classList.add("hidden"); });
+  $("next-cta")?.addEventListener("click", () => {
+    const card = $("dest-card"); if (!card) return;
+    card.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" });
+    ($("dest-title") || card).focus({ preventScroll: true });
+  });
   $("form").addEventListener("submit", onSubmit);
   // ルート沿いの候補がまだなら、行を足すときに探す(候補はルートから30km以内に固定)
   $("add-wp").addEventListener("click", () => {
@@ -1886,7 +1955,7 @@ function wankoStayCta(url) {
   $("make-itinerary")?.addEventListener("click", () => { if (!lastState || lastState.stale) return; renderItinerary(lastState); $("itinerary-card").scrollIntoView({ behavior: "smooth", block: "start" }); $("itinerary-title")?.focus?.(); });
   document.addEventListener("routemap:picks", refreshChecklist);
   for (const id of ["origin", "dest-q", "date", "start"]) $(id).addEventListener("change", invalidateWaypointRoute);
-  for (const id of ["origin", "dest-q", "date", "start", "step", "count"]) $(id)?.addEventListener("change", () => { if (lastState && !lastState.stale) invalidatePlan("条件を変えました。もう一度「予想時間を出す」を押してください(表示中は前回の結果)。"); });
+  for (const id of ["origin", "dest-q", "date", "start", "step", "count"]) $(id)?.addEventListener("change", () => { if (lastState && !lastState.stale) invalidatePlan("条件を変えました。もう一度「プランを作る」を押してください(表示中は前回の結果)。"); });
   // チェックアウト日・人数・犬の条件は往路の時間に関係しないので、往路は計算し直さず、予約と帰りの条件だけ更新する(Codex 実地テスト 2026-10-04)
   for (const id of ["adults", "checkout", "size", "dogs"]) $(id)?.addEventListener("change", () => {
     if (!lastState || lastState.stale) return;
@@ -1919,7 +1988,7 @@ function wankoStayCta(url) {
       $("map-clear")?.click(); window.RouteMap?.hide();
       applyCertFilter(); updateDestinationLink(); invalidateWaypointRoute();
       $("results").classList.add("hidden"); $("error").classList.add("hidden");
-      $("go").disabled = false; $("go").textContent = "予想時間を出す";
+      $("go").disabled = false; $("go").textContent = "プランを作る"; setGoStatus("");
       // 日付の独自検証も更新し、解除前の customValidity / min を残さない。
       $("date").dispatchEvent(new Event("input", { bubbles: true }));
       // trip-check.js の既存 clear() も change 経由で呼ぶ。
