@@ -54,9 +54,11 @@
       .then(function (d) {
         data = d; types = d.types; pages = d.pages;
         var neg = new RegExp("[^。、．，,;；!！?？／/]*(?:" + d.neg + ")[^。、．，,;；!！?？／/]*", "g");
+        // 要点は途中で切ってある(…)。切れた最後の文節は後ろに「不可」があったかもしれないので照合に使わない
+        var cut = /[^。、．，,;；!！?？／/]*…$/;
         rows = d.items.map(function (it, i) {
           // 照合用: [名前, 地域・商品名, タグ, 要点(否定の文節を除く), 地域の別名, 説明文]
-          return { i: i, it: it, f: [norm(it[1]), norm(it[2]), norm(it[4]), norm(String(it[3]).replace(neg, " ")), norm(it[6]), norm(it[7])] };
+          return { i: i, it: it, f: [norm(it[1]), norm(it[2]), norm(it[4]), norm(String(it[3]).replace(cut, "").replace(neg, " ")), norm(it[6]), norm(it[7])] };
         });
         return d;
       })

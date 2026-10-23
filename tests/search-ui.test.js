@@ -108,6 +108,9 @@ async function test(name, fn) {
     assert.ok(!names.some(x => /HIRAMATSU/.test(x)), names.join(", "));
     await search("御代田");
     assert.ok((await hits()).some(h => /HIRAMATSU/.test(h.name)));
+    // 要点が「…人用寝具での添い寝と洗面…」で切れている宿(元は「…は不可」)は「添い寝」で出さない
+    await search("箱根 添い寝");
+    assert.ok(!(await hits()).some(h => /ポイントバケーション箱根/.test(h.name)));
   });
 
   await test("種類で絞り込める(件数の合計が「すべて」と一致)", async () => {
