@@ -424,8 +424,13 @@ FAVICON = ("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%
            "%3E%3C/svg%3E")
 
 
+def canonical(path):
+    """一覧ページ(areas/index.html)は sitemap・パンくずと同じ areas/ を正規の URL にする。"""
+    return SITE + (path[:-len("index.html")] if path.endswith("/index.html") else path)
+
+
 def head(title, desc, path, jsonld):
-    url = SITE + path
+    url = canonical(path)
     ld = "".join('<script type="application/ld+json">%s</script>' % json.dumps(d, ensure_ascii=False, separators=(",", ":"))
                  .replace("</", "<\\/") for d in jsonld)
     return ('<!doctype html>\n<html lang="ja">\n<head>\n<meta charset="utf-8">\n'
@@ -458,7 +463,7 @@ def breadcrumb(trail):
 def breadcrumb_ld(trail, self_path):
     elems = []
     for i, (name, path) in enumerate(trail):
-        full = SITE + (self_path if i == len(trail) - 1 else _abs(path, self_path))
+        full = canonical(self_path) if i == len(trail) - 1 else SITE + _abs(path, self_path)
         elems.append({"@type": "ListItem", "position": i + 1, "name": name, "item": full})
     return {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": elems}
 
@@ -498,7 +503,8 @@ def render_card(it, near, hl, local_ids=()):
     acts = []
     if it["ad"]:
         acts.append('<p class="ar-ad"><span class="ar-ad-tag">広告</span><a class="ar-btn" href="%s" target="_blank" '
-                    'rel="sponsored nofollow noopener">%s ↗</a></p>' % (it["ad"]["href"], E(it["ad"]["label"])))
+                    'rel="sponsored nofollow noopener">%s ↗</a></p>' % (E(html.unescape(it["ad"]["href"])), E(it["ad"]["label"])))
+        # 元カードの href は HTML の属性値のまま(& が生のこともある)なので、一度戻してから付け直す(URL は同じ)
     links = []
     if it["official"]:
         links.append('<a class="ar-btn ar-btn-line" href="%s" target="_blank" rel="noopener">公式の条件を確認 ↗</a>' % E(it["official"]))

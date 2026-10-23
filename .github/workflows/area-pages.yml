@@ -1,0 +1,49 @@
+# 地域ページ(areas/)を、places.json・元ページの更新に合わせて作り直す。手順と注意は docs/area-pages.md。
+# 既定では無効: リポジトリ変数 AREA_PAGES_AUTO が 'true' のときだけ push で動く。手動実行(Run workflow)はいつでも動く。
+name: 地域ページを作り直す
+on:
+  push:
+    branches: [main]
+    paths:
+      - route-planner/data/places.json
+      - dog-lodging-guide.html
+      - east-japan-dog-trips.html
+      - tools/build_area_pages.py
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: area-pages
+  cancel-in-progress: false
+jobs:
+  build:
+    if: github.event_name == 'workflow_dispatch' || vars.AREA_PAGES_AUTO == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: 作り直す
+        run: |
+          python3 tools/build_area_pages.py 2> build-err.txt
+          cat build-err.txt
+          if grep -q 'slug が無い' build-err.txt; then
+            echo "::warning::slug が無い市区町村があります。tools/build_area_pages.py の MUNIS に足してください: $(cat build-err.txt)"
+          fi
+          rm -f build-err.txt
+      - name: 点検
+        run: |
+          python3 -m pip install --quiet html5lib || echo "html5lib なしで点検します"
+          python3 tests/area-pages.test.py
+      - name: 差分があればコミット
+        run: |
+          if git diff --quiet -- areas sitemap.xml && [ -z "$(git ls-files --others --exclude-standard -- areas)" ]; then
+            echo "変更なし"; exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add areas sitemap.xml
+          git commit -m "地域ページを作り直す(自動、${GITHUB_SHA::7} のデータ)"
+          git pull --rebase origin main
+          git push origin HEAD:main

@@ -53,3 +53,56 @@ python3 tools/build_area_pages.py --check  # 書き換えずに、変わるフ�
   口コミ・評価・ランキング・価格は新しく作りません。カードの並びは places.json の順で、広告の有無では変えません。
 - 「近くの地域」は、掲載施設の位置の中心が近い順に並べます。
 - 各ページに title・meta description・canonical・OG・パンくず、BreadcrumbList と ItemList の JSON-LD を入れます。
+
+## 毎朝のデータ更新のあとに作り直す
+
+地域ページは places.json と元ページ(dog-lodging-guide.html・east-japan-dog-trips.html)から作るので、
+朝の更新で宿・おでかけのカードが増えたり直ったりしたら、そのたびに作り直します。
+空室データ(`route-planner/data/vacancy/`)だけの更新では地域ページは変わりません(読んでいないため)。
+
+### 手順(手元で行う場合)
+
+朝の更新(places.json と元ページの両方)を main に入れたあとで、リポジトリの一番上で:
+
+```sh
+git pull origin main
+python3 tools/build_area_pages.py --check   # 「変わるファイル 0 件」ならここで終わり
+python3 tools/build_area_pages.py           # 作り直す
+python3 tests/area-pages.test.py            # 10 項目すべて ok になるか
+git add areas sitemap.xml
+git commit -m "地域ページを作り直す($(date +%F) のデータ)"
+git push origin main
+```
+
+- 実行結果に「slug が無いためページを作れなかった市区町村」が出たら、掲載が 8 件を超えた市区町村があるということです。
+  `tools/build_area_pages.py` の `MUNIS` に `("県", "市区町村"): ("ローマ字の slug", "見出しの呼び名"),` を 1 行足して、もう一度実行します。
+  一度公開した slug は変えないでください。
+- 「元ページにカードが無いため外したもの」は、places.json にはあるが元ページにカードが無い id です。
+  片方だけ更新された状態で実行すると増えるので、両方そろってから実行してください(数が急に増えたら更新の途中です)。
+- `areas/*.html` を手で直さないでください。次の実行で上書きされます。直したいときは生成器かデータを直します。
+- 朝の更新スクリプトの最後に、次の 2 行を足すのがいちばん手間がかかりません(更新と同じコミットに入ります)。
+
+  ```sh
+  python3 tools/build_area_pages.py && python3 tests/area-pages.test.py && git add areas sitemap.xml
+  ```
+
+### GitHub Actions で自動にする(案・既定では無効)
+
+`.github/workflows/area-pages.yml` に、main に places.json・元ページ・生成器の変更が push されたら
+作り直してコミットするワークフローを置いています。**既定では動きません。** 使うときは次のどちらかです。
+
+- 毎回自動で動かす: リポジトリの Settings → Secrets and variables → Actions → Variables に
+  `AREA_PAGES_AUTO` = `true` を追加する(消すか `true` 以外にすると止まる)。
+- 必要なときだけ動かす: Actions タブ → 「地域ページを作り直す」→ Run workflow(変数がなくても動きます)。
+
+動いたときにすること: 生成器を実行 → `tests/area-pages.test.py` → 差分があれば
+「地域ページを作り直す(自動)」というコミットを github-actions のアカウントで main に push。
+テストが通らないときはコミットせずに失敗として残ります。
+
+自動にするときの注意:
+
+- 自動のコミットが main に入るので、手元で次に push する前に `git pull` が必要になります(朝の更新スクリプトの最初に `git pull --rebase origin main` を入れておくと安全です)。
+- `GITHUB_TOKEN` での push は、ほかのワークフローを起動しません(このワークフロー自身が繰り返し動くことはありません)。
+  GitHub Pages の公開がこの push で更新されるかは、最初の 1 回で Actions タブの「pages build and deployment」を見て確かめてください。
+  更新されない場合は、手元の朝の更新に上の 2 行を足す方法にしてください。
+- 新しい市区町村の slug が必要になったとき(上の「slug が無い」)は、ワークフローは警告を出すだけで、ページは作りません。
