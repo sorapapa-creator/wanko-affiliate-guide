@@ -167,19 +167,44 @@
   };
 
   // 空室データの検証: 条件(日付・人数・1 泊)の一致と取得後 24 時間以内。問題があれば理由の文字列、なければ ""。now はテスト用
-  const validate = (data, cond, now) => {
+  // 空室データの状態を分けて返す(W01・cx-20261024-2)。validate の判定基準・文言はこれまでどおり(validate は message を返す)
+  //  code: ok / missing_date(その日のデータなし・条件の違うデータ) / unknown_timestamp(取得時刻が不明・不正) / expired(取得から 24 時間超)
+  const check = (data, cond, now) => {
     const t0 = Number.isFinite(now) ? now : Date.now();
-    if (!data || !data.hotels) return "空室データがありません";
-    if (cond && cond.checkin && data.checkin !== cond.checkin) return "空室データの日付が条件と一致しません";
-    if (cond && cond.adults && Number(data.adults || 2) !== Number(cond.adults)) return "空室データの人数が条件と一致しません";
+    const r = (code, message) => ({ code, message });
+    if (!data || !data.hotels) return r("missing_date", "空室データがありません");
+    if (cond && cond.checkin && data.checkin !== cond.checkin) return r("missing_date", "空室データの日付が条件と一致しません");
+    if (cond && cond.adults && Number(data.adults || 2) !== Number(cond.adults)) return r("missing_date", "空室データの人数が条件と一致しません");
     const nights = Math.round((Date.parse(data.checkout) - Date.parse(data.checkin)) / 86400000);
-    if (nights !== 1) return "空室データは 1 泊の条件のみです";
-    const t = Date.parse(String(data.scanned_at) + "+09:00");
-    if (!Number.isFinite(t)) return "空室データの取得時刻が不明です";
-    if (t0 - t > VALID_MS) return "空室データが取得から 24 時間を超えたため表示しません";
-    if (t > t0 + 3600 * 1000) return "空室データの取得時刻が不正です";
-    return "";
+    if (nights !== 1) return r("missing_date", "空室データは 1 泊の条件のみです");
+    const fresh = freshness(data.scanned_at, t0);
+    if (fresh !== "ok") return r(fresh === "future" ? "unknown_timestamp" : fresh, FRESH_MESSAGE[fresh]);
+    return r("ok", "");
   };
+  const FRESH_MESSAGE = { unknown_timestamp: "空室データの取得時刻が不明です", future: "空室データの取得時刻が不正です", expired: "空室データが取得から 24 時間を超えたため表示しません" };
+  // 取得時刻だけの判定(日付の一覧でも使う)。future(1 時間超の未来)は unknown_timestamp の一種として扱う
+  const freshness = (scannedAt, now) => {
+    const t0 = Number.isFinite(now) ? now : Date.now();
+    const t = Date.parse(String(scannedAt) + "+09:00");
+    if (!Number.isFinite(t)) return "unknown_timestamp";
+    if (t0 - t > VALID_MS) return "expired";
+    if (t > t0 + 3600 * 1000) return "future";
+    return "ok";
+  };
+  const validate = (data, cond, now) => {
+    const c = check(data, cond, now);
+    return c.message;
+  };
+  // 状態ごとの見出しと本文。どれも「満室」とは言わない(空室を確認できていないだけ、と書く)
+  const VACANCY_STATES = ["ok", "expired", "missing_date", "fetch_error", "no_match", "unknown_timestamp"];
+  const STATE_TEXT = {
+    expired: { title: "この日程の空室を、いま確認できません", body: "空室情報の更新が必要なため、古い空室・料金は表示していません。犬の同伴条件から宿を比較し、空室は予約先で確認できます。" },
+    unknown_timestamp: { title: "この日程の空室を、いま確認できません", body: "空室情報をいつ取得したか確かめられないため、空室・料金は表示していません。犬の同伴条件から宿を比較し、空室は予約先で確認できます。" },
+    missing_date: { title: "この日の空室データはありません", body: "空室は、次の週末と祝前日の 1 泊(大人 2 名・4 名)だけを毎晩調べています。この日・この人数は調べていないため、空室は表示できません(満室という意味ではありません)。宿は犬の同伴条件から比較し、空室は予約先で確認できます。" },
+    fetch_error: { title: "空室データを読み込めませんでした", body: "通信がうまくいかず、空室を確認できていません(満室という意味ではありません)。電波の届く場所で「空室情報を再読み込み」を押してください。" },
+    no_match: { title: "この条件に合う空室のある宿は 0 件でした", body: "新しい空室データで探した結果です。満室とは限りません。予算・添い寝・「犬対応プランの空室がある宿だけ」の条件をゆるめるか、別の日を選んでください。" },
+  };
+  const stateOf = (code) => (code === "future" ? "unknown_timestamp" : code);
 
   const fmtWhen = (iso) => (iso ? String(iso).replace("T", " ").slice(0, 16) : "");
   // 3 段階の状態を 1 行ずつ(体言止め)。{ label, text, warn } の配列。vacancy.js と planner.js が同じ文言で出す
@@ -196,5 +221,5 @@
   };
   const ONLY_UNKNOWN_WARN = "取得時点では犬同伴の可否が未確認の客室のみです。現在の空室と犬同伴の可否は予約先で確認してください";
 
-  return { VALID_MS, PET_NEG, petClass, dogLimits, dogFit, dogVerdict, VERDICT_LABEL, SIZE_KG, planFits, planCounts, validate, fmtWhen, statusLines, ONLY_UNKNOWN_WARN };
+  return { VALID_MS, PET_NEG, petClass, dogLimits, dogFit, dogVerdict, VERDICT_LABEL, SIZE_KG, planFits, planCounts, validate, check, freshness, stateOf, VACANCY_STATES, STATE_TEXT, fmtWhen, statusLines, ONLY_UNKNOWN_WARN };
 });

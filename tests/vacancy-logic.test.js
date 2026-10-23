@@ -100,11 +100,48 @@ test("validate: now 省略時は Date.now()", () => {
   assert.equal(R.validate(data, null), "空室データが取得から 24 時間を超えたため表示しません");  // 固定日付のデータは実行時点では古い
 });
 
+// ---- 3b) 空室データの状態(W01・cx-20261024-2): validate と同じ基準で code を分ける
+test("check: 24 時間以内は ok、超えたら expired(境界は validate と同じ)", () => {
+  assert.deepEqual(R.check(data, { checkin: "2026-10-03", adults: 2 }, scannedMs + R.VALID_MS), { code: "ok", message: "" });
+  assert.equal(R.check(data, null, scannedMs + R.VALID_MS + 1).code, "expired");
+  assert.equal(R.check(data, null, scannedMs + R.VALID_MS + 1).message, R.validate(data, null, scannedMs + R.VALID_MS + 1));
+});
+test("check: 取得時刻が不明・未来は unknown_timestamp", () => {
+  assert.equal(R.check({ ...data, scanned_at: "" }, null, scannedMs).code, "unknown_timestamp");
+  assert.equal(R.check({ ...data, scanned_at: "あとで" }, null, scannedMs).code, "unknown_timestamp");
+  assert.equal(R.check(data, null, scannedMs - 3600 * 1000 - 1).code, "unknown_timestamp");
+});
+test("check: データなし・日付/人数/泊数の不一致は missing_date", () => {
+  for (const [d, c] of [[null, null], [{ checkin: "2026-10-03" }, null], [data, { checkin: "2026-10-10" }], [data, { checkin: "2026-10-03", adults: 4 }], [{ ...data, checkout: "2026-10-05" }, null]]) {
+    assert.equal(R.check(d, c, scannedMs).code, "missing_date");
+  }
+});
+test("check の message は validate と同じ文言(validate の判定は変えていない)", () => {
+  const cases = [[data, null, scannedMs], [data, null, scannedMs + R.VALID_MS + 1], [{ ...data, scanned_at: "" }, null, scannedMs], [null, null, scannedMs], [data, { checkin: "2026-10-10" }, scannedMs], [data, null, scannedMs - 3600 * 1000 - 1]];
+  for (const [d, c, t] of cases) assert.equal(R.check(d, c, t).message, R.validate(d, c, t));
+});
+test("freshness: 日付の一覧用(ok / expired / unknown_timestamp / future)", () => {
+  assert.equal(R.freshness(scanned, scannedMs + 1000), "ok");
+  assert.equal(R.freshness(scanned, scannedMs + R.VALID_MS + 1), "expired");
+  assert.equal(R.freshness(undefined, scannedMs), "unknown_timestamp");
+  assert.equal(R.freshness(scanned, scannedMs - 3600 * 1000 - 1), "future");
+  assert.equal(R.stateOf("future"), "unknown_timestamp");
+});
+test("状態の文言: 6 状態がそろい、ok 以外はそれぞれ別の文言・満室とは言わない", () => {
+  assert.deepEqual(R.VACANCY_STATES.slice().sort(), ["expired", "fetch_error", "missing_date", "no_match", "ok", "unknown_timestamp"]);
+  const shown = ["expired", "missing_date", "fetch_error", "no_match", "unknown_timestamp"];
+  const bodies = shown.map((k) => R.STATE_TEXT[k].body);
+  assert.equal(new Set(bodies).size, shown.length);
+  for (const b of bodies) assert.doesNotMatch(b.replace(/満室(という意味ではありません|とは限りません)/g, ""), /満室/);
+  assert.equal(R.STATE_TEXT.expired.title, "この日程の空室を、いま確認できません");
+  assert.equal(R.STATE_TEXT.expired.body, "空室情報の更新が必要なため、古い空室・料金は表示していません。犬の同伴条件から宿を比較し、空室は予約先で確認できます。");
+});
+
 // ---- ブラウザ用スクリプトの構文と配線(最小の window / document で IIFE を走らせる)
 const RP = path.join(__dirname, "..", "route-planner");
 const src = (f) => fs.readFileSync(path.join(RP, f), "utf8");
-test("vacancy.js / planner.js は構文エラーなし", () => {
-  new Function(src("vacancy.js")); new Function(src("planner.js"));
+test("vacancy.js / planner.js / ux.js は構文エラーなし", () => {
+  new Function(src("vacancy.js")); new Function(src("planner.js")); new Function(src("ux.js"));
 });
 test("vacancy.js は window.VacancyRules の関数をそのまま VacancyData に載せる", () => {
   const win = { VacancyRules: R, PLANNER_CONFIG: {} };
