@@ -1,40 +1,43 @@
-/* 2頭と初めて泊まる 宿泊前チェック(2026-10-22)。from-sns.css の上に載せる。影なし・角 4〜16px・12px 未満なし */
+/* 初めて犬と泊まる 宿泊前チェック(2026-10-22、10-23 にスマホ向けの進捗・押した感触・コントラストを追加)。from-sns.css の上に載せる。影なし・角 4〜16px・12px 未満なし */
 .tdc-intro{margin:0 0 20px;padding:12px 16px;background:var(--accent-soft);border-radius:12px;font-size:.9rem;color:var(--text)}
 .tdc-form{display:grid;gap:16px}
 .tdc-q{margin:0;padding:14px 16px 10px;background:var(--panel);border:1px solid var(--line);border-radius:16px}
 .tdc-q legend{font-weight:700;font-size:1rem;line-height:1.5;padding:0 4px;word-break:auto-phrase}
 .tdc-num{display:inline-block;min-width:1.6em;margin-right:6px;padding:0 6px;border-radius:999px;background:var(--accent);color:#fff;text-align:center;font-size:.85rem}
 .tdc-hint{margin:6px 0 10px;color:var(--muted);font-size:.82rem}
-.tdc-q label{display:flex;gap:10px;align-items:flex-start;padding:9px 8px;border-top:1px solid var(--line);font-size:.95rem;cursor:pointer}
-.tdc-q label:first-of-type{border-top:0}
-.tdc-q input{margin:4px 0 0;flex:none;width:18px;height:18px;accent-color:var(--accent)}
-.tdc-q.is-missing{border-color:var(--accent)}
-.tdc-actions{margin:8px 0 0}
-.tdc-btn{display:block;width:100%;padding:14px 16px;border:0;border-radius:12px;background:var(--accent);color:#fff;font:inherit;font-weight:700;font-size:1rem;cursor:pointer}
-.tdc-btn:hover{background:#9c4f22}
-.tdc-btn:focus-visible{outline:3px solid #d9a26f;outline-offset:2px}
+.tdc-q label{display:flex;gap:12px;align-items:center;min-height:48px;margin-top:8px;padding:10px 12px;border:1px solid var(--line);border-radius:12px;background:#fff;font-size:.95rem;line-height:1.5;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.tdc-q label:has(input:checked){border-color:var(--accent);background:var(--accent-soft);font-weight:700}
+.tdc-q input{margin:0;flex:none;width:22px;height:22px;accent-color:var(--accent)}
+.tdc-q.is-missing{border:2px solid var(--accent);background:#fffaf0}
+.tdc-btn{display:block;width:100%;min-height:52px;padding:14px 16px;border:0;border-radius:12px;background:var(--accent);color:#fff;font:inherit;font-weight:700;font-size:1rem;line-height:1.4;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.tdc-btn:hover{background:#8a4519}
 .tdc-skip{margin:6px 0 0;text-align:center;font-size:.85rem}
-.tdc-skip a{color:var(--accent)}
+.tdc-skip a{display:inline-flex;align-items:center;min-height:44px;padding:0 8px;color:var(--accent)}
 /* 結果ページ */
 .tdr-summary{margin:0 0 18px;padding:14px 16px;background:var(--panel);border:1px solid var(--line);border-radius:16px}
+.tdr-head{min-height:calc(1.7em * 4)}
 .tdr-summary h2{margin:0 0 8px;font-size:1rem;color:var(--text)}
 .tdr-list{margin:0;padding:0;list-style:none;display:grid;gap:8px}
 .tdr-list li{display:grid;grid-template-columns:auto 1fr;gap:8px;align-items:start;font-size:.92rem}
 .tdr-list .st{display:inline-block;min-width:4.5em;padding:2px 8px;border-radius:999px;font-size:.78rem;font-weight:700;text-align:center;background:#fff7d9;color:#5a4a1a}
 .tdr-list .st.ok{background:#e4f3ea;color:#1f4d33}
 .tdr-list .st.ng{background:#fbe6e0;color:#7a2d16}
-.tdr-ask textarea{width:100%;min-height:200px;padding:12px;border:1px solid var(--line);border-radius:12px;font:inherit;font-size:.92rem;line-height:1.7;background:#fff;color:var(--text)}
-.tdr-copy{margin:8px 0 0;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
-.tdr-copy button{padding:10px 14px;border:1px solid var(--accent);border-radius:12px;background:#fff;color:var(--accent);font:inherit;font-weight:700;cursor:pointer}
-.tdr-copy small{color:var(--muted);font-size:.8rem}
+.tdr-ask textarea{display:block;width:100%;min-height:180px;padding:12px;border:1px solid var(--line);border-radius:12px;font:inherit;font-size:.92rem;line-height:1.7;background:#fff;color:var(--text)}
+.tdr-copy{margin:10px 0 0}
+.tdr-copy .tdc-btn.is-done{background:#2f6b47}
+.tdr-copy .tdc-btn.is-sub{background:#fff;color:var(--accent);border:1px solid var(--accent)}
+.tdr-copy-status{margin:8px 0 0;font-size:.88rem;color:var(--text)}
+.tdr-copy-status:empty{display:none}
+.tdr-copy-status.is-ok{padding:10px 12px;border-radius:12px;background:#e4f3ea;color:#1f4d33}
 .tdr-cand{margin:0;padding:0;list-style:none;display:grid;gap:10px}
 .tdr-cand li{padding:12px 16px;background:var(--panel);border:1px solid var(--line);border-radius:16px;font-size:.9rem}
 .tdr-cand b{display:block;font-size:1rem}
 .tdr-cand .meta{display:block;color:var(--muted);font-size:.8rem;margin-top:4px}
-.tdr-cand a{color:var(--accent)}
+.tdr-cand a{display:inline-flex;align-items:center;min-height:44px;color:var(--accent);font-weight:700}
 .tdr-branch{margin:0;padding:0;list-style:none;display:grid;gap:10px}
-.tdr-survey{margin-top:8px;padding:14px 16px;background:var(--panel);border:1px solid var(--line);border-radius:16px}
-.tdr-survey h2{margin:0 0 4px;font-size:1rem;color:var(--text)}
+.tdr-survey{margin-top:24px;padding:0 16px;border:1px solid var(--line);border-radius:12px;background:transparent}
+.tdr-survey summary{display:flex;align-items:center;min-height:48px;color:var(--muted);font-size:.88rem;cursor:pointer}
+.tdr-survey[open]{padding-bottom:14px;background:var(--panel)}
 .tdr-survey p.lead{margin:0 0 10px;color:var(--muted);font-size:.82rem}
 .tdr-survey label.q{display:block;font-weight:700;font-size:.92rem;margin:10px 0 4px}
 .tdr-survey select{width:100%;padding:10px;border:1px solid var(--line);border-radius:12px;font:inherit;font-size:.95rem;background:#fff;color:var(--text)}
@@ -50,6 +53,31 @@
 .tp5 p{margin:4px 0;font-size:.9rem}
 .tp5 .who{color:var(--muted);font-size:.82rem}
 .tp5 .links{margin:8px 0 0;display:flex;gap:8px;flex-wrap:wrap}
-.tp5 .links a{display:inline-block;padding:8px 12px;border:1px solid var(--accent);border-radius:12px;color:var(--accent);text-decoration:none;font-size:.88rem;font-weight:700}
+.tp5 .links a{display:inline-flex;align-items:center;min-height:44px;padding:8px 12px;-webkit-tap-highlight-color:transparent;border:1px solid var(--accent);border-radius:12px;color:var(--accent);text-decoration:none;font-size:.88rem;font-weight:700}
 .tp5 .links a.main{background:var(--accent);color:#fff}
 .tp5 .own{display:inline-block;margin-left:6px;padding:1px 8px;border-radius:999px;background:#e4f3ea;color:#1f4d33;font-size:.75rem;font-weight:700}
+/* 入口の下に固定する進捗と送信ボタン(1問ごとに画面を切り替えず、1ページのまま押しやすくする) */
+.tdc-bar{position:sticky;bottom:0;z-index:2;margin:0 -16px;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:var(--bg);border-top:1px solid var(--line)}
+.tdc-progress{display:flex;align-items:center;gap:10px;margin:0 0 8px;font-size:.85rem;font-weight:700;color:var(--text)}
+.tdc-meter{flex:1;height:8px;border-radius:999px;background:var(--line);overflow:hidden}
+.tdc-meter i{display:block;height:100%;width:0;background:var(--accent);transition:width .2s ease-out}
+.tdc-missing{margin:0 0 8px;padding:8px 12px;border-radius:12px;background:#fff7d9;color:#5a4a1a;font-size:.85rem}
+.tdc-missing:empty{display:none}
+/* この 3 ページだけの調整(from-sns.css を使う他ページには効かせない) */
+.tdc-page{--accent:#a4521f;--focus:#6b3412}
+.tdc-page .sns-kicker{font-size:.75rem}
+.tdc-page .tdr-list .st{font-size:.75rem}
+.tdc-page a:focus-visible,.tdc-page button:focus-visible,.tdc-page summary:focus-visible,.tdc-page select:focus-visible,.tdc-page textarea:focus-visible,.tdc-page .sns-list a:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+.tdc-page .tdc-q label:has(input:focus-visible){outline:3px solid var(--focus);outline-offset:2px}
+.tdc-page .tdc-q input:focus-visible{outline:none}
+.tdc-page .tdr-branch a[data-primary]{border:2px solid var(--accent);background:var(--accent-soft)}
+.tdc-page .sns-list a{-webkit-tap-highlight-color:transparent}
+/* 押した感触: 少し沈んで色が濃くなる。動きを減らす設定では色だけ変える */
+.tdc-btn,.tdc-q label,.tdc-page .sns-list a,.tp5 .links a{transition:transform .08s ease-out,background-color .15s}
+.tdc-btn:active{transform:scale(.98);background:#7a3d17}
+.tdc-q label:active,.tdc-page .sns-list a:active,.tp5 .links a:active{transform:scale(.985);background:var(--accent-soft)}
+.tp5 .links a.main:active{background:#7a3d17}
+@media (prefers-reduced-motion:reduce){
+  .tdc-btn,.tdc-q label,.tdc-page .sns-list a,.tp5 .links a,.tdc-meter i{transition:none}
+  .tdc-btn:active,.tdc-q label:active,.tdc-page .sns-list a:active,.tp5 .links a:active{transform:none}
+}
