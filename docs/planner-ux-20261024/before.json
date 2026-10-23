@@ -1,0 +1,505 @@
+{
+  "label": "before",
+  "viewport": "375x812",
+  "date": "2026-10-31",
+  "generated": "2026-10-23T23:39:27.964Z",
+  "initial": {
+    "vacancyFields": 11,
+    "formFieldsVisible": 17,
+    "formButtonsVisible": 3,
+    "formFieldsTotal": 21,
+    "fieldsAboveSubmit": 17,
+    "formFieldsOrder": [
+      "出発地",
+      "駅名で出発地を探す",
+      "行き先の種類を選ぶ",
+      "出発日(required)",
+      "出発時刻",
+      "比較間隔",
+      "比較数",
+      "体格",
+      "年齢",
+      "車酔いしやすい",
+      "暑さに弱い",
+      "短頭種(パグ・フレブル・ボストンなど)",
+      "ヒート中(発情期)",
+      "ワクチン・狂犬病の証明書を持っていく",
+      "トイレの間隔",
+      "ごはんの時刻(任意)",
+      "薬の時刻(任意)"
+    ],
+    "fieldsWithRequiredOrOptionalMark": 2,
+    "submitY": 5013,
+    "pageHeight": 5870,
+    "firstViewFilledButtons": 9,
+    "tapTargets": {
+      "count": 19,
+      "nonInline": 19,
+      "samples": [
+        {
+          "el": "a",
+          "text": "犬と泊まれる宿",
+          "w": 99,
+          "h": 32,
+          "inline": false
+        },
+        {
+          "el": "a",
+          "text": "犬とおでかけ",
+          "w": 86,
+          "h": 32,
+          "inline": false
+        },
+        {
+          "el": "a",
+          "text": "犬と休めるSA・PA・道の駅",
+          "w": 178,
+          "h": 32,
+          "inline": false
+        },
+        {
+          "el": "a",
+          "text": "旅行の持ち物（犬用品）",
+          "w": 155,
+          "h": 32,
+          "inline": false
+        },
+        {
+          "el": "a",
+          "text": "毎日の犬用品",
+          "w": 84,
+          "h": 32,
+          "inline": false
+        },
+        {
+          "el": "a",
+          "text": "犬服・ウェア",
+          "w": 85,
+          "h": 32,
+          "inline": false
+        },
+        {
+          "el": "a",
+          "text": "主食",
+          "w": 28,
+          "h": 32,
+          "inline": false
+        },
+        {
+          "el": "a",
+          "text": "決まった宿への行程を作る",
+          "w": 205,
+          "h": 42,
+          "inline": false
+        },
+        {
+          "el": "select#vc-date",
+          "text": "10/24(土) 〜 10/25(日)(空室 2",
+          "w": 309,
+          "h": 40,
+          "inline": false
+        },
+        {
+          "el": "select#vc-origin",
+          "text": "東京駅新宿駅上野駅立川駅横浜駅川崎駅小田原駅町田",
+          "w": 309,
+          "h": 40,
+          "inline": false
+        },
+        {
+          "el": "select#vc-adults",
+          "text": "2名(夫婦・カップル)4名(家族)",
+          "w": 309,
+          "h": 40,
+          "inline": false
+        },
+        {
+          "el": "select#vc-budget",
+          "text": "指定なし2万円まで3万円まで4万円まで6万円まで",
+          "w": 309,
+          "h": 40,
+          "inline": false
+        },
+        {
+          "el": "select#vc-size",
+          "text": "小型(〜10kg)中型(〜25kg)大型(25k",
+          "w": 309,
+          "h": 40,
+          "inline": false
+        },
+        {
+          "el": "select#vc-dogs",
+          "text": "1頭2頭3頭以上",
+          "w": 309,
+          "h": 40,
+          "inline": false
+        },
+        {
+          "el": "input#vc-petonly",
+          "text": "on",
+          "w": 268,
+          "h": 33,
+          "inline": false
+        },
+        {
+          "el": "input#vc-sleep",
+          "text": "on",
+          "w": 137,
+          "h": 33,
+          "inline": false
+        },
+        {
+          "el": "input#carsick",
+          "text": "on",
+          "w": 147,
+          "h": 33,
+          "inline": false
+        },
+        {
+          "el": "input#heat",
+          "text": "on",
+          "w": 118,
+          "h": 33,
+          "inline": false
+        },
+        {
+          "el": "input#heat-cycle",
+          "text": "on",
+          "w": 157,
+          "h": 33,
+          "inline": false
+        }
+      ]
+    },
+    "smallText": {
+      "count": 0,
+      "samples": []
+    },
+    "hScroll": {
+      "scrollWidth": 375,
+      "innerWidth": 375,
+      "overflow": false
+    }
+  },
+  "keyboard": {
+    "origin-q": {
+      "inputTop": 213,
+      "suggestions": 5,
+      "suggestionsVisible": 1,
+      "firstSuggestionVisible": true
+    },
+    "vc-origin-q": {
+      "inputTop": 215,
+      "suggestions": 5,
+      "suggestionsVisible": 3,
+      "firstSuggestionVisible": true
+    }
+  },
+  "waiting": {
+    "goText": "計算中…",
+    "statusText": "条件を変更しました。ルート沿いの候補をもう一度探してください。",
+    "statusInView": false
+  },
+  "results": {
+    "filledButtonsInResults": [
+      "立ち寄りに入れて再計算",
+      "広告｜楽天トラベルで空室・条件を確認10/31(土)チェック",
+      "帰りの時間を計算",
+      "最終行程表を作る"
+    ],
+    "filledButtonsFirstView": [],
+    "bookingY": 4831,
+    "cardsBeforeBooking": 5,
+    "tapTargets": {
+      "count": 71,
+      "nonInline": 58,
+      "samples": [
+        {
+          "el": "a.done",
+          "text": "1出発時刻5:00発",
+          "w": 143,
+          "h": 36,
+          "inline": false
+        },
+        {
+          "el": "a.opt",
+          "text": "2寄り道任意",
+          "w": 117,
+          "h": 36,
+          "inline": false
+        },
+        {
+          "el": "a.todo",
+          "text": "3休憩長い区間あり",
+          "w": 149,
+          "h": 36,
+          "inline": false
+        },
+        {
+          "el": "a.opt",
+          "text": "4近くの場所任意",
+          "w": 144,
+          "h": 36,
+          "inline": false
+        },
+        {
+          "el": "a.opt",
+          "text": "5帰り未計算",
+          "w": 115,
+          "h": 36,
+          "inline": false
+        },
+        {
+          "el": "a.todo",
+          "text": "6行程表・予約最後に作る",
+          "w": 191,
+          "h": 36,
+          "inline": false
+        },
+        {
+          "el": "summary",
+          "text": "その他の条件",
+          "w": 283,
+          "h": 38,
+          "inline": false
+        },
+        {
+          "el": "a",
+          "text": "Googleマップを開く",
+          "w": 167,
+          "h": 42,
+          "inline": false
+        },
+        {
+          "el": "a",
+          "text": "わんことのじかんで条件を見る",
+          "w": 236,
+          "h": 42,
+          "inline": false
+        },
+        {
+          "el": "a",
+          "text": "公式情報",
+          "w": 85,
+          "h": 42,
+          "inline": false
+        },
+        {
+          "el": "a",
+          "text": "公式情報を確認",
+          "w": 129,
+          "h": 42,
+          "inline": false
+        },
+        {
+          "el": "a",
+          "text": "広告｜楽天トラベルで空室・条件を確認",
+          "w": 293,
+          "h": 42,
+          "inline": false
+        },
+        {
+          "el": "a",
+          "text": "Supported by Rakuten Dev",
+          "w": 219,
+          "h": 16,
+          "inline": false
+        },
+        {
+          "el": "select.nb-stay",
+          "text": "30分1時間1時間30分2時間3時間",
+          "w": 117,
+          "h": 40,
+          "inline": false
+        },
+        {
+          "el": "select.nb-day",
+          "text": "到着日(着いたあと)帰る日(帰り道に経由)",
+          "w": 199,
+          "h": 40,
+          "inline": false
+        },
+        {
+          "el": "select.nb-stay",
+          "text": "30分1時間1時間30分2時間3時間",
+          "w": 117,
+          "h": 40,
+          "inline": false
+        },
+        {
+          "el": "select.nb-day",
+          "text": "到着日(着いたあと)帰る日(帰り道に経由)",
+          "w": 199,
+          "h": 40,
+          "inline": false
+        },
+        {
+          "el": "select.nb-stay",
+          "text": "30分1時間1時間30分2時間3時間",
+          "w": 117,
+          "h": 40,
+          "inline": false
+        },
+        {
+          "el": "select.nb-day",
+          "text": "到着日(着いたあと)帰る日(帰り道に経由)",
+          "w": 199,
+          "h": 40,
+          "inline": false
+        },
+        {
+          "el": "select.nb-stay",
+          "text": "30分1時間1時間30分2時間3時間",
+          "w": 117,
+          "h": 40,
+          "inline": false
+        },
+        {
+          "el": "select.nb-day",
+          "text": "到着日(着いたあと)帰る日(帰り道に経由)",
+          "w": 199,
+          "h": 40,
+          "inline": false
+        },
+        {
+          "el": "select.nb-stay",
+          "text": "30分1時間1時間30分2時間3時間",
+          "w": 117,
+          "h": 40,
+          "inline": false
+        },
+        {
+          "el": "select.nb-day",
+          "text": "到着日(着いたあと)帰る日(帰り道に経由)",
+          "w": 199,
+          "h": 40,
+          "inline": false
+        },
+        {
+          "el": "select.nb-stay",
+          "text": "30分1時間1時間30分2時間3時間",
+          "w": 117,
+          "h": 40,
+          "inline": false
+        },
+        {
+          "el": "select.nb-day",
+          "text": "到着日(着いたあと)帰る日(帰り道に経由)",
+          "w": 199,
+          "h": 40,
+          "inline": false
+        }
+      ]
+    },
+    "smallText": {
+      "count": 6,
+      "samples": [
+        {
+          "el": "small",
+          "px": 11.2,
+          "text": "5:00発"
+        },
+        {
+          "el": "small",
+          "px": 11.2,
+          "text": "任意"
+        },
+        {
+          "el": "small",
+          "px": 11.2,
+          "text": "長い区間あり"
+        },
+        {
+          "el": "small",
+          "px": 11.2,
+          "text": "任意"
+        },
+        {
+          "el": "small",
+          "px": 11.2,
+          "text": "未計算"
+        },
+        {
+          "el": "small",
+          "px": 11.2,
+          "text": "最後に作る"
+        }
+      ]
+    },
+    "hScroll": {
+      "scrollWidth": 375,
+      "innerWidth": 375,
+      "overflow": false
+    }
+  },
+  "flowNoParams": {
+    "inputTaps": 6,
+    "totalTaps": 7,
+    "steps": 4,
+    "scrollPx": 9106,
+    "bookingInView": true,
+    "actions": [
+      "select 行き先",
+      "date",
+      "select 犬の大きさ(プルダウン)",
+      "tap 送信",
+      "scroll to 予約ボタン"
+    ],
+    "routeCalls": 1,
+    "departuresPerCall": [
+      6
+    ]
+  },
+  "flowDestParam": {
+    "destSelected": "kitsuregawa",
+    "totalTaps": 3,
+    "steps": 2,
+    "scrollPx": 9153,
+    "bookingInView": true,
+    "actions": [
+      "date",
+      "tap 送信",
+      "scroll to 予約ボタン"
+    ],
+    "routeCalls": 1
+  },
+  "flowVacancy": {
+    "totalTaps": 1,
+    "steps": 1,
+    "scrollPx": 6407,
+    "bookingInView": true,
+    "routeCalls": 1
+  },
+  "errors": {
+    "no-destination": {
+      "text": "掲載先をプルダウンから選んでください。",
+      "inView": true,
+      "fieldErrorInView": false,
+      "focus": "go"
+    },
+    "api-500": {
+      "text": "所要時間を計算できませんでした。時間をおいて再度お試しください。",
+      "inView": true,
+      "fieldErrorInView": false,
+      "focus": "BODY"
+    },
+    "api-429": {
+      "text": "所要時間を計算できませんでした。時間をおいて再度お試しください。",
+      "inView": true,
+      "fieldErrorInView": false,
+      "focus": "BODY"
+    },
+    "network": {
+      "text": "Failed to fetch",
+      "inView": true,
+      "fieldErrorInView": false,
+      "focus": "BODY"
+    },
+    "past-time": {
+      "text": "出発時刻がすべて過去になっています。日付か時刻を変えてください。",
+      "inView": true,
+      "fieldErrorInView": false,
+      "focus": "go"
+    }
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "label": "after",
+  "viewport": "375x812",
+  "date": "2026-10-31",
+  "generated": "2026-10-23T23:49:48.634Z",
+  "initial": {
+    "vacancyFields": 11,
+    "formFieldsVisible": 5,
+    "formButtonsVisible": 1,
+    "formFieldsTotal": 21,
+    "fieldsAboveSubmit": 5,
+    "formFieldsOrder": [
+      "1行き先(宿・おでかけ先)必須(required)",
+      "2出発日(宿はチェックイン日)必須(required)",
+      "3出発地既定: 東京駅",
+      "駅名で出発地を探す",
+      "小型犬"
+    ],
+    "fieldsWithRequiredOrOptionalMark": 2,
+    "submitY": 3266,
+    "pageHeight": 4213,
+    "firstViewFilledButtons": 9,
+    "tapTargets": {
+      "count": 0,
+      "nonInline": 0,
+      "samples": []
+    },
+    "smallText": {
+      "count": 0,
+      "samples": []
+    },
+    "hScroll": {
+      "scrollWidth": 375,
+      "innerWidth": 375,
+      "overflow": false
+    }
+  },
+  "keyboard": {
+    "origin-q": {
+      "inputTop": 12,
+      "suggestions": 5,
+      "suggestionsVisible": 4,
+      "firstSuggestionVisible": true
+    },
+    "vc-origin-q": {
+      "inputTop": 12,
+      "suggestions": 5,
+      "suggestionsVisible": 5,
+      "firstSuggestionVisible": true
+    }
+  },
+  "waiting": {
+    "goText": "計算中…",
+    "statusText": "経路を計算しています… 出発時刻 6 通りの渋滞予測を Google で調べています。ふつう 5〜15 秒です。",
+    "statusInView": true
+  },
+  "results": {
+    "filledButtonsInResults": [
+      "宿の空室と予約先を見る",
+      "広告｜楽天トラベルで空室・条件を確認10/31(土)チェック"
+    ],
+    "filledButtonsFirstView": [
+      "宿の空室と予約先を見る"
+    ],
+    "bookingY": 2128,
+    "cardsBeforeBooking": 3,
+    "tapTargets": {
+      "count": 14,
+      "nonInline": 0,
+      "samples": []
+    },
+    "smallText": {
+      "count": 0,
+      "samples": []
+    },
+    "hScroll": {
+      "scrollWidth": 375,
+      "innerWidth": 375,
+      "overflow": false
+    }
+  },
+  "flowNoParams": {
+    "inputTaps": 5,
+    "totalTaps": 7,
+    "steps": 5,
+    "scrollPx": 2739,
+    "bookingInView": true,
+    "actions": [
+      "select 行き先",
+      "date",
+      "tap 犬の大きさ(ボタン)",
+      "tap 送信",
+      "tap 結果の主ボタン"
+    ],
+    "routeCalls": 1,
+    "departuresPerCall": [
+      6
+    ]
+  },
+  "flowDestParam": {
+    "destSelected": "kitsuregawa",
+    "totalTaps": 4,
+    "steps": 3,
+    "scrollPx": 1368,
+    "bookingInView": true,
+    "actions": [
+      "date",
+      "tap 送信",
+      "tap 結果の主ボタン"
+    ],
+    "routeCalls": 1
+  },
+  "flowVacancy": {
+    "totalTaps": 2,
+    "steps": 2,
+    "scrollPx": 2563,
+    "bookingInView": true,
+    "routeCalls": 1
+  },
+  "errors": {
+    "no-destination": {
+      "text": "行き先(宿・おでかけ先)がまだ選ばれていません。「1 行き先」のプルダウンから選んでください。",
+      "inView": false,
+      "fieldErrorInView": true,
+      "focus": "dest-q"
+    },
+    "api-500": {
+      "text": "経路の計算サービスが応答しませんでした。少し時間をおいて、もう一度「プランを作る」を押してください。",
+      "inView": true,
+      "fieldErrorInView": false,
+      "focus": "error"
+    },
+    "api-429": {
+      "text": "経路の計算が一時的に混み合っています(1 日に計算できる回数に上限があります)。数分おいてから、もう一度「プランを作る」を押してください。",
+      "inView": true,
+      "fieldErrorInView": false,
+      "focus": "error"
+    },
+    "network": {
+      "text": "通信できませんでした。電波の届く場所で、もう一度「プランを作る」を押してください(入力した内容はそのまま残っています)。",
+      "inView": true,
+      "fieldErrorInView": false,
+      "focus": "error"
+    },
+    "past-time": {
+      "text": "10/24(土)の 0:00 から比べる出発時刻は、すべて過ぎています。出発日を明日以降にするか、「条件を細かく決める」で比べ始める出発時刻を遅くしてください。",
+      "inView": false,
+      "fieldErrorInView": true,
+      "focus": "date"
+    }
+  }
+}

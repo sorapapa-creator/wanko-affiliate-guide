@@ -1,0 +1,63 @@
+{
+  "label": "before",
+  "url": "/route-planner/",
+  "formFactor": "mobile",
+  "runs": [
+    {
+      "performance": 70,
+      "accessibility": 90,
+      "bestPractices": 79,
+      "seo": 100,
+      "fcp": "1.3 s",
+      "lcp": "1.6 s",
+      "tbt": "5,090 ms",
+      "cls": "0",
+      "a11yFailed": [
+        "aria-allowed-attr",
+        "color-contrast"
+      ]
+    },
+    {
+      "performance": 65,
+      "accessibility": 90,
+      "bestPractices": 79,
+      "seo": 100,
+      "fcp": "2.8 s",
+      "lcp": "2.9 s",
+      "tbt": "1,460 ms",
+      "cls": "0",
+      "a11yFailed": [
+        "aria-allowed-attr",
+        "color-contrast"
+      ]
+    },
+    {
+      "performance": 65,
+      "accessibility": 90,
+      "bestPractices": 79,
+      "seo": 100,
+      "fcp": "2.8 s",
+      "lcp": "2.9 s",
+      "tbt": "1,410 ms",
+      "cls": "0",
+      "a11yFailed": [
+        "aria-allowed-attr",
+        "color-contrast"
+      ]
+    }
+  ],
+  "median": {
+    "performance": 65,
+    "accessibility": 90,
+    "bestPractices": 79,
+    "seo": 100,
+    "fcp": "2.8 s",
+    "lcp": "2.9 s",
+    "tbt": "1,410 ms",
+    "cls": "0",
+    "a11yFailed": [
+      "aria-allowed-attr",
+      "color-contrast"
+    ]
+  }
+}

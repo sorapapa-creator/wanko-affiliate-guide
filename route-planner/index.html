@@ -343,6 +343,92 @@
     :root:not([data-theme="light"]) .actions a:not(.main), :root:not([data-theme="light"]) button.sub { color: #9cc3a6; border-color: #9cc3a6; }
   }
 </style>
+<style id="planner-ux-20261024">
+  /* planner-ux-20261024: スマホで初めて使う人向け。必須 2 つ → 「プランを作る」、選択肢はボタン、押せる所は 44px 以上、文字は 12px 以上 */
+  .req, .opt { display: inline-block; font-size: .75rem; font-weight: 700; line-height: 1.55; padding: 0 8px; border-radius: 999px; letter-spacing: 0; white-space: nowrap; }
+  .req { background: #8a2a1c; color: #fff; }
+  .opt { background: var(--chip); color: var(--text); }
+  .form-title { margin: 0 0 4px; font-size: 1.15rem; }
+  .form-lead { margin: 0 0 12px; color: var(--muted); font-size: .92rem; }
+  #form fieldset.step-field { margin-bottom: 10px; }
+  #form .step-field > .planner-field-label { color: var(--text); font-size: .98rem; letter-spacing: .02em; align-items: center; }
+  .step-no { display: inline-grid; place-items: center; width: 24px; height: 24px; border-radius: 50%; background: var(--site-green); color: #fff; font-size: .82rem; margin-right: 8px; vertical-align: 1px; }
+  .seg { display: flex; flex-wrap: wrap; gap: 8px; }
+  .seg label { position: relative; flex: 1 1 0; min-width: 76px; min-height: 48px; display: flex; align-items: center; justify-content: center; text-align: center;
+    padding: 6px 10px; border: 1px solid var(--site-field); border-radius: 10px; background: var(--panel); color: var(--text); font-weight: 700; font-size: .95rem; line-height: 1.3; cursor: pointer; }
+  .seg input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; padding: 0; opacity: 0; cursor: pointer; }
+  .seg label.on { background: var(--site-green); border-color: var(--site-green); color: #fff; }
+  .seg label:focus-within { outline: 3px solid #b27048; outline-offset: 2px; }
+  .seg-src { position: absolute !important; width: 1px !important; height: 1px !important; min-height: 0 !important; padding: 0 !important; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0 !important; }
+  #vacancy-card .seg { margin-top: 2px; }
+  .more-options { border: 1px solid var(--line); border-radius: 12px; margin: 4px 0 14px; background: var(--panel); }
+  .more-options > summary { list-style: none; min-height: 52px; padding: 10px 14px; cursor: pointer; font-weight: 700; display: flex; flex-wrap: wrap; align-items: center; gap: 2px 8px; }
+  .more-options > summary::-webkit-details-marker { display: none; }
+  .more-options > summary::after { content: "＋"; margin-left: auto; color: var(--site-green); font-size: 1.1rem; }
+  .more-options[open] > summary::after { content: "−"; }
+  .more-options > summary .note { flex-basis: 100%; font-weight: 400; order: 2; }
+  .more-options > summary::after { order: 1; }
+  #form .destination-choice-guide { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  #form .destination-choice-guide > div:last-child { grid-column: auto; }
+  .more-options > :not(summary) { margin-left: 10px; margin-right: 10px; }
+  .more-options[open] { padding-bottom: 4px; }
+  #go { min-height: 52px; font-size: 1.05rem; }
+  .go-status { margin: 8px 0 0; font-size: .92rem; }
+  .go-status:empty { display: none; }
+  .go-status .spin { display: inline-block; width: 14px; height: 14px; border: 2px solid var(--line); border-top-color: var(--accent); border-radius: 50%; animation: planner-spin 1s linear infinite; vertical-align: -2px; margin-right: 6px; }
+  @keyframes planner-spin { to { transform: rotate(360deg); } }
+  @media (prefers-reduced-motion: reduce) { .go-status .spin { animation: none; } }
+  #form #error { margin: 10px 0 0; border-left: 4px solid var(--bad); }
+  #error:focus-visible, #next-title:focus-visible, #dest-title:focus-visible { outline: 3px solid #b27048; outline-offset: 2px; }
+  #error:focus:not(:focus-visible), #next-title:focus:not(:focus-visible), #dest-title:focus:not(:focus-visible) { outline: none; }
+  #form [aria-invalid="true"] { border-color: var(--bad) !important; box-shadow: 0 0 0 2px #f3d2cd; }
+  .guide-title { font-size: 1rem; }
+  .guide-more { margin-top: 6px; }
+  .guide-more > summary, details.trip-extra summary { min-height: 44px; display: flex; align-items: center; cursor: pointer; font-weight: 700; }
+  .entry2 a { min-height: 48px; }
+  .next-card { border: 2px solid var(--site-green); }
+  .next-card h2 { font-size: 1.15rem; margin: 0 0 4px; }
+  .next-summary { margin: 0 0 10px; }
+  .next-cta { min-height: 52px; font-size: 1.05rem; }
+  .next-card .next-more { margin: 10px 0 0; }
+  a.vc-book-alt { display: inline-flex; align-items: center; min-height: 44px; margin-top: 8px; padding: 8px 14px; border: 1px solid var(--accent); border-radius: 10px; color: var(--accent); font-weight: 700; text-decoration: none; }
+  /* 押せる所は 44px 以上(地図の中と文中のリンクは除く) */
+  .wrap > p a { min-height: 44px; }
+  .chips label { min-height: 44px; display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; }
+  .actions a, .actions button { min-height: 44px; }
+  .actions a { display: inline-flex; align-items: center; }
+  .steps a { min-height: 44px; }
+  .steps a small { font-size: .78rem; }
+  .sug button { min-height: 44px; }
+  #vacancy-card select, #vacancy-card input:not([type="checkbox"]):not([type="radio"]), #results select, #results input[type="time"] { min-height: 44px; }
+  .picks button.sub, .map-detail .md-close, .map-fit, .wp-ctrl button, .wp-ctrl select, .wp-q { min-height: 44px; }
+  a.wp-details { display: flex; align-items: center; min-height: 44px; }
+  .vc-chip { min-height: 44px; }
+  footer .footer-links a, footer .policy-link a { display: inline-block; padding: 11px 0; }
+  .origin-search input { scroll-margin-top: 12px; }
+  .wrap > p a { min-width: 44px; justify-content: center; }
+  .checklist .fix a, .rakuten-credit a { display: inline-flex; align-items: center; min-height: 44px; }
+  #results .search-context summary { min-height: 44px; display: flex; align-items: center; }
+  .guide-more > summary::before, details.trip-extra summary::before, .dest-facts > summary::before { content: "▸"; color: var(--site-green); margin-right: 6px; }
+  .guide-more[open] > summary::before, details.trip-extra[open] summary::before, .dest-facts[open] > summary::before { content: "▾"; }
+  .guide-more > summary, .dest-facts > summary { list-style: none; }
+  .guide-more > summary::-webkit-details-marker, details.trip-extra summary::-webkit-details-marker, .dest-facts > summary::-webkit-details-marker { display: none; }
+  .dest-facts { margin: 8px 0; border-top: 1px solid var(--line); }
+  .dest-facts > summary { min-height: 44px; display: flex; align-items: center; cursor: pointer; font-weight: 700; }
+  .field-error { margin: 6px 0 0; color: var(--bad); font-weight: 700; font-size: .92rem; }
+  /* 空室を確認できないときの案内(W01): 期限切れ・データなし・読み込み失敗・0 件・取得時刻不明を別々に */
+  .vc-state { margin: 12px 0; padding: 14px 16px; border: 1px solid var(--line); border-left: 4px solid var(--warn); border-radius: 10px; background: var(--panel); }
+  .vc-state h3 { margin: 0 0 6px; font-size: 1.05rem; }
+  .vc-state p { margin: 6px 0; }
+  .vc-state-no_match { border-left-color: var(--site-green); }
+  .vc-state-fetch_error { border-left-color: var(--bad); }
+  .vc-state-cond { font-size: .92rem; background: var(--bg); padding: 6px 10px; border-radius: 8px; overflow-wrap: anywhere; }
+  .vc-state-actions { align-items: center; }
+  .vc-state-actions a.vc-state-main { justify-content: center; min-height: 48px; padding: 10px 18px; border-radius: 10px; background: var(--site-green); border-color: var(--site-green); color: #fff !important; font-weight: 700; text-decoration: none; }
+  .vc-state-actions button.primary { width: auto; min-height: 48px; }
+  #vc-state-title:focus-visible { outline: 3px solid #b27048; outline-offset: 2px; }
+  #vc-state-title:focus:not(:focus-visible) { outline: none; }
+</style>
 <meta property="og:site_name" content="わんことのじかん">
 <meta property="og:title" content="犬と泊まれる宿を空室から探す・往復の行程を作る｜わんことのじかん">
 <meta property="og:description" content="掲載対象の週末・祝前日から宿の空室候補を探し、出発・休憩・立ち寄り・帰宅までの行程を作れます。犬条件と最新空室は予約先で確認してください。">
@@ -358,16 +444,18 @@
 <body><!-- wanko-pr-notice --><p class="pr-notice" role="note"><b>本ページはプロモーション(広告)を含みます。</b>紹介している宿・商品のリンクから予約・購入があると、運営者に紹介料が入ることがあります。</p>
 <div class="wrap">
   <h1>わんこ旅行プラン</h1><p style="margin:4px 0 12px;font-size:14px"><a href="../dog-lodging-guide.html">犬と泊まれる宿</a>　<a href="../east-japan-dog-trips.html">犬とおでかけ</a>　<a href="../rest-stops.html">犬と休めるSA・PA・道の駅</a>　<a href="../travel-gear.html">旅行の持ち物（犬用品）</a>　<a href="../goods.html">毎日の犬用品</a>　<a href="../wear.html">犬服・ウェア</a>　<a href="../food.html">主食</a></p>
-<div class="ad" style="font-size:12px;color:#76786f;padding:8px 16px"><strong>広告</strong> 予約・購入のリンクを利用すると、運営者に紹介料が入る場合があります(バリューコマースの LinkSwitch により、提携先へのリンクが広告リンクとして扱われることがあります)。掲載順や比較内容は報酬の有無で変えていません。</div>
+<div class="ad" style="font-size:12px;color:#5b5d55;padding:8px 16px"><strong>広告</strong> 予約・購入のリンクを利用すると、運営者に紹介料が入る場合があります(バリューコマースの LinkSwitch により、提携先へのリンクが広告リンクとして扱われることがあります)。掲載順や比較内容は報酬の有無で変えていません。</div>
   <div class="guide" id="guide">
-    <div class="actions entry2"><a class="main" href="#vacancy-card">日付から宿を探す</a><a href="#form">決まった宿への行程を作る</a></div>
-    <p class="guide-title">順番に選ぶだけで、宿から帰宅までの一日が見えます。</p>
+    <p class="guide-title" id="guide-title">宿はもう決まっていますか？</p>
+    <div class="actions entry2" aria-labelledby="guide-title"><a class="main" href="#vacancy-card">まだ → 空室から宿を探す</a><a href="#form">決まっている → 行程を作る</a></div>
+    <details class="guide-more"><summary>このページでできること(4 ステップ)</summary>
     <ol class="guide-steps">
       <li><b>いつ・どこへ</b><span>出発日と出発地を入れて行き先を選ぶ。宿が決まっていなければ、この下の「泊まれる日から宿を探す」で空室のある宿から選べます</span></li>
       <li><b>出発時刻を決める</b><span>渋滞込みの到着時刻を見比べて、おすすめか好きな時刻をタップ</span></li>
       <li><b>寄り道と休憩</b><span>地図の印から遊べる場所やカフェを選び、運転が長い区間は SA・PA で犬の休憩</span></li>
       <li><b>行程表と予約</b><span>出発からチェックイン、帰宅までを一枚の表に。空室があればその日付のまま予約へ</span></li>
     </ol>
+    </details>
   </div>
   <div class="mock" id="mock">テスト用の仮データで表示しています(渋滞は実データではありません)。</div>
 
@@ -377,7 +465,7 @@
     <p class="hint">次の週末にどこなら泊まれるか、から決めたいときに。掲載宿(犬の条件を確認済み)のうち楽天トラベルに空室がある宿を、犬の条件と出発地からの所要時間で並べます。見つかったら「この宿で旅行プランを作る」で、そのまま往復の行程を作れます。</p>
     <div class="row four">
       <div><label class="t planner-field-label" for="vc-date"><span>チェックイン日</span></label><select id="vc-date"><option value="">読み込み中…</option></select></div>
-      <div><label class="t planner-field-label" for="vc-origin"><span>出発地(主要駅)</span></label><select id="vc-origin"><option value="tokyo">東京駅</option></select><div class="origin-search"><input type="search" id="vc-origin-q" placeholder="一覧にない駅は駅名で探す(読みでも可)" autocomplete="off" aria-label="駅名で出発地を探す" aria-controls="vc-origin-sug" aria-expanded="false"><div id="vc-origin-sug" class="sug hidden" role="listbox"></div></div></div>
+      <div><label class="t planner-field-label" for="vc-origin"><span>出発地(主要駅)</span></label><select id="vc-origin"><option value="tokyo">東京駅</option></select><div class="origin-search"><input type="search" id="vc-origin-q" role="combobox" aria-autocomplete="list" placeholder="一覧にない駅は駅名で探す(読みでも可)" autocomplete="off" aria-label="駅名で出発地を探す" aria-controls="vc-origin-sug" aria-expanded="false"><div id="vc-origin-sug" class="sug hidden" role="listbox" aria-label="駅の候補"></div></div></div>
       <div><label class="t planner-field-label" for="vc-adults"><span>人数(大人)</span></label><select id="vc-adults"><option value="2" selected>2名(夫婦・カップル)</option><option value="4">4名(家族)</option></select></div>
       <div><label class="t planner-field-label" for="vc-budget"><span>予算(1泊・上限)</span></label>
         <select id="vc-budget"><option value="0">指定なし</option><option value="20000">2万円まで</option><option value="30000">3万円まで</option><option value="40000">4万円まで</option><option value="60000">6万円まで</option><option value="80000">8万円まで</option></select></div>
@@ -394,10 +482,27 @@
     <p class="note hidden" id="vc-credit">空室・料金・予約リンクは楽天ウェブサービス(楽天トラベル空室検索)から取得した情報です。予約時に楽天トラベルで最新の空室・料金・犬の受け入れ条件をご確認ください。「一般プラン」はその客室が犬対応かどうか未確認です。宿の写真は楽天トラベル提供です。空室・料金は取得から 24 時間以内のものだけを表示し、各カードに取得時刻(日本時間)を示しています。<a href="https://developers.rakuten.com/" target="_blank">Supported by Rakuten Developers</a></p>
   </div>
 
-  <form id="form" autocomplete="off">
-    <div class="row two">
-      <fieldset>
-        <label class="t planner-field-label" for="origin"><span>出発地</span></label>
+  <form id="form" autocomplete="off" aria-labelledby="form-title">
+    <h2 class="form-title" id="form-title">行程を作る</h2>
+    <p class="form-lead" id="form-lead"><span class="req">必須</span> の 2 つを選べば計算できます。ほかは既定値のままで大丈夫です(あとから変えられます)。</p>
+    <fieldset class="step-field">
+      <label class="t planner-field-label" for="dest-q"><span><span class="step-no" aria-hidden="true">1</span>行き先(宿・おでかけ先)</span><span class="req">必須</span></label>
+      <div class="destination-choice-guide" aria-hidden="true">
+        <div><strong>宿泊先</strong><span>犬と泊まる場所</span></div>
+        <div><strong>おでかけ先</strong><span>カフェ・ラン・観光</span></div>
+      </div>
+      <select id="dest-q" aria-required="true" aria-describedby="dest-hint"><option value="">宿泊先・おでかけ先から選択</option></select>
+      <p class="destination-instruction">各区分の中は50音順です。読み未登録の英字名は末尾に表記順で表示します。</p>
+      <div class="hint" id="dest-hint"></div>
+      <div class="actions"><a id="dest-details-link" class="hidden" href="#">選択した行き先の紹介を開く ↗</a></div>
+    </fieldset>
+    <fieldset class="step-field">
+      <label class="t planner-field-label" for="date"><span><span class="step-no" aria-hidden="true">2</span>出発日(宿はチェックイン日)</span><span class="req">必須</span></label>
+      <input type="date" id="date" required aria-describedby="date-hint">
+      <p class="hint" id="date-hint">日付を押すとカレンダーが開きます。</p>
+    </fieldset>
+    <fieldset class="step-field">
+      <label class="t planner-field-label" for="origin"><span><span class="step-no" aria-hidden="true">3</span>出発地</span><span class="opt">既定: 東京駅</span></label>
         <select id="origin">
           <optgroup label="東京・神奈川"><option value="35.6812,139.7671">東京駅</option><option value="35.6896,139.7006">新宿駅</option><option value="35.7138,139.7773">上野駅</option><option value="35.6982,139.4137">立川駅</option><option value="35.4658,139.6223">横浜駅</option><option value="35.5313,139.6969">川崎駅</option><option value="35.2564,139.1550">小田原駅</option><option value="35.5442,139.4463">町田駅</option><option value="35.6553,139.3389">八王子駅</option><option value="35.3386,139.4875">藤沢駅</option><option value="35.3192,139.5503">鎌倉駅</option><option value="35.4390,139.3640">本厚木駅</option><option value="35.5940,139.3420">橋本駅</option><option value="35.7312,139.7084">池袋駅</option><option value="35.6307,139.7374">品川駅</option><option value="35.6587,139.7001">渋谷駅</option><option value="35.5457,139.7761">羽田空港</option><option value="35.5815,139.3707">相模原駅</option><option value="35.3274,139.3492">平塚駅</option><option value="35.2797,139.6701">横須賀中央駅</option><option value="35.4522,139.3917">海老名駅</option></optgroup>
           <optgroup label="埼玉・千葉"><option value="35.9063,139.6240">大宮駅</option><option value="35.9067,139.4827">川越駅</option><option value="35.6130,140.1136">千葉駅</option><option value="35.7013,139.9856">船橋駅</option><option value="35.3812,139.9249">木更津駅</option><option value="35.6500,139.9130">新浦安駅</option><option value="35.8617,139.9706">柏駅</option><option value="35.7777,140.3140">成田駅</option><option value="34.9962,139.8616">館山駅</option><option value="35.1076,140.1037">安房鴨川駅</option><option value="35.1527,140.3197">勝浦駅</option><option value="35.4260,140.3030">茂原駅</option><option value="35.7350,140.8270">銚子駅</option><option value="35.5167,140.3100">大網駅</option><option value="35.8976,140.4950">佐原駅</option><option value="36.1390,139.3890">熊谷駅</option><option value="35.9900,139.0850">秩父駅</option><option value="35.7759,140.3933">成田空港</option><option value="35.7868,139.4733">所沢駅</option><option value="35.8883,139.7860">越谷駅</option><option value="35.9801,139.7521">春日部駅</option><option value="35.7845,139.9002">松戸駅</option><option value="35.7288,139.9082">市川駅</option><option value="35.8019,139.7175">川口駅</option></optgroup>
@@ -407,21 +512,24 @@
           <optgroup label="東北(福島・宮城・山形)"><option value="38.2600,140.8824">仙台駅</option><option value="37.3980,140.3886">郡山駅</option><option value="37.7540,140.4594">福島駅</option><option value="38.2490,140.3270">山形駅</option><option value="37.5080,139.9300">会津若松駅</option><option value="37.1302,140.2130">白河駅</option><option value="37.1231,140.1884">新白河駅</option><option value="37.3005,140.3719">須賀川駅</option><option value="37.0582,140.8922">いわき駅</option><option value="37.6440,139.8678">喜多方駅</option><option value="37.9096,140.1281">米沢駅</option><option value="38.3600,140.3696">天童駅</option><option value="38.1733,140.8828">名取駅</option><option value="38.4336,141.3044">石巻駅</option><option value="37.9954,140.6332">白石蔵王駅</option><option value="38.5720,140.9615">古川駅</option></optgroup>
           <option value="here">現在地を使う</option>
         </select>
-        <div class="origin-search"><input type="search" id="origin-q" placeholder="一覧にない駅は駅名で探す(例: 宇都宮、海老名)" autocomplete="off" aria-label="駅名で出発地を探す" aria-controls="origin-sug" aria-expanded="false"><div id="origin-sug" class="sug hidden" role="listbox"></div><p class="hint" id="origin-hint">掲載範囲(関東と新潟・長野・山梨・静岡・福島・宮城・山形)の駅から選べます</p></div>
+        <div class="origin-search"><input type="search" id="origin-q" role="combobox" aria-autocomplete="list" placeholder="一覧にない駅は駅名で探す(例: 宇都宮、海老名)" autocomplete="off" aria-label="駅名で出発地を探す" aria-controls="origin-sug" aria-expanded="false"><div id="origin-sug" class="sug hidden" role="listbox" aria-label="駅の候補"></div><p class="hint" id="origin-hint">掲載範囲(関東と新潟・長野・山梨・静岡・福島・宮城・山形)の駅から選べます</p></div>
         <div class="hint">各駅の周辺を出発地点の目安として計算します。細かな住所ではないため、到着先も含めルートを確認してください。</div>
-      </fieldset>
-      <fieldset>
-        <label class="t planner-field-label" for="dest-q"><span>行き先の種類を選ぶ</span></label>
-        <div class="destination-choice-guide" aria-label="行き先の区分">
-          <div><strong>宿泊先</strong><span>犬と泊まる場所</span></div>
-          <div><strong>おでかけ先</strong><span>カフェ・ラン・観光</span></div>
+    </fieldset>
+    <fieldset class="step-field">
+      <label class="t planner-field-label" for="size" id="size-label"><span><span class="step-no" aria-hidden="true">4</span>犬の大きさ</span><span class="opt">既定: 小型犬</span></label>
+      <select id="size"><option value="small">小型犬</option><option value="medium">中型犬</option><option value="large">大型犬</option></select>
+    </fieldset>
+    <details class="more-options" id="more-options">
+      <summary><span class="opt">任意</span> 条件を細かく決める <span class="note" id="more-options-note">出発時刻(既定 5:00 から 6 通り比較)・立ち寄り先・年齢や体質・泊数と人数</span></summary>
+      <div class="row two">
+        <fieldset><label class="t planner-field-label" for="start"><span>比べ始める出発時刻</span></label><input type="time" id="start" value="05:00" step="1800" aria-describedby="start-hint"><p class="hint" id="start-hint"></p></fieldset>
+        <div class="row two">
+          <fieldset><label class="t planner-field-label" for="step"><span>比較間隔</span></label>
+            <select id="step"><option value="60">1時間ごと</option><option value="30">30分ごと</option></select></fieldset>
+          <fieldset><label class="t planner-field-label" for="count"><span>比較数</span></label>
+            <select id="count"><option>4</option><option selected>6</option><option>8</option></select></fieldset>
         </div>
-        <p class="destination-instruction">各区分の中は50音順です。読み未登録の英字名は末尾に表記順で表示します。</p>
-        <select id="dest-q"><option value="">宿泊先・おでかけ先から選択</option></select>
-        <div class="hint" id="dest-hint"></div>
-        <div class="actions"><a id="dest-details-link" class="hidden" href="#">選択した行き先の紹介を開く ↗</a></div>
-      </fieldset>
-    </div>
+      </div>
     <fieldset>
       <label class="t planner-field-label" for="add-wp"><span>立ち寄り先(任意・3か所まで)</span></label>
       <button type="button" class="sub" id="find-wp-route">ルート沿いの候補を探す</button>
@@ -430,19 +538,9 @@
       <button type="button" class="sub" id="add-wp">＋ 立ち寄り先を追加</button>
       <div class="hint">候補は、立ち寄り前のルート(出発地→行き先)から直線30km以内のおでかけ先とSA・PA・道の駅です(宿は入れません)。区分ごとに50音順で選べます（読み未登録の英字名は末尾に表記順）。出発地 → 立ち寄り先（上から順）→ 行き先の順に回ります。距離は直線距離で、実際の走行距離・迂回距離とは異なります。「地域の目安」は市町村などの代表点による概算です。位置未登録の施設は含みません。15分以上の滞在は犬の休憩としても数えます。</div>
     </fieldset>
-    <div class="row four">
-      <fieldset><label class="t planner-field-label" for="date"><span>出発日</span></label><input type="date" id="date" required></fieldset>
-      <fieldset><label class="t planner-field-label" for="start"><span>出発時刻</span></label><input type="time" id="start" value="05:00" step="1800"></fieldset>
-      <fieldset><label class="t planner-field-label" for="step"><span>比較間隔</span></label>
-        <select id="step"><option value="60">1時間ごと</option><option value="30">30分ごと</option></select></fieldset>
-      <fieldset><label class="t planner-field-label" for="count"><span>比較数</span></label>
-        <select id="count"><option>4</option><option selected>6</option><option>8</option></select></fieldset>
-    </div>
     <fieldset>
-      <legend>うちの子について</legend>
+      <legend>うちの子の年齢・体質</legend>
       <div class="row two">
-        <div><label class="t planner-field-label" for="size"><span>体格</span></label>
-          <select id="size"><option value="small">小型犬</option><option value="medium">中型犬</option><option value="large">大型犬</option></select></div>
         <div><label class="t planner-field-label" for="age"><span>年齢</span></label>
           <select id="age"><option value="adult">成犬</option><option value="puppy">子犬(1歳未満)</option><option value="senior">シニア(7歳以上)</option></select></div>
       </div>
@@ -463,7 +561,7 @@
       <div class="hint">休憩の間隔は、成犬は2時間、子犬・シニア・車酔いする子は1時間、暑さに弱い子・短頭種は夏季1.5時間、トイレの間隔を入れた場合はその間隔を目安にします。ヒート中は受け入れない宿・ドッグランが多いので、行程表で確認事項として出します。持病がある子は獣医さんの指示を優先してください。</div>
     </fieldset>
     <details class="trip-extra" id="trip-extra">
-      <summary>日付・人数・犬の条件でも確認する(任意)</summary>
+      <summary>泊数・人数・頭数・体重(宿の犬の条件と照らし合わせます)</summary>
       <p class="hint">入れた場合だけ、結果の下に「宿の空室の確かめ方・犬の条件・天気・この日程の犬イベント」を出します。空欄のままなら、これまでと同じ結果です。ここで入れた内容は外部に送りません(このページの中だけで使います)。</p>
       <div class="row four">
         <fieldset><label class="t planner-field-label" for="checkout"><span>チェックアウト日</span><small>泊まる場合</small></label><input type="date" id="checkout"></fieldset>
@@ -475,19 +573,21 @@
       </div>
       <p class="hint">チェックイン日は上の「出発日」です。犬の条件は、宿が公式に一律の上限(頭数・体重・大きさ)を書いている場合だけ照らし合わせ、それ以外は「要確認」と表示します。</p>
     </details>
-    <button class="primary" id="go" type="submit">予想時間を出す</button>
+    </details>
+    <button class="primary" id="go" type="submit" aria-describedby="go-status">プランを作る</button>
+    <p class="go-status" id="go-status" role="status" aria-live="polite"></p>
+    <div id="error" class="card hidden" role="alert" tabindex="-1"></div>
   </form>
 
-  <div id="error" class="card hidden" role="alert"></div>
-
   <section id="results" class="hidden">
-    <nav class="steps" id="steps" aria-label="プラン作りの進み具合"></nav>
-    <div class="card" id="compare-card">
-      <h2 id="compare-title">出発時刻ごとの予想時間</h2>
-      <table><thead><tr id="compare-head"><th>出発</th><th>運転時間</th><th>到着</th><th>渋滞の影響</th></tr></thead><tbody id="compare"></tbody></table>
-      <p class="note" id="compare-note"></p>
+    <div class="card next-card" id="next-card">
+      <h2 id="next-title" tabindex="-1">プランができました</h2>
+      <p class="next-summary" id="next-summary"></p>
+      <button type="button" class="primary next-cta" id="next-cta">宿の空室と予約先を見る</button>
+      <p class="note" id="next-note"></p>
+      <p class="note next-more">休憩・寄り道・帰りの時刻まで決めるときは、この下を順に。<a href="#check-card" id="next-itin-link">最後に行程表を作る</a></p>
     </div>
-
+    <nav class="steps" id="steps" aria-label="プラン作りの進み具合"></nav>
     <div class="card" id="plan-card">
       <h2 id="plan-title">わんこ旅行プラン</h2>
       <div class="warnbox hidden" id="plan-stale"></div>
@@ -496,6 +596,13 @@
       <div id="plan-diff"></div>
       <ol class="timeline" id="plan"></ol>
       <div class="actions" id="plan-actions"></div>
+    </div>
+
+    <div class="card" id="dest-card"></div>
+    <div class="card" id="compare-card">
+      <h2 id="compare-title">出発時刻ごとの予想時間</h2>
+      <table><thead><tr id="compare-head"><th>出発</th><th>運転時間</th><th>到着</th><th>渋滞の影響</th></tr></thead><tbody id="compare"></tbody></table>
+      <p class="note" id="compare-note"></p>
     </div>
 
     <div class="card hidden" id="map-card">
@@ -523,7 +630,7 @@
         <h3>地図で選んだ中継地候補 <span class="note" id="map-picks-count"></span></h3>
         <p class="note">丸い候補の印を押して「この場所を選ぶ」で、ここに行が増えます(複数可。地図ではチェックの札が付きます)。行の名前を押すと地図でその場所を示します。「立ち寄りに入れて再計算」で、経路に沿った順に立ち寄り先(最大3か所)へ入れて予想時間を計算し直し、地図では番号のピン(①②③)に変わります。</p>
         <ol class="picks" id="map-picks"></ol>
-        <div class="actions"><button type="button" class="primary" id="map-apply" disabled>立ち寄りに入れて再計算</button> <button type="button" class="sub" id="map-clear">選択を全部外す</button></div>
+        <div class="actions"><button type="button" class="sub" id="map-apply" disabled>立ち寄りに入れて再計算</button> <button type="button" class="sub" id="map-clear">選択を全部外す</button></div>
         <p class="note" id="map-pick-note"></p>
       </div>
       <p class="note">印を押すと名前・条件・施設情報のリンクが出ます(スマホでは地図のすぐ下に出ます)。印の意味は地図の上の「地図の見方」にあります。地図を動かしたり候補を選んだりしても経路の再計算(通信)はしません。候補は経路から直線で近い順の目安で、営業日・時間・犬の条件は施設情報で確認してください。地図: Google マップ。</p>
@@ -535,7 +642,6 @@
       <div id="rest-pick"></div>
     </div>
 
-    <div class="card" id="dest-card"></div>
 
     <div class="card hidden" id="trip-check" aria-live="polite"></div>
 
@@ -560,7 +666,7 @@
         <div><label class="t planner-field-label" for="ret-start"><span>出発時刻</span></label><input type="time" id="ret-start" value="10:00" step="900"></div>
         <div><label class="t planner-field-label" for="ret-via"><span>近くの場所を経由</span></label><label class="chips"><input type="checkbox" id="ret-via" checked> チェックした「近くの掲載先」を帰り道に回る</label></div>
       </div>
-      <div class="actions"><button type="button" class="primary" id="ret-go">帰りの時間を計算</button></div>
+      <div class="actions"><button type="button" class="sub" id="ret-go">帰りの時間を計算</button></div>
       <p class="note" id="ret-status"></p>
       <div id="ret-warn"></div>
       <ol class="timeline" id="ret-plan"></ol>
@@ -572,7 +678,7 @@
       <h2>最終行程表を作る前に確認</h2>
       <p class="hint">今の選択内容です。足りないところはリンクから直して、最後に「最終行程表を作る」を押してください。近くの施設を入れずに作ることもできます。</p>
       <ul class="checklist" id="checklist"></ul>
-      <div class="actions"><button type="button" class="primary" id="make-itinerary">最終行程表を作る</button></div>
+      <div class="actions"><button type="button" class="sub" id="make-itinerary">最終行程表を作る</button></div>
     </div>
     <div class="card hidden" id="itinerary-card">
       <h2 id="itinerary-title" tabindex="-1">最終行程表</h2>
@@ -595,10 +701,11 @@
 <!-- 更新したら ?v= の値を変える(ブラウザに古いファイルが残って新しい動作にならないのを防ぐ) -->
 <script src="config.js?v=2026100101"></script>
 <script src="route-map.js?v=2026101301"></script>
-<script src="vacancy-rules.js?v=20261004-dogfit2"></script>
-<script src="vacancy.js?v=20261004-dogfit"></script>
-<script src="planner.js?v=20261013-map"></script>
+<script src="vacancy-rules.js?v=20261024-ux"></script>
+<script src="vacancy.js?v=20261024-ux"></script>
+<script src="planner.js?v=20261024-ux"></script>
 <script src="trip-check.js?v=2026100108"></script>
+<script src="ux.js?v=20261024"></script>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "2847001768a143df87fa4e78edba9c7e"}'></script><!-- End Cloudflare Web Analytics -->
 
 <!-- valuecommerce-linkswitch --><script type="text/javascript" language="javascript">
