@@ -74,3 +74,36 @@ h1, h2, h3, h4 { word-break: auto-phrase; text-wrap: balance; }
 @media (min-width: 681px) {
   .buy:not(.stay-book-btn), .buy-ad:not(.stay-book-btn) { font-size: 12px; }
 }
+
+/* 5. スマホのタップ領域を 44px 以上にする(docs/ux-audit-20261024.md の指摘 2〜6)。カードの HTML は変えず、CSS だけで押せる範囲を広げる */
+/* サイト共通のナビ: ロゴは見た目の位置を変えずに上下へ広げる。「犬服」「主食」は幅 41px だった */
+.site-nav .brand { padding-block: 8px; margin-block: -8px; }
+.site-nav .nav-links a { min-height: 44px; min-width: 44px; box-sizing: border-box; display: inline-flex; align-items: center; }
+/* トップの困りごとリンク・写真の下のリンク(43px) */
+.filters > a, .moments-link { min-height: 44px; box-sizing: border-box; }
+/* 宿カード: 動物病院ボタン(40px)、最新クチコミの開閉(1 行 22px) */
+.near-help-btn { min-height: 44px; }
+.stay-review-latest > summary { min-height: 44px; box-sizing: border-box; padding-block: 11px; }
+/* 宿・おでかけの「持ち物・旅行プラン・旅の服」リンク(文字の高さ 16px) */
+.route-plan-cta a { display: inline-flex; align-items: center; min-height: 44px; }
+/* 主食・用品・服・旅行用品のカード: 「特徴・確認事項」の開閉(20px)、公式リンク(14〜23px) */
+.card details > summary, details.review-fold > summary { padding-block: 12px; }
+.card-body > a.official-link { display: flex; align-items: center; min-height: 44px; }
+.review-guide > a { display: inline-flex; align-items: center; min-height: 44px; }
+/* おでかけカード: 公式リンク(43px)と確認事項の開閉(24px) */
+article.trip > a, .facility-location a { min-height: 44px; box-sizing: border-box; }
+.outing-details > summary { min-height: 44px; align-items: center; }
+.outing-search select { min-height: 44px; }
+/* Instagram 入口(宿泊前チェック・結果・準備 5 項目) */
+.tdc-q > label, .tdr-survey select { min-height: 44px; box-sizing: border-box; }
+.tdc-skip a { display: inline-flex; align-items: center; min-height: 44px; }
+.tp5 .links a { display: inline-flex; align-items: center; min-height: 44px; box-sizing: border-box; }
+
+/* 6. Instagram 入口の最初の画面にある英字ラベル(11.5px)を 12px に(design-system の最小 12px) */
+.sns-kicker { font-size: .75rem; }
+
+/* 7. 宿泊前チェックの結果ページ: 結果を JS で入れる前に高さを取っておき、下の確認文が押し下げられる揺れ(CLS 0.17)を減らす。
+   値は 360〜768px 幅・回答 4 通りで測った最終の高さの最小値(余白が増えないように) */
+#tdr-head { min-height: 2lh; }
+#tdr-list { min-height: 125px; }
+@media (max-width: 480px) { #tdr-list { min-height: 150px; } }
