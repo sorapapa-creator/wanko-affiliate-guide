@@ -1,0 +1,49 @@
+/* from-sns.html 専用(SNS のプロフィールリンクの着地)。共有の from-sns.css は宿泊前チェックのページも使うため、ここでは body.sns-landing の中だけを上書きする */
+.sns-landing { --accent-ink: #8f4517; --muted-ink: #5f554b; }
+
+/* 広告の明示: 1 行にまとめ、説明(LinkSwitch を含む)は開くと読める */
+.sns-landing .sns-ad { background: #f6efe1; border-bottom: 1px solid #e4dccb; color: #3f4a44; font-size: 13px; line-height: 1.5; }
+.sns-landing .sns-ad summary { display: flex; align-items: center; gap: 8px; max-width: 560px; min-height: 44px; margin: 0 auto; padding: 6px 16px; cursor: pointer; list-style: none; }
+.sns-landing .sns-ad summary::-webkit-details-marker { display: none; }
+.sns-landing .sns-ad-label { flex: none; padding: 1px 6px; border: 1px solid #3f4a44; border-radius: 4px; font-size: 12px; font-weight: 700; }
+.sns-landing .sns-ad-more { margin-left: auto; flex: none; color: var(--accent-ink); font-weight: 700; text-decoration: underline; }
+.sns-landing .sns-ad[open] .sns-ad-more { visibility: hidden; }
+.sns-landing .sns-ad p { max-width: 560px; margin: 0 auto; padding: 0 16px 10px; }
+
+/* 最初の画面に話題と宿泊前チェックが入るよう、見出しまわりを詰める */
+.sns-landing .sns-wrap { padding-top: 12px; }
+.sns-landing .sns-hero { grid-template-columns: 64px 1fr; gap: 12px; margin: 0 0 12px; }
+.sns-landing .sns-hero img { width: 64px; height: 64px; border-width: 2px; }
+.sns-landing h1 { margin: 0 0 2px; font-size: 1.15rem; }
+.sns-landing .sns-lead { color: var(--muted-ink); }
+.sns-landing h2 { margin: 16px 0 8px; color: #5c4936; }
+
+/* 動画の話題: 2 列のタイル。1 タップで話題のページへ */
+.sns-landing .sns-topics { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.sns-landing .sns-topics a { display: flex; flex-direction: column; height: 100%; min-height: 88px; padding: 10px 12px; background: var(--accent-soft); border: 1px solid #f0cfb5; border-radius: 12px; color: var(--text); text-decoration: none; }
+.sns-landing .sns-topics small { color: var(--muted-ink); font-size: 12px; }
+.sns-landing .sns-topics b { font-size: 1.05rem; line-height: 1.4; }
+.sns-landing .sns-topics span { color: var(--accent-ink); font-size: 13px; font-weight: 700; line-height: 1.45; }
+.sns-landing .sns-topics-more { margin: 8px 0 0; }
+.sns-landing .sns-topics-more a { display: flex; align-items: center; justify-content: space-between; min-height: 44px; padding: 0 12px; color: var(--accent-ink); font-size: 14px; font-weight: 700; }
+
+/* 宿泊前チェック: 主ボタン(単色・角 4px・影なし) */
+.sns-landing .sns-primary { display: block; padding: 12px 16px; background: #8f4517; border-radius: 4px; color: #fff; text-decoration: none; }
+.sns-landing .sns-primary b { display: block; font-size: 1.05rem; }
+.sns-landing .sns-primary b::after { content: " →"; }
+.sns-landing .sns-primary span { display: block; font-size: 13px; line-height: 1.5; }
+
+/* そのほかの行き先は控えめに */
+.sns-landing .sns-list { gap: 8px; }
+.sns-landing .sns-list a { min-height: 56px; padding: 10px 14px; border-radius: 12px; box-shadow: none; }
+.sns-landing .sns-list b { font-size: .95rem; }
+.sns-landing .sns-list small { color: var(--muted-ink); }
+.sns-landing .sns-list .go { color: var(--accent-ink); }
+
+/* 足もと: 文字の色と押せる大きさ */
+.sns-landing .sns-note { color: var(--muted-ink); }
+.sns-landing .policy-link { list-style: none; margin: 8px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0 16px; }
+.sns-landing .policy-link a { display: inline-flex; align-items: center; min-height: 44px; color: var(--accent-ink); }
+
+/* フォーカスを見えるように(キーボード操作) */
+.sns-landing a:focus-visible, .sns-landing summary:focus-visible { outline: 3px solid #1f5fa8; outline-offset: 2px; }
