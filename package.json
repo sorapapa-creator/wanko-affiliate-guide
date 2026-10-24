@@ -1,0 +1,11 @@
+{
+  "name": "wanko-affiliate-guide",
+  "private": true,
+  "description": "わんことのじかん(GitHub Pages の静的サイト)。テストの依存は tests/ の中だけに入る(tests/package.json)",
+  "scripts": {
+    "test": "node tests/run.js",
+    "test:visual": "node tests/run.js visual",
+    "test:health": "node tests/run.js health unit",
+    "test:update": "node tests/run.js --update"
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "note": "前回の値(カード数・HTML の大きさ・12px 未満の文字数)と、既知の問題(known)。npm run test:update で今の状態に書き換わる。",
+  "updatedAt": "2026-10-24T00:02:31.108Z",
+  "pages": {
+    "contact": {
+      "htmlBytes": 9529,
+      "smallText": 0
+    },
+    "dog-lodging-guide": {
+      "smallText": 0,
+      "known": {
+        "tapTargets": [
+          "button.near-help-btn",
+          "details.stay-review-latest summary"
+        ]
+      },
+      "cards": 979,
+      "htmlBytes": 4384795
+    },
+    "east-japan-dog-trips": {
+      "known": {
+        "tapTargets": [
+          "article.outing-card.trip a",
+          "article.trip a",
+          "blockquote.twitter-tweet a",
+          "details.outing-details summary",
+          "div.outing-search select",
+          "p.facility-location a",
+          "p.route-plan-cta a"
+        ]
+      },
+      "cards": 878,
+      "smallText": 0,
+      "htmlBytes": 1731307
+    },
+    "first-stay-check-instagram": {
+      "cards": 5,
+      "htmlBytes": 7540,
+      "smallText": 1
+    },
+    "first-stay-check-result": {
+      "known": {
+        "tapTargets": [
+          "#tdr-survey-form select"
+        ]
+      },
+      "cards": 4,
+      "htmlBytes": 8938,
+      "smallText": 1
+    },
+    "food": {
+      "known": {
+        "tapTargets": [
+          "a.official-link",
+          "details.review-fold summary",
+          "div.card-body summary",
+          "div.entry-links a",
+          "section.k9-guide button"
+        ],
+        "sponsored": [
+          "https://px.a8.net/svt/ejp?a8mat=4BCGFN+ENI2R6+3J8+ZRIB5",
+          "https://px.a8.net/svt/ejp?a8mat=4BCGFN+F467OY+46DW+I2I7L"
+        ]
+      },
+      "cards": 969,
+      "smallText": 1,
+      "htmlBytes": 4603011
+    },
+    "goods": {
+      "known": {
+        "sponsored": [
+          "//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3782203&pid=892712141&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fchanet%2F185609.html",
+          "//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3782203&pid=892712141&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fchanet%2F185610.html",
+          "//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3782203&pid=892712141&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fjoshin%2F4945680561273-73-30002856.html",
+          "//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3782203&pid=892712141&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fjoshin%2F4945680561280-73-30002856.html",
+          "//ck.jp.ap.valuecommerce.com/servlet/referral?sid=3782203&pid=892712141&vc_url=https%3A%2F%2Fstore.shopping.yahoo.co.jp%2Fjoshin%2F4974926012187-73-30002855.html"
+        ],
+        "tapTargets": [
+          "a.official-link",
+          "div.card-body summary"
+        ]
+      },
+      "cards": 773,
+      "htmlBytes": 2742044,
+      "smallText": 0
+    },
+    "index": {
+      "known": {
+        "tapTargets": [
+          "nav.filters a"
+        ]
+      },
+      "smallText": 0,
+      "htmlBytes": 28431,
+      "cards": 8
+    },
+    "route-planner": {
+      "known": {
+        "tapTargets": [
+          "div.actions.entry2 a",
+          "div.four.row select",
+          "div.row.three select"
+        ]
+      },
+      "htmlBytes": 64057,
+      "cards": 5,
+      "smallText": 0
+    },
+    "static:a8-partners.html": {},
+    "static:autumn-winter-dog-trips.html": {},
+    "static:dog-trip-checklist.html": {},
+    "static:for-facilities.html": {},
+    "static:from-sns.html": {},
+    "static:mandarine-brothers.html": {},
+    "static:new-additions-20260923.html": {
+      "known": {
+        "links": [
+          "dog-lodging-guide.html#add60-japari"
+        ]
+      }
+    },
+    "static:rest-stops.html": {},
+    "static:royal-canin-guide.html": {},
+    "static:sns/instagram.html": {},
+    "static:sns/threads.html": {},
+    "static:sns/tiktok.html": {},
+    "static:sns/x.html": {},
+    "static:sns/youtube.html": {},
+    "travel-gear": {
+      "smallText": 0,
+      "htmlBytes": 1254156,
+      "known": {
+        "tapTargets": [
+          "a.official-link",
+          "details.review-fold summary",
+          "div.card-body summary"
+        ],
+        "sponsored": [
+          "https://px.a8.net/svt/ejp?a8mat=4BCGFN+F2ZCHE+3FF2+HXKQP"
+        ]
+      },
+      "cards": 336
+    },
+    "travel-prep-5-instagram": {
+      "known": {
+        "tapTargets": [
+          "a.main",
+          "p.links a"
+        ]
+      },
+      "smallText": 1,
+      "cards": 5,
+      "htmlBytes": 8008
+    },
+    "wear": {
+      "htmlBytes": 2577890,
+      "known": {
+        "tapTargets": [
+          "a.official-link",
+          "div.card-body summary"
+        ]
+      },
+      "smallText": 0,
+      "cards": 641
+    }
+  }
+}
