@@ -5,9 +5,9 @@
   const kind = document.querySelector('#outing-kind');
   let region = 'all';
   // perf-20261019: 文字検索用の本文(小文字)は、最初に検索したときに1回だけ作って使い回す。
-  let texts = null, timer;
+  let texts = null, timer = 0, last = -Infinity;
   function update() {
-    clearTimeout(timer);
+    clearTimeout(timer); timer = 0;
     let count = 0;
     const q = query.value.trim().toLowerCase();
     if (q && !texts) texts = cards.map(card => card.textContent.toLowerCase());
@@ -24,8 +24,12 @@
     document.dispatchEvent(new CustomEvent('wanko:filtered', {detail: {shown: count}}));
   }
   buttons.forEach(b => b.addEventListener('click', () => {region = b.dataset.filter; update();}));
-  // perf-20261019: 手入力は打ち終わるまで少し待ってまとめて絞り込む(ほかのスクリプトから送られた input はすぐ反映)。
-  query.addEventListener('input', e => { clearTimeout(timer); if (e.isTrusted) timer = setTimeout(update, 150); else update(); });
+  // perf-20261019: 手入力は、続けて打っている間はまとめて最後に絞り込む(ほかのスクリプトから送られた input はすぐ反映)。
+  // perf-20261023: 手を止めていたあとの1文字目はすぐ絞り込む(毎回 150ms 待つと、そのぶん反応が遅くなるため)。
+  query.addEventListener('input', e => {
+    if (!e.isTrusted || (!timer && performance.now() - last >= 150)) { update(); last = performance.now(); return; }
+    clearTimeout(timer); timer = setTimeout(() => { update(); last = performance.now(); }, 150);
+  });
   kind.addEventListener('change', update);
   document.querySelector('#outing-reset').addEventListener('click', () => {region = 'all'; query.value = ''; kind.value = 'all'; update();});
   update();

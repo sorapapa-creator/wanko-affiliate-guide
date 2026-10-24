@@ -164,13 +164,19 @@ function wankoFoodInit(onChange,onReset){
     out.textContent=result?`1食あたり 約${result.meal.toLocaleString('ja-JP',{maximumFractionDigits:1})}円 ／ 1日 約${result.day.toLocaleString('ja-JP',{maximumFractionDigits:1})}円 ／ 月あたり（30日分）約${Math.round(result.month).toLocaleString()}円 ／ 約${result.days.toFixed(1)}日分`:'価格・内容量・1日量は0より大きい数値、食事回数は1〜12の整数を入力してください。';
   }));
 }
-// perf-20261019: 検索欄の手入力は打ち終わるまで少し待ってから1回だけ絞り込む。
+// perf-20261019: 検索欄の手入力は、続けて打っている間はまとめて最後に1回だけ絞り込む。
+// perf-20261023: 手を止めていたあとの1文字目はすぐ絞り込む(毎回 ms 待つと、軽いページでは反応がそのぶん遅くなるため)。
 // ほかのスクリプトが送る input(isTrusted でない)はこれまでどおりすぐ反映し、待っている間にどこかが押されたら先に反映する。
 function wankoTypedInput(fn,ms=150){
-  let timer=0;
-  const flush=()=>{if(timer){clearTimeout(timer);timer=0;fn();}};
+  let timer=0,last=-Infinity;
+  const run=()=>{timer=0;fn();last=performance.now();};
+  const flush=()=>{if(timer){clearTimeout(timer);run();}};
   if(typeof document!=='undefined')document.addEventListener('click',flush,true);
-  return e=>{clearTimeout(timer);timer=0;if(e&&e.isTrusted)timer=setTimeout(()=>{timer=0;fn();},ms);else fn();};
+  return e=>{
+    if(!(e&&e.isTrusted)){clearTimeout(timer);timer=0;fn();return;}
+    if(!timer&&performance.now()-last>=ms){run();return;}
+    clearTimeout(timer);timer=setTimeout(run,ms);
+  };
 }
 // perf-20261019: カード本文(小文字)を最初に使うときに1回だけ作って覚える(検索のたびに textContent を作り直さない)。
 const wankoCardTextCache = new WeakMap();

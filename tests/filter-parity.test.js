@@ -81,7 +81,7 @@ const PAGES = [
     ...problems(FOOD_PROBLEMS),
     ...params("problem", [...FOOD_PROBLEMS, "存在しない用途"]),
     ...params("age", ["子犬", "成犬", "シニア", "全年齢"]),
-    { name: "?brand=(1 つ目のブランド)", queryFrom: { select: "#food-brand", key: "brand" } },
+    ...params("brand", ["ロイヤルカナン", "存在しないブランド"]),
     { name: "?problem=体重管理&age=シニア", query: "problem=" + encodeURIComponent("体重管理") + "&age=" + encodeURIComponent("シニア") },
     ...words(".search", ["シニア", "グレインフリー", "ウェット", "小型犬", "zz該当なし"]),
     { name: "すべて → 検索「チキン」", steps: [{ click: '.filters button[data-problem="all"]' }, { type: "チキン", into: ".search" }] },
@@ -94,10 +94,9 @@ const PAGES = [
     { name: "並べ替え 2 つ目 → 既定", steps: [{ selectIndex: ["#ff-sort", 1] }, { selectIndex: ["#ff-sort", 0] }] },
     { name: "予算 3000 円", steps: [{ fill: ["#ff-budget", "3000"] }] },
     { name: "体重 5.5kg", steps: [{ fill: ["#ff-weight", "5.5"] }] },
-    { name: "ブランド 1 つ目", steps: [{ selectIndex: ["#food-brand", 1] }] },
     { name: "入口 age:シニア", steps: [{ click: '[data-food-entry="age:シニア"]' }] },
     { name: "入口 problem:体重管理", steps: [{ click: '[data-food-entry="problem:体重管理"]' }] },
-    { name: "条件 → リセット", steps: [{ select: ["#ff-age", "子犬"] }, { click: "#ff-reset" }] },
+    { name: "条件 → 全解除", steps: [{ select: ["#ff-age", "子犬"] }, { type: "チキン", into: ".search" }, { click: "#food-clear-all" }] },
   ] },
   { page: "goods.html", cards: ".grid article.card", count: ".result-count", scenarios: [
     { name: "初期表示" },
@@ -130,15 +129,18 @@ const PAGES = [
   ] },
 ];
 
-async function run(ctx, site, page, s, queryFromBase) {
+async function run(ctx, site, page, s) {
   const tab = await ctx.newPage();
   const errors = [];
   tab.on("pageerror", e => errors.push(String(e.message || e)));
   try {
-    const query = s.query || queryFromBase || "";
+    const query = s.query || "";
     await tab.goto(`${site}/${page.page}${query ? "?" + query : ""}`, { waitUntil: "load", timeout: 120000 });
     await tab.waitForTimeout(300);
     for (const st of s.steps || []) {
+      // 閉じた折りたたみ(details)の中の入力欄は、人と同じく先に開いてから操作する
+      const sel = st.click || st.into || st.clear || (st.select || st.selectIndex || st.fill || [])[0];
+      if (sel) await tab.evaluate(q => { for (let d = document.querySelector(q)?.closest("details"); d; d = d.parentElement?.closest("details")) d.open = true; }, sel);
       if (st.click) {
         const el = tab.locator(st.click).first();
         await el.scrollIntoViewIfNeeded({ timeout: 5000 }).catch(() => {});
@@ -195,16 +197,8 @@ async function run(ctx, site, page, s, queryFromBase) {
   const worker = async () => {
     while (i < jobs.length) {
       const k = i++, { page, s } = jobs[k];
-      let q = "";
-      if (s.queryFrom) {
-        const tab = await ctxA.newPage();
-        await tab.goto(`${a.url}/${page.page}`, { waitUntil: "load", timeout: 120000 });
-        const v = await tab.evaluate(sel => { const o = [...(document.querySelector(sel)?.options || [])].find(o => o.value); return o ? o.value : ""; }, s.queryFrom.select);
-        await tab.close();
-        q = `${s.queryFrom.key}=${encodeURIComponent(v)}`;
-      }
       try {
-        const [ra, rb] = await Promise.all([run(ctxA, a.url, page, s, q), run(ctxB, b.url, page, s, q)]);
+        const [ra, rb] = await Promise.all([run(ctxA, a.url, page, s), run(ctxB, b.url, page, s)]);
         results[k] = { ra, rb };
       } catch (e) { results[k] = { error: String(e.message || e).split("\n")[0] }; }
     }
