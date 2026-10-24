@@ -69,6 +69,7 @@ git pull origin main
 python3 tools/build_area_pages.py --check   # 「変わるファイル 0 件」ならここで終わり
 python3 tools/build_area_pages.py           # 作り直す
 python3 tests/area-pages.test.py            # 10 項目すべて ok になるか
+node tests/area-pages-layout.test.js        # (任意・Playwright があれば)スマホ幅で横スクロールが出ないか
 git add areas sitemap.xml
 git commit -m "地域ページを作り直す($(date +%F) のデータ)"
 git push origin main
