@@ -611,7 +611,7 @@ function wankoStayCta(url) {
       else if (lc != null && am > lc) warns.push(`宿への到着が${fmtClock(last.arrive)}で、最終チェックイン(${ht.last_checkin})を過ぎる計算です。出発を早めるか、遅れる旨を宿に連絡してください。`);
       else if (h >= 20 || h < 5) warns.push(`宿への到着が${fmtClock(last.arrive)}になります。チェックインの受付時間を宿に確認してください。`);
     } else if (state.place.type === "lodging" && (h >= 20 || h < 5)) warns.push(`宿への到着が${fmtClock(last.arrive)}になります。チェックインの受付時間を宿に確認してください。`);
-    else if (state.place.type !== "lodging") { const hw = hoursWarn(state.place, last.arrive, last.arrive); if (hw) warns.push(hw); }  // 行き先の営業時間(dot 実地テスト 2026-10-04: 22 時着の公園に注意が出ない)
+    else if (state.place.type !== "lodging") { const hw = hoursWarn(state.place, last.arrive, last.arrive); if (hw) warns.push(hw); else { const lw = loWarn(state.place, last.arrive); if (lw) warns.push(lw.text); } }  // 行き先の営業時間(dot 実地テスト 2026-10-04: 22 時着の公園に注意が出ない)・ラストオーダー(2026-10-25)
     if (restCount) warns.push("休憩を入れた分だけ後ろの時刻をずらしています。ずれた後の渋滞の変化は計算し直していません。");
     $("plan-warn").innerHTML = warns.map((w) => `<div class="warnbox">${esc(w)}</div>`).join("");
 
