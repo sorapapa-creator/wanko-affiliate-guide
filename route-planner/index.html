@@ -473,6 +473,10 @@
           <select id="dogs"><option value="">未選択</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select></fieldset>
         <fieldset><label class="t planner-field-label" for="dog-kg"><span>いちばん重い子の体重(kg)</span></label><input type="number" id="dog-kg" min="0.5" max="90" step="0.1" inputmode="decimal" placeholder="例 6.5"></fieldset>
       </div>
+      <div id="dog-sizes" class="hidden" style="margin-top:8px">
+        <p class="hint">2頭以上で行くときは、ほかの子の体格も選んでください。1頭目(上の「うちの子について」の体格)と合わせて、全員が宿の対象に入るかを1頭ずつ照らし合わせます。</p>
+        <div class="row four" id="dog-sizes-row"></div>
+      </div>
       <p class="hint">チェックイン日は上の「出発日」です。犬の条件は、宿が公式に一律の上限(頭数・体重・大きさ)を書いている場合だけ照らし合わせ、それ以外は「要確認」と表示します。</p>
     </details>
     <button class="primary" id="go" type="submit">予想時間を出す</button>

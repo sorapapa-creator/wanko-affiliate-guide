@@ -19,6 +19,12 @@ function wankoStayCta(url) {
   const $ = (id) => document.getElementById(id);
   const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   const TYPE_LABEL = { lodging: "宿", spot: "おでかけ", trip_plan: "モデルコース" };
+  // 多頭連れの体格(2026-10-25)。2頭目以降は trip-check.js の欄。制限の判定はいちばん大きい子で、宿の照合は全員で
+  const SIZE_JP = { small: "小型犬", medium: "中型犬", large: "大型犬" };
+  const SIZE_RANK = { small: 0, medium: 1, large: 2 };
+  const dogSizesNow = () => { const a = window.WANKO_DOG_SIZES ? window.WANKO_DOG_SIZES() : []; return a.length ? a : [document.getElementById("size").value]; };
+  const biggestSize = (a) => a.slice().sort((x, y) => (SIZE_RANK[y] ?? 0) - (SIZE_RANK[x] ?? 0))[0];
+  const bookingDog = () => { const sizes = dogSizesNow(); return { size: biggestSize(sizes), sizes, dogs: Number(document.getElementById("dogs").value) || 1 }; };
   const DESTINATION_COLLATOR = new Intl.Collator("ja", { numeric: true, sensitivity: "base" });
   // 確認済みの読みを名前全体に適用。未知の英字表記には推測の読みを付けない。
   const DESTINATION_READINGS = [
@@ -905,6 +911,35 @@ function wankoStayCta(url) {
     return m ? { open: +m[1] * 60 + +m[2], close: +m[3] * 60 + +m[4], text: `営業時間 ${m[1]}:${m[2]}〜${m[3]}:${m[4]}` } : null;
   };
   const hoursText = (p) => (placeHours(p) || {}).text || "営業時間";
+  // 2026-10-25 ランチのラストオーダー(Codex A09「到着＋注文＋食事がラストオーダーに収まるか」)。
+  //  掲載情報に「LO15時」「L.O.13:30」「ラストオーダー 16:00」などと書いてある店だけ時刻で照合する。季節・曜日で時刻が違う店は全部の値を出し、早い方で注意する。
+  //  書いていない店は推測しない(閉店の 1 時間前を過ぎた到着のときだけ「店に確認」と出す)。席に着いて注文するまでを 15 分とみる
+  const LO_RE = /(?:L\.?\s?O\.?|ＬＯ|ラストオーダー|オーダーストップ)\s*[：:]?\s*(\d{1,2})(?:\s*[:：時]\s*(\d{2})?)?/g;
+  const ORDER_MIN = 15;
+  const isDining = (p) => !!p && p.type !== "lodging" && (((p.kinds || []).includes("cafe")) || ((p.dog_dining || {}).available === true));
+  const placeLO = (p) => {
+    if (!p || p.type === "lodging") return [];
+    const t = Object.values(p.facts || {}).join(" ");
+    const out = new Set();
+    for (const m of t.matchAll(LO_RE)) { const h = +m[1], mi = m[2] ? +m[2] : 0; if (h >= 6 && h <= 23 && mi < 60) out.add(h * 60 + mi); }
+    return [...out].sort((a, b) => a - b);
+  };
+  const loClock = (min) => `${Math.floor(min / 60)}:${String(min % 60).padStart(2, "0")}`;
+  const loWarn = (p, arrive) => {
+    const los = placeLO(p); const a = jstMinutes(arrive) + ORDER_MIN;
+    if (los.length) {
+      const txt = los.length > 1 ? `ラストオーダー ${los.map(loClock).join("・")}(時間帯・季節・曜日で違います)` : `ラストオーダー ${loClock(los[0])}`;
+      if (a > los[los.length - 1]) return { short: "ラストオーダーに間に合わない計算", text: `${p.name}に${fmtClock(arrive)}に着くと、席に着いて注文するまで約${ORDER_MIN}分として、${txt}(掲載情報)に間に合わない計算です。食事をするなら到着を早めるか、別の店を選んでください。` };
+      if (a > los[0]) return { short: "早い方のラストオーダーは過ぎる", text: `${p.name}は${txt}(掲載情報)。${fmtClock(arrive)}着だと早い方のラストオーダーは過ぎます。時間帯(ランチとディナーなど)・季節・曜日のどれで分かれているか、行く日のラストオーダーを店に確認してください。` };
+      return null;
+    }
+    const h = placeHours(p);
+    if (isDining(p) && h && h.close > h.open) {
+      const arr = jstMinutes(arrive);
+      if (arr < h.close && arr + 60 > h.close) return { short: "閉店1時間前を過ぎての到着", text: `${p.name}は${h.text}で、${fmtClock(arrive)}着は閉店の1時間前を過ぎています。ラストオーダーの時刻は掲載情報に無いため、食事の注文に間に合うか店に確認してください。` };
+    }
+    return null;
+  };
   const hoursWarn = (p, arrive, leave) => {
     const h = placeHours(p); if (!h || h.close <= h.open) return "";
     const a = jstMinutes(arrive), l = jstMinutes(leave);
@@ -986,7 +1021,8 @@ function wankoStayCta(url) {
       let restAcc = 0;
       for (const r of l.rests) { const t = addSec(l.dep, r.tSec + restAcc); add(1, t, "stop", `<span class="badge">休憩</span> ${esc(r.stop.name)} ${restBadges(r)}<br><span class="note">${CFG.restMinutes}分</span>`); restAcc += CFG.restMinutes * 60; }
       if (k < state.waypoints.length) { const w = state.waypoints[k]; const hw = w.place ? hoursWarn(w.place, l.arrive, addSec(l.arrive, w.stayMin * 60)) : ""; if (hw) warns.push(hw);
-        add(1, l.arrive, "stop", `<span class="badge b-via">立ち寄り</span> <b>${esc(w.name)}</b><br><span class="note">滞在${fmtStay(w.stayMin)}</span>${hw ? `<br><span class="note warn-text">${esc(hoursText(w.place))}の時間外です</span>` : ""}`); }
+        const lw = w.place && !hw ? loWarn(w.place, l.arrive) : null; if (lw) warns.push(lw.text);
+        add(1, l.arrive, "stop", `<span class="badge b-via">立ち寄り</span> <b>${esc(w.name)}</b><br><span class="note">滞在${fmtStay(w.stayMin)}</span>${hw ? `<br><span class="note warn-text">${esc(hoursText(w.place))}の時間外です</span>` : ""}${lw ? `<br><span class="note warn-text">${esc(lw.short)}</span>` : ""}`); }
       cursor = l.arrive;
     });
     const last = legs[legs.length - 1];
@@ -996,7 +1032,8 @@ function wankoStayCta(url) {
       : htA && minutesOf(htA.checkin) != null && jstMinutes(last.arrive) < minutesOf(htA.checkin) ? ` <span class="note">(チェックイン開始 ${esc(htA.checkin)} より前)</span>` : "";
     if (state.place.type === "lodging" && overnightA) warns.push(`宿への到着が翌日 ${fmtClock(last.arrive)} の深夜になる計算です。チェックイン受付${htA && htA.last_checkin ? `(〜${htA.last_checkin})` : ""}を過ぎるので、出発時刻か日程を見直すか、宿に深夜到着の可否を確認してください。`);
     const destHw = state.place.type !== "lodging" ? hoursWarn(state.place, last.arrive, last.arrive) : ""; if (destHw) warns.push(destHw);
-    add(1, last.arrive, "stop", `<span class="badge b-go">到着</span> <b>${esc(state.place.name)}</b>${earlyNote}${destHw ? ` <span class="note warn-text">(${esc(hoursText(state.place))}の時間外)</span>` : ""}`);
+    const destLw = state.place.type !== "lodging" && !destHw ? loWarn(state.place, last.arrive) : null; if (destLw) warns.push(destLw.text);
+    add(1, last.arrive, "stop", `<span class="badge b-go">到着</span> <b>${esc(state.place.name)}</b>${earlyNote}${destHw ? ` <span class="note warn-text">(${esc(hoursText(state.place))}の時間外)</span>` : ""}${destLw ? ` <span class="note warn-text">(${esc(destLw.short)})</span>` : ""}`);
     // 到着日の近くの掲載先(到着後に順番に回り、宿へ戻る)
     let t = last.arrive; let here = { lat: state.place.geocode.lat, lon: state.place.geocode.lon };
     const visit = (day, startTime, items, backToLodging = true) => {
@@ -1006,7 +1043,8 @@ function wankoStayCta(url) {
         const mv = (prev === state.place.geocode || (prev.lat === Number(state.place.geocode.lat) && prev.lon === Number(state.place.geocode.lon))) ? nearbyMinutes(state.place.id, p, straight) : { min: Math.max(5, Math.round(straight * 1.3 / 35 * 60)), km: Math.round(straight * 13) / 10, exact: false };
         tt = addSec(tt, mv.min * 60);
         const hw = hoursWarn(p, tt, addSec(tt, stay * 60)); if (hw) warns.push(hw);
-        add(day, tt, "stop", `<span class="badge b-via">${esc(TYPE_LABEL[p.type])}</span> <b>${esc(p.name)}</b> <span class="note">(車で約${mv.min}分${mv.exact ? "" : "・目安"})</span><br><span class="note">滞在${fmtStay(stay)} → ${fmtClock(addSec(tt, stay * 60))}発${p.page_url ? ` ・ <a href="${esc(p.page_url)}">施設情報</a>` : ""}</span>${hw ? `<br><span class="note warn-text">${esc(hoursText(p))}の時間外です</span>` : ""}`);
+        const lw = !hw ? loWarn(p, tt) : null; if (lw) warns.push(lw.text);
+        add(day, tt, "stop", `<span class="badge b-via">${esc(TYPE_LABEL[p.type])}</span> <b>${esc(p.name)}</b> <span class="note">(車で約${mv.min}分${mv.exact ? "" : "・目安"})</span><br><span class="note">滞在${fmtStay(stay)} → ${fmtClock(addSec(tt, stay * 60))}発${p.page_url ? ` ・ <a href="${esc(p.page_url)}">施設情報</a>` : ""}</span>${hw ? `<br><span class="note warn-text">${esc(hoursText(p))}の時間外です</span>` : ""}${lw ? `<br><span class="note warn-text">${esc(lw.short)}</span>` : ""}`);
         tt = addSec(tt, stay * 60); prev = { lat: Number(p.geocode.lat), lon: Number(p.geocode.lon) };
       }
       if (items.length && day === 1 && backToLodging) {  // 到着日は最後に宿へ戻る(宿泊のとき)。翌日は最後の場所からそのまま帰路へ
@@ -1088,7 +1126,12 @@ function wankoStayCta(url) {
     if (profile.vaccine) check.push("狂犬病・混合ワクチンの接種証明書(宿・ドッグランで提示を求められることが多い)");
     if (profile.heatCycle) check.push("ヒート中は受け入れ不可の宿・ドッグランが多い。予約前に施設へ確認");
     if (profile.brachy) check.push("短頭種: 夏は日中の移動と屋外の滞在を短く。車内の温度と水分に注意");
-    if (profile.dogs && Number(profile.dogs) > 1) check.push(`犬${profile.dogs}頭: 宿の1室あたりの頭数上限を確認`);
+    if (profile.dogs && Number(profile.dogs) > 1) {
+      const kinds = [...new Set(profile.sizes || [])];
+      check.push(kinds.length > 1
+        ? `犬${profile.dogs}頭(${kinds.map((k) => SIZE_JP[k]).join("・")}): 宿の1室あたりの頭数上限と、全員が大きさの条件に入るか(1頭が対象でも全員とは限りません)。ドッグランは小型犬エリアなどに分かれることがあります`
+        : `犬${profile.dogs}頭: 宿の1室あたりの頭数上限を確認`);
+    }
     if (profile.dogKg) check.push(`体重${profile.dogKg}kg: 宿の体重・大きさの上限を確認`);
     check.push("リード・マナーベルト・ペットシーツ・水と器・普段のフード・ケージ(持参が条件の宿)");
     const render = (day) => `<h3>${dayLabel(day)} <span class="note">${dayDate(state, day)}</span></h3><ol class="timeline">${dayItems[day].sort((a, b) => a.time - b.time).map((x) => x.html).join("")}</ol>`;
@@ -1764,7 +1807,8 @@ function wankoStayCta(url) {
     }
     let departures = singleDeparture ? [singleDeparture] : buildDepartures(); singleDeparture = null;
     if (!departures.length) return showError("出発時刻がすべて過去になっています。日付か時刻を変えてください。");
-    const profile = { size: $("size").value, age: $("age").value, carsick: $("carsick").checked, heat: $("heat").checked || $("brachy").checked,
+    const sizesNow = dogSizesNow();
+    const profile = { size: biggestSize(sizesNow), sizes: sizesNow, age: $("age").value, carsick: $("carsick").checked, heat: $("heat").checked || $("brachy").checked,
       brachy: $("brachy").checked, heatCycle: $("heat-cycle").checked, vaccine: $("vaccine").checked, toilet: Number($("toilet").value) || 0,
       mealTime: $("meal-time").value, medTime: $("med-time").value, dogs: $("dogs").value, dogKg: $("dog-kg").value };
     const date = new Date(`${$("date").value}T12:00:00+09:00`);
@@ -1844,7 +1888,7 @@ function wankoStayCta(url) {
       // selected[区間番号] = 選んだ休憩場所(施設名の上下線を除いた名前)。出発時刻を切り替えても引き継ぐ
       // 予約条件は計算時点で固定(Codex 指摘 3)。空室データは 1 泊固定なので泊数も記録する
       const checkoutVal = $("checkout")?.value || ""; const nights = checkoutVal ? Math.round((Date.parse(checkoutVal) - Date.parse($("date").value)) / 86400000) : 1;
-      const booking = { checkin: $("date").value, adultsRaw: $("adults") ? $("adults").value : "", nights, dog: { size: $("size").value, dogs: Number($("dogs").value) || 1 } };
+      const booking = { checkin: $("date").value, adultsRaw: $("adults") ? $("adults").value : "", nights, dog: bookingDog() };
       lastState = { options, bestIndex, interval, place, origin, waypoints, reduced, selected: [], current: bestIndex, booking, stale: false };
       const n0 = $("plan-stale"); if (n0) { n0.textContent = ""; n0.classList.add("hidden"); }
       if (window.RouteMap && window.RouteMap.setStale) window.RouteMap.setStale(false);
@@ -1888,16 +1932,18 @@ function wankoStayCta(url) {
   for (const id of ["origin", "dest-q", "date", "start"]) $(id).addEventListener("change", invalidateWaypointRoute);
   for (const id of ["origin", "dest-q", "date", "start", "step", "count"]) $(id)?.addEventListener("change", () => { if (lastState && !lastState.stale) invalidatePlan("条件を変えました。もう一度「予想時間を出す」を押してください(表示中は前回の結果)。"); });
   // チェックアウト日・人数・犬の条件は往路の時間に関係しないので、往路は計算し直さず、予約と帰りの条件だけ更新する(Codex 実地テスト 2026-10-04)
-  for (const id of ["adults", "checkout", "size", "dogs"]) $(id)?.addEventListener("change", () => {
+  const onDogOrStayChange = () => {
     if (!lastState || lastState.stale) return;
     const co = $("checkout")?.value || ""; const nights = co ? Math.round((Date.parse(co) - Date.parse(lastState.booking.checkin)) / 86400000) : 1;
     if (!(nights >= 1)) return;
     const prevNights = lastState.booking.nights;
-    lastState.booking = { ...lastState.booking, adultsRaw: $("adults") ? $("adults").value : "", nights, dog: { size: $("size").value, dogs: Number($("dogs").value) || 1 } };
+    lastState.booking = { ...lastState.booking, adultsRaw: $("adults") ? $("adults").value : "", nights, dog: bookingDog() };
     if (nights !== prevNights) { setupReturnCard(lastState); invalidateReturn(`泊数を${nights}泊に変えました。帰りは「帰りの時間を計算」で出し直してください(行きはそのまま使えます)。`); }
     renderDestBooking(lastState);
     if (!$("itinerary-card").classList.contains("hidden")) renderItinerary(lastState);
-  });
+  };
+  for (const id of ["adults", "checkout", "size", "dogs"]) $(id)?.addEventListener("change", onDogOrStayChange);
+  document.addEventListener("planner:dogsizes", onDogOrStayChange);  // 2頭目以降の体格を変えたとき(trip-check.js)
   renumberWaypoints();
   const initialOriginHint = $("origin-hint").textContent;
   window.WankoPlannerContext = {

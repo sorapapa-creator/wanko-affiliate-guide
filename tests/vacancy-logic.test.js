@@ -237,5 +237,23 @@ test("実データ: 別邸 山風木・コトマル。わんship・フォレス�
   assert.equal(R.dogVerdict(rules["c5-bettei-yamabuki"], null, { size: "medium", dogs: 1, kg: 12 }).status, "fit");
 });
 
+// ---- 多頭連れ(2026-10-25、Codex A16): 1 頭が対象でも全員とは限らない
+test("小型犬と大型犬の 2 頭で、対象が小型・中型の宿は ng(1 頭目が小型でも合格にしない)", () => {
+  const rule = { mode: "uniform", sizes: ["small", "medium"], max_dogs: 2 };
+  assert.equal(R.dogVerdict(rule, null, { size: "small", dogs: 2 }).status, "fit");
+  const v = R.dogVerdict(rule, null, { size: "large", sizes: ["small", "large"], dogs: 2 });
+  assert.equal(v.status, "ng");
+  assert.ok(v.reasons.some((s) => s.includes("大型犬")));
+});
+test("全員が対象なら多頭でも fit、頭数の上限は全体で見る", () => {
+  const rule = { mode: "uniform", sizes: ["small", "medium"], max_dogs: 2 };
+  assert.equal(R.dogVerdict(rule, null, { size: "medium", sizes: ["small", "medium"], dogs: 2 }).status, "fit");
+  assert.equal(R.dogVerdict(rule, null, { size: "medium", sizes: ["small", "medium", "small"], dogs: 3 }).status, "ng");
+});
+test("プラン名の「小型犬のみ」は、中型の子が 1 頭でもいれば合わない", () => {
+  assert.equal(R.planFits({ plan: "小型犬のみ 1 室 2 頭まで", room: "" }, { size: "small", sizes: ["small", "small"], dogs: 2 }), true);
+  assert.equal(R.planFits({ plan: "小型犬のみ 1 室 2 頭まで", room: "" }, { size: "medium", sizes: ["small", "medium"], dogs: 2 }), false);
+});
+
 console.log(`\n${n - failed}/${n} passed`);
 if (failed) process.exit(1);

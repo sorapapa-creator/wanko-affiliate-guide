@@ -90,6 +90,8 @@
   // 客室・プラン段階: プラン名・客室名に書かれた大きさ・頭数の制限が、今回の犬に合うか
   const planFits = (p, dog) => {
     if (!dog) return true;
+    const many = dog.sizes ? [...new Set(dog.sizes.filter(Boolean))] : [];
+    if (many.length > 1) return many.every((sz) => planFits(p, { ...dog, size: sz, sizes: null }));  // 多頭連れは全員の体格で合うこと
     const t = Z2H(`${(p && p.plan) || ""} ${(p && p.room) || ""}`);
     if (dog.size === "large" && /小型[〜~～・、]?中型|小型犬?・中型犬|小型犬(のみ|専用|限定|向け)|中型犬まで|大型犬[^。]{0,4}(不可|NG|対象外|対応外|お断り)/.test(t)) return false;
     if (dog.size === "medium" && /小型犬(のみ|専用|限定)|超小型/.test(t)) return false;
@@ -108,6 +110,14 @@
   const VERDICT_LABEL = { fit: "公式の条件の範囲内", check: "要確認", ng: "条件外の記載あり" };
   const ruleDate = (r) => [r.checked_at, ...(((r.reviewed || {}).note || "").match(/checked_at=\d{4}-\d{2}-\d{2}/g) || []).map((s) => s.slice(11))].filter(Boolean).sort().pop() || "";
   const dogVerdict = (rule, place, dog) => {
+    // 2026-10-25 多頭連れ(Codex A16): 体格の違う子がいるときは 1 頭の体格ずつ照合し、いちばん厳しい結果にする(1 頭が対象でも全体を合格にしない)
+    const many = dog && dog.sizes ? [...new Set(dog.sizes.filter((sz) => SIZE_KG[sz]))] : [];
+    if (many.length > 1) {
+      const vs = many.map((sz) => dogVerdict(rule, place, { ...dog, size: sz, sizes: null }));
+      const status = vs.some((v) => v.status === "ng") ? "ng" : vs.some((v) => v.status === "check") ? "check" : "fit";
+      const uniq = (a) => [...new Set(a)];
+      return { status, reasons: uniq(vs.filter((v) => v.status === status).flatMap((v) => v.reasons)), ok: uniq(vs.flatMap((v) => v.ok)), src: vs[0].src };
+    }
     const d = dog || {}; const size = SIZE_KG[d.size] ? d.size : ""; const dogs = Math.max(1, Number(d.dogs) || 1); const kg = Number(d.kg) > 0 ? Number(d.kg) : 0;
     const r = rule || { mode: "unknown" }; const src = { url: r.source_url || "", date: ruleDate(r) };
     const ng = [], check = [], ok = [];

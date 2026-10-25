@@ -81,7 +81,33 @@
 
   function inputs() {
     const v = (id) => ($(id) ? $(id).value.trim() : "");
-    return { checkin: v("date"), checkout: v("checkout"), adults: v("adults"), dogs: v("dogs"), kg: v("dog-kg"), size: v("size") };
+    const size = v("size");
+    return { checkin: v("date"), checkout: v("checkout"), adults: v("adults"), dogs: v("dogs"), kg: v("dog-kg"), size, sizes: dogSizes() };
+  }
+  // 2026-10-25 多頭連れ(Codex A16「1頭が大型犬OKだけで多頭旅行全体を合格にしない」): 2頭目以降の体格を選ぶ欄。
+  // 1頭目は「うちの子について」の体格。返り値は全員の体格の配列(頭数が未選択・1頭なら1頭目だけ)
+  const SIZE_J = { small: "小型犬", medium: "中型犬", large: "大型犬" };
+  function dogSizes() {
+    const first = $("size") ? $("size").value : "";
+    const n = Number($("dogs") ? $("dogs").value : "") || 1;
+    const rest = [...document.querySelectorAll("#dog-sizes-row select")].slice(0, n - 1).map((s) => s.value);
+    return [first, ...rest].filter(Boolean);
+  }
+  window.WANKO_DOG_SIZES = dogSizes;
+  function syncDogSizes() {
+    const box = $("dog-sizes"), row = $("dog-sizes-row");
+    if (!box || !row) return;
+    const n = Number($("dogs").value) || 1;
+    const keep = [...row.querySelectorAll("select")].map((s) => s.value);
+    if (n < 2) { box.classList.add("hidden"); row.innerHTML = ""; return; }
+    const first = $("size").value;
+    row.innerHTML = Array.from({ length: n - 1 }, (_, i) => {
+      const cur = keep[i] || first;
+      return `<fieldset><label class="t planner-field-label" for="dog-size-${i + 2}"><span>${i + 2}頭目の体格</span></label>
+        <select id="dog-size-${i + 2}">${Object.entries(SIZE_J).map(([k, j]) => `<option value="${k}"${k === cur ? " selected" : ""}>${j}</option>`).join("")}</select></fieldset>`;
+    }).join("");
+    box.classList.remove("hidden");
+    row.querySelectorAll("select").forEach((s) => s.addEventListener("change", () => { clear(); document.dispatchEvent(new CustomEvent("planner:dogsizes")); }));
   }
   const used = (x) => Boolean(x.checkout || x.adults || x.dogs || x.kg);
 
@@ -101,9 +127,11 @@
     if (x.kg && rule.max_kg && (rule.kg_inclusive ? kg > rule.max_kg : kg >= rule.max_kg)) {
       reasons.push(`体重(${kg}kg)が上限(${rule.max_kg}kg${rule.kg_inclusive ? "以下" : "未満"})を超えます`);
     }
-    if (x.size && rule.sizes && !rule.sizes.includes(x.size)) {
-      const J = { small: "小型犬", medium: "中型犬", large: "大型犬" };
-      reasons.push(`体格(${J[x.size]})が対象(${rule.sizes.map((s) => J[s]).join("・")})に入りません`);
+    const sizes = x.sizes && x.sizes.length ? x.sizes : x.size ? [x.size] : [];
+    const outSizes = rule.sizes ? [...new Set(sizes.filter((s) => !rule.sizes.includes(s)))] : [];
+    if (outSizes.length) {
+      const multi = sizes.length > 1;
+      reasons.push(`${multi ? "一緒に行く子のうち" : ""}体格(${outSizes.map((s) => SIZE_J[s]).join("・")}${multi ? "の子" : ""})が対象(${rule.sizes.map((s) => SIZE_J[s]).join("・")})に入りません`);
     }
     if (reasons.length) {
       return rule.soft
@@ -117,7 +145,7 @@
     const items = [
       x.dogs && ["頭数", rule.max_dogs ? "ok" : unlimited.includes("max_dogs") ? "free" : "unverified"],
       x.kg && ["体重", rule.max_kg ? "ok" : unlimited.includes("max_kg") ? "free" : "unverified"],
-      x.size && ["体格", rule.sizes ? "ok" : unlimited.includes("sizes") ? "free" : "unverified"],
+      x.size && [(x.sizes || []).length > 1 ? `全${x.sizes.length}頭の体格` : "体格", rule.sizes ? "ok" : unlimited.includes("sizes") ? "free" : "unverified"],
     ].filter(Boolean);
     const ok = items.filter(([, s]) => s === "ok").map(([k]) => k);
     const free = items.filter(([, s]) => s === "free").map(([k]) => k);
@@ -218,6 +246,8 @@
     for (const id of ["date", "checkout"]) $(id)?.addEventListener("input", validateDates);
     // 条件を変えたら古い確認結果は消す(次に「出発時刻を比べる」を押したときに作り直す)
     for (const id of ["date", "checkout", "adults", "dogs", "dog-kg", "size", "dest-q"]) $(id)?.addEventListener("change", clear);
+    for (const id of ["dogs", "size"]) $(id)?.addEventListener("change", syncDogSizes);
+    syncDogSizes();
     validateDates();
   };
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init); else init();
