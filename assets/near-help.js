@@ -28,6 +28,7 @@
     btn.addEventListener("click", function () {
       if (!out.hidden) { out.hidden = true; return; }
       out.hidden = false; out.innerHTML = '<p class="note">近くの施設を探しています…</p>';
+      if (window.reserveSpace) window.reserveSpace(out);  // 結果が届く前に高さを確保(配置ずれの予防。route-planner/cls-reserve.js)
       loadPts().then(function (list) {
         var p = (list || []).find(function (x) { return x[0] === card.id; });
         if (!p) { out.innerHTML = '<p class="note">この宿の位置が未登録のため表示できません。</p>'; return; }

@@ -1206,6 +1206,7 @@ function wankoStayCta(url) {
   async function computeReturn(state) {
     const seq = ++returnSeq; const placeId = state.place.id; returnState = null; returnBusy = true; returnStatusKind = "busy"; refreshChecklist();
     const alive = () => seq === returnSeq && lastState && !lastState.stale && lastState.place.id === placeId;
+    window.reserveSpace?.($("return-card"));  // 結果が届く前に高さを確保(配置ずれの予防)
     const btn = $("ret-go"); btn.disabled = true; btn.textContent = "計算中…"; $("ret-status").textContent = ""; $("ret-warn").innerHTML = ""; $("ret-plan").innerHTML = "";
     try {
       const { dep, day, via, adjusted } = returnBaseTime(state);
@@ -1334,6 +1335,12 @@ function wankoStayCta(url) {
     renderSummary(state, legs, rs);
   }
 
+  // 計算中の仮の進み具合バー。本物と同じ 6 項目で高さをそろえ、結果が届いたときに下の表が動かないようにする(配置ずれの予防)
+  function renderStepsPlaceholder() {
+    const nav = $("steps"); if (!nav || nav.children.length) return;
+    const items = [["#compare-card", "出発時刻", "計算中"], ["#map-card", "寄り道", "任意"], ["#rest-card", "休憩", "任意"], ["#nearby-card", "近くの場所", "任意"], ["#return-card", "帰り", "未計算"], ["#check-card", "行程表・予約", "最後に作る"]];
+    nav.innerHTML = items.map(([href, label, note], i) => `<a class="opt" href="${href}"><span class="n">${i + 1}</span>${esc(label)}<small>${esc(note)}</small></a>`).join("");
+  }
   // 進み具合バー(結果の先頭)。済 / 任意 / 未 を状態から決める。押すとその場所へ
   function renderSteps(state, x) {
     const nav = $("steps"); if (!nav) return;
@@ -1789,6 +1796,13 @@ function wankoStayCta(url) {
   }
   async function onSubmit(ev) {
     ev.preventDefault();
+    {  // 結果の区画を押した瞬間に出して高さを確保(配置ずれの予防)。初回は計算中の表示にし、失敗したら元どおり隠す
+      const rs = $("results");
+      if (rs && window.reserveSpace) {
+        if (rs.classList.contains("hidden")) { rs.classList.remove("hidden"); rs.dataset.pending = "1"; renderStepsPlaceholder(); const cn = $("compare-note"); if (cn && !cn.textContent) cn.textContent = "計算中…"; }
+        window.reserveSpace(rs);
+      }
+    }
     invalidatePlan("再計算中…(表示中は前回の結果)");
     const seq = planSeq;
     $("error").classList.add("hidden");
@@ -1905,11 +1919,12 @@ function wankoStayCta(url) {
       refreshChecklist();
       // 段階0(日付・人数・犬の条件の確認。trip-check.js)へ結果を渡す。任意の欄が空なら何も表示しない
       document.dispatchEvent(new CustomEvent("planner:rendered", { detail: { place, origin, date: $("date").value, places: PLACES } }));
-      $("results").classList.remove("hidden");
+      $("results").classList.remove("hidden"); delete $("results").dataset.pending;
       $("results").scrollIntoView({ behavior: "smooth", block: "start" });
     } catch (e) {
       planBaseline = null;
-      if (seq === planSeq) { showError(e.message || "エラーが発生しました。"); const n1 = $("plan-stale"); if (n1 && lastState) { n1.textContent = "最新の条件では計算できませんでした。表示中は前回の結果です(行程表の作成はできません)。"; n1.classList.remove("hidden"); } }
+      if (seq === planSeq && $("results").dataset.pending) { delete $("results").dataset.pending; $("results").classList.add("hidden"); $("steps").innerHTML = ""; $("error").dataset.reserve = "1"; const cn = $("compare-note"); if (cn && cn.textContent === "計算中…") cn.textContent = ""; }  // 隠した分の高さはエラーの札で保ち、footer が上がってこないようにする
+      if (seq === planSeq) { showError(e.message || "エラーが発生しました。"); if ($("error").dataset.reserve) { delete $("error").dataset.reserve; window.reserveSpace?.($("error")); } const n1 = $("plan-stale"); if (n1 && lastState) { n1.textContent = "最新の条件では計算できませんでした。表示中は前回の結果です(行程表の作成はできません)。"; n1.classList.remove("hidden"); } }
     } finally {
       if (seq === planSeq) { $("go").disabled = false; $("go").textContent = "予想時間を出す"; }
     }
@@ -1927,7 +1942,7 @@ function wankoStayCta(url) {
     if (waypointRoute?.key !== waypointRouteKey() && !$("find-wp-route").disabled) findWaypointRoute();
   });
   $("find-wp-route").addEventListener("click", findWaypointRoute);
-  $("make-itinerary")?.addEventListener("click", () => { if (!lastState || lastState.stale) return; renderItinerary(lastState); $("itinerary-card").scrollIntoView({ behavior: "smooth", block: "start" }); $("itinerary-title")?.focus?.(); });
+  $("make-itinerary")?.addEventListener("click", () => { if (!lastState || lastState.stale) return; renderItinerary(lastState); window.reserveSpace?.($("itinerary-card")); $("itinerary-card").scrollIntoView({ behavior: "smooth", block: "start" }); $("itinerary-title")?.focus?.(); });
   document.addEventListener("routemap:picks", refreshChecklist);
   for (const id of ["origin", "dest-q", "date", "start"]) $(id).addEventListener("change", invalidateWaypointRoute);
   for (const id of ["origin", "dest-q", "date", "start", "step", "count"]) $(id)?.addEventListener("change", () => { if (lastState && !lastState.stale) invalidatePlan("条件を変えました。もう一度「予想時間を出す」を押してください(表示中は前回の結果)。"); });

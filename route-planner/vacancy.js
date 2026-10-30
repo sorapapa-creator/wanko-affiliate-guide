@@ -171,6 +171,7 @@
   let searchSeq = 0; let lastSnap = null; let lastRegion = "";  // 直近の検索条件(「この宿で旅行プランを作る」で行程側へ引き継ぐ)
   async function search() {
     const status = $("vc-status"); const btn = $("vc-go"); const seq = ++searchSeq;
+    window.reserveSpace?.($("vacancy-card"));  // 結果が届く前に高さを確保(配置ずれの予防)
     btn.disabled = true; status.textContent = "空室データを読み込んでいます…"; $("vc-results").innerHTML = "";
     try {
       const ci = $("vc-date").value; if (!ci) throw new Error("日付を選んでください。");
