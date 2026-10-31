@@ -37,13 +37,6 @@
    "checked_at": null,
    "body_sha256": "27fb0c9002cfeea22bdce805570f25db90a24c73dcc217156f076a90a89eba22"
   },
-  "hiramatsu-miyota": {
-   "mode": "manual",
-   "text": "小型・中型犬対象、大型犬・対象外犬種不可。公式客室ページはケージ追加で小型4頭／中型2頭までと案内。",
-   "source_url": "https://www.hiramatsuhotels.com/miyota/rooms/dog/",
-   "checked_at": null,
-   "body_sha256": "ae3fd3a4b5141c1033e366feb823111a20292f674768e5c68a2d7724588bf5ea"
-  },
   "karuizawa-house-villa": {
    "mode": "manual",
    "text": "公式ペットプランに1棟3頭までと記載。3頭以上は事前問い合わせともあるため、3頭同伴時から確認。犬サイズは予約前確認。",
