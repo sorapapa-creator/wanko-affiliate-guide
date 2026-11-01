@@ -1,0 +1,52 @@
+/* サイト内検索(search.html)。基準は design-fixes.css と同じ: 単色ボタン(--green・角 4px・太さ 700・影なし)、
+   グラデーションなし、12px 未満の文字なし、タップ領域 44px 以上。スマホ(375px)を先に組み、広い画面で幅を絞る。 */
+.sx{max-width:760px;margin:0 auto;padding:4px 16px 56px}
+.sx-title{font-size:22px;line-height:1.5;font-weight:700;letter-spacing:.04em;margin:4px 0 4px}
+.sx-lead{margin:0 0 8px;color:#5c645a;font-size:14px;line-height:1.8}
+.sx-form{position:sticky;top:0;z-index:5;background:#faf9f6;padding:10px 0 8px;margin:0 -16px;padding-left:16px;padding-right:16px;border-bottom:1px solid var(--line)}
+.sx-label{display:block;font-size:12px;color:#5c645a;margin:0 0 6px}
+.sx-row{display:flex;gap:8px}
+#sx-q{flex:1;min-width:0;min-height:48px;border:1px solid #b9bfb3;border-radius:4px;background:#fff;color:var(--ink);font:inherit;font-size:16px;padding:10px 12px}
+#sx-q:focus-visible{outline:3px solid var(--green);outline-offset:1px}
+.sx-submit{min-height:48px;min-width:72px;border:0;border-radius:4px;background:var(--green);color:#fff;font:inherit;font-size:15px;font-weight:700;cursor:pointer}
+.sx-submit:hover{background:var(--deep)}
+.sx-types{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;margin:10px -16px 0;padding:0 16px 2px}
+.sx-types::-webkit-scrollbar{display:none}
+.sx-types button{flex:none;-webkit-tap-highlight-color:transparent;min-height:44px;border:1px solid var(--line);border-radius:4px;background:#fff;color:var(--ink);font:inherit;font-size:14px;padding:0 12px;cursor:pointer;white-space:nowrap}
+.sx-types button[aria-pressed=true]{background:var(--green);border-color:var(--green);color:#fff;font-weight:700}
+.sx-types button:disabled{color:#8a9086;cursor:default}
+.sx-n{margin-left:4px;font-size:12px}
+.sx-n:empty{display:none}
+.sx-submit:focus-visible,.sx-types button:focus-visible,.sx-more:focus-visible,.sx a:focus-visible{outline:3px solid var(--orange);outline-offset:2px}
+.sx-status{min-height:1.8em;margin:12px 0 8px;font-size:14px;font-weight:700;color:var(--green)}
+.sx-examples h2,.sx-empty h2{font-size:16px;margin:16px 0 8px}
+.sx-examples ul{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0}
+.sx-examples a{display:inline-flex;align-items:center;min-height:44px;padding:0 14px;border:1px solid var(--line);border-radius:4px;background:#fff;text-decoration:none;font-size:14px}
+.sx-results{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:minmax(0,1fr);gap:10px}
+.sx-results li{min-width:0}
+.sx-hit{display:block;overflow-wrap:anywhere;background:#fff;border:1px solid var(--line);border-radius:4px;padding:12px 14px;text-decoration:none;color:var(--ink)}
+.sx-hit:hover{border-color:var(--green)}
+.sx-hit-head{display:flex;gap:8px;align-items:baseline}
+.sx-kind{flex:none;font-size:12px;font-weight:700;color:var(--green);border:1px solid #c9d3c6;border-radius:4px;padding:0 6px;line-height:1.7}
+.sx-name{font-size:16px;font-weight:700;line-height:1.5;color:var(--green);word-break:auto-phrase}
+.sx-sub{display:block;font-size:13px;color:#5c645a;margin-top:2px;line-height:1.6}
+.sx-point{display:block;font-size:14px;line-height:1.7;margin-top:4px}
+.sx-tags{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}
+.sx-tags span{font-size:12px;background:var(--mint);color:var(--deep);border-radius:4px;padding:1px 6px}
+.sx-tags .sx-cond{background:#f4efe3;color:#6b4f2a}
+.sx-more{display:block;width:100%;min-height:48px;margin:14px 0 0;border:1px solid var(--green);border-radius:4px;background:#fff;color:var(--green);font:inherit;font-size:15px;font-weight:700;cursor:pointer}
+.sx-empty{background:#fff;border:1px solid var(--line);border-radius:4px;padding:4px 16px 12px}
+.sx-empty p{font-size:14px;line-height:1.8}
+.sx-empty-other a{font-weight:700}
+.sx-paths{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.sx-paths a{display:block;min-height:44px;padding:10px 12px;border:1px solid var(--line);border-radius:4px;text-decoration:none;color:var(--ink)}
+.sx-paths b{display:block;color:var(--green);font-size:15px}
+.sx-paths span{display:block;font-size:13px;color:#5c645a}
+.sx-note{margin:28px 0 0;font-size:12px;line-height:1.8;color:#5c645a}
+.sx-footer{border-top:1px solid var(--line);padding:20px 16px 32px;max-width:760px;margin:0 auto;font-size:13px}
+.sx-footer p{margin:4px 0}
+.sx-footer .analytics-note{font-size:12px;color:#5c645a}
+@media(min-width:720px){.sx-title{font-size:30px}.sx-form{margin:0;padding:12px 0 10px}.sx-types{margin:10px 0 0;padding:0 0 2px;flex-wrap:wrap}}
+.sx-note-line{display:block;font-size:13px;line-height:1.7;color:#5c645a;margin-top:4px;padding-left:8px;border-left:3px solid var(--line)}
+.sx-has-q .sx-lead,.sx-has-q .sx-examples{display:none}
+.sx-wait .sx-results{min-height:100vh}

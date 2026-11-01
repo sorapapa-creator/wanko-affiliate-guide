@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>サイト内検索｜わんことのじかん</title>
+<meta name="description" content="犬と泊まれる宿・おでかけ先・主食・犬用品・犬服・旅行用品を、名前・地域・犬の条件でまとめて探せます。結果は各ページのカードへ移動します。">
+<link rel="canonical" href="https://sorapapa-creator.github.io/wanko-affiliate-guide/search.html">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#faf9f6">
+<link rel="icon" type="image/svg+xml" href="assets/icons/paw-print.svg">
+<link rel="stylesheet" href="assets/editorial.css?v=20261012m">
+<link rel="stylesheet" href="assets/design-fixes.css?v=20261019">
+<link rel="stylesheet" href="assets/search.css?v=20261023">
+<script src="assets/search.js?v=20261023" defer></script>
+</head>
+<body class="wanko-editorial-v1 search-page">
+<script>/* ?q= つきで開いたときは、結果が入るまで場所を空けておく(後から押し下げない) */if(/[?&]q=[^&]/.test(location.search))document.body.classList.add("sx-has-q","sx-wait")</script>
+<a class="skip" href="#content">本文へ</a>
+<nav class="site-nav" aria-label="メインナビゲーション"><a class="brand" href="index.html"><img class="ui-icon" src="assets/icons/paw-print.svg" alt="" width="22" height="22"><span>わんことのじかん</span></a><div class="nav-links"><a href="route-planner/">旅行プラン</a><a href="dog-lodging-guide.html">泊まる</a><a href="east-japan-dog-trips.html">お出かけ</a><a href="travel-gear.html">旅行用品</a><a href="goods.html">犬用品</a><a href="wear.html">犬服</a><a href="food.html">主食</a><a href="search.html" aria-current="page">検索</a></div></nav>
+<main id="content" class="sx">
+  <h1 class="sx-title">サイト内をまとめて探す</h1>
+  <p class="sx-lead" id="sx-lead">宿・おでかけ先・主食・用品・犬服・旅行用品を、名前・地域・犬の条件でまとめて探せます。結果を押すと各ページのカードへ移動します。</p>
+  <form class="sx-form" role="search" action="search.html" method="get" id="sx-form">
+    <label class="sx-label" for="sx-q">キーワード(スペースで区切ると、すべてを含むもの)</label>
+    <div class="sx-row">
+      <input id="sx-q" name="q" type="search" inputmode="search" enterkeyhint="search" autocomplete="off" spellcheck="false" placeholder="例：軽井沢 大型犬" aria-describedby="sx-status">
+      <button type="submit" class="sx-submit">探す</button>
+    </div>
+    <input type="hidden" name="type" id="sx-type-field" value="">
+    <div class="sx-types" role="group" aria-label="種類で絞り込む" id="sx-types">
+      <button type="button" data-type="" aria-pressed="true">すべて<span class="sx-n"></span></button>
+      <button type="button" data-type="0" aria-pressed="false">宿<span class="sx-n"></span></button>
+      <button type="button" data-type="1" aria-pressed="false">おでかけ<span class="sx-n"></span></button>
+      <button type="button" data-type="2" aria-pressed="false">主食<span class="sx-n"></span></button>
+      <button type="button" data-type="3" aria-pressed="false">用品<span class="sx-n"></span></button>
+      <button type="button" data-type="4" aria-pressed="false">服<span class="sx-n"></span></button>
+      <button type="button" data-type="5" aria-pressed="false">旅行用品<span class="sx-n"></span></button>
+    </div>
+  </form>
+  <p class="sx-status" id="sx-status" role="status" aria-live="polite"></p>
+  <section class="sx-examples" id="sx-examples" aria-labelledby="sx-examples-title">
+    <h2 id="sx-examples-title">よく探されている言葉</h2>
+    <ul>
+      <li><a href="search.html?q=軽井沢+大型犬">軽井沢 大型犬</a></li>
+      <li><a href="search.html?q=那須+ドッグラン">那須 ドッグラン</a></li>
+      <li><a href="search.html?q=伊豆+添い寝">伊豆 添い寝</a></li>
+      <li><a href="search.html?q=箱根">箱根</a></li>
+      <li><a href="search.html?q=レインコート">レインコート</a></li>
+      <li><a href="search.html?q=車酔い">車酔い</a></li>
+      <li><a href="search.html?q=キャリー">キャリー</a></li>
+      <li><a href="search.html?q=シニア">シニア</a></li>
+    </ul>
+  </section>
+  <ol class="sx-results" id="sx-results" aria-label="検索結果"></ol>
+  <button type="button" class="sx-more" id="sx-more" hidden></button>
+  <section class="sx-empty" id="sx-empty" hidden aria-labelledby="sx-empty-title">
+    <h2 id="sx-empty-title">見つかりませんでした</h2>
+    <p id="sx-empty-hint">言葉を短くするか、別の言い方(例：「温泉宿」→「温泉」、「ドッグラン付き」→「ドッグラン」)で探してみてください。地域名は市町村名や「伊豆」「房総」などの呼び方でも探せます。</p>
+    <p class="sx-empty-other" id="sx-empty-other" hidden></p>
+    <ul class="sx-paths">
+      <li><a href="dog-lodging-guide.html"><b>犬と泊まれる宿を地域・条件から探す</b><span>添い寝・ケージ・食事同伴などの条件で絞り込めます</span></a></li>
+      <li><a href="east-japan-dog-trips.html"><b>おでかけ先を地域から探す</b><span>千葉・関東・甲信越・伊豆静岡・東北のドッグラン、カフェ、公園</span></a></li>
+      <li><a href="route-planner/"><b>旅行プランを作る</b><span>出発地と行き先から、休憩・立ち寄り・宿までの行程を作れます</span></a></li>
+      <li><a href="rest-stops.html"><b>途中で犬と休めるSA・PA・道の駅</b><span>ドッグラン・散歩・犬同伴で食事できる休憩地点</span></a></li>
+      <li><a href="goods.html#concern-guide"><b>困りごとから用品を探す</b><span>散歩・お手入れ・ごはん・留守番の困りごとから</span></a></li>
+    </ul>
+  </section>
+  <p class="sx-note">このページに広告はありません。移動先の各ページには、予約・購入の広告リンクがあります。宿・施設の条件は各ページの掲載内容から判定したもので、予約・来店の前に施設の案内も確認してください。</p>
+</main>
+<footer class="sx-footer"><p><a href="index.html">トップ</a> ・ <a href="dog-lodging-guide.html">泊まる</a> ・ <a href="east-japan-dog-trips.html">お出かけ</a> ・ <a href="food.html">主食</a> ・ <a href="goods.html">犬用品</a> ・ <a href="wear.html">犬服</a> ・ <a href="travel-gear.html">旅行用品</a> ・ <a href="contact.html">お問い合わせ</a></p><p class="analytics-note">このサイトは、ページの閲覧数やどのページが見られたかを知るため Cloudflare Web Analytics を使っています。Cookie は使わず、個人を特定する情報は集めません。</p></footer>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "2847001768a143df87fa4e78edba9c7e"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
