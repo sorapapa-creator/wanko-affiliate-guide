@@ -1,0 +1,1358 @@
+{
+ "top@375": {
+  "file": "index.html",
+  "scrollWidth": 375,
+  "hscroll": false,
+  "over": [],
+  "tapTotal": 60,
+  "tapSmall": 24,
+  "tapSmallFirst": 5,
+  "inlineLinks": 8,
+  "tapGroups": [
+   [
+    "nav.filters > a",
+    {
+     "n": 17,
+     "w": 100,
+     "h": 43
+    }
+   ],
+   [
+    "div.nav-links > a",
+    {
+     "n": 4,
+     "w": 41,
+     "h": 44
+    }
+   ],
+   [
+    "nav.site-nav > a.brand",
+    {
+     "n": 1,
+     "w": 168,
+     "h": 29
+    }
+   ],
+   [
+    "div > a.moments-link",
+    {
+     "n": 1,
+     "w": 177,
+     "h": 43
+    }
+   ],
+   [
+    "section.photo-story > a.moments-link",
+    {
+     "n": 1,
+     "w": 227,
+     "h": 43
+    }
+   ]
+  ],
+  "tiny": 0,
+  "tinyFirst": 0,
+  "tinyGroups": [],
+  "dom": 391,
+  "action": {
+   "how": "頭数=2頭 を選んで「空室のある宿を探す」",
+   "after": "route-planner/?checkin=2026-10-24&from=%E6%9D%B1%E4%BA%AC%E9%A7%85&size=small&dogs=2#vacancy-card"
+  }
+ },
+ "lodging@375": {
+  "file": "dog-lodging-guide.html",
+  "scrollWidth": 375,
+  "hscroll": false,
+  "over": [],
+  "tapTotal": 8299,
+  "tapSmall": 2356,
+  "tapSmallFirst": 5,
+  "inlineLinks": 1303,
+  "tapGroups": [
+   [
+    "div.links > button.near-help-btn",
+    {
+     "n": 978,
+     "w": 157,
+     "h": 40
+    }
+   ],
+   [
+    "p.route-plan-cta > a",
+    {
+     "n": 978,
+     "w": 171,
+     "h": 16
+    }
+   ],
+   [
+    "details.stay-review-latest > summary",
+    {
+     "n": 347,
+     "w": 267,
+     "h": 43
+    }
+   ],
+   [
+    "div.secondary-offer-code > a",
+    {
+     "n": 44,
+     "w": 261,
+     "h": 41
+    }
+   ],
+   [
+    "div.nav-links > a",
+    {
+     "n": 4,
+     "w": 41,
+     "h": 44
+    }
+   ],
+   [
+    "blockquote.instagram-media > a",
+    {
+     "n": 4,
+     "w": 225,
+     "h": 41
+    }
+   ],
+   [
+    "nav.site-nav > a.brand",
+    {
+     "n": 1,
+     "w": 168,
+     "h": 29
+    }
+   ]
+  ],
+  "tiny": 0,
+  "tinyFirst": 0,
+  "tinyGroups": [],
+  "dom": 82370,
+  "action": {
+   "how": "検索欄に「那須」",
+   "before": 978,
+   "after": 63,
+   "changed": true
+  }
+ },
+ "outing@375": {
+  "file": "east-japan-dog-trips.html",
+  "scrollWidth": 375,
+  "hscroll": false,
+  "over": [],
+  "tapTotal": 2273,
+  "tapSmall": 2240,
+  "tapSmallFirst": 5,
+  "inlineLinks": 6,
+  "tapGroups": [
+   [
+    "article.trip > a",
+    {
+     "n": 900,
+     "w": 281,
+     "h": 43
+    }
+   ],
+   [
+    "p.route-plan-cta > a",
+    {
+     "n": 878,
+     "w": 187,
+     "h": 43
+    }
+   ],
+   [
+    "p.facility-location > a",
+    {
+     "n": 418,
+     "w": 80,
+     "h": 43
+    }
+   ],
+   [
+    "details.outing-details > summary",
+    {
+     "n": 37,
+     "w": 281,
+     "h": 24
+    }
+   ],
+   [
+    "div.nav-links > a",
+    {
+     "n": 4,
+     "w": 41,
+     "h": 44
+    }
+   ],
+   [
+    "nav.site-nav > a.brand",
+    {
+     "n": 1,
+     "w": 168,
+     "h": 29
+    }
+   ],
+   [
+    "div.outing-search > select",
+    {
+     "n": 1,
+     "w": 291,
+     "h": 40
+    }
+   ],
+   [
+    "blockquote.twitter-tweet > a",
+    {
+     "n": 1,
+     "w": 268,
+     "h": 43
+    }
+   ]
+  ],
+  "tiny": 0,
+  "tinyFirst": 0,
+  "tinyGroups": [],
+  "dom": 24143,
+  "action": {
+   "how": "検索欄に「那須」",
+   "before": 878,
+   "after": 19,
+   "changed": true
+  }
+ },
+ "food@375": {
+  "file": "food.html",
+  "scrollWidth": 375,
+  "hscroll": false,
+  "over": [],
+  "tapTotal": 3645,
+  "tapSmall": 1254,
+  "tapSmallFirst": 5,
+  "inlineLinks": 100,
+  "tapGroups": [
+   [
+    "details > summary",
+    {
+     "n": 925,
+     "w": 299,
+     "h": 20
+    }
+   ],
+   [
+    "p.review-guide > a",
+    {
+     "n": 167,
+     "w": 133,
+     "h": 14
+    }
+   ],
+   [
+    "div.card-body > a.official-link",
+    {
+     "n": 151,
+     "w": 299,
+     "h": 23
+    }
+   ],
+   [
+    "div.nav-links > a",
+    {
+     "n": 4,
+     "w": 41,
+     "h": 44
+    }
+   ],
+   [
+    "div.entry-links > a",
+    {
+     "n": 2,
+     "w": 147,
+     "h": 44
+    }
+   ],
+   [
+    "nav.site-nav > a.brand",
+    {
+     "n": 1,
+     "w": 168,
+     "h": 29
+    }
+   ],
+   [
+    "div.ff-toolbar > a",
+    {
+     "n": 1,
+     "w": 141,
+     "h": 23
+    }
+   ],
+   [
+    "details.review-fold > summary",
+    {
+     "n": 1,
+     "w": 299,
+     "h": 20
+    }
+   ],
+   [
+    "p > a",
+    {
+     "n": 1,
+     "w": 178,
+     "h": 14
+    }
+   ],
+   [
+    "span > a",
+    {
+     "n": 1,
+     "w": 178,
+     "h": 14
+    }
+   ]
+  ],
+  "tiny": 0,
+  "tinyFirst": 0,
+  "tinyGroups": [],
+  "dom": 62752,
+  "action": {
+   "how": "検索欄に「チキン」",
+   "before": 925,
+   "after": 429,
+   "changed": true
+  }
+ },
+ "goods@375": {
+  "file": "goods.html",
+  "scrollWidth": 375,
+  "hscroll": false,
+  "over": [],
+  "tapTotal": 2716,
+  "tapSmall": 872,
+  "tapSmallFirst": 5,
+  "inlineLinks": 5,
+  "tapGroups": [
+   [
+    "details > summary",
+    {
+     "n": 773,
+     "w": 194,
+     "h": 20
+    }
+   ],
+   [
+    "div.card-body > a.official-link",
+    {
+     "n": 60,
+     "w": 299,
+     "h": 23
+    }
+   ],
+   [
+    "p.review-guide > a",
+    {
+     "n": 33,
+     "w": 133,
+     "h": 14
+    }
+   ],
+   [
+    "div.nav-links > a",
+    {
+     "n": 4,
+     "w": 41,
+     "h": 44
+    }
+   ],
+   [
+    "nav.site-nav > a.brand",
+    {
+     "n": 1,
+     "w": 168,
+     "h": 29
+    }
+   ],
+   [
+    "span > a",
+    {
+     "n": 1,
+     "w": 178,
+     "h": 14
+    }
+   ]
+  ],
+  "tiny": 0,
+  "tinyFirst": 0,
+  "tinyGroups": [],
+  "dom": 31918,
+  "action": {
+   "how": "検索欄に「車」",
+   "before": 773,
+   "after": 18,
+   "changed": true
+  }
+ },
+ "wear@375": {
+  "file": "wear.html",
+  "scrollWidth": 375,
+  "hscroll": false,
+  "over": [],
+  "tapTotal": 2732,
+  "tapSmall": 1093,
+  "tapSmallFirst": 5,
+  "inlineLinks": 5,
+  "tapGroups": [
+   [
+    "details > summary",
+    {
+     "n": 641,
+     "w": 299,
+     "h": 20
+    }
+   ],
+   [
+    "div.card-body > a.official-link",
+    {
+     "n": 433,
+     "w": 299,
+     "h": 23
+    }
+   ],
+   [
+    "p.review-guide > a",
+    {
+     "n": 11,
+     "w": 133,
+     "h": 14
+    }
+   ],
+   [
+    "div.nav-links > a",
+    {
+     "n": 4,
+     "w": 41,
+     "h": 44
+    }
+   ],
+   [
+    "nav.site-nav > a.brand",
+    {
+     "n": 1,
+     "w": 168,
+     "h": 29
+    }
+   ],
+   [
+    "section.finder > a.measure-link",
+    {
+     "n": 1,
+     "w": 166,
+     "h": 22
+    }
+   ],
+   [
+    "p > a",
+    {
+     "n": 1,
+     "w": 178,
+     "h": 14
+    }
+   ],
+   [
+    "span > a",
+    {
+     "n": 1,
+     "w": 178,
+     "h": 14
+    }
+   ]
+  ],
+  "tiny": 0,
+  "tinyFirst": 0,
+  "tinyGroups": [],
+  "dom": 30248,
+  "action": {
+   "how": "検索欄に「レイン」",
+   "before": 641,
+   "after": 111,
+   "changed": true
+  }
+ },
+ "gear@375": {
+  "file": "travel-gear.html",
+  "scrollWidth": 375,
+  "hscroll": false,
+  "over": [],
+  "tapTotal": 1234,
+  "tapSmall": 371,
+  "tapSmallFirst": 5,
+  "inlineLinks": 11,
+  "tapGroups": [
+   [
+    "details > summary",
+    {
+     "n": 336,
+     "w": 194,
+     "h": 20
+    }
+   ],
+   [
+    "p.review-guide > a",
+    {
+     "n": 23,
+     "w": 133,
+     "h": 14
+    }
+   ],
+   [
+    "div.card-body > a.official-link",
+    {
+     "n": 5,
+     "w": 299,
+     "h": 23
+    }
+   ],
+   [
+    "div.nav-links > a",
+    {
+     "n": 4,
+     "w": 41,
+     "h": 44
+    }
+   ],
+   [
+    "nav.site-nav > a.brand",
+    {
+     "n": 1,
+     "w": 168,
+     "h": 29
+    }
+   ],
+   [
+    "details.review-fold > summary",
+    {
+     "n": 1,
+     "w": 299,
+     "h": 20
+    }
+   ],
+   [
+    "span > a",
+    {
+     "n": 1,
+     "w": 178,
+     "h": 14
+    }
+   ]
+  ],
+  "tiny": 0,
+  "tinyFirst": 0,
+  "tinyGroups": [],
+  "dom": 14579,
+  "action": {
+   "how": "検索欄に「キャリー」",
+   "before": 336,
+   "after": 75,
+   "changed": true
+  }
+ },
+ "check@375": {
+  "file": "first-stay-check-instagram.html",
+  "scrollWidth": 375,
+  "hscroll": false,
+  "over": [],
+  "tapTotal": 20,
+  "tapSmall": 5,
+  "tapSmallFirst": 2,
+  "inlineLinks": 3,
+  "tapGroups": [
+   [
+    "fieldset.tdc-q > label",
+    {
+     "n": 4,
+     "w": 309,
+     "h": 44
+    }
+   ],
+   [
+    "p.tdc-skip > a",
+    {
+     "n": 1,
+     "w": 275,
+     "h": 16
+    }
+   ]
+  ],
+  "tiny": 1,
+  "tinyFirst": 1,
+  "tinyGroups": [
+   [
+    "div > p.sns-kicker 11.52px",
+    1
+   ]
+  ],
+  "dom": 97,
+  "action": {
+   "how": "2頭・確認済/一部/未確認/心配 で送信",
+   "after": "first-stay-check-result.html",
+   "items": 8
+  }
+ },
+ "result@375": {
+  "file": "first-stay-check-result.html",
+  "scrollWidth": 375,
+  "hscroll": false,
+  "over": [],
+  "tapTotal": 17,
+  "tapSmall": 4,
+  "tapSmallFirst": 1,
+  "inlineLinks": 7,
+  "tapGroups": [
+   [
+    "form > select",
+    {
+     "n": 3,
+     "w": 309,
+     "h": 43
+    }
+   ],
+   [
+    "p.tdc-skip > a",
+    {
+     "n": 1,
+     "w": 69,
+     "h": 16
+    }
+   ]
+  ],
+  "tiny": 1,
+  "tinyFirst": 1,
+  "tinyGroups": [
+   [
+    "div > p.sns-kicker 11.52px",
+    1
+   ]
+  ],
+  "dom": 135,
+  "action": null
+ },
+ "prep5@375": {
+  "file": "travel-prep-5-instagram.html",
+  "scrollWidth": 375,
+  "hscroll": false,
+  "over": [],
+  "tapTotal": 13,
+  "tapSmall": 9,
+  "tapSmallFirst": 2,
+  "inlineLinks": 2,
+  "tapGroups": [
+   [
+    "p.links > a.main",
+    {
+     "n": 5,
+     "w": 178,
+     "h": 42
+    }
+   ],
+   [
+    "p.links > a",
+    {
+     "n": 4,
+     "w": 169,
+     "h": 42
+    }
+   ]
+  ],
+  "tiny": 1,
+  "tinyFirst": 1,
+  "tinyGroups": [
+   [
+    "div > p.sns-kicker 11.52px",
+    1
+   ]
+  ],
+  "dom": 98,
+  "action": null
+ },
+ "top@768": {
+  "file": "index.html",
+  "scrollWidth": 768,
+  "hscroll": false,
+  "over": [],
+  "tapTotal": 61,
+  "tapSmall": 27,
+  "tapSmallFirst": 8,
+  "inlineLinks": 10,
+  "tapGroups": [
+   [
+    "nav.filters > a",
+    {
+     "n": 17,
+     "w": 100,
+     "h": 43
+    }
+   ],
+   [
+    "div.nav-links > a",
+    {
+     "n": 7,
+     "w": 66,
+     "h": 39
+    }
+   ],
+   [
+    "nav.site-nav > a.brand",
+    {
+     "n": 1,
+     "w": 225,
+     "h": 38
+    }
+   ],
+   [
+    "div > a.moments-link",
+    {
+     "n": 1,
+     "w": 177,
+     "h": 43
+    }
+   ],
+   [
+    "section.photo-story > a.moments-link",
+    {
+     "n": 1,
+     "w": 227,
+     "h": 43
+    }
+   ]
+  ],
+  "tiny": 0,
+  "tinyFirst": 0,
+  "tinyGroups": [],
+  "dom": 391,
+  "action": {
+   "how": "頭数=2頭 を選んで「空室のある宿を探す」",
+   "after": "route-planner/?checkin=2026-10-24&from=%E6%9D%B1%E4%BA%AC%E9%A7%85&size=small&dogs=2#vacancy-card"
+  }
+ },
+ "lodging@768": {
+  "file": "dog-lodging-guide.html",
+  "scrollWidth": 768,
+  "hscroll": false,
+  "over": [],
+  "tapTotal": 8299,
+  "tapSmall": 2320,
+  "tapSmallFirst": 8,
+  "inlineLinks": 1303,
+  "tapGroups": [
+   [
+    "p.route-plan-cta > a",
+    {
+     "n": 978,
+     "w": 171,
+     "h": 16
+    }
+   ],
+   [
+    "div.links > button.near-help-btn",
+    {
+     "n": 935,
+     "w": 157,
+     "h": 43
+    }
+   ],
+   [
+    "details.stay-review-latest > summary",
+    {
+     "n": 347,
+     "w": 600,
+     "h": 22
+    }
+   ],
+   [
+    "div.secondary-offer-code > a",
+    {
+     "n": 48,
+     "w": 403,
+     "h": 16
+    }
+   ],
+   [
+    "div.nav-links > a",
+    {
+     "n": 7,
+     "w": 66,
+     "h": 39
+    }
+   ],
+   [
+    "blockquote.instagram-media > a",
+    {
+     "n": 4,
+     "w": 401,
+     "h": 16
+    }
+   ],
+   [
+    "nav.site-nav > a.brand",
+    {
+     "n": 1,
+     "w": 225,
+     "h": 38
+    }
+   ]
+  ],
+  "tiny": 0,
+  "tinyFirst": 0,
+  "tinyGroups": [],
+  "dom": 82370,
+  "action": {
+   "how": "検索欄に「那須」",
+   "before": 978,
+   "after": 63,
+   "changed": true
+  }
+ },
+ "outing@768": {
+  "file": "east-japan-dog-trips.html",
+  "scrollWidth": 768,
+  "hscroll": false,
+  "over": [],
+  "tapTotal": 2273,
+  "tapSmall": 2248,
+  "tapSmallFirst": 8,
+  "inlineLinks": 6,
+  "tapGroups": [
+   [
+    "article.trip > a",
+    {
+     "n": 900,
+     "w": 283,
+     "h": 43
+    }
+   ],
+   [
+    "p.route-plan-cta > a",
+    {
+     "n": 878,
+     "w": 187,
+     "h": 43
+    }
+   ],
+   [
+    "p.facility-location > a",
+    {
+     "n": 418,
+     "w": 80,
+     "h": 43
+    }
+   ],
+   [
+    "details.outing-details > summary",
+    {
+     "n": 42,
+     "w": 283,
+     "h": 24
+    }
+   ],
+   [
+    "div.nav-links > a",
+    {
+     "n": 7,
+     "w": 66,
+     "h": 39
+    }
+   ],
+   [
+    "nav.site-nav > a.brand",
+    {
+     "n": 1,
+     "w": 225,
+     "h": 38
+    }
+   ],
+   [
+    "div.outing-search > select",
+    {
+     "n": 1,
+     "w": 132,
+     "h": 40
+    }
+   ],
+   [
+    "blockquote.twitter-tweet > a",
+    {
+     "n": 1,
+     "w": 268,
+     "h": 43
+    }
+   ]
+  ],
+  "tiny": 0,
+  "tinyFirst": 0,
+  "tinyGroups": [],
+  "dom": 24143,
+  "action": {
+   "how": "検索欄に「那須」",
+   "before": 878,
+   "after": 19,
+   "changed": true
+  }
+ },
+ "food@768": {
+  "file": "food.html",
+  "scrollWidth": 768,
+  "hscroll": false,
+  "over": [],
+  "tapTotal": 3645,
+  "tapSmall": 1297,
+  "tapSmallFirst": 8,
+  "inlineLinks": 101,
+  "tapGroups": [
+   [
+    "details > summary",
+    {
+     "n": 925,
+     "w": 284,
+     "h": 20
+    }
+   ],
+   [
+    "div.card-body > a.official-link",
+    {
+     "n": 193,
+     "w": 284,
+     "h": 23
+    }
+   ],
+   [
+    "p.review-guide > a",
+    {
+     "n": 167,
+     "w": 133,
+     "h": 14
+    }
+   ],
+   [
+    "div.nav-links > a",
+    {
+     "n": 7,
+     "w": 66,
+     "h": 39
+    }
+   ],
+   [
+    "nav.site-nav > a.brand",
+    {
+     "n": 1,
+     "w": 225,
+     "h": 38
+    }
+   ],
+   [
+    "div.ff-toolbar > a",
+    {
+     "n": 1,
+     "w": 141,
+     "h": 23
+    }
+   ],
+   [
+    "details.review-fold > summary",
+    {
+     "n": 1,
+     "w": 284,
+     "h": 20
+    }
+   ],
+   [
+    "p > a",
+    {
+     "n": 1,
+     "w": 178,
+     "h": 14
+    }
+   ],
+   [
+    "span > a",
+    {
+     "n": 1,
+     "w": 178,
+     "h": 14
+    }
+   ]
+  ],
+  "tiny": 0,
+  "tinyFirst": 0,
+  "tinyGroups": [],
+  "dom": 62752,
+  "action": {
+   "how": "検索欄に「チキン」",
+   "before": 925,
+   "after": 429,
+   "changed": true
+  }
+ },
+ "goods@768": {
+  "file": "goods.html",
+  "scrollWidth": 768,
+  "hscroll": false,
+  "over": [],
+  "tapTotal": 2716,
+  "tapSmall": 983,
+  "tapSmallFirst": 8,
+  "inlineLinks": 6,
+  "tapGroups": [
+   [
+    "details > summary",
+    {
+     "n": 773,
+     "w": 284,
+     "h": 20
+    }
+   ],
+   [
+    "div.card-body > a.official-link",
+    {
+     "n": 168,
+     "w": 284,
+     "h": 23
+    }
+   ],
+   [
+    "p.review-guide > a",
+    {
+     "n": 33,
+     "w": 133,
+     "h": 14
+    }
+   ],
+   [
+    "div.nav-links > a",
+    {
+     "n": 7,
+     "w": 66,
+     "h": 39
+    }
+   ],
+   [
+    "nav.site-nav > a.brand",
+    {
+     "n": 1,
+     "w": 225,
+     "h": 38
+    }
+   ],
+   [
+    "span > a",
+    {
+     "n": 1,
+     "w": 178,
+     "h": 14
+    }
+   ]
+  ],
+  "tiny": 0,
+  "tinyFirst": 0,
+  "tinyGroups": [],
+  "dom": 31918,
+  "action": {
+   "how": "検索欄に「車」",
+   "before": 773,
+   "after": 18,
+   "changed": true
+  }
+ },
+ "wear@768": {
+  "file": "wear.html",
+  "scrollWidth": 768,
+  "hscroll": false,
+  "over": [],
+  "tapTotal": 2732,
+  "tapSmall": 1109,
+  "tapSmallFirst": 8,
+  "inlineLinks": 6,
+  "tapGroups": [
+   [
+    "details > summary",
+    {
+     "n": 641,
+     "w": 284,
+     "h": 20
+    }
+   ],
+   [
+    "div.card-body > a.official-link",
+    {
+     "n": 445,
+     "w": 284,
+     "h": 23
+    }
+   ],
+   [
+    "p.review-guide > a",
+    {
+     "n": 11,
+     "w": 133,
+     "h": 14
+    }
+   ],
+   [
+    "div.nav-links > a",
+    {
+     "n": 7,
+     "w": 66,
+     "h": 39
+    }
+   ],
+   [
+    "nav.site-nav > a.brand",
+    {
+     "n": 1,
+     "w": 225,
+     "h": 38
+    }
+   ],
+   [
+    "section.finder > a.measure-link",
+    {
+     "n": 1,
+     "w": 166,
+     "h": 22
+    }
+   ],
+   [
+    "details.wear-guide > summary",
+    {
+     "n": 1,
+     "w": 654,
+     "h": 27
+    }
+   ],
+   [
+    "p > a",
+    {
+     "n": 1,
+     "w": 178,
+     "h": 14
+    }
+   ],
+   [
+    "span > a",
+    {
+     "n": 1,
+     "w": 178,
+     "h": 14
+    }
+   ]
+  ],
+  "tiny": 0,
+  "tinyFirst": 0,
+  "tinyGroups": [],
+  "dom": 30248,
+  "action": {
+   "how": "検索欄に「レイン」",
+   "before": 641,
+   "after": 111,
+   "changed": true
+  }
+ },
+ "gear@768": {
+  "file": "travel-gear.html",
+  "scrollWidth": 768,
+  "hscroll": false,
+  "over": [],
+  "tapTotal": 1234,
+  "tapSmall": 421,
+  "tapSmallFirst": 8,
+  "inlineLinks": 12,
+  "tapGroups": [
+   [
+    "details > summary",
+    {
+     "n": 336,
+     "w": 284,
+     "h": 20
+    }
+   ],
+   [
+    "div.card-body > a.official-link",
+    {
+     "n": 52,
+     "w": 284,
+     "h": 23
+    }
+   ],
+   [
+    "p.review-guide > a",
+    {
+     "n": 23,
+     "w": 133,
+     "h": 14
+    }
+   ],
+   [
+    "div.nav-links > a",
+    {
+     "n": 7,
+     "w": 66,
+     "h": 39
+    }
+   ],
+   [
+    "nav.site-nav > a.brand",
+    {
+     "n": 1,
+     "w": 225,
+     "h": 38
+    }
+   ],
+   [
+    "details.review-fold > summary",
+    {
+     "n": 1,
+     "w": 284,
+     "h": 20
+    }
+   ],
+   [
+    "span > a",
+    {
+     "n": 1,
+     "w": 178,
+     "h": 14
+    }
+   ]
+  ],
+  "tiny": 0,
+  "tinyFirst": 0,
+  "tinyGroups": [],
+  "dom": 14579,
+  "action": {
+   "how": "検索欄に「キャリー」",
+   "before": 336,
+   "after": 75,
+   "changed": true
+  }
+ },
+ "check@768": {
+  "file": "first-stay-check-instagram.html",
+  "scrollWidth": 768,
+  "hscroll": false,
+  "over": [],
+  "tapTotal": 20,
+  "tapSmall": 6,
+  "tapSmallFirst": 3,
+  "inlineLinks": 3,
+  "tapGroups": [
+   [
+    "fieldset.tdc-q > label",
+    {
+     "n": 5,
+     "w": 494,
+     "h": 44
+    }
+   ],
+   [
+    "p.tdc-skip > a",
+    {
+     "n": 1,
+     "w": 275,
+     "h": 16
+    }
+   ]
+  ],
+  "tiny": 1,
+  "tinyFirst": 1,
+  "tinyGroups": [
+   [
+    "div > p.sns-kicker 11.52px",
+    1
+   ]
+  ],
+  "dom": 97,
+  "action": {
+   "how": "2頭・確認済/一部/未確認/心配 で送信",
+   "after": "first-stay-check-result.html",
+   "items": 8
+  }
+ },
+ "result@768": {
+  "file": "first-stay-check-result.html",
+  "scrollWidth": 768,
+  "hscroll": false,
+  "over": [],
+  "tapTotal": 17,
+  "tapSmall": 4,
+  "tapSmallFirst": 1,
+  "inlineLinks": 7,
+  "tapGroups": [
+   [
+    "form > select",
+    {
+     "n": 3,
+     "w": 494,
+     "h": 43
+    }
+   ],
+   [
+    "p.tdc-skip > a",
+    {
+     "n": 1,
+     "w": 69,
+     "h": 16
+    }
+   ]
+  ],
+  "tiny": 1,
+  "tinyFirst": 1,
+  "tinyGroups": [
+   [
+    "div > p.sns-kicker 11.52px",
+    1
+   ]
+  ],
+  "dom": 135,
+  "action": null
+ },
+ "prep5@768": {
+  "file": "travel-prep-5-instagram.html",
+  "scrollWidth": 768,
+  "hscroll": false,
+  "over": [],
+  "tapTotal": 13,
+  "tapSmall": 9,
+  "tapSmallFirst": 6,
+  "inlineLinks": 2,
+  "tapGroups": [
+   [
+    "p.links > a.main",
+    {
+     "n": 5,
+     "w": 178,
+     "h": 42
+    }
+   ],
+   [
+    "p.links > a",
+    {
+     "n": 4,
+     "w": 169,
+     "h": 42
+    }
+   ]
+  ],
+  "tiny": 1,
+  "tinyFirst": 1,
+  "tinyGroups": [
+   [
+    "div > p.sns-kicker 11.52px",
+    1
+   ]
+  ],
+  "dom": 98,
+  "action": null
+ }
+}

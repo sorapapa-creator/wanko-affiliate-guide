@@ -1,0 +1,600 @@
+{
+ "top@375": {
+  "file": "index.html",
+  "scrollWidth": 375,
+  "hscroll": false,
+  "over": [],
+  "tapTotal": 60,
+  "tapSmall": 0,
+  "tapSmallFirst": 0,
+  "inlineLinks": 8,
+  "tapGroups": [],
+  "tiny": 0,
+  "tinyFirst": 0,
+  "tinyGroups": [],
+  "dom": 391,
+  "action": {
+   "how": "頭数=2頭 を選んで「空室のある宿を探す」",
+   "after": "route-planner/?checkin=2026-10-31&from=%E6%9D%B1%E4%BA%AC%E9%A7%85&size=small&dogs=2#vacancy-card"
+  }
+ },
+ "lodging@375": {
+  "file": "dog-lodging-guide.html",
+  "scrollWidth": 375,
+  "hscroll": false,
+  "over": [],
+  "tapTotal": 8299,
+  "tapSmall": 48,
+  "tapSmallFirst": 0,
+  "inlineLinks": 1300,
+  "tapGroups": [
+   [
+    "div.secondary-offer-code > a",
+    {
+     "n": 44,
+     "w": 261,
+     "h": 41
+    }
+   ],
+   [
+    "blockquote.instagram-media > a",
+    {
+     "n": 4,
+     "w": 225,
+     "h": 41
+    }
+   ]
+  ],
+  "tiny": 0,
+  "tinyFirst": 0,
+  "tinyGroups": [],
+  "dom": 82370,
+  "action": {
+   "how": "検索欄に「那須」",
+   "before": 978,
+   "after": 63,
+   "changed": true
+  }
+ },
+ "outing@375": {
+  "file": "east-japan-dog-trips.html",
+  "scrollWidth": 375,
+  "hscroll": false,
+  "over": [],
+  "tapTotal": 2273,
+  "tapSmall": 1,
+  "tapSmallFirst": 0,
+  "inlineLinks": 3,
+  "tapGroups": [
+   [
+    "blockquote.twitter-tweet > a",
+    {
+     "n": 1,
+     "w": 268,
+     "h": 43
+    }
+   ]
+  ],
+  "tiny": 0,
+  "tinyFirst": 0,
+  "tinyGroups": [],
+  "dom": 24143,
+  "action": {
+   "how": "検索欄に「那須」",
+   "before": 878,
+   "after": 19,
+   "changed": true
+  }
+ },
+ "food@375": {
+  "file": "food.html",
+  "scrollWidth": 375,
+  "hscroll": false,
+  "over": [],
+  "tapTotal": 3645,
+  "tapSmall": 5,
+  "tapSmallFirst": 0,
+  "inlineLinks": 100,
+  "tapGroups": [
+   [
+    "div.entry-links > a",
+    {
+     "n": 2,
+     "w": 147,
+     "h": 44
+    }
+   ],
+   [
+    "div.ff-toolbar > a",
+    {
+     "n": 1,
+     "w": 141,
+     "h": 23
+    }
+   ],
+   [
+    "p > a",
+    {
+     "n": 1,
+     "w": 178,
+     "h": 14
+    }
+   ],
+   [
+    "span > a",
+    {
+     "n": 1,
+     "w": 178,
+     "h": 14
+    }
+   ]
+  ],
+  "tiny": 0,
+  "tinyFirst": 0,
+  "tinyGroups": [],
+  "dom": 62752,
+  "action": {
+   "how": "検索欄に「チキン」",
+   "before": 925,
+   "after": 429,
+   "changed": true
+  }
+ },
+ "goods@375": {
+  "file": "goods.html",
+  "scrollWidth": 375,
+  "hscroll": false,
+  "over": [],
+  "tapTotal": 2716,
+  "tapSmall": 1,
+  "tapSmallFirst": 0,
+  "inlineLinks": 5,
+  "tapGroups": [
+   [
+    "span > a",
+    {
+     "n": 1,
+     "w": 178,
+     "h": 14
+    }
+   ]
+  ],
+  "tiny": 0,
+  "tinyFirst": 0,
+  "tinyGroups": [],
+  "dom": 31918,
+  "action": {
+   "how": "検索欄に「車」",
+   "before": 773,
+   "after": 18,
+   "changed": true
+  }
+ },
+ "wear@375": {
+  "file": "wear.html",
+  "scrollWidth": 375,
+  "hscroll": false,
+  "over": [],
+  "tapTotal": 2732,
+  "tapSmall": 3,
+  "tapSmallFirst": 0,
+  "inlineLinks": 5,
+  "tapGroups": [
+   [
+    "section.finder > a.measure-link",
+    {
+     "n": 1,
+     "w": 166,
+     "h": 22
+    }
+   ],
+   [
+    "p > a",
+    {
+     "n": 1,
+     "w": 178,
+     "h": 14
+    }
+   ],
+   [
+    "span > a",
+    {
+     "n": 1,
+     "w": 178,
+     "h": 14
+    }
+   ]
+  ],
+  "tiny": 0,
+  "tinyFirst": 0,
+  "tinyGroups": [],
+  "dom": 30248,
+  "action": {
+   "how": "検索欄に「レイン」",
+   "before": 641,
+   "after": 111,
+   "changed": true
+  }
+ },
+ "gear@375": {
+  "file": "travel-gear.html",
+  "scrollWidth": 375,
+  "hscroll": false,
+  "over": [],
+  "tapTotal": 1234,
+  "tapSmall": 1,
+  "tapSmallFirst": 0,
+  "inlineLinks": 11,
+  "tapGroups": [
+   [
+    "span > a",
+    {
+     "n": 1,
+     "w": 178,
+     "h": 14
+    }
+   ]
+  ],
+  "tiny": 0,
+  "tinyFirst": 0,
+  "tinyGroups": [],
+  "dom": 14579,
+  "action": {
+   "how": "検索欄に「キャリー」",
+   "before": 336,
+   "after": 75,
+   "changed": true
+  }
+ },
+ "check@375": {
+  "file": "first-stay-check-instagram.html",
+  "scrollWidth": 375,
+  "hscroll": false,
+  "over": [],
+  "tapTotal": 20,
+  "tapSmall": 0,
+  "tapSmallFirst": 0,
+  "inlineLinks": 3,
+  "tapGroups": [],
+  "tiny": 0,
+  "tinyFirst": 0,
+  "tinyGroups": [],
+  "dom": 97,
+  "action": {
+   "how": "2頭・確認済/一部/未確認/心配 で送信",
+   "after": "first-stay-check-result.html",
+   "items": 8
+  }
+ },
+ "result@375": {
+  "file": "first-stay-check-result.html",
+  "scrollWidth": 375,
+  "hscroll": false,
+  "over": [],
+  "tapTotal": 17,
+  "tapSmall": 0,
+  "tapSmallFirst": 0,
+  "inlineLinks": 7,
+  "tapGroups": [],
+  "tiny": 0,
+  "tinyFirst": 0,
+  "tinyGroups": [],
+  "dom": 135,
+  "action": null
+ },
+ "prep5@375": {
+  "file": "travel-prep-5-instagram.html",
+  "scrollWidth": 375,
+  "hscroll": false,
+  "over": [],
+  "tapTotal": 13,
+  "tapSmall": 0,
+  "tapSmallFirst": 0,
+  "inlineLinks": 2,
+  "tapGroups": [],
+  "tiny": 0,
+  "tinyFirst": 0,
+  "tinyGroups": [],
+  "dom": 98,
+  "action": null
+ },
+ "top@768": {
+  "file": "index.html",
+  "scrollWidth": 768,
+  "hscroll": false,
+  "over": [],
+  "tapTotal": 61,
+  "tapSmall": 0,
+  "tapSmallFirst": 0,
+  "inlineLinks": 10,
+  "tapGroups": [],
+  "tiny": 0,
+  "tinyFirst": 0,
+  "tinyGroups": [],
+  "dom": 391,
+  "action": {
+   "how": "頭数=2頭 を選んで「空室のある宿を探す」",
+   "after": "route-planner/?checkin=2026-10-31&from=%E6%9D%B1%E4%BA%AC%E9%A7%85&size=small&dogs=2#vacancy-card"
+  }
+ },
+ "lodging@768": {
+  "file": "dog-lodging-guide.html",
+  "scrollWidth": 768,
+  "hscroll": false,
+  "over": [],
+  "tapTotal": 8299,
+  "tapSmall": 52,
+  "tapSmallFirst": 0,
+  "inlineLinks": 1300,
+  "tapGroups": [
+   [
+    "div.secondary-offer-code > a",
+    {
+     "n": 48,
+     "w": 403,
+     "h": 16
+    }
+   ],
+   [
+    "blockquote.instagram-media > a",
+    {
+     "n": 4,
+     "w": 401,
+     "h": 16
+    }
+   ]
+  ],
+  "tiny": 0,
+  "tinyFirst": 0,
+  "tinyGroups": [],
+  "dom": 82370,
+  "action": {
+   "how": "検索欄に「那須」",
+   "before": 978,
+   "after": 63,
+   "changed": true
+  }
+ },
+ "outing@768": {
+  "file": "east-japan-dog-trips.html",
+  "scrollWidth": 768,
+  "hscroll": false,
+  "over": [],
+  "tapTotal": 2273,
+  "tapSmall": 1,
+  "tapSmallFirst": 0,
+  "inlineLinks": 3,
+  "tapGroups": [
+   [
+    "blockquote.twitter-tweet > a",
+    {
+     "n": 1,
+     "w": 268,
+     "h": 43
+    }
+   ]
+  ],
+  "tiny": 0,
+  "tinyFirst": 0,
+  "tinyGroups": [],
+  "dom": 24143,
+  "action": {
+   "how": "検索欄に「那須」",
+   "before": 878,
+   "after": 19,
+   "changed": true
+  }
+ },
+ "food@768": {
+  "file": "food.html",
+  "scrollWidth": 768,
+  "hscroll": false,
+  "over": [],
+  "tapTotal": 3645,
+  "tapSmall": 3,
+  "tapSmallFirst": 0,
+  "inlineLinks": 101,
+  "tapGroups": [
+   [
+    "div.ff-toolbar > a",
+    {
+     "n": 1,
+     "w": 141,
+     "h": 23
+    }
+   ],
+   [
+    "p > a",
+    {
+     "n": 1,
+     "w": 178,
+     "h": 14
+    }
+   ],
+   [
+    "span > a",
+    {
+     "n": 1,
+     "w": 178,
+     "h": 14
+    }
+   ]
+  ],
+  "tiny": 0,
+  "tinyFirst": 0,
+  "tinyGroups": [],
+  "dom": 62752,
+  "action": {
+   "how": "検索欄に「チキン」",
+   "before": 925,
+   "after": 429,
+   "changed": true
+  }
+ },
+ "goods@768": {
+  "file": "goods.html",
+  "scrollWidth": 768,
+  "hscroll": false,
+  "over": [],
+  "tapTotal": 2716,
+  "tapSmall": 1,
+  "tapSmallFirst": 0,
+  "inlineLinks": 6,
+  "tapGroups": [
+   [
+    "span > a",
+    {
+     "n": 1,
+     "w": 178,
+     "h": 14
+    }
+   ]
+  ],
+  "tiny": 0,
+  "tinyFirst": 0,
+  "tinyGroups": [],
+  "dom": 31918,
+  "action": {
+   "how": "検索欄に「車」",
+   "before": 773,
+   "after": 18,
+   "changed": true
+  }
+ },
+ "wear@768": {
+  "file": "wear.html",
+  "scrollWidth": 768,
+  "hscroll": false,
+  "over": [],
+  "tapTotal": 2732,
+  "tapSmall": 4,
+  "tapSmallFirst": 0,
+  "inlineLinks": 6,
+  "tapGroups": [
+   [
+    "section.finder > a.measure-link",
+    {
+     "n": 1,
+     "w": 166,
+     "h": 22
+    }
+   ],
+   [
+    "details.wear-guide > summary",
+    {
+     "n": 1,
+     "w": 654,
+     "h": 27
+    }
+   ],
+   [
+    "p > a",
+    {
+     "n": 1,
+     "w": 178,
+     "h": 14
+    }
+   ],
+   [
+    "span > a",
+    {
+     "n": 1,
+     "w": 178,
+     "h": 14
+    }
+   ]
+  ],
+  "tiny": 0,
+  "tinyFirst": 0,
+  "tinyGroups": [],
+  "dom": 30248,
+  "action": {
+   "how": "検索欄に「レイン」",
+   "before": 641,
+   "after": 111,
+   "changed": true
+  }
+ },
+ "gear@768": {
+  "file": "travel-gear.html",
+  "scrollWidth": 768,
+  "hscroll": false,
+  "over": [],
+  "tapTotal": 1234,
+  "tapSmall": 1,
+  "tapSmallFirst": 0,
+  "inlineLinks": 12,
+  "tapGroups": [
+   [
+    "span > a",
+    {
+     "n": 1,
+     "w": 178,
+     "h": 14
+    }
+   ]
+  ],
+  "tiny": 0,
+  "tinyFirst": 0,
+  "tinyGroups": [],
+  "dom": 14579,
+  "action": {
+   "how": "検索欄に「キャリー」",
+   "before": 336,
+   "after": 75,
+   "changed": true
+  }
+ },
+ "check@768": {
+  "file": "first-stay-check-instagram.html",
+  "scrollWidth": 768,
+  "hscroll": false,
+  "over": [],
+  "tapTotal": 20,
+  "tapSmall": 0,
+  "tapSmallFirst": 0,
+  "inlineLinks": 3,
+  "tapGroups": [],
+  "tiny": 0,
+  "tinyFirst": 0,
+  "tinyGroups": [],
+  "dom": 97,
+  "action": {
+   "how": "2頭・確認済/一部/未確認/心配 で送信",
+   "after": "first-stay-check-result.html",
+   "items": 8
+  }
+ },
+ "result@768": {
+  "file": "first-stay-check-result.html",
+  "scrollWidth": 768,
+  "hscroll": false,
+  "over": [],
+  "tapTotal": 17,
+  "tapSmall": 0,
+  "tapSmallFirst": 0,
+  "inlineLinks": 7,
+  "tapGroups": [],
+  "tiny": 0,
+  "tinyFirst": 0,
+  "tinyGroups": [],
+  "dom": 135,
+  "action": null
+ },
+ "prep5@768": {
+  "file": "travel-prep-5-instagram.html",
+  "scrollWidth": 768,
+  "hscroll": false,
+  "over": [],
+  "tapTotal": 13,
+  "tapSmall": 0,
+  "tapSmallFirst": 0,
+  "inlineLinks": 2,
+  "tapGroups": [],
+  "tiny": 0,
+  "tinyFirst": 0,
+  "tinyGroups": [],
+  "dom": 98,
+  "action": null
+ }
+}
