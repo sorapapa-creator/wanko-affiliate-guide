@@ -15,15 +15,20 @@ function wankoStayCta(url) {
   return '広告｜' + site + 'で空室・条件を確認';
 }
 // Presentation enhancements; existing product filtering and affiliate URLs stay intact.
-document.querySelectorAll('button[data-problem]').forEach(button=>{
- const update=()=>document.querySelectorAll('button[data-problem]').forEach(b=>b.setAttribute('aria-pressed',String(b.classList.contains('active'))));
- button.addEventListener('click',update);update();
-});
+/* perf-20261019: ボタンの一覧は1回だけ集める(ボタンごとにページ全体を探し直すと、カードが多いページで重い) */
+{
+ const problemButtons=[...document.querySelectorAll('button[data-problem]')];
+ const update=()=>problemButtons.forEach(b=>b.setAttribute('aria-pressed',String(b.classList.contains('active'))));
+ problemButtons.forEach(button=>button.addEventListener('click',update));update();
+}
 const stays=[...document.querySelectorAll('.stay-card')];
 if(stays.length){
  /* design-20261004: 文字検索+犬の条件チップ+並べ替え。判定はカード内の文章(answer-grid)と data-sleep / data-cage だけを使う
     design-pass-2: 各条件を 可(yes) / 条件付き(cond) / 不可(no) / 未確認(unk) で判定し、チップは 可+条件付き を数える */
- const secText=(card,re)=>[...card.querySelectorAll('.answer-grid section')].filter(s=>re.test((s.querySelector('b')||{}).textContent||'')).map(s=>(s.querySelector('p')||{}).textContent||'').join(' ');
+ /* perf-20261019: 各カードの「見出し(b)・本文(p)」は最初の1回だけ読み、判定のたびに探し直さない */
+ const secCache=new WeakMap();
+ const secs=card=>{let v=secCache.get(card);if(!v){v=[...card.querySelectorAll('.answer-grid section')].map(s=>[(s.querySelector('b')||{}).textContent||'',(s.querySelector('p')||{}).textContent||'']);secCache.set(card,v)}return v};
+ const secText=(card,re)=>secs(card).filter(([b])=>re.test(b)).map(([,p])=>p).join(' ');
  const UNK=/^[(（]?(予約前確認|未確認|不明|公式に記載なし|記載なし)/;const bare=t=>!t.trim()||/^[(（]?(予約前確認|未確認|不明|(公式に)?記載なし)[)）。]?$/.test(t.trim());
  const CHIPS=[
   ['large','大型犬OK','大型犬',c=>{const t=secText(c,/対象犬|頭数/);if(bare(t))return'unk';
@@ -59,8 +64,11 @@ if(stays.length){
  const info=stays.map((card,i)=>{const area=((card.querySelector('.stay-head p')||{}).textContent||'').trim();const pref=(area.match(/^(東京都|北海道|(?:京都|大阪)府|[^\s・（(]{2,3}?県)/)||[])[1]||'';const st={};CHIPS.forEach(([k,,,fn])=>{try{st[k]=fn(card)}catch(e){st[k]='unk'}});
   const x={card,i,pref,area,rank:PREFS.indexOf(pref)<0?99:PREFS.indexOf(pref),st,_t:null};Object.defineProperty(x,'text',{get(){return this._t??(this._t=this.card.textContent.toLowerCase())}});return x});
  /* カードごとの条件表示(可・条件付き・不可・未確認)と「比べる」 */
+ /* perf-20261019: 条件の行は1回だけ組み立てたひな形を複製し、判定結果と id だけ差し替える(HTML 文字列の解析を842回しない) */
+ const rowTpl=document.createElement('div');
+ rowTpl.innerHTML='<ul class="stay-conds" aria-label="犬の条件(掲載内容から判定)">'+CHIPS.map(([k,,short])=>'<li class="" data-k="'+k+'">'+short+' <b></b></li>').join('')+'</ul><label class="stay-compare"><input type="checkbox" data-compare=""> 比べる</label>';
  info.forEach(x=>{const head=x.card.querySelector('.stay-head');if(!head)return;const row=document.createElement('div');row.className='stay-conds-row';
-  row.innerHTML='<ul class="stay-conds" aria-label="犬の条件(掲載内容から判定)">'+CHIPS.map(([k,,short])=>'<li class="st-'+x.st[k]+'" data-k="'+k+'">'+short+' <b>'+stateText(k,x.st[k])+'</b></li>').join('')+'</ul><label class="stay-compare"><input type="checkbox" data-compare="'+x.card.id+'"> 比べる</label>';
+  const tpl=rowTpl.cloneNode(true);const lis=tpl.querySelectorAll('li');CHIPS.forEach(([k],j)=>{lis[j].className='st-'+x.st[k];lis[j].lastChild.textContent=stateText(k,x.st[k])});tpl.querySelector('input').setAttribute('data-compare',x.card.id);row.append(...tpl.childNodes);
   head.after(row)});
  const bar=document.createElement('div');bar.className='stay-search';bar.setAttribute('role','search');bar.setAttribute('aria-label','宿を探す');
  bar.innerHTML='<div class="stay-search-row"><label for="stay-query">宿・地域で探す</label><input id="stay-query" type="search" placeholder="例：那須、伊豆、温泉" autocomplete="off"><output id="stay-count" aria-live="polite"></output><span class="stay-sort"><label for="stay-sort">並び順</label><select id="stay-sort"><option value="rec">おすすめ順</option><option value="pref">地域順</option></select></span></div>'
@@ -71,7 +79,8 @@ if(stays.length){
  const input=bar.querySelector('#stay-query'),count=bar.querySelector('#stay-count'),sort=bar.querySelector('#stay-sort'),reset=bar.querySelector('.stay-reset'),chipBtns=[...bar.querySelectorAll('.stay-chip')];
  const active=new Set();const hit=(x,k)=>x.st[k]==='yes'||x.st[k]==='cond';
  const filter=()=>{const q=input.value.trim().toLowerCase();const ok=(x,skip)=>(!q||x.text.includes(q))&&[...active].every(k=>k===skip||hit(x,k));let n=0;
-  let r=0;info.forEach(x=>{const show=ok(x);const was=!x.card.hidden;if(x.card.hidden===show)x.card.hidden=!show;if(show){n++;if(!was&&r<12){x.card.style.setProperty('--i',r);x.card.classList.remove('reveal');void x.card.offsetWidth;x.card.classList.add('reveal');r++}}});/* motion-20261012: 新たに表示されたカードだけ段階表示 */
+  const rev=[];info.forEach(x=>{const show=ok(x);const was=!x.card.hidden;if(x.card.hidden===show)x.card.hidden=!show;if(show){n++;if(!was&&rev.length<12){x.card.style.setProperty('--i',rev.length);rev.push(x.card)}}});/* motion-20261012: 新たに表示されたカードだけ段階表示 */
+  if(rev.length){rev.forEach(c=>c.classList.remove('reveal'));void main.offsetWidth;rev.forEach(c=>c.classList.add('reveal'))}/* perf-20261019: アニメーションのかけ直しに必要な再計算を、カードごとではなく1回にまとめる */
   chipBtns.forEach(b=>{const k=b.dataset.chip;const m=info.reduce((a,x)=>a+(ok(x,k)&&hit(x,k)?1:0),0);b.querySelector('.chip-n').textContent=m;b.setAttribute('aria-label',b.firstChild.textContent+' '+m+'宿');});
   CHIPS.forEach(([k])=>main.classList.toggle('stays-f-'+k,active.has(k)));
   count.textContent=(q||active.size)?n+'宿 / 全'+stays.length+'宿':'全'+stays.length+'宿';empty.hidden=n>0;reset.hidden=!(q||active.size);
@@ -114,11 +123,13 @@ if(stays.length){
   if(dlg.showModal)dlg.showModal();else dlg.setAttribute('open','');dlg.querySelector('.compare-close').focus()});
  dlg.addEventListener('click',e=>{if(e.target===dlg)dlg.close()});
  renderTray();
+ /* perf-20261019: 折りたたみの見出しは1回だけ組み立て、カードごとには複製する(HTML 文字列の解析を842回しない) */
+ const summaryTpl=document.createElement('summary');
+ summaryTpl.innerHTML='<span class="stay-toggle-copy"><strong class="stay-toggle-label">宿の設備・宿泊条件を見る</strong><small>添い寝・ケージ・犬用アメニティなど</small></span><span class="stay-toggle-symbol" aria-hidden="true">＋</span>';
  stays.forEach(card=>{
   const head=card.querySelector('.stay-head');if(!head)return;
   const details=document.createElement('details');details.className='stay-details';
-  const summary=document.createElement('summary');
-  summary.innerHTML='<span class="stay-toggle-copy"><strong class="stay-toggle-label">宿の設備・宿泊条件を見る</strong><small>添い寝・ケージ・犬用アメニティなど</small></span><span class="stay-toggle-symbol" aria-hidden="true">＋</span>';
+  const summary=summaryTpl.cloneNode(true);
   details.append(summary);const fold=['amenity','room-note','card-meta','source-date'];/* Yahoo!トラベルの予約枠(secondary-offers)は外に残す */const kids=[...card.children].filter(el=>el!==head&&fold.some(c=>el.classList.contains(c)));if(!kids.length)return;kids[0].before(details);kids.forEach(el=>details.append(el));/* 2026-10-03: 犬条件の答え(answer-grid)・予約リンク(links)・行程ボタン(route-plan-cta)は折り畳まない(Codex 指摘) */
   details.addEventListener('toggle',()=>{
    summary.querySelector('.stay-toggle-label').textContent=details.open?'宿の詳細を閉じる':'宿の設備・宿泊条件を見る';

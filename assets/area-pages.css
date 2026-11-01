@@ -1,0 +1,92 @@
+/* 地域別ページ(areas/*.html)専用。tools/build_area_pages.py が作るページで使う。
+   色は editorial.css の変数だけ。クラスは ar- で始める。動き(ふわっと出る演出)は付けない。 */
+.ar-hero,.ar-main{font-size:15px;line-height:1.8}
+.area-page *,.area-page *:before,.area-page *:after{box-sizing:border-box}
+.area-page h1,.area-page h2,.area-page h3,.area-page h4{word-break:auto-phrase;text-wrap:balance}
+.area-page a:focus-visible,.area-page .ar-btn:focus-visible{outline:3px solid var(--orange);outline-offset:2px}
+
+.area-page .pr-notice{margin:0;padding:8px 16px;background:var(--cream);color:var(--muted);font-size:13px;line-height:1.6;text-align:center;border-bottom:1px solid var(--line)}
+.area-page .pr-notice b{color:var(--ink)}
+
+.ar-hero{max-width:1112px;margin:0 auto;padding:12px 16px 8px}
+.ar-hero h1{font-size:clamp(24px,3.4vw,36px);font-weight:600;line-height:1.5;letter-spacing:.03em;margin:8px 0 14px;color:var(--ink)}
+.ar-lead{max-width:760px}
+.ar-lead p{margin:0 0 10px;color:var(--ink)}
+.ar-summary{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 0}
+.ar-summary a{display:inline-flex;align-items:center;min-height:44px;padding:8px 16px;border:1px solid var(--line);border-radius:4px;background:var(--mint);color:var(--green);text-decoration:none;font-weight:600;font-size:14px}
+
+.ar-crumbs ol{display:flex;flex-wrap:wrap;gap:2px 0;list-style:none;margin:0;padding:0;font-size:13px;color:var(--muted)}
+.ar-crumbs li+li:before{content:"›";margin:0 8px;color:var(--muted)}
+.ar-crumbs a{color:var(--green);display:inline-block;padding:10px 0}
+.ar-crumbs li[aria-current]{padding:10px 0}
+
+.ar-main{max-width:1112px;margin:0 auto;padding:8px 16px 64px;overflow-wrap:anywhere}
+.ar-disclosure{margin:16px 0 0;padding:12px 14px;background:#fff;border:1px solid var(--line);border-radius:8px;font-size:13px;color:var(--muted)}
+.ar-disclosure b{display:inline-block;margin-right:8px;padding:0 8px;background:var(--mint);color:var(--ink);font-size:12px}
+
+.ar-section{margin:40px 0 0}
+.ar-section>h2{font-size:clamp(20px,2.6vw,26px);font-weight:600;line-height:1.5;margin:0 0 14px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+.ar-section>h2 span{font-size:14px;font-weight:500;color:var(--muted);margin-left:6px;white-space:nowrap}
+.ar-muni{font-size:18px;font-weight:600;margin:28px 0 10px;scroll-margin-top:16px}
+.ar-muni span{font-size:13px;font-weight:500;color:var(--muted);margin-left:4px}
+.ar-jump{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 6px}
+.ar-jump a{display:inline-flex;align-items:center;min-height:44px;padding:6px 12px;border:1px solid var(--line);border-radius:4px;background:#fff;font-size:13px;text-decoration:none}
+
+.ar-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr));gap:16px;align-items:start}
+.ar-card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:16px 18px;min-width:0;scroll-margin-top:16px}
+.ar-card-area{margin:0;font-size:12px;color:var(--muted)}
+.ar-card-name{font-size:18px;font-weight:600;line-height:1.5;margin:2px 0 8px;color:var(--ink)}
+.ar-tags{display:flex;flex-wrap:wrap;gap:6px;list-style:none;margin:0 0 8px;padding:0}
+.ar-tags li{font-size:12px;padding:2px 8px;border-radius:4px;background:var(--mint);color:var(--ink)}
+.ar-theme{margin:0 0 8px}
+.ar-facts{margin:0 0 10px}
+.ar-facts div{padding:6px 0;border-top:1px solid var(--line)}
+.ar-facts dt{font-size:12px;font-weight:600;color:var(--muted)}
+.ar-facts dd{margin:0;font-size:14px;line-height:1.7}
+.ar-near{margin:0 0 6px;font-size:13px}
+.ar-checked{margin:0 0 10px;font-size:12px;color:var(--muted)}
+.ar-actions p{margin:0 0 8px}
+.ar-ad{display:flex;align-items:center;gap:8px}
+.ar-ad-tag{flex:0 0 auto;font-size:12px;padding:0 6px;border:1px solid var(--line);border-radius:4px;color:var(--muted)}
+.ar-ad .ar-btn{flex:1 1 auto}
+.ar-links{display:flex;flex-wrap:wrap;gap:8px}
+.ar-links .ar-btn{flex:1 1 220px}
+.ar-plan{font-size:13px}
+
+.ar-btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:8px 14px;border:1px solid var(--green);border-radius:4px;background:var(--green);color:#fff;text-decoration:none;font-size:14px;font-weight:600;line-height:1.5;text-align:center}
+.ar-btn:hover{background:var(--deep);border-color:var(--deep)}
+.ar-btn-line{background:#fff;color:var(--green)}
+.ar-btn-line:hover{background:var(--mint);color:var(--green);border-color:var(--green)}
+.ar-more{margin:18px 0 0}
+
+.ar-rows{list-style:none;margin:0;padding:0;background:#fff;border:1px solid var(--line);border-radius:8px}
+.ar-rows li{display:flex;flex-wrap:wrap;gap:0 12px;align-items:baseline;padding:10px 14px}
+.ar-rows li+li{border-top:1px solid var(--line)}
+.ar-rows a{font-weight:600}
+.ar-rows span{font-size:12px;color:var(--muted)}
+.ar-rows-more{margin:10px 0 0}
+
+.ar-area-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,220px),1fr));gap:10px;list-style:none;margin:0 0 16px;padding:0}
+.ar-area-list a{display:flex;flex-direction:column;justify-content:center;min-height:64px;height:100%;padding:10px 14px;background:#fff;border:1px solid var(--line);border-radius:8px;text-decoration:none;color:var(--ink)}
+.ar-area-list a:hover{border-color:var(--green)}
+.ar-area-list b{color:var(--green);font-size:16px}
+.ar-area-list span{font-size:13px;color:var(--muted)}
+.ar-area-list small{font-size:12px;color:var(--muted)}
+.ar-note{font-size:13px;color:var(--muted)}
+.ar-data-note{margin:40px 0 0}
+
+.ar-pref-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr));gap:16px}
+.ar-pref{background:#fff;border:1px solid var(--line);border-radius:8px;padding:16px 18px}
+.ar-pref h3{font-size:20px;font-weight:600;margin:0 0 10px}
+.ar-pref h3 span{display:block;font-size:13px;font-weight:500;color:var(--muted)}
+.ar-chips{display:flex;flex-wrap:wrap;gap:6px;list-style:none;margin:0 0 10px;padding:0}
+.ar-chips a{display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:6px 12px;border:1px solid var(--line);border-radius:4px;background:var(--mint);text-decoration:none;font-size:14px}
+.ar-chips span{font-size:12px;color:var(--muted)}
+.ar-pref p:last-child{margin:0}
+
+@media(max-width:640px){
+  .ar-hero{padding:4px 16px 4px}
+  .ar-card{padding:14px}
+  .ar-summary a{flex:1 1 100%}
+  .ar-pref .ar-btn,.ar-more .ar-btn,.ar-rows-more .ar-btn{width:100%}
+}
