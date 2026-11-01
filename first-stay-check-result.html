@@ -14,17 +14,17 @@
 <meta property="og:image" content="https://sorapapa-creator.github.io/wanko-affiliate-guide/assets/og/og-sns.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="assets/from-sns.css?v=20260925">
-<link rel="stylesheet" href="assets/two-dogs-check.css?v=20261022b">
+<link rel="stylesheet" href="assets/two-dogs-check.css?v=20261023">
 <link rel="stylesheet" href="assets/design-fixes.css?v=20261019">
 </head>
-<body>
+<body class="tdc-page">
 <main class="sns-wrap">
   <header class="sns-hero">
     <img src="assets/moment-rest.webp" alt="飼い主のそばでくつろぐダックスフンド" width="96" height="96" style="object-position:center 30%">
     <div>
       <p class="sns-kicker">初めて犬と泊まる</p>
       <h1>わが家の未確認事項と<br>次の一歩</h1>
-      <p class="sns-lead" id="tdr-head">結果を読み込んでいます。</p>
+      <p class="sns-lead tdr-head" id="tdr-head">結果を読み込んでいます。</p>
     </div>
   </header>
 
@@ -32,35 +32,45 @@
 
   <section class="tdr-summary" aria-labelledby="h-sum">
     <h2 id="h-sum">4つの確認の状態</h2>
-    <ul class="tdr-list" id="tdr-list"></ul>
-    <p class="tdc-skip"><a href="first-stay-check-instagram.html">答えを直す</a></p>
+    <ul class="tdr-list" id="tdr-list">
+      <li><span class="st">…</span><span>頭数と体重の条件</span></li>
+      <li><span class="st">…</span><span>部屋での過ごし方(留守番・寝床・食事)</span></li>
+      <li><span class="st">…</span><span>犬の追加料金(全泊分の合計)</span></li>
+      <li><span class="st">…</span><span>吠え・粗相のときのルール</span></li>
+    </ul>
+    <p class="tdc-skip"><a href="first-stay-check-instagram.html" data-track="result-edit">答えを直す</a></p>
   </section>
 
-  <h2>記入して使える宿への確認文</h2>
-  <div class="tdr-ask">
-    <textarea id="tdr-ask-text" aria-label="宿への確認文"></textarea>
-    <p class="tdr-copy"><button type="button" id="tdr-copy">確認文をコピー</button><small>○○ の部分を、宿名・犬種・体重・日程に置き換えてください。メールでも予約サイトの質問欄でも使えます。</small></p>
-  </div>
-
-  <h2>条件を確認する宿の例(確認日つき)</h2>
-  <p class="tdc-hint">宿の公式情報を確認した日の頭数・体重・犬料金・添い寝の条件を並べています。わが家に合うかの判定はしていません。<b>部屋・プランごとの犬同伴可否と、現在の空室は予約時に必ず確認してください。</b></p>
-  <ul class="tdr-cand">
-    <li><b>リゾナーレ那須(栃木・那須)</b>小型・中型犬のみ、愛犬ルーム1室2頭まで。犬料金 1頭1泊5,093円(税込)。添い寝は予約前確認。<span class="meta">公式情報の確認日 2026-10-07</span><a href="dog-lodging-guide.html#risonare-nasu">条件の詳細を見る</a></li>
-    <li><b>熱川オーシャンリゾート(静岡・東伊豆)</b>1室 小型3頭・中型2頭・大型1頭まで。公式直接予約の犬料金 小型1,100円、中・大型1,650円。添い寝不可。<span class="meta">公式情報の確認日 2026-10-07</span><a href="dog-lodging-guide.html#atagawa-ocean">条件の詳細を見る</a></li>
-    <li><b>リフレッシュエッセンシャルリゾート IN 軽井沢(長野・軽井沢)</b>小型・中型犬は1室6頭まで(大型犬は本館のドッグラン付き客室のみ2頭まで)。犬料金 小型・中型1頭1,500円。添い寝は予約前確認。<span class="meta">公式情報の確認日 2026-10-07</span><a href="dog-lodging-guide.html#refresh-essential-karuizawa">条件の詳細を見る</a></li>
-  </ul>
-  <ul class="sns-list" style="margin-top:10px">
-    <li><a href="dog-lodging-guide.html"><span><b>条件で宿を探す</b><small>頭数・体重・添い寝・犬料金の条件で、関東+周辺の宿を比べられます</small></span><span class="go" aria-hidden="true">→</span></a></li>
-  </ul>
+  <section class="tdr-ask" aria-labelledby="h-ask">
+    <h2 id="h-ask">記入して使える宿への確認文</h2>
+    <textarea id="tdr-ask-text" aria-label="宿への確認文(書き換えできます)" aria-describedby="tdr-ask-hint"></textarea>
+    <p class="tdr-copy"><button type="button" id="tdr-copy" class="tdc-btn" data-primary data-track="result-copy">確認文をコピー</button></p>
+    <p class="tdr-copy-status" id="tdr-copy-status" role="status" aria-live="polite"></p>
+    <p class="tdc-hint" id="tdr-ask-hint">○○ の部分を、宿名・犬種・体重・日程に書き換えてから送ります。メールでも予約サイトの質問欄でも使えます。</p>
+  </section>
 
   <h2>次の一歩</h2>
-  <ul class="sns-list featured tdr-branch">
-    <li><a href="travel-prep-5-instagram.html"><span><b>犬との旅行準備リスト｜5項目</b><small>防臭の処理袋・マナー用品・給水ボウル・迷子札・キャリー。手持ちで足りるかの確認から(頭数に合わせて)</small></span><span class="go" aria-hidden="true">→</span></a></li>
-    <li><a href="route-planner/"><span><b>出発時刻と休憩プラン</b><small>休憩(水・トイレ)を入れた行程と、もしもの時の動物病院</small></span><span class="go" aria-hidden="true">→</span></a></li>
+  <ul class="sns-list tdr-branch">
+    <li><a href="#tdr-stays" data-track="result-to-stays"><span><b>宿がまだ決まっていない</b><small>条件を確認する宿の例(3軒・確認日つき)を見る</small></span><span class="go" aria-hidden="true">↓</span></a></li>
+    <li><a href="travel-prep-5-instagram.html" id="tdr-prep" data-track="result-prep5"><span><b>宿は決まっている</b><small>犬との旅行準備リスト｜5項目。処理袋・マナー用品・給水ボウル・迷子札・キャリーが手持ちで足りるかの確認から</small></span><span class="go" aria-hidden="true">→</span></a></li>
   </ul>
 
-  <section class="tdr-survey" aria-labelledby="h-sv">
-    <h2 id="h-sv">任意アンケート(3問・30秒)</h2>
+  <section id="tdr-stays" aria-labelledby="h-stays">
+    <h2 id="h-stays">条件を確認する宿の例(確認日つき)</h2>
+    <p class="tdc-hint">宿の公式情報を確認した日の頭数・体重・犬料金・添い寝の条件を並べています。わが家に合うかの判定はしていません。<b>部屋・プランごとの犬同伴可否と、現在の空室は予約時に必ず確認してください。</b></p>
+    <ul class="tdr-cand">
+      <li><b>リゾナーレ那須(栃木・那須)</b>小型・中型犬のみ、愛犬ルーム1室2頭まで。犬料金 1頭1泊5,093円(税込)。添い寝は予約前確認。<span class="meta">公式情報の確認日 2026-10-07</span><a href="dog-lodging-guide.html#risonare-nasu" data-track="result-stay-risonare-nasu">条件の詳細を見る</a></li>
+      <li><b>熱川オーシャンリゾート(静岡・東伊豆)</b>1室 小型3頭・中型2頭・大型1頭まで。公式直接予約の犬料金 小型1,100円、中・大型1,650円。添い寝不可。<span class="meta">公式情報の確認日 2026-10-07</span><a href="dog-lodging-guide.html#atagawa-ocean" data-track="result-stay-atagawa-ocean">条件の詳細を見る</a></li>
+      <li><b>リフレッシュエッセンシャルリゾート IN 軽井沢(長野・軽井沢)</b>小型・中型犬は1室6頭まで(大型犬は本館のドッグラン付き客室のみ2頭まで)。犬料金 小型・中型1頭1,500円。添い寝は予約前確認。<span class="meta">公式情報の確認日 2026-10-07</span><a href="dog-lodging-guide.html#refresh-essential-karuizawa" data-track="result-stay-refresh-karuizawa">条件の詳細を見る</a></li>
+    </ul>
+    <ul class="sns-list" style="margin-top:10px">
+      <li><a href="dog-lodging-guide.html" data-track="result-lodging-guide"><span><b>条件で宿を探す</b><small>頭数・体重・添い寝・犬料金の条件で、関東+周辺の宿を比べられます</small></span><span class="go" aria-hidden="true">→</span></a></li>
+      <li><a href="route-planner/" data-track="result-route"><span><b>出発時刻と休憩プラン</b><small>休憩(水・トイレ)を入れた行程と、もしもの時の動物病院</small></span><span class="go" aria-hidden="true">→</span></a></li>
+    </ul>
+  </section>
+
+  <details class="tdr-survey" id="tdr-survey">
+    <summary data-track="result-survey-open">任意アンケート(3問・30秒)に答える</summary>
     <p class="lead">名前やメールは聞きません。今後のページ改善のために集計だけに使い、個別の返信はしません。送らなくても、上の内容はすべて使えます。</p>
     <form id="tdr-survey-form" method="post" action="https://formspree.io/f/xaenobak">
       <input type="hidden" name="type" value="宿泊前チェック アンケート(集計用)"><input type="hidden" name="dogs" value="未回答">
@@ -73,10 +83,10 @@
       <label class="q" for="sv-next">3. このページを見て、次にすることは？</label>
       <select id="sv-next" name="next" required><option value="">選んでください</option><option>宿候補を見る</option><option>宿に条件を確認する</option><option>日帰りで練習する</option><option>今回は見送る</option><option>まだ決められない</option></select>
       <div class="tdr-trap" aria-hidden="true"><label>この欄は入力しないでください<input name="_gotcha" tabindex="-1" autocomplete="off"></label></div>
-      <button type="submit" class="tdc-btn">送信する(受付サービス Formspree へ)</button>
+      <button type="submit" class="tdc-btn" data-track="result-survey-submit">送信する(受付サービス Formspree へ)</button>
       <p class="lead" style="margin-top:8px">送信時に、受付サービスの Formspree へ選択内容が送られ、同サービス上で保管されます(<a href="https://formspree.io/legal/privacy-policy/" target="_blank" rel="noopener noreferrer">Formspree のプライバシーポリシー</a>)。集計後、原文は30日以内に削除します。</p>
     </form>
-  </section>
+  </details>
 
   <footer class="sns-note">
     <p>このサイトには広告(アフィリエイトリンク)が含まれるページがあります。宿の予約先・用品のリンク先で予約・購入すると、運営者が報酬を受け取る場合があります。</p>
@@ -85,7 +95,7 @@
     <p class="policy-link"><a href="contact.html#policy">運営と掲載の方針</a> ・ <a href="contact.html">お問い合わせ・訂正のご連絡</a> ・ <a href="index.html">わんことのじかん トップ</a></p>
   </footer>
 </main>
-<script src="assets/two-dogs-check.js?v=20261022b" defer></script>
+<script src="assets/two-dogs-check.js?v=20261023" defer></script>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "2847001768a143df87fa4e78edba9c7e"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
 </html>
