@@ -1,0 +1,73 @@
+# 表示崩れ・リンク切れ・重さの悪化を見つけるテスト(tests/)を GitHub Actions で実行する。
+# 既定では手動実行(Actions タブ → Site health tests → Run workflow)だけ。
+# 結果は「Artifacts」の site-health-report(tests/report/index.html と health-summary.html)に入る。
+name: Site health tests
+
+on:
+  workflow_dispatch:
+    inputs:
+      update_baseline:
+        description: "基準画像と基準値を作り直して artifact に入れる(コミットはしない)"
+        type: boolean
+        default: false
+  # 毎日の自動実行の案(既定では無効)。使うときは下の 2 行のコメントを外す。
+  # 毎朝の自動更新(空室データ・宿カード)が終わったあと、日本時間 9:17 に実行する例:
+  # schedule:
+  #   - cron: "17 0 * * *"
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: テストの依存を入れる(tests/ の中だけ)
+        run: npm ci --prefix tests --no-audit --no-fund
+
+      - name: Chromium と日本語フォントを入れる
+        working-directory: tests
+        run: |
+          npx playwright install --with-deps chromium
+          # 基準画像を作った環境と同じフォント(Inter・WenQuanYi Zen Hei・IPA ゴシック)にそろえる
+          sudo apt-get install -y --no-install-recommends fonts-inter fonts-wqy-zenhei fonts-ipafont-gothic
+          fc-match system-ui; fc-match "sans-serif:lang=ja"
+
+      - name: テストを実行
+        if: ${{ !inputs.update_baseline }}
+        run: npm test
+        env:
+          CI: "1"
+
+      - name: 基準画像と基準値を作り直す
+        if: ${{ inputs.update_baseline }}
+        run: npm run test:update
+        env:
+          CI: "1"
+
+      - name: レポートを保存
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-health-report
+          path: |
+            tests/report/
+            tests/test-results/
+          retention-days: 14
+
+      - name: 作り直した基準を保存
+        if: ${{ always() && inputs.update_baseline }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-health-baseline
+          path: |
+            tests/visual/__screenshots__/
+            tests/health/baseline.json
+          retention-days: 14

@@ -1,0 +1,8 @@
+{
+  "name": "wanko-site-tests",
+  "private": true,
+  "description": "わんことのじかん の表示崩れ・リンク切れ・重さの悪化を見つけるテスト(ルートの npm test から呼ばれる)",
+  "devDependencies": {
+    "@playwright/test": "1.63.0"
+  }
+}
