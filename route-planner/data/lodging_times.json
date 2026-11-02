@@ -988,8 +988,10 @@
   "name": "星逢える宿〜森のコテージ気仙沼",
   "checkin": "16:00",
   "checkout": "10:00",
-  "last_checkin": "22:00",
-  "fetched_at": "2026-10-21T13:04"
+  "last_checkin": "21:00",
+  "fetched_at": "2026-10-21T13:04",
+  "facility_confirmed": "2026-11-02",
+  "note": "施設確認 2026-11-02: 通常 16:00〜21:00、プランにより最終 19〜20 時。楽天の 22:00 で上書きしない"
  },
  "c5-hanabusa-doglamping-aone": {
   "hotelNo": "181792",
