@@ -392,7 +392,7 @@ NAV = ('<a class="skip" href="#content">本文へ</a><nav class="site-nav" aria-
        '<a class="brand" href="../index.html"><img class="ui-icon" src="../assets/icons/paw-print.svg" alt="" width="22" height="22">'
        '<span>わんことのじかん</span></a><div class="nav-links">'
        '<a href="../route-planner/">旅行プラン</a><a href="../dog-lodging-guide.html">泊まる</a>'
-       '<a href="../east-japan-dog-trips.html">お出かけ</a><a href="../travel-gear.html">旅行用品</a>'
+       '<a href="../east-japan-dog-trips.html">お出かけ</a><a href="./">地域</a><a href="../travel-gear.html">旅行用品</a>'
        '<a href="../goods.html">犬用品</a><a href="../wear.html">犬服</a><a href="../food.html">主食</a></div></nav>'
        '<p class="pr-notice" role="note"><b>本ページはプロモーション(広告)を含みます。</b>'
        '紹介している宿のリンクから予約があると、運営者に紹介料が入ることがあります。</p>')
