@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-03T03:07",
+ "generated_at": "2026-11-04T03:03",
  "adults": [
   2,
   4
@@ -8,132 +8,132 @@
  "dates": {
   "2026-11-07": {
    "checkout": "2026-11-08",
-   "scanned_at": "2026-11-03T02:50",
-   "available": 368,
-   "pet": 141,
+   "scanned_at": "2026-11-04T02:46",
+   "available": 352,
+   "pet": 137,
    "new": 6,
    "a4": {
-    "scanned_at": "2026-11-03T02:59",
-    "available": 298,
-    "pet": 103,
+    "scanned_at": "2026-11-04T02:55",
+    "available": 286,
+    "pet": 105,
     "new": 4
    }
   },
   "2026-11-14": {
    "checkout": "2026-11-15",
-   "scanned_at": "2026-11-03T02:51",
-   "available": 375,
-   "pet": 127,
-   "new": 9,
+   "scanned_at": "2026-11-04T02:46",
+   "available": 366,
+   "pet": 123,
+   "new": 5,
    "a4": {
-    "scanned_at": "2026-11-03T03:00",
-    "available": 301,
-    "pet": 103,
-    "new": 8
+    "scanned_at": "2026-11-04T02:56",
+    "available": 297,
+    "pet": 102,
+    "new": 5
    }
   },
   "2026-11-21": {
    "checkout": "2026-11-22",
-   "scanned_at": "2026-11-03T02:52",
-   "available": 283,
-   "pet": 102,
-   "new": 17,
+   "scanned_at": "2026-11-04T02:47",
+   "available": 272,
+   "pet": 98,
+   "new": 15,
    "a4": {
-    "scanned_at": "2026-11-03T03:00",
-    "available": 231,
+    "scanned_at": "2026-11-04T02:56",
+    "available": 223,
     "pet": 81,
     "new": 11
    }
   },
   "2026-11-22": {
    "checkout": "2026-11-23",
-   "scanned_at": "2026-11-03T02:52",
-   "available": 355,
+   "scanned_at": "2026-11-04T02:48",
+   "available": 346,
    "pet": 111,
-   "new": 13,
+   "new": 10,
    "a4": {
-    "scanned_at": "2026-11-03T03:01",
-    "available": 294,
-    "pet": 92,
-    "new": 13
+    "scanned_at": "2026-11-04T02:57",
+    "available": 282,
+    "pet": 97,
+    "new": 9
    }
   },
   "2026-11-28": {
    "checkout": "2026-11-29",
-   "scanned_at": "2026-11-03T02:53",
-   "available": 430,
-   "pet": 151,
-   "new": 6,
+   "scanned_at": "2026-11-04T02:49",
+   "available": 427,
+   "pet": 153,
+   "new": 4,
    "a4": {
-    "scanned_at": "2026-11-03T03:02",
-    "available": 360,
+    "scanned_at": "2026-11-04T02:58",
+    "available": 357,
     "pet": 126,
-    "new": 7
+    "new": 4
    }
   },
   "2026-12-05": {
    "checkout": "2026-12-06",
-   "scanned_at": "2026-11-03T02:54",
-   "available": 463,
-   "pet": 166,
+   "scanned_at": "2026-11-04T02:50",
+   "available": 465,
+   "pet": 165,
    "new": 3,
    "a4": {
-    "scanned_at": "2026-11-03T03:03",
+    "scanned_at": "2026-11-04T02:59",
     "available": 398,
-    "pet": 150,
-    "new": 2
-   }
-  },
-  "2026-12-12": {
-   "checkout": "2026-12-13",
-   "scanned_at": "2026-11-03T02:55",
-   "available": 477,
-   "pet": 162,
-   "new": 3,
-   "a4": {
-    "scanned_at": "2026-11-03T03:04",
-    "available": 413,
-    "pet": 142,
-    "new": 3
-   }
-  },
-  "2026-12-19": {
-   "checkout": "2026-12-20",
-   "scanned_at": "2026-11-03T02:56",
-   "available": 490,
-   "pet": 164,
-   "new": 4,
-   "a4": {
-    "scanned_at": "2026-11-03T03:05",
-    "available": 426,
     "pet": 148,
     "new": 3
    }
   },
+  "2026-12-12": {
+   "checkout": "2026-12-13",
+   "scanned_at": "2026-11-04T02:51",
+   "available": 477,
+   "pet": 164,
+   "new": 2,
+   "a4": {
+    "scanned_at": "2026-11-04T03:00",
+    "available": 414,
+    "pet": 144,
+    "new": 2
+   }
+  },
+  "2026-12-19": {
+   "checkout": "2026-12-20",
+   "scanned_at": "2026-11-04T02:52",
+   "available": 488,
+   "pet": 164,
+   "new": 2,
+   "a4": {
+    "scanned_at": "2026-11-04T03:01",
+    "available": 424,
+    "pet": 148,
+    "new": 2
+   }
+  },
   "2026-12-26": {
    "checkout": "2026-12-27",
-   "scanned_at": "2026-11-03T02:57",
-   "available": 459,
-   "pet": 169,
-   "new": 3,
+   "scanned_at": "2026-11-04T02:53",
+   "available": 455,
+   "pet": 168,
+   "new": 1,
    "a4": {
-    "scanned_at": "2026-11-03T03:06",
-    "available": 399,
+    "scanned_at": "2026-11-04T03:02",
+    "available": 394,
     "pet": 150,
-    "new": 3
+    "new": 1
    }
   },
   "2026-12-31": {
    "checkout": "2027-01-01",
-   "scanned_at": "2026-11-03T02:58",
-   "available": 193,
-   "pet": 55,
-   "new": 7,
+   "scanned_at": "2026-11-04T02:54",
+   "available": 183,
+   "pet": 50,
+   "new": 2,
    "a4": {
-    "scanned_at": "2026-11-03T03:07",
-    "available": 152,
-    "pet": 40,
-    "new": 4
+    "scanned_at": "2026-11-04T03:03",
+    "available": 147,
+    "pet": 36,
+    "new": 2
    }
   }
  }
