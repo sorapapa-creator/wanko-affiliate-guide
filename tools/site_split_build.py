@@ -53,6 +53,13 @@ ENTRANCE = {
              "犬服・ドッグウェアを、レインウェア・防寒・暑さ対策・マナーウェア・ライフジャケット・術後の保護・普段着の用途と、超小型〜大型のサイズ帯で絞り込み。ブランド公式ストアの仕様で確認した候補と、サイズの測り方。"),
 }
 
+# 入口ページの見出し(題名の主な言葉を含める)
+ENTRANCE_H1 = {
+    "food": "<h1>犬の主食・フードを、<br>根拠で<br><em>選び直す。</em></h1>",
+    "goods": "<h1>毎日の犬用品を、<br>困りごとから<br><em>選ぶ。</em></h1>",
+    "wear": "<h1>犬服・ウェアは、<br>用途と<br><em>サイズで選ぶ。</em></h1>",
+}
+
 # ---------------------------------------------------------------- 商品ページの分け方(試作 11/04 版と同じ)
 # FOOD_GROUPS の順は「どのページに入れるか」の判定順(上から当てはめ、1 枚は 1 ページだけ)。見せる順は FOOD_ROWS。
 RC_NOTE = "ロイヤルカナンの商品はロイヤルカナンのページにまとめています。"
@@ -265,7 +272,7 @@ def build_lodging(smap, out):
     title = f"犬と泊まれる宿 {total}軒を県から探す(添い寝・ケージ・食事同伴の条件)｜わんことのじかん"
     desc = f"東日本14都県の犬と泊まれる宿 {total}軒を、県ごとのページで比較。夜の寝場所・ケージ・頭数・犬の料金・食事同伴・添い寝条件を、公式情報で確認した内容と予約前確認に分けてまとめています。"
     p1 = set_meta(pre, page, title, desc)
-    p1 = re.sub(hero_re, lambda m: m.group(1) + f"<h1>東日本{total}宿｜犬が安心して寝られる宿を選ぶ</h1><p>東日本14都県の{total}宿を、県ごとのページで比べられます。夜の寝場所、ケージ、持参判断、添い寝条件、犬用アメニティを、公式情報で確認した内容と予約前確認に分けて載せています。</p>", p1, count=1, flags=re.S)
+    p1 = re.sub(hero_re, lambda m: m.group(1) + f"<h1>犬と泊まれる宿 東日本{total}軒｜県から探す</h1><p>東日本14都県の{total}宿を、県ごとのページで比べられます。夜の寝場所、ケージ、持参判断、添い寝条件、犬用アメニティを、公式情報で確認した内容と予約前確認に分けて載せています。</p>", p1, count=1, flags=re.S)
     p1 = p1.replace('<a href="#stay-query">宿・地域・条件で探す ↓</a>', f'<a href="#pref-entry">県から探す ↓</a><a href="{all_page}#stay-query">全{total}宿を条件で探す →</a>', 1)
     p1 = re.sub(r'<p class="notice"><b>掲載\d+宿</b>', lambda m: f'<p class="notice"><b>掲載{total}宿</b>', p1, count=1)
     p1 = p1.replace('<main id="content">', '<main id="content">' + crumbs([("トップ", "index.html"), ("犬と泊まれる宿", None)], page), 1)
@@ -496,6 +503,8 @@ def build_products(kind, smap, route_fn, out):
         chosen = (withphoto + [i for i in range(len(cs)) if i not in withphoto])[:PER_GROUP_SAMPLE]
         picks += [cs[i] for i in sorted(chosen)]
     p1 = set_meta(pre, page, *ENTRANCE[kind])
+    # 入口の見出しを題名の言葉にそろえる(Google は題名リンクに最初の見出しを使うことがある。2026-11-04 Codex 項目 251)
+    p1 = re.sub(r'(<header class="editorial-hero"><div class="hero-copy">)<h1>.*?</h1>', lambda m: m.group(1) + ENTRANCE_H1[kind], p1, count=1, flags=re.S)
     p1 = p1.replace('<main id="content">', '<main id="content">' + crumbs([("トップ", "index.html"), (label, None)], page) + "<!-- split-band -->", 1)
     lead1 = {"food": "年齢を選ぶと、その年齢の主食をすべて載せたページへ移ります。犬種・体重・原材料・費用は、移った先の「条件を選ぶ」で足せます。主食とおやつは分けて載せています。",
              "goods": f"困りごとか場面を選ぶと、当てはまる{label}をすべて載せたページへ移ります。どのページでも、今までと同じ条件で絞り込めます。",
