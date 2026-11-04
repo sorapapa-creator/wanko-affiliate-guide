@@ -8,11 +8,11 @@
 const { chromium } = require("playwright");
 
 const PAGES = [
-  { page: "dog-lodging-guide.html", search: "#stay-query", count: "#stay-count", word: "那須温泉" },
+  { page: "dog-lodging-all.html", search: "#stay-query", count: "#stay-count", word: "那須温泉" },
   { page: "east-japan-dog-trips.html", search: "#outing-query", count: "#outing-count", word: "那須高原" },
-  { page: "food.html", search: ".search", count: ".result-count", word: "シニア" },
-  { page: "goods.html", search: ".search", count: ".result-count", word: "早食い" },
-  { page: "wear.html", search: ".search", count: ".result-count", word: "レイン" },
+  { page: "food-all.html", search: ".search", count: ".result-count", word: "シニア" },
+  { page: "goods-all.html", search: ".search", count: ".result-count", word: "早食い" },
+  { page: "wear-all.html", search: ".search", count: ".result-count", word: "レイン" },
   { page: "travel-gear.html", search: ".search", count: ".result-count", word: "キャリー" },
 ];
 const [baseUrl, headUrl, runsArg] = process.argv.slice(2);

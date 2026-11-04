@@ -6,7 +6,8 @@ on:
     branches: [main]
     paths:
       - route-planner/data/places.json
-      - dog-lodging-guide.html
+      - dog-lodging-all.html
+      - assets/split-map.json
       - east-japan-dog-trips.html
       - tools/build_area_pages.py
   workflow_dispatch:

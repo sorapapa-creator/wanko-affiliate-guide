@@ -155,7 +155,8 @@ async function test(name, fn) {
       for (const x of await hits()) {
         const u = new URL(x.href, base);
         assert.equal(u.origin + "/", base, x.href);
-        assert.ok(OWN_PAGES.includes(u.pathname.slice(1)), x.href);
+        // 2026-11-04: 宿は県のページ(areas/<県>.html)、商品は分けたページ(food-adult.html など)へ直接行く
+        assert.ok(OWN_PAGES.includes(u.pathname.slice(1)) || /^(areas\/[a-z-]+|(food|goods|wear)-[a-z-]+|dog-lodging-all)\.html$/.test(u.pathname.slice(1)), x.href);
         assert.ok(u.hash || u.searchParams.get("pick"), x.href);
         assert.equal(x.rel, null); assert.equal(x.target, null);
       }

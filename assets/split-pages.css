@@ -1,0 +1,12 @@
+/* split-20261104: 分けたページのパンくず・注記・帯の小見出し。色・大きさ・余白は design-system.md の値だけ */
+.split-crumbs{max-width:1112px;margin:8px auto 0;padding:8px 16px 0;font-size:13px;line-height:1.8;color:var(--muted)}
+.split-crumbs a{color:var(--green)}
+.split-crumbs [aria-current]{color:var(--ink)}
+.split-note{margin:16px 0;padding:12px 16px;border:1px solid var(--line);border-left:3px solid var(--green);border-radius:8px;background:#fff;font-size:13px;line-height:1.8;color:var(--ink)}
+.split-note a{color:var(--green)}
+.shop-page .split-crumbs,.shop-page main>.split-note{max-width:none;padding-left:0;padding-right:0}
+.entry-band .split-row-label{margin:12px 0 4px;font-size:13px;font-weight:600;line-height:1.5;color:var(--muted)}
+.entry-band .entry-links a{min-height:44px}
+.entry-band .entry-links .split-n{display:inline-block;white-space:nowrap;font-weight:400}
+.entry-band .entry-links a[aria-current]{background:var(--green);color:#fff}
+.area-page #stays .stay-card{font-size:14px}

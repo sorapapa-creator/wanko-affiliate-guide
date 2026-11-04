@@ -55,7 +55,7 @@ const GEAR_PROBLEMS = ["all", "シニア・負担", "安全・迷子", "宿で�
 const WEAR_PROBLEMS = ["all", "ウェルネス・介護", "オシャレ番長", "マナーウェア", "レインウェア", "暑さ対策ウェア", "水辺・ライフジャケット", "術後・保護ウェア", "防寒ウェア"];
 
 const PAGES = [
-  { page: "dog-lodging-guide.html", cards: ".stay-card", count: "#stay-count", scenarios: [
+  { page: "dog-lodging-guide.html", all: "dog-lodging-all.html", cards: ".stay-card", count: "#stay-count", scenarios: [
     { name: "初期表示" },
     ...words("#stay-query", ["那須", "伊豆", "温泉", "軽井沢", "zz該当なし"]),
     ...["large", "multi", "sleep", "cage", "run", "meal", "free"].map(k => ({ name: `条件 ${k}`, steps: [{ click: `.stay-chip[data-chip="${k}"]` }] })),
@@ -76,7 +76,7 @@ const PAGES = [
     { name: "検索中に地域を押す", steps: [{ type: "那須", into: "#outing-query", noWait: true }, { click: '[data-filter="kanto"]' }] },
     { name: "条件 → リセット", steps: [{ click: '[data-filter="tohoku"]' }, { type: "温泉", into: "#outing-query" }, { click: "#outing-reset" }] },
   ] },
-  { page: "food.html", cards: ".grid article.card", count: ".result-count", scenarios: [
+  { page: "food.html", all: "food-all.html", cards: ".grid article.card", count: ".result-count", scenarios: [
     { name: "初期表示" },
     ...problems(FOOD_PROBLEMS),
     ...params("problem", [...FOOD_PROBLEMS, "存在しない用途"]),
@@ -98,7 +98,7 @@ const PAGES = [
     { name: "入口 problem:体重管理", steps: [{ click: '[data-food-entry="problem:体重管理"]' }] },
     { name: "条件 → 全解除", steps: [{ select: ["#ff-age", "子犬"] }, { type: "チキン", into: ".search" }, { click: "#food-clear-all" }] },
   ] },
-  { page: "goods.html", cards: ".grid article.card", count: ".result-count", scenarios: [
+  { page: "goods.html", all: "goods-all.html", cards: ".grid article.card", count: ".result-count", scenarios: [
     { name: "初期表示" },
     ...problems(GOODS_PROBLEMS),
     ...params("problem", [...GOODS_PROBLEMS, "存在しない用途"]),
@@ -106,7 +106,7 @@ const PAGES = [
     { name: "車移動 → 検索「ケージ」", steps: [{ click: '.filters button[data-problem="車移動"]' }, { type: "ケージ", into: ".search" }] },
     { name: "検索中に用途を押す", steps: [{ type: "雨", into: ".search", noWait: true }, { click: '.filters button[data-problem="旅行準備"]' }] },
   ] },
-  { page: "wear.html", cards: ".grid article.card", count: ".result-count", scenarios: [
+  { page: "wear.html", all: "wear-all.html", cards: ".grid article.card", count: ".result-count", scenarios: [
     { name: "初期表示" },
     ...problems(WEAR_PROBLEMS),
     ...["超小型", "小型", "中型", "大型", "all"].map(s => ({ name: `サイズ ${s}`, steps: [{ click: `button[data-size="${s}"]` }] })),
@@ -129,13 +129,16 @@ const PAGES = [
   ] },
 ];
 
-async function run(ctx, site, page, s) {
+// 2026-11-04: 4 ページは分割され、全カードは全件ページ(*-all.html)にある。その側にあれば全件ページどうしで比べる
+const fileIn = (dir, page) => (page.all && fs.existsSync(path.join(dir, page.all)) ? page.all : page.page);
+
+async function run(ctx, site, page, s, file = page.page) {
   const tab = await ctx.newPage();
   const errors = [];
   tab.on("pageerror", e => errors.push(String(e.message || e)));
   try {
     const query = s.query || "";
-    await tab.goto(`${site}/${page.page}${query ? "?" + query : ""}`, { waitUntil: "load", timeout: 120000 });
+    await tab.goto(`${site}/${file}${query ? "?" + query : ""}`, { waitUntil: "load", timeout: 120000 });
     await tab.waitForTimeout(300);
     for (const st of s.steps || []) {
       // 閉じた折りたたみ(details)の中の入力欄は、人と同じく先に開いてから操作する
@@ -198,7 +201,7 @@ async function run(ctx, site, page, s) {
     while (i < jobs.length) {
       const k = i++, { page, s } = jobs[k];
       try {
-        const [ra, rb] = await Promise.all([run(ctxA, a.url, page, s), run(ctxB, b.url, page, s)]);
+        const [ra, rb] = await Promise.all([run(ctxA, a.url, page, s, fileIn(base.dir, page)), run(ctxB, b.url, page, s, fileIn(ROOT, page))]);
         results[k] = { ra, rb };
       } catch (e) { results[k] = { error: String(e.message || e).split("\n")[0] }; }
     }

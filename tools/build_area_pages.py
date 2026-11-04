@@ -7,25 +7,34 @@
 
 - 標準ライブラリだけで動く。何度実行しても、入力が同じなら同じ結果になる(日時や乱数を使わない)。
 - 入力: route-planner/data/places.json(名前・地域・犬の条件・公式リンク)と、
-  dog-lodging-guide.html / east-japan-dog-trips.html(カードの有無・広告ボタン・確認日)。
+  dog-lodging-all.html(宿の全件ページ。2026-11-04 の分割後の原本)/ east-japan-dog-trips.html(カードの有無・広告ボタン・確認日)。
   元ページは読むだけで、書き換えない。
+- 2026-11-04(4 ページの分割、オーナー決定「1 県 1 ページ」): 県のページ(areas/<県>.html)には、その県の宿の全カードと
+  絞り込みを、全件ページからそのまま入れる。県のページを書く道具はこれ 1 本だけ(tools/site_split_build.py は県のページを書かない)。
+  宿カードの中の旧リンク(food.html?pick= など)は assets/split-map.json(site_split_build.py が作る)で新しいページへ向ける。
 - 出力: areas/<slug>.html、areas/index.html、sitemap.xml の areas/ の行。
 - 事実はデータにあるものだけを使う。口コミ・評価・ランキング・価格は新しく作らない。
 """
 
 import argparse
+import datetime
 import html
 import json
 import math
 import re
+import subprocess
 import sys
 from collections import Counter, OrderedDict, defaultdict
 from pathlib import Path
+from urllib.parse import parse_qsl, unquote
 
 ROOT = Path(__file__).resolve().parent.parent
 SITE = "https://sorapapa-creator.github.io/wanko-affiliate-guide/"
 PLACES = ROOT / "route-planner" / "data" / "places.json"
-LODGING_HTML = ROOT / "dog-lodging-guide.html"
+LODGING_HTML = ROOT / "dog-lodging-all.html"
+if not LODGING_HTML.exists():  # 分割の前(公開の 1 回目)だけ
+    LODGING_HTML = ROOT / "dog-lodging-guide.html"
+SPLIT_MAP = ROOT / "assets" / "split-map.json"
 TRIPS_HTML = ROOT / "east-japan-dog-trips.html"
 OUT_DIR = ROOT / "areas"
 SITEMAP = ROOT / "sitemap.xml"
@@ -375,6 +384,8 @@ def build_pages(items):
         names = "・".join(m[1] for m in members)
         pages[g["slug"]] = {"slug": g["slug"], "level": "group", "pref": g["pref"], "name": g["name"],
                             "label": "%s(%s)" % (g["name"], names), "members": members, "items": its}
+    PREF_PAGES.clear()
+    PREF_PAGES.update(p["pref"] for p in pages.values() if p["level"] == "pref")
     for page in pages.values():
         page["items"] = sorted(page["items"], key=lambda i: (i["kind"] != "lodging", i["order"]))
         pts = [i["point"] for i in page["items"] if i["point"]]
@@ -477,8 +488,21 @@ def _abs(rel, self_path):
     return base + rel
 
 
+PREF_PAGES = set()   # 県のページがある県(build_pages が決める)。宿のカードはその県のページに全部載る
+
+
 def card_url(it):
-    return ("dog-lodging-guide.html#" if it["kind"] == "lodging" else "east-japan-dog-trips.html#") + it["id"]
+    """サイト直下からの、そのカードの条件をすべて載せたページ。宿は県のページ(2026-11-04〜)、おでかけはおでかけページ。"""
+    if it["kind"] == "lodging":
+        if it["pref"] in PREF_PAGES:
+            return "areas/%s.html#%s" % (PREFS[it["pref"]], it["id"])
+        return "dog-lodging-all.html#" + it["id"]
+    return "east-japan-dog-trips.html#" + it["id"]
+
+
+def from_areas(url):
+    """areas/ のページからの相対 URL。"""
+    return url[len("areas/"):] if url.startswith("areas/") else "../" + url
 
 
 def render_card(it, near, hl, local_ids=()):
@@ -496,7 +520,7 @@ def render_card(it, near, hl, local_ids=()):
         out.append('<dl class="ar-facts">%s</dl>' % "".join("<div><dt>%s</dt><dd>%s</dd></div>" % (E(k), E(v)) for k, v in it["facts"]))
     if it["id"] in near:
         d, s = near[it["id"]]
-        href = "#" + s["id"] if s["id"] in local_ids else "../" + card_url(s)
+        href = "#" + s["id"] if s["id"] in local_ids else from_areas(card_url(s))
         out.append('<p class="ar-near">近くの犬とおでかけ: <a href="%s">%s</a>(直線で約 %.1f km)</p>' % (E(href), E(s["name"]), d))
     if it["checked"]:
         out.append('<p class="ar-checked">公式情報の確認日: %s。料金・条件は予約や出発の前に確かめてください。</p>' % E(it["checked"]))
@@ -509,8 +533,11 @@ def render_card(it, near, hl, local_ids=()):
     if it["official"]:
         links.append('<a class="ar-btn ar-btn-line" href="%s" target="_blank" rel="noopener">公式の条件を確認 ↗</a>' % E(it["official"]))
     what = "この宿" if it["kind"] == "lodging" else "この場所"
-    page = "宿の比較ページ" if it["kind"] == "lodging" else "おでかけページ"
-    links.append('<a class="ar-btn ar-btn-line" href="../%s">%sで、%sの条件をすべて見る</a>' % (E(card_url(it)), page, what))
+    if it["kind"] == "lodging":
+        page = "%sのページ" % it["pref"] if it["pref"] in PREF_PAGES else "宿の全件ページ"
+    else:
+        page = "おでかけページ"
+    links.append('<a class="ar-btn ar-btn-line" href="%s">%sで、%sの条件をすべて見る</a>' % (E(from_areas(card_url(it))), page, what))
     acts.append('<p class="ar-links">%s</p>' % "".join(links))
     if it["plan"]:
         acts.append('<p class="ar-plan"><a href="../route-planner/?dest=%s">ここへの旅行プラン(出発地からの時間と休憩先)を作る</a></p>' % E(it["id"]))
@@ -629,6 +656,159 @@ def section(title, sid, items, near, grouped, cta, muni_pages=None, local_ids=()
     return "".join(out)
 
 
+# ---------------------------------------------------------------- 県のページに入れる宿の全カード(2026-11-04)
+# 全件ページ(dog-lodging-all.html)のカード・カード用の CSS・絞り込みの JS を、areas/ の深さに合わせて持ってくる。
+
+SKIP_URL = re.compile(r"(?:[a-zA-Z][a-zA-Z0-9+.-]*:|//|#|/|\.\./|\?|\$\{)")
+# 宿ページの <head> の <style> のうち、ページ全体にかかる規則(地域ページの見た目を変えてしまう)は持ってこない
+PAGE_WIDE = {":root", "*", "body", "header", "header>div,main,footer>div", ".eyebrow", "h1", "header p", "main", ".back", "footer",
+             ".pr-notice", ".pr-notice b"}
+SPLIT_CSS_HREF = "../assets/split-pages.css?v=20261104b"
+OLD_LINK_RE = re.compile(r'(?<![\w.-])((?:\.\./)*)(dog-lodging-guide|food|goods|wear)\.html((?:\?|#)[^"\'<>\s\\]*)')
+
+
+def prefix_rel(fragment):
+    """サイト直下のページから持ってきた部分を areas/ の深さで使えるよう、相対 URL の頭に ../ を付ける。"""
+    def one(v):
+        s = v.strip()
+        return v if not s or SKIP_URL.match(s) else "../" + s
+
+    def rep(m):
+        name, q, val = m.group(1), m.group(2), m.group(3)
+        val = ", ".join(one(x.strip()) for x in val.split(",")) if name == "srcset" else one(val)
+        return "%s=%s%s%s" % (name, q, val, q)
+    return re.sub(r"\b(href|src|srcset|poster)=([\"'])(.*?)\2", rep, fragment)
+
+
+def css_rules(css):
+    """最上位の規則を (コメントを除いたセレクタ, 規則の全文) に分ける。@media は丸ごと 1 つ。"""
+    out, i, n = [], 0, len(css)
+    while i < n:
+        j = css.find("{", i)
+        if j < 0:
+            break
+        depth, k = 0, j
+        while k < n:
+            if css[k] == "{":
+                depth += 1
+            elif css[k] == "}":
+                depth -= 1
+                if depth == 0:
+                    break
+            k += 1
+        out.append((re.sub(r"/\*.*?\*/", "", css[i:j], flags=re.S).strip(), css[i:k + 1]))
+        i = k + 1
+    return out
+
+
+def card_css(style):
+    kept = []
+    for sel, full in css_rules(style):
+        if sel in PAGE_WIDE:
+            continue
+        if sel == "h2":  # 宿ページでは宿名(カードの h2)にかかっていた規則。カードの中だけに絞る
+            b = full.find("{")
+            full = full[:b].replace("h2", ".stay-card h2") + full[b:]
+        kept.append(full)
+    return "".join(kept)
+
+
+def old_link_router():
+    """assets/split-map.json(site_split_build.py が作る)で、旧ページへのリンクを新しいページへ向ける。無ければそのまま。"""
+    try:
+        smap = json.loads(SPLIT_MAP.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return lambda text: text
+
+    def route(page, rest):
+        q, _, frag = rest.partition("#")
+        q = q[1:] if q.startswith("?") else q
+        frag_d = unquote(frag)
+        info = smap.get(page)
+        if not info:
+            return page + rest
+        pairs = parse_qsl(q, keep_blank_values=True)
+        tail = ("?" + q if q else "") + ("#" + frag if frag else "")
+        if frag_d and frag_d in info["ids"]:
+            return info["ids"][frag_d] + tail
+        if frag_d in info["route"]:
+            return info["route"][frag_d] + tail
+        for k, v in pairs:
+            if k == "pick" and "pick:" + v in info["ids"]:
+                return info["ids"]["pick:" + v] + tail
+        for p in info["params"]:
+            for k, v in pairs:
+                if k == p and v and v != "all" and "%s=%s" % (k, v) in info["route"]:
+                    return info["route"]["%s=%s" % (k, v)] + tail
+        if any(k in info["params"] + ["pick"] and v and v != "all" for k, v in pairs):
+            return info["all"] + tail
+        return page + tail
+
+    def rewrite(text):
+        def rep(m):
+            amp = "&amp;" in m.group(3)
+            new = route(m.group(2) + ".html", html.unescape(m.group(3)) if amp else m.group(3))
+            return m.group(1) + (new.replace("&", "&amp;") if amp else new)
+        return OLD_LINK_RE.sub(rep, text)
+    return rewrite
+
+
+_LODGING_PARTS = {}
+
+
+def lodging_parts():
+    """全件ページから、県のページに持ってくる部品を 1 回だけ取り出す。"""
+    if _LODGING_PARTS:
+        return _LODGING_PARTS
+    s = LODGING_HTML.read_text(encoding="utf-8")
+    first = s.find('<article class="stay-card"')
+    pre, post = s[:first], s[s.rfind("</article>") + len("</article>"):]
+    head_ = pre[:pre.find("</head>")]
+    tail = post[post.find("</footer>") + len("</footer>"):post.rfind("</body>")]
+    tail = re.sub(r"<!-- Cloudflare Web Analytics -->.*?<!-- End Cloudflare Web Analytics -->", "", tail, flags=re.S)
+    tail = re.sub(r'<!-- valuecommerce-linkswitch -->.*?vcdal\.js" async></script>', "", tail, flags=re.S)
+    route = old_link_router()
+    _LODGING_PARTS.update({
+        "css": card_css(re.search(r"<style>(.*?)</style>", head_, flags=re.S).group(1)),
+        "head_js": "".join(prefix_rel(m.group(0)) for m in re.finditer(r'<script src="assets/[^"]+" defer></script>', head_)),
+        "decision": route(prefix_rel(re.search(r'<section class="decision">.*?</section>', pre, flags=re.S).group(0))),
+        "final": route(prefix_rel(re.search(r'<aside class="notice"><b>予約前の最終確認</b>.*?</aside>', post, flags=re.S).group(0))),
+        "foot": prefix_rel(re.search(r'<p class="rakuten-credit">.*?</p>', post, flags=re.S).group(0)
+                           + re.search(r'<p class="ig-note">.*?</p>', post, flags=re.S).group(0)),
+        "tail_js": prefix_rel(tail.strip()),
+        "cards": OrderedDict((re.search(r'data-lodging-id="([^"]+)"', c).group(1), route(prefix_rel(c)))
+                             for c in re.findall(r'<article class="stay-card".*?</article>', s, flags=re.S)),
+    })
+    assert "cloudflareinsights" not in _LODGING_PARTS["tail_js"] and "vcdal" not in _LODGING_PARTS["tail_js"]
+    return _LODGING_PARTS
+
+
+def stay_cards_section(page):
+    """県のページの宿: 全件ページのカードを、全件ページと同じ順に全部載せる(絞り込みは assets/editorial.js が動かす)。"""
+    parts = lodging_parts()
+    mine = {i["id"] for i in page["lodging"]}
+    cards = [c for cid, c in parts["cards"].items() if cid in mine]
+    n, o = len(page["lodging"]), len(page["spots"])
+    assert len(cards) == n, (page["slug"], len(cards), n)
+    lead = ('<p class="split-note">%sの宿 %d 軒を、すべてこのページに載せています。宿名・市町村名と、添い寝・ケージ・食事同伴などの条件で絞り込めます。' % (E(page["pref"]), n)
+            + ('犬とおでかけできる場所は <a href="#outings">宿の一覧の下</a> にあります。' if o else "")
+            + 'ほかの県は <a href="../dog-lodging-guide.html#pref-entry">県から宿を探す</a> から選べます。</p>')
+    return ('<section class="ar-section" id="stays" aria-labelledby="stays-h"><h2 id="stays-h">%sの犬と泊まれる宿 <span>%d 軒</span></h2>'
+            % (E(page["name"]), n) + lead + parts["decision"] + "\n" + "\n".join(cards) + "\n" + parts["final"] + "</section>")
+
+
+def with_stay_cards(text):
+    """県のページの head・フッター・body の終わりに、宿カードの見た目と絞り込みに要るものを足す。"""
+    parts = lodging_parts()
+    ed = '<link rel="stylesheet" href="../assets/editorial.css'
+    assert ed in text
+    text = text.replace(ed, '<style id="split-stay-cards">%s</style>' % parts["css"] + ed, 1)  # 宿ページと同じく editorial.css より前
+    text = text.replace("</head>", '<link rel="stylesheet" href="%s">' % SPLIT_CSS_HREF + parts["head_js"] + "</head>", 1)
+    i = text.find('<p class="analytics-note">', text.find("<footer>"))
+    text = text[:i] + parts["foot"] + text[i:]
+    return text.replace("</body>", parts["tail_js"] + "</body>", 1)
+
+
 def render_page(page, pages, near):
     path = "areas/%s.html" % page["slug"]
     subj = subject_text(page)
@@ -638,6 +818,14 @@ def render_page(page, pages, near):
     desc = ("%sの%sを、%sまとめました。" % (loc, subj, count_text(page).replace("・", "と"))
             + ("添い寝・ケージ・頭数・食事同伴など" if page["lodging"] else "同伴範囲・料金の目安・雨の日など")
             + "犬の条件を公式情報から整理し、確認日を載せています。")
+    full_stays = page["level"] == "pref" and bool(page["lodging"])
+    if full_stays:  # 1 県 1 ページ(宿の全カード+絞り込み)。題名で宿の比較ページだと分かるようにする
+        n, o = len(page["lodging"]), len(page["spots"])
+        pref = page["pref"]
+        title = ("%sの犬と泊まれる宿 %d軒・犬とおでかけ %dか所｜添い寝・ケージなどの条件で比較｜わんことのじかん" % (pref, n, o) if o
+                 else "%sの犬と泊まれる宿 %d軒｜添い寝・ケージなどの条件で比較｜わんことのじかん" % (pref, n))
+        desc = ("%sで犬と泊まれる宿 %d軒を、添い寝・ケージ・食事同伴・頭数・犬の料金などの条件で絞り込んで比べられます。" % (pref, n)
+                + ("犬とおでかけできる場所 %dか所と、" % o if o else "") + "市町村ごとのページへの案内もまとめています。")
     trail = [("トップ", "../index.html"), ("地域から探す", "./")]
     if page["level"] != "pref" and page["pref"] and PREFS.get(page["pref"]) in pages:
         trail.append((page["pref"], "%s.html" % PREFS[page["pref"]]))
@@ -664,9 +852,11 @@ def render_page(page, pages, near):
         body.append('<a href="#outings">犬とおでかけ %d か所を見る ↓</a>' % len(page["spots"]))
     body.append('<a href="#nearby">近くの地域を見る ↓</a></p></header><main id="content" class="ar-main">')
     body.append(AD_NOTE if any(i["ad"] for i in page["lodging"]) else "")
-    if page["lodging"]:
+    if full_stays:
+        body.append(stay_cards_section(page))
+    elif page["lodging"]:
         body.append(section("%sの犬と泊まれる宿" % page["name"], "stays", page["lodging"], near, grouped,
-                            ("../dog-lodging-guide.html#stay-query", "宿の比較ページで、ほかの地域の宿と条件をしぼって探す"), muni_pages, local_ids))
+                            ("../dog-lodging-all.html#stay-query", "宿の比較ページで、ほかの地域の宿と条件をしぼって探す"), muni_pages, local_ids))
     if page["spots"]:
         body.append(section("%sの犬とおでかけ" % page["name"], "outings", page["spots"], near, grouped,
                             ("../east-japan-dog-trips.html", "おでかけページで、ほかの地域のおでかけ先を探す"), muni_pages, local_ids))
@@ -682,7 +872,7 @@ def render_page(page, pages, near):
                 '施設の情報の誤りや変更は<a href="../contact.html">お問い合わせ</a>からお知らせください。</p>'
                 % (len(page["lodging"]), len(page["spots"])))
     body.append("</main>" + FOOTER + SCRIPTS + "</body>\n</html>\n")
-    return "".join(body)
+    return with_stay_cards("".join(body)) if full_stays else "".join(body)
 
 
 def render_index(pages, items, by_muni):
@@ -738,10 +928,31 @@ def render_index(pages, items, by_muni):
     return "".join(out)
 
 
-def update_sitemap(text, slugs):
+_TODAY = datetime.date.today().isoformat()
+
+
+def _git(*args):
+    try:
+        return subprocess.run(["git", "-C", str(ROOT), *args], capture_output=True, text=True, encoding="utf-8").stdout
+    except OSError:
+        return ""
+
+
+def lastmod(path, new_text):
+    """そのページが最後に変わった日(2026-11-04〜)。書き換える・未コミットなら今日、それ以外は git の最終コミット日。"""
+    rel = path.relative_to(ROOT).as_posix()
+    if not path.exists() or path.read_text(encoding="utf-8") != new_text or _git("status", "--porcelain", "--", rel).strip():
+        return _TODAY
+    return _git("log", "-1", "--format=%cs", "--", rel).strip() or _TODAY
+
+
+def update_sitemap(text, slugs, outputs):
     lines = [l for l in text.splitlines() if "/areas/" not in l]
     end = max(i for i, l in enumerate(lines) if "</urlset>" in l)
-    add = ["  <url><loc>%sareas/%s</loc></url>" % (SITE, s) for s in ["" ] + ["%s.html" % s for s in slugs]]
+    add = []
+    for s in [""] + ["%s.html" % s for s in slugs]:
+        f = OUT_DIR / (s or "index.html")
+        add.append("  <url><loc>%sareas/%s</loc><lastmod>%s</lastmod></url>" % (SITE, s, lastmod(f, outputs[f])))
     return "\n".join(lines[:end] + add + lines[end:]) + "\n"
 
 
@@ -758,7 +969,7 @@ def main():
     outputs[OUT_DIR / "index.html"] = render_index(pages, items, by_muni)
     for page in pages.values():
         outputs[OUT_DIR / ("%s.html" % page["slug"])] = render_page(page, pages, near)
-    outputs[SITEMAP] = update_sitemap(SITEMAP.read_text(encoding="utf-8"), sorted(pages))
+    outputs[SITEMAP] = update_sitemap(SITEMAP.read_text(encoding="utf-8"), sorted(pages), outputs)
 
     stale = sorted(p for p in OUT_DIR.glob("*.html") if p not in outputs) if OUT_DIR.exists() else []
     changed = [p for p, t in outputs.items() if not p.exists() or p.read_text(encoding="utf-8") != t]
@@ -769,7 +980,7 @@ def main():
         return 1 if changed or stale else 0
     OUT_DIR.mkdir(exist_ok=True)
     for p in changed:
-        p.write_text(outputs[p], encoding="utf-8")
+        p.write_text(outputs[p], encoding="utf-8", newline="\n")  # HTML は LF
     for p in stale:
         p.unlink()
 

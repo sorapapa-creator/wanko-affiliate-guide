@@ -161,6 +161,9 @@
 
   function href(it) {
     var page = pages[it[0]], link = it[5];
+    // 2026-11-04: 分けたページ(県のページ・主食や用品の区分ページ)へ送るものは "ファイル#id" / "ファイル?pick=…"
+    var split = link.match(/^([^#?]+\.html)([#?].*)$/);
+    if (split) { page = split[1]; link = split[2]; }
     if (link.charAt(0) === "#") return page + "#" + encodeURIComponent(link.slice(1));
     var m = link.match(/^\?pick=(.*)$/);
     return m ? page + "?pick=" + encodeURIComponent(m[1]) : page;

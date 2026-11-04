@@ -9,7 +9,7 @@
     ["js", CDN + "leaflet/1.9.4/leaflet.js", "sha512-BwHfrr4c9kmRkLw6iXFdzcdWV/PGkVgiIyIWLLlTSXzWQzxuSg4DiQUCpauz/EWjgk5TYQqX/kvn9pG1NpYfqg=="],
     ["js", CDN + "leaflet.markercluster/1.5.3/leaflet.markercluster.min.js", "sha512-TiMWaqipFi2Vqt4ugRzsF8oRoGFlFFuqIi30FFxEPNw58Ov9mOy6LgC05ysfkxwLE0xVeZtmr92wVg9siAFRWA=="],
   ];
-  const POINTS_URL = "route-planner/data/map-points.json?v=20261004";
+  const POINTS_URL = new URL("../route-planner/data/map-points.json?v=20261004", (document.currentScript && document.currentScript.src) || location.href).href;  // split-20261104: areas/ からも読めるよう、スクリプトの場所を基準にする
   const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 
   const loadOne = ([kind, url, sri]) => new Promise((resolve, reject) => {

@@ -31,7 +31,8 @@ VOID = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "met
 # 自動で閉じてよい要素(HTML の省略規則)。生成器は閉じているので、ここに入るものは実際には出てこない想定
 OPTIONAL_END = {"p", "li", "dt", "dd", "option", "tr", "td", "th"}
 # 元ページで JS が作る要素の id(静的な HTML には無い)。作る側のスクリプトに id が書かれているかも確かめる
-RUNTIME_IDS = {"dog-lodging-guide.html": {"stay-query": "assets/editorial.js"}}
+# 2026-11-04: 宿の全件ページ(dog-lodging-all.html)と、宿の全カードを載せた県のページ
+RUNTIME_IDS = {"dog-lodging-all.html": {"stay-query": "assets/editorial.js"}}
 AFFILIATE_HOSTS = ("hb.afl.rakuten.co.jp", "ck.jp.ap.valuecommerce.com", "px.a8.net", "af.moshimo.com",
                    "click.linksynergy.com", "amzn.to", "linksynergy.jrs5.com")
 
@@ -64,6 +65,7 @@ class Page(html.parser.HTMLParser):
         self._rows = False
         self._ld = self._title = self._h2span = None
         self._ad = None  # 開いている <p class="ar-ad"> の [札の文字, リンクの数]
+        self._stay = None  # 開いている <article class="stay-card">(県のページの宿の全カード、2026-11-04〜)の深さ
 
     def handle_decl(self, decl):
         self.doctype = self.doctype or decl.lower() == "doctype html"
@@ -87,7 +89,7 @@ class Page(html.parser.HTMLParser):
         if tag in ("a", "link", "img", "script", "source") and (a.get("href") or a.get("src")):
             classes = (a.get("class") or "").split()
             self.links.append({"tag": tag, "url": a.get("href") or a.get("src"), "rel": (a.get("rel") or "").split(),
-                               "in_ad": self._ad is not None, "classes": classes})
+                               "in_ad": self._ad is not None, "in_stay": self._stay is not None, "classes": classes})
             if tag == "a" and self._ad is not None:
                 self._ad[1] += 1
         if tag == "script" and a.get("type") == "application/ld+json":
@@ -98,6 +100,9 @@ class Page(html.parser.HTMLParser):
             self.h1 += 1
         if tag == "article" and "ar-card" in (a.get("class") or "").split():
             self.cards.append(a.get("id"))
+        if tag == "article" and "stay-card" in (a.get("class") or "").split():
+            self.cards.append(a.get("data-lodging-id") or a.get("id"))
+            self._stay = len(self.stack)
         if tag == "ul" and "ar-rows" in (a.get("class") or "").split():
             self._rows = True
         if tag == "a" and self._rows and "#" in (a.get("href") or ""):
@@ -140,6 +145,8 @@ class Page(html.parser.HTMLParser):
                 self.getpos()[0], tag, self.stack[-1][0] if self.stack else "なし"))
             return
         self.stack.pop()
+        if self._stay is not None and len(self.stack) <= self._stay:
+            self._stay = None
 
     def handle_data(self, data):
         if self._ld is not None:
@@ -199,7 +206,7 @@ def main():
     pages = {f: parse(f) for f in files}
 
     r = subprocess.run([sys.executable, str(ROOT / "tools" / "build_area_pages.py"), "--check"],
-                       cwd=ROOT, capture_output=True, text=True)
+                       cwd=ROOT, capture_output=True, text=True, encoding="utf-8", errors="replace")
     test("生成器を今のデータで動かしても差分 0 件(--check)",
          [] if r.returncode == 0 else (r.stdout + r.stderr).strip().splitlines()[-5:])
 
@@ -326,6 +333,10 @@ def main():
             sponsored = "sponsored" in link["rel"]
             if host in AFFILIATE_HOSTS and not sponsored:
                 probs.append("%s アフィリエイトの URL に rel=sponsored が無い: %s" % (f.name, link["url"][:80]))
+            if sponsored and link["in_stay"]:
+                # 県のページの宿カードは全件ページのカードをそのまま載せている(広告の札・rel は宿ページと同じ。健全性テストで確認)
+                n_ads += 1
+                continue
             if sponsored:
                 n_ads += 1
                 if "nofollow" not in link["rel"]:

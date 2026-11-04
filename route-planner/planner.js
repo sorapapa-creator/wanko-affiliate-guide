@@ -127,9 +127,10 @@ function wankoStayCta(url) {
     // 掲載ページのarticle[id]を読み取り、施設カードの増減を選択肢へ自動反映する。
     // 既存の場所データに位置がない掲載先も情報ページへのリンク付きで表示する。
     const pageSpecs = [
-      { file: "dog-lodging-guide.html", type: "lodging", selector: "article[data-lodging-id]" },
+      { file: "dog-lodging-all.html", link: "dog-lodging-guide.html", type: "lodging", selector: "article[data-lodging-id]" },  // split-20261104: 宿は県のページ(areas/)に分けたので全件ページを読む
       { file: "east-japan-dog-trips.html", type: "spot", selector: "article[id]" },
     ];
+    const SPLIT_IDS = await fetch(new URL("../assets/split-map.json", location.href)).then((r) => (r.ok ? r.json() : {})).then((m) => Object.fromEntries(Object.entries(m).map(([k, v]) => [k, v.ids]))).catch(() => ({}));  // split-20261104
     const byPlaceId = new Map(p.places.map((place) => [place.id, place]));
     const published = [];
     const pageErrors = [];
@@ -150,7 +151,7 @@ function wankoStayCta(url) {
           const address = article.querySelector(".stay-head p")?.textContent.trim()
             || beforeHeading.match(/(?:北海道|東京都|(?:京都|大阪)府|[\p{Script=Han}]{2,3}県)[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}0-9・ー\-]{0,18}/u)?.[0]
             || "";
-          const detailUrl = new URL(`../${spec.file}`, location.href);
+          const detailUrl = new URL(`../${(spec.link && SPLIT_IDS[spec.link]?.[id]) || spec.link || spec.file}`, location.href);
           detailUrl.hash = id;
           published.push({
             ...existing,
@@ -1546,7 +1547,7 @@ function wankoStayCta(url) {
     } else {
       sections.push(`<div class="book-src"><h4>行き先の情報</h4><div class="actions">${place.page_url ? `<a href="${esc(place.page_url)}" target="_blank" rel="noopener">掲載情報(犬の条件)を見る</a>` : ""}${((place.links || []).filter((l) => !l.affiliate).slice(0, 2)).map((l) => `<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label || "公式サイト")}</a>`).join("")}</div></div>`);
     }
-    sections.push(`<div class="book-src"><h4>準備する</h4><div class="actions"><a href="../travel-gear.html">旅行の犬用品を見る</a><a href="../wear.html?entry=travel#shop">旅の服(雨・冷え・宿のマナー)を見る</a></div></div>`);
+    sections.push(`<div class="book-src"><h4>準備する</h4><div class="actions"><a href="../travel-gear.html">旅行の犬用品を見る</a><a href="../wear-all.html?entry=travel#shop">旅の服(雨・冷え・宿のマナー)を見る</a></div></div>`);
     if (gen !== bookingGen) return;
     box.innerHTML = `<h3>予約する・準備する</h3>${sections.join("")}`;
   }

@@ -8,6 +8,10 @@
   python3 tools/build_search_index.py --check  # 索引が最新か確かめる(差分があれば終了コード 1)
 
 依存なし(標準ライブラリのみ)。同じ HTML からは常に同じバイト列になる(日時・乱数を入れない)。
+
+2026-11-04(4 ページの分割): 宿・主食・用品・犬服は全件ページ(*-all.html)から読み、リンク先は assets/split-map.json
+(tools/site_split_build.py が作る)の行き先にする(宿は県のページ areas/<県>.html#id、商品は分けたページ)。
+索引の link は、分けたページへ送るものは "ファイル#id" / "ファイル?pick=…"、それ以外は今までどおり "#id" / "?pick=…"。
 """
 import argparse
 import html
@@ -21,7 +25,7 @@ ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "assets" / "search-index.json"
 PLACES = ROOT / "route-planner" / "data" / "places.json"
 
-# 種類(索引の type 番号の順)。page はカードのある元ページ。
+# 種類(索引の type 番号の順)。page は入口のページ(search.js が "#id" をこのページに付ける)。カードは SOURCE から読む。
 TYPES = [
     ("宿", "dog-lodging-guide.html"),
     ("おでかけ", "east-japan-dog-trips.html"),
@@ -30,6 +34,8 @@ TYPES = [
     ("服", "wear.html"),
     ("旅行用品", "travel-gear.html"),
 ]
+SOURCE = {"dog-lodging-guide.html": "dog-lodging-all.html", "food.html": "food-all.html", "goods.html": "goods-all.html", "wear.html": "wear-all.html"}
+SPLIT_MAP = ROOT / "assets" / "split-map.json"
 
 POINT_MAX = 48      # 画面に出す要点の長さ(文字)。要点も検索に使う(否定の文節は search.js が除く)
 SUB_MAX = 60        # 2 行目(地域・商品名)の長さ
@@ -117,7 +123,10 @@ def attr(tag, name):
 
 
 def articles(page):
-    src = (ROOT / page).read_text(encoding="utf-8")
+    f = ROOT / SOURCE.get(page, page)
+    if not f.exists():
+        f = ROOT / page
+    src = f.read_text(encoding="utf-8")
     return re.findall(r"(<article\b[^>]*>)(.*?)</article>", src, re.S)
 
 
@@ -303,6 +312,27 @@ def products(type_no):
     return items
 
 
+_SMAP = None
+
+
+def split_link(page, link):
+    """入口ページの "#id" / "?pick=…" を、分けたページへの "ファイル#id" / "ファイル?pick=…" にする(対応表に無ければそのまま)。"""
+    global _SMAP
+    if _SMAP is None:
+        try:
+            _SMAP = json.loads(SPLIT_MAP.read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            _SMAP = {}
+    info = _SMAP.get(page)
+    if not info:
+        return link
+    if link.startswith("#"):
+        dest = info["ids"].get(link[1:])
+    else:
+        dest = info["ids"].get("pick:" + link[len("?pick="):])
+    return dest + link if dest else link
+
+
 def build():
     places = {p["id"]: p for p in json.loads(PLACES.read_text(encoding="utf-8"))["places"]}
     items = lodging(places) + outings(places)
@@ -312,6 +342,7 @@ def build():
     items = [[unicodedata.normalize("NFC", x) if isinstance(x, str) else ([unicodedata.normalize("NFC", t) for t in x] if isinstance(x, list) else x) for x in it] for it in items]
     for it in items:
         it[4] = "|".join(it[4])
+        it[5] = split_link(TYPES[it[0]][1], it[5])
     data = {
         "v": 1,
         "types": [t for t, _ in TYPES],

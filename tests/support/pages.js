@@ -10,6 +10,12 @@ const PAGES = [
   { id: "goods", path: "goods.html", cards: "article.card" },
   { id: "wear", path: "wear.html", cards: "article.card" },
   { id: "travel-gear", path: "travel-gear.html", cards: "article.card" },
+  // 2026-11-04: 4 ページの分割。全件ページ(noindex)と、宿の全カードを載せた県のページ
+  { id: "dog-lodging-guide-all", path: "dog-lodging-all.html", cards: "article.stay-card" },
+  { id: "food-all", path: "food-all.html", cards: "article.card" },
+  { id: "goods-all", path: "goods-all.html", cards: "article.card" },
+  { id: "wear-all", path: "wear-all.html", cards: "article.card" },
+  { id: "areas-chiba", path: "areas/chiba.html", cards: "article.stay-card" },
   { id: "first-stay-check-instagram", path: "first-stay-check-instagram.html", cards: ".tdc-q" },
   { id: "first-stay-check-result", path: "first-stay-check-result.html", cards: "#tdr-list > li" },
   { id: "travel-prep-5-instagram", path: "travel-prep-5-instagram.html", cards: ".tp5 > li" },

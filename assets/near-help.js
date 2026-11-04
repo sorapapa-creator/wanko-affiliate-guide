@@ -1,9 +1,10 @@
+var WANKO_NEAR_HELP_SRC = (document.currentScript && document.currentScript.src) || location.href;  // split-20261104: 座標ファイルはスクリプトの場所を基準に読む
 /* 宿カードに「近くの動物病院・薬局」ボタン(2026-10-04)。押したときだけ OpenPOI API(無料・キー不要)で検索して表示。
    座標は route-planner/data/map-points.json([id, lat, lon, type])。取れなければ何も出さない(無くても壊れない)。 */
 (function () {
   "use strict";
   var API = "https://api.openpoiapi.com/v1/search", pts = null;
-  function loadPts() { if (!pts) pts = fetch("route-planner/data/map-points.json").then(function (r) { return r.ok ? r.json() : []; }).catch(function () { return []; }); return pts; }
+  function loadPts() { if (!pts) pts = fetch(new URL("../route-planner/data/map-points.json", WANKO_NEAR_HELP_SRC)).then(function (r) { return r.ok ? r.json() : []; }).catch(function () { return []; }); return pts; }
   function km(a1, o1, a2, o2) { var R = 6371, d = Math.PI / 180, x = Math.sin((a2 - a1) * d / 2), y = Math.sin((o2 - o1) * d / 2); return 2 * R * Math.asin(Math.sqrt(x * x + Math.cos(a1 * d) * Math.cos(a2 * d) * y * y)); }
   function esc(s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
   function search(q, lat, lon, r) {
