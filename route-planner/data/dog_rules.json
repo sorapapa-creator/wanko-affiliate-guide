@@ -337,10 +337,20 @@
   },
   "caro-giardino": {
    "mode": "manual",
-   "text": "犬同伴型ホテル。犬料金は1泊 小型犬2,750円・中型犬3,300円・大型犬3,850円、2頭目以降1,100円（税込、公式料金表）。体重区分・頭数上限は予約時確認。",
+   "reviewed": {
+    "by": "claude-review-20261107",
+    "evidence": "犬同伴型ホテル。犬料金は1泊 小型犬2,750円・中型犬3,300円・大型犬3,850円、2頭目以降1,100円（税込、公式宿泊料金表 2025年3月1日改定）。体重区分・頭数上限は予約時確認。",
+    "note": "公式宿泊料金表 PDF(2026-11-07 目視確認)で料金の現行値を確認。頭数・体重の一律上限は無い(ドッグラン利用規約にも無し)ため manual のまま。",
+    "source": "dog-rules-review-20261107.csv",
+    "body_sha256": "c58780d647e420c9db26c2cbc0407e145dbfb0333ac673761720dd65777821f3",
+    "proposed": {
+     "mode": "manual"
+    }
+   },
+   "text": "犬同伴型ホテル。犬料金は1泊 小型犬2,750円・中型犬3,300円・大型犬3,850円、2頭目以降1,100円（税込、公式宿泊料金表 2025年3月1日改定）。体重区分・頭数上限は予約時確認。公式確認：2026-11-07",
    "source_url": "https://caro-foresta.com/giardino/",
    "checked_at": null,
-   "body_sha256": "b0b367ccd6ee9ec6b2222c730b91a279e0e97fc37be0a2147bf830864957555b"
+   "body_sha256": "c58780d647e420c9db26c2cbc0407e145dbfb0333ac673761720dd65777821f3"
   },
   "caro-kitasaku-rio": {
    "mode": "manual",
@@ -371,11 +381,21 @@
    "body_sha256": "58f1ed2d9e3cdeed05940f9b72fdd1e12dcf54e8598bfe190e87443b71179189"
   },
   "caro-izu-cuore": {
-   "mode": "unknown",
-   "text": "犬同伴型ホテル。サイズ・頭数・犬料金は予約条件で確認。",
+   "mode": "manual",
+   "reviewed": {
+    "by": "claude-review-20261107",
+    "evidence": "犬料金は1泊 小型犬2,750円・中型犬3,300円・大型犬3,850円、小動物2,200円、2頭目以降1,100円（税込、公式宿泊料金表 2025年10月1日改定）。大型犬の料金区分あり。頭数の上限は料金表に記載がなく予約時確認。",
+    "note": "公式宿泊料金表 PDF(2026-11-07 目視確認)は料金区分だけで、頭数・体重の一律上限は無い。大型犬の料金区分は受け入れの目安だが上限ではないので manual(要確認)のまま。カードの data-verified(2026-09-21)と本文の公式情報確認日(2026-10-03)が異なるため自動照合も保留になる。",
+    "source": "dog-rules-review-20261107.csv",
+    "body_sha256": "8d553fbd64df61430192734a25b3d08a75592a308030760c3f11ff70e752dac7",
+    "proposed": {
+     "mode": "manual"
+    }
+   },
+   "text": "犬同伴型ホテル。犬料金は1泊 小型犬2,750円・中型犬3,300円・大型犬3,850円、小動物2,200円、2頭目以降1,100円（税込、公式宿泊料金表 2025年10月1日改定）。大型犬の料金区分あり。頭数の上限は料金表に記載がなく予約時確認。公式確認：2026-11-07",
    "source_url": "https://caro-foresta.com/cuore/",
    "checked_at": null,
-   "body_sha256": "bf6dcf91c545674950a5552a1ad2ae8f485c61bf9cd73edda41b6b564f356487"
+   "body_sha256": "8d553fbd64df61430192734a25b3d08a75592a308030760c3f11ff70e752dac7"
   },
   "yutorelo-tateshina": {
    "mode": "manual",
@@ -2943,11 +2963,29 @@
    "body_sha256": "a4778d41af5637cc2e729c78c6cacaf2651c41f19a97219b4e332b388913045d"
   },
   "c5-yutorelo-karuizawa": {
-   "mode": "unknown",
-   "text": "1室限定のデラックスツイン(愛犬同伴可)のみ犬と宿泊できる。1年以内に狂犬病・伝染病の予防接種を受けた室内犬に限り、ワクチン接種証明書の登録が必要。『愛犬同伴利用規約』を確認。",
+   "mode": "uniform",
+   "max_dogs": 1,
+   "sizes": [
+    "small"
+   ],
+   "reviewed": {
+    "by": "claude-review-20261107",
+    "evidence": "愛犬同伴可はデラックスツイン(211号室)の1室のみ。1室につき小型犬1頭まで、超小型〜小型犬のみ受け入れ(愛犬同伴利用規約)。",
+    "note": "公式の愛犬同伴利用規約 PDF(https://relohotels.com/consentform/pdf/yutorelo-karuizawa.pdf、2026-11-07 目視確認)に「1室につき小型犬1頭まで」「超小型〜小型犬まで受入可」と明記。超小型は sizes の small に含める。体重上限の記載なし。source_url=https://www.yutorelo-karuizawa.com/faq; checked_at=2026-09-27",
+    "source": "dog-rules-review-20261107.csv",
+    "body_sha256": "e8223c5e20791d2569a4c3c555a1bc58d98e1b5276a7aa5071ac8851ba3d38da",
+    "proposed": {
+     "mode": "uniform",
+     "max_dogs": 1,
+     "sizes": [
+      "small"
+     ]
+    }
+   },
+   "text": "愛犬同伴可はデラックスツイン(211号室)の1室のみ。1室につき小型犬1頭まで、超小型〜小型犬のみ受け入れ(愛犬同伴利用規約)。1年以内に狂犬病・伝染病の予防接種を受けた室内犬に限り、狂犬病と5種以上の混合ワクチンの接種証明(接種後2週間以上1年以内。混合は1年以内の抗体検査証明でも可)を用意。",
    "source_url": "https://www.yutorelo-karuizawa.com/faq",
    "checked_at": "2026-09-27",
-   "body_sha256": "e6d4b845e9320964402a0b2700b8c5d3ed01f0dbbc53be4c3b3383430183a2e7"
+   "body_sha256": "e8223c5e20791d2569a4c3c555a1bc58d98e1b5276a7aa5071ac8851ba3d38da"
   },
   "c5-forest-garden-karuizawa-la-topiary": {
    "mode": "manual",
@@ -3398,10 +3436,20 @@
   },
   "c6-00918226": {
    "mode": "manual",
+   "reviewed": {
+    "by": "claude-review-20261107",
+    "evidence": "1年以内に狂犬病およびワクチンの予防接種を受けた室内犬に限ります。基本的なしつけ（トイレ・無駄吠えなど）が入っている必要があります。ヒート期間前後2週間の宿泊は不可です。接種証明書を必ず持参(公式規約01)。",
+    "note": "公式料金ページ(2026-11-07 確認)は犬種問わず1匹2,200円で、頭数・体重の上限は書かれていない。対象犬欄は変更なし、他の欄(料金・ドッグラン・予約前の重要確認)の更新で本文ハッシュが変わったため再レビュー。manual のまま。",
+    "source": "dog-rules-review-20261107.csv",
+    "body_sha256": "583236c14ef46f799c9620fed2203fbf3e181d984bc7a675ef80295f477430af",
+    "proposed": {
+     "mode": "manual"
+    }
+   },
    "text": "1年以内に狂犬病およびワクチンの予防接種を受けた室内犬に限ります。基本的なしつけ（トイレ・無駄吠えなど）が入っている必要があります。ヒート期間前後2週間の宿泊は不可です。接種証明書を必ず持参(公式規約01)。",
    "source_url": "https://shanonchi.com/pets.php",
    "checked_at": "2026-09-27",
-   "body_sha256": "f34dc26e748d81c0cd76c54d056117b49eb4aa2d069e0d864164b452c3107720"
+   "body_sha256": "583236c14ef46f799c9620fed2203fbf3e181d984bc7a675ef80295f477430af"
   },
   "c6-00919170": {
    "mode": "manual",
