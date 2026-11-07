@@ -1,6 +1,6 @@
 {
  "about": "宿の犬の条件のうち、公式で一律に書かれている上限(1室の頭数・1頭ごとの体重・大きさ)だけ。大きさで頭数が変わるなど一律でない条件は載せない(判定は「要確認」)。soft=原則・目安の書き方(上限を超えても「条件外」にせず「要確認」)。text はカードの「対象犬・頭数」、source_url はカードの公式リンク(広告リンクは除く)、checked_at はカードの確認日。",
- "generated_at": "2026-09-26",
+ "generated_at": "2026-11-07",
  "rules": {
   "la-dog-resort": {
    "mode": "manual",
@@ -1524,7 +1524,7 @@
    "text": "全ヴィラで犬と泊まれる。ポラリス・シリウスは3頭まで(20kg以上の大型犬は1頭まで)、カシオペアは小・中型犬3頭まで、ポラリスDOGスイート(1室限定)は5頭まで(大型犬は2頭まで)。予約前に愛犬規約を確認。",
    "source_url": "https://www.kuzanbo.jp/ja/dog/",
    "checked_at": null,
-   "body_sha256": "f9e889fd262d50b7d2aa8a0b24add291e91dea61f86eb32e4a96e6208527c81e"
+   "body_sha256": "807cb7796da4154b7719fe634c70db50496b04acf789cd41073d2935cfda287b"
   },
   "c3-hotel-village-kusatsu": {
    "mode": "manual",
@@ -1667,8 +1667,8 @@
    "mode": "manual",
    "text": "犬と泊まれるのは1室限定。中型犬(20kg以下)まで、1室2頭まで。",
    "source_url": null,
-   "checked_at": "2026-09-26",
-   "body_sha256": "f36dbfdc88ab0e3db1e402d0850683639083f2fc11b5f20190d25418e3336429"
+   "checked_at": null,
+   "body_sha256": "fd0fca22e284b0223addcf05dc154e8cc1022e204d54ab7f3661b6b886ba57d0"
   },
   "c3-umito-kamakura": {
    "mode": "manual",
@@ -1923,7 +1923,7 @@
    "text": "小型犬・猫は同伴OK(ツイン・ファミリーとも最大2匹まで。中型犬・大型犬は事前相談で、混雑日は断られることあり)。予約時に種類・頭数を必ず申告(当日の受け入れ不可)。狂犬病・混合ワクチン接種済み(または抗体検査で確認済み)、内部・外部寄生虫の通年予防、トイレのしつけができていること。ペット料金 ツインルーム1匹1泊3,000円、ファミリールーム1匹1泊5,000円。",
    "source_url": "https://www.morinocottage.com/ペットについて/",
    "checked_at": "2026-09-27",
-   "body_sha256": "b880bdcb58674f910ff6f14c6dd9a9a15e2720e441b49839dcb8e07965a1fe5f"
+   "body_sha256": "64500eb6db4ba1685e8525c669c7ddddc432c76e72560d8244cc7589a6a94250"
   },
   "c5-hanabusa-doglamping-aone": {
    "mode": "uniform",
@@ -2521,7 +2521,7 @@
    "text": "通常客室(露天風呂付客室・和室12.5畳)は小型犬〜中型犬、特別室(111・311・411・405・511・505・608・611・615号室)は小型犬〜大型犬まで。1頭3,300円、2頭6,600円、3頭9,900円(特別室は別料金表)。年1回の狂犬病・伝染病の予防接種または抗体検査を受けた室内犬。特別室以外では布団に乗せない。留守番はケージに(無料貸出、要予約)。リード着用で館内を一緒に歩ける。",
    "source_url": "https://hachinobo.com/dog/",
    "checked_at": "2026-09-27",
-   "body_sha256": "f3e03f7145deb7334bd3035e6075b123009c6e876d49b78cec65b754c8c1c260"
+   "body_sha256": "9a0359c2a52b75bf7a3cda43bf4a46c445504d6750a2495006e292256a0faed9"
   },
   "c5-fukuritei-ogawaya-izu": {
    "mode": "manual",
@@ -2673,7 +2673,7 @@
    "text": "ペット同伴タイプのドームテント(type WP・3棟・28㎡・定員4名)。用意のケージは小型犬2頭または大型犬1頭まで(幅119×奥行79×高さ71cm、天井なし。乗り越える恐れや複数頭の場合は持参)。施設内はリードを必ず付ける。ペット同伴宿泊規約書に同意。",
    "source_url": "https://ufufu-village.jp/stay/pet.html",
    "checked_at": "2026-09-27",
-   "body_sha256": "7d9829228b04946ecb2e981b17c745de53f34db069855213027230665031023b"
+   "body_sha256": "de6401a1d4b24c9777f76ad3a894e061be710d25c21477f63793265568ddc5c4"
   },
   "c5-appleseed-ito": {
    "mode": "manual",
@@ -2712,10 +2712,10 @@
   },
   "c5-tenkuu-terrace-numazu-with-pets": {
    "mode": "manual",
-   "text": "ホテル棟の『ペット同伴和洋室ルーム』(2室・定員2名)でペットと宿泊(ドームテントにもペット同伴可のタイプ)。ケージは中型犬1頭まで。デッキや部屋の中では自由に過ごせるが、場内は必ずリード(持参)。管理棟(風呂・シャワー・トイレ)は不可。汚物はデッキシンク下の汚物BOXへ。ペット同伴宿泊規約書に同意。",
+   "text": "ホテル棟の『ペット同伴和洋室(半露天風呂付き)』1室と、ペット同伴可のドームテント2室(各定員4名)。大型犬可、多頭は条件付き。ケージは和洋室が中型犬1頭まで、ドームテントが小型犬2頭・大型犬1頭まで(複数頭は持参)。場内はリード。立ち寄れない場所はフロント・レストラン・風呂・シャワー・トイレ。汚物は和洋室は玄関の汚物入れ、ドームテントはデッキシンク下の汚物入れへ。ペット同伴宿泊規約書に同意。",
    "source_url": "https://www.tenkuu-terrace.jp/hotel/stay/",
    "checked_at": "2026-09-27",
-   "body_sha256": "101ed1a90b5ada8a716bda7848ebe89534fcaed9274aedd8e37746dec01b7a96"
+   "body_sha256": "f4bf77c9af1a343ec22f9f9c66e354b403380dcb0fc3ee680f88bc87def392be"
   },
   "c5-farm-garden-hotel-numazu": {
    "mode": "manual",
@@ -2826,11 +2826,11 @@
   "c5-art-hotel-dogleg-karuizawa": {
    "mode": "manual",
    "reviewed": {
-    "by": "codex-review-20261011",
-    "evidence": "全館で犬と一緒に過ごせる。1室につき2頭目まで無料、3頭目から1頭1泊2,000円。体重制限なし(大きな犬もOK)。宿泊の1年以内に混合ワクチンを接種(または抗体検査で陽性。獣医師の判断で打てない場合は申し出)。無駄吠え・トイレなど基本的なしつけ。客室に犬だけを残しての外出は不可。客室内のベッドの上・風呂場・洗面所は立ち入り不可(ベッドに乗る犬はベッドカバーのレンタル200円)。",
-    "note": "制限なし明記: unlimited=[\"max_kg\"]（空欄と区別し、実装時は別フィールドへ）。無料2頭を上限にしない。体重制限なしのみ採用、頭数上限は空欄。。頭数上限は未確定（空欄を制限なしにしない）。自動反映保留: 本文確認日とdata-verified不一致: 2026-09-27,2026-10-07。source_url=https://www.arthotel.jp/DOGLEG/dog.html; checked_at=未確定",
-    "source": "dog-rules-review.csv",
-    "body_sha256": "c1af8007a38a180d1c18a92860883b2089befd07ff2d4b8bc0653119ffead039",
+    "by": "claude-review-20261107",
+    "evidence": "体重制限なし(大きな犬もOK)。",
+    "note": "2026-10-11 の Codex レビューと同じ判断を新しい本文ハッシュで再記録(本文の変更は対象犬欄以外)。体重制限なしのみ採用 unlimited=[\"max_kg\"]。無料 2 頭・3 頭目の料金は頭数上限にしない(頭数上限は未確定)。公式 https://www.arthotel.jp/DOGLEG/dog.html を Codex が 2026-11-06 に照合済み。",
+    "source": "dog-rules-review-20261107.csv",
+    "body_sha256": "60808c05705e195ca64d34216c53cf9bfb4ac629917d8a545ecbd9d6c3e35cce",
     "proposed": {
      "mode": "uniform",
      "unlimited": [
@@ -2841,7 +2841,7 @@
    "text": "全館で犬と一緒に過ごせる。1室につき2頭目まで無料、3頭目から1頭1泊2,000円。体重制限なし(大きな犬もOK)。宿泊の1年以内に混合ワクチンを接種(または抗体検査で陽性。獣医師の判断で打てない場合は申し出)。無駄吠え・トイレなど基本的なしつけ。客室に犬だけを残しての外出は不可。客室内のベッドの上・風呂場・洗面所は立ち入り不可(ベッドに乗る犬はベッドカバーのレンタル200円)。",
    "source_url": "https://www.arthotel.jp/DOGLEG/dog.html",
    "checked_at": null,
-   "body_sha256": "c1af8007a38a180d1c18a92860883b2089befd07ff2d4b8bc0653119ffead039"
+   "body_sha256": "60808c05705e195ca64d34216c53cf9bfb4ac629917d8a545ecbd9d6c3e35cce"
   },
   "c5-achi-yamaboshi": {
    "mode": "unknown",
@@ -3139,7 +3139,7 @@
    "text": "犬同宿可はヴィラ「暁-Akatsuki-」の犬同宿可プランのみ。2頭まで、大型犬も可で犬種制限なし。1頭1泊5,500円(税込。プラン料金に1頭分込み、2頭目は現地精算)。無駄吠えしない・トイレのしつけ済み・狂犬病予防接種とワクチン接種済みが条件で、チェックイン時に専用用紙(登録番号含む)を記入、証明書の提示を求められることあり。犬が入れるのは1階のみ(2階不可)。",
    "source_url": "https://thecanvashotel.jp/blog/detail/index.php?id=744",
    "checked_at": null,
-   "body_sha256": "e67eafaf1b4b72abe0a2f980e9ce44702a8cd555593344253ec9618eb007673f"
+   "body_sha256": "a532e449e67f86f14770f173f05a96935e9bab02d158c0e818be89a4beaec613"
   },
   "c5-andsun-terracehouse-hayama": {
    "mode": "manual",
@@ -3765,9 +3765,9 @@
   "c7-00052312": {
    "mode": "unknown",
    "text": "同伴可能なペットの種類は犬のみです。Y棟・O棟・G棟の特定の棟でのみ宿泊可能です。必要なアイテム（ケージ等）はご持参ください。",
-   "source_url": "https://goat-glamping.com/terms/",
-   "checked_at": "2026-09-27",
-   "body_sha256": "a02565c030147a6a893c57c16d6c355d3e3e901478ee13ed70ea34e2df67d02e"
+   "source_url": "https://goat-glamping.com/faq/",
+   "checked_at": null,
+   "body_sha256": "1677395201a849777a9adf7cce5f802d4d13ace200644818a910c3741447aa6a"
   },
   "c7-00052552": {
    "mode": "manual",
@@ -3963,10 +3963,10 @@
   },
   "c8-00916432": {
    "mode": "manual",
-   "text": "ペット同伴でのご宿泊は「ドギーコテージ」「CAMP6」のみ可能です。5種混合以上の予防接種、狂犬病予防接種を済ませたワンちゃんであることが大前提です（最終摂取日より3年以内）。ヒート中のワンちゃんのご利用はご遠慮ください。",
+   "text": "小型・中型・大型犬が対象で、1棟最大3頭。5種以上混合ワクチンと狂犬病予防接種は最終接種から3年以内。疾患・アレルギー等で接種できない場合は例外あり。ヒート中は不可。",
    "source_url": "https://www.pica-resort.jp/chichibu/stay/site/index.html?datafilter=stay_ワンちゃんOK",
-   "checked_at": "2026-09-28",
-   "body_sha256": "ed9c46acc341442469ff54857abb4854a4c7abfd9291dd2b1f747cb2ff6771d8"
+   "checked_at": null,
+   "body_sha256": "12eea908557513f70e7f7f48bf8bc0a2d46be28ffea2501ff14d2d6d04daef23"
   },
   "c8-00908620": {
    "mode": "manual",
@@ -4019,10 +4019,10 @@
   },
   "c8-00915943": {
    "mode": "manual",
-   "text": "中型犬（10kgまで）または小型犬（5kgまで）で、1棟に2頭まで宿泊可能です。狂犬病および5種以上の混合ワクチン接種証明書（3年以内）の提示が必須です。",
+   "text": "小型犬(5kgまで)・中型犬(10kgまで)。1棟2頭まで。ヒート中・室外飼い・ワクチン未接種の犬は不可。狂犬病と5種以上の混合ワクチンの接種証明書(コピー可・3年以内)を当日に提示。",
    "source_url": "https://ajisai-cottage.com/pet/",
-   "checked_at": "2026-09-28",
-   "body_sha256": "8f97f30c403202ec5bbda5b1899914a81527c8afe61e70ffce88a9af108bef8e"
+   "checked_at": null,
+   "body_sha256": "5ce24568cc94663b08158e496c35d0163f8c4c87518a8aff2b1effdff9eadeae"
   },
   "c8-00001415": {
    "mode": "uniform",
@@ -4069,10 +4069,10 @@
   },
   "c8-00917439": {
    "mode": "manual",
-   "text": "全客室が愛犬同伴のコテージとなっており、子犬からシニア犬まで対応しています。一部客室では段差を少なくし、お車が隣接できるなどの工夫がされています。",
+   "text": "全犬種・全客室で同伴可。生後3か月以上の室内犬、予防接種等が条件。頭数上限は客室別に確認。",
    "source_url": "https://www.forest-hills.jp/",
-   "checked_at": "2026-09-28",
-   "body_sha256": "58b0955a97914e80b328ee988226637accedeab39757e139d195913e002545e7"
+   "checked_at": null,
+   "body_sha256": "03c15b620a872ab5ed9a2e5087dfaec7c95268a89826f0990c6cb73b9a172812"
   },
   "c8-00030794": {
    "mode": "manual",
@@ -4199,10 +4199,10 @@
   },
   "c8-00915759": {
    "mode": "manual",
-   "text": "犬とウサギの同伴が可能で、宿泊料金は無料です。ただし、室内ではフローリングのみでの滞在が許可されており、寝具の上への乗せは厳禁となっています。",
+   "text": "大きさは問わず、大型犬も可(施設への確認 2026-10-31)。犬とウサギの同伴が可能で、宿泊料金は無料。トイレのしつけ済みで、1年以内に狂犬病と混合ワクチンの接種を受けていることが条件(公式ペットページ)。頭数の制限はなし(施設への確認 2026-10-31)。",
    "source_url": "https://www.kando-stay.com/izu/izukogen/",
-   "checked_at": "2026-09-29",
-   "body_sha256": "f21ebc367ad75096a4fd7512977991fbffa3540c069466083dc9c9fc43e89f9b"
+   "checked_at": null,
+   "body_sha256": "d282a3d80604515b535c2fa29f0dba6a5a8965fafccb5750265bd9207e32edf5"
   },
   "c8-00916703": {
    "mode": "uniform",
@@ -4450,11 +4450,11 @@
    "body_sha256": "2d5a2956dc977139a206cd1b014ff203e97467162836d6e79c7eeccaf365dc75"
   },
   "c8-00052750": {
-   "mode": "unknown",
-   "text": "トイレや無駄吠えに関して十分にしつけ、訓練がされていること、かつ日常的に室内で飼育されており極端な吠え癖・噛み癖がないことが条件です。狂犬病、5種以上の混合ワクチンを1年以内に接種し、その接種日から2週間以上経過している必要があります。また、ヒート期間（発情期）ではなく、滞在中もヒートになる可能性がなく、妊娠状態でないことも必須です。",
+   "mode": "manual",
+   "text": "トイレや無駄吠えに関して十分にしつけ、訓練がされていること、かつ日常的に室内で飼育されており極端な吠え癖・噛み癖がないことが条件です。狂犬病、5種以上の混合ワクチンを1年以内に接種し、その接種日から2週間以上経過している必要があります。また、ヒート期間（発情期）ではなく、滞在中もヒートになる可能性がなく、妊娠状態でないことも必須です。フォレストテラス八風台は最大6頭(大型犬は4頭まで)。5頭以上のときは事前に相談。",
    "source_url": "https://karuizawa365.jp/",
-   "checked_at": "2026-09-30",
-   "body_sha256": "951de274c74cca30ddbd266fc12ed6aef936844a338a43275c07cb753a000cb3"
+   "checked_at": null,
+   "body_sha256": "a73cd9fd1ee5b5e45cd18d984e078add9806b204885d7183e511462c92130cbe"
   },
   "c8-00052751": {
    "mode": "unknown",
@@ -4999,10 +4999,10 @@
   },
   "c8-00917023": {
    "mode": "manual",
-   "text": "トレーラーハウス客室（Stella Port・Breeze Port）では、中型犬まで2頭まで同伴可能です。テント泊プランも1組につき2頭まで可能ですが、2026年5月9日以降は販売終了しています。",
-   "source_url": "https://chikura.tsunaguhotel.jp/2020/02/19/dog_tent/",
-   "checked_at": "2026-09-30",
-   "body_sha256": "af211b44bff15520ee37f2cab952066d48350cfa54ff6575c17427a2b1720e78"
+   "text": "トレーラーハウスの新客室(Stella Port 3棟・Breeze Port 2棟、2026年7月18日から)は全5棟で犬と宿泊できる。グランピングテントは2026年5月9日で販売終了。中型犬まで2頭・1頭3,300円は以前の公式案内の記載で、新客室での頭数・大きさ・料金は予約前に確認。",
+   "source_url": "https://chikura.tsunaguhotel.jp/2026/07/02/%e3%81%93%e3%81%ae%e5%a4%8f%e3%80%81%e6%96%b0%e3%81%97%e3%81%84%e3%83%88%e3%83%ac%e3%83%bc%e3%83%a9%e3%83%bc%e3%82%b3%e3%83%86%e3%83%bc%e3%82%b8%e3%81%8c%e8%aa%95%e7%94%9f%e3%81%97%e3%81%be%e3%81%97/",
+   "checked_at": null,
+   "body_sha256": "b97faa1a6964d5fc3842749deeedbdf5b3fe2a202f2e112ec63a108e7f3eee00"
   },
   "c8-00917373": {
    "mode": "uniform",
@@ -6082,11 +6082,15 @@
    "body_sha256": "989f2f0f83df50baadd38f6131aeb141b9b40ec5573e73f4b39710611cf8ce58"
   },
   "c9-rk108086": {
-   "mode": "unknown",
-   "text": "予約前確認",
+   "mode": "uniform",
+   "sizes": [
+    "small",
+    "medium"
+   ],
+   "text": "中型犬まで(施設への確認 2026-10-29)。頭数は予約前確認。",
    "source_url": "https://www.miasa-pokapokaland.com/",
    "checked_at": "2026-10-03",
-   "body_sha256": "b137f9ad43d431bad5b63b420b5bf904b7919c93065f557d6f013a8727f310e6"
+   "body_sha256": "e12e339e57e4db1b1d29a2f0853fdd81c9afbc5b38224f150aea53ef8798bedf"
   },
   "c9-rk11147": {
    "mode": "uniform",
@@ -6756,12 +6760,18 @@
   "c10-ruff-laugh-chiba": {
    "mode": "manual",
    "text": "全犬種可(犬以外は不可)。CABIN R は10kg未満2頭か20kg未満1頭、CABIN L・D は全犬種4頭まで(大型犬は2頭までをすすめる案内)。生後4か月以上。",
-   "source_url": null,
+   "source_url": "https://www.cigr.co.jp/ruff-laugh/stay/",
    "checked_at": "2026-10-06",
    "body_sha256": "4e0a85edc7e215e6c2218b0b09ecd8a8e99ef9e92fd55e05901d6a6b50e1a01f"
   },
   "c10-coco-villa-minamiboso-dogstay": {
-   "mode": "manual",
+   "mode": "uniform",
+   "max_dogs": 3,
+   "sizes": [
+    "small",
+    "medium",
+    "large"
+   ],
    "reviewed": {
     "by": "codex-review-20261011",
     "evidence": "犬だけ(猫などは不可)。小型〜大型犬を3頭まで。トイレのしつけ済み、無駄吠えや破損行為が目立たないこと。",
@@ -6779,12 +6789,17 @@
     }
    },
    "text": "犬だけ(猫などは不可)。小型〜大型犬を3頭まで。トイレのしつけ済み、無駄吠えや破損行為が目立たないこと。",
-   "source_url": null,
+   "source_url": "https://coco-villa.jp/villa/minamiboso-dogstay/",
    "checked_at": "2026-10-06",
    "body_sha256": "7ec0ecd5e277fb349cedf082fa357ea3ee9b6310885326f8426eae5ca2903290"
   },
   "c10-solana-private-villa-minami-alps": {
-   "mode": "manual",
+   "mode": "uniform",
+   "sizes": [
+    "small",
+    "medium",
+    "large"
+   ],
    "reviewed": {
     "by": "codex-review-20261011",
     "evidence": "犬種の制限なし(小型〜大型犬)。犬以外は不可。頭数の上限は公式で未確認(犬料金は何頭でも無料の案内)。",
@@ -6801,7 +6816,7 @@
     }
    },
    "text": "犬種の制限なし(小型〜大型犬)。犬以外は不可。頭数の上限は公式で未確認(犬料金は何頭でも無料の案内)。",
-   "source_url": null,
+   "source_url": "https://resort-solana.com/facility/minami-alps/",
    "checked_at": "2026-10-06",
    "body_sha256": "0c23e99b447085ba0307596499396c70b933a63a928cfe915ebe149a91e901e8"
   },
@@ -6824,7 +6839,16 @@
    "body_sha256": "37a0fb1135fa4e5572d7ab6cfce240a89f42df4065c9b706b37164e5c60f31d9"
   },
   "c10-wanpara-hamanako": {
-   "mode": "manual",
+   "mode": "uniform",
+   "sizes": [
+    "small",
+    "medium",
+    "large"
+   ],
+   "unlimited": [
+    "max_dogs",
+    "max_kg"
+   ],
    "reviewed": {
     "by": "codex-review-20261011",
     "evidence": "犬種・大きさ(小型〜超大型)・頭数の制限なし。基本的なしつけができている犬に限る。生後4か月未満とヒート中は不可。",
@@ -6845,32 +6869,37 @@
     }
    },
    "text": "犬種・大きさ(小型〜超大型)・頭数の制限なし。基本的なしつけができている犬に限る。生後4か月未満とヒート中は不可。",
-   "source_url": null,
+   "source_url": "https://withdog.iconia.co.jp/hotels/wwp-hamanako",
    "checked_at": "2026-10-06",
    "body_sha256": "7de5e8c9948523146259e0f0e859e0180a366da4a5e28aa49349bdc6f89bf8d4"
   },
   "c11-00920392": {
    "mode": "manual",
    "text": "Sunコテージで犬同伴可。通常は中型犬・柴犬まで。大型犬等は全体貸切プランで事前確認。ワクチン接種としつけが必要。",
-   "source_url": null,
+   "source_url": "https://dressy-life.com/cottage.html",
    "checked_at": "2026-10-07",
    "body_sha256": "e472c81b7dd692c6124cfaba4e938d2e1b03a8a2030be7b2cb48ecdaeec88c06"
   },
   "c11-00921126": {
    "mode": "manual",
    "text": "オートキャンプサイト、RV PARK、GREEN SITE持込みプランのみ同伴可能です。必ずリードにつなぎ、トイレの始末や吠えた場合の対応など、他のお客様へのご迷惑にならないようご自身での管理の徹底をお願いします。",
-   "source_url": null,
+   "source_url": "https://breeze-camp.com/guideline/",
    "checked_at": "2026-10-07",
    "body_sha256": "9fd2b1d23b6b146c7bc29f03b0abfeef009b4e77f23e88f1baa494945a644a65"
   },
   "c11-00921138": {
-   "mode": "manual",
+   "mode": "uniform",
+   "sizes": [
+    "small",
+    "medium",
+    "large"
+   ],
    "reviewed": {
-    "by": "codex-review-20261011",
-    "evidence": "小型犬から大型犬まで同室宿泊可。基本的なしつけが必要。",
-    "note": "頭数上限は未確定（空欄を制限なしにしない）。自動反映保留: official-link欠落。source_url=未記録; checked_at=2026-10-07",
-    "source": "dog-rules-review.csv",
-    "body_sha256": "27f9cf79a41946b6ff9dd915095e60b7eed8dddb9af8abc6b780f822a9460f48",
+    "by": "claude-review-20261107",
+    "evidence": "小型犬から大型犬まで同室宿泊可。",
+    "note": "2026-10-11 の Codex レビューと同じ判断(全サイズ可、頭数上限は未確定)を新しい本文ハッシュで再記録。前回は official-link 欠落で保留だったが、現在はカードに公式リンクがある。",
+    "source": "dog-rules-review-20261107.csv",
+    "body_sha256": "7084a994ae06c2afe975f4035e64fbe7c584387aacdb96aa3bfa684cd9e0deea",
     "proposed": {
      "mode": "uniform",
      "sizes": [
@@ -6881,12 +6910,18 @@
     }
    },
    "text": "小型犬から大型犬まで同室宿泊可。基本的なしつけが必要。",
-   "source_url": null,
+   "source_url": "http://www.portomaison.com/",
    "checked_at": "2026-10-07",
-   "body_sha256": "27f9cf79a41946b6ff9dd915095e60b7eed8dddb9af8abc6b780f822a9460f48"
+   "body_sha256": "7084a994ae06c2afe975f4035e64fbe7c584387aacdb96aa3bfa684cd9e0deea"
   },
   "c11-00921218": {
-   "mode": "manual",
+   "mode": "uniform",
+   "max_dogs": 2,
+   "sizes": [
+    "small",
+    "medium",
+    "large"
+   ],
    "reviewed": {
     "by": "codex-review-20261011",
     "evidence": "犬2頭まで同伴可。超大型犬までの案内あり。ノミ・ダニ予防、狂犬病・混合ワクチン接種とトイレのしつけが必要。",
@@ -6904,12 +6939,18 @@
     }
    },
    "text": "犬2頭まで同伴可。超大型犬までの案内あり。ノミ・ダニ予防、狂犬病・混合ワクチン接種とトイレのしつけが必要。",
-   "source_url": null,
+   "source_url": "https://www.sumisunoie.com/futtsurikyu",
    "checked_at": "2026-10-07",
    "body_sha256": "018f4b3a7202474a9daa984e4ad3f66c5bf2a2f3fcf606be83eee8dc757d1b43"
   },
   "c11-00921219": {
-   "mode": "manual",
+   "mode": "uniform",
+   "max_dogs": 2,
+   "sizes": [
+    "small",
+    "medium",
+    "large"
+   ],
    "reviewed": {
     "by": "codex-review-20261011",
     "evidence": "犬2頭まで同伴可。超大型犬までの案内あり。ノミ・ダニ予防、狂犬病・混合ワクチン接種とトイレのしつけが必要。",
@@ -6927,12 +6968,17 @@
     }
    },
    "text": "犬2頭まで同伴可。超大型犬までの案内あり。ノミ・ダニ予防、狂犬病・混合ワクチン接種とトイレのしつけが必要。",
-   "source_url": null,
+   "source_url": "https://www.sumisunoie.com/bousouterrace",
    "checked_at": "2026-10-07",
    "body_sha256": "018f4b3a7202474a9daa984e4ad3f66c5bf2a2f3fcf606be83eee8dc757d1b43"
   },
   "c11-00921404": {
-   "mode": "manual",
+   "mode": "uniform",
+   "sizes": [
+    "small",
+    "medium",
+    "large"
+   ],
    "reviewed": {
     "by": "codex-review-20261011",
     "evidence": "狂犬病予防接種、混合ワクチン接種を済ませているワンコに限ります。トイレの躾が出来ており、飼い主様の制止がきく、無駄吠え癖や脱走癖、噛み癖のないワンちゃんです。小型犬から大型犬まで、すべてのワンちゃんにご宿泊いただけます。",
@@ -6949,14 +6995,20 @@
     }
    },
    "text": "狂犬病予防接種、混合ワクチン接種を済ませているワンコに限ります。トイレの躾が出来ており、飼い主様の制止がきく、無駄吠え癖や脱走癖、噛み癖のないワンちゃんです。小型犬から大型犬まで、すべてのワンちゃんにご宿泊いただけます。",
-   "source_url": null,
+   "source_url": "https://resort-solana.com/facility/choshi/",
    "checked_at": "2026-10-07",
    "body_sha256": "f7435696bede35d3b0d8930fd83f403d4f960685aa58915930166114ea7cc8dc"
   },
   "c11-00921457": {
-   "mode": "manual",
+   "mode": "uniform",
+   "max_dogs": 2,
+   "max_kg": 10,
+   "kg_inclusive": true,
+   "sizes": [
+    "small"
+   ],
    "text": "睦棟のみ犬同伴可。小型犬、10kg以下、1室2匹まで。登録・予防接種としつけが必要。",
-   "source_url": null,
+   "source_url": "https://huckleberry-g.jp/mutsumi/",
    "checked_at": "2026-10-07",
    "body_sha256": "6bde910890648883ebad33debf7c79906b7b4651498dae325c84edac5ca52b2d"
   },
@@ -6982,7 +7034,12 @@
    "body_sha256": "196d1b32e3f48cf4fba2eef0d7c115e0c80a871608002393977a9b9493d36237"
   },
   "c11-00922612": {
-   "mode": "manual",
+   "mode": "uniform",
+   "sizes": [
+    "small",
+    "medium",
+    "large"
+   ],
    "reviewed": {
     "by": "codex-review-20261011",
     "evidence": "狂犬病予防接種、混合ワクチン接種を済ませているワンコに限ります。小型犬から大型犬まで、すべてのワンちゃんにご宿泊いただけます。トイレの躾が出来ていないワンちゃんはご宿泊できません。",
@@ -6999,7 +7056,7 @@
     }
    },
    "text": "狂犬病予防接種、混合ワクチン接種を済ませているワンコに限ります。小型犬から大型犬まで、すべてのワンちゃんにご宿泊いただけます。トイレの躾が出来ていないワンちゃんはご宿泊できません。",
-   "source_url": null,
+   "source_url": "https://resort-solana.com/facility/solana-kisarazu/",
    "checked_at": "2026-10-07",
    "body_sha256": "c67aeebb5e8d4e7fe4a340f695dd74a4841323a4fdb1486df8859cf67185164f"
   },
@@ -7013,21 +7070,21 @@
   "c11-00922873": {
    "mode": "unknown",
    "text": "犬同伴可。種類・頭数を事前申告。具体的な条件は予約前確認。",
-   "source_url": null,
+   "source_url": "https://booyahsauna.jp/kujukuribase/faq",
    "checked_at": "2026-10-07",
    "body_sha256": "11f02acdd88bedf6f1712a6e6660064cc82ef17c28507cfbeba3e3e7d9bbff89"
   },
   "c11-00922897": {
    "mode": "manual",
    "text": "本館の月舞・麗月は8kg以内の小型犬1頭まで。離れも犬同伴可で、犬の条件は部屋ごとに予約前確認。",
-   "source_url": null,
+   "source_url": "https://www.avail-21.net/room/",
    "checked_at": "2026-10-07",
    "body_sha256": "03d9214fed40a98b85570dbae862e778666767bb249659cadcb2aae2871628b1"
   },
   "c11-00922918": {
    "mode": "manual",
    "text": "目安は10kg未満または体高40cm未満。柵を越えないよう管理できれば、それ以上も宿泊可。頭数上限なし。狂犬病・混合ワクチン証明書を持参。",
-   "source_url": null,
+   "source_url": "https://innocence-resort.com/room/",
    "checked_at": "2026-10-07",
    "body_sha256": "7e0a603ff7c58d02d8ccf1e06d23f5beadb41a946cff946318b8553b2638b310"
   },
@@ -7054,14 +7111,24 @@
    "body_sha256": "505d67b3b5054b6c12eb82be124e8cb44de62cb8ffe82da3beb0e07c78b78918"
   },
   "c11-00923600": {
-   "mode": "manual",
+   "mode": "uniform",
+   "sizes": [
+    "small",
+    "medium"
+   ],
    "text": "G・Hの洋室、I・J・Kの和室、オアシス3に犬同伴可。I・J・Kは中型犬まで、オアシス3は大型犬まで。G・Hのサイズ条件は予約前確認。",
-   "source_url": null,
+   "source_url": "https://oasisresort.kayabuki.biz/wadaura.html",
    "checked_at": "2026-10-07",
    "body_sha256": "d501691ea4ce49771031b82ba9adc0fc1eb11468dc1e4f7ae92786c3a50470d0"
   },
   "c11-00923898": {
-   "mode": "manual",
+   "mode": "uniform",
+   "max_dogs": 2,
+   "sizes": [
+    "small",
+    "medium",
+    "large"
+   ],
    "reviewed": {
     "by": "codex-review-20261011",
     "evidence": "犬2頭まで同伴可。超大型犬までの案内あり。ノミ・ダニ予防、狂犬病・混合ワクチン接種とトイレのしつけが必要。",
@@ -7079,12 +7146,17 @@
     }
    },
    "text": "犬2頭まで同伴可。超大型犬までの案内あり。ノミ・ダニ予防、狂犬病・混合ワクチン接種とトイレのしつけが必要。",
-   "source_url": null,
+   "source_url": "https://www.sumisunoie.com/futtsushinmaikocoasta",
    "checked_at": "2026-10-07",
    "body_sha256": "ed1aff40943fdb2ade9dece16d2dc98d3713e88847444500739639371bad6405"
   },
   "c11-00923907": {
-   "mode": "manual",
+   "mode": "uniform",
+   "sizes": [
+    "small",
+    "medium",
+    "large"
+   ],
    "reviewed": {
     "by": "codex-review-20261011",
     "evidence": "犬同伴宿泊可。超大型犬までの案内あり。頭数は公式に暫定表記があるため予約前確認。ノミ・ダニ予防、狂犬病・混合ワクチン接種としつけが必要。",
@@ -7101,7 +7173,7 @@
     }
    },
    "text": "犬同伴宿泊可。超大型犬までの案内あり。頭数は公式に暫定表記があるため予約前確認。ノミ・ダニ予防、狂犬病・混合ワクチン接種としつけが必要。",
-   "source_url": null,
+   "source_url": "https://www.sumisunoie.com/hoshizora-terrace",
    "checked_at": "2026-10-07",
    "body_sha256": "11f13ccb34bbe30020263132fd7a40b48c74cdd96b468c81256bf060d104da9d"
   },
@@ -7124,7 +7196,13 @@
    "body_sha256": "36840ad4c12ba3938c71158a51a6ad414660e7a906654a07d740e4c4d1db5d01"
   },
   "c11-00924573": {
-   "mode": "manual",
+   "mode": "uniform",
+   "max_dogs": 2,
+   "sizes": [
+    "small",
+    "medium",
+    "large"
+   ],
    "reviewed": {
     "by": "codex-review-20261011",
     "evidence": "犬2頭まで同伴可。超大型犬までの案内あり。ノミ・ダニ予防、狂犬病・混合ワクチン接種とトイレのしつけが必要。",
@@ -7142,12 +7220,18 @@
     }
    },
    "text": "犬2頭まで同伴可。超大型犬までの案内あり。ノミ・ダニ予防、狂犬病・混合ワクチン接種とトイレのしつけが必要。",
-   "source_url": null,
+   "source_url": "https://www.sumisunoie.com/chosei",
    "checked_at": "2026-10-07",
    "body_sha256": "c09323f625ee9586bb0e2a6f75228e2726d3e868e58610ea77d8ffaf1da472e1"
   },
   "c11-00924762": {
-   "mode": "manual",
+   "mode": "uniform",
+   "max_dogs": 2,
+   "sizes": [
+    "small",
+    "medium",
+    "large"
+   ],
    "reviewed": {
     "by": "codex-review-20261011",
     "evidence": "犬2頭まで同伴可。超大型犬までの案内あり。ノミ・ダニ予防、狂犬病・混合ワクチン接種とトイレのしつけが必要。",
@@ -7165,12 +7249,18 @@
     }
    },
    "text": "犬2頭まで同伴可。超大型犬までの案内あり。ノミ・ダニ予防、狂犬病・混合ワクチン接種とトイレのしつけが必要。",
-   "source_url": null,
+   "source_url": "https://www.sumisunoie.com/futtsushinmaikomare",
    "checked_at": "2026-10-07",
    "body_sha256": "018f4b3a7202474a9daa984e4ad3f66c5bf2a2f3fcf606be83eee8dc757d1b43"
   },
   "c11-00924944": {
-   "mode": "manual",
+   "mode": "uniform",
+   "max_dogs": 2,
+   "sizes": [
+    "small",
+    "medium",
+    "large"
+   ],
    "reviewed": {
     "by": "codex-review-20261011",
     "evidence": "犬2頭まで同伴可。超大型犬までの案内あり。ノミ・ダニ予防、狂犬病・混合ワクチン接種とトイレのしつけが必要。",
@@ -7188,12 +7278,18 @@
     }
    },
    "text": "犬2頭まで同伴可。超大型犬までの案内あり。ノミ・ダニ予防、狂犬病・混合ワクチン接種とトイレのしつけが必要。",
-   "source_url": null,
+   "source_url": "https://www.sumisunoie.com/kaigan-d",
    "checked_at": "2026-10-07",
    "body_sha256": "018f4b3a7202474a9daa984e4ad3f66c5bf2a2f3fcf606be83eee8dc757d1b43"
   },
   "c11-00925046": {
-   "mode": "manual",
+   "mode": "uniform",
+   "max_dogs": 2,
+   "sizes": [
+    "small",
+    "medium",
+    "large"
+   ],
    "reviewed": {
     "by": "codex-review-20261011",
     "evidence": "犬2頭まで同伴可。超大型犬までの案内あり。ノミ・ダニ予防、狂犬病・混合ワクチン接種とトイレのしつけが必要。",
@@ -7211,12 +7307,18 @@
     }
    },
    "text": "犬2頭まで同伴可。超大型犬までの案内あり。ノミ・ダニ予防、狂犬病・混合ワクチン接種とトイレのしつけが必要。",
-   "source_url": null,
+   "source_url": "https://www.sumisunoie.com/kaigan",
    "checked_at": "2026-10-07",
    "body_sha256": "e15636444a47b74dc141e3ae09c09340290d716f52ffd89db66b4dc476127140"
   },
   "c11-00925047": {
-   "mode": "manual",
+   "mode": "uniform",
+   "max_dogs": 2,
+   "sizes": [
+    "small",
+    "medium",
+    "large"
+   ],
    "reviewed": {
     "by": "codex-review-20261011",
     "evidence": "犬2頭まで同伴可。超大型犬までの案内あり。ノミ・ダニ予防、狂犬病・混合ワクチン接種とトイレのしつけが必要。",
@@ -7234,61 +7336,66 @@
     }
    },
    "text": "犬2頭まで同伴可。超大型犬までの案内あり。ノミ・ダニ予防、狂犬病・混合ワクチン接種とトイレのしつけが必要。",
-   "source_url": null,
+   "source_url": "https://www.sumisunoie.com/futtukaiganc",
    "checked_at": "2026-10-07",
    "body_sha256": "018f4b3a7202474a9daa984e4ad3f66c5bf2a2f3fcf606be83eee8dc757d1b43"
   },
   "c12-rk-184776": {
    "mode": "manual",
    "text": "小型犬種・10kg以下。1階は6頭、2階は3頭まで。狂犬病・5種以上混合ワクチンは接種後2週間以上1年未満。ノミ・ダニ対策、排泄のしつけ、館内マナーベルトが必要。夜はケージ利用。",
-   "source_url": null,
+   "source_url": "https://wankotei.net/faq/",
    "checked_at": "2026-10-07",
    "body_sha256": "b5b4d9404d4878db95f00ded532af6d52a5a451f980fa65a73086598f7a4f05b"
   },
   "c12-rk-167776": {
    "mode": "manual",
    "text": "大型犬を含む犬の同室宿泊が可能。頭数・予防接種・しつけ条件は予約前確認。",
-   "source_url": null,
+   "source_url": "https://kntbr.chips.jp/plan.html",
    "checked_at": "2026-10-07",
    "body_sha256": "2408cb8ffbd8a2dc3d8de2388c4da6395b2c0fb6fdf26f6337125cd2f3499844"
   },
   "c12-rk-29713": {
    "mode": "manual",
    "text": "大型犬も含め幅広く受け入れており、30kg以上の超大型犬は事前にご相談ください。基本的なしつけ（無駄吠えなし・トイレ済み）、狂犬病および混合ワクチン接種済み、ヒート中でないこと、ノミ・ダニ予防を行っていることが条件です。1室あたり2頭まで（応相談）です。",
-   "source_url": null,
+   "source_url": "https://kaigandoori.pet/plans/pet/",
    "checked_at": "2026-10-07",
    "body_sha256": "5c5f5a336d22cc8f7841d53f6542b4688650725ead99eb6df96169667e8656b2"
   },
   "c12-rk-183702": {
    "mode": "manual",
    "text": "大型犬・超大型犬向けの宿。狂犬病・5種以上混合ワクチン証明書の持参、ノミ・ダニ対策、排泄のしつけが必要。発情期は不可。来館前1週間以内にシャンプー。頭数は予約前確認。",
-   "source_url": null,
+   "source_url": "https://m-and-dane.com/access.html",
    "checked_at": "2026-10-07",
    "body_sha256": "c7513cb01d95471072b26e557f2185d3c17ab7dc2a450bc8c24970991c16f918"
   },
   "c12-rk-193107": {
    "mode": "unknown",
    "text": "狂犬病予防接種・混合ワクチン接種を済ませているワンコに限ります。トイレの躾が出来ており、飼い主様の制止がきく、無駄吠え癖・脱走癖・引っ掻き癖・噛み癖のないワンちゃんです。",
-   "source_url": null,
+   "source_url": "https://dogdeptminamiboso.com/forest/index.html",
    "checked_at": "2026-10-07",
    "body_sha256": "0f51805a896e16b4f976f65789c7a6ef297774b65afe60530e31a763a72fcc15"
   },
   "c12-rk-111166": {
    "mode": "unknown",
    "text": "犬同伴宿泊可。サイズ・頭数・予防接種などの条件は予約前確認。",
-   "source_url": null,
+   "source_url": "https://yado-hareya.com/",
    "checked_at": "2026-10-07",
    "body_sha256": "d838b25dcee37621a0750ed818b578f15986f517ddc3647f5236bf3414a38121"
   },
   "c12-rk-196510": {
    "mode": "manual",
    "text": "小型・中型・大型犬に対応。中型犬以上は1棟2頭まで。小型犬の頭数は予約前確認。狂犬病・混合ワクチン、排泄のしつけ、飼い主による制止が必要。",
-   "source_url": null,
+   "source_url": "https://e-attrait.jp/bringing/",
    "checked_at": "2026-10-07",
    "body_sha256": "370a44574349f67965686a3b4f3d2b1eb0f56fd4765c0711dac022d9f73e1c3e"
   },
   "c12-rk-153249": {
-   "mode": "manual",
+   "mode": "uniform",
+   "sizes": [
+    "small",
+    "medium",
+    "large"
+   ],
    "reviewed": {
     "by": "codex-review-20261011",
     "evidence": "小型・中型・大型犬、多頭での利用に対応。頭数上限・予防接種・しつけ条件は予約前確認。",
@@ -7305,56 +7412,56 @@
     }
    },
    "text": "小型・中型・大型犬、多頭での利用に対応。頭数上限・予防接種・しつけ条件は予約前確認。",
-   "source_url": null,
+   "source_url": "https://wanwan-wan.com/",
    "checked_at": "2026-10-07",
    "body_sha256": "90cd2cf7ef9de4bacdf4d920f1f5fcbab3df8a008f14e4cf66db135ba77fecb7"
   },
   "c12-rk-178683": {
    "mode": "unknown",
    "text": "トイレなどの基本的しつけ、ワクチンやノミダニの予防をお願いします。生理中わんちゃんのご宿泊は相応のご対応をお願いいたします。",
-   "source_url": null,
+   "source_url": "http://www.morois-rimbaud.com/wanneko.html",
    "checked_at": "2026-10-07",
    "body_sha256": "ab7054e2368cb579ada4d1f37011c893fe55246b9ec2c621165af8596d8592d3"
   },
   "c12-rk-190672": {
    "mode": "manual",
    "text": "小型犬3頭、中大型犬2頭まで。室内飼育・排泄のしつけ、狂犬病・混合ワクチン、ノミ・ダニ対策が必要。発情期は不可。犬だけを留守番させないこと。",
-   "source_url": null,
+   "source_url": "https://gaia-resort.net/lineup/639/",
    "checked_at": "2026-10-07",
    "body_sha256": "bd926a05d72eb2c13692752a683dabc96a7f4c751c8c4a0fb2afdfc6930c928f"
   },
   "c12-rk-190678": {
    "mode": "unknown",
    "text": "犬同伴宿泊可。サイズ・頭数・予防接種・しつけ条件は予約前確認。",
-   "source_url": null,
+   "source_url": "https://gaia-resort.net/lineup/969/",
    "checked_at": "2026-10-07",
    "body_sha256": "aac725300383d40a6353500d6c46889786f33a34f34eaa14ef73d14fcec4ceee"
   },
   "c12-rk-185417": {
    "mode": "manual",
    "text": "大型犬を含むペット同伴宿泊可。頭数・予防接種・しつけ条件は予約前確認。",
-   "source_url": null,
+   "source_url": "https://hotel-marugo.jp/",
    "checked_at": "2026-10-07",
    "body_sha256": "9e1abfbee196f3f0db9e6586c128793ed1e86ea837921422794b36d3cc1c5243"
   },
   "c12-rk-194365": {
    "mode": "unknown",
    "text": "犬同伴宿泊可。頭数・予防接種・しつけ条件は予約前確認。",
-   "source_url": null,
+   "source_url": "https://nasustay.com/%e9%82%a3%e9%a0%88-stay-%e3%81%a0%e3%82%88%e3%82%8a/%e3%80%90%e5%85%ac%e5%bc%8f%e3%82%b5%e3%82%a4%e3%83%88%e9%99%90%e5%ae%9a%e3%80%91%e3%83%9a%e3%83%83%e3%83%88%e5%ae%bf%e6%b3%8a%e8%b2%bb%e7%84%a1%e6%96%99%ef%bc%81%e6%84%9b%e7%8a%ac%e3%82%82%e3%80%81/",
    "checked_at": "2026-10-07",
    "body_sha256": "125bfa5190d79079c6abde6d98bae12e0a56aa62b97ae6721e30d578fcf3d2ad"
   },
   "c12-rk-185073": {
    "mode": "manual",
    "text": "小型犬から大型犬まで同伴可。3頭まで無料。4頭以上や予防接種などの条件は予約前確認。",
-   "source_url": null,
+   "source_url": "http://www.italy.vc/index3.html",
    "checked_at": "2026-10-07",
    "body_sha256": "8cef39599b8edb72057a1fdfcbeae0f40180fb8e05935fd706c63b87d67db763"
   },
   "c12-rk-137096": {
    "mode": "unknown",
    "text": "犬同伴宿泊可。サイズ・頭数・予防接種・しつけ条件は予約前確認。",
-   "source_url": null,
+   "source_url": "http://www.baranouta.com/shisetsu.html",
    "checked_at": "2026-10-07",
    "body_sha256": "1d8cf86bfee29f7af33294a909b7c5e0fdedebb5ee95697f05198e0425ef6b4a"
   },
@@ -7366,7 +7473,10 @@
    "body_sha256": "90839d77cc90244042bbaeedbd1901c33e127828b6424d1887aa12fb1ae65dd1"
   },
   "c12-rk-138068": {
-   "mode": "manual",
+   "mode": "uniform",
+   "unlimited": [
+    "max_dogs"
+   ],
    "reviewed": {
     "by": "codex-review-20261011",
     "evidence": "犬の種類・頭数の制限なし。予防接種などの利用条件は予約前確認。",
@@ -7381,26 +7491,29 @@
     }
    },
    "text": "犬の種類・頭数の制限なし。予防接種などの利用条件は予約前確認。",
-   "source_url": null,
+   "source_url": "https://nasunogahara.co.jp/wans/index.html",
    "checked_at": "2026-10-07",
    "body_sha256": "dd6a1f20a4f4a990cd22efb592c2345c8d33773e402ffc9a20fb762f72a07270"
   },
   "c12-rk-191198": {
    "mode": "unknown",
    "text": "犬同伴宿泊可。サイズ・頭数・予防接種・しつけ条件は予約前確認。",
-   "source_url": null,
+   "source_url": "https://dog-i-villa.com/dogleg/",
    "checked_at": "2026-10-07",
    "body_sha256": "3520fc5079ec84e956f05375fb415aab611b1286adcb23fa7a9d529740a3bb99"
   },
   "c12-rk-130501": {
    "mode": "manual",
    "text": "同居の一家庭と室内飼育犬の利用限定。犬の飼育経験1年以上が必要。人と犬の合計5以内、大型犬を含むと犬は2頭まで。排泄・吠え・待てのしつけと来館前シャンプーが必要。ワクチン証明書を持参（6種以上は推奨）。",
-   "source_url": null,
+   "source_url": "https://www.y2jam.com/jamswan",
    "checked_at": "2026-10-07",
    "body_sha256": "af6a90f3da5a991199616b162c72e35bac1b9803bc81039d9eb0df48f14bae77"
   },
   "c12-rk-142782": {
-   "mode": "manual",
+   "mode": "uniform",
+   "sizes": [
+    "small"
+   ],
    "reviewed": {
     "by": "codex-review-20261011",
     "evidence": "生後12ヶ月以上、ワクチン接種済みの小型室内犬に限ります。生理中から終了後7日までの犬は宿泊できません。",
@@ -7415,26 +7528,29 @@
     }
    },
    "text": "生後12ヶ月以上、ワクチン接種済みの小型室内犬に限ります。生理中から終了後7日までの犬は宿泊できません。",
-   "source_url": null,
+   "source_url": "https://p-mon.com/pet.html",
    "checked_at": "2026-10-07",
    "body_sha256": "c447fd3a5f6a60fecc62ff234891da511288421714a0f1ca386dcba9c044ea1b"
   },
   "c12-rk-198768": {
    "mode": "unknown",
    "text": "狂犬病予防接種・混合ワクチン接種を済ませているワンコに限ります。トイレの躾が出来ており、飼い主様の制止がきく、無駄吠え癖・脱走癖・引っ掻き癖・噛み癖のないワンちゃんです。",
-   "source_url": null,
+   "source_url": "https://dogdeptminamiboso.com/ocean/index.html",
    "checked_at": "2026-10-07",
    "body_sha256": "a6ea7277e7055930d4c3c7013b3f58ae5027a5e4a69519eb9b559ebfb3862a83"
   },
   "c12-rk-197931": {
    "mode": "manual",
    "text": "生後6か月以上の室内飼育犬、最大3頭。排泄・吠え・噛みつきのしつけが必要。狂犬病・5種以上混合ワクチンの接種後2週間以上1年以内の証明書を提示。闘犬・発情期および滞在中に発情の可能性がある犬は不可。",
-   "source_url": null,
+   "source_url": "https://sampo.wyes-resort.com/",
    "checked_at": "2026-10-07",
    "body_sha256": "d362c310dfa9fc5a105fe80e26da241a2c36c98d9a1b138618a95b792e809baf"
   },
   "c12-rk-197354": {
-   "mode": "manual",
+   "mode": "uniform",
+   "unlimited": [
+    "max_dogs"
+   ],
    "reviewed": {
     "by": "codex-review-20261011",
     "evidence": "ペットの種類・頭数の制限なし。1年以内の狂犬病・混合ワクチン接種、排泄のしつけが必要。噛み癖・吠え癖のある犬や発情期の前後2週間は不可。",
@@ -7449,14 +7565,2045 @@
     }
    },
    "text": "ペットの種類・頭数の制限なし。1年以内の狂犬病・混合ワクチン接種、排泄のしつけが必要。噛み癖・吠え癖のある犬や発情期の前後2週間は不可。",
-   "source_url": null,
+   "source_url": "https://pet-orion.com/pets.php",
    "checked_at": "2026-10-07",
    "body_sha256": "0ddb0a0abf810518e876764efe6959e477eb7446fd7aeab0263df591ece3bf6d"
+  },
+  "c2-greenplaza-karuizawa": {
+   "mode": "manual",
+   "text": "大・中・小型犬。生後4か月以上で、3種以上の混合ワクチンと狂犬病ワクチンの予防接種を受けていること。",
+   "source_url": null,
+   "checked_at": "2026-09-26",
+   "body_sha256": "b922fd5b51bd97a96641f7b35546420ff8c747ad9de0b065cfebacf3d6e27c24"
+  },
+  "c5-yutorelo-echigoyuzawa": {
+   "mode": "manual",
+   "text": "愛犬専用ルーム(洋室ツイン48㎡・4室限定)で、1部屋につき小型犬3頭まで(犬種リストあり)。愛犬利用料 1頭4,400円・2頭6,600円・3頭8,800円(税込。Relo会員の公式予約は2食付きなら無料など特典)。狂犬病と5種以上の混合ワクチンの接種証明2種類をチェックイン時に持参、身分証のコピーとペット宿泊同意書に署名。",
+   "source_url": null,
+   "checked_at": "2026-09-27",
+   "body_sha256": "8e7b3f41389dc85a2422fe2a7107a86be13d4061bd032fb74223fb17882bd51c"
+  },
+  "c12-rk-41644": {
+   "mode": "manual",
+   "text": "10kg未満でケージに収まる小型犬。基本のしつけが必要で、予防接種の証明書等を持参。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "e11436eb4a4df3295cdb5b77a379baa18e03216da1b6bf749826ba37f278c975"
+  },
+  "c12-rk-185975": {
+   "mode": "manual",
+   "text": "ロフト付きコテージAで犬と宿泊可。犬の大きさ・頭数・予防接種条件は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "0a4c0c352b9e03f27f03b3684b55dd050bca76d7d90a6b1e220c6abae1bf56ad"
+  },
+  "c12-rk-193457": {
+   "mode": "manual",
+   "text": "室内飼育の犬に限り、10kg未満は2頭まで、中・大型犬は1頭まで。予防接種・寄生虫対策・基本のしつけが必要。発情中は不可。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "6a6f8608f484c54650dd4cb21528a2be1d27072e593ff27f023efbdc54c1b8ff"
+  },
+  "c12-rk-7568": {
+   "mode": "manual",
+   "text": "小型犬から大型犬まで対応しており、チェックイン時に狂犬病予防接種証明書及びワクチン接種証明書の提示が必要です。小動物の場合はケージ持参となります。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "e43da2ab742a2ef441ca05c6f577d3a6377da784381518c0f317cc8c0026685c"
+  },
+  "c12-rk-52987": {
+   "mode": "manual",
+   "text": "犬種制限はありません。狂犬病ワクチンなどの予防接種済みである必要があります。詳細は愛犬ルーム滞在同意書をご確認ください。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "e228d7f8890afff95fff2b4b6567a894356b91b0fd95e21f52bf770ec4f9cad1"
+  },
+  "c12-rk-197445": {
+   "mode": "manual",
+   "text": "中型犬まで同伴可能です。ご愛犬同伴のお客様は「ペット同伴利用規約」をご一読の上ご予約をお願いいたします。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "c9deb095ff45dd3ee83457af8f2e4d261b48aadd03f571f5f97e4145e3260578"
+  },
+  "c12-rk-189279": {
+   "mode": "manual",
+   "text": "小・中型犬に対応。基本のしつけが必要。ほかのサイズ・頭数は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "4a58e91a802f5b735a149465e9681c8002e8b1de069d8b8f8fe2518051016837"
+  },
+  "c12-rk-189189": {
+   "mode": "manual",
+   "text": "アパートメントで小型犬2頭または中型犬1頭まで同伴可。体重・予防接種条件は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "8a6ec2f646b63e5ade71321ee600329e9e98459b8791907e33b62dc11e8ad837"
+  },
+  "c12-rk-147393": {
+   "mode": "unknown",
+   "text": "室内飼育で基本のしつけができた犬。狂犬病・混合ワクチンは最終接種から1年以内で証明書を持参。発情中は不可。サイズ・頭数は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "508d7a16ad258c402a6ccac83910a1eedfbf0319056fc5ca75b9d20752130c2b"
+  },
+  "c12-rk-189720": {
+   "mode": "manual",
+   "text": "25kg以上の大型犬の同伴は原則不可です。吠え癖や噛み癖のあるペットは同伴をお断りしています。チェックイン時に狂犬病ワクチン・混合ワクチン接種の証明書と鑑札の確認が必要です。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "654670874a4050f9cdd3fadc27c9c7e1b98f77e0d651e9c408dc9cedfdabba2e"
+  },
+  "c12-rk-198843": {
+   "mode": "unknown",
+   "text": "狂犬病・感染症等の証明書は提出不要ですがワクチン接種をお願いしております。ペットのマナーパンツ着用のご協力をお願いしています。ペットのみを宿泊施設に残しての外出はご遠慮いただいております。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "46af34e980fd08f427523a81306e8befacbf805bcbc58effaa4c367804f070df"
+  },
+  "c12-rk-196737": {
+   "mode": "manual",
+   "text": "ペットフレンドリー棟は生後4か月以上・25kg未満の犬1頭。室内はマナーウェア着用。発情中と終了後2週間は不可。ほかの客室条件・証明書は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "612c201d57328376a0ab71c3263ebc1f1b82cb02c6862c5958e02872eef89a53"
+  },
+  "c12-rk-184576": {
+   "mode": "manual",
+   "text": "小型犬同伴用の宿泊プランあり。頭数・予防接種条件は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "e6acce8034e1ac3cdcae9fe1cbe8559cf22454771f8887a2e949e2176a55a06d"
+  },
+  "c12-rk-84555": {
+   "mode": "manual",
+   "text": "コテージは小型犬から大型犬、別館は小型犬に対応。受入可能な部屋を事前に確認してください。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "b37690d62018d1bd5bd73442589f0b03e40aea20f3613e93679437a33d6176e6"
+  },
+  "c12-rk-51891": {
+   "mode": "unknown",
+   "text": "予防接種と排泄・吠えのしつけが必要。犬種・体重・頭数は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "c40e44c965c23da4d69234483877a0f5ceaf6d698969263da744898abcd73522"
+  },
+  "c12-rk-201010": {
+   "mode": "manual",
+   "text": "小型犬2頭まで。体重は公式内に13kg以下・13kg未満の両表記があり、13kgの場合は予約前確認。室内飼育・しつけ・予防接種証明・寄生虫対策が必要。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "916431edc03d379d650b026a8dffcdedf22e9e1436be8e8367653f1913281c1d"
+  },
+  "c12-rk-7977": {
+   "mode": "manual",
+   "text": "お連れできるペットは小型犬（7kgまで）のみとなります。トイレ・無駄吠えなどの基本的なしつけができていることが条件です。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "3255a4ad37585d46eb24ecdc5dcd271fb07f9f2e769e58fe4046ef93c90b6b73"
+  },
+  "c12-rk-130049": {
+   "mode": "manual",
+   "text": "ペットもご家族とご一緒に宿泊することができます。詳細な条件（大きさ・頭数・ワクチン等）は記載がないため、お問い合わせください。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "354702eb41fd3a2e86d04867f08cf5eb0a7fc3f6edf0461c6b6997787b260ef1"
+  },
+  "c12-rk-7075": {
+   "mode": "manual",
+   "text": "小・中型犬に対応。大型犬は1頭まで、超大型犬は不可。しつけ・予防接種・留守番対応が必要で、発情中は不可。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "017e9367fc0f1bf3f06e424f8420cdcb88dc57d8b9f06e324821198462dd16c7"
+  },
+  "c12-rk-18389": {
+   "mode": "manual",
+   "text": "小型犬（10kg以下）2匹までに限ります。日常的に室内で飼われている室内犬であること、トイレ等の基本的なしつけ、狂犬病の予防接種および各種ワクチンの接種が必要です。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "13d1bebffd2e4da2aec2de16b5fbe84264f4f6d6d7d608ec20b3f09e5df48292"
+  },
+  "c12-rk-44004": {
+   "mode": "manual",
+   "text": "基本のしつけができた体重5kg程度までの小型犬。頭数上限は予約前確認。小型犬以外は敷地内も受入れ不可。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "d729336add8e423aa812f2ded6416e5067d29b4dbe448a22b528e7119b4c1e6f"
+  },
+  "c12-rk-165670": {
+   "mode": "manual",
+   "text": "小型犬最大3頭まで宿泊可能です。中型犬・大型犬のご宿泊はお断りしております。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "cd470b97b54194eaa9a4865cd0c1d4fb347337aff5c41b869645310dedf6b7c5"
+  },
+  "c12-rk-2779": {
+   "mode": "manual",
+   "text": "小型犬（8キロ以内）は全室対応ですが、中型犬以上は1階のバリアフリー兼用の和室15畳（2室）に限られます。狂犬病接種とワクチン済み、生後1年以上、トイレおよび無駄吠えのしつけができている室内犬であることが条件です。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "140d8e3f894693335c44272ef4c5c0fb4527cb03af4d96e7574c4be218de6b16"
+  },
+  "c12-rk-28313": {
+   "mode": "manual",
+   "text": "生後4か月以上の室内飼育の中小型犬、原則2頭まで。予防接種としつけが必要。発情・妊娠中は不可。増頭・25kg超は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "7077caaca46b307ed8dfd7b08e95462787095b0af751c728d474127d6598e720"
+  },
+  "c12-rk-196169": {
+   "mode": "manual",
+   "text": "犬、猫、うさぎとご宿泊いただけます。最大3頭まで同伴可能です。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "0df1f849dda9f5da29a28eb5cec1e04a38b274cabb6123511cf1c143a62c77ef"
+  },
+  "c12-rk-151212": {
+   "mode": "manual",
+   "text": "小型犬と中型犬が同伴可能です。マナーベルトの持参が必須です。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "c44dda183284b9f52f9d4bb7356d23ae88814987d585f1b1bdd64fa9483fa0dc"
+  },
+  "c12-rk-190201": {
+   "mode": "unknown",
+   "text": "生後5か月以上。しつけ又はマナーパンツ、1年以内の狂犬病・3種以上の混合ワクチン接種、寄生虫対策が必要。攻撃性や感染性皮膚疾患がない犬。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "702598d6405b7686110f6929934a97ec85be081bde1c4620363fa11cf7b13f86"
+  },
+  "c12-rk-169284": {
+   "mode": "manual",
+   "text": "小型犬および中型犬が宿泊可能ですが、大型犬は不可です。狂犬病予防接種およびワクチン接種証明書の持参が必須であり、トイレのしつけができていることや、極端な無駄吠えがないことが条件となります。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "778c90a7c2a3d508fdf3af34a13649898e26c2153956563171ae303c4ee507ac"
+  },
+  "c12-rk-176999": {
+   "mode": "unknown",
+   "text": "The Cellor HouseとThe Hermitage Houseで犬同伴宿泊の案内あり。予約時に事前確認が必要です。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "c4b8be76676b9e5af185e1c641038aca7e518d0decad3acc1e924c336b0826b9"
+  },
+  "c12-rk-109425": {
+   "mode": "manual",
+   "text": "小型・中型犬が対象で、大型犬は電話にてご相談が必要です。一室2頭までで、トイレや無駄吠えしないなどの基本的なしつけができていることが前提です。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "d81c091480dc4d3bb2dbd103dcde4b0a685e407c2582a0aea3653141b6ca15be"
+  },
+  "c12-rk-161301": {
+   "mode": "manual",
+   "text": "キャンプサイトのみ中型犬以下2頭まで。リード持参。しつけ不足・鳴き癖のある犬は不可。コテージへの犬同伴は禁止。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "1897592002a575c812ac9b34264f11945fa83de9e632bd24ecbd5009f7e200ae"
+  },
+  "c12-rk-182721": {
+   "mode": "manual",
+   "text": "1歳以上・8kg以下の室内小型犬2頭まで。しつけ済みで、接種後2週間以上1年未満の狂犬病・5種以上混合ワクチン証明が必要。マナーウェアを着用。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "8bb1421d517b52fc0e85b1f6dad044404d57113baa297eaa826db23c3c8a11e0"
+  },
+  "c12-rk-161047": {
+   "mode": "manual",
+   "text": "小型犬は2匹まで、中型犬は1匹までお部屋での同宿泊が可能です。狂犬病及び混合ワクチン接種をしていること、トイレのしつけができていることが条件です。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "69ae5996b7d4e2078183095e63bffa8dda18924f794a7497233322f00d64870d"
+  },
+  "c12-rk-9340": {
+   "mode": "unknown",
+   "text": "露天風呂付き和洋室で犬同伴宿泊可。事前予約が必要。犬の大きさ・頭数・接種条件は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "0f3e3af5c369008b3aec492dc86ed97c6b1b99a26c7ea4914de7dd66379f027b"
+  },
+  "c12-rk-192123": {
+   "mode": "manual",
+   "text": "10kg未満の室内小型犬3頭まで。しつけ・予防接種・サークル内での就寝が条件。犬同伴は2日前までに連絡し、前日までに精算。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "3f1ab838beffafce43fe201fff3703b0eae81aadb1df184fe72d905120246224"
+  },
+  "c12-rk-199393": {
+   "mode": "unknown",
+   "text": "しつけがされていて、予防接種を受けているペットに限ります。リード又はゲージを必ずご持参ください。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "ab4beaf34d90c71da301f31bed39cd3fc9c5d92494712336024259684d096a6c"
+  },
+  "c12-rk-196418": {
+   "mode": "manual",
+   "text": "生後6か月以上。グランピングは室内小型犬2頭まで・合計10kg未満、フリーサイトは大型犬まで2頭。狂犬病・混合ワクチン等の証明、しつけ、ノミ・ダニ対策が必要。発情・妊娠中などは不可。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "8527f09670ec713b073de9427c7f07a0f695b432fdd3f1a808aefef52eb30a06"
+  },
+  "c12-rk-166079": {
+   "mode": "unknown",
+   "text": "生後8ヶ月以上であり、トイレ等の躾ができていること。狂犬病及びウイルス性伝染病の予防接種を受けられて接種後2週間以上1年未満であり、同伝染病に感染していないこと。またノミ・マダニ・寄生虫の駆除対策を済ませていること。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "a61bb1bf5ae5f9a055b5362499a61081465c1a92cdb23c1988bcd6c6a730be4b"
+  },
+  "c12-rk-184826": {
+   "mode": "unknown",
+   "text": "生後120日以上の室内犬。しつけ済みで、狂犬病・混合ワクチンの接種証明を提示。発情開始から3週間は不可。大きさ・頭数は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "57f563196de3cd8cb5ceb32d6633953eb372899fc55826bbdcb3e909f1094608"
+  },
+  "c12-rk-44008": {
+   "mode": "manual",
+   "text": "ペット連れの方は、コテージにご宿泊ください。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "a9d14955bb10e3ed0fefd9663be67e0792dd89193af24e1373b32e3b0048dcbf"
+  },
+  "c12-rk-185235": {
+   "mode": "manual",
+   "text": "犬同伴対応棟のみ。公式案内では大きさ・頭数の制限なし。吠え声等で迷惑になる場合は不可。室内では必ずケージを使用。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "45efe9bb66397288173e59580900a1f05e0f0d201db58ae7dc788f6256f61f9b"
+  },
+  "c12-rk-182493": {
+   "mode": "manual",
+   "text": "小型犬・中型犬・大型犬が対象で、一棟につき3頭までです。家庭犬として最低限度の躾がされており、無駄吠えなどで他のお客様の迷惑にならない室内犬に限ります。1年以内に狂犬病およびウィルス性伝染病の予防接種を受けている必要があります。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "f8995810bf5825f6a2804c364eb82efc40b93907beb5d909e3b4bb055b0dde1e"
+  },
+  "c12-rk-184381": {
+   "mode": "manual",
+   "text": "抱っこできる10kg以下の小型犬1頭まで。1年以内の狂犬病・3種以上混合ワクチン証明が必要。しつけ済みで健康な犬に限ります。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "88b6a2ee3acf1c711ec58bb6888a021c7a0b1f2d8c025522ceecc14de88183ea"
+  },
+  "c12-rk-178011": {
+   "mode": "manual",
+   "text": "中型犬(25kg以下)1匹までがご滞在いただけます。犬2匹以上または犬以外のペットはお断りしております。狂犬病と5種以上混合ワクチンの接種証明書のご提出が必要です。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "3f2673a4a1e0bca6f477571f2ee78a26f28d41ba46964a52917ad7fcf8af96e4"
+  },
+  "c12-rk-7024": {
+   "mode": "manual",
+   "text": "小型犬・中型犬・大型犬を専用ペットルームで受入れ。飼い主の客室との同室宿泊は不可。頭数上限・接種条件は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "c1a6c1228f5249752b7deb950efab2ff0805deceb6407c9cbb3f47f7b848a692"
+  },
+  "c12-rk-197113": {
+   "mode": "manual",
+   "text": "小型犬2匹まで同伴可能です。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "3a720f6552c43f2336bb87d776b8bb3274de698977a6afb789d83a33882e021e"
+  },
+  "c12-rk-181323": {
+   "mode": "unknown",
+   "text": "犬同伴可。事前申告が必要。しつけ・狂犬病などの予防接種が条件で、発情中は不可。大きさ・頭数の受入上限は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "c57a9f54902ba3525d15f1a6ccab2531664b0c13ad19a1858a456773b5bf4d7b"
+  },
+  "c12-rk-187345": {
+   "mode": "unknown",
+   "text": "犬同伴可。事前申告が必要。しつけ・狂犬病などの予防接種が条件で、発情中は不可。大きさ・頭数の受入上限は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "c57a9f54902ba3525d15f1a6ccab2531664b0c13ad19a1858a456773b5bf4d7b"
+  },
+  "c12-rk-183049": {
+   "mode": "unknown",
+   "text": "基本のしつけが必要。ケージを持参し、布団に近づけないなどの宿泊誓約に同意すること。犬の大きさ・頭数は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "6063c2490112396d1fb695a0dc856253c5ba6abba6a22030c8c62a20bcd26eef"
+  },
+  "c12-rk-183146": {
+   "mode": "unknown",
+   "text": "犬同伴可。事前申告が必要。しつけ・狂犬病などの予防接種が条件で、発情中は不可。大きさ・頭数の受入上限は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "2dbd65362ae98f514eaa8f799b82396f3c8d7f200c6f59278dfa6b196c99c0a3"
+  },
+  "c12-rk-186674": {
+   "mode": "manual",
+   "text": "犬同伴可。超大型犬（約40kg以上）・闘犬は不可。しつけ・予防接種が必要で、人用寝具は利用不可。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "02b3a6fb507b3681c3c38daafee0c33544b953ac748a40df8673f741611e100d"
+  },
+  "c12-rk-195078": {
+   "mode": "manual",
+   "text": "小型犬のみ同伴可能です。基本的なしつけ（トイレ、無駄吠え、噛み癖）ができていることと、ワクチン接種済みであることが条件です。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "34f10188bd673672021f40bfccd85adec635a172617a15caf61b096d18c6295a"
+  },
+  "c12-rk-183383": {
+   "mode": "unknown",
+   "text": "わんちゃんも利用可能なインテリアを導入しており、どのお部屋でも一緒にくつろげます。リードと遊び道具はご持参ください。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "66bddda00a0ac6feefb2a762f0d27cd13b089c07a0b9bb5958977be7ddf82d84"
+  },
+  "c12-rk-192436": {
+   "mode": "manual",
+   "text": "小型犬2頭または中型犬1頭まで。予防接種などの細則は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "2bd52e328911e10b4a3677a1d422ed38735fadc59de6b5767e33d3e19107610c"
+  },
+  "c12-rk-187535": {
+   "mode": "manual",
+   "text": "犬同伴は2棟限定。ペット愛鷹は犬種を問わず3頭まで、ペット十里木は小型・中型犬2頭まで。室内はケージを使用。予防接種・寄生虫対策などの規約を確認。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "9ae1a9124f920e74d6b6272091c337e4f6e58b1f28330740035af8047e4f54d2"
+  },
+  "c12-rk-165971": {
+   "mode": "manual",
+   "text": "事前に犬同伴を申告。狂犬病・5種以上混合ワクチン接種が条件で、証明書等を持参。最終接種3年以内、接種できない病状等は例外あり。発情中は不可。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "b17fec70092980040350a1a535824f72eb330fbd06aff8e640be479a9fb00854"
+  },
+  "c12-rk-31229": {
+   "mode": "manual",
+   "text": "小型・中型のワンちゃんが同伴可能です。トイレの躾ができていること、他のお客様やワンちゃんに無駄吠えしないこと、予防注射を済ませていることが条件です。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "6496f025e44b5ef8f0be83806866c47c5990d85d983452971afcb8b12d6f74ec"
+  },
+  "c12-rk-176942": {
+   "mode": "unknown",
+   "text": "大川汐見崎の犬同伴可の貸別荘を予約。犬種・体重・頭数・接種条件は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "8dd2a95a09544f585d4e2d8a9525787bec2fa634dbbcfa076b89282c8cf5b946"
+  },
+  "c12-rk-171876": {
+   "mode": "manual",
+   "text": "室内犬2頭まで。小型犬は1歳以上、中型犬以上は2歳以上。大型犬は事前相談。しつけ・毎年の接種が必要で、初回は証明書持参。未去勢犬はマナーベルト必須。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "bf48da382f9b4a164282290a016241d10269f3f9c4f4b11428cf5bc7682740e3"
+  },
+  "c12-rk-147945": {
+   "mode": "manual",
+   "text": "施設運営ブログに小型犬・中型犬・大型犬の宿泊案内あり。現行の頭数・サイズ条件は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "4736e16289708a0f90d7a4fc4a9ac0d506db9b7e91e5aa22470ffd1e37f4bc1c"
+  },
+  "c12-rk-188291": {
+   "mode": "manual",
+   "text": "愛犬の受け入れは1匹までで、室内飼いの小型犬・中型犬に限ります。トイレ・無駄吠えのしつけができていること、マナーウェア着用可が条件です。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "debdc24078125a746647a6665a097f45c518f5bd85f835aeda8b7fcad006c56f"
+  },
+  "c12-rk-191523": {
+   "mode": "manual",
+   "text": "10kg以下2頭まで、または20kg以下1頭まで。小型・中型の混在不可。大型犬・危険と判断される犬は不可。寄生虫対策が必要で、感染症・発情中・体調不良は不可。接種証明を求められる場合あり。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "81e4e31706091b4aa65af085e08b8eebe0ffa0de38d65e675e718fefef90dc83"
+  },
+  "c12-rk-146931": {
+   "mode": "unknown",
+   "text": "室内以外は必ずリードを着用してください。専用ドッグラン内のみノーリードで遊べます。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "d418d627cbee56f8fb354d520fa71bf1deae0a77d900ce492d77e34f7a629ff7"
+  },
+  "c12-rk-149468": {
+   "mode": "manual",
+   "text": "小型〜中型までの室内犬、盲導犬、介助犬が利用可能です。大型犬はご相談ください。狂犬病及び混合ワクチン接種済、トイレのしつけ・無駄吠えしないことが最低条件です。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "002ac564e22aaf6f4fe15e3217f4c82ef02a1fd67937c8c281e828637af30184"
+  },
+  "c12-rk-56287": {
+   "mode": "manual",
+   "text": "大型犬を含む受入れ条件・頭数は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "d1d768e227cfb03077611da5c4693bd131871c8fa05486bcf3761bde008dcd8e"
+  },
+  "c12-rk-197194": {
+   "mode": "manual",
+   "text": "生後6か月以上の室内犬で、しつけと接種証明が必要。接種不可の場合は獣医師の証明書を提示。大人人数＋1頭まで。ヒート中と前後2週間は不可。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "1034274a75a91c0fb39cd5e85db57c783fa37ed5d47ad76fef10f1260097f8ed"
+  },
+  "c12-rk-193069": {
+   "mode": "manual",
+   "text": "小型犬から中型犬まで同伴可能です。宿泊棟内以外ではペットにマナーウェアを着用していただきます。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "62a2e1a0c653c3f87f6e8368993eeff7a354a96a2b95b19e47e38b4f04327493"
+  },
+  "c12-rk-70831": {
+   "mode": "manual",
+   "text": "ペット可能なコテージに限定されます。ドッグランの利用には狂犬病・混合ワクチンの接種、皮膚病や伝染性の疾患がないこと、ノミ・ダニがいないことが条件です。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "b88b6ee174d1d57fa3ef471a0083a0d60724582c222e9aaf88e94d01d8042e95"
+  },
+  "c12-rk-28139": {
+   "mode": "manual",
+   "text": "ペット対応客室を予約。入館時は足を拭き、館内移動はケージか抱っこ。サイズ・頭数は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "f870b4e617f821a27bec2c2f216c3bb1d3116bacf0923ea277592664b7c58df2"
+  },
+  "c12-rk-187509": {
+   "mode": "manual",
+   "text": "室内犬2頭まで。館内はオムツまたはマナーバンド着用。共用部は抱っこかキャリーを使用し、来館前にシャンプーする。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "6a1cd40ac2df3a025d7665554922e7bb587b1738a8b79bb9e98e0c25d178c5f8"
+  },
+  "c12-rk-192360": {
+   "mode": "manual",
+   "text": "室内犬で1年以内の予防接種または抗体確認が必要。攻撃的な犬・生理中は不可。屋外はリード着用。犬種・頭数上限は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "3dcbad9facbeaca6ccbd8b730eaa313aa916f9c0e6ca0e802529ce9a48e6aa23"
+  },
+  "c12-rk-187146": {
+   "mode": "manual",
+   "text": "大型犬・老犬・多頭にも対応。種類と頭数を事前に伝える。健康・接種条件は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "e3a5bfc2a2d2384e55d23c38c7e5f7e138c9a39ffb07efccd4f0a0ce35df9f1c"
+  },
+  "c12-rk-142734": {
+   "mode": "unknown",
+   "text": "ワンちゃんのみ宿泊可です。宿泊可能頭数やサイズにつきましてはペットサークル内でご一緒いただける頭数とサイズでお願いをしております。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "5c1b2f49114d2489379cd8d5728a86016476351378d3fb8fe55555f45e870bd2"
+  },
+  "c12-rk-182470": {
+   "mode": "manual",
+   "text": "狂犬病予防接種・ワクチン接種の証明書のご持参が必要です。宿泊可能犬種と不可の犬種が定められており、該当するPDFの確認が求められています。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "192892acf88e41ad0b998e1694fe9b3d0a2e4b8a3aa4f02e82b795acffce0c78"
+  },
+  "c12-rk-167218": {
+   "mode": "unknown",
+   "text": "頭数や種類の制限はございません。ペットが入れるのは1階のみです。お布団に毛が付いてしまいますので、お布団の中へ入れることはご遠慮ください。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "4b7a72e35deba6245729a5c71e9ecab82f06761aa71be9d21a9005d03f3380d3"
+  },
+  "c12-rk-184988": {
+   "mode": "manual",
+   "text": "室内飼育のペットが対象。入室は1階広間のペットルームのみで、館内はマナーパンツ必須。サイズ・頭数・接種条件は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "99e1628edd87620c25bb096b43f7910c36fa330a22e73b73efc215e330f30622"
+  },
+  "c12-rk-1429": {
+   "mode": "manual",
+   "text": "中型犬以下1室1頭。登録・鑑札・しつけが必要。闘犬種・発情中は不可。狂犬病と5種以上混合ワクチン接種後2週間以上1年未満で、申込時に証明書コピーを提出。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "3be19441257048003cc97046f43fb96b48b7a8ea3ced7a316e5d98bae0f93727"
+  },
+  "c12-rk-183365": {
+   "mode": "manual",
+   "text": "小型犬・大型犬問わず、最大2匹まで同伴可能です。外出後室内に入る際は必ず足を拭いてください。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "47d0d94f305575d586325235334f81a27b8ec3df21e049038d99a59c185e0b1f"
+  },
+  "c12-rk-189516": {
+   "mode": "manual",
+   "text": "宿泊施設（ログコテージ、ウッドキャビン、トレーラーハウス）での利用は小型犬のみ可能です。ケージ・ペットシーツ・ローラー式のゴミ取り（コロコロ）の持参が必須です。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "af2d352f4bbf458bfedec70b45e1821e81125ed8b60fbd8df07ee3d81475252f"
+  },
+  "c12-rk-44124": {
+   "mode": "manual",
+   "text": "室内飼いであり、無駄吠えをしないこと、トイレのしつけができていること、家具などに噛み癖がないことが条件です。体重8kgまでの小型犬は3匹まで、18kgまでの犬は2匹まで、30kgまでの犬は1匹までで、総合計でも3匹までと制限があります。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "f2d187156a06729d9c7d319f9f28560c115f1bb9986bbd66cef816c5961fbd50"
+  },
+  "c12-rk-19890": {
+   "mode": "manual",
+   "text": "現在小型犬を中心にお部屋で留守番が出来ればお受けしております。中型以上も場合によってはお受けできる日もありますので、ご相談ください。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "838a27d3ea6c389713134f10e39a37582c84cff97166c1b12d4f0e9b564c1531"
+  },
+  "c12-rk-108753": {
+   "mode": "unknown",
+   "text": "室内飼育でトイレのしつけができた犬が対象。その他の健康・受入れ条件は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "11e289fecad3d704c2efc0b484d616803586c3e60efb376afdac61e50275ddc6"
+  },
+  "c12-rk-183374": {
+   "mode": "manual",
+   "text": "犬のみで、小型〜中型犬を想定しています。最大2匹までを目安とし、大型犬の場合は事前にご相談ください。1年以内の予防接種済み、ノミ・ダニ対策済み、基本的なしつけがされていること、攻撃性がないこと、ヒート中・妊娠中でないこと、室内で飼われていることが条件です。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "441f6430d702e82f131eb8ad67d5d32c669c719d5776f2ca1bcebb5ab6ce5af1"
+  },
+  "c12-rk-202586": {
+   "mode": "unknown",
+   "text": "接種後1年以内の狂犬病・ワクチン証明書が必要な室内犬。基本的なしつけが必要。ヒート中と前後2週間は不可。サイズ・頭数は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "36a39ec9318f2d6a3afac576b8e037c0e084f05fc21ff7d7830db62170848a17"
+  },
+  "c12-rk-198949": {
+   "mode": "manual",
+   "text": "小型犬のみ同伴可能です。事前の承認が必要です。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "810fd5216b2221ef3fdae778b7d20e38ef2e104bb1178b1aae2c169e9fef0d4e"
+  },
+  "c12-rk-74739": {
+   "mode": "manual",
+   "text": "室内犬に限り大型犬までOKです。トイレのしつけがされており、無駄吠えしないペットであることが条件です。お客様の人数よりもペットの数が多い場合はご遠慮願っております。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "53f4f94c3a851ffd0e14c5c246d0c7c2cdd03981333dd9af515281f7296b0396"
+  },
+  "c12-rk-190538": {
+   "mode": "manual",
+   "text": "犬対応のコテージ・キャビン・フリードッグサイトは3頭まで。他のテントサイトはリード着用で2頭まで。場内は約1mのリードを使い、立木につながない。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "b589c17d3ba7deaedfec061c575c9e244f343328be2e8e8e0f1f33d61b8f2e04"
+  },
+  "c12-rk-189567": {
+   "mode": "manual",
+   "text": "犬同伴可能なサイト・建物を選ぶ。ケビン・犬対応トレーラーハウス等の室内はケージ利用。健康・しつけ条件は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "9c5cbbcdf8ddcd614ae5bd6dbedb05d43fb88c27453863d8be1d899bad0389ca"
+  },
+  "c12-rk-39371": {
+   "mode": "unknown",
+   "text": "公式の同伴マナーに狂犬病・ワクチン接種、フィラリア・ノミ予防、公共の場でのリード使用を案内。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "75bc6d69a3bc0d7731a7ece50d017669a4b86d51037fdca060de60da7eb6f2c1"
+  },
+  "c12-rk-188691": {
+   "mode": "manual",
+   "text": "1テントにつき小型犬2頭まで同伴可能です。テント内ではワンちゃんはゲージの中でお過ごしいただくようお願いされています。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "0d19fbdb05864870b2f66d846f2580d210dd762e1241043b6ccba19fe4346a39"
+  },
+  "c12-rk-191623": {
+   "mode": "unknown",
+   "text": "犬・うさぎのみ同伴可能で、室内ではフローリングのリビングのみ許可されています。布団やベッドの上への乗り上げは厳禁です。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "2a492b592870757288479ccbc8d806364a350b904506a5e1d9c4e8289f4f0bf5"
+  },
+  "c12-rk-177974": {
+   "mode": "manual",
+   "text": "ケージのご持参、躾がされている、お布団に絶対近づけないこと等の誓約書の内容にご了承いただける場合、受け入れが可能です。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "ab3469159f993e66f6eea65e3fc7f7e594ec361e8876be30c0977ef48d4e8637"
+  },
+  "c12-rk-178255": {
+   "mode": "unknown",
+   "text": "しつけ済みで、ケージ持参と布団に近づけない等の誓約書に同意することが条件。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "438861867e154da8b62021bd969d3082984bcf6c534b8f9f1276f4e5ddfdb2de"
+  },
+  "c12-rk-67046": {
+   "mode": "unknown",
+   "text": "ペットキャリーに入れていただければ愛犬と一緒にチェックインのお手続きをする事ができ、館内からお部屋へ向かっていただけます。人に慣れていない愛犬は館外の専用の入り口からもお入りいただけます。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "cd12d81256efa56e73e5ff6c46dbf7825d26d44d2393eb62751d032ac338f3f1"
+  },
+  "c12-rk-196474": {
+   "mode": "unknown",
+   "text": "室内はマナーウェア着用。犬のサイズ・頭数・接種条件は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "0bd89c4375237e05fe117423a1140efb537b6fa39510505747e3edd84477f5ed"
+  },
+  "c12-rk-172047": {
+   "mode": "unknown",
+   "text": "ペット（犬）専用の宿泊施設を利用します。チェックインまでに狂犬病及びワクチン予防接種証明のコピーの提示が必要です。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "4f6ef95246ce4308ec735960833b857083d82a80711d7b6eeeed4f4a871915cd"
+  },
+  "c12-rk-186420": {
+   "mode": "manual",
+   "text": "犬と室内・テラスで過ごせる。サイズ・頭数・料金は予約時に相談。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "9c8d3781a8b4678d91dfea3fef5b29fe21cc0613bc02cf0a3c8107cbeb76c92e"
+  },
+  "c12-rk-164822": {
+   "mode": "manual",
+   "text": "体重10キロまでの小型犬2匹まで宿泊可能です。狂犬病ワクチン接種済みのペットに限ります。畳の上にのせるときは、ご持参したマナーウエアなどのペット用オムツをはかせてください。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "15fe88316d87282fa1de873c7b2f05be0f1784014100e39f086244461e2d282a"
+  },
+  "c12-rk-199775": {
+   "mode": "manual",
+   "text": "事前連絡が必要で3頭まで。室内はマナーベルト着用、寝具利用時は備付け防水マットを使用。サウナプールで犬を水浴びさせることは禁止。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "906325cd24312b8cb72192656a1c1df4ffcb75936a9ddb0ab5e6483053d3ead7"
+  },
+  "c12-rk-193542": {
+   "mode": "manual",
+   "text": "犬の大きさによる制限なし。大型犬は事前相談。頭数・予防接種などの条件は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "8f2496f66d5749ecad25ee0957980e921bcfcdde27dfc6022a74bdefee00ba53"
+  },
+  "c12-rk-14609": {
+   "mode": "manual",
+   "text": "しつけ済みの犬が対象。サイズ区分別料金あり。頭数・体重基準は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-16",
+   "body_sha256": "018bda8b1f40d01e596be522970a3adaf81e794b8064ddb65fdd34cb7de1269f"
+  },
+  "cx18-lodging-02": {
+   "mode": "manual",
+   "text": "館内ではお風呂場と厨房以外で同伴可能ですが、事故防止のためノーリードは客室のみとさせていただきます。スタッフはドッグライフカウンセラー有資格者であり、しつけ等でのご相談も可能です。",
+   "source_url": null,
+   "checked_at": "2026-10-18",
+   "body_sha256": "a6a841dd5f2ff572ab57bcaa6ea27f6867e9ec076f7f9125726d4622255f9c0d"
+  },
+  "cx18-lodging-03": {
+   "mode": "unknown",
+   "text": "ペットの種類・頭数に制限はありません。犬・猫・小動物・鳥類などすべてOK、頭数制限もありません。",
+   "source_url": null,
+   "checked_at": "2026-10-18",
+   "body_sha256": "530b8783b8a972752a371c24543f3a53c7b6d0445dc8e3f75b8218dd7cbe1308"
+  },
+  "cx18-lodging-04": {
+   "mode": "manual",
+   "text": "小型犬から超大型犬まで、5頭以上の多頭飼いも大歓迎です。狂犬病予防接種証明書と混合ワクチン接種証明書（コピー可）の持参が必須です。おしっこのしつけができていること、または滞在中マナーベルトの着用が求められます。",
+   "source_url": null,
+   "checked_at": "2026-10-18",
+   "body_sha256": "887f22092f0b54cce2c57d1b3b1e00a0e6d9fb58c05112b9a4fe64f9ede5379e"
+  },
+  "cx18-lodging-07": {
+   "mode": "manual",
+   "text": "狂犬病その他のワクチン接種を済ませていること、無駄吠えをしないこと、トイレ（おしっこ）の躾けができてること、未避妊の女の子の場合ヒート中はご遠慮ください。",
+   "source_url": null,
+   "checked_at": "2026-10-18",
+   "body_sha256": "3986cf8b4beff4136d6c871522d35ce319fba4edff01a4148f359aebf25ab065"
+  },
+  "cx18-lodging-08": {
+   "mode": "manual",
+   "text": "小型犬から超大型犬まで同室OKです。猫も同室可能です。",
+   "source_url": null,
+   "checked_at": "2026-10-18",
+   "body_sha256": "98ab3020895a79e6d0c3a1f3b6a1496cefeb37512113ae7df7a68e5b20ec4aed"
+  },
+  "cx18-lodging-09": {
+   "mode": "manual",
+   "text": "愛犬・愛猫家の方々のためのペットと一緒に宿泊できるプランです。1室あたり2名様のご利用より承ります。",
+   "source_url": null,
+   "checked_at": "2026-10-18",
+   "body_sha256": "9d0e5ed445b4f06067b335acd00f8deab0d51ec38f716ad546627203f1f578af"
+  },
+  "cx18-lodging-11": {
+   "mode": "manual",
+   "text": "大型犬の受入れが可能で、1室につき大型犬3頭まで宿泊可能です。ただし、ホテルごとに異なる場合がありますので、詳細は各店舗のHPをご確認ください。",
+   "source_url": "https://www.livemax-resort.com/tochigi/kinugawa/",
+   "checked_at": "2026-10-18",
+   "body_sha256": "766a583ce49c314809fa478de33ee00d73d9a197f06a159ff80bcbf9c5b9d8e7"
+  },
+  "cx18-lodging-12": {
+   "mode": "manual",
+   "text": "大型犬の受入れが可能で、1室につき大型犬3頭まで宿泊可能です。ホテルごとに異なる場合がありますので、詳細は各店舗のHPをご確認ください。",
+   "source_url": "https://www.livemax-resort.com/kanagawa/hakonesengokuhara/",
+   "checked_at": "2026-10-18",
+   "body_sha256": "4e6277038a552aa4c3566f8fcfff67abef41c11ca00bf107ab7921cb6cb63b79"
+  },
+  "cx18-lodging-13": {
+   "mode": "manual",
+   "text": "小型犬・中型犬・大型犬問わず、1室につき3頭まで宿泊可能です。体重制限はありませんが、「混合ワクチン」と「狂犬病ワクチン」の接種証明書（コピー可）のご持参が必須です。",
+   "source_url": null,
+   "checked_at": "2026-10-18",
+   "body_sha256": "0d075deef425e7189ccb04377fc35701d30d0e62ef4f2760693e05bc1d59ece1"
+  },
+  "cx18-lodging-14": {
+   "mode": "manual",
+   "text": "小型犬・中型犬・大型犬問わず、1室につき3頭まで宿泊可能です。体重制限はありませんが、「混合ワクチン」と「狂犬病ワクチン」の接種証明書（コピー可）のご持参が必須です。",
+   "source_url": "https://www.livemax-resort.com/shizuoka/jyogasakikaigan/",
+   "checked_at": "2026-10-18",
+   "body_sha256": "3edb61c75432c63b94bbafa944d4cabbd92ea65ff9c0369a05dea62d0a935f05"
+  },
+  "cx18-lodging-15": {
+   "mode": "manual",
+   "text": "小型犬・中型犬・大型犬問わず、1室につき3頭まで宿泊可能です。体重制限はありませんが、「混合ワクチン」と「狂犬病ワクチン」の接種証明書（コピー可）のご持参が必須です。",
+   "source_url": null,
+   "checked_at": "2026-10-18",
+   "body_sha256": "7289267c12701bc480f8ee700e61eb088991f12ea7e97cabe81c627e9214eb2a"
+  },
+  "cx18-lodging-16": {
+   "mode": "manual",
+   "text": "大型犬の受入れが可能で、1室につき大型犬3頭まで宿泊可能です。ただし、ホテルごとに異なる場合がありますので、詳細は各店舗のHPをご確認ください。",
+   "source_url": "https://www.livemax-resort.com/shizuoka/ito/",
+   "checked_at": "2026-10-18",
+   "body_sha256": "cb98c40a9510b2e7a56706fc97fc017afcc1c257025549fbfb21662485cce294"
+  },
+  "cx18-lodging-17": {
+   "mode": "manual",
+   "text": "大型犬も受入れ可能で、1室につき大型犬3頭まで宿泊可能です。「混合ワクチン」と「狂犬病ワクチン」の接種証明書（コピー可）のご持参が必要です。",
+   "source_url": "https://www.livemax-resort.com/shizuoka/amagiyugashima/",
+   "checked_at": "2026-10-18",
+   "body_sha256": "6e4a462d4a18079ff00ed098e74257c4adbe7191b031aa85f30fd36bd69427bf"
+  },
+  "cx18-lodging-18": {
+   "mode": "manual",
+   "text": "大型犬の受入れが可能で、1室につき大型犬3頭まで宿泊可能です。ただし、ホテルごとに異なる場合がありますので、詳細は各店舗のHPをご確認ください。",
+   "source_url": "https://www.livemax-resort.com/shizuoka/izushimoda/",
+   "checked_at": "2026-10-18",
+   "body_sha256": "97a28c6899d765e4f7248d84f9c14305d6ad7d90e53c3a4e99f0139ea98ed854"
+  },
+  "cx18-lodging-19": {
+   "mode": "uniform",
+   "max_dogs": 3,
+   "max_kg": 10,
+   "kg_inclusive": true,
+   "sizes": [
+    "small"
+   ],
+   "text": "生後4ヶ月以上で体重10kg以下の小型犬のみ対象です。1室最大3匹まで受け入れ可能です。狂犬病とウイルス性伝染病の予防接種証明書の写しを持参する必要があります。",
+   "source_url": "https://www.toyoko-inn.com/search/detail/00037/",
+   "checked_at": "2026-10-18",
+   "body_sha256": "a9adde5a9884d7190ded1035458c71f8c1b3ede58f6be5bf4ad7e903d642ed8d"
+  },
+  "cx18-lodging-20": {
+   "mode": "uniform",
+   "max_dogs": 3,
+   "max_kg": 10,
+   "kg_inclusive": true,
+   "sizes": [
+    "small"
+   ],
+   "text": "生後4ヶ月以上で体重10kg以下の小型犬のみ対象です。1室最大3匹まで受け入れ可能です。狂犬病と5種以上の混合ワクチンの証明書写し（接種後2週間以上1年未満）の持参が必要です。",
+   "source_url": "https://www.toyoko-inn.com/search/detail/00120/",
+   "checked_at": "2026-10-18",
+   "body_sha256": "035c624493c9c9df01bd928cabe59391585f5c378e6807d556a3dfd0582062ee"
+  },
+  "cx18-lodging-22": {
+   "mode": "manual",
+   "text": "犬種・大きさ・頭数などお知らせください。小型犬・老犬の場合、ペットおむつの着用をお願いいたします。",
+   "source_url": null,
+   "checked_at": "2026-10-18",
+   "body_sha256": "8297a0e55a5ca3d2be22927bce1f5f5f0a2dd47a3a93b4be52e0a76a9d0f7732"
+  },
+  "cx18-lodging-23": {
+   "mode": "unknown",
+   "text": "しつけの出来ていないワンちゃんの同伴はお断り致します。お越しになる前に、ワンちゃんのシャンプーをよろしくお願いいたします。散歩の時はリードをご利用ください。",
+   "source_url": null,
+   "checked_at": "2026-10-18",
+   "body_sha256": "1519b1f86360c1ba2ee0559ae67df29dbb81b2d295a4d0e2692aa4f7a42623ec"
+  },
+  "cx18-lodging-24": {
+   "mode": "manual",
+   "text": "ペット連れのお客様も宿泊可能です。ケージかクレート、またはサークルを必ず持参する必要があります。中に入って寝ることができない場合は、ご宿泊いただけません。",
+   "source_url": "https://logcottagesakura.com/",
+   "checked_at": "2026-10-18",
+   "body_sha256": "cd5332da313589b69252437f92fb15f9ce45f23a3d193d449b2d0af6c3b3e4f6"
+  },
+  "cx18-lodging-25": {
+   "mode": "unknown",
+   "text": "わんこ同伴率ほぼ１００％で、気兼ねなくお泊りできます。にゃんこや小動物も宿泊可能です。",
+   "source_url": null,
+   "checked_at": "2026-10-18",
+   "body_sha256": "94e19b973e47e0e01646286510e9e1ec3214e18723d2d34fe122ac8dbb3de84b"
+  },
+  "cx18-lodging-27": {
+   "mode": "manual",
+   "text": "生後4ヶ月以上で体重10kg以下の小型犬のみ対象です。1室最大3匹まで受け入れ可能です。狂犬病と5種以上の混合ワクチンの証明書写し（接種後2週間以上1年未満）の持参が必要です。",
+   "source_url": null,
+   "checked_at": "2026-10-18",
+   "body_sha256": "035c624493c9c9df01bd928cabe59391585f5c378e6807d556a3dfd0582062ee"
+  },
+  "cx18-lodging-28": {
+   "mode": "manual",
+   "text": "中型犬まで（10kg）が同伴可能です。頭数やワクチン等の詳細な条件は記載がありません。",
+   "source_url": null,
+   "checked_at": "2026-10-18",
+   "body_sha256": "a9647365297237e82ddc4681bc29bbd5daf9578d366026c25ec3c2bf799a6483"
+  },
+  "cx18-lodging-29": {
+   "mode": "manual",
+   "text": "約15kg以下の中型犬、小型犬、超小型犬が対象です。大型犬は客室の広さのため宿泊できません。狂犬病予防接種が済んでいること、トイレのしつけができていることが条件です。",
+   "source_url": null,
+   "checked_at": "2026-10-18",
+   "body_sha256": "2d0581155fdb57688be768dc44f9df3da2852b8dcdc0e11d02650d7d21836340"
+  },
+  "cx18-lodging-30": {
+   "mode": "manual",
+   "text": "小型犬・中型犬・大型犬問わず、1室につき3頭まで宿泊可能です。体重制限はありませんが、「混合ワクチン」と「狂犬病ワクチン」の接種証明書（コピー可）のご持参が必須です。",
+   "source_url": null,
+   "checked_at": "2026-10-18",
+   "body_sha256": "5806a3a2671339684586df56d6264607c22b56faf0598bf5a4aa72ba46c692e8"
+  },
+  "b2-lodging-01": {
+   "mode": "manual",
+   "text": "室内犬（大型犬まで）で狂犬病及び伝染病等のワクチン接種を受けている必要があります。無駄吠えやトイレなどの基本的なしつけが出来ていることが条件です。",
+   "source_url": "https://hotdog.boo.jp/",
+   "checked_at": "2026-10-18",
+   "body_sha256": "d019e4fdb7fbac1a8195f113e94ac7cceaf20dfaf11d9081b613cdf6b0ee5f67"
+  },
+  "b2-lodging-03": {
+   "mode": "unknown",
+   "text": "普段室内で生活していれば大きさを問わず入室可能です。予防注射は必ず済ませておいてください。室内でトイレをさせているわんちゃん、生理中のワンちゃんは要相談です。",
+   "source_url": "https://www.lcv.ne.jp/~waremoko/",
+   "checked_at": "2026-10-18",
+   "body_sha256": "6d1662cc22a7cd6425f637523911dd35f0b47d4f364336bc87ddbc80c985c205"
+  },
+  "b2-lodging-05": {
+   "mode": "manual",
+   "text": "最大4頭まで同伴可能です。大型犬は専用の出入り口を利用する必要があります。",
+   "source_url": null,
+   "checked_at": "2026-10-18",
+   "body_sha256": "da82eea284a8244e9b77736ae72184872994c52b5788a9323bcbbac5864d99b3"
+  },
+  "b2-lodging-08": {
+   "mode": "unknown",
+   "text": "ペットは種類を問わず大歓迎です。具体的な大きさ・頭数・ワクチン等の条件は記載がありません。",
+   "source_url": null,
+   "checked_at": "2026-10-18",
+   "body_sha256": "9a4cb0aecf333898a15e68c9eda9f5e8b2699b4d9f93cbeca2a208df6694022b"
+  },
+  "b2-lodging-10": {
+   "mode": "unknown",
+   "text": "ペット連れ込みが可能ですが、ゲージをご用意して予約時に確認する必要があります。",
+   "source_url": null,
+   "checked_at": "2026-10-18",
+   "body_sha256": "ace73ee44adf6959998a61586b0cee6e0928a51ed6e430356222d9fa49c00fdc"
+  },
+  "b2-lodging-13": {
+   "mode": "manual",
+   "text": "利用できるお部屋に限りがあります。ペット1頭につきベット利用料金が掛かります。",
+   "source_url": null,
+   "checked_at": "2026-10-18",
+   "body_sha256": "6e239f491c86f728fa6d625bebd4213480fdafc1939d9917157cc3ada0ff5d15"
+  },
+  "b2-lodging-14": {
+   "mode": "manual",
+   "text": "小型犬3頭または中型犬1頭まで同伴可能です。狂犬病と5種以上の混合ワクチン接種（接種後2週間以上1年未満）、生後6ヶ月以上、トイレのしつけができていることなどが条件です。",
+   "source_url": null,
+   "checked_at": "2026-10-18",
+   "body_sha256": "9ada75981b01f78f7647fee8790c8a5c9357566a2176399c1938cf96e09f4a35"
+  },
+  "b2-lodging-15": {
+   "mode": "uniform",
+   "sizes": [
+    "small"
+   ],
+   "text": "小型犬のみ同伴可能です。7月・8月は断ることが多くなります。基本的な躾（トイレや無駄吠えなど）ができていること、お食事の際にお部屋で静かに待てることが条件です。",
+   "source_url": "https://www.bugaboo.gr.jp/",
+   "checked_at": "2026-10-18",
+   "body_sha256": "278ab4deb277c246aa9514f300b0c971da7645a677910a532351b809753fd17f"
+  },
+  "b2-lodging-16": {
+   "mode": "manual",
+   "text": "小型犬に限られており、大型犬はご遠慮願います。各棟原則小型犬2匹までとなります。無駄吠えをしない、トイレの躾ができているなど基本的なしつけができている犬のみご宿泊いただけます。",
+   "source_url": null,
+   "checked_at": "2026-10-18",
+   "body_sha256": "891d88d5a795d10c93d1740a4986d4f0383a94936a49337a09b28b23d0f50660"
+  },
+  "b2-lodging-17": {
+   "mode": "manual",
+   "text": "小型・中型犬の利用が可能です。詳しいことはお問い合わせください。",
+   "source_url": null,
+   "checked_at": "2026-10-18",
+   "body_sha256": "6b0c935eb5abbb4e982ed452c953d4eec854d4d4b690552074d54b426928cc56"
+  },
+  "b2-lodging-26": {
+   "mode": "manual",
+   "text": "生後4ヶ月以上で、狂犬病の予防接種と5種以上の混合ワクチンを接種している小型犬（10kgまで）です。無駄吠えをしない、トイレのしつけができていること、ゲージでお留守番できることが条件です。",
+   "source_url": "https://www.rosen-h.com/dog/",
+   "checked_at": "2026-10-18",
+   "body_sha256": "2fb44fa4941d937c255d4b075d6f3f0c9ff7270dd2a18eca31512443e567edcb"
+  },
+  "b2-lodging-28": {
+   "mode": "unknown",
+   "text": "1階は犬同伴可能（dog friendly）と記載されています。具体的なサイズや頭数の制限、ワクチン等の条件は本文に明記されていません。",
+   "source_url": "https://whitetreelodge.com/log-house",
+   "checked_at": "2026-10-18",
+   "body_sha256": "b21fdce09202aa388e999b3e74805048e8a8212cdae20cfabe87292b0f238120"
+  },
+  "b2-lodging-30": {
+   "mode": "manual",
+   "text": "ワンちゃん連れ専門の施設であり、犬種や大きさ問わず大型犬でも同室で宿泊可能です。静かな時間を大切にするため、小さなお子様連れや団体での貸切利用は遠慮いただいております。",
+   "source_url": null,
+   "checked_at": "2026-10-18",
+   "body_sha256": "a0482f9c3eefde1a1c82d7933e5088061cbc79787123763dfb235d0362311807"
+  },
+  "dot1019-olive": {
+   "mode": "manual",
+   "text": "犬種・サイズの区別なし(料金表の記載)。超大型犬・多頭の場合は食堂の席が狭くなることがある",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "84b448d79f9298e5bd67a45aa24e80045739c2fb30aa96de054099f4165e2320"
+  },
+  "dot1019-harvest-amagi": {
+   "mode": "manual",
+   "text": "トイレのしつけができた生後1年以上・無駄吠えしない・日常室内飼い。頭数は部屋の最大定員まで(4人部屋なら4頭)",
+   "source_url": "https://www.resorthotels109.com/amagikogen/stay/pdf/pet.pdf",
+   "checked_at": "2026-10-19",
+   "body_sha256": "9ed92f38abf9dfa388c410027c0c6d66091b3e3a44e3b117c94269eb50c17a6e"
+  },
+  "b3-lodging-02": {
+   "mode": "manual",
+   "text": "大型犬は1匹まで、小型犬・中型犬を含め最大3匹までご宿泊いただけます。ワンちゃんは1階のみご利用いただけます。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "a948e80d3872efdee32a524359206857511d6cf44254e6e11bdb1ebf752c8e62"
+  },
+  "b3-lodging-03": {
+   "mode": "manual",
+   "text": "犬種問わず、1棟につき2頭まで同伴可能です。ご宿泊日より1年以内の「狂犬病予防接種」および「混合ワクチン接種」の証明書の提出は必須です。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "c9f6b88ee78cfa6d9ec4548e6c868be9e267eade269452e55df0065431cdff8b"
+  },
+  "b3-lodging-04": {
+   "mode": "manual",
+   "text": "小型犬〜大型犬まで対応しており、一律料金で宿泊可能です。頭数やワクチン等の詳細な条件は記載がありません。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "cbfcc9d9354b5bf4dee6c805906eb35da7f4bdbc5e2d140bf619c72cc720dd16"
+  },
+  "b3-lodging-05": {
+   "mode": "manual",
+   "text": "小型犬から大型犬まで、また多頭での同伴も可能です。ワクチンやしつけに関する具体的な記載はありません。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "fb842359daf47612314cd106c709976192db3fd6dc009d146aab0d45c4e8dddb"
+  },
+  "b3-lodging-06": {
+   "mode": "manual",
+   "text": "ペット同伴の場合は必ず予約時にお知らせください。ペットケージまたはクレート、およびペットに関する備品等はご持参ください。コテージ内ではマナーパンツをご使用ください。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "3e044a01e5aed3b227108f16dcb74bb7b03d1ed086e25d1acaccb3a5c193a2ce"
+  },
+  "b3-lodging-09": {
+   "mode": "unknown",
+   "text": "本文には犬の大きさ・頭数・ワクチン・しつけなどの具体的な条件が記載されていません。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "0c80baf41f93cf8e92c7fd3f18908cd7f6b172fc6835d9ad03bf4d257ddb2436"
+  },
+  "b3-lodging-11": {
+   "mode": "manual",
+   "text": "150坪以上のドッグランは1.1mのフェンスで囲まれており、大型犬まで対応しています。ワンちゃんが快適に過ごせるグッズを用意しています。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "6a703905d5d11687136ec0b03fe7c3dccd613b1a2747738cbba1ce2ff78e2e03"
+  },
+  "b3-lodging-13": {
+   "mode": "manual",
+   "text": "ペット同伴の場合は、必ずご予約時にお知らせください。ペットケージ、またはクレートをご持参ください。コテージ内ではマナーパンツをご使用ください。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "6ef5733dc55b6810dbacfeaadcd988f79b1a42553617b819ea8c35c3bf5e1939"
+  },
+  "b3-lodging-15": {
+   "mode": "manual",
+   "text": "大型犬も同伴可能と記載されています。具体的な頭数制限やワクチン接種の義務については本文に明記がありません。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "b45a949e8aa683909bf2d12ac06136b2a8317c82029d134d036a2909f609c9b5"
+  },
+  "b3-lodging-16": {
+   "mode": "manual",
+   "text": "犬同伴可能であり、室内もペットOKです。約600坪の広大な天然芝ドッグランを有するプライベート空間で遊べます。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "e565a75026e131dc2fb0a6af515cee9eed06283b035752ca2b61de3a57c200c4"
+  },
+  "b3-lodging-17": {
+   "mode": "manual",
+   "text": "小型犬の同伴が想定されています。室内ドッグランは特殊フローリング材（滑り止め加工）が施されており、ワンちゃんも人も安心です。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "ac6ef320e429f27e6bc330605bbdfe4d7e2fdc2667743edcee15a4fe3b041f4c"
+  },
+  "b3-lodging-22": {
+   "mode": "manual",
+   "text": "大型犬OKと記載されています。具体的な頭数やワクチン、しつけに関する条件は本文に明記されていません。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "35d599cd91d616c029981fe717362e29debe69ede6bc4fd84a01e9caa122b899"
+  },
+  "b3-lodging-23": {
+   "mode": "manual",
+   "text": "小型犬から大型犬まで同伴可能です。1年以内に狂犬病ワクチンおよび5種以上の混合ワクチン（抗体検査でも可）を受けた室内犬に限ります。攻撃的な性格や生理中・妊娠中のペットは受け入れ不可です。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "03aee559aeeb752f4c2006551e1272b0490b89cf4b8492517e724a43ee082c96"
+  },
+  "b3-lodging-25": {
+   "mode": "manual",
+   "text": "ペットは3匹まで同伴OKです。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "0d6ff29ddfa5a72d3486cbb802e09b79b6075ab7363a05998bcb8da42e110f72"
+  },
+  "b3-lodging-26": {
+   "mode": "manual",
+   "text": "小型犬から大型犬まで同伴可能です。1年以内に狂犬病ワクチンおよび5種以上の混合ワクチン（抗体検査でも可）を受けている室内犬に限ります。攻撃的な性格や生理中・妊娠中の犬は受け入れ不可です。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "a9a796a5abb8939b326e94148e3cbd01b3e31cc0ee0ff9c981ad400836175880"
+  },
+  "b3-lodging-29": {
+   "mode": "manual",
+   "text": "小型犬・中型犬（20kg以下）で2匹まで受入可能です。基本のしつけができていることが条件となります。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "7545d1480ec8a0ffa11ff09e91ac40091eed196dc207f26e2be67d60cf6ab590"
+  },
+  "b3-lodging-30": {
+   "mode": "unknown",
+   "text": "本文には具体的な大きさ・頭数・ワクチン等の条件は記載されていません。フェンスで囲まれた敷地内で安心して過ごせる環境が整っています。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "47c4bda4c38758db94f15722ea7c320fc8b6bf55ed5023c8f70183cd7d2fcb71"
+  },
+  "b3-lodging-31": {
+   "mode": "unknown",
+   "text": "基本的なしつけ（噛まないこと・無駄吠えしないこと・飛びつかないこと・排泄）がなされていること。狂犬病予防注射及び５種類以上の混合ワクチン予防接種を受けており、接種後２週間以上１年未満であること。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "3c39368f4368bad082be548b74b674281cac5b73b59227788f94d4cf3fb1d477"
+  },
+  "b3-lodging-33": {
+   "mode": "manual",
+   "text": "対象は室内犬・小型犬〜中型犬で、頭数は2頭までです。無駄吠え・トイレ・噛み癖等のしつけができていること、狂犬病ワクチン・混合ワクチン接種済（または抗体確認済）、ノミ・ダニ・フィラリアの予防・駆除済、チェックイン前にシャンプー済であることが条件です。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "8afed44cd0918b6a4c3d3044cfce63773dc5d26f8da2eeb8522673810c975682"
+  },
+  "b3-lodging-36": {
+   "mode": "manual",
+   "text": "ペット同伴は可能ですが、追加料金が必要です。補助犬は無料です。超大型犬はご相談ください。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "9ff87177cf9241ccc704d014204f58752ad8a150699c006850d99ede6cb38f97"
+  },
+  "b3-lodging-37": {
+   "mode": "manual",
+   "text": "小型犬～大型犬まで一緒にご宿泊ＯＫ！と記載されています。具体的な頭数制限やワクチン、しつけに関する条件は本文に明記されていません。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "676b4a59f32e79aaf0623c16630d5ba3a4f4baeec2a4f471513039f4e823806b"
+  },
+  "b3-lodging-40": {
+   "mode": "unknown",
+   "text": "ペット同伴は可能ですが、追加料金が必要です。予約時にペットの頭数を予約内容に追加のうえ、メッセージでもお知らせください。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "35cb399d4b6bdb46c11588bfecfcf9e7d74a40335963cb2da719dbe880fe0d27"
+  },
+  "b3-lodging-42": {
+   "mode": "manual",
+   "text": "小・中型犬と大型犬の宿泊が可能です。ペットをお連れの方は、ご予約時に必ずご相談ください。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "ee98e35ba26999094be91bf023311de678ca60048d40468d073024b1831d5d15"
+  },
+  "b3-lodging-46": {
+   "mode": "manual",
+   "text": "犬の頭数制限はなく、大型犬や超大型犬、多頭飼いのお客様も安心してお泊りいただけます。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "c1b94c4f8db7d754f35952ea635719f8c250edffc3670783189a1e8c8060c98c"
+  },
+  "b3-lodging-47": {
+   "mode": "manual",
+   "text": "躾の出来たワンちゃんに限り館内の利用が可能です。コテージ内はケージの中のみ、ペンション棟(P棟)は自由にお過ごし下さい。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "4ad42e8a61a947818d90a0d1c8b53be9df8f586ed4ce4c38e0e3f825917c329e"
+  },
+  "b3-lodging-50": {
+   "mode": "manual",
+   "text": "大型犬まで同伴可能です。具体的な頭数制限やワクチン接種の義務、しつけに関する詳細な記載はありません。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "ff50893f95dd5ce596b3644df814f7a572e67b8a1d281ea1d2c52962190d100c"
+  },
+  "c13-rk-170740": {
+   "mode": "manual",
+   "text": "室内飼育の犬は犬種・体重を問わず10頭まで。しつけ、寄生虫対策、接種後2週間以上1年未満の狂犬病・混合ワクチン証明が必要。発情期・犬だけの留守番は不可。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "14ab5001396b9d3570988d83b18c80c1e8ca1fe56fe94dbddbfac8b6da3e1256"
+  },
+  "c13-rk-184342": {
+   "mode": "unknown",
+   "text": "犬同伴宿泊可。サイズ・頭数・接種条件は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "380c63d026f3511e4c9507d036fba9ebb83706431dad8af68eaad8a06625716e"
+  },
+  "c13-rk-194197": {
+   "mode": "manual",
+   "text": "小型犬3頭、または中・大型犬2頭まで。室内飼育・しつけ・予防接種が必要。発情期と犬だけの留守番は不可。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "4e06be48fe6263d838eb0da682724a60a793bbd175c88dcc8bdb58a7996d61a1"
+  },
+  "c13-rk-31855": {
+   "mode": "unknown",
+   "text": "ペット同室宿泊に対応。犬のサイズ・頭数・接種条件は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "0dde662bd17fcdd51ba0f126a0260ae82ce65fc85f12c232424437882d74e4cf"
+  },
+  "c13-rk-171380": {
+   "mode": "manual",
+   "text": "小型・中型犬3頭まで。寝具での添い寝は不可。接種条件は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "99adecebfb67f82adb1986544c0739ad5a32272c7f3638c86b6e4b12209354ca"
+  },
+  "c13-rk-199835": {
+   "mode": "manual",
+   "text": "しつけのできた犬2頭まで。クレート持参。犬は書庫・中二階・ロフトへ入室不可。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "62205ca9b61f17d2f2c01548f498c12d6e8f662af1612a02ecc318f0c6a2bd39"
+  },
+  "c13-rk-198535": {
+   "mode": "unknown",
+   "text": "犬同伴対応。サイズ・頭数・接種条件は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "996f030f844495bffb10b251f5eca0ed3ebf9854596fb69d4794f2310ea2a3ab"
+  },
+  "c13-rk-158815": {
+   "mode": "manual",
+   "text": "宿泊者1人につき犬2頭まで。発情期やマーキングのある犬はマナー用品着用。犬だけの留守番不可。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "0e35fb02b5621723ce8c89d1a1f5555d0acbed8e7db11cdb590df75f29fd8f33"
+  },
+  "c13-rk-193266": {
+   "mode": "manual",
+   "text": "室内飼育でしつけのできた犬。混合ワクチン証明が必要。発情期・攻撃性のある犬は不可。超大型犬種は原則不可で冬季は個別相談。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "4a5192918dc031d84fd1cc720524703ee0f4a9eec23a09e651e3734405d930a9"
+  },
+  "c13-rk-186269": {
+   "mode": "unknown",
+   "text": "犬同伴宿泊可。サイズ・頭数・接種条件は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "024535ec52297351af256c41e23a9a156dc46025179b151a06816bfe8080a481"
+  },
+  "c13-rk-186272": {
+   "mode": "manual",
+   "text": "コテージA・Bは犬同伴可。予約時に頭数を申告し、室内ではケージを使用。場内移動はリード着用。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "3e0651f8619c8150bb1a2a33b6f97332e271dad21d8c5a2b1cc2e116fec305a6"
+  },
+  "c13-rk-151358": {
+   "mode": "unknown",
+   "text": "犬同伴宿泊可。サイズ・頭数・接種条件は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "ea88a8dcee8f3364378e64a493962113bc24661b95374aaf0a4d1278d958a15d"
+  },
+  "c13-rk-130606": {
+   "mode": "manual",
+   "text": "指定の小型犬種とそのミックスが対象。その他は事前相談。1年以内の狂犬病・混合ワクチン証明が必要。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "50036bf37a87e64dc218f2ad4e98fe44906a925c8b733dbe3703e2ca891ecc7a"
+  },
+  "c13-rk-53188": {
+   "mode": "manual",
+   "text": "原則8kg以下の小型犬1頭。超える場合の受入可否は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "ecd9027e179770405565b72bbe9513426ad00c97d103d345d21acc8b8d0ab706"
+  },
+  "c13-rk-108109": {
+   "mode": "manual",
+   "text": "犬と泊まれるコテージあり。サイズ・頭数・接種条件は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "f6557bf2034e8ff131b40bb32a126138b2244419bb044e237e2c4baadaa8f5aa"
+  },
+  "c13-rk-198021": {
+   "mode": "manual",
+   "text": "小・中型犬は2頭、大型犬は1頭が目安。25kgの区分表記が重なるため該当犬は予約前確認。発情期や攻撃性のある犬は不可。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "f4474278e3aedfc95cad67d079a2aacd4c759e56f736a16adc6a880afa1991f3"
+  },
+  "c13-rk-20587": {
+   "mode": "manual",
+   "text": "しつけのできた室内犬。通常2頭までで3頭以上は事前相談。繁忙期の制限は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "48d9acdc3e00b8e8351a0597d798ca6c6b4a59d1fb68b1138f118efaf30317cb"
+  },
+  "c13-rk-184339": {
+   "mode": "manual",
+   "text": "生後6か月以上で、室内飼育・しつけ・1年以内の5種以上の接種が条件。大人1人につき1頭が目安。犬だけの留守番と発情期は不可。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "7d662f0d0650ea7276383646b17cfd3f7b9f1bc9c6e1ba4709c5e5e753278df4"
+  },
+  "c13-rk-39481": {
+   "mode": "manual",
+   "text": "生後4か月以上の室内飼育の小・中型犬。しつけ、狂犬病・混合ワクチン接種が条件。事前連絡が必要。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "0833e9278064dd892fe5f5b988f273713fa048e392fdb79cda09472852de11a2"
+  },
+  "c13-rk-188021": {
+   "mode": "manual",
+   "text": "犬同伴対応客室あり。サイズ・頭数・接種条件は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "bd14affa45c606bb3b582a5f1e5af3901bde3a10c21d635f0d655384edd1d778"
+  },
+  "c13-rk-192089": {
+   "mode": "manual",
+   "text": "小・中型犬3頭、または大型犬2頭まで。予防接種証明が必要。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "6db0721fd036a8a53a56f6a4ba79ce4e51d0ef1a87c62a20bdb0c04a81beda5c"
+  },
+  "c13-rk-178615": {
+   "mode": "manual",
+   "text": "合計5頭まで、うち大型犬は3頭まで。2名用客室は小・中型犬対象。大型犬は25kg以上の区分。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "e61feaee44658ee69ed23815ee99689f75d606b893b263d2ef02ab92c5554ed2"
+  },
+  "c13-rk-176940": {
+   "mode": "manual",
+   "text": "犬同伴可能な棟で10頭まで。利用規約への同意が必要。接種条件は施設の案内を確認。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "8a5b99e662c2f3393fb3f19b431155dc591bde5690337b3482f11fc9a15c8934"
+  },
+  "c13-rk-182765": {
+   "mode": "manual",
+   "text": "小型犬から大型犬まで同伴可。頭数・接種条件は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "5c924b6b688bdba84c32b8f483333e87548970e95f8573f26e591da1800f1f51"
+  },
+  "c13-rk-188792": {
+   "mode": "manual",
+   "text": "犬は5頭まで。予防接種証明書の提示は不要との案内。接種自体が不要という意味ではない。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "b0b12a01fc050af47d27187ac89a5ed294174673be184bc181888a7ffaa6fe84"
+  },
+  "c13-rk-184528": {
+   "mode": "manual",
+   "text": "Modernの犬対応客室で小型犬2頭まで。1年以内の予防接種としつけが条件。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "c07e0ffcf83cd97760c85a0ce458f36f00f3a9c63644640b3a555e20dd27bf8d"
+  },
+  "c13-rk-31712": {
+   "mode": "manual",
+   "text": "犬は1室3頭まで。大型犬可、超大型犬不可。予防接種としつけが必要。接種証明書の提出は不要。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "50f77f75d0306fa602943a0e2e72be27544ce8b778463c606267caf5d169a801"
+  },
+  "c13-rk-9198": {
+   "mode": "manual",
+   "text": "ロードス棟ツインは小・中型犬、トリプルは小型犬対応。大型犬対応の会員用客室は利用資格を含め予約前確認。狂犬病・混合ワクチン証明が必要。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "daa16bf3d68a99f69324173bf46197270448b06c13e029fb754d1e1745b629bb"
+  },
+  "c13-rk-8895": {
+   "mode": "manual",
+   "text": "ペット対応ツインは中型犬まで2頭、和室12.5畳は小型犬2頭まで。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "30d942f6d2552f1480071ca7bef83f4d149ba9418b4675213afd305c525632cc"
+  },
+  "c13-rk-25160": {
+   "mode": "manual",
+   "text": "生後12か月以上の小・中型犬。狂犬病・混合ワクチン接種、しつけが条件。大型犬・発情期・攻撃性のある犬は不可。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "12df419a45d663ade686613d78bda2c6a3efea23aa0551cf64718625143fbbb6"
+  },
+  "c13-rk-18983": {
+   "mode": "manual",
+   "text": "中・大型犬も対応。合計3頭まで、大型犬は2頭まで。予防接種証明が必要。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "1dbde4a15e6b99a4c65a2b83b06fdedb1d3db3ffb1083c69b8054bb553e2e072"
+  },
+  "c13-rk-29387": {
+   "mode": "manual",
+   "text": "小型犬2頭を基本に案内。15kg以下の中型犬にも言及があるため、中型犬・3頭以上は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "776ea91aa24473076925058bb1deb72f0e97499e2f640227f5e1365ddbf5ba58"
+  },
+  "c13-rk-149269": {
+   "mode": "manual",
+   "text": "犬同伴対応のドーム・ヴィラあり。小型犬2頭または中型犬1頭の案内と、大型犬対応ヴィラの案内があるため、犬種・体重と棟を予約前確認。予防接種が必要。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "d6441aeb3fa8d4132167a373c46e6e928aa612c2903a1eecd7585c95cd0f43ef"
+  },
+  "c13-rk-27986": {
+   "mode": "manual",
+   "text": "犬対応の指定客室で小型犬1頭のみ。接種条件は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "749b32c6056b3d693426f4759947ff3698bff8b0cc5c0a12c638bb5a9c3a4492"
+  },
+  "c13-rk-192029": {
+   "mode": "manual",
+   "text": "萩162・牡丹163は20kg以下4頭または21kg以上3頭まで。桜161は10kg以下2頭まで。室内飼育・しつけ・寄生虫対策が必要。境界体重は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "a17badbd1314803a9d7f54582aace70e9ee0e6f9c4fe48f437efb374770ca1cd"
+  },
+  "c13-rk-202141": {
+   "mode": "manual",
+   "text": "御宿五氣里のドッグスイートで犬同伴可。サイズ・頭数・接種条件は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "793f10c3ef9cea9175e6a2a21ff29be0451431601125272c69538ab1b6001478"
+  },
+  "c13-rk-153190": {
+   "mode": "manual",
+   "text": "犬同伴コテージあり。サイズ・頭数・接種条件は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "6e0778e709243b0d5557f862e34e463d50a5f8979f881c6b483d0b79ee7377e7"
+  },
+  "c13-rk-3081": {
+   "mode": "manual",
+   "text": "小型犬から大型犬まで同伴可。しつけと3年以内の予防接種が条件で、接種日を申告。頭数上限は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "e4477abf3ad252cc3f11eaa1b75deee89e08f80e080006ac1bb7a8ef54bdca90"
+  },
+  "c13-rk-192305": {
+   "mode": "manual",
+   "text": "赤・緑の部屋は小型犬1頭。紫・青は小・中型犬3頭または大型犬2頭。狂犬病・混合ワクチン証明が必要。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "00aee0ad8a1b478f88fe1708d5e55c99dd1fb4baa6c44dd7ee8a2afb76f901bf"
+  },
+  "c13-rk-187562": {
+   "mode": "manual",
+   "text": "犬種・頭数の一律制限なし。超大型犬は事前相談。接種条件は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "1de50c77fc37fb6ca1cf041cc1ea3b9df5b0cf8661d9d8332aa9655e4e635416"
+  },
+  "c13-rk-67487": {
+   "mode": "manual",
+   "text": "山羊の丘コテージの犬対応3棟で同伴宿泊可。犬種・頭数・宿泊条件は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "df746b714c5604ceb3e0952658883ddf2d00d17e3a8cd39e9211e7c68a7f185a"
+  },
+  "c13-rk-183581": {
+   "mode": "manual",
+   "text": "犬同伴ペット棟あり。公式の客室案内とドッグパーク案内でサイズ・頭数が異なるため予約前確認。1年以内の予防接種としつけが条件。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "f33bd9e2bfc478380b776150261f625bf836bee8e7d5c563fd39f905653948ab"
+  },
+  "c13-rk-50657": {
+   "mode": "manual",
+   "text": "小型犬は1室3頭まで。予防接種が必要。トイレに不安がある犬はマナー用品を使用。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "a656112cac57f87525ae61e3688d00b42676428b396dc9603dcb88178d911959"
+  },
+  "c13-rk-39261": {
+   "mode": "unknown",
+   "text": "室内犬は同伴宿泊可。サイズ・頭数・接種条件は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "36a1c033c30d13d309b79c107646a0b1558e887c95ffa4b138e6638fd461bb1d"
+  },
+  "c13-rk-2327": {
+   "mode": "manual",
+   "text": "犬同伴はログコテージで対応。サイズ・頭数・接種条件は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "c78c12d2e0c7615143b9ecc00c2804ec9a334c59a7cdb6d27de233f0c568a313"
+  },
+  "c13-rk-165209": {
+   "mode": "manual",
+   "text": "室内飼育の小型犬2頭まで。マナー用品着用。発情期・妊娠中の犬は不可。館内移動は抱っこかキャリーバッグ。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "823ceab7a877df9d6910dae742440f578d3e4a55fcb4f9f5600db1151e34d9a0"
+  },
+  "c13-rk-187420": {
+   "mode": "manual",
+   "text": "小型犬2頭まで。中・大型犬の受入を推測しない。接種条件は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "296c4832ec0dcf09c56e4d023c947c95273b12d12fcfae9784a6405ebb0846bd"
+  },
+  "c13-rk-198729": {
+   "mode": "manual",
+   "text": "小型犬から大型犬まで対応。2頭を目安とし、3頭以上は事前相談。犬種・頭数を予約時に申告。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "c5ae18320e074a9f5042b788077ae055dd1f5efc9d269b7a552ba39f9105dafe"
+  },
+  "c13-rk-70288": {
+   "mode": "manual",
+   "text": "10kg未満の小型犬が対象。頭数・接種条件は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "a767e58f32f14bfd0a16bfe1bdcb8023bc8085ed5c6a455ca6174feada3d0f9b"
+  },
+  "c13-rk-135448": {
+   "mode": "manual",
+   "text": "室内飼育の小・中型犬2頭まで。しつけ・予防接種が必要。発情期不可。1日3組まで。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "cefdcbbcc1a26886978d50907d4834e79af6b8250d5b7036798c2759f554ecaf"
+  },
+  "c13-rk-28757": {
+   "mode": "manual",
+   "text": "公式の犬同伴案内あり。小・中型犬2頭まで、館内はケージ移動とする2022年の案内のため、現行条件は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "1a7314f19fd8ab757529b8cb6a89e511e22153b51532f7dbf801249ba9ff7d9b"
+  },
+  "c13-rk-29709": {
+   "mode": "manual",
+   "text": "犬と泊まれる専用スイートあり。犬のサイズ・頭数・接種条件は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "0696496776cfd7d1c1130173f31ef0bea4732dd42d1a05972545130b2716d910"
+  },
+  "c13-rk-188882": {
+   "mode": "manual",
+   "text": "小型犬1頭のみ。狂犬病予防接種から1年以内で、吠え癖・噛み癖のない室内犬が対象です。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "97335ee6504d56e318eee087aafac623adabc5e35de9c5bf8a2a5dd78ef25125"
+  },
+  "c13-rk-192753": {
+   "mode": "manual",
+   "text": "星グランピングに犬同伴可能なドームテントあり。犬のサイズ・頭数・接種条件は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "411627497a195c59486abc2a12f6942e1eb18314661c5415d29f15f16ebbbdb5"
+  },
+  "c13-rk-198995": {
+   "mode": "manual",
+   "text": "室内犬で、狂犬病・混合ワクチン接種済み、基本的なしつけが条件。1棟2頭まで。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "b4f87e1b5c906583bc4355f834c828c58d679d48fed3f11306ede1326766c3d4"
+  },
+  "c13-rk-199217": {
+   "mode": "manual",
+   "text": "犬同伴可能なドッグラン付きテントあり。サイズ・頭数・接種条件は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "70e76dcef38f65e7ff6f3e147f272368de795dcdc162d9130deb89e4f7788ff2"
+  },
+  "c13-rk-67168": {
+   "mode": "manual",
+   "text": "犬同伴対応の宿泊棟あり。サイズ・頭数・接種条件は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "5fcaf28125a47fdef1c2610d241da544d95a51b0584ecf9cfb15b79c4ac27ecc"
+  },
+  "c13-rk-184754": {
+   "mode": "manual",
+   "text": "室内飼育の中型犬（公式目安は体重8kg程度）まで2頭。しつけ・寄生虫対策が必要。狂犬病と5種以上の混合ワクチン証明等を提出。詳細は当施設用規約を確認。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "eb4a0a77c24f8bca03d7987ce77c72668601636bf75cd8a3ade461a401266054"
+  },
+  "c13-rk-166190": {
+   "mode": "unknown",
+   "text": "ペット和洋室（2階202～205号室）での宿泊が可能です。205号室のみキャットフレンドリー兼用です。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "eb9bcd3d1bad9c83fe5f6ba7d8383ca4c4d8b87af26e84a0fa63cfd815df5257"
+  },
+  "c13-rk-171642": {
+   "mode": "manual",
+   "text": "小型犬同伴可。頭数・接種条件は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "97b76c3d4fe4525ab7333ac5637cc7956dc64b2961c576c66d11dc68c66ad90b"
+  },
+  "c13-rk-171641": {
+   "mode": "manual",
+   "text": "中型犬まで2頭。大型犬は原則不可で、室内飼育の穏やかな犬は事前相談。寝室への入室不可。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "61e81372e00caed703e16f3e4672a06c3f2d3c9a457cdcdc4fd73821906c9fd0"
+  },
+  "c13-rk-191473": {
+   "mode": "manual",
+   "text": "小型犬2頭まで同伴可能です。ドーム内ではマナーウェアの着用が必須です。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "ef494c6bfb6b7b8366383a90cd3a1c9ed2755f155038ddfeb7fac9408feb93d7"
+  },
+  "c13-rk-193961": {
+   "mode": "unknown",
+   "text": "白木ヴィレッジJIN棟で犬同伴宿泊可。サイズ・頭数・接種条件は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "0d56c547feff5c8688e92664dc5c2750e7fcffcf7d6ea0a976e334431ffbeb6d"
+  },
+  "c13-rk-188335": {
+   "mode": "manual",
+   "text": "小型犬を受け入れる6畳和室あり。犬用用品は持参。頭数・接種条件は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "d4818024932de9258d1e930a0d45a2ed04c062921dddce0068fc2a788d56f108"
+  },
+  "c13-rk-188885": {
+   "mode": "manual",
+   "text": "小型犬1頭のみ。狂犬病予防接種から1年以内で、吠え癖・噛み癖のない室内犬が対象。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "8dc878be14033182747a5726484d05912fd532f6947863da9ac47f7f9bad5e70"
+  },
+  "c13-rk-202248": {
+   "mode": "manual",
+   "text": "小型犬から大型犬まで対応。狂犬病・混合ワクチン接種、トイレ等のしつけが条件。未接種事情は事前相談。証明書提示は不要。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "49ae11c9c33240dc088cc09dee6ca2bb898167303e770415ebdce5213a95ba6a"
+  },
+  "c13-rk-149165": {
+   "mode": "unknown",
+   "text": "ペット洋室・ペット和室・ペット和室ツインで同伴可。犬のサイズ・頭数・接種条件は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "0607ca5d9f768a2d55c987d49a6b19ad49d6e8c9b813e81c8964f742a97acfde"
+  },
+  "c13-rk-158703": {
+   "mode": "manual",
+   "text": "犬と宿泊できる一棟貸しコテージ。サイズ・頭数・接種条件は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "316633e1a8a7a2af5eed7ef45df2a7c6d603bd1249922898ab564d2e690b0f28"
+  },
+  "c13-rk-194551": {
+   "mode": "manual",
+   "text": "犬同伴可。狂犬病・混合ワクチン接種等とトイレのしつけが条件。頭数制限なし、快適な滞在の目安は3頭まで。接種免除等の扱いは予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "59ae40d735fdba6f514b0e35c523f8e4bd009f5588e8fbcf50d0ad4639d1802f"
+  },
+  "c13-rk-145319": {
+   "mode": "unknown",
+   "text": "犬同伴宿泊可。サイズ・頭数・接種条件は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "bb16bcc19638af274876665c4872883bdf0f450473128547581ccca6605ed117"
+  },
+  "c13-rk-191799": {
+   "mode": "manual",
+   "text": "中型犬（15kgまで）を合計4頭まで同伴可。接種等の条件は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "6f9da41b3a2fdb5c84d31d5bc29329ff5c0f3060575f9ac53b8f6d7e7dcb4018"
+  },
+  "c13-rk-179665": {
+   "mode": "manual",
+   "text": "犬同伴のペットルームあり。サイズ・頭数・接種条件は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "8dbd5da4391706c5e0b5fe4c7d1275634f2edd1e5f63f806f0de55365726402c"
+  },
+  "c13-rk-195912": {
+   "mode": "manual",
+   "text": "小型犬・中型犬の同伴宿泊に対応。頭数・接種条件は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "4aac4ad2d957cd9843b455e75b948fbb8c9b5bd6e36caa8ddb450921ef44d9d2"
+  },
+  "c13-rk-76861": {
+   "mode": "manual",
+   "text": "小型・中型犬（一般的に25kg以下）が対象。頭数は同じページ内で中型犬1頭・最大2頭の記載があるため予約前確認。利用規約・同意書の確認が必要。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "463861347f47a296af652170538c742edca6df4d742094963df63f011a42f114"
+  },
+  "c13-rk-182098": {
+   "mode": "unknown",
+   "text": "愛犬同伴で宿泊できるホテル。サイズ・頭数・接種条件は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "b7c82facbff79bcecbd9829292d5eff715403476859333e8c31b4752c4ff2991"
+  },
+  "c13-rk-138003": {
+   "mode": "manual",
+   "text": "室内飼育の小型・中型犬を1室2頭まで。基本的なしつけと狂犬病・ワクチン接種が条件。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "c4234e031f05e0769d84f4449753505e0a48ef0c698ffecc47a754dbeac011d5"
+  },
+  "c13-rk-191602": {
+   "mode": "manual",
+   "text": "香花灯で室内飼育の小型犬2頭まで。1年以内の狂犬病・混合ワクチン接種と基本的なしつけが条件。発情中は不可。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "c083ecf2a98db3bdd9f8db12d1963517045f5fec2a1855b9e53e2cc01ea1f76e"
+  },
+  "c13-rk-182042": {
+   "mode": "manual",
+   "text": "小型・中型犬を受入れ、大型犬は事前相談。基本的なしつけ、狂犬病・混合ワクチン接種、ノミ・ダニ対策が必要。吠えやすい犬は受入れに制限あり。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "35b92da7b5dfe8ce93add1aa87827335178c1abc5a68ad99b782ae69f34161b8"
+  },
+  "c13-rk-104683": {
+   "mode": "manual",
+   "text": "愛犬家族客室のみ利用可能で、大型犬（25kg以上）は最大1頭、中型・小型犬（25kg未満）は最大2頭まで同伴できます。宿泊時は「愛犬利用規則」の確認とフロントでの「愛犬同意書」の提出が必要です。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "481f4f098f253b7b9a61c199c8e024ed60da7ece5752a5562a398b16622a3fda"
+  },
+  "c13-rk-192929": {
+   "mode": "manual",
+   "text": "犬同伴はCEDARのみ。規約は生後4か月以上・25kg未満・1棟1頭、FAQは小型犬2頭までと記載が異なるため、体重・頭数条件は予約前確認。狂犬病・5種以上の混合ワクチン証明が必要。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "1278aacf43549b221612a7159ee35bad942171873b40721957b699aaca4c933e"
+  },
+  "c13-rk-196640": {
+   "mode": "manual",
+   "text": "大型犬も可(施設への確認 2026-10-29)。犬同伴可、頭数制限なし。狂犬病・伝染病の予防接種、ノミ・ダニ対策が必要。発情中は不可。粗相の恐れがある場合はマナー用品を持参。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "7475e9ae4bdd6df928ab8fd3804ea7f8cb6368bad482a78687b7fbb4bf2c2b58"
+  },
+  "c13-rk-16236": {
+   "mode": "manual",
+   "text": "室内飼育の小型犬を3頭まで。コテージ利用規約・ペット同意書の確認が必要。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "56de0418b17bd03d941c24c75446508619368d32f3616a9a34cc743a55da965b"
+  },
+  "c13-rk-197825": {
+   "mode": "manual",
+   "text": "室内飼育の犬を4頭まで。基本的なしつけとトイレマナーが必要。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "38de4bef9b573feaba2efc70285c822d45072b5feb853012a45401a2fe7511a2"
+  },
+  "c13-rk-37395": {
+   "mode": "manual",
+   "text": "犬同伴は原則可能。ただし大型犬等は受入れを断る場合があるため、犬種・サイズを予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "9cf8e43aa9357a1b3dac25d767aa7c8191ff9ccaa4544c59c7fdd05bbbfc227c"
+  },
+  "c13-rk-1855": {
+   "mode": "manual",
+   "text": "室内飼育の6kg以内の小型犬が対象。通常1頭、2頭なら合計7kg以下。しつけ済みで夜鳴き・遠吠えがなく、発情中でないこと。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "11cf56bab67d2999734c56020d9cbb0b5ac616811a7abe6afc7cc33bf70c6a65"
+  },
+  "c13-rk-189261": {
+   "mode": "manual",
+   "text": "小型犬2頭まで。これを超える場合は事前相談。抜け毛の多い犬は不可。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "b4457b82ce86658e491555f5f5aaab14aa4c26ba6dafb28a66632921e6f5fda5"
+  },
+  "c13-rk-194714": {
+   "mode": "manual",
+   "text": "頭数制限なし。超大型犬は事前相談。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "45293b4d476465d605e9c13eda4956aadcd046469eff931e64b6ef67050cc7ca"
+  },
+  "c13-rk-54698": {
+   "mode": "manual",
+   "text": "室内飼育の小型・中型犬が対象。トイレ・吠え等のしつけ、予防接種済み、感染症の恐れがないこと。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "e7da59307895907dc2969de2ded0f22cc4f25047e484b23c4be21dbad9e1a6b2"
+  },
+  "c13-rk-128244": {
+   "mode": "manual",
+   "text": "室内飼育の犬が対象。吠え癖・噛み癖・家具等をかじる癖がある場合は不可。犬だけの留守番不可。サイズ・頭数・接種条件は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "10af7df2324532e45abca4e0b1c2070039a5f04efc8bd023f06d462d4bc45206"
+  },
+  "c13-rk-39218": {
+   "mode": "manual",
+   "text": "10kg未満の室内飼育の成犬1頭のみ。子犬不可。しつけ済みで穏やかな犬が対象。予約時に同伴と犬種の申告が必要。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "68c7fc9658983f528ae985583aec73befcb4052f9cf2f56d85edefac259853c6"
+  },
+  "c13-rk-163148": {
+   "mode": "unknown",
+   "text": "青藍・月白・金春・翡翠が犬同伴対応。愛犬同伴宿泊同意書の確認が必要。サイズ・頭数・接種条件は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "bce7fc0af2d7ea1f2d2187aa2a3535c5d0609b78a729162daccfbe2f1df664da"
+  },
+  "c13-rk-197831": {
+   "mode": "manual",
+   "text": "愛犬プランを事前予約。2頭まで、大型犬は1頭。狂犬病・伝染病の予防接種済みで基本的なしつけが条件。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "6e4cbcaacf4be6f5dde4046837377a5055108c4c841cb554daa477515ec76d20"
+  },
+  "c13-rk-40881": {
+   "mode": "manual",
+   "text": "犬同伴宿泊可。客室内はケージ利用必須ではなく、館内移動は抱っこまたはリード。サイズ・頭数・接種条件は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "be7890c248a300ab024262ba964d163636d01f23b3c96adbd777b4a01acdce15"
+  },
+  "c13-rk-198637": {
+   "mode": "manual",
+   "text": "ペットフレンドリールームで小型犬から大型犬まで、頭数制限なし。狂犬病接種から1年以内の証明と、有効期限内の混合ワクチン証明が必要。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "d7cee0422028e6e599079295572a8fbb8492726962313029c04af63e717e6efe"
+  },
+  "c13-rk-147718": {
+   "mode": "manual",
+   "text": "ペット同伴対応ヴィラあり。複数頭は事前相談。サイズ・接種条件は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "271d9ebf73f40fba1de7cd0bce50af6662d5f7283bbfae5a22971c31ff0b046e"
+  },
+  "c13-rk-168226": {
+   "mode": "manual",
+   "text": "別館のペットハウスに犬同伴宿泊可。サイズ・頭数・接種条件は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "a981d017b46056efba60f9a923fda704c4a08674406b0e3f81220efd9498b72f"
+  },
+  "c13-rk-199209": {
+   "mode": "manual",
+   "text": "犬と泊まれる一棟貸しコテージ。サイズ・頭数・接種条件は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "d91b430a50416450046564944aa0093d41471444871a2202399a76e4f66580df"
+  },
+  "c13-rk-182821": {
+   "mode": "manual",
+   "text": "RICHYテントのみペット同伴宿泊可。フード・世話用品は持参。サイズ・頭数・接種条件は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "84218effd612e3c58e027149bda2534e17f3930bd345e2a4fd1e547086420e5e"
+  },
+  "c13-rk-192704": {
+   "mode": "manual",
+   "text": "犬の種類・大きさは不問。予約時に頭数を申告。館内は原則マナーウェア等が必要で、着用できない場合は入館不可。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "783a7b765b0bec918b86c4164b84db925e280dfee3e286bba30aedead31d292a"
+  },
+  "c13-rk-2420": {
+   "mode": "manual",
+   "text": "1階のペット対応客室のみ。抱っこで移動できない中型・大型犬は屋外から直接出入りできる「たんぽぽ」を指定。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "48a5384efcd7def2d756f11317684f8d684d5c8adb9ed5b3cdccc470b21a1016"
+  },
+  "c13-rk-166193": {
+   "mode": "manual",
+   "text": "本館1階の指定洋室2室とコテージ1棟で犬同伴可。本館への出入りはキャリーまたは抱っこ。サイズ・頭数・接種条件は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "866627f3c89699d355c01ec6778fefda33a9ffd56ae00199717bab2155238c2e"
+  },
+  "c13-rk-187421": {
+   "mode": "manual",
+   "text": "小型犬2頭まで。接種・しつけ等の詳細条件は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "b14d70a2642c65e8b930914608546afb09bd04bdc9f1a57ab4de8a167f3bc427"
+  },
+  "c13-rk-20573": {
+   "mode": "manual",
+   "text": "小型犬・中型犬を一部客室で同伴受入れ。予約時の申告と、トイレ・無駄吠え等の基本的なしつけが必要。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "c2b7541584c1af4a9e81f01a1e6e1de5d02d08ecfe3d84fc67f6435c66ac12ee"
+  },
+  "c13-rk-158431": {
+   "mode": "manual",
+   "text": "犬はサイズを問わず2頭まで。しつけ済みで、鳴き声・臭い・汚損等で他の宿泊者に迷惑をかけないこと。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "5720e7c4a3fa111dd43400d7e009e56becdb70d9ed4869d2d4e3e52e3880f18b"
+  },
+  "c13-rk-189096": {
+   "mode": "manual",
+   "text": "犬同伴はAC電源付きテントサイトとバンガロー。大型犬は1棟1頭、小・中型犬は1棟2頭まで。狂犬病・混合ワクチン接種とトイレ・吠え等のしつけが条件。発情中は不可。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "8b6cb8645f83acf975f8cb9a78bafeeb3f66686c440becd029afb27bf012318e"
+  },
+  "c13-rk-193357": {
+   "mode": "unknown",
+   "text": "キャンプで犬同伴可。ノーリード可と明記されるのはforestサイト。サイズ・頭数・接種条件は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-19",
+   "body_sha256": "53893d47a485f52e782afdedc24f2eee36000df416a5d072720086d8018cc2ad"
+  },
+  "d1008-rk153269": {
+   "mode": "unknown",
+   "text": "予約前確認",
+   "source_url": null,
+   "checked_at": "2026-10-20",
+   "body_sha256": "cf03dda7cb5fbec71848cc7de1ece2a0d21b7ba8607b1daf8d16150fdc7a126f"
+  },
+  "d1008-service-sumu-hotel-com-ja-asakusa-south-pet-friendly": {
+   "mode": "manual",
+   "text": "10kg未満の小型犬。生後6か月以上。発情期・妊娠中・治療中は不可。頭数：1頭まで。",
+   "source_url": null,
+   "checked_at": "2026-10-20",
+   "body_sha256": "3356e80e44d221f9c25560014ce07a8c70870ee37cc1a32ca65d219e7d4aff70"
+  },
+  "d1020-rk167876": {
+   "mode": "manual",
+   "text": "小型犬から大型犬まで。頭数は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-20",
+   "body_sha256": "6785d3ba4d08177eda035e5717c758e56c80e540fd7b5f2311e318bfb2878b3e"
+  },
+  "d1020-privatevilla-isumi-chiba-com-qa": {
+   "mode": "manual",
+   "text": "小型犬・中型犬のみ。室内犬としてしつけ済みで、トイレマナーを守り、無駄吠え・施設破壊をしない犬。室外犬は不可。頭数：2頭まで。小型犬に限り3頭以上を受け入れる場合があるため事前相談。",
+   "source_url": null,
+   "checked_at": "2026-10-20",
+   "body_sha256": "186bbaca1cb8f755280e7ffa4e02828a64a9010df0f2537b76971486f7f3a71c"
+  },
+  "d1020-dogresort-chibatorami-com-pet": {
+   "mode": "manual",
+   "text": "小型犬から大型犬まで、犬種制限なし。室内犬に限る。頭数：制限なし。",
+   "source_url": null,
+   "checked_at": "2026-10-20",
+   "body_sha256": "5b363507f4298cb7e4e1d3550ea0a5b43ea9e6b1d0b804db156318f290fc8c0a"
+  },
+  "d1021-rk179259": {
+   "mode": "unknown",
+   "text": "予約前確認",
+   "source_url": null,
+   "checked_at": "2026-10-21",
+   "body_sha256": "9e1f44718a9fdf1573b1f0fd3d2066d8871d32e6f041f84619c972ee470adfd9"
+  },
+  "c-hyatt-hakone": {
+   "mode": "manual",
+   "text": "ドッグフレンドリールーム(6 室)に宿泊可。大きさ・頭数は利用条件(公式 PDF)で予約前確認",
+   "source_url": null,
+   "checked_at": "2026-10-21",
+   "body_sha256": "fdf55443bd83dbdb709f96a34c94e917fd05faaaf7b07110d6a576be52a9f714"
+  },
+  "d1022-yadoroginosato-com": {
+   "mode": "manual",
+   "text": "小型犬（6kg程度まで）。頭数は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-22",
+   "body_sha256": "11a7af951c3f0e23ffb8eacf5d8531bb28641281088451c24d74b6ce3023598e"
+  },
+  "d1023-akasawahouse-com": {
+   "mode": "manual",
+   "text": "中型犬・大型犬も可。頭数は予約前確認。",
+   "source_url": null,
+   "checked_at": "2026-10-23",
+   "body_sha256": "0eeb1ac0719242a604bcd02693b1bfacb22ef369280220cff8af398ed64ca715"
+  },
+  "d1024-shinrinrotenburo-com-plan": {
+   "mode": "unknown",
+   "text": "予約前確認",
+   "source_url": null,
+   "checked_at": "2026-10-24",
+   "body_sha256": "f4dbe201cdeb9a242c74d45f34d9f39426fcb25376da6851fe8b7d7689a94375"
+  },
+  "c14-rk-191625": {
+   "mode": "unknown",
+   "text": "大きさ・頭数の記載なし(予約前確認)。犬とウサギが同伴でき、トイレのしつけ済みで、1年以内に狂犬病予防接種と混合ワクチン接種を受けていることが条件(公式ペットページ)。",
+   "source_url": "https://www.kando-stay.com/izu/inatori/pet.html",
+   "checked_at": "2026-10-31",
+   "body_sha256": "f33c2ca8af7ed5a8e73045b08f678675f0e00526de43feb670eaf42630f7d09d"
+  },
+  "c14-rk-191623": {
+   "mode": "unknown",
+   "text": "大きさ・頭数の記載なし(予約前確認)。犬とウサギが同伴でき、トイレのしつけ済みで、1年以内に狂犬病予防接種と混合ワクチン接種を受けていることが条件(公式ペットページ)。",
+   "source_url": "https://www.kando-stay.com/kujukuri/nagi/pet.html",
+   "checked_at": "2026-10-31",
+   "body_sha256": "81efbe58f6b1f120f523b59eb484b6f7f7087ab39e840e5d87ee83c0fd20b399"
+  },
+  "c14-rk-191622": {
+   "mode": "unknown",
+   "text": "大きさ・頭数の記載なし(予約前確認)。犬とウサギが同伴でき、トイレのしつけ済みで、1年以内に狂犬病予防接種と混合ワクチン接種を受けていることが条件(公式ペットページ)。",
+   "source_url": "https://www.kando-stay.com/kujukuri/umi/pet.html",
+   "checked_at": "2026-10-31",
+   "body_sha256": "158812a285a356ef4fe891928507bc1d9b26711f8b79c73c0488426be0e196f0"
+  },
+  "c14-rk-191621": {
+   "mode": "unknown",
+   "text": "大きさ・頭数の記載なし(予約前確認)。犬とウサギが同伴でき、トイレのしつけ済みで、1年以内に狂犬病予防接種と混合ワクチン接種を受けていることが条件(公式ペットページ)。",
+   "source_url": "https://www.kando-stay.com/kujukuri/park/pet.html",
+   "checked_at": "2026-10-31",
+   "body_sha256": "face6d99301e062adfdbb9628fbf83b66ab5a52f1497e5f74d6901932466aef5"
   }
  },
  "dog_conditions_pipeline": {
   "version": 2,
-  "html_sha256": "80afac8921e788158406ad5c5e2bd83f3f775cf9ee4ec81c31f0ebf89508bf12",
-  "cards": 704
+  "html_sha256": "7db318df41de028a048d7b7bfcfaf91fc24e04602c5a5e6083d77c80fb467433",
+  "cards": 981
  }
 }
