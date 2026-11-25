@@ -9563,6 +9563,462 @@
    "source_url": "https://www.kando-stay.com/kujukuri/park/pet.html",
    "checked_at": "2026-10-31",
    "body_sha256": "f6374395089ecf7d54fa07689e003676acf0b66b0633bb47ab825efabf19c6b7"
+  },
+  "d1125-asayumanoki": {
+   "mode": "manual",
+   "text": "2匹まで、室内犬でしつけ済みに限る。小型・中型と35kgまでの大型犬。狂犬病の注射と、3年以内の予防注射(またはコアワクチンの抗体検査)の証明を持参。",
+   "source_url": "https://asayumanoki.jp/rooms.php",
+   "checked_at": "2026-11-25",
+   "body_sha256": "267475452681d90af5302fe3f0995f54eb0e155f95a946a366dc1f8b3846619d"
+  },
+  "d1125-beb5-tsuchiura-pet": {
+   "mode": "uniform",
+   "max_dogs": 2,
+   "max_kg": 20,
+   "kg_inclusive": true,
+   "text": "20kg以下、1室2頭まで。",
+   "source_url": "https://hoshinoresorts.com/ja/hotels/beb5tsuchiura/",
+   "checked_at": "2026-11-25",
+   "body_sha256": "0644cdad48983bb5f1dd8e9fbfa83f02f533126112dc334036843c2959812f5e"
+  },
+  "d1125-bettei-shiki-aoi": {
+   "mode": "unknown",
+   "text": "頭数は制限なし、犬種の制限もなし。狂犬病予防接種の証明書を持参。",
+   "source_url": "https://www.privatevilla-nasu.com/room/",
+   "checked_at": "2026-11-25",
+   "body_sha256": "fe03786a22708e72f2c892f7f19d29e374927dbe41a57329ec166d48c1ce0652"
+  },
+  "d1125-bonmal-tree": {
+   "mode": "manual",
+   "text": "犬だけ可、小型〜大型、3頭まで(4頭目からは相談)。狂犬病とワクチンの接種済み。",
+   "source_url": "https://bonmal.jp/tree/",
+   "checked_at": "2026-11-25",
+   "body_sha256": "086919ee0b7756463598c19f96d9d8d3d86e132f1963e17bb5b928dfaa055d84"
+  },
+  "d1125-clubwyndham-chikumakan": {
+   "mode": "manual",
+   "text": "1室2頭まで、体重12kg未満。闘犬種は不可。過去1年以内の狂犬病と5種以上の混合ワクチンの接種証明(コピー可)。同意書に記入・署名。",
+   "source_url": "https://clubwyndhamchikumakan.com/2026/07/16/about_dog_friendly_room/",
+   "checked_at": "2026-11-25",
+   "body_sha256": "c300f9cf0fab0ca1b93b039aad82de3d7c8cf7b3b3ef646559f84090d81a2e71"
+  },
+  "d1125-coco-villa-kitakaruizawa-02": {
+   "mode": "manual",
+   "text": "3頭まで(小型犬〜大型犬)。犬のみ(他のペット不可)。トイレのしつけ済み・無駄吠えや破損が著しくないこと。狂犬病予防接種と混合ワクチン(3種以上)の両方(証明書の提出を求める場合あり)。",
+   "source_url": "https://coco-villa.jp/villa/kitakaruizawa-02/",
+   "checked_at": "2026-11-25",
+   "body_sha256": "f7f23ec78457f59a89f51b2ac267d4039b8035805009778178647d08b8a154ee"
+  },
+  "d1125-dogvilla-izu-yusen": {
+   "mode": "uniform",
+   "max_dogs": 3,
+   "text": "1室3頭まで、犬種の制限なし。",
+   "source_url": "https://www.dogvilla-izu.com/",
+   "checked_at": "2026-11-25",
+   "body_sha256": "2d1b73058a955eb57c7d31ae83f25d6e5ebc07f15947afdb9b3c32a86fa0f618"
+  },
+  "d1125-earthboat-hakuba": {
+   "mode": "uniform",
+   "unlimited": [
+    "max_kg"
+   ],
+   "text": "種類・大きさの制限なし、頭数は制限なし(全拠点共通のペットポリシー)。1年以内の狂犬病と5種以上の混合ワクチン、ノミ・ダニ予防、トイレのしつけが条件。ヒート中・妊娠中・攻撃的な犬は不可。",
+   "source_url": "https://earthboat.jp/hakuba",
+   "checked_at": "2026-11-25",
+   "body_sha256": "0da024cfa3792404ec9ef1da1aad6cfc1c13ab9ae429a7ce0fe4e0b96e7c9830"
+  },
+  "d1125-earthboat-kurohime": {
+   "mode": "uniform",
+   "unlimited": [
+    "max_kg"
+   ],
+   "text": "種類・大きさの制限なし、頭数は制限なし(全拠点共通のペットポリシー)。1年以内の狂犬病と5種以上の混合ワクチン、ノミ・ダニ予防、トイレのしつけが条件。ヒート中・妊娠中・攻撃的な犬は不可。",
+   "source_url": "https://earthboat.jp/kurohime",
+   "checked_at": "2026-11-25",
+   "body_sha256": "0da024cfa3792404ec9ef1da1aad6cfc1c13ab9ae429a7ce0fe4e0b96e7c9830"
+  },
+  "d1125-earthboat-nojiriko": {
+   "mode": "uniform",
+   "unlimited": [
+    "max_kg"
+   ],
+   "text": "種類・大きさの制限なし、頭数は制限なし(全拠点共通のペットポリシー)。1年以内の狂犬病と5種以上の混合ワクチン、ノミ・ダニ予防、トイレのしつけが条件。ヒート中・妊娠中・攻撃的な犬は不可。",
+   "source_url": "https://earthboat.jp/nojiriko",
+   "checked_at": "2026-11-25",
+   "body_sha256": "0da024cfa3792404ec9ef1da1aad6cfc1c13ab9ae429a7ce0fe4e0b96e7c9830"
+  },
+  "d1125-earthboat-shirakabako": {
+   "mode": "uniform",
+   "unlimited": [
+    "max_kg"
+   ],
+   "text": "種類・大きさの制限なし、頭数は制限なし(全拠点共通のペットポリシー)。1年以内の狂犬病と5種以上の混合ワクチン、ノミ・ダニ予防、トイレのしつけが条件。ヒート中・妊娠中・攻撃的な犬は不可。",
+   "source_url": "https://earthboat.jp/shirakabako",
+   "checked_at": "2026-11-25",
+   "body_sha256": "0da024cfa3792404ec9ef1da1aad6cfc1c13ab9ae429a7ce0fe4e0b96e7c9830"
+  },
+  "d1125-earthboat-togakushi": {
+   "mode": "uniform",
+   "unlimited": [
+    "max_kg"
+   ],
+   "text": "種類・大きさの制限なし、頭数は制限なし(全拠点共通のペットポリシー)。1年以内の狂犬病と5種以上の混合ワクチン、ノミ・ダニ予防、トイレのしつけが条件。ヒート中・妊娠中・攻撃的な犬は不可。",
+   "source_url": "https://earthboat.jp/togakushi",
+   "checked_at": "2026-11-25",
+   "body_sha256": "0da024cfa3792404ec9ef1da1aad6cfc1c13ab9ae429a7ce0fe4e0b96e7c9830"
+  },
+  "d1125-earthboat-ueda-onsen": {
+   "mode": "uniform",
+   "unlimited": [
+    "max_kg"
+   ],
+   "text": "種類・大きさの制限なし、頭数は制限なし(全拠点共通のペットポリシー)。1年以内の狂犬病と5種以上の混合ワクチン、ノミ・ダニ予防、トイレのしつけが条件。ヒート中・妊娠中・攻撃的な犬は不可。",
+   "source_url": "https://earthboat.jp/ueda_onsen",
+   "checked_at": "2026-11-25",
+   "body_sha256": "0da024cfa3792404ec9ef1da1aad6cfc1c13ab9ae429a7ce0fe4e0b96e7c9830"
+  },
+  "d1125-editxseven-fujigotemba": {
+   "mode": "unknown",
+   "text": "頭数・体重は公式に記載なし(予約前確認)。",
+   "source_url": "https://editxseven.com/fujigotemba/dog-friendly/",
+   "checked_at": "2026-11-25",
+   "body_sha256": "0b7fefc29db56a7e04474df8d5987847206cd90e6740f261ff79ae6c32c45e91"
+  },
+  "d1125-fuji-asagiri-lodge": {
+   "mode": "uniform",
+   "max_dogs": 3,
+   "text": "1戸3頭まで。日常室内飼いで、しつけができている犬。狂犬病・混合ワクチン接種済み。",
+   "source_url": "https://fujimilkland.com/stay/",
+   "checked_at": "2026-11-25",
+   "body_sha256": "4e530d0620e1635d525f1715e4f20c602b4e75dc58375ccf129d5048b3f86adf"
+  },
+  "d1125-fuji-suitevilla-yamanakako": {
+   "mode": "manual",
+   "text": "多頭可(手狭ならヴィラタイプを推奨)。犬のみ(猫など不可)。狂犬病・混合ワクチンの接種証明書を提示(写真でも可)。",
+   "source_url": "https://www.fuji-suitevilla.com/qa/",
+   "checked_at": "2026-11-25",
+   "body_sha256": "6626da4720223146cc22c05f3944306d11ddc55742a46470a1fe00c8c878bdab"
+  },
+  "d1125-futarishizuka-kashinan": {
+   "mode": "uniform",
+   "max_kg": 10,
+   "kg_inclusive": true,
+   "sizes": [
+    "small"
+   ],
+   "text": "10kgまでの小型犬。頭数は公式に記載なし(予約前確認)。チェックイン時に狂犬病と混合ワクチンの接種証明を提示、ペット同伴宿泊規約に同意・提出。",
+   "source_url": "https://futarishizuka.com/guide/kashinan/",
+   "checked_at": "2026-11-25",
+   "body_sha256": "32a82cce54ead69dfdbc3c5b0685075562c43a16923c4f73b25e5f6f93ed01b1"
+  },
+  "d1125-garden-biyori-kujukuri": {
+   "mode": "uniform",
+   "max_dogs": 5,
+   "text": "合計最大5頭。体重は公式に記載なし。狂犬病などのワクチン未接種の犬は不可。",
+   "source_url": "https://www.vacation-biyori.com/price",
+   "checked_at": "2026-11-25",
+   "body_sha256": "d08822f1e69a8b7fc2889a5b9fcc3f9bfba9de1a71b23a201864969a14be9899"
+  },
+  "d1125-gh-bern-kurumayama": {
+   "mode": "manual",
+   "text": "1家族2頭まで(3回以上泊まった人は、泊まったことのある犬なら3頭まで)。小型〜大型、大きさ・犬種の制限なし。各種ワクチン接種済み(狂犬病を獣医師に免除された犬は猶予証明を提示)。",
+   "source_url": "https://gh-bern.jp/",
+   "checked_at": "2026-11-25",
+   "body_sha256": "5ab2f19495732b796da5ed0ccb686f6fc4eb080d0ed06a7a46455d225789bd28"
+  },
+  "d1125-glamping-bv-kawaguchiko": {
+   "mode": "unknown",
+   "text": "犬と泊まれるのはドッグキャビンだけ。頭数・体重は公式に記載なし(予約前確認)。狂犬病の予防接種証明書が必要。",
+   "source_url": "https://www.villa-glamping-yamanashi.com/qa/",
+   "checked_at": "2026-11-25",
+   "body_sha256": "3ab633ec1b3b570e01f0f3a53926def4b5569134dcee63186b6478c354861e2a"
+  },
+  "d1125-glamping-bv-nasu": {
+   "mode": "manual",
+   "text": "大型犬可、頭数は制限なし。狂犬病予防接種の証明を持参。",
+   "source_url": "https://www.glamping-nasu.com/pet/",
+   "checked_at": "2026-11-25",
+   "body_sha256": "dbb5df764b4ef471b01d5fb0aeacbf2ea884cc6803b87d8f4cff204228553304"
+  },
+  "d1125-glamping-village-fuji": {
+   "mode": "manual",
+   "text": "頭数は制限なし(部屋は原則1匹を想定)。大型犬可。チェックイン時に狂犬病・混合ワクチンの接種証明書(または猶予証明書)を提示、写真でも可。",
+   "source_url": "https://www.nature-glamping.com/pet/",
+   "checked_at": "2026-11-25",
+   "body_sha256": "8b4210ec0228b2e513ffd390a1a9cca65620df4343cd468b804eaf60c6e1bcfd"
+  },
+  "d1125-gorakadan-fuji-yuki": {
+   "mode": "uniform",
+   "max_dogs": 1,
+   "max_kg": 15,
+   "kg_inclusive": true,
+   "text": "1部屋に体重15kg以下の犬1匹まで。",
+   "source_url": "https://www.gorakadan.com/fuji/stay/villa-suite-yuki/",
+   "checked_at": "2026-11-25",
+   "body_sha256": "f07910b5fa0ae4fe5ad2a901e08b9379c505e5eae091365f746fc89214fa90b0"
+  },
+  "d1125-gp-shintakanawa-dog": {
+   "mode": "manual",
+   "text": "2頭まで、概ね10kg未満の小型犬向け(中型犬は要相談、大型犬は不可)。狂犬病と混合ワクチン(5種以上)の証明書のコピーをチェックイン時に提出。到着前日の午前中までに「ペット同伴宿泊滞在同意書」を登録。",
+   "source_url": "https://www.princehotels.co.jp/pet/shintakanawa/",
+   "checked_at": "2026-11-25",
+   "body_sha256": "adf5117951c40820919f8afaa28e06ca97550187a199ced40dadb6014acb3322"
+  },
+  "d1125-hatagoya-hakonesengokuhara": {
+   "mode": "uniform",
+   "max_dogs": 2,
+   "text": "犬・猫など、大きさを問わず2頭まで(ファミリーロッジ旅籠屋のペット規定)。部屋の外では必ずリード。",
+   "source_url": "https://hatagoya.co.jp/hakonesengokuhara/",
+   "checked_at": "2026-11-25",
+   "body_sha256": "0e59df7547fd6e1ad7b786d4c1a3d5937a367baf12013cf99728286bf6e1c264"
+  },
+  "d1125-hatagoya-kisarazukaneda": {
+   "mode": "uniform",
+   "max_dogs": 2,
+   "text": "犬・猫など、大きさを問わず2頭まで(ファミリーロッジ旅籠屋のペット規定)。部屋の外では必ずリード。",
+   "source_url": "https://hatagoya.co.jp/kisarazukaneda/",
+   "checked_at": "2026-11-25",
+   "body_sha256": "0e59df7547fd6e1ad7b786d4c1a3d5937a367baf12013cf99728286bf6e1c264"
+  },
+  "d1125-hatagoya-kujukuri": {
+   "mode": "uniform",
+   "max_dogs": 2,
+   "text": "犬・猫など、大きさを問わず2頭まで(ファミリーロッジ旅籠屋のペット規定)。部屋の外では必ずリード。",
+   "source_url": "https://hatagoya.co.jp/kujukuri/",
+   "checked_at": "2026-11-25",
+   "body_sha256": "0e59df7547fd6e1ad7b786d4c1a3d5937a367baf12013cf99728286bf6e1c264"
+  },
+  "d1125-hatagoya-sodegaura": {
+   "mode": "uniform",
+   "max_dogs": 2,
+   "text": "犬・猫など、大きさを問わず2頭まで(ファミリーロッジ旅籠屋のペット規定)。部屋の外では必ずリード。",
+   "source_url": "https://hatagoya.co.jp/sodegaura/",
+   "checked_at": "2026-11-25",
+   "body_sha256": "0e59df7547fd6e1ad7b786d4c1a3d5937a367baf12013cf99728286bf6e1c264"
+  },
+  "d1125-hiroba-by-bonmal": {
+   "mode": "manual",
+   "text": "3頭まで(4頭目からは相談)、大型犬・猫も可。狂犬病とワクチンの接種済み、トイレのしつけ。",
+   "source_url": "https://bonmal.jp/hiroba/",
+   "checked_at": "2026-11-25",
+   "body_sha256": "a099fddffcfd0f45e89a5ff96cff76e3926b566633b9b57e1e6273d38cb508fa"
+  },
+  "d1125-hoshinoya-fuji-pet": {
+   "mode": "manual",
+   "text": "20kg以下の中型犬まで、2頭まで。狂犬病予防注射済証(または注射済票)と混合ワクチン証明(または抗体検査の結果)のコピーが必須。",
+   "source_url": "https://hoshinoresorts.com/ja/hotels/hoshinoyafuji/sp/petroom/",
+   "checked_at": "2026-11-25",
+   "body_sha256": "e24cf77281950a503decfe9f2590a8138dc252edb6b8a2dee98991b2150aa830"
+  },
+  "d1125-hoshinoya-karuizawa-pet": {
+   "mode": "manual",
+   "text": "大型犬も可、頭数は2頭までを推奨。屋内外ともリードかケージ。狂犬病予防注射済証(または注射済票)と混合ワクチン証明(または抗体検査の結果)のコピーが必須。",
+   "source_url": "https://hoshinoresorts.com/ja/hotels/hoshinoyakaruizawa/sp/petroom/",
+   "checked_at": "2026-11-25",
+   "body_sha256": "d42b33dbcf261e5505e0548ae57e67cbcdc3808582b7d8e91ea75c3dee1ab444"
+  },
+  "d1125-kai-kusatsu": {
+   "mode": "manual",
+   "text": "大型犬も可、1室2頭まで。",
+   "source_url": "https://hoshinoresorts.com/ja/hotels/kaikusatsu/",
+   "checked_at": "2026-11-25",
+   "body_sha256": "4da9fab3e3d552d513b2013b88a4976a60ff28494d5a0293f2ab7df0a1563d07"
+  },
+  "d1125-kotobuki-base-izu": {
+   "mode": "uniform",
+   "sizes": [
+    "small",
+    "medium",
+    "large"
+   ],
+   "text": "室内犬のみ(犬専用で、猫などは不可)。小型〜大型犬まで可。頭数は公式に記載なし(予約前確認)。1年以内の狂犬病と混合ワクチンの証明書(原本か写真)、接種できない犬は獣医師の猶予証明。ノミ・ダニ駆除済み。",
+   "source_url": "https://www.kotobukibase.com/",
+   "checked_at": "2026-11-25",
+   "body_sha256": "a8d7955248d35485b821ea48614c6b2d64fbf78e4e55e60e6e1bd4f897950456"
+  },
+  "d1125-la-nature-sano-dogtetra": {
+   "mode": "unknown",
+   "text": "頭数・大きさは公式に記載なし(予約前確認)。犬以外のペットは不可。マナーベルト着用。",
+   "source_url": "https://www.glamping-spa-tochigi.com/pet/",
+   "checked_at": "2026-11-25",
+   "body_sha256": "ffd623eef7a4a20b24ca0103e2362d2ec11315fbcf1e55e96aed824c2314984b"
+  },
+  "d1125-nolla-naguri": {
+   "mode": "unknown",
+   "text": "グランピングエリアのペット同伴区画のみ可。頭数・大きさは公式に記載なし(予約前確認)。",
+   "source_url": "https://nolla-naguri.jp/faq/",
+   "checked_at": "2026-11-25",
+   "body_sha256": "360dbae3ec5c998b166e71f1181c13a30caf8695b15af43d6b1850cd064b3a13"
+  },
+  "d1125-omo5-tokyo-gotanda-pet": {
+   "mode": "manual",
+   "text": "愛犬ルーム限定(ドッグフレンドリーツイン24〜30㎡・デラックス35〜38㎡)。中型犬2頭まで(1頭20kgまで)。狂犬病予防注射を毎年1回+5種以上の混合ワクチン接種後3年未満(抗体検査証明でも可)。獣医師の免除があっても未接種は不可。",
+   "source_url": "https://hoshinoresorts.com/ja/hotels/omo5tokyogotanda/sp/dog-stay/",
+   "checked_at": "2026-11-25",
+   "body_sha256": "d2b3d55f04156c08899db42a8ef4839361f89a900a0366a00d67bb36a0f53c78"
+  },
+  "d1125-oyado-tantan": {
+   "mode": "manual",
+   "text": "頭数の上限・体重は公式に記載なし(3頭以上も泊まれる料金表あり)。",
+   "source_url": "https://www.oyadotantan.com/",
+   "checked_at": "2026-11-25",
+   "body_sha256": "8fea78ff7da3d2dbac01be82c07477d57d31b43537847d73630879dae9666d4c"
+  },
+  "d1125-pension-aron-izu": {
+   "mode": "manual",
+   "text": "大きさは問わず可(猫も可)。頭数は公式に記載なし(予約前確認)。狂犬病・混合ワクチン(または抗体検査)。前日までにシャンプーかブラッシング。",
+   "source_url": "https://pension-aron.com/",
+   "checked_at": "2026-11-25",
+   "body_sha256": "c472a70f84c6f5fa830bb4aa8f59a4064e9c3801510add18784d9c2bbbc336ff"
+  },
+  "d1125-pochi-terrace-yatsugatake": {
+   "mode": "manual",
+   "text": "頭数は制限なし。小型・中型・大型とも可(普段室内で暮らす犬)。5種以上の混合ワクチンと1年以内の狂犬病の接種。",
+   "source_url": "https://www.pochi-terrace.com/dog-rules/",
+   "checked_at": "2026-11-25",
+   "body_sha256": "8a6e4b4bde9b240820cc905f34716da5abfea35ba9c4e68c7c13528dbab89ce2"
+  },
+  "d1125-risonare-yatsugatake-pet": {
+   "mode": "manual",
+   "text": "愛犬ルーム1室2頭まで、大きさは問わず。噛まない・無駄吠えしない・飛びつかないなど基本的なしつけ。狂犬病予防注射済証(または注射済票)と混合ワクチン証明(または抗体検査の結果)のコピーが必須。",
+   "source_url": "https://hoshinoresorts.com/ja/hotels/risonareyatsugatake/sp/yatsugatake-petroom/",
+   "checked_at": "2026-11-25",
+   "body_sha256": "cdf44fcc7127e9b032a8c15b17c530ed49860553f91ff9b53f0522d023ceb6da"
+  },
+  "d1125-satoyama-terrace-futtsu": {
+   "mode": "manual",
+   "text": "犬だけ可。泊まれるのはドッグラン付きキャビン(A・Bタイプ)だけ。大型1頭・中型2頭・小型2頭まで。チェックイン時に狂犬病予防接種の証明を提示。",
+   "source_url": "https://www.chibafuttsu-resort.com/dog/",
+   "checked_at": "2026-11-25",
+   "body_sha256": "d7876254535ef8490a40306b1625c00232a9e0671d2d796ea51065658deb6829"
+  },
+  "d1125-sheraton-tokyobay-doglovers": {
+   "mode": "unknown",
+   "text": "頭数・体重はこのページに記載なし(予約前確認)。",
+   "source_url": "https://www.marriott.com/ja/hotels/tyosi-sheraton-grande-tokyo-bay-hotel/rooms/dog-lovers-suite/",
+   "checked_at": "2026-11-25",
+   "body_sha256": "eb4e405361411905ce05d0f8e557765221d98b3d3afd0f11a43c15fbc94d19c5"
+  },
+  "d1125-shirakaba-club": {
+   "mode": "manual",
+   "text": "小型・中型・大型・超大型犬、猫、小動物まで可。頭数は公式に記載なし(予約前確認)。狂犬病と5種以上の混合ワクチン接種、排便のしつけ。ヒート中は不可。",
+   "source_url": "https://www.shirakaba-club.com/petstay.php",
+   "checked_at": "2026-11-25",
+   "body_sha256": "2dc4ec22653f4bffe106158f159140f6bcd7a951fbdd49d33d166a9805ffaa70"
+  },
+  "d1125-solana-fuji-gotemba": {
+   "mode": "manual",
+   "text": "頭数・体重は公式に記載なし(予約前確認)。犬と室内で過ごす前提の客室。",
+   "source_url": "https://resort-solana.com/facility/gotenba/",
+   "checked_at": "2026-11-25",
+   "body_sha256": "8270eb9095fcef2fc602ec29d6b7ebf3ce0899bd1248c9e04ffdc5f1f3bd0cc3"
+  },
+  "d1125-soutenkaihou-joetsu": {
+   "mode": "unknown",
+   "text": "犬と泊まれるのはHIKARI・MIZU・Site \"A\"の3室。頭数・体重は公式に記載なし(予約前確認)。狂犬病ワクチンの接種証明を持参。",
+   "source_url": "https://www.niigata-glamping.com/faq/",
+   "checked_at": "2026-11-25",
+   "body_sha256": "25371af56cc9320a90de5ea0e4b4c3c2396da19a9a4dad933d602204be193d9a"
+  },
+  "d1125-tabinoteitaku-aiaiai-niwa": {
+   "mode": "manual",
+   "text": "小型犬3頭・中大型犬2頭まで。室内飼いの犬に限る。ワクチン・狂犬病の予防接種が条件。",
+   "source_url": "https://www.tabinoteitaku.jp/miyagi/zao/aiaiai-villa/",
+   "checked_at": "2026-11-25",
+   "body_sha256": "8f5866a6653a5799a513aa4e3a75d627e41010d92741a61420a3d42ceae97234"
+  },
+  "d1125-tabinoteitaku-sauna-zao": {
+   "mode": "uniform",
+   "max_dogs": 1,
+   "text": "1頭まで、犬種は問わない。日常室内飼いの犬。ワクチン・狂犬病の予防接種が条件。",
+   "source_url": "https://www.tabinoteitaku.jp/miyagi/zao/saunacottagezao/",
+   "checked_at": "2026-11-25",
+   "body_sha256": "50fae5d6139e43c69da11b910d0bc1356cc31913dbd7b2198172b6572df1310c"
+  },
+  "d1125-tabinoteitaku-t-home": {
+   "mode": "manual",
+   "text": "小型犬3頭・中大型犬2頭まで。室内飼いの犬に限る。ワクチン・狂犬病の予防接種が条件。",
+   "source_url": "https://www.tabinoteitaku.jp/miyagi/zao/t-home-villa/",
+   "checked_at": "2026-11-25",
+   "body_sha256": "b537a8850698fc556e6b7c0f7dafc47fdc0b59b405ba80e6072ee9f59a7b6fcb"
+  },
+  "d1125-tabinoteitaku-villa-zao": {
+   "mode": "manual",
+   "text": "犬のみ。小型犬3頭・中大型犬2頭まで。室内飼いの犬に限る。ワクチン・狂犬病の予防接種が条件。",
+   "source_url": "https://www.tabinoteitaku.jp/miyagi/zao/villa-zao/",
+   "checked_at": "2026-11-25",
+   "body_sha256": "ccf3ff086781b23fbcde5bfaebf6420587b04e8b1968dc480c3d53c57b9a2c2a"
+  },
+  "d1125-tabinoteitaku-y-beach": {
+   "mode": "manual",
+   "text": "SUN棟だけ犬可(犬のみ)。小型犬3頭まで(1頭10kg未満)、中型犬(10〜25kg)は1頭まで。室内飼いに限る。ワクチン・狂犬病の予防接種が条件。",
+   "source_url": "https://www.tabinoteitaku.jp/yamagata/tsuruoka/y-beach-villa/",
+   "checked_at": "2026-11-25",
+   "body_sha256": "b653d5c9ca761336a967f71d3689036859be0dd181a4132366ad535b1f0ce526"
+  },
+  "d1125-tabinoteitaku-zao-soleil": {
+   "mode": "manual",
+   "text": "犬のみ。小型犬3頭・中大型犬2頭まで。室内飼いの犬に限る。ワクチン・狂犬病の予防接種が条件。",
+   "source_url": "https://www.tabinoteitaku.jp/miyagi/zao/soleil-villa/",
+   "checked_at": "2026-11-25",
+   "body_sha256": "d793b30e8be052fbb4030fce6a01635e6c6e57318592bd17e3d61bd91be470dd"
+  },
+  "d1125-tous-les-doudou": {
+   "mode": "manual",
+   "text": "小型犬4頭・中型犬2頭までが1グループの目安(それ以上は予約前に相談)。大型犬は予約前に相談(しつけが入り制御できる子のみ)。危険犬種・ヒート中は不可。法律に基づく予防接種を受けていること。",
+   "source_url": "https://www.shizuoka-dogresort.com/qa/",
+   "checked_at": "2026-11-25",
+   "body_sha256": "6c59cb7071e6789d148fe84a2fde280aa0e8f6c00cfe34a171d9aacaa84b3149"
+  },
+  "d1125-villa-aimizu-kamogawa": {
+   "mode": "manual",
+   "text": "『白藍』『青藍』『瑠璃』の3棟で可。小型〜大型、犬種・大きさを問わない。頭数は公式に記載なし(予約前確認)。狂犬病と混合ワクチン(原則1年以内)の証明(原本・コピー・スマホの写真いずれも可)。",
+   "source_url": "https://www.chiba-privatevilla.com/qa/",
+   "checked_at": "2026-11-25",
+   "body_sha256": "d1e8c18b0981900c4bc9c60a78273d7f88714f6d2a2150f9931299b758b78c89"
+  },
+  "d1125-villa-bianca-chikura": {
+   "mode": "manual",
+   "text": "最大5匹、小型・中型(大型は相談)、室内犬に限る。1年以内に狂犬病と伝染病の予防接種(体質で免除の場合は相談)、ノミ・ダニ・フィラリア予防、宿泊前にシャンプー。",
+   "source_url": "https://villabianca.jp/rules/",
+   "checked_at": "2026-11-25",
+   "body_sha256": "f9a9c9d77bcd2f716bfa70b6a9a9107b62f8e17be6cc953e08e00ae5be177e5f"
+  },
+  "d1125-wakaki-ryokan-nasu": {
+   "mode": "manual",
+   "text": "2頭まで(3頭以上は問い合わせ)。原則20kg以下(20kgを超える大型犬は相談)。",
+   "source_url": "https://www.wakakiryokan-nasu.com/dog/",
+   "checked_at": "2026-11-25",
+   "body_sha256": "31cfb2e16e22bdbc10a9f49db3811da679e3a853c8639662956f0ba0a4df056b"
+  },
+  "d1125-waterpark-nagatoro": {
+   "mode": "uniform",
+   "max_dogs": 2,
+   "text": "ペット可はウッドトレーラーA・S・T・ST・DDの各タイプ1棟ずつ(合計5棟)。1棟2頭まで。予約時に申し出(犬種の確認あり)。",
+   "source_url": "https://waterpark.jp/information",
+   "checked_at": "2026-11-25",
+   "body_sha256": "04e1fa5212fbd71597b627c444546f1f085821b607aec6aca553c12e3ab82571"
+  },
+  "d1125-yufuri-izukogen": {
+   "mode": "manual",
+   "text": "大型犬・多頭でも泊まれる広い部屋あり。犬と泊まれない部屋もある。頭数の上限は公式に記載なし。",
+   "source_url": "https://yufuri-izukogen.com/dogfriendly/",
+   "checked_at": "2026-11-25",
+   "body_sha256": "db6af6e5c25f20e753620f718690ec012f4bd730234873c25831a2cc64efe23f"
+  },
+  "d1125-yulampi-yaita": {
+   "mode": "manual",
+   "text": "小型・中型は3匹、大型は2匹まで(猫も3匹まで可)。",
+   "source_url": "https://www.yaita-glamping.com/qa/",
+   "checked_at": "2026-11-25",
+   "body_sha256": "33efb33a1c263f331d4646990c68f56884b52b85c573687496e9260da3f71bb3"
+  },
+  "d1125-yuyu-land-hanawa": {
+   "mode": "manual",
+   "text": "1組3頭まで、大型犬(18kg以上)は2頭まで。室内犬に限る。1年以内に狂犬病・伝染病の予防接種(または抗体あり)。",
+   "source_url": "https://yuyu-land.com/room.htm",
+   "checked_at": "2026-11-25",
+   "body_sha256": "4f213489d90381076fdca90682e8de5bc7680e5429f7f73221f3df8b086a35a2"
   }
  },
  "dog_conditions_pipeline": {
